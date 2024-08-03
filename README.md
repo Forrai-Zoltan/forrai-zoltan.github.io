@@ -1,24 +1,20 @@
-# Welcome to My Website
+# Part-time Writer. Full-time Wizard.
 
-## Part-time Writer. Full-time Wizard.
+## Forrai Zoltán 🧙🏻‍♂️
 
-### Forrai Zoltán 🧙🏻‍♂️
+Hi there! My name is **Forrai Zoltán** – *Zoli* for friends, although online I mostly go by the pseudonym **Gildrom**. <br>
+I’m a **_writer_** from Budapest, Hungary. 
 
-> Hi there! My name is **Forrai Zoltán** – *Zoli* for friends, although online I mostly go by the pseudonym **Gildrom**. <br>
-> I’m a **_writer_** from Budapest, Hungary. 
-
-#### Obligatory Selfie
+**Obligatory Selfie**
 
 ![“Hey there, Handsome!”](https://avatars.githubusercontent.com/u/121510575?v=4 "Hey there, Handsome!")
-
----
 
 ## My Projects
 
 ### 📘 [Read my Short Fiction](https://github.com/Forrai-Zoltan/Short-Stories "Read all of my short fiction for free!")
 
 I write short fiction, 
-about 7000 words every week.^[[The Ray Bradbury Challenge](https://stevenrsouthard.com/the-ray-bradbury-challenge/)]
+about 7000 words every week.[^1]
 I [publish all my stories on GitHub](https://github.com/Forrai-Zoltan/Short-Stories "Read all of my short fiction for free!") 
 for everyone to enjoy, completely **free**.
 
@@ -42,13 +38,15 @@ and you’ll understand.
 
 To rationalise my obsession with collecting information, 
 and to prevent my research from gathering dust on my hard drive, 
-I decided to share it all on a [similar, simple website](https://forrai-zoltan.github.io/Resources-for-Writers/).
+I decided to share it all on a [similar, simple website](https://forrai-zoltan.github.io/Resources-for-Writers/ "Learn how to write!").
+
+→ [Resources for Writers](https://forrai-zoltan.github.io/Resources-for-Writers/ "Learn how to write!")
 
 ---
 
 ## Here are my socials and other suff
 
-***☞*** If you would like to support my work [**click here!**](https://buymeacoffee.com/gildrom "Hey, you dropped this, king! 👑")
+### **☞** If you would like to support my work [**_click here!_**](https://buymeacoffee.com/gildrom "Hey, you dropped this, king! 👑")
 
 - 🐱🐙 [GitHub](https://github.com/Forrai-Zoltan "My GitHub.")
 - 🔗🌴 [Linktree](https://linktr.ee/gildrom "My linktree with some other links.")
@@ -58,5 +56,6 @@ I decided to share it all on a [similar, simple website](https://forrai-zoltan.g
 **Alright, that’s all for now, take care! 
 See you on the web.**
 
----
 © 2024 Forrai Zoltán
+
+[^1]:[The Ray Bradbury Challenge](https://stevenrsouthard.com/the-ray-bradbury-challenge/)
