@@ -21,7 +21,7 @@ Not only that,
 but you can take a look at all the commits (“snapshots”) I made along the way.
 So you can peek into my creative process 
 and see all the typos and *f\*ckups*.
-As well as the different ideas I considered
+As well as all the different ideas I considered
 before finding the ~~best~~ *least awful* one.
 
 → [Read my Short Fiction](https://github.com/Forrai-Zoltan/Short-Stories "Read all of my short fiction for free!")
@@ -35,15 +35,13 @@ I’m a collector
 Ask any scholar friend to show you their [Zotero](https://www.zotero.org/) library, 
 and you’ll understand.
 
-I collect information on **Creative Writing**.
+I gather materials on **Creative Writing**.
 
 To rationalise my obsession with collecting information, 
 and to prevent my research from gathering dust on my hard drive, 
 I decided to share it all on a [similar, simple website](https://forrai-zoltan.github.io/Resources-for-Writers/ "Learn how to write!").
 
 → [Explore my Collection of Writing Resources](https://forrai-zoltan.github.io/Resources-for-Writers/ "Learn how to write!")
-
----
 
 ## Here are my socials and other stuff...
 
