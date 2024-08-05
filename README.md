@@ -18,8 +18,8 @@ I publish all my stories on [GitHub](https://github.com/Forrai-Zoltan/Short-Stor
 for everyone to enjoy, completely **free**.
 
 Not only that, 
-but you can take a look at all the commits (“snapshots”) I made along the way.
-So you can peek into my creative process 
+but you can also take a look at all the commits (“snapshots”) I made along the way, 
+allowing you to peek into my creative process 
 and see all the typos and *f\*ckups*.
 As well as all the different ideas I considered
 before finding the ~~best~~ *least awful* one.
@@ -34,8 +34,7 @@ I’m a collector
 – a Hoarder of Information. 
 Ask any scholar friend to show you their [Zotero](https://www.zotero.org/) library, 
 and you’ll understand.
-
-I gather materials on **Creative Writing**.
+I gather material on **Creative Writing**.[^2]
 
 To rationalise my obsession with collecting information, 
 and to prevent my research from gathering dust on my hard drive, 
@@ -60,4 +59,5 @@ See you on the web.**
 
 ---
 
-[^1]:[The Ray Bradbury Challenge](https://stevenrsouthard.com/the-ray-bradbury-challenge/)
+[^1]: [The Ray Bradbury Challenge](https://stevenrsouthard.com/the-ray-bradbury-challenge/)
+[^2]: [What is Creative Writing?](https://en.wikipedia.org/wiki/Creative_writing)
