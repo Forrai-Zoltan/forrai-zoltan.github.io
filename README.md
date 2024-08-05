@@ -38,7 +38,7 @@ I gather material on **Creative Writing**.[^2]
 
 To rationalise my obsession with collecting information, 
 and to prevent my research from gathering dust on my hard drive, 
-I decided to share it all on a [similar, simple website](https://forrai-zoltan.github.io/Resources-for-Writers/ "Learn how to write!").
+I decided to share it all on a similar, simple website.
 
 → [Explore my Collection of Writing Resources](https://forrai-zoltan.github.io/Resources-for-Writers/ "Learn how to write!")
 
