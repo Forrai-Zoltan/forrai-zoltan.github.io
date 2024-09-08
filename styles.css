@@ -1,16 +1,16 @@
-* {
-  border: 2px;
-  border-color: red;
+
+.site-header {
+  border: dashed red;
 }
 
-body {
-  background-color: black;
-  color: white;
-}
 
-nav {
-  background-color: grey;
+.menu {
   display: flex;
-  justify-content: space-around;
+  
+}
+
+.menu-items {
+  margin: 10px;
+  
 }
 
