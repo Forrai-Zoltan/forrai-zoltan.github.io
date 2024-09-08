@@ -1,3 +1,5 @@
+
+
 body {
   margin: 4rem;
   margin-top: 2rem;
@@ -7,35 +9,42 @@ body {
 }
 
 .site-header {
-  /* radius */
-  border-top-right-radius: 10px;
-  border-top-left-radius: 200px;
-  border-bottom-left-radius: 10px;
-  /* border */
-  margin-right: 35%;
-  padding: 1rem;
-  background-image: linear-gradient(to right, #2d0f44, black);
   
+}
 
+.title-background {
+ /* radius */
+ border-top-right-radius: 10px;
+ border-top-left-radius: 150px;
+ border-radius: -10%;
+ /* border */
+ margin-right: 10%;
+ padding: 1rem;
+ background-image: linear-gradient(to right, #2d0f44, black);
+ height: 40px;
 }
 
 .logo-title a {
+  /* border */
+  margin-left: 40px;
   font-size: 40px;
   color: whitesmoke;
   text-decoration: none;
-  /* border */
-  margin-left: 10px;
-  ;
-}
-
-a {
  
 }
+
+.nav-background {
+  margin: 0px;
+  margin-top: 5px;
+  background-color: #2d0f44);
+  border-radius: 15%;
+}
+
 
 
 .menu {
   display: flex;
-  
+
 }
 
 .menu-items {
