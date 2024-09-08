@@ -29,7 +29,6 @@ body {
   color: whitesmoke;
   text-decoration: none;
   letter-spacing: 2px;
-  text-wrap-mode:wrap;
 }
 
 .nav-background {
@@ -51,6 +50,7 @@ body {
 .menu-divider, .menu-summary {
   font-size: 20px;
   margin: 5px;
+  user-select: none;
 }
 
 .menu-divider {
@@ -58,3 +58,7 @@ body {
   font-weight: 500;
   margin-inline: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
