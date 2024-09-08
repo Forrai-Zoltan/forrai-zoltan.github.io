@@ -45,7 +45,7 @@ body {
   padding: 10px;
 }
 
-.menu-items-summary {
+.menu-divider, .menu-summary {
   font-size: 20px;
   margin: 5px;
 }
