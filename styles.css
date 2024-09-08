@@ -8,12 +8,28 @@ body {
 
 .site-header {
   /* radius */
-  border-top-left-radius: 10px;
-  border-top-right-radius: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 200px;
   border-bottom-left-radius: 10px;
+  /* border */
+  margin-right: 35%;
   padding: 1rem;
-  background-image: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7);
+  background-image: linear-gradient(to right, #2d0f44, black);
+  
 
+}
+
+.logo-title a {
+  font-size: 40px;
+  color: whitesmoke;
+  text-decoration: none;
+  /* border */
+  margin-left: 10px;
+  ;
+}
+
+a {
+ 
 }
 
 
