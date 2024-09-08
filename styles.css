@@ -1,3 +1,16 @@
 * {
-  outline: 2px solid red;
+  border: 2px;
+  border-color: red;
 }
+
+body {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+}
+
