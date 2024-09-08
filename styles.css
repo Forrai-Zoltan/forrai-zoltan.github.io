@@ -1,6 +1,19 @@
+body {
+  margin: 4rem;
+  margin-top: 2rem;
+  /* color */
+  background-color: black;
+  color: white;
+}
 
 .site-header {
-  border: dashed red;
+  /* radius */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 10px;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7);
+
 }
 
 
