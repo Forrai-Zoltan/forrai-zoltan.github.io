@@ -1,4 +1,6 @@
-
+ * {
+  outline: 2px solid red;
+} 
 
 body {
   margin: 4rem;
@@ -8,15 +10,11 @@ body {
   color: white;
 }
 
-.site-header {
-  
-}
-
 .title-background {
  /* radius */
- border-top-right-radius: 10px;
+ border-top-right-radius: 100%;
  border-top-left-radius: 150px;
- border-radius: -10%;
+ border-bottom-right-radius: 100%;
  /* border */
  margin-right: 10%;
  padding: 1rem;
@@ -30,20 +28,20 @@ body {
   font-size: 40px;
   color: whitesmoke;
   text-decoration: none;
- 
 }
 
 .nav-background {
   margin: 0px;
   margin-top: 5px;
-  background-color: #2d0f44);
-  border-radius: 15%;
+  background-image: linear-gradient(to right, #1a1a1a, black);
+  border-radius: 2px;
+  border-top-right-radius: 100%;
 }
-
-
 
 .menu {
   display: flex;
+  margin: 0px;
+  margin-left: 40px;
 
 }
 
