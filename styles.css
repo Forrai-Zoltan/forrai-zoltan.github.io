@@ -1,6 +1,5 @@
 
 
-
 body {
   margin: 1rem;
   margin-top: 0.5rem;
@@ -9,11 +8,12 @@ body {
   color: white;
 }
 
+/* Navigation Bar */
 
 .title-background {
   /* radius */
   border-top-right-radius: 100%;
-  border-top-left-radius: 150px;
+  border-top-left-radius: 120px;
   border-bottom-right-radius: 100%;
   /* border */
   padding: 5px;
@@ -24,30 +24,38 @@ body {
 .logo-link {
   display: flex;
   align-items: baseline;
-  margin-left: 50px;
+  margin-left: 40px;
+  margin-top: 5px;
+  user-select: none;
 }
 
 .favicon {
   height: 30px;
   width: 30px; 
-  margin: 2px;
-  
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 .logo-title {
-  padding: 10px;
+  padding: 2px;
   font-size: 40px;
   color: whitesmoke;
   text-decoration: none;
   letter-spacing: 2px;
 }
 
+.title-background a {
+  text-decoration: none;
+}
+
+/* sections */
+
 .nav-background {
   margin: 0px;
   margin-top: 5px;
   background-image: linear-gradient(to right, rgb(30, 30, 30), black);
   border-radius: 2px;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .menu {
@@ -56,6 +64,7 @@ body {
   margin-left: 35px;
   padding: 5px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .menu-divider, .menu-summary {
@@ -70,6 +79,16 @@ body {
   margin-inline: 50px;
 }
 
+/* Main Section */
+
+
+
+
+
+
+/* Extra bits */
+
 @media only screen and (max-width: 750px) {
   .hide-on-mobile {
     display: none;
+  }
