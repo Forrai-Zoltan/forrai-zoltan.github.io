@@ -1,7 +1,7 @@
 
 
 body {
-  margin: 1rem;
+  margin: 2rem;
   margin-top: 0.5rem;
   /* color */
   background-color: black;
@@ -62,6 +62,7 @@ body {
   display: flex;
   margin: 0px;
   margin-left: 35px;
+  margin-right: 35px;
   padding: 5px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -76,7 +77,7 @@ body {
 .menu-divider {
   color: white;
   font-weight: 500;
-  margin-inline: 50px;
+
 }
 
 /* Main Section */
