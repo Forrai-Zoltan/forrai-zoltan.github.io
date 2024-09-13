@@ -16,6 +16,7 @@ header * {
 
 .title-background {
   border-top-left-radius: 120px;
+  border-bottom-left-radius: 5px;
   padding: 5px;
   background-image: linear-gradient(to right, #210735, transparent);
   height: auto;
@@ -54,7 +55,7 @@ header * {
   margin: 0px;
   margin-top: 5px;
   background-image: linear-gradient(to right, rgb(30, 30, 30), transparent);
-  border-radius: 2px;
+  border-radius: 5px;
   padding-left: 0px;
   /* display */
   display: flex;
@@ -124,14 +125,26 @@ ul.dropdown:hover {
 }
 
 .seeker {
-  margin-top: 5px;
-  padding: 2px;
-  background: linear-gradient(to right, #210735, black);
-  text-decoration: none;
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  background: linear-gradient(to right, #161616, transparent);
+  border-radius: 10px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
 }
 
 .seeker a {
   color: whitesmoke;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.seeker a::after {
+  content: "/";
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 /* Extra bits */
