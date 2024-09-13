@@ -59,36 +59,41 @@ body {
   padding-left: 0px;
   /* display */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-ul li {
-  display: inline-block;
+nav ul li {
   position: relative;
+  flex-grow: 1;
 }
 
 ul.menu li a /* Menu Name */{
   display: block;
   color: #FFF;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
   font-size: 25px;
-  margin: 5px;
-
-}
-
-ul.dropdown li a {
-  display: block;
-  font-size: 20px;
+  padding: 5px 50px 5px 50px;
 }
 
 ul li ul.dropdown {
-  width: 100%;
+  width: auto;
   background-image: linear-gradient(to right, rgb(30, 30, 30), black);
   position: absolute;
   z-index: 999;
   display: none;
+  list-style: none;
+  padding: 0; 
+  margin: 0;
 }
+
+ul.dropdown li a /* menu items */{
+  display: block;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  text-align: left;
+}
+
 
 ul li a:hover {
   background-image: linear-gradient(to right, #210735, black);
