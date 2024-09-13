@@ -1,3 +1,6 @@
+* {
+  outline: 2px solid red;
+} 
 
 
 body {
@@ -52,41 +55,51 @@ body {
 
 .nav-background {
   margin: 0px;
-  margin-top: 5px;
+  margin-top: 0px;
   background-image: linear-gradient(to right, rgb(30, 30, 30), black);
   border-radius: 2px;
   padding-left: 10px;
 }
 
-.menu {
-  display: flex;
-  margin: 0px;
-  margin-left: 35px;
-  margin-right: 35px;
-  padding: 5px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.menu-divider, .menu-summary {
-  font-size: 20px;
-  margin: 5px;
-  user-select: none;
-}
-
-.menu-divider {
-  color: white;
-  font-weight: 500;
-
-}
-
-.menu-items:hover {
-  
-}
-
 /* Main Section */
+ul {
+  list-style: none;
 
+}
 
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background: #8c52ff;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background: #6d30e9;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
 
 /* Extra bits */
 
