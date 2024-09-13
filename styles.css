@@ -10,6 +10,10 @@ body {
 
 /* Navigation Bar */
 
+header * {
+  user-select: none;
+}
+
 .title-background {
   /* radius */
   border-top-right-radius: 100%;
@@ -26,7 +30,6 @@ body {
   align-items: baseline;
   margin-left: 40px;
   margin-top: 5px;
-  user-select: none;
 }
 
 .favicon {
@@ -75,7 +78,6 @@ ul.menu li a /* Menu Name */{
   text-align: center;
   font-size: 25px;
   padding: 5px 50px 5px 50px;
-  
 }
 
 ul li ul.dropdown {
@@ -100,13 +102,21 @@ ul.dropdown li a /* menu items */{
 
 ul li a:hover {
   background-image: linear-gradient(to right, #210735, black);
+  border-right: 0.5px solid #ffffff;
+}
+
+ul.dropdown li a:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 ul li:hover ul.dropdown {
   display: block;
 }
+
 ul.dropdown:hover {
   display: block;
+  
 }
 
 /* Extra bits */
