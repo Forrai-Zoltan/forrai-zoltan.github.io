@@ -20,15 +20,8 @@ header {
   z-index: 9999;
   width: 100%;
   top: 0;
-  /* background */
-  background: 
-    radial-gradient(ellipse at bottom center, 
-      rgba(0, 0, 0, 0.1) 0%, 
-      rgba(0, 0, 0, 0.9) 60%, 
-      rgba(0, 0, 0, 0.965) 70%);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  padding-bottom: 10px;
+ 
+  padding-bottom: 0px;
 }
 
 .title-background {
@@ -94,6 +87,7 @@ ul.menu li a /* Menu Name */{
   padding: 5px 50px 5px 50px;
 }
 
+
 ul li ul.dropdown { 
   width: 100%;
   position: absolute;
@@ -105,8 +99,8 @@ ul li ul.dropdown {
   top: 100%;
   left: 0;
   /* menu items background */
-  background-color: rgba(0, 0, 0, 0.70);
-  backdrop-filter: blur(50px); 
+  background-color: rgba(0, 0, 0, 0.50);
+
   border: 0.5px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   border-bottom-left-radius: 10px;
