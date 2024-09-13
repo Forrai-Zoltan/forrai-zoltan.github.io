@@ -198,7 +198,8 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
 .image-links-container {
   flex: 1;
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 img.self-portrait {
@@ -206,12 +207,24 @@ img.self-portrait {
   max-width: 100%;
   height: auto;
   user-select: none;
+  border: 1px inset rgba(131, 187, 255, 0.595);
 }
 
 .link-container {
-  padding: 40px;
+  padding: 15px;
   border-radius: 20px;
-  border: 1px inset rgba(255, 255, 255, 0.3);
+  border: 1px inset rgba(200, 255, 217, 0.3);
+  background: 
+    radial-gradient(ellipse at top, #1f4720, transparent);
+  
+}
+
+span.link-title {
+  margin: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 /* Extra bits */
