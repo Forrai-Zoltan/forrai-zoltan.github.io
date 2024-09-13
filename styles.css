@@ -1,10 +1,10 @@
 
 
 body {
-
-
+  margin-left: 2rem;
+  margin-right: 2rem;
   /* color */
-  background-color: white;
+  background-color: black;
   color: white;
   padding-top: 150px;
 }
@@ -18,7 +18,7 @@ header * {
 header {
   position: fixed;
   z-index: 9999;
-  width: 100%;
+  width: calc(100% - 4rem);
   top: 0px;
   padding-bottom: 5px;
    /* background */
@@ -91,6 +91,13 @@ ul.menu li a /* Menu Name */{
   padding: 5px 50px 5px 50px;
 }
 
+ul.menu > li > a::after {
+  content: '❯'; /* Arrow down icon */
+  position: absolute;
+  right: 30px;
+  transition: transform 0.3s ease; 
+}
+
 ul li ul.dropdown { 
   width: 100%;
   position: absolute;
@@ -102,7 +109,7 @@ ul li ul.dropdown {
   top: 100%;
   left: 0;
   /* menu items background */
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px); 
   border: 0.5px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -122,6 +129,10 @@ ul.dropdown li a /* menu items */{
 ul.menu > li > a:hover /* menu titles */{
   background-image: linear-gradient(to right, #210735, black);
   border-radius: 10px 50px 50px 10px;
+}
+
+ul.menu > li > a:hover::after {
+  transform: rotate(90deg); /* Flip the arrow on hover */
 }
 
 ul.dropdown li a:hover /* items */{
@@ -186,6 +197,8 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
 
 .image-links-container {
   flex: 1;
+  display: flex;
+  gap: 50px;
 }
 
 img.self-portrait {
@@ -193,6 +206,12 @@ img.self-portrait {
   max-width: 100%;
   height: auto;
   user-select: none;
+}
+
+.link-container {
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px inset rgba(255, 255, 255, 0.3);
 }
 
 /* Extra bits */
