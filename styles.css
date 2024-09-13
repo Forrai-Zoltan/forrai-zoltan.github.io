@@ -59,6 +59,7 @@ body {
   padding-left: 0px;
   /* display */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -74,24 +75,26 @@ ul.menu li a /* Menu Name */{
   text-align: center;
   font-size: 25px;
   padding: 5px 50px 5px 50px;
+  
 }
 
 ul li ul.dropdown {
-  width: auto;
-  background-image: linear-gradient(to right, rgb(30, 30, 30), black);
+  width: 100%;
   position: absolute;
   z-index: 999;
   display: none;
   list-style: none;
   padding: 0; 
   margin: 0;
+  top: 100%;
+  left: 0;
 }
 
 ul.dropdown li a /* menu items */{
   display: block;
   font-size: 20px;
-  padding: 10px 10px 10px 10px;
   text-align: left;
+  text-decoration: none;
 }
 
 
@@ -102,10 +105,16 @@ ul li a:hover {
 ul li:hover ul.dropdown {
   display: block;
 }
+ul.dropdown:hover {
+  display: block;
+}
 
 /* Extra bits */
 
 @media only screen and (max-width: 750px) {
   .hide-on-mobile {
     display: none;
+  }
+  .menu {
+    flex-direction: column; /* Stack menu items vertically */
   }
