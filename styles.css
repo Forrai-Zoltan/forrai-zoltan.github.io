@@ -3,7 +3,6 @@
 body {
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-top: 1rem;
   /* color */
   background-color: black;
   color: white;
@@ -20,18 +19,18 @@ header {
   position: fixed;
   z-index: 9999;
   width: 100%;
-  top: 0;
-  padding-bottom: 0px;
+  top: 0px;
+  padding-bottom: 5px;
    /* background */
   background: radial-gradient(ellipse at bottom,
    rgba(0, 0, 0, 0.9),#000000 70%);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-
 .title-background {
   border-top-left-radius: 120px;
   border-bottom-left-radius: 5px;
+  margin-top: 10px;
   padding: 5px;
   background-image: linear-gradient(to right, #210735, transparent);
   height: auto;
@@ -91,7 +90,6 @@ ul.menu li a /* Menu Name */{
   font-size: 25px;
   padding: 5px 50px 5px 50px;
 }
-
 
 ul li ul.dropdown { 
   width: 100%;
@@ -166,6 +164,27 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
 
 .seeker a:first-child {
   padding-left: 40px;
+}
+
+/* Main Body */
+
+.main-container * {
+    outline: 2px solid red;
+}
+
+.main-container {
+  display: flex;
+
+}
+
+
+.text-container {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.image-links-container {
+  flex: 1;
 }
 
 /* Extra bits */
