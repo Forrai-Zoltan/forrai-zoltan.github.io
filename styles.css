@@ -4,7 +4,7 @@ body {
   margin: 2rem;
   margin-top: 0.5rem;
   /* color */
-  background-color: white;
+  background-color: black;
   color: white;
 }
 
@@ -87,8 +87,10 @@ ul li ul.dropdown {
   margin: 0;
   top: 100%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(23, 23, 23, 0.5));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(28, 28, 28, 0));
   backdrop-filter: blur(10px);
+  border: 0.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -107,23 +109,22 @@ ul.menu > li > a:hover /* menu titles */{
   border-radius: 10px 50px 50px 10px;
 }
 
-ul.dropdown li a:hover /*  */{
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+ul.dropdown li a:hover /* items */{
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   background-image: linear-gradient(to right, #210735, transparent);
   border-right: 6px solid #ffffff;
-
 }
-ul.dropdown li a:last-child {
-  border-bottom-left-radius: 10px;
-} 
+
+ul.dropdown li:last-child a /* last item */{
+  border-bottom-left-radius: 30px ;
+}
 
 ul li:hover ul.dropdown, ul.dropdown:hover {
   display: block;
 }
 
+/* seeker */
 
 .seeker {
   margin-top: 5px;
@@ -147,18 +148,9 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
 }
 
 .seeker a:first-child {
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
-
-.glass{
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border:1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
 
 /* Extra bits */
 
