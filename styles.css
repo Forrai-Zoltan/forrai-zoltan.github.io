@@ -4,7 +4,7 @@ body {
   margin: 2rem;
   margin-top: 0.5rem;
   /* color */
-  background-color: black;
+  background-color: white;
   color: white;
 }
 
@@ -100,35 +100,35 @@ ul.dropdown li a /* menu items */{
   text-decoration: none;
 }
 
-ul li a:hover {
+/* hovers */
+
+ul.menu > li > a:hover /* menu titles */{
   background-image: linear-gradient(to right, #210735, black);
-  border-right: 0.5px solid #ffffff;
+  border-radius: 10px 50px 50px 10px;
 }
 
-ul.menu > li:last-child a:hover { 
-  border-right: none
-}
-
-ul.dropdown li a:hover {
+ul.dropdown li a:hover /*  */{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
   background-image: linear-gradient(to right, #210735, transparent);
-}
+  border-right: 6px solid #ffffff;
 
-ul li:hover ul.dropdown {
+}
+ul.dropdown li a:last-child {
+  border-bottom-left-radius: 10px;
+} 
+
+ul li:hover ul.dropdown, ul.dropdown:hover {
   display: block;
 }
 
-ul.dropdown:hover {
-  display: block;
-  
-}
 
 .seeker {
-  margin-top: 10px;
+  margin-top: 5px;
   padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 5px;
+  padding-bottom: 0px;
   background: linear-gradient(to right, #161616, transparent);
   border-radius: 10px;
   border-top-right-radius: 100%;
@@ -138,13 +138,26 @@ ul.dropdown:hover {
 .seeker a {
   color: whitesmoke;
   text-decoration: none;
-  padding: 5px;
 }
 
 .seeker a::after {
   content: "/";
   margin-left: 10px;
   margin-right: 5px;
+}
+
+.seeker a:first-child {
+  padding-left: 10px;
+}
+
+
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 /* Extra bits */
