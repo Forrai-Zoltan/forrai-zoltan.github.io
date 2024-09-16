@@ -7,6 +7,12 @@ body {
   background-color: black;
   color: white;
   padding-top: 150px;
+  height: 100%;
+}
+
+a {
+  color: #FFF;
+  font-weight: lighter;
 }
 
 /* Navigation Bar */
@@ -193,6 +199,9 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   padding: 40px;
   border-radius: 20px;
   border: 1px inset rgba(255, 255, 255, 0.3);
+  background: 
+    radial-gradient(ellipse at top, #1e1e1ead, transparent);
+  box-shadow: 5px 20px 50px 0 rgba(60, 62, 60, 0.35);
 }
 
 .image-links-container {
@@ -207,7 +216,7 @@ img.self-portrait {
   max-width: 100%;
   height: auto;
   user-select: none;
-  border: 1px inset rgba(131, 187, 255, 0.595);
+  border: 1px inset rgba(131, 187, 255, 0.3);
 }
 
 .link-container {
@@ -215,8 +224,12 @@ img.self-portrait {
   border-radius: 20px;
   border: 1px inset rgba(200, 255, 217, 0.3);
   background: 
-    radial-gradient(ellipse at top, #1f4720, transparent);
-  
+    radial-gradient(ellipse at top, rgb(31, 71, 32), transparent);
+  box-shadow: 5px 20px 50px 0 rgba(31, 71, 32, 0.35);
+}
+
+.link-container a:hover {
+  color: #03FF00;
 }
 
 span.link-title {
