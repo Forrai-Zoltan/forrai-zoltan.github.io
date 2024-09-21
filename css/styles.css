@@ -145,8 +145,9 @@ ul.menu li a:hover {
 }
 
 /* Flip the arrow on hover */
-ul.menu li a:hover::after {
-  transform: rotate(90deg); 
+li:hover > a::after,
+ul.dropdown li:hover ~ li a::after {
+  transform: rotate(90deg);
 }
 
 ul.dropdown li a:hover {
@@ -163,12 +164,7 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   display: block;
 }
 
-
 /* Main Body */
-
-/* .main-container * {
-    outline: 2px solid red;
-} */
 
 .main-container {
   display: flex;
@@ -179,10 +175,10 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   flex: 2;
   padding: 40px;
   border-radius: 20px;
-  border: 1px inset rgba(255, 255, 255, 0.3);
+  border: 1px inset rgba(255, 255, 255, 0.4);
   background: 
     radial-gradient(ellipse at top, #1e1e1ead, transparent);
-  box-shadow: 5px 20px 50px 0 rgba(60, 62, 60, 0.35);
+  box-shadow: 5px 20px 50px 0px rgba(60, 60, 60, 0.4);
 }
 
 .image-links-container {
@@ -197,16 +193,21 @@ img.self-portrait {
   max-width: 100%;
   height: auto;
   user-select: none;
-  border: 1px inset rgba(131, 187, 255, 0.3);
+  border: 1px inset rgba(131, 187, 255, 0.4);
+  box-shadow: 0px 20px 50px 0px rgba(131, 187, 255, 0.2);
 }
 
 .link-container {
   padding: 15px;
   border-radius: 20px;
-  border: 1px inset rgba(200, 255, 217, 0.3);
+  border: 1px inset rgba(200, 255, 217, 0.4);
   background: 
     radial-gradient(ellipse at top, rgb(31, 71, 32), transparent);
-  box-shadow: 5px 20px 50px 0 rgba(31, 71, 32, 0.35);
+  box-shadow: 0px 20px 50px 0px rgba(31, 71, 32, 0.4);
+}
+
+.link-container a {
+  text-decoration: underline;
 }
 
 .link-container a:hover {
@@ -221,13 +222,5 @@ span.link-title {
   line-height: 1.5;
 }
 
-/* Extra bits */
 
-@media only screen and (max-width: 750px) {
-  .hide-on-mobile {
-    display: none;
-  }
-  .menu {
-    flex-direction: column; /* Stack menu items vertically */
-  }
-}
+
