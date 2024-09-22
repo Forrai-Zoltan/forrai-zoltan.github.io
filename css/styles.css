@@ -239,8 +239,13 @@ span.link-title {
   height: 100%; 
 }
 
-.links li:hover, .links li:hover a {
+.links li:hover, .links li:hover a  {
   color: #39ff14;
+}
+
+.links li:hover .link-favicon {
+  background-color: #39ff14;
+  border: 1px solid #39ff14;;
 }
 
 .copy {
@@ -253,16 +258,24 @@ span.link-title {
   font-weight: bold;
 }
 
-.link-favicon {
-  width: 1em;
-  height: 1em;
+.link-favicon-circle {
+  width: calc(1rem - 4px);
+  height: calc(1rem - 4px);
   border-radius: 50%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
   background-color: whitesmoke;
+  margin: 0px, 0px, 2px 0px;
 }
 
-.link-favicon:hover {
-  background-color: #39ff14;
+.link-favicon-square {
+  width: calc(1rem - 4px);
+  height: calc(1rem - 4px);
+  border-radius: 10%;
+  border: 1px solid white;
+  background-color: whitesmoke;
+  margin: 2px;
 }
+
+
 
 /* Media queries, mobile views */
