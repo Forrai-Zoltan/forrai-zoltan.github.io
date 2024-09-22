@@ -223,14 +223,13 @@ img.self-portrait {
 span.link-title {
   margin: 10px 0px 0px 10px;
   font-size: 20px;
-  color: #ffffff;
   font-weight: bold;
   line-height: 1.5;
 }
 
 .links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   list-style: none;
   padding-left: 10px;
   margin: 2px;
@@ -238,10 +237,8 @@ span.link-title {
 
 .links li a {
   display: block;  
-  width: 100%;     
-  height: 50%; 
+  text-wrap: nowrap;
   padding: 15px 0px 15px 0px;
-
 }
 
 .links li:hover, .links li:hover a  {
