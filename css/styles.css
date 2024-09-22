@@ -37,15 +37,24 @@ header {
   background: linear-gradient(to right, #161616, transparent);
   border-radius: 5px;
   border-top-left-radius: 50px;
-  text-decoration: grey underline dotted;
 }
 
-.seeker a::after {
+.seeker a {
+  color: grey;
+  padding: 1;
+  margin: 1;
+}
+
+.seeker a:hover {
+  color: whitesmoke;
+}
+
+.seeker i:not(:last-of-type) a::after {
   content: " / ";
   margin: 1px;
 }
 
-.seeker a:first-child {
+.seeker i:first-child {
   padding-left: 22px;
 }
 
