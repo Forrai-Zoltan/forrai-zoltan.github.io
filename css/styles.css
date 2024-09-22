@@ -95,11 +95,10 @@ header {
   list-style: none;
   margin: 0px;
   margin-top: 5px;
-  background-image: linear-gradient(to right, rgb(30, 30, 30), transparent);
+  background:  #161616;
   border-radius: 5px;
   padding-left: 0px;
   display: flex;
-  justify-content: space-around;
 }
 
 nav ul li {
@@ -147,6 +146,7 @@ ul li ul.dropdown {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.647);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  min-width: max-content;
 }
 
 /* menu items */
@@ -231,7 +231,7 @@ span.link-title {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   list-style: square;
   padding-left: 30px;
-  margin: 0px;
+  margin: 2px;
 }
 
 .links li a {
@@ -240,7 +240,7 @@ span.link-title {
   width: 100%;     
   height: 50%; 
   padding: 15px 0px 15px 0px;
-  margin: 0px 5px 0px 0px;
+
 }
 
 .links li:hover, .links li:hover a  {
