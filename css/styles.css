@@ -22,9 +22,10 @@ header * {
 header {
   position: fixed;
   z-index: 9999;
-  width: calc(100% - 4rem);
+  width: calc(100% - 1rem);
   top: 0px;
   background-color: black;
+  border-radius: 5px;
 }
 
 /* seeker */
@@ -32,16 +33,16 @@ header {
 .seeker {
   margin-top: 5px;
   padding-top: 2px;
-  padding-bottom: 0px;
+  padding-bottom: 2px;
   background: linear-gradient(to right, #161616, transparent);
   border-radius: 5px;
   border-top-left-radius: 50px;
+  text-decoration: grey underline dotted;
 }
 
 .seeker a::after {
-  content: "/";
-  margin-left: 10px;
-  margin-right: 5px;
+  content: " / ";
+  margin: 1px;
 }
 
 .seeker a:first-child {
@@ -154,6 +155,7 @@ ul.dropdown li a:hover {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-right: 6px solid #ffffff;
+  background-image: linear-gradient(to right, #210735, transparent);
 }
 
 ul.dropdown li:last-child a /* last item */{
@@ -194,7 +196,7 @@ img.self-portrait {
   height: auto;
   user-select: none;
   border: 1px inset rgba(131, 187, 255, 0.4);
-  box-shadow: 0px 20px 50px 0px rgba(131, 187, 255, 0.2);
+  box-shadow: 0px 20px 50px 0px rgba(131, 187, 255, 0.1);
 }
 
 .link-container {
@@ -206,11 +208,13 @@ img.self-portrait {
   box-shadow: 0px 20px 50px 0px rgba(31, 71, 32, 0.4);
 }
 
-.link-container a {
+.link-container ul * {
   text-decoration: underline;
 }
 
-.link-container a:hover {
+
+
+.link-container ul:hover * {
   color: #03FF00;
 }
 
