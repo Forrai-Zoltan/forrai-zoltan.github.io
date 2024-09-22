@@ -1,5 +1,5 @@
 
-/* Styles */
+/* Desktop Styling */
 
 body {
   background-color: black;
@@ -204,18 +204,8 @@ img.self-portrait {
   border-radius: 20px;
   border: 1px inset rgba(200, 255, 217, 0.4);
   background: 
-    radial-gradient(ellipse at top, rgb(31, 71, 32), transparent);
+  radial-gradient(ellipse at top, rgb(31, 71, 32), transparent);
   box-shadow: 0px 20px 50px 0px rgba(31, 71, 32, 0.4);
-}
-
-.link-container ul * {
-  text-decoration: underline;
-}
-
-
-
-.link-container ul:hover * {
-  color: #03FF00;
 }
 
 span.link-title {
@@ -226,5 +216,18 @@ span.link-title {
   line-height: 1.5;
 }
 
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
 
+.links li a {
+  text-decoration: underline;
+}
 
+.links li:hover, .links li:hover a {
+  color: #39ff14;
+}
+
+/* Media queries, mobile views */
