@@ -1,3 +1,6 @@
+* {
+  outline: 2px solid red;
+} 
 
 /* Desktop Styling */
 
@@ -218,7 +221,7 @@ img.self-portrait {
 }
 
 span.link-title {
-  margin: 10px;
+  margin: 10px 0px 0px 10px;
   font-size: 20px;
   color: #ffffff;
   font-weight: bold;
@@ -229,21 +232,29 @@ span.link-title {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
+  list-style: square;
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
 }
 
+.links li {
+  padding: 10px;
+  padding-left: 50px;
+}
 
 .links li a {
   text-decoration: underline;
   display: block;  
   width: 100%;     
-  height: 100%; 
+  height: 50%; 
+  padding: 5px 5px 5px 0px;
 }
 
 .links li:hover, .links li:hover a  {
   color: #39ff14;
 }
 
-.links li:hover .link-favicon {
+.links li:hover .link-favicon-circle, .links li:hover .link-favicon-square {
   background-color: #39ff14;
   border: 1px solid #39ff14;;
 }
@@ -259,12 +270,12 @@ span.link-title {
 }
 
 .link-favicon-circle {
-  width: calc(1rem - 4px);
-  height: calc(1rem - 4px);
+  width: calc(1rem - 3px);
+  height: calc(1rem - 3px);
   border-radius: 50%;
   border: 1px solid white;
   background-color: whitesmoke;
-  margin: 0px, 0px, 2px 0px;
+  margin: 0px 5px 0px 0px;
 }
 
 .link-favicon-square {
@@ -273,7 +284,7 @@ span.link-title {
   border-radius: 10%;
   border: 1px solid white;
   background-color: whitesmoke;
-  margin: 2px;
+  margin: 0px 5px 0px 0px;
 }
 
 
