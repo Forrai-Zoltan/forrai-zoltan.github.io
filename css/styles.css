@@ -231,8 +231,8 @@ span.link-title {
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  list-style: square;
-  padding-left: 30px;
+  list-style: none;
+  padding-left: 10px;
   margin: 2px;
 }
 
