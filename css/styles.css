@@ -1,6 +1,4 @@
-* {
-  outline: 2px solid red;
-} 
+
 
 /* Desktop Styling */
 
@@ -231,15 +229,9 @@ span.link-title {
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
   list-style: square;
-  margin: 5px 5px 5px 5px;
-  padding: 5px;
-}
-
-.links li {
-  padding: 10px;
-  padding-left: 50px;
+  padding-left: 30px;
+  margin: 0px;
 }
 
 .links li a {
@@ -247,7 +239,8 @@ span.link-title {
   display: block;  
   width: 100%;     
   height: 50%; 
-  padding: 5px 5px 5px 0px;
+  padding: 15px 0px 15px 0px;
+  margin: 0px 5px 0px 0px;
 }
 
 .links li:hover, .links li:hover a  {
@@ -286,7 +279,5 @@ span.link-title {
   background-color: whitesmoke;
   margin: 0px 5px 0px 0px;
 }
-
-
 
 /* Media queries, mobile views */
