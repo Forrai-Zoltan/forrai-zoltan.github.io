@@ -281,4 +281,11 @@ span.link-title {
   margin: 0px 5px 0px 0px;
 }
 
+/* Text */
+
+h1 {
+  margin-top: 0px;
+}
+
+
 /* Media queries, mobile views */
