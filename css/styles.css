@@ -95,8 +95,10 @@ header {
   list-style: none;
   margin: 0px;
   margin-top: 5px;
-  background:  #161616;
+  background: linear-gradient(to right, rgb(40, 40, 40), rgba(25, 25, 25, 0.6));
   border-radius: 5px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
   padding-left: 0px;
   display: flex;
 }
@@ -235,7 +237,6 @@ span.link-title {
 }
 
 .links li a {
-  text-decoration: underline;
   display: block;  
   width: 100%;     
   height: 50%; 
