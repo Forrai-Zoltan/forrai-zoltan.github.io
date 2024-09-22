@@ -239,4 +239,14 @@ span.link-title {
   color: #39ff14;
 }
 
+.copy {
+  display: block; 
+  border-top: 1px solid rgb(70, 107, 72);
+  width: 100%; 
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
 /* Media queries, mobile views */
