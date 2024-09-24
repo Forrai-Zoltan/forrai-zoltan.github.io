@@ -29,7 +29,7 @@ header {
   top: 0px;
   background-color: black;
   border-radius: 5px;
-  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  box-shadow: 0 15px 50px 5px rgb(0, 0, 0);
 }
 
 /* Title */
@@ -146,7 +146,7 @@ ul li ul.dropdown {
   background-color: rgba(0, 0, 0, 0.529);
   backdrop-filter: blur(10px); 
   border: 0.5px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  box-shadow: 0 15px 50px 5px rgb(0, 0, 0);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   min-width: max-content;
@@ -194,7 +194,7 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   border: 1px inset rgba(255, 255, 255, 0.4);
   background: 
     radial-gradient(ellipse at top, #1e1e1ead, transparent);
-  box-shadow: 5px 20px 50px 0px rgba(60, 60, 60, 0.4);
+  box-shadow: 5px 20px 50px 5px rgba(60, 60, 60, 0.4);
   font-size: larger;
 }
 
@@ -211,7 +211,7 @@ img.self-portrait {
   height: auto;
   user-select: none;
   border: 1px inset rgba(131, 187, 255, 0.4);
-  box-shadow: 0px 20px 50px 0px rgba(131, 187, 255, 0.1);
+  box-shadow: 0px 20px 50px 5px rgba(131, 187, 255, 0.1);
 }
 
 .link-container {
@@ -220,7 +220,7 @@ img.self-portrait {
   border: 1px inset rgba(200, 255, 217, 0.4);
   background: 
   radial-gradient(ellipse at top, rgb(31, 71, 32), transparent);
-  box-shadow: 0px 20px 50px 0px rgba(31, 71, 32, 0.4);
+  box-shadow: 0px 20px 50px 5px rgba(31, 71, 32, 0.4);
 }
 
 span.link-title {
