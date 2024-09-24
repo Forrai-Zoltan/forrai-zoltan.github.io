@@ -294,10 +294,17 @@ h1 {
 }
 
 p {
+  line-height: 1.75;
   text-align: justify;
   hyphens: auto; 
   overflow-wrap: break-word;
 }
+
+blockquote {
+  margin: 0 10% 0 10%;
+  line-height: 1.75;
+}
+
 
 details {
   user-select: none;
