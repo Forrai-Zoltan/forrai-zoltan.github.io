@@ -11,6 +11,12 @@ body {
   height: 100%;
 }
 
+::selection {
+  background-color: rgb(31, 71, 32); 
+  color: #39ff14; 
+}
+
+
 a {
   color: whitesmoke;
   font-weight: lighter;
@@ -203,6 +209,7 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  user-select: none;
 }
 
 img.self-portrait {
