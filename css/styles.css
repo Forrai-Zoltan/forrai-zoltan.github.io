@@ -1,6 +1,7 @@
 
-
-/* Desktop Styling */
+html {
+  font-size: 18px;
+}
 
 body {
   background-color: black;
@@ -37,7 +38,6 @@ header {
   padding-bottom: 2px;
   background: linear-gradient(to right, #161616, transparent);
   border-radius: 5px;
-  border-top-left-radius: 50px;
 }
 
 .seeker a {
@@ -87,7 +87,7 @@ header {
   padding: 2px;
   font-size: 40px;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 /* Menu background and other */
@@ -96,7 +96,7 @@ header {
   margin: 0px;
   margin-top: 5px;
   background: linear-gradient(to right, rgb(40, 40, 40), rgba(25, 25, 25, 0.6));
-  border-radius: 5px 50px 50px 50px;
+  border-radius: 10px 50px 50px 10px;
   padding-left: 0px;
   display: flex;
 }
@@ -181,6 +181,7 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
 .main-container {
   display: flex;
   gap: 20px;
+  margin: 5px;
 }
 
 .text-container {
@@ -191,6 +192,7 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   background: 
     radial-gradient(ellipse at top, #1e1e1ead, transparent);
   box-shadow: 5px 20px 50px 0px rgba(60, 60, 60, 0.4);
+  font-size: larger;
 }
 
 .image-links-container {
