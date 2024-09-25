@@ -207,7 +207,6 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   flex: 1 1 200px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 20px;
   user-select: none;
 }
@@ -322,3 +321,45 @@ q {
 
 
 /* Media queries, mobile views */
+
+@media (max-width: 600px) {
+
+body {
+  padding: 0;
+}
+
+header {
+  position: unset;
+}
+
+.title-background {
+  margin-bottom: 10px;
+}
+
+.logo-title {
+  text-wrap: wrap;
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+.seeker {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.main-container {
+  gap: 10px;
+  width: 100%;
+}
+
+.text-container {
+  padding: 20px;
+  font-size: medium;
+}
+
+
+
+}
