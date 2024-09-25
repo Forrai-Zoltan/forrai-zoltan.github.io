@@ -302,14 +302,8 @@ p {
 
 blockquote {
   margin: 0 10% 0 10%;
-  
-
 }
 
-
-details {
-  user-select: none;
-}
 
 
 /* Media queries, mobile views */
