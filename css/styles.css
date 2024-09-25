@@ -300,10 +300,23 @@ p {
   overflow-wrap: break-word;
 }
 
-blockquote {
+em {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: calc(1em - 2px);
+}
+
+strong {
+  font-weight: normal;
+}
+
+q {
   margin: 0 10% 0 10%;
 }
 
+.nowrap {
+  text-wrap: nowrap;
+}
 
 
 /* Media queries, mobile views */
