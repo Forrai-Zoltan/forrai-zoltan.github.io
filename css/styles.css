@@ -347,7 +347,8 @@ header {
 }
 
 .menu {
-  display: none;
+  display: unset;
+
 }
 
 .main-container {
@@ -370,18 +371,32 @@ header {
 }
 
 img.self-portrait {
-  width: 200px;
+  width: 180px;
   height: auto; 
   flex: 1;
 }
 
 .link-container {
+  padding: 5px;
   flex: 2; 
-  min-width: 0; /* Prevent overflow due to flex items */
-  display: flex;
-  flex-direction: column; /* Stack links vertically */
+  min-width: 0;
 }
 
+span.link-title {
+  display: none;
+}
+
+ul.links {
+  padding-left: 0px;
+}
+
+.links li a {
+  padding: 15px 5px 15px 5px;
+}
+
+.copy {
+  text-wrap: wrap;
+}
 
 }
 
