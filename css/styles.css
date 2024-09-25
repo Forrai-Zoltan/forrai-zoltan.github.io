@@ -348,7 +348,14 @@ header {
 
 .menu {
   display: unset;
+}
 
+ul.menu > li > a {
+  margin: 25px 0 25px 0;
+}
+
+ul li ul.dropdown { 
+  
 }
 
 .main-container {
