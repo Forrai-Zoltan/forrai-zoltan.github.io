@@ -60,11 +60,12 @@ header {
   width: 30px; 
   margin-right: 10px;
   border-radius: 10px;
+
 }
 
 .logo-title {
   padding: 2px;
-  font-size: 40px;
+  font-size: clamp(20px, 5vw, 40px);
   text-decoration: none;
   letter-spacing: 3px;
 }
