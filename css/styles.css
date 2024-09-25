@@ -322,7 +322,7 @@ q {
 
 /* Media queries, mobile views */
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
 
 body {
   padding: 0;
@@ -352,7 +352,6 @@ header {
 
 .main-container {
   gap: 10px;
-  width: 100%;
 }
 
 .text-container {
@@ -360,6 +359,31 @@ header {
   font-size: medium;
 }
 
+.image-links-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start; 
+  gap: 10px; 
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+img.self-portrait {
+  width: 200px;
+  height: auto; 
+  flex: 1;
+}
+
+.link-container {
+  flex: 2; 
+  min-width: 0; /* Prevent overflow due to flex items */
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+}
 
 
 }
+
+
+
