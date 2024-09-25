@@ -1,6 +1,5 @@
 
 html {
-  font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -50,22 +49,19 @@ header {
 
 .logo-link {
   display: flex;
-  align-items: baseline;
-  margin-left: 15px;
-  margin-top: 5px;
+  align-items: center;
 }
 
 .favicon {
+  margin: 10px 5px 10px 15px;
   height: 30px;
   width: 30px; 
-  margin-right: 10px;
   border-radius: 10px;
-
 }
 
 .logo-title {
   padding: 2px;
-  font-size: clamp(20px, 4vw, 40px);
+  font-size: clamp(20px, 4.5vw, 40px);
   text-decoration: none;
   letter-spacing: 3px;
   text-wrap: nowrap;
@@ -120,14 +116,14 @@ nav ul li {
 /* Menu Names */
 ul.menu > li > a {
   display: block;
-  font-size: 25px;
+  font-size: 1.5rem;
   padding: 5px 50px 5px 20px;
 }
 
 /* menu items */
 ul.dropdown li a {
   display: block;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 5px 50px 5px 20px;
 }
 
@@ -193,6 +189,7 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   display: flex;
   gap: 20px;
   margin: 5px;
+  min-width: 50px;
 }
 
 .text-container {
@@ -234,9 +231,10 @@ img.self-portrait {
 
 span.link-title {
   margin: 10px 0px 0px 10px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   line-height: 1.5;
+  text-wrap: nowrap;
 }
 
 .links {
@@ -269,6 +267,7 @@ span.link-title {
   padding-top: 10px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  text-wrap: nowrap;
 }
 
 .link-favicon-circle {
@@ -304,8 +303,8 @@ p {
 
 em {
   font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-  font-size: calc(1em - 2px);
+  font-style: oblique;
+  font-size: 1rem;
 }
 
 strong {
