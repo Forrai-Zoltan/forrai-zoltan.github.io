@@ -339,24 +339,30 @@ header {
 .logo-title {
   text-wrap: wrap;
   font-size: 1.5rem;
-  text-align: end;
+;
 }
 
 .seeker {
   display: none;
 }
 
+/* menu */
+
 .menu {
   display: unset;
+  margin: 0 0 10px 0;
 }
 
 ul.menu > li > a {
-  margin: 25px 0 25px 0;
+  margin: 10px 0px 0px 0;
 }
 
 ul li ul.dropdown { 
-  
+  margin: 0;
+  position: relative;
 }
+
+/* other */
 
 .main-container {
   gap: 10px;
