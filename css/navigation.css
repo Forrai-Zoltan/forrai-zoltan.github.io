@@ -1,28 +1,4 @@
 
-html {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-body {
-  background-color: black;
-  color: whitesmoke;
-  padding-top: 140px;
-  height: 100%;
-}
-
-::selection {
-  background-color: rgb(31, 71, 32); 
-  color: #39ff14; 
-}
-
-
-a {
-  color: whitesmoke;
-  font-weight: lighter;
-  text-decoration: none;
-}
-
-
 header * {
   user-select: none;
 }
@@ -98,7 +74,6 @@ header {
 .seeker i:first-child {
   padding-left: 22px;
 }
-
 
 
 /* Menu background and other */
@@ -179,7 +154,8 @@ ul.dropdown li a:hover {
   background-image: linear-gradient(to right, #210735, transparent);
 }
 
-ul.dropdown li:last-child a /* last item */{
+/* last item */
+ul.dropdown li:last-child a {
   border-bottom-left-radius: 30px ;
 }
 
@@ -187,84 +163,44 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   display: block;
 }
 
-/* Main Body */
-
-/* Text */
-
-h1 {
-  margin-top: 0px;
-}
-
-p {
-  line-height: 1.75;
-  text-align: justify;
-  hyphens: auto; 
-  overflow-wrap: break-word;
-}
-
-em {
-  font-family: 'Times New Roman', Times, serif;
-  font-style: oblique;
-  font-size: 1rem;
-}
-
-strong {
-  font-weight: normal;
-}
-
-q {
-  margin: 0 10% 0 10%;
-}
-
-.nowrap {
-  text-wrap: nowrap;
-}
-
-
-/* Media queries, mobile views */
 
 @media (max-width: 660px) {
 
-body {
-  padding: 0;
-}
-
-header {
-  position: unset;
-}
-
-.title-background {
-  margin-bottom: 10px;
-}
-
-.logo-title {
-  text-wrap: wrap;
-  font-size: 1.5rem;
-;
-}
-
-.seeker {
-  display: none;
-}
-
-/* menu */
-
-.menu {
-  display: unset;
-  margin: 0 0 10px 0;
-}
-
-ul.menu > li > a {
-  margin: 10px 0px 0px 0;
-}
-
-ul li ul.dropdown { 
-  margin: 0;
-  position: relative;
-}
-
-
-}
-
-
-
+  body {
+    padding: 0;
+  }
+  
+  header {
+    position: unset;
+  }
+  
+  .title-background {
+    margin-bottom: 10px;
+  }
+  
+  .logo-title {
+    text-wrap: wrap;
+    font-size: 1.5rem;
+  ;
+  }
+  
+  .seeker {
+    display: none;
+  }
+  
+  /* menu */
+  
+  .menu {
+    display: unset;
+    margin: 0 0 10px 0;
+  }
+  
+  ul.menu > li > a {
+    margin: 10px 0px 0px 0;
+  }
+  
+  ul li ul.dropdown { 
+    margin: 0;
+    position: relative;
+  }
+  
