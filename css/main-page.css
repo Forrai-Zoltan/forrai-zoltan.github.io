@@ -89,14 +89,6 @@ span.link-title {
 
 @media (max-width: 660px) {
 
-  .main-container {
-    gap: 10px;
-  }
-  
-  .text-container {
-    padding: 20px;
-    font-size: medium;
-  }
   
   .image-links-container {
     display: flex;
