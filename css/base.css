@@ -29,7 +29,7 @@ a {
 }
 
 .text-container a {
-  color: royalblue;
+  color: royalblue; /* ultramarine is too dark */
 }
 
 .text-container a:hover {
