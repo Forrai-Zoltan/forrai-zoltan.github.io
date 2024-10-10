@@ -14,6 +14,16 @@ body {
   color: #39ff14; 
 }
 
+
+
+
+* {
+  scrollbar-width: thin;                          /* Thin scrollbar */
+  scrollbar-color: #56118b transparent;  /* Green thumb, light cyan track */
+}
+
+
+
 a {
   color: whitesmoke;
   font-weight: lighter;
