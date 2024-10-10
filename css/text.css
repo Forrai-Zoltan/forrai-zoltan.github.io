@@ -10,7 +10,8 @@
 }
 
 .text-container:has(.long-text){
-  background: none
+  background: 
+    radial-gradient(ellipse at top, rgba(20, 20, 20), transparent);
 }
 
 .long-text {
@@ -35,12 +36,11 @@ p {
   text-align: justify;
   hyphens: auto; 
   overflow-wrap: break-word;
+  margin: 15px 0 15px 0;
 }  
 
-
-
 .long-text p {
-  max-width: 60ch;
+  max-width: 80ch;
 }  
 
 i, em {
@@ -61,4 +61,7 @@ q {
   text-wrap: nowrap;
 }  
 
-
+.footnotes {
+  margin-top: 60px;
+  border-top: 1px solid rgba(60, 60, 60);
+}
