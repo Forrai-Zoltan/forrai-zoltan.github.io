@@ -1,6 +1,8 @@
 
 h1 {
   margin-top: 0px;
+  text-align: left;
+
 }
 
 h2 {
@@ -14,6 +16,16 @@ p {
   text-align: justify;
   hyphens: auto; 
   overflow-wrap: break-word;
+}
+
+.text-container:has(.long-text) {
+  display: flex;
+  align-items: center;     
+  flex-direction: column;
+}
+
+.long-text p {
+  width: 80ch;
 }
 
 i, em {
@@ -44,3 +56,5 @@ q {
     radial-gradient(ellipse at top, #1e1e1ead, transparent);
   font-size: larger;
 }
+
+
