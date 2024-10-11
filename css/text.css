@@ -14,6 +14,10 @@
     radial-gradient(ellipse at top, rgba(20, 20, 20), transparent, rgba(33, 7, 53, 0.7));
 }
 
+summary {
+  cursor: pointer;
+}
+
 .long-text {
   display: flex;
   align-items: center;     

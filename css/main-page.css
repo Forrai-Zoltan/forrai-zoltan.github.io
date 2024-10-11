@@ -9,14 +9,25 @@
   user-select: none;
 }
 
+.image-container {
+  perspective: 1000px;
+}
+
+
 img.self-portrait {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
   user-select: none;
   border: 0.5px solid rgba(255, 255, 255, 0.5);
-
+  transition: 0.5s;
 }
+
+img.self-portrait:hover {
+  transform: rotateY(-5deg);
+}
+
+/* LINKS */
 
 .link-container {
   padding: 15px;
