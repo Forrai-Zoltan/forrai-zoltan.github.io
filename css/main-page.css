@@ -33,8 +33,8 @@ img.self-portrait:hover {
   border-radius: 20px;
   border: 0.5px solid var(--glass-border-green);
   background: 
-  radial-gradient(ellipse at top, var(--green-medium), transparent);
-  box-shadow: 0px 20px 50px 5px var(--green-medium);
+  radial-gradient(ellipse at top, var(--green-dark), transparent);
+  box-shadow: 0px 20px 50px 5px rgba(var(--green-dark-rgb), 0.5);
 }
 
 span.link-title {
@@ -60,17 +60,17 @@ span.link-title {
 }
 
 .links li:hover, .links li:hover a  {
-  color: #39ff14;
+  color: var(--green-light);
 }
 
 .links li:hover .link-favicon-circle, .links li:hover .link-favicon-square {
-  background-color: #39ff14;
-  border: 1px solid #39ff14;;
+  background-color: var(--green-light);
+  border: 1px solid var(--green-light);
 }
 
 .copy {
   display: block; 
-  border-top: 1px solid rgb(70, 107, 72);
+  border-top: 1px solid var(--green-medium);
   width: 100%; 
   padding-top: 10px;
   text-align: center;
