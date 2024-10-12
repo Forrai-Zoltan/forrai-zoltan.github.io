@@ -41,6 +41,11 @@ header {
   text-decoration: none;
   letter-spacing: 3px;
   text-wrap: nowrap;
+  color: whitesmoke;
+}
+
+.title-background:hover .logo-title {
+  color: white;
 }
 
 /* seeker */
