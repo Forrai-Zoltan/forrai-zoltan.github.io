@@ -1,5 +1,19 @@
 :root {
-  
+  /* COLOR */
+  --purple-dark: ;
+  --purple-medium: #330f4e;
+  --purple-light: #56118b;
+
+  --green-light: #39ff14;
+  --green-medium: #1f4720;
+
+  --text-color: whitesmoke;
+  --sub-title-color: #b3b3b3;
+  --link-color: royalblue;
+  --highlight-blue: #0077ff;
+
+  --glass-border: #ffffff80;
+  --glass-border-green: #c8ffd980;
 }
 
 html {
@@ -8,20 +22,20 @@ html {
 
 body {
   background-color: black;
-  color: whitesmoke;
+  color: var(--text-color);
   padding-top: 140px;
   height: 100%;
 }
 
 ::selection {
-  background-color: rgb(31, 71, 32); 
-  color: #39ff14; 
+  background-color: var(--green-medium); 
+  color: var(--green-light); 
 }
 
 
 * {
   scrollbar-width: thin;                          /* Thin scrollbar */
-  scrollbar-color: #56118b transparent;  /* Green thumb, light cyan track */
+  scrollbar-color: var(--purple-light) transparent;  /* Green thumb, light cyan track */
 }
 
 a {

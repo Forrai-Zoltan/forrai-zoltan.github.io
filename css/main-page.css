@@ -13,13 +13,12 @@
   perspective: 1000px;
 }
 
-
 img.self-portrait {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
   user-select: none;
-  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  border: 0.5px solid var(--glass-border);
   transition: 0.5s;
 }
 
@@ -32,10 +31,10 @@ img.self-portrait:hover {
 .link-container {
   padding: 15px;
   border-radius: 20px;
-  border: 0.5px solid rgba(200, 255, 217, 0.5);
+  border: 0.5px solid var(--glass-border-green);
   background: 
-  radial-gradient(ellipse at top, rgb(31, 71, 32), transparent);
-  box-shadow: 0px 20px 50px 5px rgba(31, 71, 32, 0.4);
+  radial-gradient(ellipse at top, var(--green-medium), transparent);
+  box-shadow: 0px 20px 50px 5px var(--green-medium);
 }
 
 span.link-title {

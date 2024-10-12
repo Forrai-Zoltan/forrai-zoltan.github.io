@@ -21,6 +21,7 @@ header {
   margin-top: 5px;
   padding: 5px;
   background-image: linear-gradient(to right, #210735, transparent);
+  transition: 0.5s;
 }
 
 .logo-link {
@@ -41,11 +42,11 @@ header {
   text-decoration: none;
   letter-spacing: 3px;
   text-wrap: nowrap;
-  color: whitesmoke;
+  color: white;
 }
 
-.title-background:hover .logo-title {
-  color: white;
+.title-background:hover  {
+  background-image: linear-gradient(to right, #330f4e, #210735, transparent);
 }
 
 /* seeker */
