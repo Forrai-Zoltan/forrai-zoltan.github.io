@@ -1,6 +1,7 @@
 :root {
   /* COLOR */
-  --purple-dark: ;
+  --purple-dark: #210735;
+  --purple-dark-rgb: 33, 7, 53;
   --purple-medium: #330f4e;
   --purple-light: #56118b;
 
@@ -9,7 +10,7 @@
   --green-medium: #466b48;
   --green-light: #39ff14;
 
-  --text-color: whitesmoke;
+  --text-color: white;
   --sub-title-color: #b3b3b3;
   --link-color: royalblue;
   --highlight-blue: #0077ff;
@@ -30,10 +31,9 @@ body {
 }
 
 ::selection {
-  background-color: var(--green-medium); 
+  background-color: var(--green-dark); 
   color: var(--green-light); 
 }
-
 
 * {
   scrollbar-width: thin;                          /* Thin scrollbar */
@@ -46,7 +46,6 @@ a {
   text-decoration: none;
 }
 
-
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +54,7 @@ a {
 }
 
 .text-container a {
-  color: royalblue; /* ultramarine is too dark */
+  color: var(--link-color); /* ultramarine is too dark */
 }
 
 .text-container a:hover {

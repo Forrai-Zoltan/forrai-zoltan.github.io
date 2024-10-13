@@ -2,16 +2,20 @@
   flex: 2 1 400px;
   padding: 40px 40px 20px 40px;
   border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 5px 20px 50px 5px rgba(33, 7, 53, 0.7);
+  border: 0.5px solid var(--glass-border);
+  box-shadow: 5px 20px 50px 5px rgba(var(--purple-dark-rgb), 0.8);
   background: 
-    radial-gradient(ellipse at top, rgba(30, 30, 30, 0.7), transparent, rgba(33, 7, 53, 0.7));
+    radial-gradient(ellipse at top, rgba(30, 30, 30, 0.7), transparent, rgba(var(--purple-dark-rgb), 0.8));
   font-size: larger;
 }
 
 .text-container:has(.long-text){
   background: 
-    radial-gradient(ellipse at top, rgba(20, 20, 20), transparent, rgba(33, 7, 53, 0.7));
+    radial-gradient(ellipse at top, rgba(20, 20, 20), transparent, rgba(var(--purple-dark-rgb), 0.8));
+}
+
+details {
+  
 }
 
 summary {
@@ -25,14 +29,14 @@ summary {
 }  
 
 h1 {
+  font-size: 3rem;
   margin-top: 0px;
   text-align: start;
 }  
 
 h2 {
-  border-top: 1px solid rgba(60, 60, 60);
+  border-top: 0.5px solid var(--glass-border);
   padding-top: 10px;
-  box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.2);
 }  
 
 p {
