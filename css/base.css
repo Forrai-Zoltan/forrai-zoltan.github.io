@@ -37,8 +37,8 @@ body {
 }
 
 * {
-  scrollbar-width: thin;                          /* Thin scrollbar */
-  scrollbar-color: var(--purple-light) transparent;  /* Green thumb, light cyan track */
+  scrollbar-width: thin;
+  scrollbar-color: var(--purple-light) transparent;  
 }
 
 a {
