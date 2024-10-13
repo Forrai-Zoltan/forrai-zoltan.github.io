@@ -128,7 +128,7 @@ ul li ul.dropdown {
   top: 100%;
   left: 0;
   /* menu items background */
-  background-color: rgba(0, 0, 0, 0.529);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px); 
   border: 0.5px solid var(--glass-border);
   box-shadow: 0 15px 50px 5px black;

@@ -15,11 +15,16 @@
 }
 
 details {
-  
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 5px 10px 1px rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
 }
 
 summary {
   cursor: pointer;
+  user-select: none;
 }
 
 .long-text {

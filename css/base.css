@@ -13,7 +13,8 @@
   --text-color: white;
   --sub-title-color: #b3b3b3;
   --link-color: royalblue;
-  --highlight-blue: #0077ff;
+  --highlight-blue: #0077ff4d;
+  --highlight-blue-rgb: 0, 119, 255;
 
   --glass-border: #ffffff80;
   --glass-border-green: #c8ffd980;
