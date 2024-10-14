@@ -16,8 +16,8 @@ header {
 /* Title */
 
 .title-background {
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin-top: 5px;
   padding: 5px;
   background-image: linear-gradient(to right, var(--purple-dark), transparent);
@@ -52,7 +52,7 @@ header {
   margin-top: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
-  background: linear-gradient(to right, #161616, transparent);
+  background: linear-gradient(to right, rgb(25, 25, 25), transparent);
   border-radius: 5px;
   font-family: 'Times New Roman', Times, serif;
   font-style: oblique;
