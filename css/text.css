@@ -50,6 +50,8 @@ p {
 
 .long-text p {
   max-width: 80ch;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 2;
 }  
 
 i, em {
@@ -81,6 +83,26 @@ footer p {
   padding: 2px;
 }
 
+footer p a {
+  font-size: larger;
+}
+
+.footnotes {
+  padding-left: 20px;
+}
+
+.footnotes li {
+  text-align: left; 
+}
+
+.footnotes p {
+  text-align: left; 
+}
+
+
+
+
+
 .footnote-back {
   scroll-margin-top: 40vh;
 }
@@ -91,8 +113,8 @@ footer p {
 
   @keyframes highlight {
     from { 
-      background-color: var(--link-color); 
-      color: white;
+      background-color: var(--link-color);
+      color: black;
     }
     to { 
       background-color: transparent; 

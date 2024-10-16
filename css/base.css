@@ -55,7 +55,7 @@ a {
 }
 
 .text-container a {
-  color: var(--link-color); /* ultramarine is too dark */
+  color: var(--link-color); 
 }
 
 .text-container a:hover {
