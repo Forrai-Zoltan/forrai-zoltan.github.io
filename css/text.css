@@ -55,7 +55,7 @@ p {
 i, em {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
-  font-size: 1.1rem;
+
 }  
 
 strong {
@@ -86,12 +86,13 @@ footer p {
 }
 
 :target {
-  animation: highlight linear 5s;
+  animation: highlight ease-in-out 3s;
 }
 
   @keyframes highlight {
     from { 
-      background-color: #0077ff4d; 
+      background-color: var(--link-color); 
+      color: white;
     }
     to { 
       background-color: transparent; 
