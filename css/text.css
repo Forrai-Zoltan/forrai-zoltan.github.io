@@ -70,12 +70,30 @@ q {
   text-wrap: nowrap;
 }  
 
-.footnotes {
+footer {
   margin-top: 40px;
   padding-top: 5px;
 }
 
-.footnotes p {
+footer p {
   line-height: 1.2;
   font-size: medium;
+  padding: 2px;
+}
+
+.footnote-back {
+  scroll-margin-top: 40vh;
+}
+
+:target {
+  animation: highlight linear 5s;
+}
+
+  @keyframes highlight {
+    from { 
+      background-color: #0077ff4d; 
+    }
+    to { 
+      background-color: transparent; 
+    }
 }
