@@ -48,16 +48,13 @@ p {
   margin: 15px 0 15px 0;
 }  
 
+i, em {
+  font-family: 'Times-New-Roman', Times, serif;
+}
+
 .long-text p {
   max-width: 80ch;
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 2;
-}  
-
-i, em {
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-
+  
 }  
 
 strong {
@@ -79,12 +76,7 @@ footer {
 
 footer p {
   line-height: 1.2;
-  font-size: medium;
   padding: 2px;
-}
-
-footer p a {
-  font-size: larger;
 }
 
 .footnotes {
@@ -99,10 +91,6 @@ footer p a {
   text-align: left; 
 }
 
-
-
-
-
 .footnote-back {
   scroll-margin-top: 40vh;
 }
@@ -111,12 +99,12 @@ footer p a {
   animation: highlight ease-in-out 3s;
 }
 
-  @keyframes highlight {
-    from { 
-      background-color: var(--link-color);
-      color: black;
-    }
-    to { 
-      background-color: transparent; 
-    }
+@keyframes highlight {
+  from { 
+    background-color: var(--link-color);
+    color: black;
+  }
+  to { 
+    background-color: transparent; 
+  }
 }
