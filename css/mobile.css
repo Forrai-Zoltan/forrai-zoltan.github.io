@@ -4,7 +4,7 @@
     scrollbar-width: none;
   }
 
-  .favicon,
+
   .seeker {
     display: none;
   }
@@ -27,7 +27,7 @@
   
   .hamburger-wrapper { 
     position: absolute; 
-    top: 10px; /* Distance from the top */
+    top: 13px; /* Distance from the top */
     right: 15px; /* Distance from the right */
     z-index: 4; /* Ensures it appears above other elements */
     font-size: 40px;
@@ -55,7 +55,7 @@
   .menu {
     list-style: none;
     padding: 20px;
-    margin-top: 70px;
+    margin-top: 60px;
     font-size: 2.5vh;
   }
 
@@ -92,14 +92,9 @@
   }
 
   .dropdown a {
-    padding: 10px 0px; /* Padding around links */
+    padding: 7px; /* Padding around links */
     display: block;
-
   }
-  
-
-
-
 
   /* When checkbox is checked, show the menu */
   .menu-toggle:checked + .hamburger-menu {
