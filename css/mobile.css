@@ -4,42 +4,51 @@
   .seeker {
     display: none;
   }
-
+  /* Hide the checkbox */
+  .menu-toggle {
+    display: none;
+  }
+  
   .logo-title {
     font-size: 6vw;
     text-wrap: wrap;
     max-width: 75%;
   }
-
-  .hamburger {
-    
+  
+  .hamburger-wrapper { 
+    position: absolute; 
+    top: 10px; /* Distance from the top */
+    right: 15px; /* Distance from the right */
+    z-index: 1; /* Ensures it appears above other elements */
+    font-size: 40px;
   }
-
-
-  /* Hide the checkbox */
-  .menu-toggle {
-    display: none;
-  }
-
   /* Hamburger icon */
   .hamburger {
     cursor: pointer;
     display: block;
     width: 30px;
     height: 25px;
-    position: relative;
-    z-index: 1;
+    z-index: 1; 
   }
 
-  /* Initially hide the menu */
   .hamburger-menu {
     display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    background-color: #333; /* Set a background color to visualize */
+    
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100vh;
   }
+
+  .menu * {
+    list-style-type: none;
+  }
+
+
+  
+
+
+
 
   /* When checkbox is checked, show the menu */
   .menu-toggle:checked + .hamburger-menu {

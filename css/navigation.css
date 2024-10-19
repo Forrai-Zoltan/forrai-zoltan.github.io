@@ -78,6 +78,7 @@ header {
   padding-left: 22px;
 }
 
+@media (min-width: 660px) {
 /* Menu background and other */
 .menu {
   list-style: none;
@@ -169,3 +170,8 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   display: block;
 }
 
+.hamburger-wrapper {
+  display: none
+}
+
+}
