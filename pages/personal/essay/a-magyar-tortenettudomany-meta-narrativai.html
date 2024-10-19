@@ -4,11 +4,14 @@
   <title>A magyar történettudomány meta-narratívái</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- CSS -->
+  <meta name="google-site-verification" content="qMsMaybf_jLdyIb31t6CxwPssSIqUF-psejRK9ORYJc" />
+  <!-- CSS -->
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/navigation.css">
   <link rel="stylesheet" href="/css/text.css">
-<!-- favicon -->
+  <link rel="stylesheet" href="/css/mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -34,42 +37,48 @@
       </div>
     </nav>
 <!-- These are the dropdown menus. -->
-    <nav>
-      <ul class="menu">
-        <li>
-          <a href="#">Personal</a>
-          <ul class="dropdown">
-            <li><a href="/pages/personal/essay/essays.html">Posts &amp; Essays</a></li>
-            <li><a href="/pages/personal/like/like.html">Things I like</a></li>
-            <li><a href="/pages/personal/tool.html">Tools I use</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Writing</a>
-          <ul class="dropdown">
-            <li><a href="/pages/writing/short.html">Short Fiction</a></li>
-            <li><a href="/pages/writing/long.html">Long Form</a></li>
-            <li><a href="/pages/writing/play.html">Plays</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Art</a>
-          <ul class="dropdown">
-            <li><a href="/pages/art/drawing/drawing.html">Drawings</a></li>
-            <li><a href="/pages/art/comic/comic.html">Comics</a></li>
-            <li><a href="/pages/art/film/film.html">Films</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Collections</a>
-          <ul class="dropdown">
-            <li><a href="/pages/collections/tyw.html">Teach Yourself Writing</a></li>
-            <li><a href="/pages/collections/int-con.html">Intentional Consumption</a></li>
-            <li><a href="/pages/collections/rbrc.html">Bradbury Reading Challenge</a></li>
-          </ul>
-        </li>
+    <!-- Hamburger menu for mobile -->
+ <div class="hamburger-wrapper">
+  <label for="hamburger" class="hamburger">🍔</label>
+</div>
+<!-- Dropdown menu -->
+<input id="hamburger" type="checkbox" class="menu-toggle">
+<nav class="hamburger-menu">
+  <ul class="menu">
+    <li>
+      <a href="#">Personal</a>
+      <ul class="dropdown">
+        <li><a href="/pages/personal/essay/essays.html">Posts &amp; Essays</a></li>
+        <li><a href="/pages/personal/like/like.html">Things I like</a></li>
+        <li><a href="/pages/personal/tool.html">Tools I use</a></li>
       </ul>
-    </nav>
+    </li>
+    <li>
+      <a href="#">Writing</a>
+      <ul class="dropdown">
+        <li><a href="/pages/writing/short.html">Short Fiction</a></li>
+        <li><a href="/pages/writing/long.html">Long Form</a></li>
+        <li><a href="/pages/writing/play.html">Plays</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Art</a>
+      <ul class="dropdown">
+        <li><a href="/pages/art/drawing/drawing.html">Drawings</a></li>
+        <li><a href="/pages/art/comic/comic.html">Comics</a></li>
+        <li><a href="/pages/art/film/film.html">Films</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Collections</a>
+      <ul class="dropdown">
+        <li><a href="/pages/collections/tyw.html">Teach Yourself Writing</a></li>
+        <li><a href="/pages/collections/int-con.html">Intentional Consumption</a></li>
+        <li><a href="/pages/collections/rbrc.html">Bradbury Reading Challenge</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </header>
 <!-- 
 Main Body Section 
