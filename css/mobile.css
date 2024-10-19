@@ -1,0 +1,48 @@
+@media (max-width: 660px) {
+  
+  .favicon,
+  .seeker {
+    display: none;
+  }
+
+  .logo-title {
+    font-size: 6vw;
+    text-wrap: wrap;
+    max-width: 75%;
+  }
+
+  .hamburger {
+    
+  }
+
+
+  /* Hide the checkbox */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Initially hide the menu */
+  .hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #333; /* Set a background color to visualize */
+  }
+
+  /* When checkbox is checked, show the menu */
+  .menu-toggle:checked + .hamburger-menu {
+    display: block;
+  }
+}

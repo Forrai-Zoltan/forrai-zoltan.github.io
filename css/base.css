@@ -61,14 +61,3 @@ a {
 .text-container a:hover {
   text-decoration: underline;
 }
-
-@media (max-width: 660px) {
-
-  .main-container {
-    gap: 10px;
-  }
-  
-  .text-container {
-    padding: 20px;
-    font-size: medium;
-  }

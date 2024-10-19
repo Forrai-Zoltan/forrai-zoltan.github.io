@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/css/navigation.css">
   <link rel="stylesheet" href="/css/text.css">
   <link rel="stylesheet" href="/css/main-page.css">
+  <link rel="stylesheet" href="/css/mobile.css">
   <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -35,7 +36,11 @@
       </div>
     </nav>
 <!-- These are the dropdown menus. -->
-    <nav>
+    <!-- Hamburger menu for mobile -->
+    <label for="hamburger" class="hamburger">🍔</label>
+    <input id="hamburger" type="checkbox" class="menu-toggle">
+    <!-- Dropdown menu -->
+    <nav class="hamburger-menu">
       <ul class="menu">
         <li>
           <a href="#">Personal</a>
