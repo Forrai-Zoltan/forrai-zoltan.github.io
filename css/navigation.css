@@ -170,7 +170,8 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   display: block;
 }
 
-.hamburger-wrapper {
+.hamburger-wrapper,
+.menu-toggle {
   display: none
 }
 
