@@ -90,7 +90,8 @@
   }
 
   .dropdown a {
-    padding: 7px; /* Padding around links */
+    padding: 9px; /* Padding around links */
+    font-size: 20px;
     display: block;
   }
 
