@@ -11,6 +11,11 @@
   .menu-toggle {
     display: none;
   }
+
+  .title-background * {
+    z-index: 3;
+    position: relative
+  }
   
   .logo-title {
     font-size: 6vw;
@@ -22,7 +27,7 @@
     position: absolute; 
     top: 10px; /* Distance from the top */
     right: 15px; /* Distance from the right */
-    z-index: 1; /* Ensures it appears above other elements */
+    z-index: 4; /* Ensures it appears above other elements */
     font-size: 40px;
   }
   /* Hamburger icon */
@@ -31,28 +36,35 @@
     display: block;
     width: 30px;
     height: 25px;
-    z-index: 1; 
+    z-index: 4; 
   }
 
   .hamburger-menu {
+    position: fixed;   
     display: none;
     top: 0; 
     left: 0; 
     width: 100%; 
-    height: 100vh;
+    height: 100%;
+    z-index: 1; 
     scrollbar-width: none;
+    background: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(var(--purple-dark-rgb), 0.9));
   }
 
   .menu {
     list-style-type: none;
-    padding: 5px;
+    padding: 20px;
+    margin-top: 70px;
+    background: 
   }
 
   .menu > li {
     font-size: 2.5vh;
   }
 
-  
+  .dropdown {
+   
+  }  
 
   .dropdown a {
     padding: 10px 0px; /* Padding around links */
