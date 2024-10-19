@@ -53,7 +53,7 @@
   }
 
   .menu {
-    list-style-type: none;
+    list-style: none;
     padding: 20px;
     margin-top: 70px;
     font-size: 2.5vh;
@@ -75,9 +75,21 @@
   }
 
   .dropdown {
-    list-style: none;
-    padding-left: 10px;
+    padding-left: 20px;
   }  
+
+  .dropdown li {
+    padding-left: 20px;
+  }
+
+  .dropdown li::marker {
+    content: '\f061';
+    font-size: 1rem;
+    color: var(--link-color);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    
+  }
 
   .dropdown a {
     padding: 10px 0px; /* Padding around links */
