@@ -108,6 +108,19 @@
     gap: 10px;
   }
 
+  .link-container {
+    padding: 10px;
+  }
+
+  .links li a {
+    padding: 5px 0px 10px 0px;
+  }
+
+  .copy {
+    padding-top: 10px;
+
+  }
+
 /* TEXT */
   .text-container {
     margin: 1px;
