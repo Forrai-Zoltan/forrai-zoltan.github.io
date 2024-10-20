@@ -47,8 +47,8 @@ header {
   background-image: linear-gradient(to right, var(--purple-medium), var(--purple-dark), transparent);
 }
 
-/* seeker */
-.seeker {
+/* Breadcrumbs */
+.breadcrumbs {
   margin-top: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -59,22 +59,24 @@ header {
   font-size: 1rem;
 }
 
-.seeker i, .seeker a {
+.breadcrumbs i, .breadcrumbs a {
   color: grey;
   padding: 1;
   margin: 1;
+  vertical-align: baseline;
+  line-height: 1;
 }
 
-.seeker a:hover {
+.breadcrumbs a:hover {
   color: var(--text-color);
 }
 
-.seeker i:not(:last-of-type)::after {
+.breadcrumbs i:not(:last-of-type)::after {
   content: " / ";
   margin: 1px;
 }
 
-.seeker i:first-child {
+.breadcrumbs i:first-child {
   padding-left: 22px;
 }
 

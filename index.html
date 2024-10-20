@@ -21,8 +21,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons//favicon-16x16.png">
 </head>
 <body>
+  <!-- 
+  Navigation Bar 
+  -->
   <header>
-    <!-- Navigation Bar -->
     <div class="title-background">
       <a href="/">
         <div class="logo-link">
@@ -31,67 +33,70 @@
         </div>
       </a>
     </div>
-    <!-- The "seek-bar" -->
-    <nav>
-      <div class="seeker">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
         <i><a href="/">Home</a></i>
-      </div>
     </nav>
-<!-- These are the dropdown menus. -->
+    <!-- Navigation Menu -->
     <!-- Hamburger menu for mobile -->
     <div class="hamburger-wrapper">
       <label for="hamburger" class="hamburger">🍔</label>
     </div>
-    <!-- Dropdown menu -->
-    <input id="hamburger" type="checkbox" class="menu-toggle">
+    <input id="hamburger" type="checkbox" class="menu-toggle"> <!-- checkbox -->
     <nav class="hamburger-menu">
+      <!-- Dropdown Menu -->
       <ul class="menu">
         <li>
-          <a href="#">Personal</a>
+          <a href="personal">Personal</a>
           <ul class="dropdown">
-            <li><a href="/pages/personal/essay/essays.html">Posts &amp; Essays</a></li>
-            <li><a href="/pages/personal/like/like.html">Things I like</a></li>
-            <li><a href="/pages/personal/tool.html">Tools I use</a></li>
+            <li><a href="/personal/posts_&_essays">Posts &amp; Essays</a></li>
+            <li><a href="/personal/things_i_like">Things I like</a></li>
+            <li><a href="/personal/tools_i_use">Tools I use</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Writing</a>
+          <a href="writing">Writing</a>
           <ul class="dropdown">
-            <li><a href="/pages/writing/short.html">Short Fiction</a></li>
-            <li><a href="/pages/writing/long.html">Long Form</a></li>
-            <li><a href="/pages/writing/play.html">Plays</a></li>
+            <li><a href="/writing/short_fiction">Short Fiction</a></li>
+            <li><a href="/writing/long_form">Long Form</a></li>
+            <li><a href="/writing/plays">Plays</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Art</a>
+          <a href="art">Art</a>
           <ul class="dropdown">
-            <li><a href="/pages/art/drawing/drawing.html">Drawings</a></li>
-            <li><a href="/pages/art/comic/comic.html">Comics</a></li>
-            <li><a href="/pages/art/film/film.html">Films</a></li>
+            <li><a href="/art/drawings">Drawings</a></li>
+            <li><a href="/art/comics">Comics</a></li>
+            <li><a href="/art/films">Films</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Collections</a>
+          <a href="collections">Collections</a>
           <ul class="dropdown">
-            <li><a href="/pages/collections/tyw.html">Teach Yourself Writing</a></li>
-            <li><a href="/pages/collections/int-con.html">Intentional Consumption</a></li>
-            <li><a href="/pages/collections/rbrc.html">Bradbury Reading Challenge</a></li>
+            <li><a href="/collections/teach_yourself_writing">Teach Yourself Writing</a></li>
+            <li><a href="/collections/intentional_consumption">Intentional Consumption</a></li>
+            <li><a href="/collections/bradbury_reading_challenge">Bradbury Reading Challenge</a></li>
           </ul>
         </li>
       </ul>
     </nav>
   </header>
-<!-- 
-Main Body Section 
--->
+  <!-- 
+  ------------------------------------------------------------
+                      Main Body Section 
+  ------------------------------------------------------------ 
+  -->
   <div class="main-container">
     <div class="text-container">
-<!-- TEXT -->
+    <!-- TEXT -->
       <h1>Forrai Zoltán</h1>
-        <p>Hi there! My name is Forrai Zoltán. I'm a scholar living in Budapest, Hungary.</p>
-        <p>I’m passionate about many different things, from the humanities to technology. I like to think I have what you might call <em>'can't sit on his ass syndrome',</em> — it's terminal. Not that I'm hyperactive, but I constantly require something to tinker with, to write, draw, or just think about. I often ping pong between a couple of projects, going from one interest to another every few weeks. This keeps my life interesting.</p>
-        <p><q>Not all those who wander are lost.</q> <span class="nowrap">— J.R.R. Tolkien</span></p>
-        <p>This website was partially built in an attempt to break away from social media, AI slop and web 2.0/3.0 in general. I handwrite the code myself using only HTML and CSS. The reason I don't use any JavaScript is not just because I think it's bloat (it is), but also because I don't know how to actually code. So, do <strong>Not</strong> check out my GitHub.</p>
+      <p>Hi there! My name is Forrai Zoltán. I'm a scholar living in Budapest, Hungary.</p>
+      <p>I’m passionate about many different things, from the humanities to technology. I like to think I have what you might call <em>'can't sit on his ass syndrome',</em> — it's terminal. Not that I'm hyperactive, but I constantly require something to tinker with, to write, draw, or just think about. I often ping pong between a couple of projects, going from one interest to another every few weeks. This keeps my life interesting.</p>
+      <p>
+        <q>Not all those who wander are lost. </q>
+        <span class="nowrap">— J.R.R. Tolkien</span>
+      </p>
+      <p>This website was partially built in an attempt to break away from social media, AI slop and web 2.0/3.0 in general. I handwrite the code myself using only HTML and CSS. The reason I don't use any JavaScript is not just because I think it's bloat (it is), but also because I don't know how to actually code. So, do <strong>Not</strong> check out my GitHub.</p>
       <h2>Education</h2>
       <details>
         <summary>Undivided Teacher Training Program: Teacher of English language and culture, History teacher and civics teacher</summary>
