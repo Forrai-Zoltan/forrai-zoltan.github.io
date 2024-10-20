@@ -1,8 +1,9 @@
 .card-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
-  padding-top: 1rem;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  margin-top: 40px;
 }
 
 .card {
@@ -12,8 +13,6 @@
   transition: transform 0.3s, box-shadow 0.3s;
   backdrop-filter: blur(10px);
   background: black;
-  
-
 }
 
 
