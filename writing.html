@@ -6,98 +6,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="qMsMaybf_jLdyIb31t6CxwPssSIqUF-psejRK9ORYJc" />
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/navigation.css">
-  <link rel="stylesheet" href="/css/text.css">
-  <link rel="stylesheet" href="/css/mobile.css">
+  <link rel="stylesheet" href="/_css/base.css">
+  <link rel="stylesheet" href="/_css/navigation.css">
+  <link rel="stylesheet" href="/_css/text.css">
+  <link rel="stylesheet" href="/_css/mobile.css">
+  <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/_assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/_assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/_assets/favicons//favicon-16x16.png">
 </head>
 <body>
+  <!-- 
+  Navigation Bar 
+  -->
   <header>
-    <!-- Navigation Bar -->
     <div class="title-background">
       <a href="/">
         <div class="logo-link">
-          <img class="favicon" src="/images/favicon.ico" alt="">
+          <img class="favicon" title="socrates flipping the bird" src="/_assets/favicons/android-chrome-512x512.png">
           <div class="logo-title">Part-time Writer. Full-time Wizard.</div>
         </div>
       </a>
     </div>
-    <!-- The "seek-bar" -->
+    <!-- Breadcrumbs -->
     <nav>
-      <div class="seeker">
+      <div class="breadcrumbs">
         <i><a href="/">Home</a></i>
-        <i>Place</i>
-        <i><a href="/pages/personal/essay/essays.html">Place</a></i>
-        <i><a href="">Title</a></i>
+        <i><a href="/writing">Writing</a></i>
       </div>
     </nav>
-<!-- These are the dropdown menus. -->
+    <!-- Navigation Menu -->
     <!-- Hamburger menu for mobile -->
- <div class="hamburger-wrapper">
-  <label for="hamburger" class="hamburger">🍔</label>
-</div>
-<!-- Dropdown menu -->
-<input id="hamburger" type="checkbox" class="menu-toggle">
-<nav class="hamburger-menu">
-  <ul class="menu">
-    <li>
-      <a href="#">Personal</a>
-      <ul class="dropdown">
-        <li><a href="/pages/personal/essay/essays.html">Posts &amp; Essays</a></li>
-        <li><a href="/pages/personal/like/like.html">Things I like</a></li>
-        <li><a href="/pages/personal/tool.html">Tools I use</a></li>
+    <div class="hamburger-wrapper">
+      <label for="hamburger" class="hamburger">🍔</label>
+    </div>
+    <input id="hamburger" type="checkbox" class="menu-toggle">
+    <nav class="hamburger-menu">
+      <!-- Dropdown menu -->
+      <ul class="menu">
+        <li>
+          <a href="/personal">Personal</a>
+          <ul class="dropdown">
+            <li><a href="/personal/posts_&_essays">Posts &amp; Essays</a></li>
+            <li><a href="/personal/things_i_like">Things I like</a></li>
+            <li><a href="/personal/tools_i_use">Tools I use</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/writing">Writing</a>
+          <ul class="dropdown">
+            <li><a href="/writing/short_fiction">Short Fiction</a></li>
+            <li><a href="/writing/long_form">Long Form</a></li>
+            <li><a href="/writing/plays">Plays</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/art">Art</a>
+          <ul class="dropdown">
+            <li><a href="/art/drawings">Drawings</a></li>
+            <li><a href="/art/comics">Comics</a></li>
+            <li><a href="/art/films">Films</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/collections">Collections</a>
+          <ul class="dropdown">
+            <li><a href="/collections/teach_yourself_writing">Teach Yourself Writing</a></li>
+            <li><a href="/collections/intentional_consumption">Intentional Consumption</a></li>
+            <li><a href="/collections/bradbury_reading_challenge">Bradbury Reading Challenge</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li>
-      <a href="#">Writing</a>
-      <ul class="dropdown">
-        <li><a href="/pages/writing/short.html">Short Fiction</a></li>
-        <li><a href="/pages/writing/long.html">Long Form</a></li>
-        <li><a href="/pages/writing/play.html">Plays</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#">Art</a>
-      <ul class="dropdown">
-        <li><a href="/pages/art/drawing/drawing.html">Drawings</a></li>
-        <li><a href="/pages/art/comic/comic.html">Comics</a></li>
-        <li><a href="/pages/art/film/film.html">Films</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#">Collections</a>
-      <ul class="dropdown">
-        <li><a href="/pages/collections/tyw.html">Teach Yourself Writing</a></li>
-        <li><a href="/pages/collections/int-con.html">Intentional Consumption</a></li>
-        <li><a href="/pages/collections/rbrc.html">Bradbury Reading Challenge</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    </nav>
   </header>
-<!-- 
-Main Body Section 
--->
+  <!-- 
+  ------------------------------------------------------------
+                      Main Body Section 
+  ------------------------------------------------------------ 
+  -->
   <div class="main-container">
     <div class="text-container">
-      <div class="long-text" lang="hu">
-      </div>
-      <footer>
-        <h2>Notes</h2>
-        <div class="footnotes">
-          <ol>
-            
-          </ol>
-        </div>
-        <!-- copy -->
-        <p>Written: 2024 Oct 13</p>
-        <p>© 2024 Forrai Zoltán</p>
-      </footer>
+      
     </div>
   </div>
 </body>
