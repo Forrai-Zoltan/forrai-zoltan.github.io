@@ -12,6 +12,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
   backdrop-filter: blur(10px);
   background: black;
+
 }
 
 .card-grid a:hover {
