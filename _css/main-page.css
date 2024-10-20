@@ -5,7 +5,7 @@
   flex: 1 1 200px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   user-select: none;
 }
 
@@ -43,7 +43,7 @@ img.self-portrait:hover {
 }
 
 .link-title {
-  margin: 10px 0px 0px 10px;
+  margin: 3px 0px 0px 10px;
 }
 
 .links {
