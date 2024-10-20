@@ -67,9 +67,14 @@ header {
   line-height: 1;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs i:last-child a {
+  color: var(--sub-title-color); 
+}
+
+.breadcrumbs i a:hover {
   color: var(--text-color);
 }
+
 
 .breadcrumbs i:not(:last-of-type)::after {
   content: " / ";
@@ -79,6 +84,7 @@ header {
 .breadcrumbs i:first-child {
   padding-left: 22px;
 }
+
 
 @media (min-width: 660px) {
 /* Menu background and other */
