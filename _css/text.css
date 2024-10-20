@@ -59,7 +59,7 @@ h6 {
 
 p {
   line-height: 1.75;
-  text-align: justify;
+  text-align: left;
   hyphens: auto; 
   overflow-wrap: break-word;
   margin: 15px 0 15px 0;
