@@ -35,19 +35,18 @@ img.self-portrait:hover {
   background: 
   radial-gradient(ellipse at top, var(--green-dark), transparent);
   box-shadow: 0px 20px 50px 5px rgba(var(--green-dark-rgb), 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-span.link-title {
+.link-title {
   margin: 10px 0px 0px 10px;
-  font-size: 1.25rem;
-  font-weight: bold;
-  line-height: 1.5;
-  text-wrap: nowrap;
 }
 
 .links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   list-style: none;
   padding-left: 10px;
   margin: 2px;

@@ -40,6 +40,10 @@ h2 {
   padding-top: 10px;
 }  
 
+h3 {
+  font-size: 1.5em;
+}
+
 p {
   line-height: 1.75;
   text-align: justify;
