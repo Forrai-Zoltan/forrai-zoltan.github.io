@@ -20,7 +20,7 @@ header {
   border-bottom-left-radius: 10px;
   margin-top: 5px;
   padding: 5px;
-  background-image: linear-gradient(to right, var(--purple-dark), transparent);
+  background-image: linear-gradient(to right, var(--purple-dark), var(--purple-dark), transparent);
 }
 
 .logo-link {
@@ -44,7 +44,7 @@ header {
 }
 
 .title-background:hover  {
-  background-image: linear-gradient(to right, var(--purple-medium), var(--purple-dark), transparent);
+  background-image: linear-gradient(to right, var(--purple-medium), var(--purple-medium), var(--purple-dark), transparent);
 }
 
 /* Breadcrumbs */
