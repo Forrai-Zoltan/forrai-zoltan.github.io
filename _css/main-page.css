@@ -18,12 +18,12 @@
   user-select: none;
   border: 0.5px solid var(--glass-border);
   transition: 0.5s;
-  box-shadow: 470px 0px 20px 15px transparent;
+  box-shadow: 470px -5px 50px 15px transparent;
 }
 
 img.self-portrait:hover {
   transform: rotateY(-5deg);
-  box-shadow: 300px 5px 40px 15px black;
+  box-shadow: 290px 5px 30px 15px rgb(0, 0, 0);
 }
 
 /* LINKS */
