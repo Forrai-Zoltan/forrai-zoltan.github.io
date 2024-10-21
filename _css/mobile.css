@@ -1,11 +1,6 @@
-
-@media (min-width: 1500px) {
-  
-}
-
 @media (max-width: 660px) {
   body {
-    padding-top: 105px;
+    padding-top: 120px;
   }
 
   .breadcrums {
@@ -155,5 +150,18 @@ footer {
 .card {
   padding: 15px;
 }
+
+form, 
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
 
 }

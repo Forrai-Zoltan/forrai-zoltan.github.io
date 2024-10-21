@@ -27,7 +27,7 @@ legend {
 }
 
 /* Label styling */
-label {
+label:not(.hamburger) {
   display: block;
   font-size: 1.2em;
   margin-bottom: 10px;
@@ -91,26 +91,4 @@ button:hover {
   color: var(--green-light);
   transform: scale(1.05);
   box-shadow: 0px 20px 50px 5px rgba(var(--green-dark-rgb), 0.5);
-}
-
-/* Responsive for smaller screens */
-@media (max-width: 600px) {
-  form {
-    padding: 20px;
-  }
-
-  legend {
-    font-size: 1.5em;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    font-size: 1em;
-    padding: 10px;
-  }
-
-  button {
-    font-size: 1.1em;
-  }
 }

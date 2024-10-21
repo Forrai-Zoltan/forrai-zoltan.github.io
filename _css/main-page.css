@@ -1,6 +1,3 @@
-
-/* Text-Container is in text.css */
-
 .image-links-container {
   flex: 1 2 200px;
   max-width: 470px;
@@ -123,3 +120,4 @@ button:hover {
     var(--purple-medium));
   transform: scale(1.05);
 }
+
