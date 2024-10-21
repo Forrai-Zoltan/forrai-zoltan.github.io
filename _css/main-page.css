@@ -48,21 +48,22 @@ img.self-portrait:hover {
 
 .links {
   list-style: none;
-  padding-left: 10px;
-  margin: 2px;
+  padding: 0 10px 0 10px;
+  margin: 20px 0;
 }
 
 .links li a {
   display: block;  
   text-wrap: nowrap;
-  padding: 15px 0px 15px 0px;
+  padding: 0px 0px 25px 0px;
+  font-size: 18px;
 }
 
 .links li:hover, .links li:hover a  {
   color: var(--green-light);
 }
 
-.links li:hover .link-favicon-circle, .links li:hover .link-favicon-square {
+.links li:hover a > .link-favicon-circle, .links li:hover a > .link-favicon-square {
   background-color: var(--green-light);
   border: 1px solid var(--green-light);
 }
@@ -78,8 +79,8 @@ img.self-portrait:hover {
 }
 
 .link-favicon-circle {
-  width: calc(1rem - 3px);
-  height: calc(1rem - 3px);
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 1px solid white;
   background-color: whitesmoke;
@@ -87,10 +88,34 @@ img.self-portrait:hover {
 }
 
 .link-favicon-square {
-  width: calc(1rem - 4px);
-  height: calc(1rem - 4px);
+  width: 15px;
+  height: 15px;
   border-radius: 10%;
   border: 1px solid white;
   background-color: whitesmoke;
   margin: 0px 5px 0px 0px;
+}
+
+button {
+  font-size: 18px;
+  width: 100%;
+  padding: 15px;
+  background-image: linear-gradient(to right, 
+    var(--purple-dark), 
+    var(--purple-light), 
+    var(--purple-light), 
+    var(--purple-medium));
+  border-radius: 20px;
+  border: 0.5px solid var(--glass-border);
+  box-shadow: 5px 10px 20px 5px rgba(var(--purple-dark-rgb), 0.8);
+  color: white;
+  cursor: pointer;
+  transition:  0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 20px 40px 10px rgba(var(--purple-dark-rgb), 0.8);
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 50px;
+  transform: scale(1.05);
 }

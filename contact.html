@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Template</title>
+  <title>Contact</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="qMsMaybf_jLdyIb31t6CxwPssSIqUF-psejRK9ORYJc" />
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/_css/text.css">
   <link rel="stylesheet" href="/_css/mobile.css">
   <link rel="stylesheet" href="/_css/cards.css">
-  <link rel="stylesheet" href="/_css/">
+  <link rel="stylesheet" href="/_css/form.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
   <!-- Favicons -->
@@ -36,7 +36,7 @@
     <nav>
       <div class="breadcrumbs">
         <i><a href="/">Home</a></i>
-        <i><a href="/">Template</a></i>
+        <i><a href="/contact">Contact</a></i>
       </div>
     </nav>
     <!-- Navigation Menu -->
@@ -90,31 +90,29 @@
   -->
   <div class="main-container">
     <div class="text-container">
-      
-      
-      
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="11773a3d-954a-4d75-9553-a862e3481eda">
-        <fieldset>
-          <legend>Write me a message</legend>
-          <div>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="Name:" placeholder="William Shakespeare" autocomplete="on" required autofocus>
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="Email:" placeholder="shakespeare@globe.uk" autocomplete="on" required>
-          </div>
-          <div>
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" cols="30" rows="10" required>A rose by any other name...</textarea>
-          </div>
-        </fieldset>
-    
-        <!-- Honeypot Spam Protection -->
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        <button type="submit">Submit Form</button>
-      </form>
+      <div class="form-container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="11773a3d-954a-4d75-9553-a862e3481eda">
+          <fieldset>
+            <legend>Write me a message</legend>
+            <div>
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="Name:" placeholder="William Shakespeare" autocomplete="on" required autofocus>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="Email:" placeholder="shakespeare@globe.uk" autocomplete="on" required>
+            </div>
+            <div>
+              <label for="message">Your Message:</label>
+              <textarea id="message" name="message" cols="30" rows="10" required placeholder="A rose by any other name…"></textarea>
+            </div>
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </div>
 </body>
