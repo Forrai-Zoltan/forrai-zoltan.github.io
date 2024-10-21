@@ -21,7 +21,7 @@
   box-shadow: 470px -5px 50px 15px transparent;
 }
 
-img.self-portrait:hover {
+.self-portrait:hover {
   transform: rotateY(-5deg);
   box-shadow: 290px 5px 30px 15px rgb(0, 0, 0);
 }
