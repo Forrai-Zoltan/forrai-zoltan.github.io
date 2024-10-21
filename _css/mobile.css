@@ -1,12 +1,7 @@
-@media (min-width:1250px) {}
 
-.text-container {
-  flex: 3 1 400px;
+@media (min-width: 1500px) {
+  
 }
-.image-links-container {
-  flex: 2 1 200px;
-}
-
 
 @media (max-width: 660px) {
   body {
