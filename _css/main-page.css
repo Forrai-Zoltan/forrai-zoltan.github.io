@@ -2,7 +2,8 @@
 /* Text-Container is in text.css */
 
 .image-links-container {
-  flex: 1 1 200px;
+  flex: 1 2 200px;
+  max-width: 470px;
   display: flex;
   flex-direction: column;
   gap: 10px;
