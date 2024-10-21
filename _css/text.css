@@ -39,6 +39,27 @@ h1 {
   text-align: start;
 }  
 
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Xanh+Mono:ital@0;1&display=swap');
+
+.main-h1 {
+  width: 13ch;
+  animation: typing 2s steps(13);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-family: "Xanh Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+
+
 h2 {
   font-size: clamp(24px, 4vw, 36px);
   border-top: 0.5px solid var(--glass-border);
