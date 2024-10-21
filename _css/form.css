@@ -71,7 +71,6 @@ button {
   display: block;
   width: 100%;
   padding: 15px;
-  background-color: var(--purple-dark);
   color: white;
   font-size: 1.3em;
   border: none;
@@ -79,11 +78,16 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
   border: 0.5px solid var(--glass-border);
+  background-image: linear-gradient(to right, 
+    var(--purple-dark), 
+    var(--purple-light), 
+    var(--purple-light), 
+    var(--purple-medium));
   box-shadow: 0px 10px 20px 5px rgba(var(--purple-dark-rgb), 0.8);
 }
 
 button:hover {
-  background-color: var(--green-dark);
+  background-image: linear-gradient(to right, var(--green-dark), var(--green-medium), var(--green-dark));
   color: var(--green-light);
   transform: scale(1.05);
   box-shadow: 0px 20px 50px 5px rgba(var(--green-dark-rgb), 0.5);

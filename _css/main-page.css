@@ -33,7 +33,7 @@ img.self-portrait:hover {
   border-radius: 20px;
   border: 0.5px solid var(--glass-border-green);
   background: 
-  radial-gradient(ellipse at top, var(--green-dark), transparent);
+  radial-gradient(ellipse at top, rgba(var(--green-dark-rgb), 1), transparent);
   box-shadow: 0px 20px 50px 5px rgba(var(--green-dark-rgb), 0.5);
   height: 100%;
   display: flex;
