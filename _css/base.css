@@ -33,7 +33,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--green-dark); 
+  background-color: var(--green-medium); 
   color: var(--green-light); 
 }
 
