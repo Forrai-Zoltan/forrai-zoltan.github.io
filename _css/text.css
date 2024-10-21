@@ -1,5 +1,5 @@
 .text-container {
-  flex: 2 1 400px;
+  flex: 2 1 600px;
   padding: 40px 40px 20px 40px;
   border-radius: 20px;
   border: 0.5px solid var(--glass-border);

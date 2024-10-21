@@ -1,6 +1,16 @@
+@media (min-width:1250px) {}
+
+.text-container {
+  flex: 3 1 400px;
+}
+.image-links-container {
+  flex: 2 1 200px;
+}
+
+
 @media (max-width: 660px) {
   body {
-    padding-top: 120px;
+    padding-top: 105px;
   }
 
   .breadcrums {
@@ -54,53 +64,35 @@
     list-style: none;
     padding: 25px;
     margin-top: 60px;
-    font-size: 2.5vh;
   }
-
+  
   .menu > li {
-    margin-bottom: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
     border-radius: 10px;
     background: 
-      radial-gradient(ellipse at top, 
-        rgb(15, 15, 15), 
-        rgba(0, 0, 0));
-    padding: 2px;
+    radial-gradient(ellipse at top, 
+    rgb(15, 15, 15), 
+    rgba(0, 0, 0));
+    list-style: none;
   }
-
+  
   .menu > li > a {
-    display: none;
+    padding: 20px; /* Padding around links */
+    font-size: 40px;
+    display: block;
   }
 
   .dropdown {
-    padding-left: 20px;
+    display: none;
   }  
-
-  .dropdown li {
-    padding-left: 20px;
-  }
-
-  .dropdown li::marker {
-    content: '\f061';
-    font-size: 1rem;
-    color: var(--link-color);
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 700;
-    
-  }
-
-  .dropdown a {
-    padding: 9px; /* Padding around links */
-    font-size: 20px;
-    display: block;
-  }
 
   /* When checkbox is checked, show the menu */
   .menu-toggle:checked + .hamburger-menu {
     display: block;
-
   }
-
+  
+  /*  */
   .main-container {
     gap: 10px;
   }
