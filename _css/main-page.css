@@ -11,17 +11,19 @@
   perspective: 1000px;
 }
 
-img.self-portrait {
+.self-portrait {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
   user-select: none;
   border: 0.5px solid var(--glass-border);
   transition: 0.5s;
+  box-shadow: 470px 0px 20px 15px transparent;
 }
 
 img.self-portrait:hover {
   transform: rotateY(-5deg);
+  box-shadow: 300px 5px 40px 15px black;
 }
 
 /* LINKS */
