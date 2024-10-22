@@ -42,11 +42,11 @@ h1 {
 
 .main-h1 {
   width: 15ch;
-  animation: typing 3s steps(15) backwards;
-
+  animation: typing 3s steps(15) ;
+  font-weight:normal;
   white-space: nowrap;
   overflow: hidden;
-  font-family: 'Courier Prime';
+  font-family: 'Courier';
 }
 
 @keyframes typing {
