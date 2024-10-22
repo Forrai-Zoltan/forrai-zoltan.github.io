@@ -105,6 +105,19 @@ q {
   margin: 0 10% 0 10%;
 }  
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.text-container a {
+  color: var(--link-color); 
+}
+
+.text-container a:hover {
+  text-decoration: underline;
+}
+
 .nowrap {
   text-wrap: nowrap;
 }  

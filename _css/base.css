@@ -42,11 +42,6 @@ body {
   scrollbar-color: var(--purple-light) transparent;  
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -55,10 +50,3 @@ a {
   min-height: calc(100vh - 168px);
 }
 
-.text-container a {
-  color: var(--link-color); 
-}
-
-.text-container a:hover {
-  text-decoration: underline;
-}
