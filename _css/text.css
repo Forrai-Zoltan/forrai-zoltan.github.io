@@ -110,7 +110,7 @@ a {
   text-decoration: none;
 }
 
-.text-container a {
+.text-container a:not(.hiden-link) {
   color: var(--link-color); 
 }
 
