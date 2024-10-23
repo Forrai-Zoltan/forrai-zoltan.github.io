@@ -1,5 +1,5 @@
 .text-container {
-  flex: 1 1 500px;
+  flex: 2;
   padding: 40px 40px 20px 40px;
   border-radius: 20px;
   border: 0.5px solid var(--glass-border);
@@ -7,6 +7,7 @@
   background: 
     radial-gradient(ellipse at top, rgba(30, 30, 30, 0.7), transparent, rgba(var(--purple-dark-rgb), 0.9));
   font-size: larger;
+  min-width: 50vw;
 }
 
 .text-container:has(.long-text){
@@ -78,7 +79,7 @@ h6 {
 }
 
 p {
-  font-size: calc(1vw + 7px); /* Scale font size dynamically */
+  font-size: 20px;
   line-height: 1.75;
   text-align: left;
   hyphens: auto; 

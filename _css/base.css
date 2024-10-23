@@ -44,9 +44,9 @@ body {
 
 .main-container {
   display: flex;
+  height: calc(100vh - 168px);
   flex-wrap: wrap;
   gap: 15px;
   margin: 5px 5px 15px 5px;
-  height: calc(100vh - 168px);
 }
 

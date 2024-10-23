@@ -1,6 +1,5 @@
 .image-links-container {
   flex: 1;
-  max-width: 470px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -13,8 +12,7 @@
 
 .self-portrait {
   border-radius: 20px;
-  max-width: 100%;
-  height: auto;
+  width: 100%; 
   user-select: none;
   border: 0.5px solid var(--glass-border);
   transition: 0.5s;
@@ -29,21 +27,22 @@
 /* LINKS */
 
 .link-container {
+  flex: 1;
   padding: 15px;
   border-radius: 20px;
+  width: auto;
   display: flex;
   border: 0.5px solid var(--glass-border-green);
   background: 
   radial-gradient(ellipse at top, rgba(var(--green-dark-rgb), 1), transparent);
   box-shadow: 0px 20px 50px 5px rgba(var(--green-dark-rgb), 0.5);
-  height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 .link-title {
-  margin: 3px 0px 0px 10px;
+  margin: 5px 5px 5px 10px;
+  text-wrap: nowrap;
 }
 
 .links {
@@ -52,10 +51,14 @@
   margin: 20px 0;
 }
 
+.links * {
+  font-size: clamp(5%, 16px, 2vh);
+}
+
 .links li a {
   display: block;  
   text-wrap: nowrap;
-  padding: 0px 0px 25px 0px;
+  padding: 0px 0px 5px 0px;
   font-size: 18px;
 }
 
@@ -69,6 +72,7 @@
 }
 
 .copy {
+  font-size: clamp(1.5vh, 12px, 2vh);
   display: block; 
   border-top: 1px solid var(--green-medium);
   width: 100%; 
@@ -100,6 +104,7 @@ button {
   font-size: 18px;
   width: 100%;
   padding: 15px;
+  margin-bottom: 20px;
   background-image: linear-gradient(to right, 
     var(--purple-dark),
     var(--purple-light),
@@ -122,4 +127,3 @@ button:hover {
     var(--purple-medium));
   transform: scale(1.05);
 }
-
