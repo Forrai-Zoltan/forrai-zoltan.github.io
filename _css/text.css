@@ -55,8 +55,6 @@ h1 {
   }
 }
     
-
-
 h2 {
   font-size: clamp(24px, 4vw, 36px);
   border-top: 0.5px solid var(--glass-border);
@@ -80,7 +78,7 @@ h6 {
 }
 
 p {
-  font-size: 19px;
+  font-size: calc(1vw + 7px); /* Scale font size dynamically */
   line-height: 1.75;
   text-align: left;
   hyphens: auto; 
@@ -90,7 +88,6 @@ p {
 
 i, em {
   font-family: 'Times-New-Roman', Times, serif;
-  font-size: 18px;
 }
 
 .long-text p {
