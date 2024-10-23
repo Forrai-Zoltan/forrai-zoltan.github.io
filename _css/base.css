@@ -29,7 +29,6 @@ body {
   background-color: black;
   color: var(--text-color);
   padding-top: 140px;
-  height: 100%;
 }
 
 ::selection {
