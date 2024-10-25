@@ -1,9 +1,9 @@
 @media (max-width: 660px) {
   body {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
-  .breadcrums {
+  .breadcrums * {
     display: none;
   }
 
