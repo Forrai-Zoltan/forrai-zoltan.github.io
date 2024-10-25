@@ -1,6 +1,6 @@
 @media (max-width: 660px) {
   body {
-    padding-top: 70px;
+    padding-top: 100px;
   }
 
   .breadcrumbs {
@@ -18,7 +18,7 @@
   }
   
   .logo-title {
-    font-size: 6vw;
+    font-size: 30px;
     text-wrap: wrap;
     max-width: 75%;
   }
@@ -90,6 +90,11 @@
 
   .image-links-container {
     gap: 10px;
+    max-width: unset;
+    flex-direction:column;
+  }
+  .image-container {
+    max-width: unset;
   }
 
   .link-container {

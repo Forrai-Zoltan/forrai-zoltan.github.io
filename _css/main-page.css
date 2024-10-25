@@ -176,11 +176,14 @@ button:hover {
     }
     .image-container {
       max-width: 450px;
-      box-shadow: none;
+    }
+    .self-portrait {
+      box-shadow: none !important;
     }
     .self-portrait:hover {
-      box-shadow: transparent;
+      box-shadow: none !important;
     }
+
   }
 
 
