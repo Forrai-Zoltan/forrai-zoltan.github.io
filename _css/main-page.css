@@ -127,12 +127,12 @@ button:hover {
   transform: scale(1.05);
 }
 
-@media (max-height: 945px) {
-  * {
-    border: 2px solid red;
+@media (max-height: 990px) {
+  
+  .links {
+    margin: 0px 0;
   }
-
   .link-title {
-    
+    display: none;
   }
 }
