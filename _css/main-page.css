@@ -126,3 +126,13 @@ button:hover {
     var(--purple-medium));
   transform: scale(1.05);
 }
+
+@media (max-height: 945px) {
+  * {
+    border: 2px solid red;
+  }
+
+  .link-title {
+    
+  }
+}
