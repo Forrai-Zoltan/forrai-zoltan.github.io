@@ -1,9 +1,10 @@
 .image-links-container {
-  flex: 1 2px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
   user-select: none;
+  max-width: 490px;
 }
 
 .image-container {
@@ -105,9 +106,9 @@ button {
   padding: 15px;
   margin-bottom: 20px;
   background-image: linear-gradient(to right, 
-    var(--purple-dark),
-    var(--purple-light),
-    var(--purple-medium));
+  var(--purple-dark),
+  var(--purple-light),
+  var(--purple-medium));
   border-radius: 20px;
   border: 0.5px solid var(--glass-border);
   box-shadow: 5px 10px 20px 5px rgba(var(--purple-dark-rgb), 0.8);
@@ -120,11 +121,30 @@ button:hover {
   box-shadow: 0px 20px 40px 10px rgba(var(--purple-dark-rgb), 0.8);
   border: 0.5px solid rgba(255, 255, 255, 0.4);
   background-image: linear-gradient(to right, 
-    var(--purple-dark), 
-    var(--purple-light),
-    var(--purple-light), 
-    var(--purple-medium));
+  var(--purple-dark), 
+  var(--purple-light),
+  var(--purple-light), 
+  var(--purple-medium));
   transform: scale(1.05);
+}
+
+@media (max-width: 1050px) {
+  .main-container {
+    flex-direction: column;
+    flex-wrap:nowrap;
+  }
+  .image-links-container {
+    max-width: unset;
+    flex-direction:row;
+  }
+  .image-container {
+    max-width: 450px;
+    box-shadow: none;
+  }
+  .self-portrait:hover {
+    box-shadow: transparent;
+  }
+  
 }
 
 @media (max-height: 990px) {
@@ -138,4 +158,30 @@ button:hover {
   .main-h1 {
     margin-bottom: 30px;
   }
+  
+  @media (max-width: 1250px) {
+    .link-title {
+      display: unset;
+    }
+    .links {
+      margin: 10px 0;
+    }
+    .main-container {
+      flex-direction: column;
+      flex-wrap:nowrap;
+    }
+    .image-links-container {
+      max-width: unset;
+      flex-direction:row;
+    }
+    .image-container {
+      max-width: 450px;
+      box-shadow: none;
+    }
+    .self-portrait:hover {
+      box-shadow: transparent;
+    }
+  }
+
+
 }
