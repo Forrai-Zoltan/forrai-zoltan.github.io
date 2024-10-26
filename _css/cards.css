@@ -11,7 +11,8 @@
   border: 0.5px solid var(--glass-border);
   padding: 20px 30px 20px 30px;
   transition: transform 0.3s, box-shadow 0.3s;
-  background: black;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .card-grid a:hover {
