@@ -141,8 +141,11 @@ button:hover {
     max-width: 450px;
     box-shadow: none;
   }
+  .self-portrait {
+    box-shadow: 470px -5px 50px 15px transparent !important;
+  }
   .self-portrait:hover {
-    box-shadow: transparent;
+    box-shadow: 470px -5px 50px 15px transparent !important;
   }
   
 }
@@ -178,10 +181,10 @@ button:hover {
       max-width: 450px;
     }
     .self-portrait {
-      box-shadow: none !important;
+      box-shadow: 470px -5px 50px 15px transparent !important;
     }
     .self-portrait:hover {
-      box-shadow: none !important;
+      box-shadow: 470px -5px 50px 15px transparent !important;
     }
 
   }
