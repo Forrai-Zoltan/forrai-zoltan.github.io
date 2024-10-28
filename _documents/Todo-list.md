@@ -1,7 +1,0 @@
-- [x] Responsive layout for the main page
-- [ ] Figure out the padding issue on long pages
-- [ ] Start making the pages
-- Ideas
-	- [ ] Blogroll
-	- [ ] Sitemap
-	- [ ] Photos
