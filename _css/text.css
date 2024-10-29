@@ -84,7 +84,7 @@ p {
   text-align: left;
   hyphens: auto; 
   overflow-wrap: break-word;
-  margin: 15px 0 15px 0;
+  margin: 0px 0 15px 0;
 } 
 
 .long-text p {
