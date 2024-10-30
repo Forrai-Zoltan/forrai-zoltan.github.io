@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 10px;
   user-select: none;
-  max-width: 490px;
+  max-width: 450px;
 }
 
 .image-container {

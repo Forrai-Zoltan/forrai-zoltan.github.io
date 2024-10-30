@@ -3,7 +3,7 @@
   padding: 40px 40px 20px 40px;
   border-radius: 20px;
   border: 0.5px solid var(--glass-border);
-  box-shadow: -5px 10px 20px 5px rgba(var(--purple-dark-rgb), 0.9);
+  box-shadow: 0px 10px 20px 5px rgba(var(--purple-dark-rgb), 0.9);
   background: 
     radial-gradient(ellipse at top, rgba(30, 30, 30, 0.7), transparent, rgba(var(--purple-dark-rgb), 0.9));
   font-size: larger;
