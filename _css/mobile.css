@@ -164,7 +164,9 @@ fieldset {
 }
 
 
-
+.two-column {
+  column-count: 1;
+}
 
 
 
