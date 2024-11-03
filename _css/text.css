@@ -170,3 +170,19 @@ footer p {
   column-count: 2; 
   column-gap: 2em;
 }
+
+iframe {
+  border:none; 
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 10px; 
+}
+
+.frame-container {
+  position: relative;
+  overflow: hidden; 
+}
+
+.frame-container iframe {
+  width: 100%; 
+  height: 100%; 
+}
