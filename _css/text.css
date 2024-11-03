@@ -8,6 +8,8 @@
     radial-gradient(ellipse at top, rgba(30, 30, 30, 0.7), transparent, rgba(var(--purple-dark-rgb), 0.9));
   font-size: larger;
   min-width: 50vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-container:has(.long-text){
@@ -177,8 +179,6 @@ iframe {
   border-radius: 10px; 
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  height: 500px;
 
 }
