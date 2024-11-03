@@ -1,3 +1,4 @@
-[submodule "06_Coding_Projects/forrai-zoltan.github.io/writers-wiki"]
-	path = 06_Coding_Projects/forrai-zoltan.github.io/writers-wiki
+
+[submodule "writers-wiki"]
+	path = writers-wiki
 	url = https://github.com/Forrai-Zoltan/writers-wiki
