@@ -2,3 +2,7 @@
 [submodule "writers-wiki"]
 	path = writers-wiki
 	url = https://github.com/Forrai-Zoltan/writers-wiki
+
+[submodule "intentional-consumption"]
+	path = intentional-consumption
+	url = https://github.com/Forrai-Zoltan/intentional-consumption
