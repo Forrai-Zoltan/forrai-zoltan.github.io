@@ -67,11 +67,6 @@
   color: var(--green-light);
 }
 
-.links li:hover a > .link-favicon-circle, .links li:hover a > .link-favicon-square {
-  background-color: var(--green-light);
-  border: 1px solid var(--green-light);
-}
-
 .copy {
   display: block; 
   border-top: 1px solid var(--green-medium);
@@ -82,23 +77,6 @@
   text-wrap: nowrap;
 }
 
-.link-favicon-circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background-color: whitesmoke;
-  margin: 0px 5px 0px 0px;
-}
-
-.link-favicon-square {
-  width: 15px;
-  height: 15px;
-  border-radius: 10%;
-  border: 1px solid white;
-  background-color: whitesmoke;
-  margin: 0px 5px 0px 0px;
-}
 
 button {
   font-size: 18px;
