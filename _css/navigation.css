@@ -200,7 +200,7 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   font-size: 30px;
   transform: rotate(-45deg);
   opacity: 0;
-  animation: fadeIn 1s ease forwards, moveCursor 2s ease-in-out 5s infinite;
+  /* animation: fadeIn 1s ease forwards, moveCursor 2s ease-in-out 5s infinite; */
   animation-delay: 5s;
 }
 
