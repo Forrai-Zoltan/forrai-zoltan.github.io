@@ -182,16 +182,22 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
 .menu-toggle {
   display: none
 }
-
 }
 
 /* Cursor */
 
 .cursor {
+  display: none;
+  opacity: 0;
+}
+
+@media (min-width: 1000px) {
+
+.cursor {
   position: absolute;
   top: 240px;
   left: 580px;
-  font-size: 40px;5
+  font-size: 30px;
   transform: rotate(-45deg);
   opacity: 0;
   animation: fadeIn 1s ease forwards, moveCursor 2s ease-in-out 5s infinite;
@@ -221,3 +227,4 @@ ul li:hover ul.dropdown, ul.dropdown:hover {
   }
 }
 
+}
