@@ -93,11 +93,25 @@
   <div class="main-container">
     <iframe src="/intentional-consumption/index.html"></iframe>
     <!-- Fullscreen icon -->
-     <div class="expand"><i class="fa-solid fa-maximize"></i></div>
+     <a href="/intentional-consumption/index" title="Expand">
+       <div class="expand"><i class="fa-solid fa-maximize"></i></div>
+     </a>
      <style>
       .expand {
         position: absolute;
-        bottom: 0;
+        bottom: 15px;
+        left: 23px;
+        background-color: midnightblue;
+        border-radius: 6px;
+        border-top-left-radius: 15px;
+
+        i {
+          font-size: 20px;
+          padding: 10px 10px 10px 10px;
+        }
+      }
+      .expand:hover {
+        background-color: green;
       }
      </style>
   </div>
