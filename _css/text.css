@@ -39,9 +39,13 @@ details ul {
 h1 {
   font-size: clamp(32px, 5vw, 48px);
   margin-top: 0px;
+  margin-bottom: 15px;
   text-align: start;
-}  
 
+  a {
+    text-decoration: underline;
+  }
+}
 
 .main-h1 {
   width: 15ch;
@@ -62,6 +66,7 @@ h2 {
   font-size: clamp(24px, 4vw, 36px);
   border-top: 0.5px solid var(--glass-border);
   padding-top: 10px;
+  margin-top: 15px;
 }  
 
 h3 {

@@ -22,7 +22,7 @@
 
 .self-portrait:hover {
   transform: rotateY(-5deg);
-  box-shadow: 290px 5px 30px 15px rgb(0, 0, 0);
+  box-shadow: 225px 5px 30px 15px rgb(0, 0, 0);
 }
 
 /* LINKS */
