@@ -21,7 +21,7 @@
 }
 
 html {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   scroll-behavior: smooth;
 }
 
@@ -32,13 +32,13 @@ body {
 }
 
 ::selection {
-  background-color: var(--green-medium); 
-  color: var(--green-light); 
+  background-color: var(--green-medium);
+  color: var(--green-light);
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--purple-light) transparent;  
+  scrollbar-color: var(--purple-light) transparent;
 }
 
 .main-container {
