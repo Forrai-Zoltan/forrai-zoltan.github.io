@@ -29,11 +29,29 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  p {
+    padding: 10px;
+  }
+
+  label {
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 170px;
+    left: 35px;
+  }
+  #reading-background {
+    cursor: pointer;
+    position: absolute;
+    top: 172px;
+    left: 258px;
+  }
 }
 
-.long-text p {
-  background-color: rgb(30, 30, 30;
-  padding: 10px;
+#reading-background:checked ~ p {
+  background-color: #333333;
+  border-radius: 10px;
 }
 
 details {
