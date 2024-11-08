@@ -37,15 +37,16 @@
   label {
     user-select: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 170px;
     left: 35px;
   }
   #reading-background {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 172px;
     left: 258px;
+    accent-color: green;
   }
 }
 
