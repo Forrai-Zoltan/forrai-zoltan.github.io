@@ -25,6 +25,17 @@
   );
 }
 
+.long-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.long-text p {
+  background-color: rgb(30, 30, 30;
+  padding: 10px;
+}
+
 details {
   line-height: 1.75;
 }
@@ -36,12 +47,6 @@ summary {
 
 details ul {
   margin: 5px;
-}
-
-.long-text {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 h1 {
