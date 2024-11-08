@@ -47,7 +47,7 @@ details ul {
 h1 {
   font-size: clamp(32px, 5vw, 48px);
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   text-align: start;
 
   a {
@@ -75,6 +75,7 @@ h2 {
   border-top: 0.5px solid var(--glass-border);
   padding-top: 10px;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 h3 {

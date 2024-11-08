@@ -13,7 +13,7 @@
 
 .self-portrait {
   border-radius: 20px;
-  width: 100%; 
+  width: 100%;
   user-select: none;
   border: 0.5px solid var(--glass-border);
   transition: 0.5s;
@@ -34,16 +34,14 @@
   width: auto;
   display: flex;
   border: 0.5px solid var(--glass-border-green);
-  background: 
-  radial-gradient(ellipse at top, rgba(var(--green-dark-rgb), 1), transparent);
+  background: radial-gradient(
+    ellipse at top,
+    rgba(var(--green-dark-rgb), 1),
+    transparent
+  );
   box-shadow: 0px 20px 50px 5px rgba(var(--green-dark-rgb), 0.5);
   flex-direction: column;
   justify-content: space-between;
-}
-
-.link-title {
-  margin: 5px 5px 5px 10px;
-  text-wrap: nowrap;
 }
 
 .links {
@@ -57,63 +55,66 @@
 }
 
 .links li a {
-  display: block;  
+  display: block;
   text-wrap: nowrap;
   padding: 0px 0px 5px 0px;
   font-size: 18px;
 }
 
-.links li:hover, .links li:hover a  {
+.links li:hover,
+.links li:hover a {
   color: var(--green-light);
 }
 
 .copy {
-  display: block; 
+  display: block;
   border-top: 1px solid var(--green-medium);
-  width: 100%; 
+  width: 100%;
   padding-top: 10px;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-wrap: nowrap;
 }
 
-
 button {
-  font-size: 18px;
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
-  background-image: linear-gradient(to right, 
-  var(--purple-dark),
-  var(--purple-light),
-  var(--purple-medium));
+  background-image: linear-gradient(
+    to right,
+    var(--purple-dark),
+    var(--purple-light),
+    var(--purple-medium)
+  );
   border-radius: 20px;
   border: 0.5px solid var(--glass-border);
   box-shadow: 5px 10px 20px 5px rgba(var(--purple-dark-rgb), 0.8);
   color: white;
   cursor: pointer;
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 button:hover {
   box-shadow: 0px 20px 40px 10px rgba(var(--purple-dark-rgb), 0.8);
   border: 0.5px solid rgba(255, 255, 255, 0.4);
-  background-image: linear-gradient(to right, 
-  var(--purple-dark), 
-  var(--purple-light),
-  var(--purple-light), 
-  var(--purple-medium));
+  background-image: linear-gradient(
+    to right,
+    var(--purple-dark),
+    var(--purple-light),
+    var(--purple-light),
+    var(--purple-medium)
+  );
   transform: scale(1.05);
 }
 
 @media (max-width: 1050px) {
   .main-container {
     flex-direction: column;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
   }
   .image-links-container {
     max-width: unset;
-    flex-direction:row;
+    flex-direction: row;
   }
   .image-container {
     max-width: 450px;
@@ -125,11 +126,9 @@ button:hover {
   .self-portrait:hover {
     box-shadow: 470px -5px 50px 15px transparent !important;
   }
-  
 }
 
 @media (max-height: 990px) {
-  
   .links {
     margin: 0px 0;
   }
@@ -139,7 +138,7 @@ button:hover {
   .main-h1 {
     margin-bottom: 30px;
   }
-  
+
   @media (max-width: 1250px) {
     .link-title {
       display: unset;
@@ -149,11 +148,11 @@ button:hover {
     }
     .main-container {
       flex-direction: column;
-      flex-wrap:nowrap;
+      flex-wrap: nowrap;
     }
     .image-links-container {
       max-width: unset;
-      flex-direction:row;
+      flex-direction: row;
     }
     .image-container {
       max-width: 450px;
@@ -164,8 +163,5 @@ button:hover {
     .self-portrait:hover {
       box-shadow: 470px -5px 50px 15px transparent !important;
     }
-
   }
-
-
 }
