@@ -8,7 +8,6 @@
     ellipse at top,
     transparent,
     transparent,
-    transparent,
     rgba(var(--purple-dark-rgb), 0.9)
   );
   font-size: larger;
@@ -20,7 +19,6 @@
 .text-container:has(.long-text) {
   background: radial-gradient(
     ellipse at top,
-    transparent,
     transparent,
     transparent,
     rgba(var(--purple-dark-rgb), 0.8)
@@ -47,11 +45,13 @@
   label {
     user-select: none;
     cursor: pointer;
+    padding-right: 20px;
     position: fixed;
     top: 170px;
     left: 35px;
   }
   #reading-background {
+    z-index: 2;
     cursor: pointer;
     position: fixed;
     top: 171px;
