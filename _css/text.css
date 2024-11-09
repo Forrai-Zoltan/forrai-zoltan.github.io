@@ -54,8 +54,9 @@
   #reading-background {
     cursor: pointer;
     position: fixed;
-    top: 172px;
-    left: 258px;
+    top: 171px;
+    left: 60px;
+    transform: scale(1.2);
     accent-color: green;
   }
 }
@@ -68,20 +69,17 @@ p {
   overflow-wrap: break-word;
 }
 
-#reading-background:checked ~ p {
+.text-background {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+#reading-background:checked ~ .text-background {
   background-color: rgba(32, 32, 32, 0.4);
-  border-left: 1px solid var(--glass-border);
-  border-right: 1px solid var(--glass-border);
+  border: 1px solid var(--glass-border);
   backdrop-filter: blur(21px);
-}
-#reading-background:checked ~ p:first-of-type {
-  border-radius: 10px 10px 0px 0px;
-  border-top: 1px solid var(--glass-border);
+  border-radius: 10px;
   padding-top: 20px;
-}
-#reading-background:checked ~ p:last-of-type {
-  border-radius: 0px 0px 10px 10px;
-  border-bottom: 1px solid var(--glass-border);
   padding-bottom: 20px;
 }
 
