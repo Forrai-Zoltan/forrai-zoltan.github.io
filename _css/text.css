@@ -63,7 +63,7 @@
 }
 p {
   font-size: 20px;
-
+  margin: 5px;
   line-height: 1.75;
   text-align: left;
   hyphens: auto;
@@ -227,8 +227,12 @@ footer p {
 
 .two-column {
   column-count: 2;
-  column-gap: 2em;
+  column-gap: 50px;
   padding-top: 10px;
+
+  p {
+    margin-bottom: 25px;
+  }
 
   p:first-of-type {
     margin-top: 0;
