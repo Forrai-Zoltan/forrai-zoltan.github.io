@@ -34,6 +34,7 @@
     padding: 10px 20px;
     text-indent: 15px;
     border: 1px solid transparent;
+    margin: 0;
   }
   p:first-of-type {
     padding-top: 20px;
@@ -62,7 +63,7 @@
 }
 p {
   font-size: 20px;
-  margin: 0;
+
   line-height: 1.75;
   text-align: left;
   hyphens: auto;
@@ -227,6 +228,11 @@ footer p {
 .two-column {
   column-count: 2;
   column-gap: 2em;
+  padding-top: 10px;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
 }
 
 iframe {
