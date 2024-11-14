@@ -76,7 +76,7 @@ p {
 }
 
 #reading-background:checked ~ .text-background {
-  background-color: rgba(32, 32, 32, 0.4);
+  background-color: rgba(73, 73, 73, 0.4);
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(21px);
   border-radius: 10px;
@@ -246,4 +246,8 @@ iframe {
   border-radius: 20px;
   border: 0.5px solid var(--glass-border);
   box-shadow: 0px 10px 20px 5px rgba(var(--purple-dark-rgb), 0.9);
+}
+
+.center {
+  text-align: center;
 }
