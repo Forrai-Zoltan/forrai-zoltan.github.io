@@ -61,6 +61,10 @@
   font-size: 18px;
 }
 
+.links li a i {
+  margin-right: 8px;
+}
+
 .links li:hover,
 .links li:hover a {
   color: var(--green-light);
