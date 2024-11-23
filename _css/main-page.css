@@ -57,13 +57,16 @@
 .links li a {
   display: block;
   text-wrap: nowrap;
-  padding: 0px 0px 5px 0px;
+  padding: 5px 0px 5px 0px;
   font-size: 18px;
 }
 
 .links li:hover,
 .links li:hover a {
   color: var(--green-light);
+}
+.selectable {
+  user-select: text;
 }
 
 .copy {
