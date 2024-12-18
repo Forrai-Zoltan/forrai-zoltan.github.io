@@ -59,6 +59,13 @@
     transform: scale(1.2);
     accent-color: green;
   }
+  .TOC {
+    z-index: 2;
+    position: fixed;
+    top: 200px;
+    left: 40px;
+    max-width: calc((100vw - (80ch + 300px)) / 2);
+  }
 }
 p {
   padding: 5px 0px;
