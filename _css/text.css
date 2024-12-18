@@ -65,6 +65,10 @@
     top: 200px;
     left: 40px;
     max-width: calc((100vw - (80ch + 300px)) / 2);
+
+    summary {
+      font-size:x-large;
+    }
   }
 }
 p {
