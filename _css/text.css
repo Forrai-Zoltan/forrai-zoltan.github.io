@@ -153,10 +153,12 @@ h2 {
 
 h3 {
   font-size: clamp(20px, 3.5vw, 28px);
+  margin-bottom: 10px;
 }
 
 h4 {
   font-size: clamp(18px, 3vw, 24px);
+  margin-bottom: 5px;
 }
 
 h5 {

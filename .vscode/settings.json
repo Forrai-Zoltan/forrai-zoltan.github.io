@@ -1,5 +1,6 @@
 {
   "editor.minimap.autohide": false,
   "editor.minimap.showSlider": "always",
-  "explorer.sortOrder": "type"
+  "explorer.sortOrder": "type",
+  "cSpell.words": ["Corkboard"]
 }
