@@ -88,8 +88,7 @@ p {
 }
 
 .text-background {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 21px;
 }
 
 #reading-background:checked ~ .text-background {
