@@ -25,13 +25,16 @@
   );
 }
 
+.indent p {
+  text-indent: 20px;
+}
+
 .long-text {
   display: flex;
   align-items: center;
   flex-direction: column;
 
   p {
-    padding: 10px 20px;
     border: 1px solid transparent;
     margin: 0;
   }
@@ -77,6 +80,7 @@
     }
   }
 }
+
 p {
   padding: 5px 0px;
   font-size: 20px;
@@ -190,7 +194,7 @@ a {
   text-decoration: none;
 }
 
-.text-container a:not(.hiden-link) {
+.text-container a:not(.hiden-link):not(.TOC a) {
   color: var(--link-color);
 }
 
