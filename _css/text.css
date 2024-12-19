@@ -224,12 +224,9 @@ footer p {
   text-align: left;
 }
 
-.footnote-back {
-  scroll-margin-top: 40vh;
-}
-
 :target {
   animation: highlight ease-in-out 5s;
+  scroll-margin-top: 40vh;
 }
 
 @keyframes highlight {
