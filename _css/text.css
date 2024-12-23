@@ -36,7 +36,7 @@
 
   p {
     border: 1px solid transparent;
-    margin: 0;
+    margin: 5px 0 5px 0;
   }
   p:first-of-type {
     padding-top: 5px;
@@ -146,27 +146,33 @@ h1 {
 h2 {
   font-size: clamp(24px, 4vw, 36px);
   border-top: 0.5px solid var(--glass-border);
-  padding-top: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h3 {
   font-size: clamp(20px, 3.5vw, 28px);
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 h4 {
   font-size: clamp(18px, 3vw, 24px);
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 h5 {
   font-size: clamp(16px, 2.5vw, 20px);
+  margin-top: 5px;
+  margin-bottom: 1px;
 }
 
 h6 {
   font-size: clamp(14px, 2vw, 18px);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 i,
@@ -269,4 +275,12 @@ iframe {
 
 .center {
   text-align: center;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  line-height: 1.5;
 }
