@@ -276,11 +276,12 @@ iframe {
 .center {
   text-align: center;
 }
+.long-text {
+  ul {
+    margin: 0;
+  }
 
-ul {
-  margin: 0;
-}
-
-li {
-  line-height: 1.5;
+  li {
+    line-height: 1.5;
+  }
 }
