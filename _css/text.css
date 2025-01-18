@@ -202,8 +202,12 @@ a {
   text-decoration: none;
 }
 
-.text-container a:not(.hiden-link):not(.TOC a) {
+.text-container a h3 {
   color: var(--link-color);
+}
+
+.text-container a:not(.hiden-link):not(.TOC a) {
+  color: var(--link-color-alt);
 }
 
 .text-container a:hover {

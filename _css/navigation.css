@@ -8,7 +8,6 @@ header {
   width: calc(100% - 1rem);
   top: 0px;
   background-color: black;
-  background-image: url("/_assets/images/nnnoise.svg");
   border-radius: 5px;
   box-shadow: 0 15px 20px 5px black;
 }
@@ -21,12 +20,11 @@ header {
   margin-top: 5px;
   padding: 5px;
   background-image: linear-gradient(
-      to right,
-      var(--purple-dark),
-      var(--purple-dark),
-      transparent
-    ),
-    url("/_assets/images/nnnoise.svg");
+    to right,
+    var(--purple-dark),
+    var(--purple-dark),
+    transparent
+  );
 }
 
 .logo-link {

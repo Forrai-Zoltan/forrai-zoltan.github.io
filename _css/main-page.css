@@ -47,7 +47,7 @@
 .links {
   list-style: none;
   padding: 0 10px 0 10px;
-  margin: 20px 0;
+  margin: 5px;
 }
 
 .links * {
@@ -112,63 +112,4 @@ button:hover {
     var(--purple-medium)
   );
   transform: scale(1.05);
-}
-
-@media (max-width: 1050px) {
-  .main-container {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .image-links-container {
-    max-width: unset;
-    flex-direction: row;
-  }
-  .image-container {
-    max-width: 450px;
-    box-shadow: none;
-  }
-  .self-portrait {
-    box-shadow: 470px -5px 50px 15px transparent !important;
-  }
-  .self-portrait:hover {
-    box-shadow: 470px -5px 50px 15px transparent !important;
-  }
-}
-
-@media (max-height: 990px) {
-  .links {
-    margin: 0px 0;
-  }
-  .link-title {
-    display: none;
-  }
-  .main-h1 {
-    margin-bottom: 30px;
-  }
-
-  @media (max-width: 1250px) {
-    .link-title {
-      display: unset;
-    }
-    .links {
-      margin: 10px 0;
-    }
-    .main-container {
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-    .image-links-container {
-      max-width: unset;
-      flex-direction: row;
-    }
-    .image-container {
-      max-width: 450px;
-    }
-    .self-portrait {
-      box-shadow: 470px -5px 50px 15px transparent !important;
-    }
-    .self-portrait:hover {
-      box-shadow: 470px -5px 50px 15px transparent !important;
-    }
-  }
 }

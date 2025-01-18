@@ -69,6 +69,7 @@
               <li><a href="/writing/short_fiction">Short Fiction</a></li>
               <li><a href="/writing/long_form">Long Form</a></li>
               <li><a href="/writing/plays">Plays</a></li>
+              <li><a href="/writing/poems">Poems</a></li>
             </ul>
           </li>
           <li>
@@ -109,21 +110,12 @@
   -->
     <div class="main-container">
       <div class="text-container">
+        <img
+          class="achievement"
+          src="/_assets/images/how_did_we_get_here.jpg"
+          alt="How did we get here?" />
         <div class="center">
-          <h1 style="font-size: 100px; margin: 10px">404!</h1>
-          <img
-            style="margin: 10px; max-width: 90vw; border-radius: 10px"
-            src="/_assets/images/how_did_we_get_here.jpg"
-            alt="How did we get here?" />
-        </div>
-        <h2>Site Map</h2>
-        <p>Maybe you can find what you were looking for:</p>
-        <div class="center">
-          <img
-            style="max-width: 90vw; border-radius: 10px"
-            src="/_assets/images/chris-chan-im-workin-on-it.gif"
-            alt="Working on it"
-            title="Go work on it!" />
+          <h1 style="font-size: 400px; margin: 10px; color: lightgrey">404!</h1>
         </div>
         <style>
           .center {
@@ -132,6 +124,39 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+          }
+
+          .achievement {
+            position: absolute;
+            right: 35px;
+            margin: 10px;
+            max-width: 400px;
+            border-radius: 7px;
+            opacity: 0;
+            animation: anim 7s ease-in-out 1s forwards;
+          }
+
+          .achievement:hover {
+            animation-play-state: paused;
+          }
+
+          @keyframes anim {
+            0% {
+              transform: translateY(-150px); /* Start off-screen */
+            }
+            25% {
+              transform: translateY(-20px); /* Move to its position */
+              opacity: 1; /* Fully visible */
+            }
+            75% {
+              transform: translateY(-20px); /* Stay in position */
+              opacity: 1; /* Remain visible */
+            }
+            99% {
+              transform: translateY(-150px); /* Move off-screen again */
+            }
+            100% {
+            }
           }
         </style>
       </div>

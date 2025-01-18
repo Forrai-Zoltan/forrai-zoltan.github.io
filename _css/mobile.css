@@ -14,16 +14,16 @@
 
   .title-background {
     z-index: 3;
-    position: relative
+    position: relative;
   }
-  
+
   .logo-title {
     text-wrap: wrap;
     max-width: 75%;
   }
-  
-  .hamburger-wrapper { 
-    position: absolute; 
+
+  .hamburger-wrapper {
+    position: absolute;
     top: 13px; /* Distance from the top */
     right: 15px; /* Distance from the right */
     z-index: 4; /* Ensures it appears above other elements */
@@ -35,18 +35,23 @@
     display: block;
     width: 30px;
     height: 25px;
-    z-index: 4; 
+    z-index: 4;
   }
 
   .hamburger-menu {
-    position: fixed;   
+    position: fixed;
     display: none;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    z-index: 1; 
-    background: radial-gradient(ellipse at top, rgba(0, 0, 0), rgba(0, 0, 0), rgba(var(--purple-dark-rgb)));
+    z-index: 1;
+    background: radial-gradient(
+      ellipse at top,
+      rgba(0, 0, 0),
+      rgba(0, 0, 0),
+      rgba(var(--purple-dark-rgb))
+    );
   }
 
   .menu {
@@ -54,19 +59,16 @@
     padding: 25px;
     margin-top: 60px;
   }
-  
+
   .menu > li {
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 20px;
     border-radius: 10px;
-    background: 
-    radial-gradient(ellipse at top, 
-    rgb(15, 15, 15), 
-    rgba(0, 0, 0));
+    background: radial-gradient(ellipse at top, rgb(15, 15, 15), rgba(0, 0, 0));
     list-style: none;
     margin-top: 10px;
   }
-  
+
   .menu > li > a {
     padding: 20px; /* Padding around links */
     font-size: 40px;
@@ -75,13 +77,13 @@
 
   .dropdown {
     display: none;
-  }  
+  }
 
   /* When checkbox is checked, show the menu */
   .menu-toggle:checked + .hamburger-menu {
     display: block;
   }
-  
+
   /*  */
   .main-container {
     gap: 10px;
@@ -90,7 +92,7 @@
   .image-links-container {
     gap: 10px;
     max-width: unset;
-    flex-direction:column;
+    flex-direction: column;
   }
   .image-container {
     max-width: unset;
@@ -106,10 +108,9 @@
 
   .copy {
     padding-top: 10px;
-
   }
 
-/* TEXT */
+  /* TEXT */
   .text-container {
     margin: 1px;
     padding: 5px;
@@ -120,52 +121,109 @@
     box-sizing: border-box;
   }
 
-.text-container:has(.long-text){
-  background: none;
+  .text-container:has(.long-text) {
+    background: none;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .long-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .long-text {
+    background: none;
+  }
+
+  footer {
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+
+  .footnotes {
+    padding-left: 0px;
+  }
+
+  /* Cards */
+
+  .card-grid {
+    gap: 10px;
+    padding-top: 0px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  form,
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .two-column {
+    column-count: 1;
+  }
 }
 
-h1 {
-  font-size: 1.7rem;
-}  
-
-.long-text h1 {
-  font-size: 1.5rem;
+@media (max-width: 1050px) {
+  .main-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .image-links-container {
+    max-width: unset;
+    flex-direction: row;
+  }
+  .image-container {
+    max-width: 450px;
+    box-shadow: none;
+  }
+  .self-portrait {
+    box-shadow: 470px -5px 50px 15px transparent !important;
+  }
+  .self-portrait:hover {
+    box-shadow: 470px -5px 50px 15px transparent !important;
+  }
 }
 
-.long-text {
-  background: none;
-} 
+@media (max-height: 990px) {
+  .links {
+    margin: 0px 0;
+  }
+  .link-title {
+    display: none;
+  }
+  .main-h1 {
+    margin-bottom: 30px;
+  }
 
-footer {
-  margin-top: 0px;
-  padding-top: 5px;
+  @media (max-width: 1250px) {
+    .link-title {
+      display: unset;
+    }
+    .links {
+      margin: 10px 0;
+    }
+    .main-container {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .image-links-container {
+      max-width: unset;
+      flex-direction: row;
+    }
+    .image-container {
+      max-width: 450px;
+    }
+    .self-portrait {
+      box-shadow: 470px -5px 50px 15px transparent !important;
+    }
+    .self-portrait:hover {
+      box-shadow: 470px -5px 50px 15px transparent !important;
+    }
+  }
 }
-
-.footnotes {
-  padding-left: 0px;
-}
-
-/* Cards */
-
-.card-grid{
-  gap: 10px;
-  padding-top: 0px;
-}
-
-.card {
-  padding: 15px;
-}
-
-form, 
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-.two-column {
-  column-count: 1;
-}
-
-
