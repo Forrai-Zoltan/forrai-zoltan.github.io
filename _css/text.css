@@ -182,7 +182,7 @@ em {
 }
 
 strong {
-  color: orange;
+  color: var(--green-light);
 }
 
 .long-text p {

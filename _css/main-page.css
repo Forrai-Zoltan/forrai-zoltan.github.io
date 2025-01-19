@@ -113,3 +113,8 @@ button:hover {
   );
   transform: scale(1.05);
 }
+
+ol li::marker {
+  color: orange;
+  font-size: 16px;
+}
