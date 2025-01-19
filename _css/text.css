@@ -207,7 +207,7 @@ a {
 }
 
 .text-container a:not(.hiden-link):not(.TOC a) {
-  color: var(--link-color-alt);
+  color: var(--link-color);
 }
 
 .text-container a:hover {
@@ -259,10 +259,6 @@ footer p {
   column-gap: 50px;
   padding-top: 10px;
 
-  p {
-    margin-bottom: 25px;
-  }
-
   p:first-of-type {
     margin-top: 0;
   }
@@ -288,4 +284,8 @@ iframe {
   li {
     line-height: 1.5;
   }
+}
+
+strong {
+  color: orange;
 }
