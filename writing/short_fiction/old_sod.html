@@ -4,92 +4,71 @@
     <title>Old Sod</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/_css/base.css" />
-    <link rel="stylesheet" href="/_css/navigation.css" />
-    <link rel="stylesheet" href="/_css/text.css" />
-    <link rel="stylesheet" href="/_css/mobile.css" />
-    <link rel="stylesheet" href="/_css/cards.css" />
-    <link rel="stylesheet" href="/_css/" />
-    <!-- Fonts -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- 
-  Navigation Bar 
-  -->
     <header>
-      <div class="title-background">
+      <div id="title_background">
         <a href="/">
-          <div class="logo-link">
+          <div id="logo_link">
             <img
-              class="favicon"
-              title="socrates flipping the bird"
-              src="/web-app-manifest-512x512.png" />
-            <div class="logo-title">
+              id="favicon"
+              title="Socrates flipping the bird"
+              src="/favicon.svg" />
+            <span id="logo_title">
               Part&#8209;time&nbsp;Writer. Full&#8209;time&nbsp;Wizard.
-            </div>
+            </span>
           </div>
         </a>
       </div>
-      <!-- Breadcrumbs -->
-      <nav>
-        <div class="breadcrumbs">
-          <i><a href="/">Home</a></i>
-          <i><a href="/writing">Writing</a></i>
-          <i><a href="/writing/short_fiction">Short Fiction</a></i>
-          <i><a href="/writing/short_fiction/old_sod">Old Sod</a></i>
-        </div>
+      <nav id="breadcrumbs">
+        <em><a href="/">Home</a></em>
+        <em><a href="/writing">Writing</a></em>
+        <em><a href="/writing/short_fiction">Short Fiction</a></em>
+        <em><a href="/writing/short_fiction/old_sod">Old Sod</a></em>
       </nav>
-      <!-- Navigation Menu -->
-      <!-- Hamburger menu for mobile -->
-      <div class="hamburger-wrapper">
-        <label for="hamburger" class="hamburger">🍔</label>
-      </div>
-      <input id="hamburger" type="checkbox" class="menu-toggle" />
-      <nav class="hamburger-menu">
-        <!-- Dropdown menu -->
-        <ul class="menu">
+      <label for="hamburger" id="hamburger_icon">🍔</label>
+      <input id="hamburger" type="checkbox" class="menu_toggle" />
+      <nav id="hamburger_menu">
+        <ul id="menu">
           <li>
-            <a href="/personal">Personal</a>
+            <a class="menu_titles" href="/personal">Personal</a>
             <ul class="dropdown">
               <li><a href="/personal/posts">Posts</a></li>
+              <li><a href="/personal/curriculum_vitae">Curriculum Vitae</a></li>
               <li><a href="/personal/things_i_like">Things I like</a></li>
               <li><a href="/personal/tools_i_use">Tools I use</a></li>
             </ul>
           </li>
           <li>
-            <a href="/writing">Writing</a>
+            <a class="menu_titles" href="/writing">Writing</a>
             <ul class="dropdown">
               <li><a href="/writing/essays">Essays</a></li>
               <li><a href="/writing/short_fiction">Short Fiction</a></li>
               <li><a href="/writing/long_form">Long Form</a></li>
               <li><a href="/writing/plays">Plays</a></li>
+              <li><a href="/writing/poems">Poems</a></li>
             </ul>
           </li>
           <li>
-            <a href="/art">Art</a>
+            <a class="menu_titles" href="/art">Art</a>
             <ul class="dropdown">
               <li><a href="/art/drawings">Drawings</a></li>
               <li><a href="/art/comics">Comics</a></li>
+              <li><a href="/art/animations">Animations</a></li>
               <li><a href="/art/films">Films</a></li>
             </ul>
           </li>
           <li>
-            <a href="/collections">Collections</a>
+            <a class="menu_titles" href="/collections">Collections</a>
             <ul class="dropdown">
               <li>
-                <a href="/collections/teach_yourself_writing"
-                  >Teach Yourself Writing</a
-                >
+                <a href="/collections/writers_wiki">Writers' Wiki</a>
               </li>
               <li>
                 <a href="/collections/intentional_consumption"
@@ -97,155 +76,141 @@
                 >
               </li>
               <li>
-                <a href="/collections/bradbury_reading_challenge"
-                  >Bradbury Reading Challenge</a
-                >
+                <a href="/collections/reading_list">Reading List</a>
+              </li>
+              <li>
+                <a href="/collections/classes">Classes</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- 
-  ------------------------------------------------------------
-                      Main Body Section 
-  ------------------------------------------------------------ 
-  -->
-    <div class="main-container">
-      <div class="text-container">
-        <div class="long-text indent">
-          <input
-            title="Text Background Toggle"
-            type="checkbox"
-            id="reading-background" />
-          <label title="Text Background Toggle" for="reading-background"
-            ><i class="fa-solid fa-circle-half-stroke"></i
-          ></label>
-          <h1>Old Sod</h1>
-          <div class="text-background">
-            <p>
-              The Sun, that coward, hid behind the new sky's milky white. Clouds
-              descended from the firmament to meet in the streets. As thick fog
-              they lingered, like unwanted guests, hiding what was there to be
-              hid. The air hung heavy, the grass was damp with dew on the old
-              sod.
-            </p>
-            <p>
-              In a trifling town — not sure if even God knows where — a young
-              man stood in front of a decrepit house, keenly observing its
-              number. It read four and ten. He noticed how rusty they had gotten
-              and how the decades left a grimy, brown line under them.
-            </p>
-            <p>
-              <i>Certainly as uninviting as ever</i>, he thought, exhaling a
-              weighty breath. He looked at the gate, then through it into the
-              old garden, now eaten by rot, debating whether he should enter or
-              not. <i>Maybe He's not even home</i>, he wanted to think. Really
-              wished, more than anything.
-            </p>
-            <p>
-              “Vincent?” A voice, cutting through the thick fog, called his name
-              from behind. Surprised, he spun around and saw a friend from the
-              past, looking a bit older, more rough. Head shaven clean, wearing
-              tight jeans, big nylon jacket, pushing a bike up the street that
-              was cratered and rugged. “Lost and is found,” his friend said with
-              a grin.
-            </p>
-            <p class="center"><i>* * *</i></p>
-            <p>
-              Dry smoke and whispered gossip drifted through the air of the
-              seedy pub. With a greedy swing, Jake emptied his pint, leaving
-              only bits of foam sliding down the side of the clear glass. He
-              whistled – as he set it down – to the bartender lass, signalling
-              his wish for another round.
-            </p>
-            <p>
-              “Nothing's better than home brew,” he said as the girl poured him
-              a new, not missing a drop. “They don't make it like this anywhere
-              else,” he laughed and quaffed the foam top.
-            </p>
-            <p>“It's bitter,” Vincent said, he hardly sampled it.</p>
-            <p>“It's beer,” Jake shrugged, enjoying his.</p>
-            <p>
-              Vincent watched as small bubbles rushed to the surface in a
-              soldierly line, before taking a small swing from the piss-colored
-              pint. He heard, then saw, two hags in a corner booth practicing
-              their craft, a spell; whispered gossipry, that wished to be
-              gospel.
-            </p>
-            <p>
-              “I'm sure they have a lot to talk about.” Jake snorted. “Your
-              whole backstory is being constructed there. Oi, Ladies, not so
-              loud!” Jake turned back to Vincent, “They’ve been sitting there
-              ever since you left. I'm sure they're dying to know why you
-              returned. But you just wanted an old buddy and free 'Guinness',”
-              he laughed.
-            </p>
-            <p>
-              “Some things never change, I guess,” Vincent said jokingly. He
-              reached into his jacket and pulled out a picture of a girl from
-              his front pocket.
-            </p>
-            <p>“Your bird?” Jake asked.</p>
-            <p>
-              “Aye. My new life, you could say,” he looked at the picture
-              intently before putting it away.
-            </p>
-            <p>“Here to close the old, eh? So, you visited Him?” Jake asked.</p>
-            <p>“No, not yet. And I'm not sure if I will.”</p>
-            <p>
-              “Between you and me, I would've kicked his ass a long time ago.”
-            </p>
-            <p>
-              Vincent chortled, “I'm sure you would've, don't keep it argo.”
-            </p>
-            <p>
-              “No, I'm serious. I remember how bruised up you got every time he
-              blew up on you for nothing. I would do the same with my old man,
-              were he still alive,” he took a drink from his beer. “That's the
-              fucked up thing about being a kid, adults treat you like shit and
-              when you finally get strong enough to fight back they die off,
-              like they'd planned it. It's like a final fuck you.”
-            </p>
-            <p>
-              Vincent faintly smiled but stayed silent, his heart picked up the
-              pace.
-            </p>
-            <p>
-              Jake continued, “I wish I could go back, put the man in his place.
-              Well, you still have the shot to show who's boss. And now you
-              could really lay it on him. Deal some retribution while He is
-              still alive to feel it,” Jake laughed sourly, “What a sad bunch we
-              are.”
-            </p>
-            <p>
-              Vincent's heart thumped heavily. His smile faded. He seized his
-              beer and raised it. “To retribution,” he said and emptied his
-              drink. “Can I borrow your bike?”
-            </p>
-            <p class="center"><i>* * *</i></p>
-            <p>
-              It was near night when he arrived back to the ruin of four and
-              ten. A man, skin ebbing from bone, a visage worn by the tide of
-              time opened door. No words were voiced, no admittance avowed. But
-              twain knew the reason for the visit.
-            </p>
-            <p>
-              There they stood in the old kitchen, familiar and foreign, eyes
-              evoking the early past. Remembering every pain and hurt while
-              minutes passed. Vincent, shaken by anamnesis animosity, raised his
-              fist to strike, to pay back, to make right, to retribute – to
-              revenge!
-            </p>
-            <p>
-              Vincent looked into the eye of the estranged begetter. That one
-              stood deadlocked, docile and distant. Vincent thumped the chest of
-              the old man and rested his fist there. “I will be better,” he
-              said, and left the old sod.
-            </p>
-          </div>
+    <main>
+      <article class="centered long_text">
+        <h1>Old Sod</h1>
+        <div>
+          <p>
+            The Sun, that coward, hid behind the new sky's milky white. Clouds
+            descended from the firmament to meet in the streets. As thick fog
+            they lingered, like unwanted guests, hiding what was there to be
+            hid. The air hung heavy, the grass was damp with dew on the old sod.
+          </p>
+          <p>
+            In a trifling town — not sure if even God knows where — a young man
+            stood in front of a decrepit house, keenly observing its number. It
+            read four and ten. He noticed how rusty they had gotten and how the
+            decades left a grimy, brown line under them.
+          </p>
+          <p>
+            <i>Certainly as uninviting as ever</i>, he thought, exhaling a
+            weighty breath. He looked at the gate, then through it into the old
+            garden, now eaten by rot, debating whether he should enter or not.
+            <i>Maybe He's not even home</i>, he wanted to think. Really wished,
+            more than anything.
+          </p>
+          <p>
+            “Vincent?” A voice, cutting through the thick fog, called his name
+            from behind. Surprised, he spun around and saw a friend from the
+            past, looking a bit older, more rough. Head shaven clean, wearing
+            tight jeans, big nylon jacket, pushing a bike up the street that was
+            cratered and rugged. “Lost and is found,” his friend said with a
+            grin.
+          </p>
+          <p class="c"><em>* * *</em></p>
+          <p>
+            Dry smoke and whispered gossip drifted through the air of the seedy
+            pub. With a greedy swing, Jake emptied his pint, leaving only bits
+            of foam sliding down the side of the clear glass. He whistled – as
+            he set it down – to the bartender lass, signalling his wish for
+            another round.
+          </p>
+          <p>
+            “Nothing's better than home brew,” he said as the girl poured him a
+            new, not missing a drop. “They don't make it like this anywhere
+            else,” he laughed and quaffed the foam top.
+          </p>
+          <p>“It's bitter,” Vincent said, he hardly sampled it.</p>
+          <p>“It's beer,” Jake shrugged, enjoying his.</p>
+          <p>
+            Vincent watched as small bubbles rushed to the surface in a
+            soldierly line, before taking a small swing from the piss-colored
+            pint. He heard, then saw, two hags in a corner booth practicing
+            their craft, a spell; whispered gossipry, that wished to be gospel.
+          </p>
+          <p>
+            “I'm sure they have a lot to talk about.” Jake snorted. “Your whole
+            backstory is being constructed there. Oi, Ladies, not so loud!” Jake
+            turned back to Vincent, “They’ve been sitting there ever since you
+            left. I'm sure they're dying to know why you returned. But you just
+            wanted an old buddy and free 'Guinness',” he laughed.
+          </p>
+          <p>
+            “Some things never change, I guess,” Vincent said jokingly. He
+            reached into his jacket and pulled out a picture of a girl from his
+            front pocket.
+          </p>
+          <p>“Your bird?” Jake asked.</p>
+          <p>
+            “Aye. My new life, you could say,” he looked at the picture intently
+            before putting it away.
+          </p>
+          <p>“Here to close the old, eh? So, you visited Him?” Jake asked.</p>
+          <p>“No, not yet. And I'm not sure if I will.”</p>
+          <p>
+            “Between you and me, I would've kicked his ass a long time ago.”
+          </p>
+          <p>Vincent chortled, “I'm sure you would've, don't keep it argo.”</p>
+          <p>
+            “No, I'm serious. I remember how bruised up you got every time he
+            blew up on you for nothing. I would do the same with my old man,
+            were he still alive,” he took a drink from his beer. “That's the
+            fucked up thing about being a kid, adults treat you like shit and
+            when you finally get strong enough to fight back they die off, like
+            they'd planned it. It's like a final fuck you.”
+          </p>
+          <p>
+            Vincent faintly smiled but stayed silent, his heart picked up the
+            pace.
+          </p>
+          <p>
+            Jake continued, “I wish I could go back, put the man in his place.
+            Well, you still have the shot to show who's boss. And now you could
+            really lay it on him. Deal some retribution while He is still alive
+            to feel it,” Jake laughed sourly, “What a sad bunch we are.”
+          </p>
+          <p>
+            Vincent's heart thumped heavily. His smile faded. He seized his beer
+            and raised it. “To retribution,” he said and emptied his drink. “Can
+            I borrow your bike?”
+          </p>
+          <p class="c"><em>* * *</em></p>
+          <p>
+            It was near night when he arrived back to the ruin of four and ten.
+            A man, skin ebbing from bone, a visage worn by the tide of time
+            opened door. No words were voiced, no admittance avowed. But twain
+            knew the reason for the visit.
+          </p>
+          <p>
+            There they stood in the old kitchen, familiar and foreign, eyes
+            evoking the early past. Remembering every pain and hurt while
+            minutes passed. Vincent, shaken by anamnesis animosity, raised his
+            fist to strike, to pay back, to make right, to retribute – to
+            revenge!
+          </p>
+          <p>
+            Vincent looked into the eye of the estranged begetter. That one
+            stood deadlocked, docile and distant. Vincent thumped the chest of
+            the old man and rested his fist there. “I will be better,” he said,
+            and left the old sod.
+          </p>
         </div>
-      </div>
-    </div>
+      </article>
+      <footer>
+        <p>Written: 2024 Dec ~</p>
+        <p id="copyright"></p>
+      </footer>
+      <div id="bottom_space">_</div>
+    </main>
   </body>
 </html>

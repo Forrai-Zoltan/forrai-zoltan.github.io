@@ -1,114 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Films</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="qMsMaybf_jLdyIb31t6CxwPssSIqUF-psejRK9ORYJc" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="/_css/base.css">
-  <link rel="stylesheet" href="/_css/navigation.css">
-  <link rel="stylesheet" href="/_css/text.css">
-  <link rel="stylesheet" href="/_css/mobile.css">
-  <!-- Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-</head>
-<body>
-  <!-- 
-  Navigation Bar 
-  -->
-  <header>
-    <div class="title-background">
-      <a href="/">
-        <div class="logo-link">
-          <img class="favicon" title="Socrates flipping the bird" src="/web-app-manifest-512x512.png">
-          <div class="logo-title">Part-time Writer. Full-time Wizard.</div>
-        </div>
-      </a>
-    </div>
-    <!-- Breadcrumbs -->
-    <nav>
-      <div class="breadcrumbs">
-        <i><a href="/">Home</a></i>
-        <i><a href="/art">Art</a></i>
-        <i><a href="/art/films">Films</a></i>
+  <head>
+    <title>Films</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <div id="title_background">
+        <a href="/">
+          <div id="logo_link">
+            <img
+              id="favicon"
+              title="Socrates flipping the bird"
+              src="/favicon.svg" />
+            <span id="logo_title">
+              Part&#8209;time&nbsp;Writer. Full&#8209;time&nbsp;Wizard.
+            </span>
+          </div>
+        </a>
       </div>
-    </nav>
-    <!-- Navigation Menu -->
-    <!-- Hamburger menu for mobile -->
-    <div class="hamburger-wrapper">
-      <label for="hamburger" class="hamburger">🍔</label>
-    </div>
-    <input id="hamburger" type="checkbox" class="menu-toggle">
-    <nav class="hamburger-menu">
-      <!-- Dropdown menu -->
-      <ul class="menu">
-        <li>
-          <a href="/personal">Personal</a>
-          <ul class="dropdown">
-            <li><a href="/personal/posts">Posts</a></li>
-            <li><a href="/personal/things_i_like">Things I like</a></li>
-            <li><a href="/personal/tools_i_use">Tools I use</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/writing">Writing</a>
-          <ul class="dropdown">
-            <li><a href="/writing/essays">Essays</a></li>
-            <li><a href="/writing/short_fiction">Short Fiction</a></li>
-            <li><a href="/writing/long_form">Long Form</a></li>
-            <li><a href="/writing/plays">Plays</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/art">Art</a>
-          <ul class="dropdown">
-            <li><a href="/art/drawings">Drawings</a></li>
-            <li><a href="/art/comics">Comics</a></li>
-            <li><a href="/art/films">Films</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/collections">Collections</a>
-          <ul class="dropdown">
-            <li><a href="/collections/teach_yourself_writing">Teach Yourself Writing</a></li>
-            <li><a href="/collections/intentional_consumption">Intentional Consumption</a></li>
-            <li><a href="/collections/bradbury_reading_challenge">Bradbury Reading Challenge</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- 
-  ------------------------------------------------------------
-                      Main Body Section 
-  ------------------------------------------------------------ 
-  -->
-  <div class="main-container">
-    <div class="text-container">
-      <div class="center">
-        <img 
-          style="
-          max-width: 90vw;
-            border-radius: 10px;"
-          src="/_assets/images/chris-chan-im-workin-on-it.gif" alt="Working on it" title="Go work on it!">
-      </div> 
-      <style>
-        .center {
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-        text-align: center;
-        }
-      </style>
-    </div>
-  </div>
-</body>
+      <nav id="breadcrumbs">
+        <em><a href="/">Home</a></em>
+        <em><a href="/art">Art</a></em>
+        <em><a href="/art/films">Films</a></em>
+      </nav>
+      <label for="hamburger" id="hamburger_icon">🍔</label>
+      <input id="hamburger" type="checkbox" class="menu_toggle" />
+      <nav id="hamburger_menu">
+        <ul id="menu">
+          <li>
+            <a class="menu_titles" href="/personal">Personal</a>
+            <ul class="dropdown">
+              <li><a href="/personal/posts">Posts</a></li>
+              <li><a href="/personal/curriculum_vitae">Curriculum Vitae</a></li>
+              <li><a href="/personal/things_i_like">Things I like</a></li>
+              <li><a href="/personal/tools_i_use">Tools I use</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu_titles" href="/writing">Writing</a>
+            <ul class="dropdown">
+              <li><a href="/writing/essays">Essays</a></li>
+              <li><a href="/writing/short_fiction">Short Fiction</a></li>
+              <li><a href="/writing/long_form">Long Form</a></li>
+              <li><a href="/writing/plays">Plays</a></li>
+              <li><a href="/writing/poems">Poems</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu_titles" href="/art">Art</a>
+            <ul class="dropdown">
+              <li><a href="/art/drawings">Drawings</a></li>
+              <li><a href="/art/comics">Comics</a></li>
+              <li><a href="/art/animations">Animations</a></li>
+              <li><a href="/art/films">Films</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu_titles" href="/collections">Collections</a>
+            <ul class="dropdown">
+              <li>
+                <a href="/collections/writers_wiki">Writers' Wiki</a>
+              </li>
+              <li>
+                <a href="/collections/intentional_consumption"
+                  >Intentional Consumption</a
+                >
+              </li>
+              <li>
+                <a href="/collections/reading_list">Reading List</a>
+              </li>
+              <li>
+                <a href="/collections/classes">Classes</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Films</h1>
+        <div id="card_grid"></div>
+      </article>
+    </main>
+  </body>
 </html>

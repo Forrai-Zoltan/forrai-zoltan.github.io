@@ -4,74 +4,53 @@
     <title>About this Website</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/_css/base.css" />
-    <link rel="stylesheet" href="/_css/navigation.css" />
-    <link rel="stylesheet" href="/_css/text.css" />
-    <link rel="stylesheet" href="/_css/mobile.css" />
-    <link rel="stylesheet" href="/_css/" />
-    <!-- Fonts -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <!-- Favicons -->
-    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- 
-  Navigation Bar 
-  -->
     <header>
-      <div class="title-background">
+      <div id="title_background">
         <a href="/">
-          <div class="logo-link">
+          <div id="logo_link">
             <img
-              class="favicon"
-              title="socrates flipping the bird"
-              src="/web-app-manifest-512x512.png" />
-            <div class="logo-title">
+              id="favicon"
+              title="Socrates flipping the bird"
+              src="/favicon.svg" />
+            <span id="logo_title">
               Part&#8209;time&nbsp;Writer. Full&#8209;time&nbsp;Wizard.
-            </div>
+            </span>
           </div>
         </a>
       </div>
-      <!-- Breadcrumbs -->
-      <nav>
-        <div class="breadcrumbs">
-          <i><a href="/">Home</a></i>
-          <i><a href="/personal">Personal</a></i>
-          <i><a href="/personal/posts">Posts</a></i>
-          <i
-            ><a href="/personal/posts/about_this_website"
-              >About this Website</a
-            ></i
-          >
-        </div>
+      <nav id="breadcrumbs">
+        <em><a href="/">Home</a></em>
+        <em><a href="/personal">Personal</a></em>
+        <em><a href="/personal/posts">Posts</a></em>
+        <em
+          ><a href="/personal/posts/about_this_website"
+            >About this Website</a
+          ></em
+        >
       </nav>
-      <!-- Navigation Menu -->
-      <!-- Hamburger menu for mobile -->
-      <div class="hamburger-wrapper">
-        <label for="hamburger" class="hamburger">🍔</label>
-      </div>
-      <input id="hamburger" type="checkbox" class="menu-toggle" />
-      <nav class="hamburger-menu">
-        <!-- Dropdown menu -->
-        <ul class="menu">
+      <label for="hamburger" id="hamburger_icon">🍔</label>
+      <input id="hamburger" type="checkbox" class="menu_toggle" />
+      <nav id="hamburger_menu">
+        <ul id="menu">
           <li>
-            <a href="/personal">Personal</a>
+            <a class="menu_titles" href="/personal">Personal</a>
             <ul class="dropdown">
               <li><a href="/personal/posts">Posts</a></li>
+              <li><a href="/personal/curriculum_vitae">Curriculum Vitae</a></li>
               <li><a href="/personal/things_i_like">Things I like</a></li>
               <li><a href="/personal/tools_i_use">Tools I use</a></li>
             </ul>
           </li>
           <li>
-            <a href="/writing">Writing</a>
+            <a class="menu_titles" href="/writing">Writing</a>
             <ul class="dropdown">
               <li><a href="/writing/essays">Essays</a></li>
               <li><a href="/writing/short_fiction">Short Fiction</a></li>
@@ -81,20 +60,19 @@
             </ul>
           </li>
           <li>
-            <a href="/art">Art</a>
+            <a class="menu_titles" href="/art">Art</a>
             <ul class="dropdown">
               <li><a href="/art/drawings">Drawings</a></li>
               <li><a href="/art/comics">Comics</a></li>
+              <li><a href="/art/animations">Animations</a></li>
               <li><a href="/art/films">Films</a></li>
             </ul>
           </li>
           <li>
-            <a href="/collections">Collections</a>
+            <a class="menu_titles" href="/collections">Collections</a>
             <ul class="dropdown">
               <li>
-                <a href="/collections/teach_yourself_writing"
-                  >Teach Yourself Writing</a
-                >
+                <a href="/collections/writers_wiki">Writers' Wiki</a>
               </li>
               <li>
                 <a href="/collections/intentional_consumption"
@@ -102,50 +80,21 @@
                 >
               </li>
               <li>
-                <a href="/collections/bradbury_reading_challenge"
-                  >Bradbury Reading Challenge</a
-                >
+                <a href="/collections/reading_list">Reading List</a>
+              </li>
+              <li>
+                <a href="/collections/classes">Classes</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- 
-  ------------------------------------------------------------
-                      Main Body Section 
-  ------------------------------------------------------------ 
-  -->
-    <div class="main-container">
-      <div class="text-container">
+    <main>
+      <article class="centered">
         <h1>About this Website</h1>
-        <div class="two-column">
-          <p>
-            <strong>
-              This is my personal website. The views and opinions expressed on
-              this website are my own and do not necessarily reflect the views,
-              opinions, or positions of my employer, colleagues, or anyone
-              affiliated with me.
-            </strong>
-          </p>
-          <p>What is the purpose of this website? Multiple:</p>
-          <ol>
-            <li>To share my thoughts and document my life.</li>
-            <li>To share my writing like essays, poems & fiction.</li>
-            <li>To share the art and other things I create.</li>
-            <li>
-              To disconect from the AI slop serving, algorythm dictated, short
-              form brain rot.
-            </li>
-            <li>And finaly, to pick up web development as a hobby.</li>
-          </ol>
-          <p>
-            I started coding up this website in August of 2024. The idea was to
-            create a place on the internet where I could share the things I
-            create. The top navigation bar lets you reach any page on the site.
-          </p>
-        </div>
-      </div>
-    </div>
+        <p></p>
+      </article>
+    </main>
   </body>
 </html>

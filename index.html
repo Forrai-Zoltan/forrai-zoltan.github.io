@@ -4,66 +4,37 @@
     <title>Forrai Zoltán</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- info -->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Forrai Zoltán" />
-    <!-- Preload -->
-    <link rel="preload" href="_assets/images/self-portrait.png" as="image" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/_css/base.css" />
-    <link rel="stylesheet" href="/_css/navigation.css" />
-    <link rel="stylesheet" href="/_css/text.css" />
-    <link rel="stylesheet" href="/_css/main-page.css" />
-    <link rel="stylesheet" href="/_css/mobile.css" />
-    <!-- Fonts -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" />
-    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- 
-  Navigation Bar 
-  -->
     <header>
-      <div class="title-background">
+      <div id="title_background">
         <a href="/">
-          <div class="logo-link">
+          <div id="logo_link">
             <img
-              class="favicon"
+              id="favicon"
               title="Socrates flipping the bird"
               src="/favicon.svg" />
-            <div class="logo-title">
+            <span id="logo_title">
               Part&#8209;time&nbsp;Writer. Full&#8209;time&nbsp;Wizard.
-            </div>
+            </span>
           </div>
         </a>
       </div>
-      <!-- Breadcrumbs -->
-      <nav class="breadcrumbs">
-        <i><a href="/">Home</a></i>
+      <nav id="breadcrumbs">
+        <em><a href="/">Home</a></em>
       </nav>
-      <!-- Navigation Menu -->
-      <!-- Hamburger menu for mobile -->
-      <div class="hamburger-wrapper">
-        <label for="hamburger" class="hamburger">🍔</label>
-      </div>
-      <input id="hamburger" type="checkbox" class="menu-toggle" />
-      <!-- checkbox -->
-      <nav class="hamburger-menu">
-        <!-- Dropdown Menu -->
-        <ul class="menu">
+      <label for="hamburger" id="hamburger_icon">🍔</label>
+      <input id="hamburger" type="checkbox" class="menu_toggle" />
+      <nav id="hamburger_menu">
+        <ul id="menu">
           <li>
-            <a href="/personal">Personal</a>
+            <a class="menu_titles" href="/personal">Personal</a>
             <ul class="dropdown">
               <li><a href="/personal/posts">Posts</a></li>
               <li><a href="/personal/curriculum_vitae">Curriculum Vitae</a></li>
@@ -72,7 +43,7 @@
             </ul>
           </li>
           <li>
-            <a href="/writing">Writing</a>
+            <a class="menu_titles" href="/writing">Writing</a>
             <ul class="dropdown">
               <li><a href="/writing/essays">Essays</a></li>
               <li><a href="/writing/short_fiction">Short Fiction</a></li>
@@ -82,7 +53,7 @@
             </ul>
           </li>
           <li>
-            <a href="/art">Art</a>
+            <a class="menu_titles" href="/art">Art</a>
             <ul class="dropdown">
               <li><a href="/art/drawings">Drawings</a></li>
               <li><a href="/art/comics">Comics</a></li>
@@ -91,12 +62,10 @@
             </ul>
           </li>
           <li>
-            <a href="/collections">Collections</a>
+            <a class="menu_titles" href="/collections">Collections</a>
             <ul class="dropdown">
               <li>
-                <a href="/collections/teach_yourself_writing"
-                  >Teach Yourself Writing</a
-                >
+                <a href="/collections/writers_wiki">Writers' Wiki</a>
               </li>
               <li>
                 <a href="/collections/intentional_consumption"
@@ -104,34 +73,22 @@
                 >
               </li>
               <li>
-                <a href="/collections/bradbury_reading_challenge"
-                  >Bradbury Reading Challenge</a
-                >
+                <a href="/collections/reading_list">Reading List</a>
               </li>
               <li>
-                <a href="/collections/classes"
-                  >Classes</a
-                >
+                <a href="/collections/classes">Classes</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- 
-  ------------------------------------------------------------
-                      Main Body Section 
-  ------------------------------------------------------------ 
-  -->
-    <div class="main-container">
-      <div class="text-container">
-        <!-- TEXT -->
-        <h1 class="main-h1">Forrai Zoltán ~</h1>
+    <main>
+      <article>
+        <h1 id="home_h1">Forrai Zoltán ~</h1>
         <p>
           Hi there! My name is
-          <b>Forrai Zoltán</b>,<sup style="color: orange; font-size: 12px"
-            >1</sup
-          >
+          <strong>Forrai Zoltán</strong>,<sup class="refer">1</sup>
           I'm a writer &
           <a
             class="hiden-link"
@@ -155,8 +112,8 @@
           myself using <abr>HTML</abr> and <abr>CSS</abr>. This website is not
           yet mobile friendly.
         </p>
-        <div style="font-size: 18px">
-          <ol>
+        <div>
+          <ol class="refered">
             <li>
               We use the eastern naming order. Forrai is my family name, Zoltán
               is my given name.
@@ -164,52 +121,46 @@
           </ol>
         </div>
         <h2>Education</h2>
-        <p>
-          <details>
-            <summary>
-              Undivided Teacher Training Program: <br />
+        <details>
+          <summary>
+            <b>2020&ndash;Present: MA, ELTE, Budapest:</b> Undivided Teacher
+            Training Program
+          </summary>
+          <ul>
+            <li>
               Teacher of English language and culture, History teacher and
-              civics teacher
-            </summary>
-            <ul>
-              <li>MA</li>
-              <li>2020-Present</li>
-              <li>ELTE, Budapest</li>
-            </ul>
-          </details>
-        </p>
-      </div>
-      <!-- Image and Links -->
-      <div class="image-links-container">
-        <div class="image-container">
+              civics teacher.
+            </li>
+          </ul>
+        </details>
+      </article>
+      <aside>
+        <div id="gallery">
           <img
-            class="self-portrait"
             src="/_assets/images/self-portrait.png"
             alt="Here should've been a picture of my face. You are not missing much tbh." />
         </div>
-        <!-- Links -->
-        <div class="link-container">
-          <div>
-            <!-- div for alignment -->
-            <ul class="links">
-              <li>
-                <a href="/contact">
-                  <button>
-                    <i class="fa-solid fa-envelope"></i
-                    ><b>Shoot Me a Message!</b>
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/Forrai-Zoltan">
-                  <i class="fa-brands fa-github"></i>GitHub</a
-                >
-              </li>
-            </ul>
-          </div>
-          <span class="copy">&copy; 2025 Forrai Zoltán</span>
+        <div id="green_box">
+          <ul id="links">
+            <li>
+              <a href="/contact">
+                <button>
+                  <i class="fa-solid fa-envelope"></i><b>Shoot Me a Message!</b>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a
+                class="hiden-link"
+                target="_blank"
+                href="https://github.com/Forrai-Zoltan">
+                <i class="fa-brands fa-github"></i>GitHub</a
+              >
+            </li>
+          </ul>
+          <span id="copy">&copy; 2025 Forrai Zoltán</span>
         </div>
-      </div>
-    </div>
+      </aside>
+    </main>
   </body>
 </html>

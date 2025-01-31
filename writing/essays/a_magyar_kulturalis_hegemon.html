@@ -4,94 +4,75 @@
     <title>A magyar kulturális hegemón</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/_css/base.css" />
-    <link rel="stylesheet" href="/_css/navigation.css" />
-    <link rel="stylesheet" href="/_css/text.css" />
-    <link rel="stylesheet" href="/_css/mobile.css" />
-    <!-- Fonts -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- 
-  Navigation Bar 
-  -->
     <header>
-      <div class="title-background">
+      <div id="title_background">
         <a href="/">
-          <div class="logo-link">
+          <div id="logo_link">
             <img
-              class="favicon"
+              id="favicon"
               title="Socrates flipping the bird"
-              src="/web-app-manifest-512x512.png" />
-            <div class="logo-title">
+              src="/favicon.svg" />
+            <span id="logo_title">
               Part&#8209;time&nbsp;Writer. Full&#8209;time&nbsp;Wizard.
-            </div>
+            </span>
           </div>
         </a>
       </div>
-      <!-- Breadcrumbs -->
-      <nav>
-        <div class="breadcrumbs">
-          <i><a href="/">Home</a></i>
-          <i><a href="/writing">Writing</a></i>
-          <i><a href="/writing/essays">Essays</a></i>
-          <i
-            ><a lang="hu" href="/writing/essays/a_magyar_kulturalis_hegemon"
-              >A magyar kulturális hegemón</a
-            ></i
-          >
-        </div>
+      <nav id="breadcrumbs">
+        <em><a href="/">Home</a></em>
+        <em><a href="/writing">Writing</a></em>
+        <em><a href="/writing/essays">Essays</a></em>
+        <em
+          ><a lang="hu" href="/writing/essays/a_magyar_kulturalis_hegemon"
+            >A magyar kulturális hegemón</a
+          ></em
+        >
       </nav>
-      <!-- Navigation Menu -->
-      <!-- Hamburger menu for mobile -->
-      <div class="hamburger-wrapper">
-        <label for="hamburger" class="hamburger">🍔</label>
-      </div>
+      <label for="hamburger" id="hamburger_icon">🍔</label>
       <input id="hamburger" type="checkbox" class="menu-toggle" />
-      <nav class="hamburger-menu">
-        <!-- Dropdown menu -->
-        <ul class="menu">
+      <nav id="hamburger_menu">
+        <ul id="menu">
           <li>
-            <a href="/personal">Personal</a>
+            <a class="menu_titles" href="/personal">Personal</a>
             <ul class="dropdown">
               <li><a href="/personal/posts">Posts</a></li>
+              <li><a href="/personal/curriculum_vitae">Curriculum Vitae</a></li>
               <li><a href="/personal/things_i_like">Things I like</a></li>
               <li><a href="/personal/tools_i_use">Tools I use</a></li>
             </ul>
           </li>
           <li>
-            <a href="/writing">Writing</a>
+            <a class="menu_titles" href="/writing">Writing</a>
             <ul class="dropdown">
               <li><a href="/writing/essays">Essays</a></li>
               <li><a href="/writing/short_fiction">Short Fiction</a></li>
               <li><a href="/writing/long_form">Long Form</a></li>
               <li><a href="/writing/plays">Plays</a></li>
+              <li><a href="/writing/poems">Poems</a></li>
             </ul>
           </li>
           <li>
-            <a href="/art">Art</a>
+            <a class="menu_titles" href="/art">Art</a>
             <ul class="dropdown">
               <li><a href="/art/drawings">Drawings</a></li>
               <li><a href="/art/comics">Comics</a></li>
+              <li><a href="/art/animations">Animations</a></li>
               <li><a href="/art/films">Films</a></li>
             </ul>
           </li>
           <li>
-            <a href="/collections">Collections</a>
+            <a class="menu_titles" href="/collections">Collections</a>
             <ul class="dropdown">
               <li>
-                <a href="/collections/teach_yourself_writing"
-                  >Teach Yourself Writing</a
-                >
+                <a href="/collections/writers_wiki">Writers' Wiki</a>
               </li>
               <li>
                 <a href="/collections/intentional_consumption"
@@ -99,162 +80,143 @@
                 >
               </li>
               <li>
-                <a href="/collections/bradbury_reading_challenge"
-                  >Bradbury Reading Challenge</a
-                >
+                <a href="/collections/reading_list">Reading List</a>
+              </li>
+              <li>
+                <a href="/collections/classes">Classes</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- 
-  ------------------------------------------------------------
-                      Main Body Section 
-  ------------------------------------------------------------ 
-  -->
-    <div class="main-container">
-      <div class="text-container">
-        <div class="long-text indent" lang="hu">
-          <input
-            title="Text Background Toggle"
-            type="checkbox"
-            id="reading-background" />
-          <label title="Text Background Toggle" for="reading-background"
-            ><i class="fa-solid fa-circle-half-stroke"></i
-          ></label>
-          <h1>A magyar kulturális hegemón</h1>
-          <div class="text-background">
-            <p>
-              A kulturális hegemónia nem idegen a magyar történelem számára. Ha
-              erre a fogalomra magyar értelmezésben gondolok, akkor a 20.
-              századi politikai irányzatok és azok dominanciáért folytatott
-              harca jut eszembe előszőr. Horthyék, és később a kommunista
-              diktatúra erősen törekedtek a teljes hegemónia elérésére. Erre a
-              célra felhasználva a cenzúra és az erőszak eszközeit. Most mégis
-              inkább a jelenkor környezetében gondolkodnék erről a kérdésről.
-              Nem más okból, minthogy erről van közvetlen tapasztalatom. Első
-              kérdés, ami felmerül bennem, hogy milyen környezet és milyen egyéb
-              tényezők szükségesek a kulturális hegemónia kialakulásához.
-            </p>
-            <p>
-              Egy populista politikus attól populista, hogy nem a saját nézeteit
-              mondja, hanem azt, amit a nép, a <em>populus</em> hallani akar.
-              Ezzel az eszközzel szerezve magának támogatást és politikai
-              hatalmat. Miután a hatalmat megszerezte, az párt folytatja eddigi
-              tevékenységét, és mint a kisdiák feleléskor úgy mondja vissza azt,
-              amit a mester (az állam, akinek alá van rendelve) hallani akar. Ha
-              jobboldali vagy konzervatív gondolatokat, akkor a párt ezt fogja
-              tükörként visszavetíteni a társadalomra, hogy ezáltal saját
-              politikai hatalmát fenntartsa. Ennek veszélye az, hogy a párt
-              ideológiai apparátusai elkezdenek egyre szélsőségesebb
-              gondolatokat közvetíteni, és hogy(ha) a nép ezekre pozitívan
-              reagál, méginkább elcsúszik az extrém ideológiák felé. Így
-              egymásra vannak hatással, a nép is befolyásolja azt, hogy a
-              populista mit mond, és a populista befolyásolja, azt amit a nép
-              gondol.
-            </p>
-            <p>
-              Úgy gondolom ez az alapja minden politikai vagy másféle hegemónia
-              kialakulásának. A hatalom befolyásolja a köztudatot, de ezt csak
-              akkor tudja megtenni, ha ez a bizonyos köztudat (legalábbis a
-              hatalomrakerülése legelején) egyetért a mondottakkal.
-            </p>
-            <p>
-              A szó: <em>kultúra</em> rengeteg jelentéssel bír.
-              Megkülönböztetünk nagy <em>K-ás</em> Kultúrát és kis
-              <em>k-ás</em> kultúrát. Én a kultúra alatt elsősorban a
-              művészetekre gondolok: zene, irodalom, festészet, film. És az
-              ezeket a művészeteket közvetítő intézményeket is beleértem:
-              múzeumok, mozik, galériák és természetes a (köz)oktatás is.
-            </p>
-            <p>
-              Kétségbevonhatatlan, hogy az oktatásnak hatalmas szerepe van a
-              kulturális hegemónia alakításában.
-              <span id="note1" class="footnote-back"
-                >Erről többek között Althusser is ír az ideológiai
-                államapparátusokról szóló művében.<sup
-                  ><a href="#footnote1">[1]</a></sup
-                ></span
-              >
-              Az állam elvárása, hogy a tanulókból tudatos állampolgárt
-              neveljünk (NAT nevelési célok). Dehogy pontosan mit ért ez alatt
-              az már vita tárgya. Mindenesetre az oktatás kétségkívül a
-              propagandagépezet jelentős részét képezi. Az már persze az adott
-              tanáron függ, hogy kötelességének érzi-e az állami elvárásoknak
-              megfelelve a propagandát átadni, vagy inkább a munkáltatójával
-              szembeszállva kultúrkritikus megközelítést alkalmaz az óráin
-              (ezzel egy authoriter államban akár veszélybe sodorva karrierjét).
-            </p>
-            <p>
-              Középiskolában <em>film és média</em> szakos voltam. Úgy mint
-              mások matematika, vagy történelem szakosként több órán vesznek
-              részt az adott tantárgyból, mint más iskolákban, nekem is heti 4-5
-              órám volt médiából 5 éven át (nyelvi előkészítő). Az ok, ami miatt
-              nem a médiában folytattam tanulmányaimat szorosan kapcsolódik a
-              kulturális hegemóniához. Én abban az időszakban voltam
-              középiskolás, amikor az állam elkezdte felvásárolni a különböző
-              média csatornákat: újságokat, tv társaságokat, cenzúrázták az
-              lgbt+ tartalmú könyveket, és nagy ráhatást szereztek a médiára és
-              a filmiparra; és általában megkezdte ezeket a mai formájukra (és
-              céljukra) átalakítani.
-            </p>
-            <p>
-              Mivel nem éreztem magamban a vágyat, hogy propagandát gyártsak,
-              karriert váltottam és így kötöttem ki az angol, történelem
-              tanárszak mellett. Az irónia nem veszett el rajtam, az egyik
-              állami pozícióból csupán átsétáltam a másikba, és csak a módszer
-              változott, amivel hozzájárulok a kulturális hegemónia
-              fenntartásához. Talán ez mégis jól demonstrálja azt, hogy milyen
-              nehéz a hegemónia hatásköréből kikerülni. És mivel kulturális
-              hegemónia az egész kultúrára és ezáltal a humanista környezetre
-              hatással van, nem is lehet bölcsész személyiséggel rendelkezőknek
-              elkerülnie azt. Ha másra nem is, ez a média oktatás jó volt arra,
-              hogy rendkívül médiakritikussá tett.
-              <a href="/writing/essays/az_en_orientalizmusom"
-                >Ez talán az előző esszémben is látható volt.</a
-              >
-            </p>
-            <p>
-              Mivel a hegemónia semmilyen alternatív nézetet nem tűr, a fejlődés
-              is lehetetlen. Ha a Hegeli dialektikából indulunk ki, az uralkodó
-              hegemónia nem teszi lehetővé az antitézis létrejöttét és sosem
-              valósulhat meg a politikai, ideológiai vagy kulturális szintézis.
-              Emiatt olyan nehéz a kulturális hegemóniától megszabadulni vagy
-              átalakítani.
-            </p>
-            <p>
-              Persze a kulturális hegemónia fenntartását már nem (csak)
-              cenzúrával és erőszakkal teszik, mint a 20. században. A
-              kulturális hegemónia lényege, hogy láthatatlan módon tegyék ezt;
-              az uralkodó ideológiát, nézeteket azzal erősítik, hogy kiket
-              támogatnak, melyik művésznek adnak Kossuth-díjat, kiknek adnak
-              platformot a médiában, milyen kutatásoknak adnak pénzügyi
-              támogatást, mi az amit tiltanak, tűrnek vagy támogatnak.
-            </p>
-          </div>
+    <main>
+      <article class="centered long_text" lang="hu">
+        <h1>A magyar kulturális hegemón</h1>
+        <div>
+          <p>
+            A kulturális hegemónia nem idegen a magyar történelem számára. Ha erre
+            a fogalomra magyar értelmezésben gondolok, akkor a 20. századi
+            politikai irányzatok és azok dominanciáért folytatott harca jut
+            eszembe előszőr. Horthyék, és később a kommunista diktatúra erősen
+            törekedtek a teljes hegemónia elérésére. Erre a célra felhasználva a
+            cenzúra és az erőszak eszközeit. Most mégis inkább a jelenkor
+            környezetében gondolkodnék erről a kérdésről. Nem más okból, minthogy
+            erről van közvetlen tapasztalatom. Első kérdés, ami felmerül bennem,
+            hogy milyen környezet és milyen egyéb tényezők szükségesek a
+            kulturális hegemónia kialakulásához.
+          </p>
+          <p>
+            Egy populista politikus attól populista, hogy nem a saját nézeteit
+            mondja, hanem azt, amit a nép, a <em>populus</em> hallani akar. Ezzel
+            az eszközzel szerezve magának támogatást és politikai hatalmat. Miután
+            a hatalmat megszerezte, az párt folytatja eddigi tevékenységét, és
+            mint a kisdiák feleléskor úgy mondja vissza azt, amit a mester (az
+            állam, akinek alá van rendelve) hallani akar. Ha jobboldali vagy
+            konzervatív gondolatokat, akkor a párt ezt fogja tükörként
+            visszavetíteni a társadalomra, hogy ezáltal saját politikai hatalmát
+            fenntartsa. Ennek veszélye az, hogy a párt ideológiai apparátusai
+            elkezdenek egyre szélsőségesebb gondolatokat közvetíteni, és hogy(ha)
+            a nép ezekre pozitívan reagál, méginkább elcsúszik az extrém
+            ideológiák felé. Így egymásra vannak hatással, a nép is befolyásolja
+            azt, hogy a populista mit mond, és a populista befolyásolja, azt amit
+            a nép gondol.
+          </p>
+          <p>
+            Úgy gondolom ez az alapja minden politikai vagy másféle hegemónia
+            kialakulásának. A hatalom befolyásolja a köztudatot, de ezt csak akkor
+            tudja megtenni, ha ez a bizonyos köztudat (legalábbis a
+            hatalomrakerülése legelején) egyetért a mondottakkal.
+          </p>
+          <p>
+            A szó: <em>kultúra</em> rengeteg jelentéssel bír. Megkülönböztetünk
+            nagy <em>K-ás</em> Kultúrát és kis <em>k-ás</em> kultúrát. Én a
+            kultúra alatt elsősorban a művészetekre gondolok: zene, irodalom,
+            festészet, film. És az ezeket a művészeteket közvetítő intézményeket
+            is beleértem: múzeumok, mozik, galériák és természetes a (köz)oktatás
+            is.
+          </p>
+          <p>
+            Kétségbevonhatatlan, hogy az oktatásnak hatalmas szerepe van a
+            kulturális hegemónia alakításában.
+            <span id="note1"
+              >Erről többek között Althusser is ír az ideológiai
+              államapparátusokról szóló művében.<a href="#footnote1"
+                ><sup>[1]</sup></a
+              ></span
+            >
+            Az állam elvárása, hogy a tanulókból tudatos állampolgárt neveljünk
+            (NAT nevelési célok). Dehogy pontosan mit ért ez alatt az már vita
+            tárgya. Mindenesetre az oktatás kétségkívül a propagandagépezet
+            jelentős részét képezi. Az már persze az adott tanáron függ, hogy
+            kötelességének érzi-e az állami elvárásoknak megfelelve a propagandát
+            átadni, vagy inkább a munkáltatójával szembeszállva kultúrkritikus
+            megközelítést alkalmaz az óráin (ezzel egy authoriter államban akár
+            veszélybe sodorva karrierjét).
+          </p>
+          <p>
+            Középiskolában <em>film és média</em> szakos voltam. Úgy mint mások
+            matematika, vagy történelem szakosként több órán vesznek részt az
+            adott tantárgyból, mint más iskolákban, nekem is heti 4-5 órám volt
+            médiából 5 éven át (nyelvi előkészítő). Az ok, ami miatt nem a
+            médiában folytattam tanulmányaimat szorosan kapcsolódik a kulturális
+            hegemóniához. Én abban az időszakban voltam középiskolás, amikor az
+            állam elkezdte felvásárolni a különböző média csatornákat: újságokat,
+            tv társaságokat, cenzúrázták az lgbt+ tartalmú könyveket, és nagy
+            ráhatást szereztek a médiára és a filmiparra; és általában megkezdte
+            ezeket a mai formájukra (és céljukra) átalakítani.
+          </p>
+          <p>
+            Mivel nem éreztem magamban a vágyat, hogy propagandát gyártsak,
+            karriert váltottam és így kötöttem ki az angol, történelem tanárszak
+            mellett. Az irónia nem veszett el rajtam, az egyik állami pozícióból
+            csupán átsétáltam a másikba, és csak a módszer változott, amivel
+            hozzájárulok a kulturális hegemónia fenntartásához. Talán ez mégis jól
+            demonstrálja azt, hogy milyen nehéz a hegemónia hatásköréből
+            kikerülni. És mivel kulturális hegemónia az egész kultúrára és ezáltal
+            a humanista környezetre hatással van, nem is lehet bölcsész
+            személyiséggel rendelkezőknek elkerülnie azt. Ha másra nem is, ez a
+            média oktatás jó volt arra, hogy rendkívül médiakritikussá tett.
+            <a href="/writing/essays/az_en_orientalizmusom"
+              >Ez talán az előző esszémben is látható volt.</a
+            >
+          </p>
+          <p>
+            Mivel a hegemónia semmilyen alternatív nézetet nem tűr, a fejlődés is
+            lehetetlen. Ha a Hegeli dialektikából indulunk ki, az uralkodó
+            hegemónia nem teszi lehetővé az antitézis létrejöttét és sosem
+            valósulhat meg a politikai, ideológiai vagy kulturális szintézis.
+            Emiatt olyan nehéz a kulturális hegemóniától megszabadulni vagy
+            átalakítani.
+          </p>
+          <p>
+            Persze a kulturális hegemónia fenntartását már nem (csak) cenzúrával
+            és erőszakkal teszik, mint a 20. században. A kulturális hegemónia
+            lényege, hogy láthatatlan módon tegyék ezt; az uralkodó ideológiát,
+            nézeteket azzal erősítik, hogy kiket támogatnak, melyik művésznek
+            adnak Kossuth-díjat, kiknek adnak platformot a médiában, milyen
+            kutatásoknak adnak pénzügyi támogatást, mi az amit tiltanak, tűrnek
+            vagy támogatnak.
+          </p>
         </div>
-        <footer>
-          <h2>Notes</h2>
-          <div class="footnotes">
-            <ol>
-              <li lang="hu">
-                <p id="footnote1">
-                  Althusser, Louis. “Ideology and Ideological State Apparatuses
-                  (Notes towards an Investigation).” Ideology and Ideological
-                  State Apparatuses by Louis Althusser 1969-70, (<a
-                    href="http://www.marxists.org/reference/archive/althusser/1970/ideology.htm"
-                    >www.marxists.org/reference/archive/althusser/1970/ideology.htm</a
-                  >). Accessed 04 Oct. 2024.<a href="#note1">↩</a>
-                </p>
-              </li>
-            </ol>
-          </div>
-          <!-- Copy -->
-          <p>Written: 2024 Oct 5</p>
-          <p>© 2024 Forrai Zoltán</p>
-        </footer>
-      </div>
-    </div>
+      </article>
+      <footer>
+        <h2>Notes</h2>
+        <ol class="refered">
+          <li lang="hu">
+            Althusser, Louis. “Ideology and Ideological State Apparatuses (Notes
+            towards an Investigation).” Ideology and Ideological State
+            Apparatuses by Louis Althusser 1969-70, (<a
+              href="http://www.marxists.org/reference/archive/althusser/1970/ideology.htm"
+              >www.marxists.org/reference/archive/althusser/1970/ideology.htm</a
+            >). Accessed 04 Oct. 2024.
+            <a href="#note1">↩</a>
+          </li>
+        </ol>
+        <p>Written: 2024 Oct 5</p>
+        <p id="copyright"></p>
+      </footer>
+      <div id="bottom_space">_</div>
+    </main>
   </body>
 </html>

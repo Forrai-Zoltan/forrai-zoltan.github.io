@@ -4,89 +4,70 @@
     <title>Tools I Use</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/_css/base.css" />
-    <link rel="stylesheet" href="/_css/navigation.css" />
-    <link rel="stylesheet" href="/_css/text.css" />
-    <link rel="stylesheet" href="/_css/mobile.css" />
-    <!-- Fonts -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- 
-  Navigation Bar 
-  -->
     <header>
-      <div class="title-background">
+      <div id="title_background">
         <a href="/">
-          <div class="logo-link">
+          <div id="logo_link">
             <img
-              class="favicon"
+              id="favicon"
               title="Socrates flipping the bird"
-              src="/web-app-manifest-512x512.png" />
-            <div class="logo-title">
+              src="/favicon.svg" />
+            <span id="logo_title">
               Part&#8209;time&nbsp;Writer. Full&#8209;time&nbsp;Wizard.
-            </div>
+            </span>
           </div>
         </a>
       </div>
-      <!-- Breadcrumbs -->
-      <nav>
-        <div class="breadcrumbs">
-          <i><a href="/">Home</a></i>
-          <i><a href="/personal">Personal</a></i>
-          <i><a href="/personal/tools_i_use">Tools I Use</a></i>
-        </div>
+      <nav id="breadcrumbs">
+        <em><a href="/">Home</a></em>
+        <em><a href="/personal">Personal</a></em>
+        <em><a href="/personal/tools_i_use">Tools I Use</a></em>
       </nav>
-      <!-- Navigation Menu -->
-      <!-- Hamburger menu for mobile -->
-      <div class="hamburger-wrapper">
-        <label for="hamburger" class="hamburger">🍔</label>
-      </div>
-      <input id="hamburger" type="checkbox" class="menu-toggle" />
-      <nav class="hamburger-menu">
-        <!-- Dropdown menu -->
-        <ul class="menu">
+      <label for="hamburger" id="hamburger_icon">🍔</label>
+      <input id="hamburger" type="checkbox" class="menu_toggle" />
+      <nav id="hamburger_menu">
+        <ul id="menu">
           <li>
-            <a href="/personal">Personal</a>
+            <a class="menu_titles" href="/personal">Personal</a>
             <ul class="dropdown">
               <li><a href="/personal/posts">Posts</a></li>
+              <li><a href="/personal/curriculum_vitae">Curriculum Vitae</a></li>
               <li><a href="/personal/things_i_like">Things I like</a></li>
               <li><a href="/personal/tools_i_use">Tools I use</a></li>
             </ul>
           </li>
           <li>
-            <a href="/writing">Writing</a>
+            <a class="menu_titles" href="/writing">Writing</a>
             <ul class="dropdown">
               <li><a href="/writing/essays">Essays</a></li>
               <li><a href="/writing/short_fiction">Short Fiction</a></li>
               <li><a href="/writing/long_form">Long Form</a></li>
               <li><a href="/writing/plays">Plays</a></li>
+              <li><a href="/writing/poems">Poems</a></li>
             </ul>
           </li>
           <li>
-            <a href="/art">Art</a>
+            <a class="menu_titles" href="/art">Art</a>
             <ul class="dropdown">
               <li><a href="/art/drawings">Drawings</a></li>
               <li><a href="/art/comics">Comics</a></li>
+              <li><a href="/art/animations">Animations</a></li>
               <li><a href="/art/films">Films</a></li>
             </ul>
           </li>
           <li>
-            <a href="/collections">Collections</a>
+            <a class="menu_titles" href="/collections">Collections</a>
             <ul class="dropdown">
               <li>
-                <a href="/collections/teach_yourself_writing"
-                  >Teach Yourself Writing</a
-                >
+                <a href="/collections/writers_wiki">Writers' Wiki</a>
               </li>
               <li>
                 <a href="/collections/intentional_consumption"
@@ -94,208 +75,26 @@
                 >
               </li>
               <li>
-                <a href="/collections/bradbury_reading_challenge"
-                  >Bradbury Reading Challenge</a
-                >
+                <a href="/collections/reading_list">Reading List</a>
+              </li>
+              <li>
+                <a href="/collections/classes">Classes</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- 
-  ------------------------------------------------------------
-                      Main Body Section 
-  ------------------------------------------------------------ 
-  -->
-    <div class="main-container">
-      <div class="text-container">
-        <div class="long-text no-indent">
-          <input
-            title="Text Background Toggle"
-            type="checkbox"
-            id="reading-background" />
-          <label title="Text Background Toggle" for="reading-background"
-            ><i class="fa-solid fa-circle-half-stroke"></i
-          ></label>
-          <details open class="TOC">
-            <summary><b>Table of Contents</b></summary>
-            <ul>
-              <li><a href="#What is this?">What is this?</a></li>
-              <li>
-                <a href="#Analog">Analog</a>
-                <ul>
-                  <li><a href="#Stationery">Stationery</a></li>
-                  <li><a href="#Books">Books</a></li>
-                  <li><a href="#EDC">EDC</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#Technology">Technology</a>
-                <ul>
-                  <li>
-                    <a href="#Hardware">Hardware</a>
-                    <ul>
-                      <li><a href="#Computing">Computing</a></li>
-                      <li><a href="#Peripherals">Peripherals</a></li>
-                      <li><a href="#Electronics">Electronics</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#Software">Software</a></li>
-                </ul>
-              </li>
-              <li><a href="#Miscellaneous">Miscellaneous</a></li>
-            </ul>
-          </details>
-          <h1>Tools I use</h1>
-          <div class="text-background">
-            <h2 id="What is this?">What is this?</h2>
-            <p>
-              This is a list of items I use for work, academia, and day-to-day
-              life, explaining how and why I use each. The purpose of the list
-              is to document my processes and reflect on the tools I use for
-              them. I want to critically examine them: Are they the best tools
-              for the job? Am I using them efficiently, or are they getting in
-              the way? Do I really need them? Can I do without them? Writing
-              these things down help me to think clearly about my possessions,
-              and their place and role in my life.
-            </p>
-            <p>
-              The idea is that anyone can recreate the environment I'm working
-              in from this list—at least when it comes to tools. (If you want to
-              do that?) For me, for instance, if I lose my laptop, I can use
-              this list to quickly set up a new machine.
-            </p>
-            <p>
-              The table of contents on the left is navigable. It will take you
-              to the selected heading. If you've tried out any of the items
-              listed and have some strong opinions you'd like to share, feel
-              free to
-              <a href="/contact">hit me up with a message</a>.
-            </p>
-            <h2 id="Analog">Analog</h2>
-            <p>
-              I greatly value the tactile experience of working with analog
-              tools. Not everything can be, or should be done digitally. Here
-              are some analog tools that work for me, broken down into these
-              categories:
-            </p>
-            <ul>
-              <li>
-                <a href="#Stationery">Stationery</a>
-                <ul>
-                  <li><a href="#Pens">Pens</a></li>
-                  <li><a href="#Notebooks">Notebooks</a></li>
-                  <li><a href="#Whiteboard">Whiteboard</a></li>
-                  <li><a href="#Corkboard">Corkboard</a></li>
-                </ul>
-              </li>
-              <li><a href="#Books">Books</a></li>
-              <li>
-                <a href="#EDC">EDC</a>
-                <ul>
-                  <li><a href="#Wear">Wear</a></li>
-                  <li><a href="#Bags">Bags</a></li>
-                  <li><a href="#Teach">Tech</a></li>
-                  <li><a href="#Paper">Paper</a></li>
-                  <li><a href="#Misc">Misc</a></li>
-                </ul>
-              </li>
-            </ul>
-            <h3 id="Stationery">Stationery</h3>
-            Don't you just love hoarding stationery, but never actually using
-            it? Me too.
-            <h4 id="Pens"><i class="fa-solid fa-pen"></i> Pens</h4>
-            <p>
-              Some people can really nerd out about pens. I like to keep it
-              simple. I only have a few preferences when it comes to pens.
-            </p>
-            <ul>
-              <li>
-                Firstly, it must have a <b>0.5mm tip</b>. Anything thicker is
-                uncomfortable for me to write with.
-              </li>
-              <li>
-                Secondly, I exclusively use <b>black ink</b>, it contrasts
-                better with the page. (And it just looks better).
-              </li>
-              <li>
-                I also like pens with <b>refillable cartridges</b> that you can
-                just pop in.
-              </li>
-            </ul>
-            <p>
-              I generally use ballpoint pens. I have used fountain pens in the
-              past, and while they feel great to write with, they require extra
-              care. For theses reasons, my goto pens are these noname pens from
-              Auchan.
-              <img
-                style="
-                  width: 500px;
-                  filter: grayscale(100%);
-                  vertical-align: top;
-                "
-                src="/_assets/images/pen.png"
-                alt="Picture of the pen I described." />
-            </p>
-
-            <h4><i class="fa-solid fa-book"></i> Notebooks</h4>
-            <p>
-              Over the years I hoarded so many notebooks I don't know what to do
-              with them. I have about 47. All of them half filled with random
-              notes. They will last me for a lifetime or more. I prefer
-              <b> small top-bound spiral notebooks</b>.
-            </p>
-            <h4><i class="fa-solid fa-chalkboard"></i> Whiteboard</h4>
-            <div style="overflow: hidden">
-              <img
-                style="width: 400px; float: right; margin: 20px"
-                src="/_assets/images/whiteboard.png"
-                alt="" />
-              <p style="text-align: justify">
-                A must have for any scholar and writer.
-              </p>
-              <p style="text-align: justify">
-                I stick tow statically charged writing paper on my wardrobe
-                door. They are made out of plastic so in theory I should be able
-                to erase what I write on them. However I found that I need some
-                sort of alcoholic liquid to get the ink off of them.
-              </p>
-              <p style="text-align: justify">
-                I have a reel with like 20 more, so they going to last me a
-                while.
-              </p>
-            </div>
-
-            <h4><i class="fa-solid fa-thumbtack"></i> Corkboard</h4>
-            <p>
-              Sometimes you must go full detective. Lay out the evidence.
-              Connect the dots.
-            </p>
-            <h3 id="Books">Books</h3>
-            <h3 id="EDC">EDC</h3>
-            <p>Thing I have with me every day.</p>
-            <h4 id="Wear"><i class="fa-solid fa-shirt"></i> Wear</h4>
-            <h4 id="Bags"><i class="fa-solid fa-briefcase"></i> Bags</h4>
-            <h4 id="Tech"><i class="fa-solid fa-laptop"></i> Tech</h4>
-            <h4 id="Paper"><i class="fa-solid fa-file-pen"></i> Paper</h4>
-            <h4 id="Misc"><i class="fa-solid fa-key"></i> Misc</h4>
-            <h2 id="Technology">Technology</h2>
-            <h3 id="Hardware">Hardware</h3>
-            <h4 id="Computing">
-              <i class="fa-solid fa-computer"></i> Computing
-            </h4>
-            <h4 id="Peripherals">
-              <i class="fa-solid fa-computer-mouse"></i> Peripherals
-            </h4>
-            <h4 id="Electronics">
-              <i class="fa-solid fa-plug"></i> Electronics
-            </h4>
-            <h3 id="Software">Software</h3>
-            <h2 id="Miscellaneous">Miscellaneous</h2>
-          </div>
+    <main>
+      <aside>
+        <div id="green_box">
+          <h2>Table of contents</h2>
         </div>
-      </div>
-    </div>
+      </aside>
+      <article>
+        <h1>Tools I Use</h1>
+        <p></p>
+      </article>
+    </main>
   </body>
 </html>

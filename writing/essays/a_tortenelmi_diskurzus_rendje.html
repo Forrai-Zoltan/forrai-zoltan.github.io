@@ -4,94 +4,75 @@
     <title>A történelmi diskurzus rendje</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/_css/base.css" />
-    <link rel="stylesheet" href="/_css/navigation.css" />
-    <link rel="stylesheet" href="/_css/text.css" />
-    <link rel="stylesheet" href="/_css/mobile.css" />
-    <!-- Fonts -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- 
-  Navigation Bar 
-  -->
     <header>
-      <div class="title-background">
+      <div id="title_background">
         <a href="/">
-          <div class="logo-link">
+          <div id="logo_link">
             <img
-              class="favicon"
+              id="favicon"
               title="Socrates flipping the bird"
-              src="/web-app-manifest-512x512.png" />
-            <div class="logo-title">
+              src="/favicon.svg" />
+            <span id="logo_title">
               Part&#8209;time&nbsp;Writer. Full&#8209;time&nbsp;Wizard.
-            </div>
+            </span>
           </div>
         </a>
       </div>
-      <!-- Breadcrumbs -->
-      <nav>
-        <div class="breadcrumbs">
-          <i><a href="/">Home</a></i>
-          <i><a href="/writing">Writing</a></i>
-          <i><a href="/writing/essays">Essays</a></i>
-          <i
-            ><a lang="hu" href="/writing/essays/a_tortenelmi_diskurzus_rendje"
-              >A történelmi diskurzus rendje</a
-            ></i
-          >
-        </div>
+      <nav id="breadcrumbs">
+        <em><a href="/">Home</a></em>
+        <em><a href="/writing">Writing</a></em>
+        <em><a href="/writing/essays">Essays</a></em>
+        <em
+          ><a lang="hu" href="/writing/essays/a_tortenelmi_diskurzus_rendje"
+            >A történelmi diskurzus rendje</a
+          ></em
+        >
       </nav>
-      <!-- Navigation Menu -->
-      <!-- Hamburger menu for mobile -->
-      <div class="hamburger-wrapper">
-        <label for="hamburger" class="hamburger">🍔</label>
-      </div>
-      <input id="hamburger" type="checkbox" class="menu-toggle" />
-      <nav class="hamburger-menu">
-        <!-- Dropdown menu -->
-        <ul class="menu">
+      <label for="hamburger" id="hamburger_icon">🍔</label>
+      <input id="hamburger" type="checkbox" class="menu_toggle" />
+      <nav id="hamburger_menu">
+        <ul id="menu">
           <li>
-            <a href="/personal">Personal</a>
+            <a class="menu_titles" href="/personal">Personal</a>
             <ul class="dropdown">
               <li><a href="/personal/posts">Posts</a></li>
+              <li><a href="/personal/curriculum_vitae">Curriculum Vitae</a></li>
               <li><a href="/personal/things_i_like">Things I like</a></li>
               <li><a href="/personal/tools_i_use">Tools I use</a></li>
             </ul>
           </li>
           <li>
-            <a href="/writing">Writing</a>
+            <a class="menu_titles" href="/writing">Writing</a>
             <ul class="dropdown">
               <li><a href="/writing/essays">Essays</a></li>
               <li><a href="/writing/short_fiction">Short Fiction</a></li>
               <li><a href="/writing/long_form">Long Form</a></li>
               <li><a href="/writing/plays">Plays</a></li>
+              <li><a href="/writing/poems">Poems</a></li>
             </ul>
           </li>
           <li>
-            <a href="/art">Art</a>
+            <a class="menu_titles" href="/art">Art</a>
             <ul class="dropdown">
               <li><a href="/art/drawings">Drawings</a></li>
               <li><a href="/art/comics">Comics</a></li>
+              <li><a href="/art/animations">Animations</a></li>
               <li><a href="/art/films">Films</a></li>
             </ul>
           </li>
           <li>
-            <a href="/collections">Collections</a>
+            <a class="menu_titles" href="/collections">Collections</a>
             <ul class="dropdown">
               <li>
-                <a href="/collections/teach_yourself_writing"
-                  >Teach Yourself Writing</a
-                >
+                <a href="/collections/writers_wiki">Writers' Wiki</a>
               </li>
               <li>
                 <a href="/collections/intentional_consumption"
@@ -99,99 +80,86 @@
                 >
               </li>
               <li>
-                <a href="/collections/bradbury_reading_challenge"
-                  >Bradbury Reading Challenge</a
-                >
+                <a href="/collections/reading_list">Reading List</a>
+              </li>
+              <li>
+                <a href="/collections/classes">Classes</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- 
-  ------------------------------------------------------------
-                      Main Body Section 
-  ------------------------------------------------------------ 
-  -->
-    <div class="main-container">
-      <div class="text-container">
-        <div class="long-text indent" lang="hu">
-          <input
-            title="Text Background Toggle"
-            type="checkbox"
-            id="reading-background" />
-          <label title="Text Background Toggle" for="reading-background"
-            ><i class="fa-solid fa-circle-half-stroke"></i
-          ></label>
-          <h1>A történelmi diskurzus rendje</h1>
-          <div class="text-background">
-            <p>
-              Mindenki fejében létezik egy kép a történelemről. Egy elképzelés
-              arról, hogyan is zajlott le a múlt, miként történtek az események.
-              Ahelyett, hogy egy megkérdőjelezhetetlen monolitszerű
-              történelemről beszélnénk sokkal inkább történelmi diskurzusok
-              sokaságáról van szó. Ez a történelem, vagy történelmek mindenki
-              fejében másként jelennek meg.
-            </p>
-            <p>
-              Nincs <em>egy</em> objektív történelem, minden személy saját
-              értelmezést ad a történteknek, ezáltal létrehozva
-              naratívák/diskurzusok rengetegét. A diskurzusok tárgya ugyanaz: a
-              történelem, vagy annak bizonyos korszaka/eleme; a diskurzusok
-              közötti különbségeket annak a célja, vizsgálati módszere,
-              alapossága, nézőpontja befolyásolja.
-            </p>
-            <p>
-              Különböző tudományos, politikai és társadalmi csoportok másként
-              vélekednek a történelemről, a történtekről. Más céllal vizsgálják
-              azt: az igazság megismerése, hatalom legitimizálása, önön
-              identitásunk formálása. Más módszereket, és más forrásokat
-              alkalmazva ehhez.
-            </p>
-            <p>
-              Valami olyasmi rendet képzelünk el, hogy a történész évekig tartó
-              kutatás után megírja egy kornak (vagy egy koron belül egy témának)
-              a történetét. Ez egy leegyszerűsített, rövidített formában bekerül
-              a tankönyvekbe és az oktatásba majd ezen keresztül a köztudatba és
-              kollektív emlékezetbe.
-            </p>
-            <p>
-              Azonban ezt a képet megbolygatja a politika, aki több helyen
-              belenyúl a dologba. Már azáltal, hogy kinek a kutatására ad
-              támogatást befolyásolja, hogy mely naratívákat/diskurzusokat fogad
-              el igaznak (vagy hasznosnak). Aztán hatalmas beleszólása van
-              abban, hogy mely tankönyveket engedélyez a közoktatásban, milyen
-              témák legyenek a NAT-ban, és mindezáltal, hogy a társadalomnak
-              milyen ismerete legyen a történelemről, történtekről.
-            </p>
-            <p>
-              Mintha lenne egy “történelem” nevű háromszög, aminek a három
-              csúcsa a történész (tudós), politikus és az átlagember, akiknek
-              folyton változó helyzete a síkon változtatja a háromszög formáját.
-              Néha a történész és a politikus van egy oldalon, így derékszöget
-              rajzolnak, néha a politikus és az átlagember nézete kerül közel
-              egymáshoz, így hegyesszöget képeznek.
-            </p>
-            <p>
-              Mindez egyrészről óvatosságra int, minthogy rengeteg diskurzus van
-              a történelemben, hiszen az könnyen manipulálható és létrehozhatóak
-              (mint ahogy léteznek is) olyan naratívák, nézőpontok történelmi
-              tényekről amely valamilyen csoport érdekét hordozza magában.
-            </p>
-            <p>
-              Azonban tekinthetjük ez a pluralizmust pozitív tényként is,
-              merthogy több nézőpontból is lehetőségünk van vizsgálni a múltat,
-              megkérdőjelezhetjük az uralkodó, vagy uralkodásra vágyó
-              naratívákat/diskurzusokat.
-            </p>
-          </div>
+    <main>
+      <article class="centered long_text" lang="hu">
+        <h1>A történelmi diskurzus rendje</h1>
+        <div>
+          <p>
+            Mindenki fejében létezik egy kép a történelemről. Egy elképzelés
+            arról, hogyan is zajlott le a múlt, miként történtek az események.
+            Ahelyett, hogy egy megkérdőjelezhetetlen monolitszerű történelemről
+            beszélnénk sokkal inkább történelmi diskurzusok sokaságáról van szó.
+            Ez a történelem, vagy történelmek mindenki fejében másként jelennek
+            meg.
+          </p>
+          <p>
+            Nincs <em>egy</em> objektív történelem, minden személy saját
+            értelmezést ad a történteknek, ezáltal létrehozva
+            naratívák/diskurzusok rengetegét. A diskurzusok tárgya ugyanaz: a
+            történelem, vagy annak bizonyos korszaka/eleme; a diskurzusok közötti
+            különbségeket annak a célja, vizsgálati módszere, alapossága,
+            nézőpontja befolyásolja.
+          </p>
+          <p>
+            Különböző tudományos, politikai és társadalmi csoportok másként
+            vélekednek a történelemről, a történtekről. Más céllal vizsgálják azt:
+            az igazság megismerése, hatalom legitimizálása, önön identitásunk
+            formálása. Más módszereket, és más forrásokat alkalmazva ehhez.
+          </p>
+          <p>
+            Valami olyasmi rendet képzelünk el, hogy a történész évekig tartó
+            kutatás után megírja egy kornak (vagy egy koron belül egy témának) a
+            történetét. Ez egy leegyszerűsített, rövidített formában bekerül a
+            tankönyvekbe és az oktatásba majd ezen keresztül a köztudatba és
+            kollektív emlékezetbe.
+          </p>
+          <p>
+            Azonban ezt a képet megbolygatja a politika, aki több helyen belenyúl
+            a dologba. Már azáltal, hogy kinek a kutatására ad támogatást
+            befolyásolja, hogy mely naratívákat/diskurzusokat fogad el igaznak
+            (vagy hasznosnak). Aztán hatalmas beleszólása van abban, hogy mely
+            tankönyveket engedélyez a közoktatásban, milyen témák legyenek a
+            NAT-ban, és mindezáltal, hogy a társadalomnak milyen ismerete legyen a
+            történelemről, történtekről.
+          </p>
+          <p>
+            Mintha lenne egy “történelem” nevű háromszög, aminek a három csúcsa a
+            történész (tudós), politikus és az átlagember, akiknek folyton változó
+            helyzete a síkon változtatja a háromszög formáját. Néha a történész és
+            a politikus van egy oldalon, így derékszöget rajzolnak, néha a
+            politikus és az átlagember nézete kerül közel egymáshoz, így
+            hegyesszöget képeznek.
+          </p>
+          <p>
+            Mindez egyrészről óvatosságra int, minthogy rengeteg diskurzus van a
+            történelemben, hiszen az könnyen manipulálható és létrehozhatóak (mint
+            ahogy léteznek is) olyan naratívák, nézőpontok történelmi tényekről
+            amely valamilyen csoport érdekét hordozza magában.
+          </p>
+          <p>
+            Azonban tekinthetjük ez a pluralizmust pozitív tényként is, merthogy
+            több nézőpontból is lehetőségünk van vizsgálni a múltat,
+            megkérdőjelezhetjük az uralkodó, vagy uralkodásra vágyó
+            naratívákat/diskurzusokat.
+          </p>
         </div>
-        <footer>
-          <h2>Notes</h2>
-          <p>Written: 2024 Oct 5</p>
-          <p>© 2024 Forrai Zoltán</p>
-        </footer>
-      </div>
-    </div>
+      </article>
+      <footer>
+        <h2>Notes</h2>
+        <p>Written: 2024 Oct 5</p>
+        <p id="copyright"></p>
+      </footer>
+      <div id="bottom_space">_</div>
+    </main>
   </body>
 </html>
