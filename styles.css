@@ -90,10 +90,10 @@ a[href^="#"] {
 
 body header a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 body header a:visited {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 a.hiden-link {
