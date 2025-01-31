@@ -78,8 +78,8 @@ a {
   color: var(--link-color);
 }
 
-a[href^="/"],
-a[href^="#"] {
+main a[href^="/"],
+main a[href^="#"] {
   color: var(--internal-link);
   text-decoration: none;
 }
@@ -90,10 +90,10 @@ a[href^="#"] {
 
 body header a {
   text-decoration: none;
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
 body header a:visited {
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
 
 a.hiden-link {
