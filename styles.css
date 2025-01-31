@@ -88,11 +88,11 @@ a[href^="#"] {
   color: var(--purple-light);
 } */
 
-header a {
+body header a {
   text-decoration: none;
   color: var(--text-color);
 }
-header a:visited {
+body header a:visited {
   color: var(--text-color);
 }
 
