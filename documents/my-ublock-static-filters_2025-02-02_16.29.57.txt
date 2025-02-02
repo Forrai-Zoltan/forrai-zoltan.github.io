@@ -1,3 +1,16 @@
+[Adblock Plus 2.0]
+! Version: 202502021416
+! Title: gildrom's list
+! Last modified: 02 Feb 2025 14:16 UTC
+! Expires: 4 days (update frequency)
+! *** easylist:template_header.txt ***
+! 
+! 
+! --------------------------General blocking rules-----------------------------!
+! *** easylist:fanboy-addon/fanboy_social_general_block.txt ***
+! fanboy_social_general_block.txt
+
+
 ! 30 May 2024 https://twitter.com
 twitter.com##.r-bnwqim.r-3pj75a.r-1mmae3n.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
 
