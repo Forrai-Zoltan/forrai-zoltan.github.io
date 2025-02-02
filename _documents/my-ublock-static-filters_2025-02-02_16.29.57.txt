@@ -1,0 +1,619 @@
+! 30 May 2024 https://twitter.com
+twitter.com##.r-bnwqim.r-3pj75a.r-1mmae3n.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
+
+! 30 May 2024 https://www.facebook.com
+www.facebook.com##.xzd29fr.x1lku1pv.x5ib6vp.x18d9i69.xc73u3c.xexx8yu.xt55aet.x1c4vz4f.xknmibj.x1q0g3np.xozqiw3.x6s0dn4.x1qughib.xeuugli.xs83m0k.x1r8uery.x78zum5.x1ja2u2z.x1n2onr6.x9f619
+
+
+
+
+
+
+! 30 May 2024 https://discord.com
+discord.com##.link__3a950
+discord.com##.selectedBackground__4039b.background__3b760
+discord.com##.background__3b760
+discord.com##.themed_b957e8.item__48dda.premiumTab_ad0913
+||discord.com/assets/b4a4d3477b3e966d54a6.png$image
+||discord.com/assets/0f79c14632c362a9fcb6.png$image
+||discord.com/assets/b4a4d3477b3e966d54a6.png$image
+||discord.com/assets/0f79c14632c362a9fcb6.png$image
+||discord.com/assets/0f79c14632c362a9fcb6.png$image
+
+! 30 May 2024 https://twitter.com
+twitter.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(8)
+
+
+
+! 31 May 2024 https://drive.proton.me
+drive.proton.me##.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+drive.proton.me##.justify-center.items-center.gap-2.flex.w-full.my-2.text-center.inline-block.button-outline-norm.button-medium.button
+
+! 31 May 2024 https://calendar.proton.me
+calendar.proton.me##.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+
+! 31 May 2024 https://mail.proton.me
+mail.proton.me##.button-promotion--icon-gradient.button-promotion.items-center.flex.max-w-full.text-center.inline-block.button-outline-weak.button-medium.button
+
+! 31 May 2024 https://pass.proton.me
+pass.proton.me##section.gap-4.flex-column.flex:nth-of-type(3)
+pass.proton.me##section.gap-4.flex-column.flex:nth-of-type(1)
+pass.proton.me##.gap-6.flex-column.flex > div
+pass.proton.me##div.shrink-0:nth-of-type(4)
+pass.proton.me##.collapsible-header--clickable.items-center.flex-nowrap.flex.pl-4.shrink-0.py-1.pr-2.mx-3
+pass.proton.me###collapsible-90 > div.text-lg.pass-submenu--item.w-full.shrink-0.relative > .text-sm.py-2.px-4.w-full.dropdown-item-button
+pass.proton.me##div.mx-3.shrink-0.relative:nth-of-type(1)
+pass.proton.me##.mx-3.pr-2.pl-4.mt-2.gap-2.flex-nowrap.shrink-0.justify-space-between.items-center.flex > .flex-nowrap.items-center.flex
+pass.proton.me##.flex-nowrap.items-center.justify-space-between.shrink-0.md\:flex.hidden.logo-container.w-full
+pass.proton.me##.collapsible-header--clickable.items-center.flex-nowrap.flex.text-sm.pt-2
+pass.proton.me##.mx-3.pr-2.pl-4.mt-2.gap-2.flex-nowrap.shrink-0.justify-space-between.items-center.flex
+
+! 31 May 2024 https://drive.proton.me
+drive.proton.me##.drawer-visibility-control-button.m-auto.button-solid-weak.button-small.button-for-icon.button
+drive.proton.me##li.mb-0\.5.px-3.w-full.navigation-item:nth-of-type(2)
+drive.proton.me##li.mb-0\.5.px-3.w-full.navigation-item:nth-of-type(3)
+
+! 31 May 2024 https://www.codecademy.com
+www.codecademy.com##.e1tc6bzh0.gamut-1lwf5uh-FlexBox > .e1tc6bzh0.gamut-13k0bhr-FlexBox
+www.codecademy.com##div.ebnwbv90.gamut-c42tul-Box:nth-of-type(3)
+www.codecademy.com##.e1bhhzie0.gamut-4e2seh-ResetElementAnchor-createButtonComponent.e116l7sm0
+www.codecademy.com##.e1xir4o10.gamut-1y7hb43 > .e1dgn4f70.gamut-3a1jmv-Box-ContentContainer
+www.codecademy.com##li.e1de70210.gamut-3tullx-Box:nth-of-type(6)
+www.codecademy.com##li.e1de70210.gamut-3tullx-Box:nth-of-type(8)
+www.codecademy.com##li.e1de70210.gamut-3tullx-Box:nth-of-type(7)
+
+! 31 May 2024 https://boards.4chan.org
+boards.4chan.org##form:nth-of-type(1)
+boards.4chan.org##.center.middlead
+boards.4chan.org##.boardBanner
+
+
+
+! 12 Jun 2024 https://x.com
+
+! 12 Jun 2024 https://x.com
+x.com##.r-bnwqim.r-3pj75a.r-1mmae3n.r-uaa2di.r-eqz5dr.r-1habvwh.css-175oi2r
+x.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(4)
+x.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(5)
+x.com##.r-3pj75a.r-1w6e6rj.r-18u37iz.css-175oi2r
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(8)
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(5)
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(7)
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(2)
+x.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(3)
+
+! 12 Jun 2024 https://twitter.com
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(4)
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(5)
+twitter.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(5)
+twitter.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(7)
+twitter.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(6)
+twitter.com##.r-3pj75a.r-1w6e6rj.r-18u37iz.css-175oi2r
+
+! 13 Jun 2024 https://twitter.com
+twitter.com##div.r-1udh08x.r-1ifxtd0.r-rs99b7.r-1phboty.r-1867qdf.r-1kqtdi0.r-kemksi.css-175oi2r:nth-of-type(3)
+
+
+! 15 Jun 2024 https://discord.com
+discord.com##div.listItem__48528:nth-of-type(7) > .listItemWrapper__3d465 > .wrapper__9916c > .svg__34dd4 > foreignObject > .circleIconButton__05cf2
+discord.com##.buttons__7ecff > .grow__4c8a4.colorBrand__27d57.lookBlank_a5b4ca.button__581d0 > .button__493d9.button__437ce.contents__322f4 > .buttonWrapper_bd4bd7 > .lottieIcon_c7076c > svg
+discord.com##.buttons__7ecff > .grow__4c8a4.colorBrand__27d57.lookBlank_a5b4ca.button__581d0 > .button__493d9.button__437ce.contents__322f4 > .buttonWrapper_bd4bd7 > .lottieIcon_c7076c
+discord.com##.buttons__7ecff > .grow__4c8a4.colorBrand__27d57.lookBlank_a5b4ca.button__581d0
+
+! 18 Jun 2024 https://open.spotify.com
+
+
+! 18 Jun 2024 https://twitter.com
+twitter.com##div.r-16y2uox.r-cpa5s6.r-14tvyh0.css-175oi2r:nth-of-type(1) > .r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1c7gwzm.r-1c4vpko.r-s8bhmr.r-1777fci.r-1h3ijdo.r-16y2uox.r-eqz5dr.r-6koalj.r-1awozwy.css-175oi2r
+twitter.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(2)
+
+! 18 Jun 2024 https://open.spotify.com
+
+! 18 Jun 2024 https://open.spotify.com
+
+
+
+
+! 19 Jun 2024 https://telex.hu
+telex.hu##.footer__app
+telex.hu##.footer__container
+telex.hu##.html-preview-text > .html-preview-text
+telex.hu##.framed-content
+telex.hu##.article-content.article-bottom
+telex.hu###article-endbox-campaign-content
+telex.hu##.article-content.support-box
+telex.hu##.navigation__items
+telex.hu##.navigation__desktop
+telex.hu##.article-box-margin.sidebar_container_
+telex.hu##div:nth-of-type(9)
+
+
+
+! 19 Jun 2024 https://discord.com
+discord.com##div.listItem_c96c45:nth-of-type(7) > .listItemWrapper_dfb2f8 > .wrapper_c5f96a > .svg_c5f96a > foreignObject > .circleIconButton_db6521
+discord.com##.buttons_d0696b > .grow_dd4f85.colorBrand_dd4f85.lookBlank_dd4f85.button_dd4f85
+
+! 19 Jun 2024 https://open.spotify.com
+
+open.spotify.com##section.contentSpacing
+open.spotify.com##._YN9HVrnrcvnaCjYnNkM
+open.spotify.com##.cuLHaM.Footer__StyledFooter-sc-xwm5vq-0
+open.spotify.com##.QkOkUShDYWFx5Cz40Bcn
+open.spotify.com##.GTmlByXpJj7V6AwVq0Vk
+open.spotify.com##.l2PpoXJouAgqFCuNT3iB.Ai_McRq9wJEYK21w8nX_
+open.spotify.com##.IgTMXVbZtqtZwu3GZASd.Ai_McRq9wJEYK21w8nX_
+open.spotify.com##.WtC1lGbmQRplD6JBhNFU.encore-over-media-set
+open.spotify.com##.wpJvLvrrnyP0_C7hLkqg.Ai_McRq9wJEYK21w8nX_
+open.spotify.com##.encore-over-media-set.kVKSMm.ButtonInner-sc-14ud5tc-0
+
+! 19 Jun 2024 https://twitter.com
+twitter.com##div.r-16y2uox.r-cpa5s6.r-14tvyh0.css-175oi2r:nth-of-type(4) > .r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1c7gwzm.r-1c4vpko.r-s8bhmr.r-1777fci.r-1h3ijdo.r-16y2uox.r-eqz5dr.r-6koalj.r-1awozwy.css-175oi2r
+twitter.com##div.r-16y2uox.r-cpa5s6.r-14tvyh0.css-175oi2r:nth-of-type(3) > .r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1c7gwzm.r-1c4vpko.r-s8bhmr.r-1777fci.r-1h3ijdo.r-16y2uox.r-eqz5dr.r-6koalj.r-1awozwy.css-175oi2r
+twitter.com##.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-xyw6el.r-18u37iz.r-6koalj.r-sdzlij.r-1awozwy.css-175oi2r
+twitter.com##div.r-16y2uox.r-cpa5s6.r-14tvyh0.css-175oi2r:nth-of-type(1)
+twitter.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1c7gwzm.r-1c4vpko.r-s8bhmr.r-1777fci.r-1h3ijdo.r-16y2uox.r-eqz5dr.r-6koalj.r-1awozwy.css-175oi2r
+
+
+
+! 19 Jun 2024 https://open.spotify.com
+open.spotify.com##.T3hkVxXuSbCYOD2GIeQd.encore-bright-accent-set.gQoa8JTSpjSmYyABcag2
+open.spotify.com##button.KAZD28usA1vPz5GVpm63.fLalFV.Button-sc-1dqy6lx-0:nth-of-type(3)
+open.spotify.com##.mhuhir0ikRqXAPHU8ZZ1.D8wJ9TPfJzLeLJYxnad2.XNjgtSbyhshr7YQcVvry.O0AN8Ty_Cxd4iLwyKATB.odS2IW9wfNVHhkhc0l_X.or84FBarW2zQhXfB9VFb.NxEINIJHGytq4gF1r2N1.cljOO1tpzixzXctKJucK.i_FRcsaqNCEJmoyObIP0.bEDBMs.Button-sc-1dqy6lx-0
+open.spotify.com##.XOSSUjLDKk9RRmiX_UWa.icNf66tgG3uxDMbCCIaN
+open.spotify.com##.Oq3xjFrLaBAabx847xea
+open.spotify.com##.contentSpacing > div > .OMuRYOdpUbGif12_lRJl
+
+! 19 Jun 2024 https://twitter.com
+twitter.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(1)
+
+
+
+
+! 21 Jun 2024 https://www.duolingo.com
+www.duolingo.com##._3mfHU
+
+! 21 Jun 2024 https://open.spotify.com
+open.spotify.com##button.KAZD28usA1vPz5GVpm63.fLalFV.Button-sc-1dqy6lx-0:nth-of-type(2)
+open.spotify.com##.jjRAQv.Box-sc-8t9c76-0.ZcBtI.Box__BoxComponent-sc-y4nds-0
+open.spotify.com##li.ZkuPLR9bss2N7f7thixx:nth-of-type(2) > .chaEYk.Box-sc-8t9c76-0.ZcBtI.Box__BoxComponent-sc-y4nds-0
+open.spotify.com##.NxEINIJHGytq4gF1r2N1.cljOO1tpzixzXctKJucK.i_FRcsaqNCEJmoyObIP0.bEDBMs.Button-sc-1dqy6lx-0
+open.spotify.com##.BagEpNps_J8R2QuHRZMa
+
+
+
+! 21 Jun 2024 https://www.notion.so
+www.notion.so##.notion-ai-button
+
+! 21 Jun 2024 https://www.stayfocusd.com
+||www.stayfocusd.com/_nuxt/stayfree-desktop-promo.242fe700.png$image
+
+! 21 Jun 2024 https://www.notion.so
+www.notion.so##span > div > div
+
+
+
+! 23 Jun 2024 https://www.twitch.tv
+www.twitch.tv##.jdpzyl.Layout-sc-1xcs6mc-0
+www.twitch.tv##.cpXVwB.Layout-sc-1xcs6mc-0 > .kBtJDm.InjectLayout-sc-1i43xsx-0 > .cegTsp.ljgEdo.ScCoreButtonSecondary-sc-ocjdkq-2.ScCoreButton-sc-ocjdkq-0
+www.twitch.tv##.kITeBB.Layout-sc-1xcs6mc-0 > .cVmNmw.Layout-sc-1xcs6mc-0 > .hPfSAv.Layout-sc-1xcs6mc-0 > .kBtJDm.InjectLayout-sc-1i43xsx-0 > .gmCwLG.ljgEdo.ScCoreButtonPrimary-sc-ocjdkq-1.ScCoreButton-sc-ocjdkq-0
+www.twitch.tv##.theatre-social-panel.jGPAjl.Layout-sc-1xcs6mc-0
+||static-cdn.jtvnw.net/jtv_user_pictures/476ee93d-66a6-4e57-b3a9-db1ceb168ad8-profile_image-150x150.png$image
+
+! 23 Jun 2024 https://open.spotify.com
+open.spotify.com##._mPIDSVjofNyCLhlaXuL.Ai_McRq9wJEYK21w8nX_
+open.spotify.com##.nw2W4ZMdICuBo08Tzxg9 > .EVqc6HChiM9pEqBYAiUE.encore-internal-color-text-base.encore-text-body-medium-bold.encore-text > .zZdI03asKaUCNlbhjDAv
+open.spotify.com##.m3pzWNRu8xGY36YIaCY1.nLNTsyonBwoRIzAv1AME
+open.spotify.com##.nw2W4ZMdICuBo08Tzxg9 > .EVqc6HChiM9pEqBYAiUE.encore-internal-color-text-base.encore-text-body-medium-bold.encore-text
+open.spotify.com##.MfVrtIzQJ7iZXfRWg6eM
+open.spotify.com##.OMuRYOdpUbGif12_lRJl
+open.spotify.com##.MKCgGhu_c8l6hsVuee46.Shelf.QyANtc_r7ff_tqrf5Bvc.tjYg4vq1mzFJ5kVFipZH
+open.spotify.com##.main-view-container__mh-footer-container
+open.spotify.com##.paiZmlAHHhmZonuGJRAr
+
+open.spotify.com##.EHxL6K_6WWDlTCZP6x5w.RK45o6dbvO1mb0wQtSwq.KAZD28usA1vPz5GVpm63.fLalFV.Button-sc-1dqy6lx-0
+open.spotify.com##.Ww5ppB6W74laf1c0H_pR
+open.spotify.com##.deomraqfhIAoSB3SgXpu > .fLalFV.Button-sc-1dqy6lx-0
+
+! 25 Jun 2024 https://www.duolingo.com
+
+! 25 Jun 2024 https://boards.4chan.org
+boards.4chan.org###boardNavDesktop > .boardList
+boards.4chan.org###navtopright
+boards.4chan.org##body > .adl
+
+! 27 Jun 2024 https://twitter.com
+twitter.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(9)
+
+
+
+! 29 Jun 2024 https://www.twitch.tv
+www.twitch.tv##.channel-panels-container
+www.twitch.tv##p.fPmwxk.CoreText-sc-1txzju1-0:nth-of-type(2)
+www.twitch.tv##.igtjSV.CoreText-sc-1txzju1-0 > .tw-link.dNtLtE.ScCoreLink-sc-16kq0mq-0
+||static-cdn.jtvnw.net/jtv_user_pictures/a9ce83ba-c0bd-49cc-83bd-9d17647a211a-profile_image-150x150.png$image
+||static-cdn.jtvnw.net/jtv_user_pictures/a9ce83ba-c0bd-49cc-83bd-9d17647a211a-profile_image-150x150.png$image
+||static-cdn.jtvnw.net/jtv_user_pictures/a9ce83ba-c0bd-49cc-83bd-9d17647a211a-profile_image-150x150.png$image
+www.twitch.tv##.undefined.right-column__toggle-visibility.kLMGYG.Layout-sc-1xcs6mc-0 > .kBtJDm.InjectLayout-sc-1i43xsx-0 > .dOOPAe.ScButtonIcon-sc-9yap0r-0.ejeLlX.ScCoreButton-sc-ocjdkq-0
+www.twitch.tv##.top-bar--pointer-enabled.xxjeD.Layout-sc-1xcs6mc-0
+www.twitch.tv##p.fPmwxk.CoreText-sc-1txzju1-0:nth-of-type(1)
+static-cdn.jtvnw.net/jtv_user_pictures/a9ce83ba-c0bd-49cc-83bd-9d17647a211a-profile_image-150x150.png$domain=www.twitch.tv,image
+www.twitch.tv##.cxJwKj.ScAttachedTooltipWrapper-sc-1ems1ts-0.Layout-sc-1xcs6mc-0 > .dOOPAe.ScButtonIcon-sc-9yap0r-0.ejeLlX.ScCoreButton-sc-ocjdkq-0
+www.twitch.tv##div.kBtJDm.InjectLayout-sc-1i43xsx-0:nth-of-type(4) > .dOOPAe.ScButtonIcon-sc-9yap0r-0.ejeLlX.ScCoreButton-sc-ocjdkq-0
+www.twitch.tv##.player-controls__left-control-group.cFsYRp.Layout-sc-1xcs6mc-0 > .kBtJDm.InjectLayout-sc-1i43xsx-0 > .dOOPAe.ScButtonIcon-sc-9yap0r-0.ejeLlX.ScCoreButton-sc-ocjdkq-0
+
+! 29 Jun 2024 https://www.duolingo.com
+www.duolingo.com##._1T_BQ._2cnFr
+
+! 30 Jun 2024 https://boards.4chan.org
+boards.4chan.org###boardNavDesktopFoot
+boards.4chan.org##.absBotText
+boards.4chan.org###delform > .adl
+
+! 6 Jul 2024 https://infinitecraftrecipe.com
+infinitecraftrecipe.com##div > div > div
+infinitecraftrecipe.com##div:nth-of-type(16)
+
+
+
+! 9 Jul 2024 https://duckduckgo.com
+||duckduckgo.com/assets/logo_header.v109.svg$image
+duckduckgo.com##.ofDl_1VxUG_EKc3b9E3x.XvPRmQVeIoCP5lQhICTv > li:nth-of-type(1)
+duckduckgo.com/assets/logo_header.v109.svg$domain=duckduckgo.com,image
+
+
+
+! 14 Jul 2024 https://github.com
+github.com##.contribution-activity.activity-listing
+github.com##.p-responsive.color-fg-muted.f6.pb-6.pt-8.footer
+
+! 14 Jul 2024 https://chatgpt.com
+chatgpt.com##.items-end.relative.flex-col.flex.flex-shrink-0
+chatgpt.com##.md\:px-\[60px\].text-token-text-secondary.text-xs.text-center.py-2.px-2.relative > span
+chatgpt.com##.juice\:font-normal.juice\:gap-2\.5.hover\:bg-token-sidebar-surface-secondary.text-token-text-primary.font-medium.px-2.rounded-lg.gap-2.items-center.w-full.h-10.flex
+chatgpt.com##.text-token-text-primary.justify-center.items-center.flex-col.h-full.flex > div
+chatgpt.com##.w-12.h-12
+chatgpt.com##.justify-between.flex-wrap-reverse.flex-row.w-full.flex
+chatgpt.com##.shadow-xxs.lg\:mx-auto.md\:items-center.dark\:bg-token-main-surface-secondary.dark\:border-transparent.\[text-wrap\:pretty\].text-token-text-primary.text-sm.pr-3.pl-5.py-4.bg-token-main-surface-primary.border-token-border-light.border.rounded-2xl.gap-4.items-start.w-full.flex
+
+
+
+
+! 26 Jul 2024 https://insighttimer.com
+insighttimer.com##.insight-187o24p
+insighttimer.com##.insight-f6xsr5
+
+! 26 Jul 2024 https://github.com
+github.com##li.hide-md.hide-sm.pt-1.vcard-detail:nth-of-type(2)
+github.com##.p-2.lh-condensed-ultra.d-inline-block.user-status-circle-badge.js-user-status-container
+github.com##.ml-2.AppHeader-logo
+github.com##.Label--inline.v-align-baseline.no-wrap.mt-1.v-align-middle.Label--secondary.Label
+
+! 26 Jul 2024 https://twitter.com
+
+
+
+! 27 Jul 2024 https://x.com
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(6)
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(1)
+x.com##.r-1loqt21.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1c7gwzm.r-1c4vpko.r-s8bhmr.r-1777fci.r-1h3ijdo.r-16y2uox.r-eqz5dr.r-6koalj.r-1awozwy.css-175oi2r
+x.com##.r-1ny4l3l.r-6416eg.r-o7ynqc.r-1loqt21.r-xyw6el.r-18u37iz.r-6koalj.r-sdzlij.r-1awozwy.css-175oi2r
+
+! 27 Jul 2024 https://chatgpt.com
+chatgpt.com##.hover\:bg-token-sidebar-surface-secondary.text-token-text-primary.px-2.rounded-lg.gap-2\.5.items-center.w-full.h-10.flex
+
+! 1 Aug 2024 https://www.reddit.com
+www.reddit.com###t3_1eh8sgj
+www.reddit.com##left-nav-top-section
+www.reddit.com##.px-md.box-border.bg-neutral-background.overflow-x-hidden.overflow-y-scroll.styled-scrollbars.h-screen-without-header.top-\[56px\].sticky.w-full.block.nd\:visible
+www.reddit.com##.xs\:block.hidden.rounded-\[8px\].bg-neutral-background-weak > .py-md
+www.reddit.com##.items-center.flex.border-neutral-border.border-solid.border-r-0.border-l-0.border-t-0.border-b-sm.h-header-large
+www.reddit.com##.border-r-neutral-border.s\:border-r-sm.border-solid.border-0.m\:block.hidden.order-first.isolate.theme-rpl.left-sidebar
+www.reddit.com##.pdp-float-back-btn\:-left-\[2\.5rem\].pdp-float-back-btn\:top-md.pdp-float-back-btn\:absolute.h-\[32px\].w-\[32px\].xs\:block.hidden
+
+! 1 Aug 2024 https://app.raindrop.io
+app.raindrop.io##.svSidebar > .header-Tqac > a.button-dQdc
+
+! 2 Aug 2024 https://github.com
+github.com##.BorderGrid-cell > .mt-3
+
+! 3 Aug 2024 https://theresanaiforthat.com
+theresanaiforthat.com###signin_modal
+
+! 5 Aug 2024 https://www.dictionary.com
+www.dictionary.com##.iFIVxQuWKYyl5sACYeGg
+
+! 5 Aug 2024 https://www.thesaurus.com
+www.thesaurus.com##.iFIVxQuWKYyl5sACYeGg
+
+! 5 Aug 2024 https://github.com
+github.com##.p-4.Box-body > .flex-justify-between.d-flex
+github.com##.float-left > .Link--muted
+github.com###user-content-️-github-is-artstation-for-writers-change-my-mind > .octicon-link.octicon
+github.com###user-content-️-github-is-artstation-for-writers-change-my-mind
+
+
+
+! 6 Aug 2024 https://duckduckgo.com
+duckduckgo.com##.js-feedback-btn-wrap
+duckduckgo.com##.xWVFEW_kM7bYLASLNfsZ.rXBzGoYc_uM83jRoODrM.wuwdN2SgDOTwsnBO5PI7.h3EKGeHmRRkjbMqYfNUi.WVvM2VZmaSCvFUapMaYQ > .FMPme3X940xAt4SKPFuw > .YL_aMfikzFszfcc4KLSh
+duckduckgo.com##.footer
+duckduckgo.com##.js-header-logo.header__logo-wrap
+duckduckgo.com##.js-side-menu-open.header__button--menu
+duckduckgo.com##.js-carousel-module-footer-links.module--carousel__footer-links > .feedback-prompt
+duckduckgo.com##.at-bottom.t-m.related-searches
+duckduckgo.com##.ds1w04wA2KNmfx2PU4CA
+duckduckgo.com##.wby4s2oeSwQIL26G_7n2.VxjciSS8ByHcoLOirFjO.k0dqcyn_SZAmh1pFFuQ5
+duckduckgo.com##li:nth-of-type(5) > .d26Geqs1C__RaCO7MUs2.wZ4JdaHxSAhGy1HoNVja.kFFXe30DOpq5j1hbWU1q
+duckduckgo.com##.L6fj2A3X2mfJl5kE8caF > .react-module > .NCwWYRkAos7ntUjEoEWk.wbUB0U7KMDyukXtzMd8Y > span > .feedback-prompt > .js-feedback-prompt-generic.feedback-prompt__link
+
+! 6 Aug 2024 https://www.dictionary.com
+www.dictionary.com##.YWCQRF_7R7nYFZ4IHkwk
+www.dictionary.com##.vcxhsRZp4largazFle3k
+www.dictionary.com##.ZqIvO_Txj3fr1sz8S3Fm
+www.dictionary.com##.fPztwMDzZI78cVAIR3VT
+www.dictionary.com##.F61gOZt5DZItY6Cel1MX
+www.dictionary.com##.a_Z1cA3pMYySwQsdWv5Q
+www.dictionary.com##.xso6mL2feGWVpyRXeY5Z
+www.dictionary.com##.G4gQrRMFeYY7_OdNa1eR.YommMxopETPCP_wzxPxE
+www.dictionary.com##div.YommMxopETPCP_wzxPxE:nth-of-type(14)
+www.dictionary.com##[href="/browse/trouble#word-of-the-day"]
+www.dictionary.com##.USrI433LPq9JKfoEJgMw.KhyRmcN6T1mkCS6cmpkT
+www.dictionary.com##.BsLEokjNzgvQY0xyORKn.KhyRmcN6T1mkCS6cmpkT
+www.dictionary.com##.rSQlbE7H8tWVFILjLXbi.KhyRmcN6T1mkCS6cmpkT
+www.dictionary.com##.IyoTS6Xc6pa6yhd_nN_Y.KhyRmcN6T1mkCS6cmpkT
+www.dictionary.com##.v64dancTwzffhlHDy4y0.KhyRmcN6T1mkCS6cmpkT
+www.dictionary.com##.hFymlk9KE06_fSxWotl3.KhyRmcN6T1mkCS6cmpkT
+www.dictionary.com###dictionary-entry-1 > div.YommMxopETPCP_wzxPxE > .RU3P4mEiPC1uju7Hv6Yw > .bZjAAKVoBi7vttR0xUts > .AooatC8noO9cmWd95rMo > div
+www.dictionary.com##.v2ovuFQ2BkaM0a2tMoXY.vVf7ViAcM8IyoD95Hmd1
+www.dictionary.com##.ePD2G1Q_Muj6DSNqhwx8
+www.dictionary.com##.cY0SYTkIeNY8R0DY0K_r
+www.dictionary.com##div.YommMxopETPCP_wzxPxE:nth-of-type(10)
+www.dictionary.com##.Xd3kqg2dv0HTv4nDlxnC
+www.dictionary.com##div.YommMxopETPCP_wzxPxE:nth-of-type(8)
+
+! 6 Aug 2024 https://www.thesaurus.com
+www.thesaurus.com##.YWCQRF_7R7nYFZ4IHkwk
+www.thesaurus.com##.vcxhsRZp4largazFle3k
+www.thesaurus.com##.ZqIvO_Txj3fr1sz8S3Fm
+www.thesaurus.com##.fPztwMDzZI78cVAIR3VT
+www.thesaurus.com##.F61gOZt5DZItY6Cel1MX
+www.thesaurus.com##.a_Z1cA3pMYySwQsdWv5Q
+www.thesaurus.com##.KnY4fRF1oDKHiCGY1Syd > div
+www.thesaurus.com##.BsLEokjNzgvQY0xyORKn.KhyRmcN6T1mkCS6cmpkT
+www.thesaurus.com##.X4qiZzzaB02pZjhNO50C.KhyRmcN6T1mkCS6cmpkT
+www.thesaurus.com##.yrpRHlMdP3t4o1my_I0n > section
+www.thesaurus.com##.R2dKqQgpn7A_oPi9UWfr > .SZjJlj7dd7R6mDTODwIT
+www.thesaurus.com##div:nth-of-type(9)
+www.thesaurus.com##div:nth-of-type(8)
+www.thesaurus.com##.Xd3kqg2dv0HTv4nDlxnC
+www.thesaurus.com##.cY0SYTkIeNY8R0DY0K_r
+www.thesaurus.com##.ePD2G1Q_Muj6DSNqhwx8
+www.thesaurus.com##.v2ovuFQ2BkaM0a2tMoXY.vVf7ViAcM8IyoD95Hmd1
+www.thesaurus.com###thesaurus_leaderboard_728x90_flex_1
+www.thesaurus.com##.D7NUkW0JoLnfN3mRopVF
+www.thesaurus.com##.Q2gjFeJLDPFIAg5Y_hjj
+www.thesaurus.com##.o1stFwtPRDie_5hZZTR4
+www.thesaurus.com##.uc97b2OWdvti1mt4kiNv
+www.thesaurus.com###thesaurus_right_rail_300x250_flex_2
+www.thesaurus.com##.QB6zhhou1ysIdiLQaBNI
+www.thesaurus.com##.xjpQNXvgLIH_EweeESuJ > p
+
+! 6 Aug 2024 https://www.dictionary.com
+www.dictionary.com##.o1stFwtPRDie_5hZZTR4
+www.dictionary.com##.Q2gjFeJLDPFIAg5Y_hjj
+www.dictionary.com##.xjpQNXvgLIH_EweeESuJ > p
+www.dictionary.com##.uc97b2OWdvti1mt4kiNv
+www.dictionary.com##.Z2vx82i2I09y4X0LVnyb
+www.dictionary.com##.OZrNEObIVT19WL9kFOCg.KhyRmcN6T1mkCS6cmpkT
+
+! 6 Aug 2024 https://writing.stackexchange.com
+writing.stackexchange.com##.tex2jax_ignore.module
+
+! 6 Aug 2024 https://stackoverflow.com
+stackoverflow.com##.mb16.js-join-leave-container.s-sidebarwidget
+stackoverflow.com##.tex2jax_ignore.module
+stackoverflow.com##.js-sidebar-zone
+stackoverflow.com##.md\:d-none > .js-gps-track.s-navigation--item
+stackoverflow.com##.js-products-menu.js-gps-track.s-navigation--item
+
+! 6 Aug 2024 https://writing.stackexchange.com
+writing.stackexchange.com##.fc-medium.fs-fine.px0.w100
+
+! 6 Aug 2024 https://stackoverflow.com
+stackoverflow.com###nav-companies
+stackoverflow.com##.-link__with-icon.nav-links--link.js-gps-track.js-disable-jobs-new-link.ai-center.pl8.s-block-link
+stackoverflow.com##.youarehere.ps-relative > .-link__with-icon.nav-links--link.js-gps-track.ai-center.pl8.s-block-link
+stackoverflow.com##.nav-links .nav-links > .mb8.mt32.ml8 > .fs-fine.h\:fc-black-600.fc-black-400.fl-grow1.d-flex.s-link > .fw-bold.fc-black-600.tt-uppercase.fl-grow1.flex--item
+stackoverflow.com##.nav-links .nav-links > .mb8.mt32.ml8 > .fs-fine.h\:fc-black-600.fc-black-400.fl-grow1.d-flex.s-link
+stackoverflow.com##.fc-medium.fs-fine.px0.w100
+stackoverflow.com###nav-labs-discussions
+
+! 6 Aug 2024 https://writing.stackexchange.com
+writing.stackexchange.com##.mb16.s-anchors__grayscale.s-anchors.s-sidebarwidget__yellow.s-sidebarwidget
+
+! 6 Aug 2024 https://stackoverflow.com
+stackoverflow.com##.js-help-button.s-topbar--item
+stackoverflow.com##.mb16.s-anchors__grayscale.s-anchors.s-sidebarwidget__yellow.s-sidebarwidget
+
+! 6 Aug 2024 https://writing.stackexchange.com
+writing.stackexchange.com##.js-network-logo.js-gps-track.network-logo.s-topbar--logo
+
+! 7 Aug 2024 https://9animetv.to
+9animetv.to##.header-group > .socials-group > .scg-list
+
+
+
+
+! 7 Aug 2024 https://duckduckgo.com
+||duckduckgo.com/assets/logo_header.alt.v108.svg$image
+
+! 7 Aug 2024 https://app.raindrop.io
+app.raindrop.io##.footer-jiX_
+
+! 7 Aug 2024 https://www.reddit.com
+www.reddit.com##.items-center.flex.h-header-large
+
+! 8 Aug 2024 https://minimalism.co
+||minimalism.co/wp-content/uploads/2021/01/New-Decluttering-Pop-Up.png$image
+
+! 8 Aug 2024 https://github.com
+github.com###user-content-️-welcome-hacker-take-a-break-from-code-enjoy-a-story
+
+! 11 Aug 2024 https://mangareader.to
+mangareader.to##.btn-login.btn.btn-user
+
+
+
+! 18 Aug 2024 https://duckduckgo.com
+duckduckgo.com##.ybIhDbc0Re7nlsXHriuE
+duckduckgo.com##.K3OGxmrYmlInVyLTbimt.P3PpyTb2TLJojWzVTZdE.UWzy821Y58lvrLxQ7fnz
+duckduckgo.com##li:nth-of-type(3) > .d26Geqs1C__RaCO7MUs2.wZ4JdaHxSAhGy1HoNVja.kFFXe30DOpq5j1hbWU1q
+duckduckgo.com##li:nth-of-type(4) > .d26Geqs1C__RaCO7MUs2.wZ4JdaHxSAhGy1HoNVja.kFFXe30DOpq5j1hbWU1q
+duckduckgo.com##.t-s--screen-xs.zci__no-results
+duckduckgo.com##.is-active.dropdown--safe-search.dropdown
+
+||arc://extensions/
+
+! 20 Aug 2024 https://www.stayfocusd.com
+www.stayfocusd.com##stayfocusd-overlay
+www.stayfocusd.com###promo-container
+
+! 20 Aug 2024 https://www.elitedaily.com
+www.elitedaily.com##.jIS.rhF.fX2
+
+
+
+
+||pornhub.com$document
+||xnxx.com$document
+||xvideos.com$document
+||xhamster.com$document
+
+
+
+
+
+! 28 Aug 2024 https://www.reddit.com
+www.reddit.com###right-sidebar-container > .py-md
+www.reddit.com##.xs\:px-0.relative.px-md.pb-2xs.pt-md.text-12.justify-between.flex
+www.reddit.com##.text-global-white.leading-4.rounded-\[20px\].px-\[6px\].box-border.align-text-bottom.font-normal.text-12.max-w-full.truncate.inline-block.bg-tone-4
+
+
+! 28 Aug 2024 https://www.dictionary.com
+www.dictionary.com##.XGv6INcAxMnhr2WgSrQg > .YommMxopETPCP_wzxPxE > .RU3P4mEiPC1uju7Hv6Yw > .bZjAAKVoBi7vttR0xUts > .AooatC8noO9cmWd95rMo > div > .QTJM4SbhRNoVJ0mJxTKC
+www.dictionary.com##.eEszY3Oh_xE_apygWxwy.KhyRmcN6T1mkCS6cmpkT
+
+
+
+! 29 Aug 2024 https://en.wikipedia.org
+en.wikipedia.org###mp-topbanner
+
+
+
+! 30 Aug 2024 https://duckduckgo.com
+duckduckgo.com##li:nth-of-type(6) > .d26Geqs1C__RaCO7MUs2.wZ4JdaHxSAhGy1HoNVja.kFFXe30DOpq5j1hbWU1q
+
+! 8 Sept 2024 https://chatgpt.com
+chatgpt.com##.dark\:border-gray-700.border-gray-100.border.rounded-xl.inline-flex
+chatgpt.com##.md\:overflow-visible.md\:justify-center.md\:max-w-none.md\:mb-2.md\:static.sm\:pb-0.sm\:px-2.sm\:justify-start.sm\:mb-0.contain-inline-size.pb-1.px-1.overflow-auto.gap-2.grow.max-w-\[100vw\].w-full.flex.bottom-full.absolute
+chatgpt.com##.leading-\[0\].pr-1.gap-2.items-center.flex > span > .enabled\:hover\:bg-token-main-surface-secondary.focus-visible\:bg-token-main-surface-secondary.disabled\:text-token-text-quaternary.focus-visible\:outline-0.text-token-text-secondary.px-2.rounded-lg.h-10
+chatgpt.com##.text-token-text-secondary.text-xs.border-token-border-light.border.rounded-full.justify-center.items-center.w-6.h-6.flex
+
+! 19 Sept 2024 https://chatgpt.com
+chatgpt.com##.min-h-4 > div
+chatgpt.com##.min-h-4
+
+
+
+! 10 Oct 2024 https://www.google.com
+www.google.com##p.autopagerize_page_info:nth-of-type(1)
+www.google.com##p.autopagerize_page_info
+
+! 13 Oct 2024 https://x.com
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(10)
+x.com##a.r-1loqt21.r-1ny4l3l.r-13qz1uu.r-cnw61z.r-1habvwh.r-16y2uox.r-eqz5dr.r-6koalj.css-175oi2r:nth-of-type(9)
+
+! 19 Oct 2024 https://www.instagram.com
+www.instagram.com##.xh8yej3.x1iyjqo2 > div > .x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x > .x78zum5.x6s0dn4.x1n2onr6 > ._a6hd.x1a2a7pz.xggy1nq.x1hl2dhg.x16tdsg8.xkhd6sd.x18d9i69.x4uap5.xexx8yu.x1mh8g0r.xat24cr.x11i5rnm.xdj266r.xe8uvvx.xt0psk2.x1ypdohk.x9f619.xm0m39n.x1qhh985.xcfux6l.x972fbf.x17r0tee.x1sy0etr.xd10rxx.x1ejq31n.xjbqb8w.x1i10hfl > .x9jhf4c.x30kzoy.xgqcy7u.x1lq5wgf.x1wj20lx.x12ldp4w.x11hdxyr.xs3sg5q.x9k3k5o.x1dejxi8.xdoji71.xzauu7c.x1lhsz42.x10djquj.x172qv1o.xif99yt.x1dn74xm.x159b3zp.x80pfx3.x1ye3gou.xsag5q8.xn6708d.xz9dl7a.x12dmmrz.x7nr27j.x6pnmvc.xo237n4.xjpr12u.xr9ek0c.x3nfvp2.x9f619
+
+! 23 Oct 2024 https://www.instagram.com
+www.instagram.com##.xh8yej3.x1iyjqo2 > div > .x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x > .x78zum5.x6s0dn4.x1n2onr6 > ._a6hd.x1a2a7pz.xggy1nq.x1hl2dhg.x16tdsg8.xkhd6sd.x18d9i69.x4uap5.xexx8yu.x1mh8g0r.xat24cr.x11i5rnm.xdj266r.xe8uvvx.xt0psk2.x1ypdohk.x9f619.xm0m39n.x1qhh985.xcfux6l.x972fbf.x17r0tee.x1sy0etr.xd10rxx.x1ejq31n.xjbqb8w.x1i10hfl > .x159b3zp.x80pfx3.x1ye3gou.xsag5q8.xn6708d.xz9dl7a.x12dmmrz.x7nr27j.x6pnmvc.xo237n4.xjpr12u.xr9ek0c.x9jhf4c.x30kzoy.xgqcy7u.x1lq5wgf.x3nfvp2.x9f619
+
+! 23 Oct 2024 https://www.google.com
+www.google.com##i
+www.google.com##.autopagerize_page_separator
+
+
+
+! 28 Oct 2024 https://www.facebook.com
+www.facebook.com##.xwib8y2.x1y1aw1k.xwya9rg.x1n2onr6 > .x1ja2u2z.x1n2onr6.x9f619 > .x1y1aw1k.xwib8y2.x9otpla.x1wsgfga.x1ja2u2z.x1n2onr6.x9f619 > .xhfbhpw.x1rohswg.x1y1aw1k.xwib8y2.xat24cr.x9f619.x7p5m3t.xw2csxc.xjx87ck.x1yqm8si.xfk6m8.x1pq812k.x1ja2u2z.x1n2onr6.x10wlt62.xdt5ytf.x78zum5.x5lxg6s.x1q594ok.xb57i2i
+www.facebook.com##.xwib8y2.x1y1aw1k.xwya9rg.x1n2onr6
+www.facebook.com##.x10wlt62.x6ikm8r > div > .x1ja2u2z.x1n2onr6.x9f619 > .x1y1aw1k.xwib8y2.x9otpla.x1wsgfga.x1ja2u2z.x1n2onr6.x9f619
+www.facebook.com##.x1vjfegm.x1iyjqo2 > .x1qughib.x78zum5.x6s0dn4
+www.facebook.com##.x1swvt13.xr1496l.x1pi30zi.x1y1aw1k.xl56j7k.x1qx5ct2.x78zum5.x6s0dn4 > .xh8yej3.x1n2onr6.xl56j7k.xdt5ytf.x3nfvp2.x9f619.x1a2a7pz.x1lku1pv.x87ps6o.x13rtm0m.x1e5q0jg.x3x9cwd.x1o1ewxj.xggy1nq.x1hl2dhg.x16tdsg8.xkhd6sd.x18d9i69.x4uap5.xexx8yu.x1mh8g0r.xat24cr.x11i5rnm.xdj266r.xe8uvvx.x1ypdohk.xm0m39n.x1qhh985.xcfux6l.x972fbf.x17r0tee.x1sy0etr.xd10rxx.x1ejq31n.xjbqb8w.x1i10hfl > .x1r1pt67.xjbqb8w.x1ye3gou.xn6708d.x9f619.xm0m39n.x1qhh985.xcfux6l.x972fbf.x1403ito.x585lrc.x17zwfj4.xi112ho.x1q0g3np.xozqiw3.x6s0dn4.xl56j7k.x1n2onr6.x2lah0s.x78zum5.x1ja2u2z
+www.facebook.com##.x1swvt13.xr1496l.x1pi30zi.x1y1aw1k.xl56j7k.x1qx5ct2.x78zum5.x6s0dn4
+www.facebook.com##.x1swvt13.xjkvuk6.x1pi30zi.xz9dl7a.x1qughib.x1q0g3np.x78zum5
+www.facebook.com##.x1ceravr.xq1tmr.xvue9z.x193iq5w
+www.facebook.com##li.x1gz44f.x1i64zmx.x1awlv9s.x1l38jg0.x1hxoosp.xmlsiyf.x1iyjqo2 > .x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x > .x1n2onr6.x1s65kcs.x78zum5.x6s0dn4 > .xh8yej3.x1n2onr6.xl56j7k.x5yr21d.xdt5ytf.x78zum5.x6s0dn4.x1a2a7pz.x1lku1pv.x87ps6o.x13rtm0m.x1e5q0jg.x3x9cwd.x1o1ewxj.xggy1nq.x1hl2dhg.x16tdsg8.xkhd6sd.x18d9i69.x4uap5.xexx8yu.x1mh8g0r.xat24cr.x11i5rnm.xdj266r.xe8uvvx.x1ypdohk.x9f619.xm0m39n.x1qhh985.xcfux6l.x972fbf.x17r0tee.x1sy0etr.xd10rxx.x1ejq31n.xjbqb8w.x1i10hfl
+
+
+! Nov 13, 2024 https://www.instagram.com
+www.instagram.com##.x1azxncr > .x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x > .x78zum5.x6s0dn4.x1n2onr6 > ._a6hd.x1a2a7pz.xggy1nq.x1hl2dhg.x16tdsg8.xkhd6sd.x18d9i69.x4uap5.xexx8yu.x1mh8g0r.xat24cr.x11i5rnm.xdj266r.xe8uvvx.xt0psk2.x1ypdohk.x9f619.xm0m39n.x1qhh985.xcfux6l.x972fbf.x17r0tee.x1sy0etr.xd10rxx.x1ejq31n.xjbqb8w.x1i10hfl > .x9jhf4c.x30kzoy.xgqcy7u.x1lq5wgf.x1wj20lx.x12ldp4w.x11hdxyr.xs3sg5q.x9k3k5o.x1dejxi8.xdoji71.xzauu7c.x1lhsz42.x10djquj.x172qv1o.xif99yt.x1dn74xm.x159b3zp.x80pfx3.x1ye3gou.xsag5q8.xn6708d.xz9dl7a.x12dmmrz.x7nr27j.x6pnmvc.xo237n4.xjpr12u.xr9ek0c.x3nfvp2.x9f619
+
+! Nov 15, 2024 https://www.instagram.com
+www.instagram.com###mount_0_0_Jp > div > div > .x1ja2u2z.x1n2onr6.x9f619 > .x1ja2u2z.x1n2onr6.xdt5ytf.x78zum5 > .xxzkxad.xat3117.x1n2onr6.xdt5ytf.x78zum5 > .x10cihs4.x1ja2u2z.x1n2onr6.x1t2pt76.xdt5ytf.x78zum5 > .x1qughib.x1oa3qoh.x1qjc9v5.xqjyukv.x1q0g3np.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xvbhtw8.x9f619 > .x8vgawa.x1porb0y.x6osk4m.x17snn68.x14k21rp.x10o80wk.xh8yej3.x1gryazu > .xg6iff7.x1iyjqo2.xdt5ytf.x78zum5 > .x1iyjqo2.xdt5ytf.x78zum5.xvbhtw8 > .x1xy6bms.xh8yej3.xl56j7k.x1q0g3np.x78zum5.x1qjc9v5 > div > .xw7yly9 > .x1nhvcw1.x1oa3qoh.x6s0dn4.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xjbqb8w.x9f619 > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xjbqb8w.x9f619
+
+! Nov 16, 2024 https://www.instagram.com
+www.instagram.com##.x1nhvcw1.x1oa3qoh.x6s0dn4.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xjbqb8w.x9f619 > .x1nhvcw1.x1oa3qoh.x1qjc9v5.xqjyukv.xdt5ytf.x2lah0s.x1c4vz4f.xryxfnj.x1plvlek.x1uhb9sk.xo71vjh.x5pf9jr.x13lgxp2.x168nmei.x78zum5.xjbqb8w.x9f619 > div > div
+www.instagram.com###mount_0_0_ig
+
+! Nov 17, 2024 https://www.google.com
+www.google.com###bres
+www.google.com##div.MjjYud:nth-of-type(3)
+www.google.com###footcnt
+www.google.com###slim_appbar
+www.google.com###rso > .ULSxyf > .MjjYud
+
+! Nov 21, 2024 https://www.instagram.com
+www.instagram.com##.x1iyjqo2.xdt5ytf.x78zum5.xvbhtw8
+www.instagram.com##.x1ye3gou.xx6bls6.xn6708d.x1y1aw1k.x1gvbg2u.xdt5ytf.x78zum5.x9f619.xvbhtw8.x1cy8zhl.xaeubzz.x1o5hw5a.x1xgvd2v
+www.instagram.com##.xg6iff7.x1iyjqo2.xdt5ytf.x78zum5
+www.instagram.com###mount_0_0_la
+www.instagram.com###splash-screen
+
+! Nov 23, 2024 https://discord.com
+discord.com##.scrollerBase_c49869.none_c49869.scroller_fea3ef > div.listItem_c96c45 > .listItemWrapper_dfb2f8 > .wrapper_c5f96a > .svg_c5f96a > foreignObject > .circleIconButton_db6521
+discord.com##div.listItem_c96c45:nth-of-type(6)
+discord.com##.content_eed6a8 > li.container_d91ad9.channel_c91bad > .linkButton_c91bad.interactive_c91bad.interactive_f5eb4b > .link_c91bad > .layout_ec8679.avatarWithText_c91bad
+discord.com##.floatingNitroUpsell_bc425c.upsellContainerFloating_ad7baa.upsellContainerShadow_ad7baa.upsellContainer_ad7baa
+discord.com##.tryItOutSection_eb2d2c.featureBorder_c6d722.premiumFeatureBorder_c6d722
+discord.com##.background_ae3c77
+discord.com##.themed_a0.selected_a0.item_a0.premiumTab_c10c74
+
+! Nov 26, 2024 https://www.academia.edu
+www.academia.edu##.PremiumButton-cls1___6c68691f04e39b4a309.PremiumButton-cls2___fac38857ceaabf3100b
+
+! Nov 26, 2024 https://www.modellfutar.hu
+www.modellfutar.hu###exposeMaskOverlay
+
+! Nov 30, 2024 https://www.google.com
+www.google.com##div.ULSxyf:nth-of-type(4)
+
+! Dec 12, 2024 https://armorgames.com
+armorgames.com##.clearfix.game-secondary
+armorgames.com###venatus_billboard_play_game_top
+
+! 20 Jan 2025 https://www.photopea.com
+www.photopea.com##.topbar .bbtn.fitem
+www.photopea.com##div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(1)
+
+! 21 Jan 2025 https://www.photopea.com
+www.photopea.com##.topbar > span > button.fitem > .gsicon.autoscale
+
+! 29 Jan 2025 https://open.spotify.com
+open.spotify.com##.e-9541-overflow-wrap-anywhere.encore-text-body-small-bold.hpeoUw.Button-sc-1dqy6lx-0
+
+! 1 Feb 2025 https://www.photopea.com
+www.photopea.com##.storageset.flexrow > div > div > div > div > [src^="data:image/svg+xml;base64,"]
+www.photopea.com##.storageset.flexrow > div:nth-of-type(1)
+www.photopea.com##.topbar button.fitem > .gsicon
