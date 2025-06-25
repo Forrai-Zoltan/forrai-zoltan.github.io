@@ -66,7 +66,7 @@ if (dropdownMenu) {
       <li class="dropdown-category" tabindex="0">Meta
         <ul>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Secret</a></li>
+          <li><a href="/404">Secret</a></li>
           <li><a href="#">Colophon</a></li>
         </ul>
       </li>

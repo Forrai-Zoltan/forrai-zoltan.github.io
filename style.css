@@ -228,8 +228,6 @@ nav#dropdown-menu li.dropdown-category ul {
   backdrop-filter: blur(10px);
 
   li {
-    padding: 2px;
-
     &:hover {
       background: linear-gradient(
         to right,
@@ -253,8 +251,10 @@ nav#dropdown-menu li.dropdown-category ul {
 
   a {
     color: hsl(0, 0%, 90%);
-    text-decoration: none;
     padding-left: 0.5rem;
+    display: block;
+    height: 100%;
+    text-decoration: none;
   }
 }
 
