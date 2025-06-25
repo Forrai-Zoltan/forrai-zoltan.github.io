@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Zoltán Forrai" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="site-title-bar" aria-label="Site Title"></nav>
+      <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
+      <nav id="dropdown-menu" aria-label="Main Menu"></nav>
+    </header>
+    <script src="/navigation.js"></script>
+    <main>
+      <article>
+        <form id="contact-form" action="">
+          <fieldset>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="William Shakespeare"
+              required />
+
+            <label for="email">Email (Optional)</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="shakespeare@globe.uk" />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Uneasy lies the head that wears the crown..."
+              required></textarea>
+
+            
+
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
