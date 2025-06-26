@@ -3,7 +3,7 @@ const siteTitleBar = document.getElementById("site-title-bar");
 if (siteTitleBar) {
   siteTitleBar.innerHTML = `
   <a href="/index">
-    <img src="/assets/socrates-middle-finger.png">
+    <img width="36" height="36" src="/assets/socrates-middle-finger.png">
     Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
   </a>`;
 }

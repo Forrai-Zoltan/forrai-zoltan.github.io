@@ -10,6 +10,7 @@
   --color-gray-800: hsl(220, 5%, 12%);
   --color-gray-850: hsl(220, 5%, 9%);
   --color-gray-900: hsl(210, 6%, 7%);
+
   --color-gray-100-a: 248, 249, 252;
   --color-gray-200-a: 241, 243, 249;
   --color-gray-300-a: 222, 227, 237;
@@ -19,19 +20,32 @@
   --color-gray-700-a: 47, 50, 55;
   --color-gray-800-a: 29, 30, 32;
   --color-gray-900-a: 17, 18, 19;
+
+  --color-black: #111213;
   --color-white: #fff;
   --color-off-white: #ddd;
-  --color-black: #111213;
+
   --color-purple: hsl(270, 80%, 20%);
   --color-purple-a: 270, 80%, 20%;
   --color-purple-dark: hsl(270, 80%, 15%);
   --color-purple-dark-a: 270, 80%, 15%;
   --color-purple-hover: hsl(270, 80%, 25%);
   --color-purple-hover-a: 270, 80%, 22%;
-  --color-green: hsl(120, 100%, 15%);
+
+  --color-green: hsl(120, 80%, 25%);
   --color-green-light: hsl(120, 100%, 50%);
   --color-green-light-a: 120, 100%, 30%;
+
+  --color-link: hsl(210, 90%, 55%);
+  --color-link-hover: hsl(210, 90%, 70%);
+  --color-link-active: hsl(210, 90%, 35%);
+
+  --color-link-visited: hsl(270, 45%, 55%);
+  --color-link-visited-hover: hsl(270, 45%, 70%);
+  --color-link-visited-active: hsl(270, 45%, 35%);
+
   --glass-border: 0.5px solid rgba(255, 255, 255, 0.4);
+
   --font-size: 24px;
   --font: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -517,9 +531,35 @@ article {
   flex: 7;
 
   > section {
-    padding: 2rem 3rem;
+    padding: 2rem 3rem 0 2rem;
     margin-inline: auto;
     max-width: max-content;
+  }
+}
+
+article a {
+  color: var(--color-link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+
+  &:active {
+    color: var(--color-link-active);
+  }
+
+  &:visited {
+    color: var(--color-link-visited);
+
+    &:hover {
+      color: var(--color-link-visited-hover);
+    }
+
+    &:active {
+      color: var(--color-link-visited-active);
+    }
   }
 }
 
