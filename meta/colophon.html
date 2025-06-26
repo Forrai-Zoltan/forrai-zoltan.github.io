@@ -25,12 +25,15 @@
               >GitHub</a
             >.
           </p>
-          <p id="ch65">
-            -------------------------------------------------------------------------------------------------
-          </p>
+          <p id="copy-right"></p>
         </section>
       </article>
     </main>
     <script src="/script.js"></script>
+    <script>
+      const year = new Date().getFullYear();
+      const copyright = document.getElementById("copy-right");
+      copyright.innerHTML = `&copy  ${year} Forrai Zoltán`;
+    </script>
   </body>
 </html>

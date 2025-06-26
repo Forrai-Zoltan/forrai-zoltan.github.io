@@ -22,3 +22,14 @@ window.addEventListener("resize", () => {
   main.style.minHeight = `${viewportHeight - headerHeight - 23}px`;
   main.style.marginTop = `${headerHeight + 10}px`;
 });
+
+// Insert horizontal line paragraph into every article > section
+const ch65 = document.createElement("p");
+ch65.id = "ch65";
+ch65.textContent =
+  "-------------------------------------------------------------------------------------------------";
+
+const lastSection = document.querySelector("article > section:last-of-type");
+if (lastSection) {
+  lastSection.appendChild(ch65);
+}
