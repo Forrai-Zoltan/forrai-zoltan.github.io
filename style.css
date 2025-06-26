@@ -47,12 +47,6 @@
   border-radius: inherit;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
   font-size: var(--font-size);
   -webkit-font-smoothing: antialiased;
@@ -67,7 +61,7 @@ body {
   color: var(--color-white);
   line-height: 1.6;
   padding: 0;
-  margin: 0 0.5rem 8px 0.5rem;
+  margin: 0.5rem;
 }
 
 header {
@@ -295,14 +289,12 @@ main {
   flex-direction: row;
   gap: 0.5rem;
   min-height: min-content;
-  overflow: scroll;
 }
 
 aside {
   flex: 2.6;
   display: flex;
   flex-direction: column;
-
 }
 
 div#img-wrapper {
