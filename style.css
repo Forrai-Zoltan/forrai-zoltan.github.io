@@ -137,7 +137,8 @@ nav#site-title-bar {
     border-radius: 10px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background: linear-gradient(
       to right,
       transparent,
@@ -177,7 +178,8 @@ nav#breadcrumbs {
       color: hsl(0, 0%, 80%);
     }
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: hsl(0, 0%, 100%);
       text-decoration: underline;
     }
@@ -293,10 +295,17 @@ nav#dropdown-menu li.dropdown-category ul {
         var(--color-purple-hover),
         rgba(0, 0, 0, 0)
       );
+    }
+    & a {
+      color: var(--color-white);
+    }
 
-      & a {
-        color: var(--color-white);
-      }
+    a:focus-visible {
+      background: linear-gradient(
+        to right,
+        var(--color-purple-hover),
+        rgba(0, 0, 0, 0)
+      );
     }
 
     &:last-of-type {
@@ -417,7 +426,8 @@ a#btn-message-me {
   align-items: center;
   text-align: center;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     transform: scale(1.05);
     border: var(--glass-border);
     color: var(--color-white);
@@ -512,7 +522,8 @@ form#contact-form {
     align-items: center;
     text-align: center;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       transform: scale(1.05);
       border: var(--glass-border);
       color: var(--color-white);
@@ -556,7 +567,8 @@ article a {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: var(--color-link-hover);
   }
 
@@ -567,7 +579,8 @@ article a {
   &:visited {
     color: var(--color-link-visited);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: var(--color-link-visited-hover);
     }
 
@@ -628,7 +641,8 @@ p a.btn-inter-nav {
   align-items: center;
   text-align: center;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     transform: scale(1.075);
     color: var(--color-white);
     border: var(--glass-border);
