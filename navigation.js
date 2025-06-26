@@ -2,7 +2,7 @@
 const siteTitleBar = document.getElementById("site-title-bar");
 if (siteTitleBar) {
   siteTitleBar.innerHTML = `
-  <a href="/index.html">
+  <a href="/index">
     <img src="/assets/socrates-middle-finger.png">
     Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
   </a>`;
@@ -15,7 +15,7 @@ const parts = path.split("/").filter(Boolean);
 let breadcrumbHTML = "<a href='/index'>Home</a>";
 let fullPath = "";
 
-if (!(parts.length === 1 && parts[0] === "index.html")) {
+if (!(parts.length === 1 && parts[0] === "index")) {
   for (let i = 0; i < parts.length; i++) {
     const part = parts[i];
     fullPath += "/" + part.replace(/\.html$/, "");

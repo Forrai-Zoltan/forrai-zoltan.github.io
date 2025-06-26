@@ -68,8 +68,6 @@ header {
   z-index: 5;
 }
 
-
-
 /* TITLE BAR */
 
 nav#site-title-bar {
@@ -110,10 +108,6 @@ nav#site-title-bar {
       color: hsl(0, 0%, 100%);
     }
   }
-}
-
-nav#site-title-bar:hover ~ nav#breadcrumbs {
-  box-shadow: inset 0px 5px 10px hsla(270, 80%, 22%, 0.5);
 }
 
 /* BREADCURMBS */
