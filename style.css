@@ -158,6 +158,14 @@ nav#dropdown-menu {
   margin-top: 5px;
   border-radius: 25px;
 
+  a {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding-left: 2.5rem;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -170,7 +178,6 @@ nav#dropdown-menu {
     flex: 1;
     text-align: left;
     font-size: 1rem;
-    padding-left: 2.5rem;
     border-right: 5px solid transparent;
     position: relative;
     user-select: none;
@@ -250,11 +257,7 @@ nav#dropdown-menu li.dropdown-category ul {
   }
 
   a {
-    color: hsl(0, 0%, 90%);
     padding-left: 0.5rem;
-    display: block;
-    height: 100%;
-    text-decoration: none;
   }
 }
 

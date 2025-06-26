@@ -2,7 +2,7 @@
 const siteTitleBar = document.getElementById("site-title-bar");
 if (siteTitleBar) {
   siteTitleBar.innerHTML = `
-  <a href="index.html">
+  <a href="/index.html">
     <img src="/assets/socrates-middle-finger.png">
     Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
   </a>`;
@@ -12,7 +12,7 @@ if (siteTitleBar) {
 const path = window.location.pathname;
 const parts = path.split("/").filter(Boolean);
 
-let breadcrumbHTML = "<a href='/index.html'>Home</a>";
+let breadcrumbHTML = "<a href='/index'>Home</a>";
 let fullPath = "";
 
 if (!(parts.length === 1 && parts[0] === "index.html")) {
@@ -25,7 +25,7 @@ if (!(parts.length === 1 && parts[0] === "index.html")) {
       .replace(/\b\w/g, (c) => c.toUpperCase());
 
     if (i < parts.length - 1) {
-      breadcrumbHTML += `<a href="${fullPath}">${label}</a>`;
+      breadcrumbHTML += ` / <a href="${fullPath}">${label}</a>`;
     } else {
       breadcrumbHTML += ` / <a href="${fullPath}" aria-current="page">${label}</a>`;
     }
@@ -42,34 +42,38 @@ const dropdownMenu = document.getElementById("dropdown-menu");
 if (dropdownMenu) {
   dropdownMenu.innerHTML = `
     <ul>
-      <li class="dropdown-category" tabindex="0">Personal
-        <ul>
-          <li><a href="#">Who am I?</a></li>
-          <li><a href="#">Philosophy</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
-      </li>
-      <li class="dropdown-category" tabindex="0">Written
-        <ul>
-          <li><a href="#">Essays</a></li>
-          <li><a href="#">Shorts</a></li>
-          <li><a href="#">Novels</a></li>
-        </ul>
-      </li>
-      <li class="dropdown-category" tabindex="0">Creative
-        <ul>
-          <li><a href="#">Comics</a></li>
-          <li><a href="#">Films</a></li>
-          <li><a href="#">Games</a></li>
-        </ul>
-      </li>
-      <li class="dropdown-category" tabindex="0">Meta
-        <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="/404">Secret</a></li>
-          <li><a href="#">Colophon</a></li>
-        </ul>
-      </li>
+  <li class="dropdown-category">
+    <a href="/personal/">Personal</a>
+    <ul>
+      <li><a href="/personal/who_am_i">Who am I?</a></li>
+      <li><a href="/personal/philosophy">Philosophy</a></li>
+      <li><a href="/personal/gallery">Gallery</a></li>
     </ul>
+  </li>
+  <li class="dropdown-category">
+    <a href="/written/">Written</a>
+    <ul>
+      <li><a href="/written/essays">Essays</a></li>
+      <li><a href="/written/shorts">Shorts</a></li>
+      <li><a href="/written/novels">Novels</a></li>
+    </ul>
+  </li>
+  <li class="dropdown-category">
+    <a href="/creative/">Creative</a>
+    <ul>
+      <li><a href="/creative/comics">Comics</a></li>
+      <li><a href="/creative/films">Films</a></li>
+      <li><a href="/creative/games">Games</a></li>
+    </ul>
+  </li>
+  <li class="dropdown-category">
+    <a href="/meta/">Meta</a>
+    <ul>
+      <li><a href="/meta/contact">Contact</a></li>
+      <li><a href="/meta/secret">Secret</a></li>
+      <li><a href="/meta/colophon">Colophon</a></li>
+    </ul>
+  </li>
+</ul>
   `;
 }
