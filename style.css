@@ -68,6 +68,8 @@ header {
   z-index: 5;
 }
 
+
+
 /* TITLE BAR */
 
 nav#site-title-bar {
@@ -188,7 +190,7 @@ nav#dropdown-menu {
       position: absolute;
       left: 1rem;
       right: auto;
-      top: 52%;
+      top: 55%;
       transform: translateY(-50%);
       font-size: 0.7rem;
       transition: transform 0.3s ease;

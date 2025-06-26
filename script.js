@@ -1,9 +1,11 @@
 // ICON
-
-
+const favicon = document.createElement("link");
+favicon.rel = "icon";
+favicon.type = "image/png";
+favicon.href = "/assets/socrates-middle-finger.png";
+document.head.appendChild(favicon);
 
 // MAIN
-
 const header = document.querySelector("header");
 const headerHeight = header.offsetHeight;
 
