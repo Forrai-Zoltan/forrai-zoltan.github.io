@@ -175,6 +175,7 @@ nav#dropdown-menu {
   }
 
   li.dropdown-category {
+    border-radius: 25px;
     flex: 1;
     text-align: left;
     font-size: 1rem;
