@@ -295,13 +295,14 @@ main {
   flex-direction: row;
   gap: 0.5rem;
   min-height: min-content;
+  overflow: scroll;
 }
 
 aside {
   flex: 2.6;
   display: flex;
   flex-direction: column;
-  height: 100%;
+
 }
 
 div#img-wrapper {
@@ -360,6 +361,7 @@ div#green-box {
   justify-content: top;
   align-items: center;
   padding: 1rem 1rem 0 1rem;
+  height: 100%;
 
   p {
     margin-top: 1rem;
@@ -416,16 +418,13 @@ a#btn-message-me {
 }
 
 form#contact-form {
-  margin: auto;
-  max-width: 500px;
-  margin-top: 0.5rem;
+  max-width: 550px;
+  margin: 2rem auto;
 
   fieldset {
     display: flex;
     flex-direction: column;
     border: none;
-    padding: 0;
-    margin: 0;
   }
 
   input,
@@ -523,13 +522,12 @@ article {
     transparent,
     hsla(var(--color-purple-a), 0.9) 99%
   );
-  box-sizing: border-box;
   flex: 7;
 
   > section {
     padding: 2rem 3rem;
     margin-inline: auto;
-    width: fit-content;
+    max-width: max-content;
   }
 }
 
@@ -543,5 +541,12 @@ h1 {
 p {
   font-size: var(--font-size);
   color: var(--color-off-white);
-  width: 65ch;
+  max-width: 65ch;
+  overflow-wrap: break-word;
+
+  &#ch65 {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+  }
 }
