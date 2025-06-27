@@ -46,9 +46,11 @@
   --color-purple-hover: hsl(270, 80%, 25%);
   --color-purple-hover-a: 270, 80%, 22%;
 
-  --color-green: hsl(120, 80%, 25%);
+  --color-orange: orange;
+
+  --color-green: hsl(120, 30%, 13%);
   --color-green-light: hsl(120, 100%, 50%);
-  --color-green-light-a: 120, 100%, 30%;
+  --color-green-light-a: 120, 100%, 50%;
 
   --color-link: hsl(210, 70%, 55%);
   --color-link-hover: hsl(210, 90%, 70%);
@@ -82,7 +84,7 @@ html {
   font-family: var(--font);
   scrollbar-color: var(--color-purple) var(--color-purple);
   scrollbar-width: thin;
-  caret-color: var(--color-green-light);
+  caret-color: orange;
 }
 
 body {
@@ -118,7 +120,6 @@ nav#site-title-bar {
   );
   border-radius: 0px 200px 200px 0px;
   border-right: 8px white solid;
-
   user-select: none;
   margin-right: 10px;
 
@@ -147,10 +148,44 @@ nav#site-title-bar {
       var(--color-purple-hover),
       transparent
     );
+
     a {
       color: hsl(0, 0%, 100%);
     }
   }
+}
+
+nav#site-title-bar:hover::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 52.5px;
+  width: 100%;
+  height: 20px;
+  background: radial-gradient(
+    ellipse 100% 80% at 20% 0,
+    hsla(var(--color-purple-hover-a), 1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 5;
+}
+nav#site-title-bar:hover::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(
+    to right,
+    black,
+    hsl(var(--color-gray-900-a), 0.9),
+    hsl(var(--color-gray-800-a), 0.5) 1.4%,
+    transparent 2%
+  );
+  pointer-events: none;
+  z-index: 7;
 }
 
 /* BREADCURMBS */
@@ -384,7 +419,7 @@ div#green-box {
   background: radial-gradient(
     circle at top,
     transparent 30%,
-    hsla(var(--color-green-light-a), 0.4) 90%
+    hsla(var(--color-green-light-a), 0.3) 90%
   );
   display: flex;
   flex-direction: column;
@@ -442,7 +477,7 @@ a#btn-message-me {
       var(--color-purple-dark)
     );
     box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7),
-      inset 0px 5px 10px -5px rgba(255, 255, 255, 0.3);
+      inset 0px 5px 10px -5px rgba(255, 255, 255, 0.25);
   }
 
   &:active {
@@ -525,7 +560,7 @@ form#contact-form {
     font-size: 1.1rem;
     font-family: inherit;
     box-shadow: 0px 5px 10px 2px hsla(var(--color-purple-dark-a), 0.85),
-      inset 0px 8px 10px -5px rgba(255, 255, 255, 0.2);
+      inset 0px 8px 10px -5px rgba(255, 255, 255, 0.075);
     transition: transform 0.3s ease, box-shadow 0.2s ease;
     display: flex;
     justify-content: center;
@@ -546,7 +581,7 @@ form#contact-form {
         var(--color-purple-dark)
       );
       box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7),
-        inset 0px 8px 10px -5px rgba(255, 255, 255, 0.3);
+        inset 0px 8px 10px -5px rgba(255, 255, 255, 0.1);
     }
 
     &:active {
@@ -653,7 +688,7 @@ p a.btn-inter-nav {
   font-size: 1.1rem;
   font-family: inherit;
   box-shadow: 0px 5px 10px 2px hsla(var(--color-gray-900-a), 0.85),
-    inset 0px 10px 15px -10px hsla(var(--color-gray-650-a), 0.7);
+    inset 0px 10px 15px -10px hsla(var(--color-gray-650-a), 0.5);
   transition: transform 0.25s ease-in-out, box-shadow 0.3s ease-out;
   display: flex;
   justify-content: center;
@@ -675,7 +710,7 @@ p a.btn-inter-nav {
       hsla(var(--color-gray-800-a), 0.5)
     );
     box-shadow: 0px 45px 19px 2px hsla(var(--color-gray-900-a), 0.8),
-      inset 0px 8px 13px -10px hsla(var(--color-gray-550-a), 0.5);
+      inset 0px 8px 13px -10px hsla(var(--color-gray-550-a), 0.4);
   }
 
   &:active {
