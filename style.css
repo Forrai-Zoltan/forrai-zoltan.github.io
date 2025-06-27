@@ -50,7 +50,7 @@
   --color-green-light: hsl(120, 100%, 50%);
   --color-green-light-a: 120, 100%, 30%;
 
-  --color-link: hsl(210, 90%, 55%);
+  --color-link: hsl(210, 70%, 55%);
   --color-link-hover: hsl(210, 90%, 70%);
   --color-link-active: hsl(210, 90%, 35%);
 
@@ -58,7 +58,7 @@
   --color-link-visited-hover: hsl(270, 45%, 70%);
   --color-link-visited-active: hsl(270, 45%, 35%);
 
-  --glass-border: 0.5px solid rgba(255, 255, 255, 0.4);
+  --glass-border: 0.5px solid rgba(255, 255, 255, 0.3);
 
   --font-size: 24px;
   --font: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -82,6 +82,7 @@ html {
   font-family: var(--font);
   scrollbar-color: var(--color-purple) var(--color-purple);
   scrollbar-width: thin;
+  caret-color: var(--color-green-light);
 }
 
 body {
@@ -329,7 +330,7 @@ main {
 }
 
 aside {
-  flex: 2.6;
+  flex: 2.3;
   display: flex;
   flex-direction: column;
 }
@@ -419,7 +420,8 @@ a#btn-message-me {
   color: var(--color-gray-100);
   font-size: 1.1rem;
   font-family: inherit;
-  box-shadow: 0px 5px 10px 2px hsla(var(--color-purple-dark-a), 0.85);
+  box-shadow: 0px 5px 10px 2px hsla(var(--color-purple-dark-a), 0.85),
+    inset 0px 5px 10px -5px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.2s ease;
   display: flex;
   justify-content: center;
@@ -439,11 +441,18 @@ a#btn-message-me {
       var(--color-purple),
       var(--color-purple-dark)
     );
-    box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7);
+    box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7),
+      inset 0px 5px 10px -5px rgba(255, 255, 255, 0.3);
   }
 
   &:active {
     transform: scale(1.02);
+    background: radial-gradient(
+      circle at center,
+      var(--color-purple),
+      var(--color-purple-dark),
+      var(--color-purple-dark)
+    );
   }
 }
 
@@ -515,7 +524,8 @@ form#contact-form {
     color: var(--color-gray-100);
     font-size: 1.1rem;
     font-family: inherit;
-    box-shadow: 0px 5px 10px 2px hsla(var(--color-purple-dark-a), 0.85);
+    box-shadow: 0px 5px 10px 2px hsla(var(--color-purple-dark-a), 0.85),
+      inset 0px 8px 10px -5px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.2s ease;
     display: flex;
     justify-content: center;
@@ -535,11 +545,18 @@ form#contact-form {
         var(--color-purple),
         var(--color-purple-dark)
       );
-      box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7);
+      box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7),
+        inset 0px 8px 10px -5px rgba(255, 255, 255, 0.3);
     }
 
     &:active {
       transform: scale(1.02);
+      background: radial-gradient(
+        circle at center,
+        var(--color-purple),
+        var(--color-purple-dark),
+        var(--color-purple-dark)
+      );
     }
   }
 }
@@ -607,6 +624,7 @@ p {
   color: var(--color-off-white);
   max-width: 65ch;
   overflow-wrap: break-word;
+  margin: 26px 0 2rem 0;
 
   &#ch65 {
     visibility: hidden;
@@ -625,7 +643,7 @@ p a.btn-inter-nav {
   height: 2.5rem;
   border-radius: 20px;
   background: radial-gradient(
-    circle at center,
+    circle at top,
     hsla(var(--color-gray-700-a), 0.5),
     hsla(var(--color-gray-750-a), 0.5),
     hsla(var(--color-gray-800-a), 0.5),
@@ -634,7 +652,8 @@ p a.btn-inter-nav {
   color: var(--color-gray-100);
   font-size: 1.1rem;
   font-family: inherit;
-  box-shadow: 0px 5px 10px 2px hsla(var(--color-gray-900-a), 0.85);
+  box-shadow: 0px 5px 10px 2px hsla(var(--color-gray-900-a), 0.85),
+    inset 0px 10px 15px -10px hsla(var(--color-gray-650-a), 0.7);
   transition: transform 0.25s ease-in-out, box-shadow 0.3s ease-out;
   display: flex;
   justify-content: center;
@@ -655,7 +674,8 @@ p a.btn-inter-nav {
       hsla(var(--color-gray-750-a), 0.5),
       hsla(var(--color-gray-800-a), 0.5)
     );
-    box-shadow: 0px 45px 19px 2px hsla(var(--color-gray-900-a), 0.8);
+    box-shadow: 0px 45px 19px 2px hsla(var(--color-gray-900-a), 0.8),
+      inset 0px 8px 13px -10px hsla(var(--color-gray-550-a), 0.5);
   }
 
   &:active {
