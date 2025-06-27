@@ -25,6 +25,8 @@
               id="name"
               name="name"
               placeholder="William Shakespeare"
+              autocomplete="no"
+              autofocus
               required />
 
             <label for="email">Email (Optional)</label>
@@ -32,7 +34,8 @@
               type="email"
               id="email"
               name="email"
-              placeholder="shakespeare@globe.uk" />
+              placeholder="shakespeare@globe.uk"
+              autocomplete="off" />
 
             <label for="message">Message</label>
             <textarea
@@ -40,6 +43,7 @@
               name="message"
               rows="6"
               placeholder="Uneasy lies the head that wears the crown..."
+              autocomplete="off"
               required></textarea>
 
             <button type="submit">Send</button>
