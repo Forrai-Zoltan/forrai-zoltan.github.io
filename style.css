@@ -496,7 +496,7 @@ a#btn-message-me {
 
 form#contact-form {
   max-width: 550px;
-  margin: 2rem auto;
+  margin: 0 auto 2rem auto;
 
   fieldset {
     display: flex;
@@ -655,6 +655,12 @@ h1 {
   &#index-h1 {
     text-align: center;
     padding-bottom: 15px;
+  }
+
+  &#contact {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
   }
 }
 
