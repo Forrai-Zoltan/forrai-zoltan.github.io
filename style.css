@@ -488,6 +488,10 @@ a#btn-message-me {
       var(--color-purple-dark)
     );
   }
+
+  span {
+    padding: 0 30px;
+  }
 }
 
 form#contact-form {
@@ -663,6 +667,7 @@ p {
 
   &#ch65 {
     visibility: hidden;
+    overflow-wrap: anywhere;
     height: 0;
     margin: 0;
   }
@@ -759,5 +764,9 @@ em {
 }
 strong {
   font-weight: 900;
-  -webkit-text-stroke: 0.45px white;
+  -webkit-text-stroke: 0.3px white;
+}
+
+span.no-wrap {
+  white-space: nowrap;
 }
