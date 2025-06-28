@@ -315,8 +315,8 @@ nav#dropdown-menu li.dropdown-category ul {
   background: radial-gradient(
     ellipse 200% 100% at top left,
     hsl(var(--color-purple-a), 0.4),
-    hsla(var(--color-gray-800-a), 0.3),
-    hsla(var(--color-gray-800-a), 0.6)
+    hsla(var(--color-gray-800-a), 0),
+    hsla(var(--color-gray-800-a), 0)
   );
   box-shadow: 20px 30px 20px rgba(10, 10, 10, 0.6);
   border: var(--glass-border);
@@ -646,10 +646,10 @@ article a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1;
   letter-spacing: 0.05em;
-  margin: 0;
+  margin: 1rem 0 2rem 0;
   color: var(--color-off-white);
 
   &#index-h1 {
