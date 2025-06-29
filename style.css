@@ -164,7 +164,7 @@ nav#site-title-bar:hover::after {
   height: 20px;
   background: radial-gradient(
     ellipse 100% 80% at 20% 0,
-    hsla(var(--color-purple-hover-a), 1) 0%,
+    hsla(var(--color-purple-hover-a), 0.7) 0%,
     transparent 80%
   );
   pointer-events: none;
