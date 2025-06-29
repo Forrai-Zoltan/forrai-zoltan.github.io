@@ -13,14 +13,12 @@ const main = document.querySelector("main");
 const viewportHeight = window.innerHeight;
 
 main.style.minHeight = `${viewportHeight - headerHeight - 23}px`;
-main.style.marginTop = `${headerHeight + 10}px`;
 
 window.addEventListener("resize", () => {
   const viewportHeight = window.innerHeight;
   const header = document.querySelector("header");
   const headerHeight = header.offsetHeight;
   main.style.minHeight = `${viewportHeight - headerHeight - 23}px`;
-  main.style.marginTop = `${headerHeight + 10}px`;
 });
 
 // Insert horizontal line paragraph into every article > section
