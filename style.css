@@ -191,6 +191,7 @@ nav#site-title-bar:hover::before {
 /* BREADCURMBS */
 
 nav#breadcrumbs {
+  user-select: none;
   background: linear-gradient(
     to right,
     transparent,
@@ -227,7 +228,7 @@ nav#breadcrumbs {
 nav#dropdown-menu {
   background: linear-gradient(
     to right,
-    var(--color-gray-700),
+    var(--color-gray-750),
     var(--color-gray-800)
   );
   margin: 5px 10px 0 10px;
@@ -436,6 +437,7 @@ div#green-box {
     font-weight: bold;
     font-size: 0.9rem;
     margin: 1.2rem 0 0.5rem 0;
+    user-select: none;
   }
 }
 
@@ -459,7 +461,8 @@ a#btn-message-me {
   font-size: 1.1rem;
   font-family: inherit;
   box-shadow: 0px 5px 10px 2px hsla(var(--color-purple-dark-a), 0.85),
-    inset 0px 5px 10px -5px rgba(255, 255, 255, 0.1);
+    inset 0px 10px 15px -5px hsla(var(--color-gray-900-a), 0.7),
+    inset 0px -5px 10px -5px hsla(var(--color-gray-500-a), 0.3);
   transition: transform 0.3s ease, box-shadow 0.2s ease;
   display: flex;
   justify-content: center;
@@ -480,7 +483,8 @@ a#btn-message-me {
       var(--color-purple-dark)
     );
     box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7),
-      inset 0px 5px 10px -5px rgba(255, 255, 255, 0.2);
+      inset 0px 10px 15px -5px hsla(var(--color-gray-850-a), 0.7),
+      inset 0px -5px 10px -5px hsla(var(--color-gray-550-a), 0.3);
   }
 
   &:active {
@@ -558,17 +562,16 @@ form#contact-form {
     background: radial-gradient(
       circle at center,
       var(--color-purple-hover),
-      var(--color-purple-hover),
       var(--color-purple),
-      var(--color-purple-dark),
       var(--color-purple-dark)
     );
     color: var(--color-gray-100);
     font-size: 1.1rem;
     font-family: inherit;
     box-shadow: 0px 5px 10px 2px hsla(var(--color-purple-dark-a), 0.85),
-      inset 0px 8px 10px -5px rgba(255, 255, 255, 0.075);
-    transition: transform 0.3s ease, box-shadow 0.2s ease;
+      inset 0px 10px 15px -5px hsla(var(--color-gray-900-a), 0.7),
+      inset 0px -5px 10px -5px hsla(var(--color-gray-500-a), 0.3);
+    transition: transform 0.3s ease, box-shadow 0.2s ease, background 0.2s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,7 +591,8 @@ form#contact-form {
         var(--color-purple-dark)
       );
       box-shadow: 0px 15px 19px 2px hsla(var(--color-purple-dark-a), 0.7),
-        inset 0px 8px 10px -5px rgba(255, 255, 255, 0.1);
+        inset 0px 10px 15px -5px hsla(var(--color-gray-850-a), 0.7),
+        inset 0px -5px 10px -5px hsla(var(--color-gray-550-a), 0.3);
     }
 
     &:active {
@@ -739,34 +743,6 @@ p a.btn-inter-nav {
       hsla(var(--color-gray-850-a), 0.5),
       hsla(var(--color-gray-900-a), 0.5)
     );
-  }
-}
-
-img#mario-cube {
-  width: 60px;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 6;
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in 15s forwards;
-  cursor: pointer;
-  filter: brightness(0.7);
-
-  &:hover {
-    filter: brightness(1);
-    filter: brightness(0.9) saturate(220%);
-  }
-
-  &:active {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
   }
 }
 
