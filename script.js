@@ -42,24 +42,28 @@ const responses = [
   "The dolphin of the east only wakes once...",
 ];
 
-document.getElementById("secret-form").addEventListener("submit", function (e) {
-  e.preventDefault();
+const secretForm = document.getElementById("secret-form");
+if (secretForm) {
+  secretForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const input = riddlePassword.value.trim().toLowerCase();
-  let randomResponse = responses[Math.floor(Math.random() * responses.length)];
+    const input = riddlePassword.value.trim().toLowerCase();
+    let randomResponse =
+      responses[Math.floor(Math.random() * responses.length)];
 
-  if (input === "gullible") {
-    randomResponse = "You really tried that?";
+    if (input === "gullible") {
+      randomResponse = "You really tried that?";
+      feedback.style.visibility = "visible";
+    }
+    if (input === "sound") {
+      randomResponse = "Clever! But no, that ain't it.";
+      feedback.style.visibility = "visible";
+    }
+
+    feedback.textContent = randomResponse;
     feedback.style.visibility = "visible";
-  }
-  if (input === "sound") {
-    randomResponse = "Clever! But no, that ain't it.";
-    feedback.style.visibility = "visible";
-  }
-
-  feedback.textContent = randomResponse;
-  feedback.style.visibility = "visible";
-});
+  });
+}
 
 riddlePassword.addEventListener("input", function () {
   if (riddlePassword.value.trim() === "") {
