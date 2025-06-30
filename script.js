@@ -63,10 +63,10 @@ if (secretForm) {
     feedback.textContent = randomResponse;
     feedback.style.visibility = "visible";
   });
-}
 
-riddlePassword.addEventListener("input", function () {
-  if (riddlePassword.value.trim() === "") {
-    feedback.style.visibility = "hidden";
-  }
-});
+  riddlePassword.addEventListener("input", function () {
+    if (riddlePassword.value.trim() === "") {
+      feedback.style.visibility = "hidden";
+    }
+  });
+}
