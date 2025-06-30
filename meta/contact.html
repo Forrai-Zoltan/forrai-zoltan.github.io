@@ -18,10 +18,11 @@
     <script src="/navigation.js"></script>
     <main>
       <article>
-        <section>
-          <h1 id="contact">Contact (work in progress)</h1>
-        </section>
-        <form id="contact-form" action="">
+        <h1 id="contact">Contact</h1>
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/694b1edbc83eb5971410e2bbfeeb3b21"
+          method="POST">
           <fieldset>
             <label for="name">Name</label>
             <input
@@ -49,8 +50,13 @@
               placeholder="Uneasy lies the head that wears the crown..."
               autocomplete="off"
               required></textarea>
-
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
             <button type="submit">Send</button>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://forrai-zoltan.github.io/meta/contact/thanks" />
           </fieldset>
         </form>
       </article>
