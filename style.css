@@ -727,7 +727,8 @@ p {
   font-size: var(--font-size);
   color: var(--color-off-white);
   max-width: 70ch;
-  overflow-wrap: break-word;
+
+  hyphens: auto;
   margin: 1.25rem 0;
   font-family: inherit;
 
