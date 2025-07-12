@@ -923,7 +923,6 @@ div#copy-message {
   );
   border: var(--glass-border);
   box-shadow: 0px 5px 10px hsla(var(--color-gray-900-a), 0.7);
-
   color: #fff;
   padding: 6px 10px;
   border-radius: 10px;

@@ -122,7 +122,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   rightDiv.appendChild(text);
 
   const rssLink = document.createElement("a");
-  rssLink.href = "/rss-tweets.xml";
+  rssLink.href = "https://forrai-zoltan.github.io/rss-tweets.xml";
   rssLink.className = "rss-icon-link";
 
   const rssIcon = document.createElement("img");
