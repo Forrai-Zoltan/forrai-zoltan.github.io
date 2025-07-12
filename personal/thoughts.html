@@ -8,6 +8,8 @@
     <title>Thoughts</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="preload" href="/assets/socrates-middle-finger.png" as="image" />
+    <link rel="preload" href="/assets/profile_bw.png" as="image" />
+    <link rel="preload" href="/assets/Twitter_Verified_Badge.svg" as="svg" />
   </head>
   <body>
     <header>
@@ -18,7 +20,23 @@
     <script src="/navigation.js"></script>
     <main>
       <section>
-        <article id="tweets"></article>
+        <div id="timeline">
+          <article class="tweet-box">
+            <time datetime="2025-07-12 15:50">12 Jul 2025 · 15:50</time>
+            <p class="tweet-text">
+              Here is my first image post.
+              <img
+                src="/assets/socrates-middle-finger.png"
+                alt="Socrates flipping the bird." />
+            </p>
+          </article>
+          <!-- --------------------------------------------------------------------- -->
+          <article class="tweet-box">
+            <time datetime="2025-07-12 15:27">12 Jul 2025 · 15:27</time>
+            <p class="tweet-text">Hello World?</p>
+          </article>
+          <!-- --------------------------------------------------------------------- -->
+        </div>
       </section>
     </main>
     <script src="/script.js"></script>

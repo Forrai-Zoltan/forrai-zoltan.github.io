@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Forrai Zoltán — Thoughts</title>
+    <link>https:/forrai-zoltan.github.io/personal/thoughts.html</link>
+    <description>Twitter like posts.</description>
+    <language>en-gb</language>
+
+    
+
+    <!-- Add more <item> blocks here -->
+
+  </channel>
+</rss>
