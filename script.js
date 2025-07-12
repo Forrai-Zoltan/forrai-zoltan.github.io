@@ -158,3 +158,34 @@ document.addEventListener("click", (e) => {
     overlay.style.display = "flex";
   }
 });
+
+// Copy LINK
+
+const links = document.getElementsByClassName("rss-icon-link");
+const message = document.getElementById("copy-message");
+
+document.addEventListener("mousemove", function (event) {
+  message.style.left = `${event.clientX + 10}px`;
+  message.style.top = `${event.clientY + 10}px`;
+});
+
+Array.from(links).forEach((linkElement) => {
+  linkElement.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const link = this.href;
+    navigator.clipboard
+      .writeText(link)
+      .then(() => {
+        message.style.opacity = "1"; // show message
+
+        // Hide after 2 seconds
+        setTimeout(() => {
+          message.style.opacity = "0";
+        }, 3000);
+      })
+      .catch((err) => {
+        console.error("Failed to copy:", err);
+      });
+  });
+});
