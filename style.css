@@ -57,9 +57,17 @@
   --color-link-hover: hsl(210, 90%, 70%);
   --color-link-active: hsl(210, 90%, 35%);
 
+  --color-link-dark: hsl(210, 90%, 40%);
+  --color-link-dark-hover: hsl(210, 100%, 55%);
+  --color-link-dark-active: hsl(210, 100%, 20%);
+
   --color-link-visited: hsl(270, 45%, 55%);
   --color-link-visited-hover: hsl(270, 45%, 70%);
   --color-link-visited-active: hsl(270, 45%, 35%);
+
+  --color-link-dark-visited: hsl(270, 65%, 40%);
+  --color-link-dark-visited-hover: hsl(270, 65%, 65%);
+  --color-link-dark-visited-active: hsl(270, 65%, 20%);
 
   --glass-border: 0.25px solid rgba(255, 255, 255, 0.2);
 
@@ -318,10 +326,11 @@ nav#dropdown-menu li.dropdown-category ul {
   padding: 10px;
   border-radius: 10px;
   background: radial-gradient(
-    ellipse 200% 100% at top left,
-    hsl(var(--color-purple-a), 0.4),
-    hsla(var(--color-gray-900-a), 0.2),
-    hsla(var(--color-gray-900-a), 0.4)
+    ellipse 250% 100% at top left,
+    hsl(var(--color-purple-a), 0.7),
+    hsla(var(--color-gray-900-a), 0.5),
+    hsla(var(--color-gray-900-a), 0.5),
+    hsla(var(--color-gray-900-a), 0.7)
   );
   box-shadow: 20px 30px 20px rgba(10, 10, 10, 0.6);
   border: var(--glass-border);
@@ -660,6 +669,34 @@ section a {
   }
 }
 
+section div#timeline a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-link-dark-hover);
+  }
+
+  &:active {
+    color: var(--color-link-dark-active);
+  }
+
+  &:visited {
+    color: var(--color-link-dark-visited);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-link-dark-visited-hover);
+    }
+
+    &:active {
+      color: var(--color-link-dark-visited-active);
+    }
+  }
+}
+
 h1 {
   font-size: 3.1rem;
   line-height: 1;
@@ -833,7 +870,7 @@ div#timeline {
 
   article.tweet-box {
     margin: 20px auto;
-    padding: 8px 3px 40px 10px;
+    padding: 8px 3px 25px 10px;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -876,6 +913,8 @@ div#timeline {
     border-radius: 20px;
     margin: 10px 0 0 0;
     max-height: 510px;
+    user-select: none;
+    box-shadow: 0px 5px 10px hsla(var(--color-gray-900-a), 0.7);
   }
 
   .rss-icon-link {
@@ -894,7 +933,7 @@ div#timeline {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -904,7 +943,7 @@ div#timeline {
   max-width: 90%;
   max-height: 90%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
+  border-radius: 20px;
   transition: transform 0.3s ease;
   cursor: zoom-out;
 }
@@ -922,10 +961,10 @@ div#copy-message {
     hsla(var(--color-purple-a), 0.95)
   );
   border: var(--glass-border);
+  border-radius: 10px;
   box-shadow: 0px 5px 10px hsla(var(--color-gray-900-a), 0.7);
   color: #fff;
   padding: 6px 10px;
-  border-radius: 10px;
   font-size: 18px;
   pointer-events: none;
   opacity: 0;
