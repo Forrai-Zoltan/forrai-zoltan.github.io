@@ -151,6 +151,7 @@ document.body.appendChild(overlay);
 // Close overlay on click
 overlay.addEventListener("click", () => {
   overlay.style.display = "none";
+  document.body.classList.remove("no-scroll");
 });
 
 // Add click handler to all .zoomable images
