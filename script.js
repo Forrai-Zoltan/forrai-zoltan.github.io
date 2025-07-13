@@ -217,10 +217,12 @@ document.addEventListener("click", (e) => {
 const links = document.getElementsByClassName("rss-icon-link");
 const message = document.getElementById("copy-message");
 
-document.addEventListener("mousemove", function (event) {
-  message.style.left = `${event.clientX + 10}px`;
-  message.style.top = `${event.clientY + 10}px`;
-});
+if (message) {
+  document.addEventListener("mousemove", function (event) {
+    message.style.left = `${event.clientX + 10}px`;
+    message.style.top = `${event.clientY + 10}px`;
+  });
+}
 
 Array.from(links).forEach((linkElement) => {
   linkElement.addEventListener("click", function (event) {

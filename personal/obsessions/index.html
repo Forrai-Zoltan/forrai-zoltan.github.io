@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Zoltán Forrai" />
     <script src="/mobile.js"></script>
-    <title>Gallery</title>
+    <title>Obsessions</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="preload" href="/assets/socrates-middle-finger.png" as="image" />
   </head>
@@ -19,8 +19,24 @@
     <main>
       <section>
         <article>
-          <h1>Gallery</h1>
+          <form action="" id="obsession-search">
+            <div>
+              <input
+                name="filter"
+                type="text"
+                placeholder="Filter..." /><button>
+                <img src="/assets/search.svg" alt="" />
+              </button>
+            </div>
+            <label for="filter"
+              >You can filter by the #tags or names of the cards.</label
+            >
+          </form>
         </article>
+        <div id="obsession-deck">
+          I want to put some shrines here for the things I like. The search bar
+          above doesn't function yet.
+        </div>
       </section>
     </main>
     <script src="/script.js"></script>

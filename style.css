@@ -91,8 +91,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font);
-  scrollbar-color: var(--color-purple) var(--color-purple);
-  scrollbar-width: thin;
+  scrollbar-color: var(--color-purple) transparent;
+  scrollbar-width: none;
   caret-color: orange;
   height: 100%;
   /* overscroll-behavior: none; */
@@ -172,7 +172,7 @@ nav#site-title-bar:hover::after {
   position: absolute;
   left: 10px;
   bottom: 52.5px;
-  width: 99vw;
+  width: 95vw;
   height: 20px;
   background: radial-gradient(
     ellipse 100% 80% at 20% 0,
@@ -187,7 +187,7 @@ nav#site-title-bar:hover::before {
   position: absolute;
   left: 0px;
   top: 70px;
-  width: 100%;
+  width: 95vw;
   height: 30px;
   background: linear-gradient(
     to right,
@@ -211,7 +211,6 @@ nav#breadcrumbs {
     var(--color-gray-850) 70%,
     transparent
   );
-
   margin-top: 5px;
   padding: 3px 4px 3px 1.35rem;
   line-height: 1.2;
@@ -222,6 +221,7 @@ nav#breadcrumbs {
     color: hsl(0, 0%, 50%);
     text-decoration: none;
     font-size: 0.8rem;
+    border-radius: 5px;
 
     &:last-of-type {
       color: hsl(0, 0%, 80%);
@@ -329,11 +329,11 @@ nav#dropdown-menu li.dropdown-category ul {
   background: radial-gradient(
     ellipse 250% 100% at top left,
     hsl(var(--color-purple-a), 0.7),
-    hsla(var(--color-gray-900-a), 0.6),
-    hsla(var(--color-gray-900-a), 0.6),
-    hsla(var(--color-gray-900-a), 0.7)
+    hsla(var(--color-gray-900-a), 0.4),
+    hsla(var(--color-gray-900-a), 0.4),
+    hsla(var(--color-gray-900-a), 0.5)
   );
-  box-shadow: 20px 30px 20px rgba(10, 10, 10, 0.6);
+  box-shadow: 20px 30px 25px rgba(10, 10, 10, 0.4);
   border: var(--glass-border);
   backdrop-filter: blur(10px);
 
@@ -672,7 +672,8 @@ section a {
 
 section div#timeline a {
   color: var(--color-link);
-  text-decoration: none;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 1px;
   font-weight: 600;
 
   &:hover,
@@ -876,7 +877,7 @@ div#timeline {
     display: flex;
     align-items: flex-start;
     gap: 5px;
-    background-color: rgb(240, 248, 255);
+    background-color: rgb(220, 235, 255);
     border: var(--glass-border);
     border-radius: 10px;
   }
@@ -970,3 +971,78 @@ div#copy-message {
   z-index: 9999;
 }
 
+form#obsession-search {
+  margin-inline: auto;
+  padding: 0;
+  font-size: 0;
+
+  label {
+    font-size: 0.75rem;
+    padding-left: 20px;
+    margin: 0;
+    color: var(--color-gray-450);
+  }
+
+  div {
+    width: 50vw;
+    display: flex;
+  }
+
+  input {
+    width: 100%;
+    box-shadow: inset 0 0 5px 5px hsla(0, 0%, 10%, 1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    background-color: var(--color-gray-850);
+    border: var(--glass-border);
+    color: var(--color-white);
+    border-radius: 10px 0 0 10px;
+    padding: 0.3rem 0.5rem;
+    font-family: inherit;
+    font-size: 0.75rem;
+    resize: none;
+
+    &::placeholder {
+      color: var(--color-gray-600);
+    }
+
+    &:focus {
+      background-color: var(--color-gray-800);
+      box-shadow: inset 0 0 5px 5px hsla(0, 0%, 10%, 0.7);
+      outline: none;
+
+      &::placeholder {
+        color: var(--color-gray-500);
+      }
+    }
+  }
+
+  button {
+    padding: 0 20px;
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(var(--color-green-light-a), 0.25);
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border: var(--glass-border);
+    color: var(--color-white);
+    cursor: pointer;
+    user-select: none;
+
+    &:focus,
+    &:hover {
+      background-color: hsla(var(--color-green-light-a), 0.4);
+    }
+
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+div#obsession-deck {
+  margin: 50px;
+}
