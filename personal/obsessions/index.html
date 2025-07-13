@@ -34,11 +34,26 @@
           </form>
         </article>
         <div id="obsession-deck">
-          I want to put some shrines here for the things I like. The search bar
-          above doesn't function yet.
+          <div>
+            <img
+              title="Currently Listening To..."
+              id="spotifyWidget"
+              src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"
+              alt="" />
+          </div>
         </div>
       </section>
     </main>
     <script src="/script.js"></script>
+    <script>
+      function refreshSpotifyWidget() {
+        const img = document.getElementById("spotifyWidget");
+        const baseUrl = img.src.split("?")[0];
+        const params = new URLSearchParams(img.src.split("?")[1]);
+        params.set("t", Date.now()); // cache buster
+        img.src = `${baseUrl}?${params.toString()}`;
+      }
+      setInterval(refreshSpotifyWidget, 5000);
+    </script>
   </body>
 </html>
