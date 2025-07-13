@@ -95,6 +95,7 @@ html {
   scrollbar-width: thin;
   caret-color: orange;
   height: 100%;
+  /* overscroll-behavior: none; */
 }
 
 body {
@@ -888,9 +889,6 @@ div#timeline {
   span.tweeter {
     font-weight: 900;
     color: black;
-
-    &:hover {
-    }
   }
 
   span.tweet-grey {
@@ -971,3 +969,4 @@ div#copy-message {
   transition: opacity 0.2s ease-in-out;
   z-index: 9999;
 }
+

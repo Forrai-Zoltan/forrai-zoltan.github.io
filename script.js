@@ -83,6 +83,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   const text = box.querySelector(".tweet-text");
   text.querySelectorAll("img").forEach((img) => {
     img.classList.add("zoomable");
+    img.setAttribute("tabindex", "0");
   });
 
   box.innerHTML = "";
@@ -102,6 +103,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   verified.data = "/assets/Twitter_Verified_Badge.svg";
   verified.type = "image/svg+xml";
   verified.width = 20;
+  verified.setAttribute("tabindex", "-1");
 
   const handleSpan = document.createElement("span");
   handleSpan.className = "tweet-handle";
@@ -156,6 +158,56 @@ document.addEventListener("click", (e) => {
   if (e.target.classList.contains("zoomable")) {
     overlayImg.src = e.target.src;
     overlay.style.display = "flex";
+  }
+});
+
+// Inject CSS for .no-scroll class
+const style = document.createElement("style");
+style.textContent = `
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+  }
+  `;
+document.head.appendChild(style);
+
+// overlay keyboard logic
+
+let overlayOpen = false;
+
+document.addEventListener("keydown", (e) => {
+  const active = document.activeElement;
+  const isVisible = window.getComputedStyle(overlay).display !== "none";
+
+  if (
+    e.key === "Enter" &&
+    active.classList.contains("zoomable") &&
+    !overlayOpen
+  ) {
+    overlayImg.src = active.src;
+    overlay.style.display = "flex";
+    document.body.classList.add("no-scroll");
+    overlayOpen = true;
+    return;
+  }
+
+  if ((e.key === "Escape" || e.key === "Enter") && isVisible) {
+    overlay.style.display = "none";
+    document.body.classList.remove("no-scroll");
+    overlayOpen = false;
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("zoomable")) {
+    overlayImg.src = e.target.src;
+    overlay.style.display = "flex";
+    document.body.classList.add("no-scroll");
+    overlayOpen = true;
+  } else if (e.target === overlay) {
+    overlay.style.display = "none";
+    document.body.classList.remove("no-scroll");
+    overlayOpen = false;
   }
 });
 
