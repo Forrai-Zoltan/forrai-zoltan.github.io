@@ -328,8 +328,8 @@ nav#dropdown-menu li.dropdown-category ul {
   background: radial-gradient(
     ellipse 250% 100% at top left,
     hsl(var(--color-purple-a), 0.7),
-    hsla(var(--color-gray-900-a), 0.5),
-    hsla(var(--color-gray-900-a), 0.5),
+    hsla(var(--color-gray-900-a), 0.6),
+    hsla(var(--color-gray-900-a), 0.6),
     hsla(var(--color-gray-900-a), 0.7)
   );
   box-shadow: 20px 30px 20px rgba(10, 10, 10, 0.6);
@@ -635,7 +635,7 @@ section {
   flex: 7;
 
   > article {
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     margin-inline: auto;
     max-width: max-content;
   }
@@ -712,7 +712,7 @@ h1 {
   &#contact {
     text-align: center;
     font-size: 2rem;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 0.5rem 0;
   }
 }
 
