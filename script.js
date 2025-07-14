@@ -244,3 +244,9 @@ Array.from(links).forEach((linkElement) => {
       });
   });
 });
+
+// Card Tab Index
+
+document.querySelectorAll(".obsession-card").forEach((card) => {
+  card.setAttribute("tabindex", "0");
+});

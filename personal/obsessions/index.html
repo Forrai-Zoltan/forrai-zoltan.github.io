@@ -41,7 +41,7 @@
             <img
               title="Currently Listening To..."
               id="spotifyWidget"
-              src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"
+              src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true"
               alt="" />
           </div>
           <div class="obsession-card"></div>
@@ -65,7 +65,7 @@
         params.set("t", Date.now()); // cache buster
         img.src = `${baseUrl}?${params.toString()}`;
       }
-      setInterval(refreshSpotifyWidget, 5000);
+      setInterval(refreshSpotifyWidget, 30000);
     </script>
   </body>
 </html>
