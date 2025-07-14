@@ -639,7 +639,6 @@ section {
     background: radial-gradient(
       circle at top,
       transparent,
-      transparent 10%,
       transparent 20%,
       hsla(var(--color-purple-a), 0.9) 99%
     );
@@ -985,6 +984,7 @@ form#search-bar {
   margin-inline: auto;
   padding: 0;
   font-size: 0;
+  width: 50vw;
 
   label {
     font-size: 0.75rem;
@@ -994,8 +994,9 @@ form#search-bar {
   }
 
   div {
-    width: 50vw;
     display: flex;
+    width: 100%;
+
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin-bottom: 2px;
@@ -1089,7 +1090,7 @@ div#deck {
       left: 0;
       width: 100%;
       height: 100%;
-      box-shadow: inset 0 0 15px 10px var(--color-purple-hover);
+      box-shadow: inset 0 0 15px 10px hsla(var(--color-purple-hover-a), 0.9);
       pointer-events: none;
     }
     &:hover:has(#spotifyWidget)::before {

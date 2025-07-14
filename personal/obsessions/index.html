@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Zoltán Forrai" />
-    <script src="/mobile.js"></script>
+    <script src="/assets/src/js/mobile.js"></script>
     <title>Obsessions</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="preload" href="/assets/socrates-middle-finger.png" as="image" />
-    <link rel="preload" href="/assets/spotify-placeholder.png" as="image" />
+    <link rel="stylesheet" href="/assets/src/css/style.css" />
+    <link
+      rel="preload"
+      href="/assets/media/img/socrates-middle-finger.png"
+      as="image" />
+    <link
+      rel="preload"
+      href="/assets/media/img/spotify-placeholder.png"
+      as="image" />
   </head>
   <body>
     <header>
@@ -16,7 +22,7 @@
       <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
       <nav id="dropdown-menu" aria-label="Main Menu"></nav>
     </header>
-    <script src="/navigation.js"></script>
+    <script src="/assets/src/js/navigation.js"></script>
     <main>
       <section class="non-text">
         <article>
@@ -41,7 +47,7 @@
                 name="filter"
                 type="text"
                 placeholder="Filter..." /><button disabled>
-                <img src="/assets/search.svg" alt="" />
+                <img src="/assets/media/svg/search.svg" alt="" />
               </button>
             </div>
             <label for="filter"
@@ -62,11 +68,11 @@
             <img
               title="Currently Listening To..."
               id="spotifyWidget"
-              src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=false"
+              src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false"
               alt="" />
             <img
               id="spotifyWidgetPlaceholder"
-              src="/assets/spotify-placeholder.png"
+              src="/assets/media/img/spotify-placeholder.png"
               alt="" />
           </div>
           <div data-tags="" class="card"></div>
@@ -86,8 +92,8 @@
         </div>
       </section>
     </main>
-    <script src="/script.js"></script>
-    <script src="/card.js"></script>
+    <script src="/assets/src/js/script.js"></script>
+    <script src="/assets/src/js/card.js"></script>
     <script>
       function refreshSpotifyWidget() {
         const img = document.getElementById("spotifyWidget");

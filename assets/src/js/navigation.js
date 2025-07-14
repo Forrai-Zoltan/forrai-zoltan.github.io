@@ -3,7 +3,7 @@ const siteTitleBar = document.getElementById("site-title-bar");
 if (siteTitleBar) {
   siteTitleBar.innerHTML = `
   <a href="/">
-    <img width="36" height="36" src="/assets/socrates-middle-finger.png">
+    <img width="36" height="36" src="/assets/media/img/socrates-middle-finger.png">
     Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
   </a>`;
 }
@@ -67,11 +67,11 @@ if (dropdownMenu) {
     </ul>
   </li>
   <li class="dropdown-category">
-    <a href="/meta/">Meta</a>
+    <a href="/beyond/">Beyond</a>
     <ul>
-      <li><a href="/meta/contact">Contact</a></li>
-      <li><a href="/meta/secret">Secret</a></li>
-      <li><a href="/meta/colophon">Colophon</a></li>
+      <li><a href="/beyond/contact">Contact</a></li>
+      <li><a href="/beyond/secret">Secret</a></li>
+      <li><a href="/beyond/colophon">Colophon</a></li>
     </ul>
   </li>
 </ul>

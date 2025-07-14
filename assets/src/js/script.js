@@ -2,7 +2,7 @@
 const favicon = document.createElement("link");
 favicon.rel = "icon";
 favicon.type = "image/png";
-favicon.href = "/assets/socrates-middle-finger.png";
+favicon.href = "/assets/media/img/socrates-middle-finger.png";
 document.head.appendChild(favicon);
 
 // MAIN
@@ -91,7 +91,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
   const profilePic = document.createElement("img");
   profilePic.className = "profile-pic";
-  profilePic.src = "/assets/profile_bw_sq.png";
+  profilePic.src = "/assets/media/img/profile_bw_sq.png";
   profilePic.alt = "profile pic";
   profilePic.width = 50;
 
@@ -100,7 +100,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   tweeterSpan.textContent = "Zoltán Forrai";
 
   const verified = document.createElement("object");
-  verified.data = "/assets/Twitter_Verified_Badge.svg";
+  verified.data = "/assets/media/svg/Twitter_Verified_Badge.svg";
   verified.type = "image/svg+xml";
   verified.width = 20;
   verified.setAttribute("tabindex", "-1");
@@ -128,7 +128,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   rssLink.className = "rss-icon-link";
 
   const rssIcon = document.createElement("img");
-  rssIcon.src = "/assets/rss.svg";
+  rssIcon.src = "/assets/media/svg/rss.svg";
   rssIcon.alt = "RSS Feed";
   rssIcon.width = 16;
   rssIcon.height = 16;
