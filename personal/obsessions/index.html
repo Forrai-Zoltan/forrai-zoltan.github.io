@@ -37,7 +37,10 @@
           My Current Obsessions
         </h1>
         <div id="obsession-deck">
-          <div class="obsession-card">
+          <div
+            class="obsession-card"
+            onkeydown="if(event.key === 'Enter') window.open('https://github.com/kittinan/spotify-github-profile', '_blank')"
+            onclick="window.open('https://github.com/kittinan/spotify-github-profile', '_blank')">
             <img
               title="Currently Listening To..."
               id="spotifyWidget"
