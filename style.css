@@ -1090,16 +1090,16 @@ div#obsession-deck {
 }
 
 img#spotifyWidget,
-#spotifyWidgetPlaceholder {
+img#spotifyWidgetPlaceholder {
   border-radius: 20px;
   background-color: #121212;
   max-width: 290px;
   height: 102.5%;
-  position: absolute;
+  position: absolute !important;
 }
 
-#spotifyWidgetPlaceholder {
-  height: 101%;
+img#spotifyWidgetPlaceholder {
+  height: 101% !important;
   z-index: -1;
 }
 

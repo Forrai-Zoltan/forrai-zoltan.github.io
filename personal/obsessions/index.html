@@ -8,6 +8,7 @@
     <title>Obsessions</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="preload" href="/assets/socrates-middle-finger.png" as="image" />
+    <link rel="preload" href="/assets/spotify-placeholder.png" as="image" />
   </head>
   <body>
     <header>
@@ -72,7 +73,7 @@
         params.set("t", Date.now());
         img.src = `${baseUrl}?${params.toString()}`;
       }
-      setInterval(refreshSpotifyWidget, 5000);
+      setInterval(refreshSpotifyWidget, 30000);
     </script>
   </body>
 </html>
