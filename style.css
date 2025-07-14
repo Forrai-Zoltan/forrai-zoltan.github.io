@@ -1084,13 +1084,21 @@ div#obsession-deck {
     }
     &:hover:has(#spotifyWidget)::before {
       box-shadow: inset 0 0 15px 5px hsla(var(--color-green-light-a), 0.3);
+      z-index: 2;
     }
   }
 }
 
-img#spotifyWidget {
+img#spotifyWidget,
+#spotifyWidgetPlaceholder {
   border-radius: 20px;
   background-color: #121212;
   max-width: 290px;
   height: 102.5%;
+  position: absolute;
+}
+
+#spotifyWidgetPlaceholder {
+  height: 101%;
+  z-index: -1;
 }

@@ -46,6 +46,10 @@
               id="spotifyWidget"
               src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true"
               alt="" />
+            <img
+              id="spotifyWidgetPlaceholder"
+              src="/assets/spotify-placeholder.png"
+              alt="" />
           </div>
           <div class="obsession-card"></div>
           <div class="obsession-card"></div>
@@ -68,7 +72,7 @@
         params.set("t", Date.now()); // cache buster
         img.src = `${baseUrl}?${params.toString()}`;
       }
-      setInterval(refreshSpotifyWidget, 30000);
+      setInterval(refreshSpotifyWidget, 15000);
     </script>
   </body>
 </html>
