@@ -51,11 +51,11 @@ if (dropdownMenu) {
     </ul>
   </li>
   <li class="dropdown-category">
-    <a href="/written/">Written</a>
+    <a href="/literary/">Literary</a>
     <ul>
-      <li><a href="/written/shorts">Shorts</a></li>
-      <li><a href="/written/novels">Novels</a></li>
-      <li><a href="/written/essays">Essays</a></li>
+      <li><a href="/literary/shorts">Shorts</a></li>
+      <li><a href="/literary/novels">Novels</a></li>
+      <li><a href="/literary/essays">Essays</a></li>
     </ul>
   </li>
   <li class="dropdown-category">
