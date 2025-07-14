@@ -971,7 +971,7 @@ div#copy-message {
   z-index: 9999;
 }
 
-form#obsession-search {
+form#search-bar {
   margin-inline: auto;
   padding: 0;
   font-size: 0;
@@ -1043,7 +1043,7 @@ form#obsession-search {
   }
 }
 
-div#obsession-deck {
+div#deck {
   margin: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -1051,7 +1051,7 @@ div#obsession-deck {
   row-gap: 30px;
   justify-content: center;
 
-  div.obsession-card {
+  div.card {
     border: var(--glass-border);
     border-radius: 10px;
     flex: 1 1 290px;
@@ -1103,4 +1103,18 @@ img#spotifyWidgetPlaceholder {
   z-index: -1;
 }
 
-/*  */
+hr {
+  color: hsla(var(--color-gray-100-a), 0.4);
+  border: 0.5px solid;
+  border-radius: 100%;
+}
+
+#noResults {
+  display: none;
+  color: orangered;
+  position: absolute;
+  top: 130px;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}

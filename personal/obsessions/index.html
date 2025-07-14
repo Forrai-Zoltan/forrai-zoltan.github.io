@@ -20,28 +20,45 @@
     <main>
       <section>
         <article>
-          <form action="" id="obsession-search">
+          <form action="" id="search-bar">
+            <p
+              aria-live="polite"
+              id="noResults"
+              style="
+                display: none;
+                color: orangered;
+                position: absolute;
+                top: 130px;
+                text-align: center;
+                width: 100%;
+                z-index: 100;
+              ">
+              No results found.
+            </p>
             <div>
               <input
+                id="search"
                 name="filter"
                 type="text"
-                placeholder="Filter..." /><button>
+                placeholder="Filter..." /><button disabled>
                 <img src="/assets/search.svg" alt="" />
               </button>
             </div>
             <label for="filter"
-              >You can filter by the #tags or names of the cards.</label
+              >You can filter cards by #tags or text, or use <kbd>-</kbd> before
+              a term to exclude items.</label
             >
           </form>
         </article>
         <h1 style="margin: 0 0 40px 0; padding: 0 55px; font-size: 2rem">
           My Current Obsessions
         </h1>
-        <div id="obsession-deck">
+        <div id="deck">
           <div
-            class="obsession-card"
-            onkeydown="if(event.key === 'Enter') window.open('https://github.com/kittinan/spotify-github-profile', '_blank')"
-            onclick="window.open('https://github.com/kittinan/spotify-github-profile', '_blank')">
+            data-tags="spotify music song"
+            class="card"
+            onkeydown="if(event.key === 'Enter') window.open('https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&redirect=true', '_blank', 'noopener', 'noreferrer')"
+            onclick="window.open('https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&redirect=true', '_blank', 'noopener', 'noreferrer')">
             <img
               title="Currently Listening To..."
               id="spotifyWidget"
@@ -52,19 +69,25 @@
               src="/assets/spotify-placeholder.png"
               alt="" />
           </div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
-          <div class="obsession-card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
         </div>
       </section>
     </main>
     <script src="/script.js"></script>
+    <script src="/card.js"></script>
     <script>
       function refreshSpotifyWidget() {
         const img = document.getElementById("spotifyWidget");

@@ -19,10 +19,46 @@
     <main>
       <section>
         <article>
-          <h1>Games</h1>
+          <form action="" id="search-bar">
+            <p aria-live="polite" id="noResults">No results found.</p>
+            <div>
+              <input
+                id="search"
+                name="filter"
+                type="text"
+                placeholder="Filter..." /><button disabled>
+                <img src="/assets/search.svg" alt="" />
+              </button>
+            </div>
+            <label for="filter"
+              >You can filter cards by #tags or text, or use <kbd>-</kbd> before
+              a term to exclude items.</label
+            >
+          </form>
         </article>
+        <h1 style="margin: 0 0 40px 0; padding: 0 55px; font-size: 2rem">
+          My Interactive Media and Games
+        </h1>
+        <div id="deck">
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+          <div data-tags="" class="card"></div>
+        </div>
       </section>
     </main>
     <script src="/script.js"></script>
+    <script src="/card.js"></script>
   </body>
 </html>
