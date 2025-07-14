@@ -69,10 +69,10 @@
         const img = document.getElementById("spotifyWidget");
         const baseUrl = img.src.split("?")[0];
         const params = new URLSearchParams(img.src.split("?")[1]);
-        params.set("t", Date.now()); // cache buster
+        params.set("t", Date.now());
         img.src = `${baseUrl}?${params.toString()}`;
       }
-      setInterval(refreshSpotifyWidget, 15000);
+      setInterval(refreshSpotifyWidget, 5000);
     </script>
   </body>
 </html>
