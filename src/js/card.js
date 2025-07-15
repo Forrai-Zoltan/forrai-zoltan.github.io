@@ -48,3 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
     noResults.style.display = matchCount === 0 ? "block" : "none";
   });
 });
+
+// Card Tab Index
+
+document.querySelectorAll(".card").forEach((card) => {
+  card.setAttribute("tabindex", "0");
+});
+
+function refreshSpotifyWidget() {
+  const img = document.getElementById("spotifyWidget");
+  const baseUrl = img.src.split("?")[0];
+  const params = new URLSearchParams(img.src.split("?")[1]);
+  params.set("t", Date.now());
+  img.src = `${baseUrl}?${params.toString()}`;
+}
+setInterval(refreshSpotifyWidget, 30000);

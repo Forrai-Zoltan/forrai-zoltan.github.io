@@ -3,29 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Zoltán Forrai" />
-    <script src="/assets/src/js/mobile.js"></script>
+    <script src="/src/js/mobile.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css" />
     <title>Thoughts</title>
-    <link rel="stylesheet" href="/assets/src/css/style.css" />
-    <link
-      rel="preload"
-      href="/assets/media/img/socrates-middle-finger.png"
-      as="image" />
-    <link rel="preload" href="/assets/media/img/profile_bw.png" as="image" />
-    <link
-      rel="preload"
-      href="/assets/media/svg/Twitter_Verified_Badge.svg"
-      as="svg" />
   </head>
   <body>
     <header>
       <nav id="site-title-bar" aria-label="Site Title"></nav>
       <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
       <nav id="dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/js/nav.js"></script>
     </header>
-    <script src="/assets/src/js/navigation.js"></script>
     <main>
-      <section>
+      <section id="purple-section">
         <div id="timeline">
           <!-- --------------------------------------------------------------------- -->
           <article class="tweet-box">
@@ -52,7 +42,7 @@
             <p class="tweet-text">
               Here is my first post with an image.
               <img
-                src="/assets/media/img/socrates-middle-finger.png"
+                src="/asset/img/socrates-middle-finger.png"
                 alt="Socrates flipping the bird." />
             </p>
           </article>
@@ -66,6 +56,7 @@
       </section>
       <div id="copy-message" tabindex="-1">Link copied!</div>
     </main>
-    <script src="/assets/src/js/script.js"></script>
   </body>
+  <script src="/src/js/script.js"></script>
+  <script src="/src/js/twitter.js"></script>
 </html>

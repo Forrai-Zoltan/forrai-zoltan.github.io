@@ -1,9 +1,11 @@
+
+
 // HEADER
 const siteTitleBar = document.getElementById("site-title-bar");
 if (siteTitleBar) {
   siteTitleBar.innerHTML = `
   <a href="/">
-    <img width="36" height="36" src="/assets/media/img/socrates-middle-finger.png">
+    <img width="36" height="36" src="/asset/img/socrates-middle-finger.png">
     Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
   </a>`;
 }

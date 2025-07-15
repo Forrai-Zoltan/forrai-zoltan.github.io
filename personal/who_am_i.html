@@ -3,40 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Zoltán Forrai" />
-    <script src="/assets/src/js/mobile.js"></script>
+    <script src="/src/js/mobile.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css" />
     <title>Who am I?</title>
-    <link rel="stylesheet" href="/assets/src/css/style.css" />
-    <link
-      rel="preload"
-      href="/assets/media/img/socrates-middle-finger.png"
-      as="image" />
-    <link rel="preload" href="/assets/media/img/pointing_hand.png" as="image" />
   </head>
   <body>
     <header>
       <nav id="site-title-bar" aria-label="Site Title"></nav>
       <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
       <nav id="dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/js/nav.js"></script>
     </header>
-    <script src="/assets/src/js/navigation.js"></script>
     <main>
-      <section>
+      <section id="purple-section">
         <article>
           <h1>Who am I?</h1>
-          <!-- <img src="/pointing-finger-right.svg" alt="" /> -->
           <p>
             <span style="opacity: 0.7">
               <img
-                src="/assets/media/img/pointing_hand.png"
+                class="pointing-hand"
+                src="/asset/img/pointing_hand.png"
                 alt="pointing hand"
-                width="60"
-                style="
-                  user-select: none;
-                  top: 15px;
-                  position: relative;
-                  margin-right: 5px;
-                " />
+                width="60" />
               If you are only interested in my achievements:
             </span>
             <a href="#">Curriculum Vitae</a>
@@ -84,6 +72,6 @@
         </article>
       </section>
     </main>
-    <script src="/assets/src/jsscript.js"></script>
   </body>
+  <script src="/src/jsscript.js"></script>
 </html>
