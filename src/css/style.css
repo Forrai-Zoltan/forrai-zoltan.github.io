@@ -1065,7 +1065,7 @@ img.pointing-hand {
 
 form#contact-form,
 form#secret-form {
-  padding: 0 50px;
+  padding: 40px 100px;
 
   fieldset {
     display: flex;
@@ -1234,7 +1234,7 @@ form#secret-form {
     div.drop-zone-thumb {
       margin-right: 30px;
       margin-bottom: 50px;
-      width: 200px;
+      width: 100px;
       height: 120px;
       background-size: cover;
       position: relative;
@@ -1269,14 +1269,11 @@ form#secret-form {
 
 .fieldset-wrapper {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
 }
 
 .fieldset-wrapper fieldset {
   flex: 1;
   min-width: 0; /* Important to prevent overflow */
-  border: 1px solid #ccc;
-  padding: 1rem;
-  box-sizing: border-box;
 }

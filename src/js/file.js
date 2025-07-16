@@ -20,7 +20,9 @@ document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
     }
     if (e.key === "Backspace" || e.key === "Delete") {
       e.preventDefault();
-      const selectedThumb = dropZoneElement.querySelector(".drop-zone-thumb.selected");
+      const selectedThumb = dropZoneElement.querySelector(
+        ".drop-zone-thumb.selected"
+      );
       if (selectedThumb) {
         currentFile = null;
         updateThumbnails(dropZoneElement, currentFile);
@@ -63,7 +65,9 @@ document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
 });
 
 function updateThumbnails(dropZoneElement, file) {
-  dropZoneElement.querySelectorAll(".drop-zone-thumb").forEach((el) => el.remove());
+  dropZoneElement
+    .querySelectorAll(".drop-zone-thumb")
+    .forEach((el) => el.remove());
 
   if (!file) return;
 
@@ -77,6 +81,8 @@ function updateThumbnails(dropZoneElement, file) {
     reader.onload = () => {
       thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
       thumbnailElement.style.boxShadow = "0px 5px 10px 2px rgba(0, 0, 0, 0.5)";
+      thumbnailElement.style.width = "233px";
+      thumbnailElement.style.height = "120px";
     };
   }
 
