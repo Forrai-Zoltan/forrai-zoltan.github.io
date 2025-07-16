@@ -1250,9 +1250,7 @@ form#secret-form {
         bottom: -30px;
         left: 0;
         font-family: departure-mono;
-        text-overflow: ellipsis;
         white-space: nowrap;
-        overflow: hidden;
         font-size: 13.75px;
         left: 50%;
         transform: translateX(-50%);
