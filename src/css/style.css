@@ -1065,7 +1065,6 @@ img.pointing-hand {
 
 form#contact-form,
 form#secret-form {
-  padding: 40px 100px;
 
   fieldset {
     display: flex;
@@ -1170,7 +1169,7 @@ form#secret-form {
   }
 
   label[for="file"] {
-    margin-top: 30px;
+    margin-top: 21px;
   }
 
   div#drop-zone {
@@ -1262,6 +1261,12 @@ form#secret-form {
   }
 }
 
+
+form#contact-form {
+  padding: 40px 100px;
+
+}
+
 .drop-zone-thumb.selected {
   outline: 1px dashed rgba(255, 255, 255, 0.5);
 }
@@ -1270,6 +1275,7 @@ form#secret-form {
   display: flex;
   gap: 2rem;
   width: 100%;
+
 }
 
 .fieldset-wrapper fieldset {
