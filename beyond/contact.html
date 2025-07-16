@@ -22,58 +22,58 @@
           action="https://formsubmit.co/694b1edbc83eb5971410e2bbfeeb3b21"
           method="POST"
           enctype="multipart/form-data">
-
-            <div class="fieldset-wrapper">
-              <fieldset>
-                <label for="name">Name</label>
+          <div class="fieldset-wrapper">
+            <fieldset>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="William Shakespeare"
+                autocomplete="off"
+                autofocus
+                required />
+              <label for="email">Email (Optional)</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="shakespeare@globe.uk"
+                autocomplete="off" />
+              <label for="file">Upload File (Max 5MB Each)</label>
+              <div id="drop-zone">
                 <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="William Shakespeare"
-                  autocomplete="off"
-                  autofocus
-                  required />
-                <label for="email">Email (Optional)</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="shakespeare@globe.uk"
-                  autocomplete="off" />
-                <label for="file">Upload File (Max 5MB Each)</label>
-                <div id="drop-zone">
-                  <input
-                    class="drop-zone-input"
-                    id="file"
-                    type="file"
-                    name="file"
-                    multiple />
-                  <img id="plus" src="/asset/svg/folder-plus.svg" alt="" />
-                  <img id="open" src="/asset/svg/folder-open.svg" alt="" />
-                </div>
-              </fieldset>
-              <fieldset>
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="12"
-                  placeholder="Uneasy lies the head that wears the crown..."
-                  autocomplete="off"
-                  required></textarea>
-                <button type="submit">Send</button>
-              </fieldset>
-            </div>
+                  class="drop-zone-input"
+                  name="attachment"
+                  id="file"
+                  type="file"
+                  multiple
+                  accept="*" />
+                <img id="plus" src="/asset/svg/folder-plus.svg" alt="" />
+                <img id="open" src="/asset/svg/folder-open.svg" alt="" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="12"
+                placeholder="Uneasy lies the head that wears the crown..."
+                autocomplete="off"
+                required></textarea>
+              <button type="submit">Send</button>
+            </fieldset>
+          </div>
 
-            <input
-              type="hidden"
-              name="_next"
-              value="https://forrai-zoltan.github.io/meta/contact/thanks?name=name" />
+          <!-- <input
+            type="hidden"
+            name="_next"
+            value="https://forrai-zoltan.github.io/meta/contact/thanks?name=name" /> -->
 
-            <input type="text" name="_honey" style="display: none" />
-            <input type="hidden" name="_captcha" value="false" />
-
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
         </form>
       </section>
     </main>

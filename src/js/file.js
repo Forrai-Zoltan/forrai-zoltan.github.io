@@ -53,7 +53,6 @@ document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
       currentFiles = currentFiles.concat(Array.from(inputElement.files));
       updateThumbnails(dropZoneElement, currentFiles);
       updateInputFiles(inputElement, currentFiles);
-      inputElement.value = "";
     }
   });
 
@@ -74,7 +73,6 @@ document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
     currentFiles = currentFiles.concat(Array.from(e.dataTransfer.files));
     updateThumbnails(dropZoneElement, currentFiles);
     updateInputFiles(inputElement, currentFiles);
-    inputElement.value = "";
   });
 
   dropZoneElement.addEventListener("click", (e) => {
