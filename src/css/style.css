@@ -1195,6 +1195,7 @@ form#secret-form {
     position: relative;
     flex-wrap: wrap;
 
+
     img {
       position: absolute;
       user-select: none;
