@@ -7,13 +7,6 @@ document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
     if (e.target === dropZoneElement || e.target.closest("img")) {
       inputElement.click();
     }
-  });
-  dropZoneElement.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      inputElement.click();
-    }
-  });
-  dropZoneElement.addEventListener("click", (e) => {
     if (e.target.classList.contains("remove-thumb")) {
       const index = e.target.dataset.index;
       currentFiles.splice(index, 1);
@@ -22,8 +15,10 @@ document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
     }
   });
 
-  // New: Handle keydown for deleting selected thumbnails
   dropZoneElement.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      inputElement.click();
+    }
     if (e.key === "Backspace" || e.key === "Delete") {
       e.preventDefault();
       const selectedThumb = dropZoneElement.querySelector(
