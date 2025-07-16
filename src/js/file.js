@@ -1,14 +1,3 @@
-function submitForm() {
-  const form = document.querySelector(".my-form");
-  const formData = new FormData(form);
-  const url = "https://formsubmit.co/694b1edbc83eb5971410e2bbfeeb3b21";
-  fetch(url, {
-    method: "POST",
-    body: formData,
-  });
-  return false;
-}
-
 document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
   const dropZoneElement = inputElement.closest("#drop-zone");
 
