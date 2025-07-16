@@ -20,45 +20,64 @@
         <form
           id="contact-form"
           action="https://formsubmit.co/694b1edbc83eb5971410e2bbfeeb3b21"
-          method="POST">
-          <fieldset>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="William Shakespeare"
-              autocomplete="off"
-              autofocus
-              required />
+          method="POST"
+          enctype="multipart/form-data">
 
-            <label for="email">Email (Optional)</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="shakespeare@globe.uk"
-              autocomplete="off" />
+            <div class="fieldset-wrapper">
+              <fieldset>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="William Shakespeare"
+                  autocomplete="off"
+                  autofocus
+                  required />
+                <label for="email">Email (Optional)</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="shakespeare@globe.uk"
+                  autocomplete="off" />
+                <label for="file">Upload File (Max 5MB Each)</label>
+                <div id="drop-zone">
+                  <input
+                    class="drop-zone-input"
+                    id="file"
+                    type="file"
+                    name="file"
+                    multiple />
+                  <img id="plus" src="/asset/svg/folder-plus.svg" alt="" />
+                  <img id="open" src="/asset/svg/folder-open.svg" alt="" />
+                </div>
+              </fieldset>
+              <fieldset>
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="12"
+                  placeholder="Uneasy lies the head that wears the crown..."
+                  autocomplete="off"
+                  required></textarea>
+                <button type="submit">Send</button>
+              </fieldset>
+            </div>
 
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Uneasy lies the head that wears the crown..."
-              autocomplete="off"
-              required></textarea>
-            <input type="text" name="_honey" style="display: none" />
-            <input type="hidden" name="_captcha" value="false" />
-            <button type="submit">Send</button>
             <input
               type="hidden"
               name="_next"
               value="https://forrai-zoltan.github.io/meta/contact/thanks?name=name" />
-          </fieldset>
+
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
+
         </form>
       </section>
     </main>
   </body>
   <script src="/src/js/script.js"></script>
+  <script src="/src/js/file.js"></script>
 </html>
