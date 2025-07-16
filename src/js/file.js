@@ -8,6 +8,11 @@ document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
       inputElement.click();
     }
   });
+  dropZoneElement.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      inputElement.click();
+    }
+  });
   dropZoneElement.addEventListener("click", (e) => {
     if (e.target.classList.contains("remove-thumb")) {
       const index = e.target.dataset.index;
