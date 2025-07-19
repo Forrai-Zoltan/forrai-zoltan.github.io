@@ -4,6 +4,8 @@
 
 - [ ] 88x31 Button
 - [ ] Rewrite CSS
+  - [ ] Clamps
+  - [ ]
 - [ ] Customise Navigation Pages (Personal, Literary, Creative, Beyond)
 
 Personal:
@@ -15,7 +17,7 @@ Personal:
 Beyond:
 
 - [ ] Finish Secret
-  
+
 ---
 
 ## Sub Sites
