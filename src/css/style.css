@@ -424,7 +424,7 @@ div#img-wrapper {
 }
 
 img#profile-pic {
-  border: var(--glass-border);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
   width: 100%;
   height: auto;
   display: block;
@@ -1065,7 +1065,6 @@ img.pointing-hand {
 
 form#contact-form,
 form#secret-form {
-
   fieldset {
     display: flex;
     flex-direction: column;
@@ -1194,7 +1193,6 @@ form#secret-form {
     position: relative;
     flex-wrap: wrap;
 
-
     img {
       position: absolute;
       user-select: none;
@@ -1261,10 +1259,8 @@ form#secret-form {
   }
 }
 
-
 form#contact-form {
   padding: 40px 100px;
-
 }
 
 .drop-zone-thumb.selected {
@@ -1275,7 +1271,6 @@ form#contact-form {
   display: flex;
   gap: 2rem;
   width: 100%;
-
 }
 
 .fieldset-wrapper fieldset {
