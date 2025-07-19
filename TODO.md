@@ -34,9 +34,17 @@ Posters:
 
 Shorts
 
-Novels
+- [ ] Create main Page
+
+Poetry
+
+- [ ] Create main Page
 
 Essays
+
+- [ ] Create main Page
+
+Novels
 
 ### Creative
 
