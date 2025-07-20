@@ -11,13 +11,20 @@
 
 a#navigate-back-a {
   position: fixed;
-  padding: 10px;
+  padding: 12px 25px;
   text-decoration: none;
+  z-index: 9999;
+
+  img {
+    height: 1.5rem;
+    margin: 0;
+    border-radius: 10px;
+  }
 }
 
 a#navigate-back-a:hover div#nav-back,
 a#navigate-back-a:focus-visible div#nav-back {
-  padding-right: 275px;
+  padding-right: 300px;
   color: white;
   border: 1px rgba(255, 255, 255, 0.3) solid;
   background: linear-gradient(
@@ -39,14 +46,14 @@ a#navigate-back-a:active {
 }
 
 div#nav-back {
-  width: 30px;
-  padding: 5px 2px 5px 10px;
-  border-radius: 10px;
+  width: 39px;
+  height: 35px;
+  padding: 5px 2px 5px 5px;
+  border-radius: 15px;
   font-size: 25px;
   font-family: var(--font);
   white-space: nowrap;
   overflow: hidden;
-  align-content: center;
   color: var(--color-white);
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
   background: linear-gradient(
@@ -59,8 +66,10 @@ div#nav-back {
   border: 1px rgba(255, 255, 255, 0.25) solid;
   cursor: pointer;
   transition: padding-right 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 div#nav-back span#nav-back-span {
-  margin: 0 10px;
+  margin: 0 15px 0 10px;
 }
