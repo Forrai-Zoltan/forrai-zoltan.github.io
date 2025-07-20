@@ -975,6 +975,7 @@ div#deck {
   justify-content: center;
 
   .card {
+    text-decoration: none;
     border: var(--glass-border);
     border-radius: 10px;
     flex: 1 1 290px;
