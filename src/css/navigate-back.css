@@ -15,7 +15,9 @@ html {
 }
 
 a#navigate-back-a {
-  position: sticky;
+  position: fixed;
+  top: 12px;
+  left: 25px;
   text-decoration: none;
   z-index: 5;
   user-select: none;
@@ -70,9 +72,10 @@ div#nav-back {
   );
   border: 1px rgba(255, 255, 255, 0.25) solid;
   cursor: pointer;
-  transition: padding-right 0.3s ease;
+  transition: width 0.3s ease;
   display: flex;
   align-items: center;
+  transition: padding-right 0.2s ease;
 }
 
 div#nav-back span#nav-back-span {
