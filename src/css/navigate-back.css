@@ -20,6 +20,8 @@ a#navigate-back-a {
   text-decoration: none;
   z-index: 9999;
   user-select: none;
+  top: 0;
+  left: 0;
 
   img {
     height: 1.5rem;
