@@ -16,8 +16,9 @@ html {
 
 a#navigate-back-a {
   position: sticky;
+  margin-top: 12px;
   text-decoration: none;
-  z-index: 9999;
+  z-index: 5;
   user-select: none;
   top: 12px;
   left: 15px;
