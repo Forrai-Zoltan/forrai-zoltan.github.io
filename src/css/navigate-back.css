@@ -15,7 +15,7 @@ html {
 }
 
 a#navigate-back-a {
-  position: fixed;
+  position: sticky;
   padding: 12px 25px;
   text-decoration: none;
   z-index: 9999;
