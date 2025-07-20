@@ -19,6 +19,7 @@ a#navigate-back-a {
   padding: 12px 25px;
   text-decoration: none;
   z-index: 9999;
+  user-select: none;
 
   img {
     height: 1.5rem;
