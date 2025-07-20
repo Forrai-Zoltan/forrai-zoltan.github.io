@@ -16,12 +16,11 @@ html {
 
 a#navigate-back-a {
   position: sticky;
-  padding: 12px 25px;
   text-decoration: none;
   z-index: 9999;
   user-select: none;
-  top: 0;
-  left: 0;
+  top: 12px;
+  left: 15px;
 
   img {
     height: 1.5rem;
