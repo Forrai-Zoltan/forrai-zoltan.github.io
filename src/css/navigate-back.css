@@ -4,6 +4,7 @@
   --color-purple: hsl(270, 80%, 20%);
   --color-purple-dark: hsl(270, 80%, 15%);
   --font: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --font-size: 24px;
 }
 :focus-visible {
   outline: none;
