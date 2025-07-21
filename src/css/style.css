@@ -644,6 +644,10 @@ ul {
 
 /*  */
 
+h1#secret-h1 {
+  text-align: center;
+}
+
 section:has(article#secret-flow) {
   padding-top: 0;
 }
