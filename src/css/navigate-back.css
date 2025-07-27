@@ -16,6 +16,8 @@ html {
 
 a#navigate-back-a {
   position: fixed;
+  padding-right: 50px;
+  padding-bottom: 20px;
   top: 12px;
   left: 25px;
   text-decoration: none;
