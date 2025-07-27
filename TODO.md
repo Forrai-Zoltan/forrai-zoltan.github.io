@@ -5,7 +5,7 @@
 - [ ] 88x31 Button
 - [ ] Rewrite CSS
   - [ ] Clamps
-  - [ ]
+  - [ ] Media queries
 - [ ] Customise Navigation Pages (Personal, Literary, Creative, Beyond)
 
 Personal:
