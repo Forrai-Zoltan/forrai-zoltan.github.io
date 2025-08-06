@@ -1,3 +1,5 @@
+// For Cards-View //
+
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("search");
   const cards = document.querySelectorAll(".card");

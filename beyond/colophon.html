@@ -91,5 +91,14 @@
       </section>
     </main>
   </body>
+  <script>
+    // Copy
+
+    const year = new Date().getFullYear();
+    const copyright = document.getElementById("copy-right");
+    if (copyright) {
+      copyright.innerHTML = `&copy  ${year} Forrai Zoltán`;
+    }
+  </script>
   <script src="/src/js/script.js"></script>
 </html>

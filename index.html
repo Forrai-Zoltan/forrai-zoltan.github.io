@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/js/mobile.js"></script>
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <title>Zoltán Forrai</title>
+    <base href="https://forrai-zoltan.github.io" />
+    <!-- accessing from mobile -->
+    <script src="/cdn/src/js/from-mobile.js"></script>
     <link
-      rel="icon"
-      href="/asset/img/socrates-middle-finger.png"
-      type="image" />
+      rel="shortcut icon"
+      href="/cdn/media/img/compressed/socrates-middle-finger.avif"
+      type="image/x-icon" />
+    <title>Zoltán Forrai</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <header>
-      <nav id="site-title-bar" aria-label="Site Title"></nav>
-      <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
-      <nav id="dropdown-menu" aria-label="Main Menu"></nav>
-      <script src="/src/js/nav.js"></script>
+      <nav id="Title-bar" aria-label="Site Title"></nav>
+      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/nav.js"></script>
     </header>
     <main>
-      <section id="purple-section">
+      <section id="Purple">
         <article>
           <h1>Zoltán Forrai</h1>
           <p>
@@ -34,15 +38,11 @@
             >
           </p>
           <p>
-            I made this website shortly before
-            <span title="Goodbye, Zuck :c">deleting my socials</span>, so this
-            is the only place you can <a href="/beyond/contact">message me</a>.
+            I made this website shortly before deleting my socials, so this is
+            the only place you can <a href="/beyond/contact">message me</a>.
             This site houses my writing, my art, and other crimes. What it
-            doesn't have are trackers, cookies, or ads.
-            <span title="But GitHub might. I'm not sure.">
-              I neither collect nor sell your data.
-            </span>
-            <span class="no-wrap">You know,</span> how it
+            doesn't have are trackers, cookies, or ads. I neither collect nor
+            sell your data. <span class="no-wrap">You know,</span> how it
             <strong>should</strong> be on every website.
             <span class="no-wrap">Like, hello?</span>
           </p>
@@ -57,15 +57,12 @@
       <aside>
         <div id="img-wrapper">
           <img
-            id="profile-pic"
-            src="/asset/img/profile_bw.png"
+            id="Profile-pic"
+            src="/cdn/media/img/compressed/profile_bw.avif"
             alt="Picture of my face. You are not missing much, TBH." />
         </div>
         <div id="green-box">
-          <a
-            id="btn-message-me"
-            href="/beyond/contact"
-            aria-label="Send me a message">
+          <a id="btn-message-me" href="/beyond/contact">
             <span class="no-wrap">Send Me a Message!</span>
           </a>
           <p><span class="no-wrap">I don't have social media.</span></p>
@@ -73,5 +70,5 @@
       </aside>
     </main>
   </body>
-  <script src="/src/js/script.js"></script>
+  <script src="/src/script.js"></script>
 </html>

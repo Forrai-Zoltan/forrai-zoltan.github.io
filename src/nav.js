@@ -1,11 +1,11 @@
-
+// For the navigation bars //
 
 // HEADER
-const siteTitleBar = document.getElementById("site-title-bar");
+const siteTitleBar = document.getElementById("Title-bar");
 if (siteTitleBar) {
   siteTitleBar.innerHTML = `
   <a href="/">
-    <img width="36" height="36" src="/asset/img/socrates-middle-finger.png">
+    <img width="36" height="36" src="/cdn/media/img/compressed/socrates-middle-finger.avif">
     Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
   </a>`;
 }
@@ -34,13 +34,13 @@ if (!(parts.length === 1 && parts[0] === "index")) {
   }
 }
 
-const breadcrumbs = document.getElementById("breadcrumbs");
+const breadcrumbs = document.getElementById("Breadcrumbs");
 if (breadcrumbs) {
   breadcrumbs.innerHTML = breadcrumbHTML;
 }
 
 // DROPDOWN MENU
-const dropdownMenu = document.getElementById("dropdown-menu");
+const dropdownMenu = document.getElementById("Dropdown-menu");
 if (dropdownMenu) {
   dropdownMenu.innerHTML = `
     <ul>

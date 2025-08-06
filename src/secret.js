@@ -1,32 +1,3 @@
-// ICON
-const favicon = document.createElement("link");
-favicon.rel = "icon";
-favicon.type = "image/png";
-favicon.href = "/asset/img/socrates-middle-finger.png";
-document.head.appendChild(favicon);
-
-// MAIN
-const header = document.querySelector("header");
-const headerHeight = header.offsetHeight;
-
-const main = document.querySelector("main");
-const viewportHeight = window.innerHeight;
-
-main.style.minHeight = `${viewportHeight - headerHeight - 25}px`;
-
-window.addEventListener("resize", () => {
-  const viewportHeight = window.innerHeight;
-  const header = document.querySelector("header");
-  const headerHeight = header.offsetHeight;
-  main.style.minHeight = `${viewportHeight - headerHeight - 25}px`;
-});
-
-if (main) {
-  const div = document.createElement("div");
-  div.style.height = "0.01px";
-  main.insertAdjacentElement("afterend", div);
-}
-
 //SECRET GAME PASSWORD
 const riddlePassword = document.getElementById("riddle-password");
 const feedback = document.getElementById("secret-feedback");
@@ -75,13 +46,4 @@ if (secretForm) {
       feedback.style.visibility = "hidden";
     }
   });
-}
-
-
-// Copy
-
-const year = new Date().getFullYear();
-const copyright = document.getElementById("copy-right");
-if (copyright) {
-  copyright.innerHTML = `&copy  ${year} Forrai Zoltán`;
 }
