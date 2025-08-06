@@ -223,7 +223,7 @@ section a {
   }
 }
 
-section div#timeline a {
+section div#Timeline a {
   color: var(--color-link);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 1px;
@@ -264,18 +264,18 @@ h1 {
     padding-bottom: 15px;
   }
 
-  &#contact {
+  &#Contact {
     text-align: center;
     font-size: 2rem;
     margin: 2rem 0 0.5rem 0;
   }
 
-  &#smaller-h1 {
+  &#Smaller-h1 {
     margin: 0 0 40px 0;
 
     font-size: 2.5rem;
   }
-  &#gallery-h1 {
+  &#Gallery-h1 {
     margin: 0 0 40px 0;
     padding: 0 55px;
     font-size: 2rem;
@@ -293,15 +293,15 @@ ul {
 
 /*  */
 
-h1#secret-h1 {
+h1#Secret-h1 {
   text-align: center;
 }
 
-section:has(article#secret-flow) {
+section:has(article#Secret-flow) {
   padding-top: 0;
 }
 
-section#purple-section article#secret-flow {
+section#Purple article#Secret-flow {
   padding: 0 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -309,7 +309,7 @@ section#purple-section article#secret-flow {
   width: 80vw;
 }
 
-div#secret-feedback {
+div#Secret-feedback {
   visibility: hidden;
   text-align: center;
   padding-top: 2.5rem;
@@ -317,7 +317,7 @@ div#secret-feedback {
   color: orangered;
 }
 
-div#secret-rhyme {
+div#Secret-rhyme {
   font-size: var(--font-size);
   color: var(--color-off-white);
   margin: 0;
@@ -330,7 +330,7 @@ div#secret-rhyme {
   }
 }
 
-form#secret-form {
+form#Secret-form {
   flex: 1;
   width: 50em;
   align-self: center;
@@ -427,7 +427,7 @@ span.no-wrap {
   white-space: nowrap;
 }
 
-div#timeline {
+div#Timeline {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   padding: 30px 25px;
@@ -500,7 +500,7 @@ div#timeline {
 }
 
 /* Zoom overlay */
-#img-overlay {
+#Img-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -513,7 +513,7 @@ div#timeline {
   z-index: 1000;
 }
 
-#img-overlay img {
+#Img-overlay img {
   max-width: 90%;
   max-height: 90%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -526,7 +526,7 @@ div#timeline {
   cursor: zoom-in;
 }
 
-div#copy-message {
+div#Copy-message {
   position: fixed;
   background: radial-gradient(
     circle at center,
@@ -546,7 +546,7 @@ div#copy-message {
   z-index: 9999;
 }
 
-form#search-bar {
+form#Search-bar {
   margin-inline: auto;
   padding: 0;
   font-size: 0;
@@ -619,7 +619,7 @@ form#search-bar {
   }
 }
 
-div#deck {
+div#Deck {
   margin: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -654,7 +654,7 @@ div#deck {
       object-fit: cover;
     }
 
-    &:has(#spotifyWidget) {
+    &:has(#SpotifyWidget) {
       align-items: flex-start;
     }
 
@@ -682,8 +682,8 @@ div#deck {
   }
 }
 
-img#spotifyWidget,
-img#spotifyWidgetPlaceholder {
+img#SpotifyWidget,
+img#SpotifyWidgetPlaceholder {
   border-radius: 20px;
   background-color: #121212;
   max-width: 290px;
@@ -691,7 +691,7 @@ img#spotifyWidgetPlaceholder {
   position: absolute !important;
 }
 
-img#spotifyWidgetPlaceholder {
+img#SpotifyWidgetPlaceholder {
   height: 101% !important;
   z-index: -1;
 }
@@ -702,7 +702,7 @@ hr {
   border-radius: 100%;
 }
 
-#noResults {
+#NoResults {
   display: none;
   color: orangered;
   position: absolute;
@@ -712,13 +712,13 @@ hr {
   z-index: 100;
 }
 
-div#tech-stack {
+div#Tech-stack {
   user-select: none;
   margin-inline: auto;
   width: fit-content;
 }
 
-div#tech-stack a:hover img,
+div#Tech-stack a:hover img,
 .light-up {
   filter: brightness(1.15);
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
