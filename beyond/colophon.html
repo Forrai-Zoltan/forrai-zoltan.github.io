@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/js/mobile.js"></script>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <!-- accessing from mobile -->
+    <script src="/cdn/src/js/from-mobile.js"></script>
     <title>Colophon</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/nav.css" />
   </head>
   <body>
     <header>
-      <nav id="site-title-bar" aria-label="Site Title"></nav>
-      <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
-      <nav id="dropdown-menu" aria-label="Main Menu"></nav>
-      <script src="/src/js/nav.js"></script>
+      <nav id="Title-bar" aria-label="Site Title"></nav>
+      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/nav.js"></script>
     </header>
     <main>
-      <section id="purple-section">
+      <section id="Purple">
         <article>
-          <h1 id="smaller-h1">Colophon</h1>
+          <h1 id="Smaller-h1">Colophon</h1>
           <p>
             Thank you for visiting! The code for this website is availabe on my
             <a href="https://github.com/Forrai-Zoltan/forrai-zoltan.github.io"
@@ -51,42 +55,51 @@
               <a href="https://github.com/markedjs/marked">marked.js</a>
             </li>
           </ul>
-          <div id="tech-stack">
-            <img src="/asset/svg/macos-dark.svg" width="50" title="MacOS" />
+          <div id="Tech-stack">
+            <img
+              src="/cdn/media/svg/stack/macos-dark.svg"
+              width="50"
+              title="MacOS" />
             <a href="https://www.kernel.org/"
-              ><img src="/asset/svg/linux-dark.svg" width="50" title="Linux"
+              ><img
+                src="/cdn/media/svg/stack/linux-dark.svg"
+                width="50"
+                title="Linux"
             /></a>
             <a href="https://vscodium.com/"
               ><img
-                src="/asset/svg/vscodium-dark.svg"
+                src="/cdn/media/svg/stack/vscodium-dark.svg"
                 width="50"
                 title="VsCodium"
             /></a>
-            <img src="/asset/svg/html.svg" width="50" title="HTML" />
-            <img src="/asset/svg/css.svg" width="50" title="CSS" />
+            <img src="/cdn/media/svg/stack/html.svg" width="50" title="HTML" />
+            <img src="/cdn/media/svg/stack/css.svg" width="50" title="CSS" />
             <img
-              src="/asset/svg/javascript.svg"
+              src="/cdn/media/svg/stack/javascript.svg"
               width="50"
               title="Javascript" />
             <a href="https://git-scm.com/"
-              ><img src="/asset/svg/git.svg" width="50" title="Git"
+              ><img src="/cdn/media/svg/stack/git.svg" width="50" title="Git"
             /></a>
-            <img src="/asset/svg/github-dark.svg" width="50" title="GitHub" />
+            <img
+              src="/cdn/media/svg/stack/github-dark.svg"
+              width="50"
+              title="GitHub" />
             <a href="https://obsidian.md/"
               ><img
-                src="/asset/svg/obsidian-dark.svg"
+                src="/cdn/media/svg/stack/obsidian-dark.svg"
                 width="50"
                 title="Obsidian"
             /></a>
             <a href="https://www.blender.org/"
               ><img
-                src="/asset/svg/blender-dark.svg"
+                src="/cdn/media/svg/stack/blender-dark.svg"
                 width="50"
                 title="Blender"
             /></a>
           </div>
           <hr />
-          <p id="copy-right"></p>
+          <p id="Copy-right"></p>
         </article>
       </section>
     </main>
@@ -95,10 +108,10 @@
     // Copy
 
     const year = new Date().getFullYear();
-    const copyright = document.getElementById("copy-right");
+    const copyright = document.getElementById("Copy-right");
     if (copyright) {
       copyright.innerHTML = `&copy  ${year} Forrai Zoltán`;
     }
   </script>
-  <script src="/src/js/script.js"></script>
+  <script src="/src/script.js"></script>
 </html>
