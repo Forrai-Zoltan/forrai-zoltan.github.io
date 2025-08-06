@@ -46,7 +46,7 @@ aside {
   flex-direction: column;
 }
 
-div#img-wrapper {
+div#Img-wrapper {
   perspective: 2000px;
   margin-bottom: 0.5rem;
   position: relative;
