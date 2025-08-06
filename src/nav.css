@@ -9,10 +9,7 @@ header {
   right: 0;
   box-sizing: border-box;
   z-index: 20;
-
-  a {
-    align-items: baseline;
-  }
+  align-items: baseline;
 }
 
 nav#Title-bar {
@@ -117,6 +114,7 @@ nav#Breadcrumbs a {
   text-decoration: none;
   font-size: 0.8rem;
   border-radius: 5px;
+  align-items: baseline;
 
   &:last-of-type {
     color: hsl(0, 0%, 80%);
@@ -168,6 +166,7 @@ nav#Dropdown-menu li.dropdown-category {
   border-left: 0.5px transparent;
   position: relative;
   user-select: none;
+  align-items: baseline;
 
   &::after {
     content: "";

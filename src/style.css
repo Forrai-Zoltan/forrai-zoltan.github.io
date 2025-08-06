@@ -132,8 +132,8 @@ a#Btn-message-me {
   transition: transform 0.3s ease, box-shadow 0.2s ease;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
+  align-items: baseline;
 
   &:hover,
   &:focus-visible {
