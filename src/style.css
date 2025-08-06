@@ -133,7 +133,7 @@ a#Btn-message-me {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: baseline;
+  align-items: center;
 
   &:hover,
   &:focus-visible {
