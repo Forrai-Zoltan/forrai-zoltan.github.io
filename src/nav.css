@@ -9,7 +9,6 @@ header {
   right: 0;
   box-sizing: border-box;
   z-index: 20;
-  align-items: baseline;
 }
 
 nav#Title-bar {
@@ -86,6 +85,7 @@ nav#Title-bar a {
   line-height: 1;
   color: hsl(0, 0%, 90%);
   display: flex;
+  align-items: baseline;
   text-decoration: none;
   font-size: 2rem;
   letter-spacing: 0.05em;
@@ -114,7 +114,6 @@ nav#Breadcrumbs a {
   text-decoration: none;
   font-size: 0.8rem;
   border-radius: 5px;
-  align-items: baseline;
 
   &:last-of-type {
     color: hsl(0, 0%, 80%);
@@ -163,10 +162,9 @@ nav#Dropdown-menu li.dropdown-category {
   text-align: left;
   font-size: 1rem;
   border-right: 5px solid transparent;
-  border-left: 0.5px transparent;
+  border-left: 0.5px solid transparent;
   position: relative;
   user-select: none;
-  align-items: baseline;
 
   &::after {
     content: "";
