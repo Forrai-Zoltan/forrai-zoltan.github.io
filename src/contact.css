@@ -1,4 +1,3 @@
-
 form#Contact-form,
 form#Secret-form {
   fieldset {
@@ -177,7 +176,7 @@ form#Secret-form {
       background-repeat: no-repeat;
       background-position: center;
       z-index: 1;
-      background-image: url("/asset/svg/file.svg");
+      background-image: url("/cdn/asset/ico/file.svg");
 
       &::after {
         content: attr(data-label);
@@ -212,5 +211,5 @@ form#Contact-form {
 
 .fieldset-wrapper fieldset {
   flex: 1;
-  min-width: 0; /* Important to prevent overflow */
+  min-width: 0; 
 }
