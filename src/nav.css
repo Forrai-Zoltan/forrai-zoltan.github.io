@@ -9,6 +9,10 @@ header {
   right: 0;
   box-sizing: border-box;
   z-index: 20;
+
+  a {
+    align-items: baseline;
+  }
 }
 
 nav#Title-bar {
@@ -85,7 +89,6 @@ nav#Title-bar a {
   line-height: 1;
   color: hsl(0, 0%, 90%);
   display: flex;
-  align-items: center;
   text-decoration: none;
   font-size: 2rem;
   letter-spacing: 0.05em;
