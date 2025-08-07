@@ -3,26 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/js/mobile.js"></script>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <base href="https://forrai-zoltan.github.io" />
+    <!-- accessing from mobile -->
+    <script src="/cdn/src/js/from-mobile.js"></script>
     <title>Comics</title>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/nav.css" />
   </head>
   <body>
     <header>
-      <nav id="site-title-bar" aria-label="Site Title"></nav>
-      <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
-      <nav id="dropdown-menu" aria-label="Main Menu"></nav>
-      <script src="/src/js/nav.js"></script>
+      <nav id="Title-bar" aria-label="Site Title"></nav>
+      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/nav.js"></script>
     </header>
     <main>
-      <section class="non-text" id="purple-section">
+      <section class="non-text" id="Purple">
         <article>
-          <form action="" id="search-bar">
-            <p aria-live="polite" id="noResults">No results found.</p>
+          <form action="" id="Search-bar">
+            <p aria-live="polite" id="NoResults">No results found.</p>
             <div>
               <input
                 autocomplete="off"
-                id="search"
+                id="Search"
                 name="filter"
                 type="text"
                 placeholder="Filter..." /><button disabled>
@@ -35,18 +41,10 @@
             >
           </form>
         </article>
-        <h1 id="gallery-h1">My Drawings and Comics</h1>
-        <div id="deck">
-          <a
-            data-tags=""
-            class="card"
-            href="https://www.newgrounds.com/art/view/gildrom/unguis-the-crawler"
-            ><img
-              style="object-position: 20% center"
-              src="https://forrai-zoltan.github.io/cdn/unguis_the_crawler.png"
-              alt=""
-          /></a>
+        <h1 id="Gallery-h1">My Drawings and Comics</h1>
+        <div id="Deck">
           <a data-tags="" class="card">More to come…</a>
+          <a data-tags="" class="card"></a>
           <a data-tags="" class="card"></a>
           <a data-tags="" class="card"></a>
           <a data-tags="" class="card"></a>
@@ -64,6 +62,6 @@
       </section>
     </main>
   </body>
-  <script src="/src/js/script.js"></script>
-  <script src="/src/js/card.js"></script>
+  <script src="/src/script.js"></script>
+  <script src="/src/card-deck.js"></script>
 </html>

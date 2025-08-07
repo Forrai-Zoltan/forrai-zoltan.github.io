@@ -1,9 +1,9 @@
 // For Cards-View //
 
 document.addEventListener("DOMContentLoaded", () => {
-  const searchInput = document.getElementById("search");
+  const searchInput = document.getElementById("Search");
   const cards = document.querySelectorAll(".card");
-  const noResults = document.getElementById("noResults");
+  const noResults = document.getElementById("NoResults");
 
   searchInput.addEventListener("input", function () {
     // Remove # and , and normalize spaces
@@ -58,7 +58,7 @@ document.querySelectorAll(".card").forEach((card) => {
 });
 
 function refreshSpotifyWidget() {
-  const img = document.getElementById("spotifyWidget");
+  const img = document.getElementById("SpotifyWidget");
   const baseUrl = img.src.split("?")[0];
   const params = new URLSearchParams(img.src.split("?")[1]);
   params.set("t", Date.now());
