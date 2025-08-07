@@ -63,8 +63,7 @@ function refreshSpotifyWidget() {
   const params = new URLSearchParams(img.src.split("?")[1]);
   params.set("t", Date.now());
   img.src = `${baseUrl}?${params.toString()}`;
-}
-
-if (img) {
-  setInterval(refreshSpotifyWidget, 30000);
+  if (img) {
+    setInterval(refreshSpotifyWidget, 30000);
+  }
 }
