@@ -12,7 +12,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
   const profilePic = document.createElement("img");
   profilePic.className = "profile-pic";
-  profilePic.src = "/asset/img/profile_bw_sq.png";
+  profilePic.src = "cdn/media/img/compressed/profile_bw_sq.avif";
   profilePic.alt = "profile pic";
   profilePic.width = 50;
 
@@ -21,7 +21,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   tweeterSpan.textContent = "Zoltán Forrai";
 
   const verified = document.createElement("object");
-  verified.data = "/asset/svg/Twitter_Verified_Badge.svg";
+  verified.data = "cdn/asset/ico/twitter_verified_badge.svg";
   verified.type = "image/svg+xml";
   verified.width = 20;
   verified.setAttribute("tabindex", "-1");
@@ -45,11 +45,11 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   rightDiv.appendChild(text);
 
   const rssLink = document.createElement("a");
-  rssLink.href = "https://forrai-zoltan.github.io/rss-tweets.xml";
+  rssLink.href = "https://forrai-zoltan.github.io/cdn/rss-tweets.xml";
   rssLink.className = "rss-icon-link";
 
   const rssIcon = document.createElement("img");
-  rssIcon.src = "/asset/svg/rss.svg";
+  rssIcon.src = "cdn/asset/ico/rss.svg";
   rssIcon.alt = "RSS Feed";
   rssIcon.width = 16;
   rssIcon.height = 16;
@@ -136,7 +136,7 @@ document.addEventListener("click", (e) => {
 // Copy LINK
 
 const links = document.getElementsByClassName("rss-icon-link");
-const message = document.getElementById("copy-message");
+const message = document.getElementById("Copy-message");
 
 if (message) {
   document.addEventListener("mousemove", function (event) {
