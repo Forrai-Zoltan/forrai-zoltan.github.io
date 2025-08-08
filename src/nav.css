@@ -140,6 +140,7 @@ nav#Dropdown-menu {
 
 nav#Dropdown-menu {
   a {
+    transform: translateY(2px);
     color: hsl(0, 0%, 90%);
     text-decoration: none;
     display: block;
