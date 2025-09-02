@@ -163,6 +163,7 @@ a#Btn-message-me {
 
   span {
     padding: 0 30px;
+    transform: translateY(3px);
   }
 }
 
@@ -222,7 +223,6 @@ section a {
     }
   }
 }
-
 
 h1 {
   font-size: 3.1rem;
@@ -398,9 +398,6 @@ strong {
 span.no-wrap {
   white-space: nowrap;
 }
-
-
-
 
 div#Tech-stack {
   user-select: none;
