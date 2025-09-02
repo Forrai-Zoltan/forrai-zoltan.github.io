@@ -217,7 +217,6 @@ nav#Dropdown-menu li.dropdown-category ul {
   top: 100%;
   left: 0;
   padding: 10px;
-  background: rgba(20, 20, 20, 0.7); /*fall back*/
   border-radius: 10px;
   background: radial-gradient(
     ellipse 250% 100% at top left,
