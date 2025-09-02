@@ -228,10 +228,8 @@ nav#Dropdown-menu li.dropdown-category ul {
   );
   box-shadow: 20px 30px 25px rgba(10, 10, 10, 0.4);
   border: var(--glass-border);
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-
-
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 nav#Dropdown-menu li.dropdown-category ul {
