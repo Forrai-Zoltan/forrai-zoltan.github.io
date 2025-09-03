@@ -211,5 +211,9 @@ form#Contact-form {
 
 .fieldset-wrapper fieldset {
   flex: 1;
-  min-width: 0; 
+  min-width: 0;
+}
+
+button span {
+  transform: translateY(3px);
 }
