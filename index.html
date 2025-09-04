@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="/src/nav.css" />
   </head>
   <body>
+    <button
+      id="Enable-sound-btn"
+      style="position: fixed; top: 10px; right: 10px; z-index: 9999">
+      Enable Sound
+    </button>
     <header>
       <nav id="Title-bar" aria-label="Site Title"></nav>
       <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
@@ -68,4 +73,36 @@
     </main>
   </body>
   <script src="/src/script.js"></script>
+  <script>
+    const dropSound = new Audio("/cdn/media/aud/Silent_Hill_2_00151.wav");
+    const menuSound = new Audio("/cdn/media/aud/Silent_Hill_2_00152.wav");
+
+    function playSound(sound) {
+      try {
+        sound.currentTime = 0;
+        sound.play().catch(() => {}); // swallow play errors
+      } catch {}
+    }
+
+    // Top-level categories (.dropdown-category and their first <a>)
+    document.querySelectorAll(".dropdown-category").forEach((category) => {
+      // Hover on the <li> itself
+      category.addEventListener("mouseenter", () => playSound(dropSound));
+
+      // Hover on its first <a>
+      const topLink = category.querySelector(":scope > a");
+      if (topLink) {
+        topLink.addEventListener("mouseenter", () => playSound(dropSound));
+      }
+
+      // Child <li> inside this category
+      category.querySelectorAll("ul > li").forEach((child) => {
+        child.addEventListener("mouseenter", () => playSound(menuSound));
+        const childLink = child.querySelector("a");
+        if (childLink) {
+          childLink.addEventListener("mouseenter", () => playSound(menuSound));
+        }
+      });
+    });
+  </script>
 </html>
