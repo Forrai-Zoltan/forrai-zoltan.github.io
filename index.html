@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="/src/nav.css" />
   </head>
   <body>
-    <button id="Enable-sound-btn" style="position:fixed; top:10px; right:10px; z-index:9999;">Enable Sound</button>
+    <button
+      id="Enable-sound-btn"
+      style="position: fixed; top: 10px; right: 10px; z-index: 9999">
+      Enable Sound
+    </button>
     <header>
       <nav id="Title-bar" aria-label="Site Title"></nav>
       <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
@@ -73,60 +77,32 @@
     const dropSound = new Audio("/cdn/media/aud/Silent_Hill_2_00151.wav");
     const menuSound = new Audio("/cdn/media/aud/Silent_Hill_2_00152.wav");
 
-    // 1) Unlock audio after first real gesture (hover alone can be blocked)
-    let audioEnabled = false;
-    function enableAudioOnce() {
-      audioEnabled = true;
-      // briefly play muted to “warm up” the element
-      const prev = dropSound.volume;
-      dropSound.volume = 0;
-      const p = dropSound.play();
-      if (p && p.then) {
-        p.then(() => {
-          dropSound.pause();
-          dropSound.currentTime = 0;
-          dropSound.volume = prev;
-        }).catch(() => {});
+    function playSound(sound) {
+      try {
+        sound.currentTime = 0;
+        sound.play().catch(() => {}); // swallow play errors
+      } catch {}
+    }
+
+    // Top-level categories (.dropdown-category and their first <a>)
+    document.querySelectorAll(".dropdown-category").forEach((category) => {
+      // Hover on the <li> itself
+      category.addEventListener("mouseenter", () => playSound(dropSound));
+
+      // Hover on its first <a>
+      const topLink = category.querySelector(":scope > a");
+      if (topLink) {
+        topLink.addEventListener("mouseenter", () => playSound(dropSound));
       }
-      window.removeEventListener("pointerdown", enableAudioOnce);
-      window.removeEventListener("keydown", enableAudioOnce);
-    }
-    window.addEventListener("pointerdown", enableAudioOnce, { once: true });
-    window.addEventListener("keydown", enableAudioOnce, { once: true });
 
-    const enableSoundBtn = document.getElementById("Enable-sound-btn");
-    if (enableSoundBtn) {
-      enableSoundBtn.addEventListener("click", () => {
-        enableAudioOnce();
-        enableSoundBtn.style.display = "none";
+      // Child <li> inside this category
+      category.querySelectorAll("ul > li").forEach((child) => {
+        child.addEventListener("mouseenter", () => playSound(menuSound));
+        const childLink = child.querySelector("a");
+        if (childLink) {
+          childLink.addEventListener("mouseenter", () => playSound(menuSound));
+        }
       });
-    }
-
-    // 2) Event delegation: play only when entering a top-level category or its direct <a>
-    const dropdownMenuEl = document.getElementById("Dropdown-menu");
-    if (dropdownMenuEl) {
-      dropdownMenuEl.addEventListener("mouseover", (e) => {
-        // locate the nearest top-level category <li>
-        const li = e.target.closest(".dropdown-category");
-        if (!li || !dropdownMenuEl.contains(li) || !audioEnabled) return;
-
-        // ignore movements that come from inside the same category (internal moves)
-        const from = e.relatedTarget;
-        if (from && li.contains(from)) return;
-
-        // get the direct child <a> of the top-level <li>
-        const topAnchor = li.querySelector(':scope > a');
-
-        // only play if the cursor is over the top-level <li> itself or the top <a> (or inside that <a>)
-        const hoveredIsTopLabel = (e.target === li) || (topAnchor && (topAnchor === e.target || topAnchor.contains(e.target)));
-        if (!hoveredIsTopLabel) return;
-
-        try {
-          dropSound.currentTime = 0;
-          const playPromise = dropSound.play();
-          if (playPromise && playPromise.catch) playPromise.catch(() => {});
-        } catch {}
-      });
-    }
+    });
   </script>
 </html>

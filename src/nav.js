@@ -79,30 +79,3 @@ if (dropdownMenu) {
 </ul>
   `;
 }
-
-// 2) Event delegation: play only when entering a top-level category or its direct <a>
-const dropdownMenuEl = document.getElementById("Dropdown-menu");
-if (dropdownMenuEl) {
-  dropdownMenuEl.addEventListener("mouseover", (e) => {
-    // locate the nearest top-level category <li>
-    const li = e.target.closest(".dropdown-category");
-    if (!li || !dropdownMenuEl.contains(li) || !audioEnabled) return;
-
-    // ignore movements that come from inside the same category (internal moves)
-    const from = e.relatedTarget;
-    if (from && li.contains(from)) return;
-
-    // get the direct child <a> of the top-level <li>
-    const topAnchor = li.querySelector(':scope > a');
-
-    // only play if the cursor is over the top-level <li> itself or the top <a> (or inside that <a>)
-    const hoveredIsTopLabel = (e.target === li) || (topAnchor && (topAnchor === e.target || topAnchor.contains(e.target)));
-    if (!hoveredIsTopLabel) return;
-
-    try {
-      dropSound.currentTime = 0;
-      const playPromise = dropSound.play();
-      if (playPromise && playPromise.catch) playPromise.catch(() => {});
-    } catch {}
-  });
-}
