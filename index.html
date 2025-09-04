@@ -113,28 +113,46 @@
       } catch {}
     }
 
-    // Top-level categories (.dropdown-category and their first <a>)
-    document.querySelectorAll(".dropdown-category").forEach((category) => {
-      // Hover on the <li> itself
-      category.addEventListener("mouseenter", () => playSound(dropSound));
-      category.addEventListener("focus", () => playSound(dropSound), true); // for tab focus
+    function handleFocus(sound, element, event) {
+      // Only play if the element itself received focus, not a child
+      if (event.target === element) {
+        playSound(sound);
+      }
+    }
 
-      // Hover on its first <a>
+    document.querySelectorAll(".dropdown-category").forEach((category) => {
+      // Top-level <li>
+      category.addEventListener("mouseenter", () => playSound(dropSound));
+      category.addEventListener(
+        "focus",
+        (e) => handleFocus(dropSound, category, e),
+        true
+      );
+
+      // Top-level <a>
       const topLink = category.querySelector(":scope > a");
       if (topLink) {
         topLink.addEventListener("mouseenter", () => playSound(dropSound));
-        topLink.addEventListener("focus", () => playSound(dropSound));
+        topLink.addEventListener("focus", (e) =>
+          handleFocus(dropSound, topLink, e)
+        );
       }
 
-      // Child <li> inside this category
+      // Child <li> and <a>
       category.querySelectorAll("ul > li").forEach((child) => {
         child.addEventListener("mouseenter", () => playSound(menuSound));
-        child.addEventListener("focus", () => playSound(menuSound), true);
+        child.addEventListener(
+          "focus",
+          (e) => handleFocus(menuSound, child, e),
+          true
+        );
 
         const childLink = child.querySelector("a");
         if (childLink) {
           childLink.addEventListener("mouseenter", () => playSound(menuSound));
-          childLink.addEventListener("focus", () => playSound(menuSound));
+          childLink.addEventListener("focus", (e) =>
+            handleFocus(menuSound, childLink, e)
+          );
         }
       });
     });
