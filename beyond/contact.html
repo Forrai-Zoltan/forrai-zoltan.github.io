@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="https://forrai-zoltan.github.io" />
+    <!-- accessing from mobile -->
+    <script src="/cdn/src/js/from-mobile.js"></script>
+    <title>Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/nav.css" />
+    <link rel="stylesheet" href="/src/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="Title-bar" aria-label="Site Title"></nav>
+      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/nav.js"></script>
+    </header>
+    <main>
+      <section id="Purple">
+        <h1 id="Contact">Share your Mind</h1>
+        <form
+          id="Contact-form"
+          action="https://formsubmit.co/efcbb6e6922ac428f0bf0a246d5e31f7"
+          method="POST"
+          enctype="multipart/form-data">
+          <div class="fieldset-wrapper">
+            <fieldset>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="William Shakespeare"
+                autocomplete="off"
+                autofocus
+                required />
+              <label for="email">Email (Optional)</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="shakespeare@globe.uk"
+                autocomplete="off" />
+              <label for="file">Upload File (Max one, 5Mb)</label>
+              <div id="Drop-zone">
+                <!--FILE UPLOAD -->
+                <input
+                  class="drop-zone-input"
+                  name="attachment"
+                  id="file"
+                  type="file"
+                  accept="*" />
+                <img id="Plus" src="/cdn/asset/ico/folder-plus.svg" />
+                <img id="Open" src="/cdn/asset/ico/folder-open.svg" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="12"
+                placeholder="Uneasy lies the head that wears the crown..."
+                autocomplete="off"
+                required></textarea>
+              <button type="submit"><span>Send</span></button>
+            </fieldset>
+          </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://forrai-zoltan.github.io/beyond/contact" />
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="/src/script.js"></script>
+  <script src="/src/contact-file.js"></script>
+</html>

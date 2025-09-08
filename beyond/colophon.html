@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="https://forrai-zoltan.github.io" />
+    <!-- accessing from mobile -->
+    <script src="/cdn/src/js/from-mobile.js"></script>
+    <title>Colophon</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/nav.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="Title-bar" aria-label="Site Title"></nav>
+      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/nav.js"></script>
+    </header>
+    <main>
+      <section id="Purple">
+        <article>
+          <h1 id="Smaller-h1">Colophon</h1>
+          <p>
+            Thank you for visiting! The code for this website is availabe on my
+            <a href="https://github.com/Forrai-Zoltan/forrai-zoltan.github.io"
+              >GitHub</a
+            >.
+          </p>
+          <p>
+            (It goes without saying, but the site is under permanent
+            construction. Not everything works as expected—or at all. And keep
+            in mind that I'm no dev, just a humble English teacher (EFL) doing
+            his best.)
+          </p>
+          <h2>Technologies Used</h2>
+          <ul>
+            <li>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem">
+                Monospaced pixel font:
+                <a href="https://www.departuremono.com/">Departure Mono</a>
+              </span>
+            </li>
+            <li>
+              Currently Playing on Spotify: Kittinan's
+              <a href="https://github.com/kittinan/spotify-github-profile">
+                spotify-github-profile</a
+              >
+            </li>
+            <li>
+              Font-End Form Submit:
+              <a href="https://formsubmit.co/">formsubmit.co</a>
+            </li>
+            <li>
+              Markdown parser:
+              <a href="https://github.com/markedjs/marked">marked.js</a>
+            </li>
+          </ul>
+          <div id="Tech-stack">
+            <img
+              src="/cdn/media/svg/stack/macos-dark.svg"
+              width="50"
+              title="MacOS" />
+            <a href="https://www.kernel.org/"
+              ><img
+                src="/cdn/media/svg/stack/linux-dark.svg"
+                width="50"
+                title="Linux"
+            /></a>
+            <a href="https://vscodium.com/"
+              ><img
+                src="/cdn/media/svg/stack/vscodium-dark.svg"
+                width="50"
+                title="VsCodium"
+            /></a>
+            <img src="/cdn/media/svg/stack/html.svg" width="50" title="HTML" />
+            <img src="/cdn/media/svg/stack/css.svg" width="50" title="CSS" />
+            <img
+              src="/cdn/media/svg/stack/javascript.svg"
+              width="50"
+              title="Javascript" />
+            <a href="https://git-scm.com/"
+              ><img src="/cdn/media/svg/stack/git.svg" width="50" title="Git"
+            /></a>
+            <img
+              src="/cdn/media/svg/stack/github-dark.svg"
+              width="50"
+              title="GitHub" />
+            <a href="https://obsidian.md/"
+              ><img
+                src="/cdn/media/svg/stack/obsidian-dark.svg"
+                width="50"
+                title="Obsidian"
+            /></a>
+            <a href="https://www.blender.org/"
+              ><img
+                src="/cdn/media/svg/stack/blender-dark.svg"
+                width="50"
+                title="Blender"
+            /></a>
+          </div>
+          <hr />
+          <p id="Copy-right"></p>
+        </article>
+      </section>
+    </main>
+  </body>
+  <script>
+    const year = new Date().getFullYear();
+    const copyright = document.getElementById("Copy-right");
+    if (copyright) {
+      copyright.innerHTML = `&copy  ${year} Forrai Zoltán`;
+    }
+  </script>
+  <script src="/src/script.js"></script>
+</html>

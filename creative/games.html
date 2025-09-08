@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="https://forrai-zoltan.github.io" />
+    <!-- accessing from mobile -->
+    <script src="/cdn/src/js/from-mobile.js"></script>
+    <title>Games</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/nav.css" />
+    <link rel="stylesheet" href="/src/deck.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="Title-bar" aria-label="Site Title"></nav>
+      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
+      <script src="/src/nav.js"></script>
+    </header>
+    <main>
+      <section class="non-text" id="Purple">
+        <article>
+          <form action="" id="Search-bar">
+            <p aria-live="polite" id="NoResults">No results found.</p>
+            <div>
+              <input
+                autocomplete="off"
+                id="Search"
+                name="filter"
+                type="text"
+                placeholder="Filter..." /><button disabled>
+                <img src="/cdn/asset/ico/search.svg" alt="" />
+              </button>
+            </div>
+            <label for="filter"
+              >You can filter cards by #tags or text, or use <kbd>-</kbd> before
+              a term to exclude items.</label
+            >
+          </form>
+        </article>
+        <h1 id="Gallery-h1">My Interactive Media and Games</h1>
+        <div id="Deck">
+          <a data-tags="" class="card">More to come…</a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+          <a data-tags="" class="card"></a>
+        </div>
+      </section>
+    </main>
+    <script src="/src/script.js"></script>
+    <script src="/src/card-deck.js"></script>
+  </body>
+</html>

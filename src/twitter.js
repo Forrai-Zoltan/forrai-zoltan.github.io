@@ -1,0 +1,167 @@
+// TWITTER //
+document.querySelectorAll(".tweet-box").forEach((box) => {
+  const time = box.querySelector("time");
+  const text = box.querySelector(".tweet-text");
+  text.querySelectorAll("img").forEach((img) => {
+    img.classList.add("zoomable");
+    img.setAttribute("tabindex", "0");
+  });
+
+  box.innerHTML = "";
+  box.style.position = "relative"; // So the RSS icon can be absolutely positioned
+
+  const profilePic = document.createElement("img");
+  profilePic.className = "profile-pic";
+  profilePic.src = "cdn/media/img/compressed/profile_bw_sq.avif";
+  profilePic.alt = "profile pic";
+  profilePic.width = 50;
+
+  const tweeterSpan = document.createElement("span");
+  tweeterSpan.className = "tweeter";
+  tweeterSpan.textContent = "Zoltán Forrai";
+
+  const verified = document.createElement("object");
+  verified.data = "cdn/asset/ico/twitter_verified_badge.svg";
+  verified.type = "image/svg+xml";
+  verified.width = 20;
+  verified.setAttribute("tabindex", "-1");
+
+  const handleSpan = document.createElement("span");
+  handleSpan.className = "tweet-handle";
+  handleSpan.textContent = "@gildrom · ";
+
+  const greySpan = document.createElement("span");
+  greySpan.className = "tweet-grey";
+  greySpan.appendChild(handleSpan);
+  greySpan.appendChild(time);
+
+  const nameAndMeta = document.createElement("span");
+  nameAndMeta.appendChild(tweeterSpan);
+  nameAndMeta.appendChild(verified);
+  nameAndMeta.appendChild(greySpan);
+
+  const rightDiv = document.createElement("div");
+  rightDiv.appendChild(nameAndMeta);
+  rightDiv.appendChild(text);
+
+  const rssLink = document.createElement("a");
+  rssLink.href = "https://forrai-zoltan.github.io/cdn/rss-tweets.xml";
+  rssLink.className = "rss-icon-link";
+
+  const rssIcon = document.createElement("img");
+  rssIcon.src = "cdn/asset/ico/rss.svg";
+  rssIcon.alt = "RSS Feed";
+  rssIcon.width = 16;
+  rssIcon.height = 16;
+
+  rssLink.appendChild(rssIcon);
+  box.appendChild(rssLink);
+
+  box.appendChild(profilePic);
+  box.appendChild(rightDiv);
+});
+
+// Create overlay element once
+const overlay = document.createElement("div");
+overlay.id = "img-overlay";
+
+const overlayImg = document.createElement("img");
+overlay.appendChild(overlayImg);
+document.body.appendChild(overlay);
+
+// Close overlay on click
+overlay.addEventListener("click", () => {
+  overlay.style.display = "none";
+  document.body.classList.remove("no-scroll");
+});
+
+// Add click handler to all .zoomable images
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("zoomable")) {
+    overlayImg.src = e.target.src;
+    overlay.style.display = "flex";
+  }
+});
+
+// Inject CSS for .no-scroll class
+const style = document.createElement("style");
+style.textContent = `
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+  }
+  `;
+document.head.appendChild(style);
+
+// overlay keyboard logic
+
+let overlayOpen = false;
+
+document.addEventListener("keydown", (e) => {
+  const active = document.activeElement;
+  const isVisible = window.getComputedStyle(overlay).display !== "none";
+
+  if (
+    e.key === "Enter" &&
+    active.classList.contains("zoomable") &&
+    !overlayOpen
+  ) {
+    overlayImg.src = active.src;
+    overlay.style.display = "flex";
+    document.body.classList.add("no-scroll");
+    overlayOpen = true;
+    return;
+  }
+
+  if ((e.key === "Escape" || e.key === "Enter") && isVisible) {
+    overlay.style.display = "none";
+    document.body.classList.remove("no-scroll");
+    overlayOpen = false;
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("zoomable")) {
+    overlayImg.src = e.target.src;
+    overlay.style.display = "flex";
+    document.body.classList.add("no-scroll");
+    overlayOpen = true;
+  } else if (e.target === overlay) {
+    overlay.style.display = "none";
+    document.body.classList.remove("no-scroll");
+    overlayOpen = false;
+  }
+});
+
+// Copy LINK
+
+const links = document.getElementsByClassName("rss-icon-link");
+const message = document.getElementById("Copy-message");
+
+if (message) {
+  document.addEventListener("mousemove", function (event) {
+    message.style.left = `${event.clientX + 10}px`;
+    message.style.top = `${event.clientY + 10}px`;
+  });
+}
+
+Array.from(links).forEach((linkElement) => {
+  linkElement.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const link = this.href;
+    navigator.clipboard
+      .writeText(link)
+      .then(() => {
+        message.style.opacity = "1"; // show message
+
+        // Hide after 2 seconds
+        setTimeout(() => {
+          message.style.opacity = "0";
+        }, 3000);
+      })
+      .catch((err) => {
+        console.error("Failed to copy:", err);
+      });
+  });
+});
