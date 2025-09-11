@@ -67,7 +67,11 @@ overlay.id = "img-overlay";
 
 const overlayImg = document.createElement("img");
 overlay.appendChild(overlayImg);
-document.body.appendChild(overlay);
+
+const targetSection = document.querySelector("#Purple"); 
+if (targetSection) {
+  targetSection.appendChild(overlay);
+}
 
 // Close overlay on click
 overlay.addEventListener("click", () => {
