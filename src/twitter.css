@@ -56,6 +56,11 @@ div#Timeline {
     border: var(--glass-border);
     border-radius: 10px;
   }
+  article.tweet-box .pinned {
+    background-color: rgb(173, 186, 203);
+    border: var(--glass-border);
+    border-radius: 10px;
+  }
 
   img.profile-pic {
     border-radius: 100%;
