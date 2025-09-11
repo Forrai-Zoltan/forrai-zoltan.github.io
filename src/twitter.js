@@ -63,7 +63,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
 // Create overlay element once
 const overlay = document.createElement("div");
-overlay.id = "img-overlay";
+overlay.id = "Img-overlay";
 
 const overlayImg = document.createElement("img");
 overlay.appendChild(overlayImg);
