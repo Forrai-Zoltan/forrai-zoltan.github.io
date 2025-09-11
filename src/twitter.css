@@ -52,7 +52,7 @@ div#Timeline {
     display: flex;
     align-items: flex-start;
     gap: 5px;
-    background-color: rgb(220, 235, 255);
+    background-color: rgb(189, 203, 222);
     border: var(--glass-border);
     border-radius: 10px;
   }
