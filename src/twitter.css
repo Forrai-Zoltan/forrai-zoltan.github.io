@@ -57,7 +57,7 @@ div#Timeline {
     border-radius: 10px;
   }
   article.tweet-box .pinned {
-    background-color: rgb(173, 186, 203);
+    background-color: rgb(137, 147, 160);
     border: var(--glass-border);
     border-radius: 10px;
   }
