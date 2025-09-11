@@ -52,15 +52,11 @@ div#Timeline {
     display: flex;
     align-items: flex-start;
     gap: 5px;
-    background-color: rgb(189, 203, 222);
+    background-color: rgb(203, 216, 234);
     border: var(--glass-border);
     border-radius: 10px;
   }
-  article.tweet-box .pinned {
-    background-color: rgb(137, 147, 160);
-    border: var(--glass-border);
-    border-radius: 10px;
-  }
+
 
   img.profile-pic {
     border-radius: 100%;
