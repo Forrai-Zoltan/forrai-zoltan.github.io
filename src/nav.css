@@ -21,6 +21,7 @@ nav#Title-bar {
   border-radius: 0px 200px 200px 0px;
   overflow-x: hidden;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 nav#Title-bar {
@@ -162,9 +163,10 @@ nav#Dropdown-menu li.dropdown-category {
   text-align: left;
   font-size: 1rem;
   border-right: 5px solid transparent;
-  border-left: 0.5px solid transparent;
+  border-left: 1px solid transparent;
   position: relative;
   user-select: none;
+  -webkit-user-select: none;
 
   &::after {
     content: "";
