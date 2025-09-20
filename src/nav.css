@@ -159,6 +159,7 @@ nav#Dropdown-menu {
 
 nav#Dropdown-menu li.dropdown-category {
   border-radius: 25px;
+  margin: 0px 1px 0px 1px;
   flex: 1;
   text-align: left;
   font-size: 1rem;
