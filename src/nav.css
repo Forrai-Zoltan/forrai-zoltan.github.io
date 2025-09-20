@@ -164,7 +164,6 @@ nav#Dropdown-menu li.dropdown-category {
   text-align: left;
   font-size: 1rem;
   border-right: 5px solid transparent;
-  border-left: 1px solid transparent;
   position: relative;
   user-select: none;
   -webkit-user-select: none;
@@ -195,7 +194,6 @@ nav#Dropdown-menu li.dropdown-category {
     cursor: pointer;
     border-radius: 25px;
     border-right: 5px white solid;
-    border-left: var(--glass-border);
     background: linear-gradient(
       to right,
       var(--color-purple-hover),
@@ -204,7 +202,7 @@ nav#Dropdown-menu li.dropdown-category {
 
     > ul {
       display: block;
-      z-index: 30;
+      z-index: 45;
     }
 
     &:before {
