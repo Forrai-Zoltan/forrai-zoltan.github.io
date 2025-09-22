@@ -14,7 +14,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
   const profilePic = document.createElement("img");
   profilePic.className = "profile-pic";
-  profilePic.src = "cdn/media/img/compressed/profile_bw_sq.avif";
+  profilePic.src = "/cdn/media/img/clippy.jpeg";
   profilePic.alt = "profile pic";
   profilePic.width = 50;
 
