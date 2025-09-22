@@ -23,6 +23,6 @@ window.addEventListener("resize", () => {
 
 if (main) {
   const div = document.createElement("div");
-  div.style.height = "0.01px";
+  div.style.height = "1px";
   main.insertAdjacentElement("afterend", div);
 }
