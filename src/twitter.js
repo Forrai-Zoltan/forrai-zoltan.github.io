@@ -17,6 +17,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   profilePic.src = "/cdn/media/img/clippy.jpeg";
   profilePic.alt = "profile pic";
   profilePic.width = 50;
+  profilePic.height = 50;
 
   const tweeterSpan = document.createElement("span");
   tweeterSpan.className = "tweeter";
