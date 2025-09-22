@@ -48,7 +48,7 @@ if (dropdownMenu) {
     <a href="/personal/">Personal</a>
     <ul>
       <li><a href="/personal/who_am_i">Who am I?</a></li>
-      <li><a href="/personal/thoughts">Thoughts</a></li>
+      <li><a href="/personal/warbles">Warbles</a></li>
       <li><a href="/personal/obsessions">Obsessions</a></li>
     </ul>
   </li>
