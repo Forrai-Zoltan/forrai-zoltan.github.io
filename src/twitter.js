@@ -1,10 +1,12 @@
 // TWITTER //
 document.querySelectorAll(".tweet-box").forEach((box) => {
   const time = box.querySelector("time");
-  const text = box.querySelector(".tweet-text");
-  text.querySelectorAll("img").forEach((img) => {
-    img.classList.add("zoomable");
-    img.setAttribute("tabindex", "0");
+  const texts = box.querySelectorAll(".tweet-text");
+  texts.forEach((text) => {
+    text.querySelectorAll("img").forEach((img) => {
+      img.classList.add("zoomable");
+      img.setAttribute("tabindex", "0");
+    });
   });
 
   box.innerHTML = "";
@@ -42,7 +44,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
   const rightDiv = document.createElement("div");
   rightDiv.appendChild(nameAndMeta);
-  rightDiv.appendChild(text);
+  texts.forEach((text) => rightDiv.appendChild(text));
 
   const rssLink = document.createElement("a");
   rssLink.href = "https://forrai-zoltan.github.io/cdn/rss-tweets.xml";
