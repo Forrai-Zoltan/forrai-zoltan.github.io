@@ -147,3 +147,25 @@ div#Copy-message {
   transition: opacity 0.2s ease-in-out;
   z-index: 9999;
 }
+
+#pointing-hand-rss {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.12s linear;
+  position: absolute;
+  transform: scale(0.3) scaleX(-1);
+  z-index: 999;
+  top: -95px;
+  right: -220px;
+}
+
+#rss-hover:hover ~ #pointing-hand-rss {
+  visibility: visible;
+  opacity: 1;
+}
+
+#rss-hover {
+  font-weight: bold;
+  color: orangered;
+  cursor: default;
+}
