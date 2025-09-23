@@ -1,10 +1,3 @@
-// ICON
-const favicon = document.createElement("link");
-favicon.rel = "icon";
-favicon.type = "image/x-icon";
-favicon.href = "/favicon.ico";
-document.head.appendChild(favicon);
-
 // MAIN HEIGHT
 const header = document.querySelector("header");
 const headerHeight = header.offsetHeight;
