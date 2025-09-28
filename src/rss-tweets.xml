@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Gildrom's Warbles</title>
+    <link>https://www.gildrom.com/personal/warbles</link>
+    <description>Noumenal ramblings from Gildrom's micro-blog.</description>
+    <language>en-gb</language>
+    <category>Microblog</category>
+    
+    <image>
+      <url>https://www.gildrom.com/cdn/media/img/socrates-middle-finger.png</url>
+      <title>Gildrom's Warbles</title>
+      <link>https://www.gildrom.com/personal/warbles</link>
+      <width>120</width>
+      <height>60</height>
+      <description>Logo for Gildrom's Warbles feed</description>
+    </image>
+
+    <!-- Add more <item> blocks here -->
+
+    
+    <item>
+      <title>Ballad: Where’s She?</title>
+      <link>https://forrai-zoltan.github.io/poetry/#wheres_she</link>
+      <description>
+        <![CDATA[
+          <p>
+            Wrote a short romantic ballad. You can find it <a href="https://forrai-zoltan.github.io/poetry/#wheres_she">here</a>.
+          </p>
+          <hr>
+          <h1><strong>Where’s She?</strong></h1>
+          <p>
+            A lonely tower hunches o’er<br>
+            Sweeps of endless woods;<br>
+            Within he stood, amidst his books,<br>
+            A Wizard yet in youth.
+          </p>
+          <p>
+            ‘She’s gentle like the early Dawn,<br>
+            And like the Moon so bright;<br>
+            Bringest to me, this forest fawn,<br>
+            Ye wisps and playful sprites!
+          </p>
+          <p>
+            Bear this spell to an elven miss,<br>
+            A witch or faerie queene;<br>
+            And ask them, with the sweetest kiss,<br>
+            <em>Wish she be my Helene?’</em>
+          </p>
+        ]]>
+      </description>
+      <pubDate>Fri, 27 Sep 2025 12:20:00 GMT</pubDate>
+      <guid isPermaLink="true">https://forrai-zoltan.github.io/poetry/#wheres_she-v2</guid>
+    </item>
+
+
+    <item>
+      <title>Reading List Announcement</title>
+      <link>https://forrai-zoltan.github.io/personal/warbles.html#reading-list</link>
+      <description>
+        <![CDATA[
+          I have a <a href="https://www.gildrom.com/library">Reading List</a>! 
+          You can find it under <a href="https://www.gildrom.com/personal/obsessions">Obsessions</a>. 
+          Give me some good recommendations! 📚
+        ]]>
+      </description>
+      <pubDate>Mon, 22 Sep 2025 20:33:00 GMT</pubDate>
+      <guid isPermaLink="true">https://forrai-zoltan.github.io/personal/warbles.html#reading-list</guid>
+    </item>
+
+
+    
+  </channel>
+</rss>

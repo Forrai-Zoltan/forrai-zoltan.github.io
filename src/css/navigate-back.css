@@ -1,0 +1,87 @@
+:root {
+  --color-purple-hover: hsl(270, 80%, 25%);
+  --color-white: #fff;
+  --color-purple: hsl(270, 80%, 20%);
+  --color-purple-dark: hsl(270, 80%, 15%);
+  --font: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --font-size: 24px;
+}
+:focus-visible {
+  outline: none;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+a#navigate-back-a {
+  position: fixed;
+  padding-right: 70px;
+  padding-bottom: 10px;
+  top: 12px;
+  left: 25px;
+  text-decoration: none;
+  z-index: 5;
+  user-select: none;
+  -webkit-user-select: none !important; /* Safari */
+
+  img {
+    height: 1.5rem;
+    margin: 0;
+    border-radius: 10px;
+  }
+}
+
+a#navigate-back-a:hover div#nav-back,
+a#navigate-back-a:focus-visible div#nav-back {
+  padding-right: 300px;
+  color: white;
+  border: 1px rgba(255, 255, 255, 0.3) solid;
+  background: linear-gradient(
+    to right,
+    var(--color-purple-hover),
+    var(--color-purple-hover),
+    var(--color-purple),
+    var(--color-purple-dark)
+  );
+}
+
+a#navigate-back-a:focus-visible div#nav-back {
+  outline: 3px solid orange;
+  transition: outline 0.2s ease;
+}
+
+a#navigate-back-a:active {
+  transform: scale(0.97);
+}
+
+div#nav-back {
+  width: 39px;
+  height: 35px;
+  padding: 5px 2px 5px 5px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-family: var(--font);
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--color-white);
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to right,
+    var(--color-purple-hover),
+    var(--color-purple-hover),
+    var(--color-purple),
+    var(--color-purple-dark)
+  );
+  border: 1px rgba(255, 255, 255, 0.25) solid;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  display: flex;
+  align-items: center;
+  transition: padding-right 0.2s ease;
+}
+
+div#nav-back span#nav-back-span {
+  margin: 0 15px 0 10px;
+  transform: translateY(3px);
+}

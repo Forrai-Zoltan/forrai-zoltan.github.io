@@ -428,3 +428,19 @@ img.pointing-hand {
 }
 
 /* ---------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  /* no fixed height needed */
+}
+
+main {
+  flex: 1 0 auto; /* takes remaining space */
+  padding-bottom: 2px; /* keeps your bottom gap */
+}
