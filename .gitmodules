@@ -1,5 +1,5 @@
 [submodule "cnd"]
-	path = cnd
+	path = src/cnd
 	url = https://github.com/Forrai-Zoltan/cdn
 [submodule "library"]
 	path = personal/library
