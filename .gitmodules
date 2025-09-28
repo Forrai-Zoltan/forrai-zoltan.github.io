@@ -2,7 +2,7 @@
 	path = cnd
 	url = https://github.com/Forrai-Zoltan/cdn
 [submodule "library"]
-	path = library
+	path = personal/library
 	url = https://github.com/Forrai-Zoltan/library
 [submodule "poetry"]
 	path = poetry
