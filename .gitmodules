@@ -5,7 +5,7 @@
 	path = personal/library
 	url = https://github.com/Forrai-Zoltan/library
 [submodule "poetry"]
-	path = poetry
+	path = literary/shorts/poetry
 	url = https://github.com/Forrai-Zoltan/poetry
 [submodule "shorts"]
 	path = shorts
