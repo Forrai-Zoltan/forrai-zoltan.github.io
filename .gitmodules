@@ -11,5 +11,5 @@
 	path = shorts
 	url = https://github.com/Forrai-Zoltan/shorts
 [submodule "essays"]
-	path = essays
+	path = literary/shorts/essays
 	url = https://github.com/Forrai-Zoltan/essays
