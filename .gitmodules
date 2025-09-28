@@ -8,7 +8,7 @@
 	path = literary/poetry
 	url = https://github.com/Forrai-Zoltan/poetry
 [submodule "shorts"]
-	path = shorts
+	path = literary/shorts
 	url = https://github.com/Forrai-Zoltan/shorts
 [submodule "essays"]
 	path = literary/essays
