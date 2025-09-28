@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gildrom.com/sitemap.xml
+Sitemap: https://www.gildrom.com/sitemap.xml
