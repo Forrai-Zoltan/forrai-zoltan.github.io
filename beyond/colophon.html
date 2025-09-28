@@ -3,25 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="https://forrai-zoltan.github.io" />
-    <!-- accessing from mobile -->
-    <script src="/cdn/src/js/from-mobile.js"></script>
     <title>Colophon</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/nav.css" />
+    <link rel="stylesheet" href="/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/nav.css" />
   </head>
   <body>
     <header>
-      <nav id="Title-bar" aria-label="Site Title"></nav>
-      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
-      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
-      <script src="/src/nav.js"></script>
+      <nav id="Title-bar" aria-label="Site Title">
+        <a href="/">
+          <img
+            width="36"
+            height="36"
+            src="/src/media/img/compressed/socrates-middle-finger.avif" />
+          Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
+        </a>
+      </nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu">
+        <ul>
+          <li class="dropdown-category">
+            <a href="/personal/">Personal</a>
+            <ul>
+              <li><a href="/personal/who_am_i">Who am I?</a></li>
+              <li><a href="/personal/warbles">Warbles</a></li>
+              <li><a href="/personal/obsessions">Obsessions</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-category">
+            <a href="/literary/">Literary</a>
+            <ul>
+              <li><a href="/literary/shorts">Shorts</a></li>
+              <li><a href="/literary/novels">Novels</a></li>
+              <li><a href="/literary/essays">Essays</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-category">
+            <a href="/creative/">Creative</a>
+            <ul>
+              <li><a href="/creative/comics">Comics</a></li>
+              <li><a href="/creative/films">Films</a></li>
+              <li><a href="/creative/games">Games</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-category">
+            <a href="/beyond/">Beyond</a>
+            <ul>
+              <li><a href="/beyond/contact">Contact</a></li>
+              <li><a href="/beyond/secret">Secret</a></li>
+              <li><a href="/beyond/colophon">Colophon</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="Purple">
@@ -39,7 +76,7 @@
             in mind that I'm no dev, just a humble English teacher (EFL) doing
             his best.)
           </p>
-          <h2>Technologies Used</h2>
+          <h2 style="padding-top: 40px">Technologies Used</h2>
           <ul>
             <li>
               <span style="font-family: var(--font-mono); font-size: 0.85rem">
@@ -64,43 +101,43 @@
           </ul>
           <div id="Tech-stack">
             <img
-              src="/cdn/media/svg/stack/macos-dark.svg"
+              src="/src/media/svg/stack/macos-dark.svg"
               width="50"
               title="MacOS" />
             <a href="https://www.kernel.org/"
               ><img
-                src="/cdn/media/svg/stack/linux-dark.svg"
+                src="/src/media/svg/stack/linux-dark.svg"
                 width="50"
                 title="Linux"
             /></a>
             <a href="https://vscodium.com/"
               ><img
-                src="/cdn/media/svg/stack/vscodium-dark.svg"
+                src="/src/media/svg/stack/vscodium-dark.svg"
                 width="50"
                 title="VsCodium"
             /></a>
-            <img src="/cdn/media/svg/stack/html.svg" width="50" title="HTML" />
-            <img src="/cdn/media/svg/stack/css.svg" width="50" title="CSS" />
+            <img src="/src/media/svg/stack/html.svg" width="50" title="HTML" />
+            <img src="/src/media/svg/stack/css.svg" width="50" title="CSS" />
             <img
-              src="/cdn/media/svg/stack/javascript.svg"
+              src="/src/media/svg/stack/javascript.svg"
               width="50"
               title="Javascript" />
             <a href="https://git-scm.com/"
-              ><img src="/cdn/media/svg/stack/git.svg" width="50" title="Git"
+              ><img src="/src/media/svg/stack/git.svg" width="50" title="Git"
             /></a>
             <img
-              src="/cdn/media/svg/stack/github-dark.svg"
+              src="/src/media/svg/stack/github-dark.svg"
               width="50"
               title="GitHub" />
             <a href="https://obsidian.md/"
               ><img
-                src="/cdn/media/svg/stack/obsidian-dark.svg"
+                src="/src/media/svg/stack/obsidian-dark.svg"
                 width="50"
                 title="Obsidian"
             /></a>
             <a href="https://www.blender.org/"
               ><img
-                src="/cdn/media/svg/stack/blender-dark.svg"
+                src="/src/media/svg/stack/blender-dark.svg"
                 width="50"
                 title="Blender"
             /></a>
@@ -118,5 +155,4 @@
       copyright.innerHTML = `&copy  ${year} Forrai Zoltán`;
     }
   </script>
-  <script src="/src/script.js"></script>
 </html>

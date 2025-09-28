@@ -1,8 +1,8 @@
 @font-face {
   font-family: "departure-mono";
-  src: url("/cdn/asset/font/departuremono/DepartureMono-Regular.woff2")
+  src: url("/src/asset/font/departuremono/DepartureMono-Regular.woff2")
       format("woff2"),
-    url("/cdn/asset/font/departuremono/DepartureMono-Regular.woff")
+    url("/src/asset/font/departuremono/DepartureMono-Regular.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -10,32 +10,33 @@
 
 @font-face {
   font-family: "cochin";
-  src: url("/cdn/asset/font/cochin/CochinLTStd.woff2") format("woff2"),
-       url("/cdn/asset/font/cochin/CochinLTStd.woff") format("woff");
+  src: url("/src/asset/font/cochin/CochinLTStd.woff2") format("woff2"),
+    url("/src/asset/font/cochin/CochinLTStd.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "cochin";
-  src: url("/cdn/asset/font/cochin/CochinLTStd-Bold.woff2") format("woff2"),
-       url("/cdn/asset/font/cochin/CochinLTStd-Bold.woff") format("woff");
+  src: url("/src/asset/font/cochin/CochinLTStd-Bold.woff2") format("woff2"),
+    url("/src/asset/font/cochin/CochinLTStd-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "cochin";
-  src: url("/cdn/asset/font/cochin/CochinLTStd-Italic.woff2") format("woff2"),
-       url("/cdn/asset/font/cochin/CochinLTStd-Italic.woff") format("woff");
+  src: url("/src/asset/font/cochin/CochinLTStd-Italic.woff2") format("woff2"),
+    url("/src/asset/font/cochin/CochinLTStd-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "cochin";
-  src: url("/cdn/asset/font/cochin/CochinLTStd-BoldItalic.woff2") format("woff2"),
-       url("/cdn/asset/font/cochin/CochinLTStd-BoldItalic.woff") format("woff");
+  src: url("/src/asset/font/cochin/CochinLTStd-BoldItalic.woff2")
+      format("woff2"),
+    url("/src/asset/font/cochin/CochinLTStd-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -92,7 +93,7 @@
 
   --color-green: hsl(120, 30%, 13%);
   --color-green-a: 120, 30%, 13%;
-  --color-green-m: hsl(120, 44.4%, 30.12%);
+  --color-green-m: hsl(120, 60%, 10%);
   --color-green-light: hsl(120, 100%, 50%);
   --color-green-light-a: 120, 100%, 50%;
 

@@ -8,7 +8,7 @@
     <category>Microblog</category>
     
     <image>
-      <url>https://www.gildrom.com/cdn/media/img/socrates-middle-finger.png</url>
+      <url>https://www.gildrom.com/src/media/img/socrates-middle-finger.png</url>
       <title>Gildrom's Warbles</title>
       <link>https://www.gildrom.com/personal/warbles</link>
       <width>120</width>
@@ -25,7 +25,7 @@
       <description>
         <![CDATA[
           <p>
-            Wrote a short romantic ballad. You can find it <a href="https://forrai-zoltan.github.io/poetry/#wheres_she">here</a>.
+            Wrote a short romantic ballad. You can find it <a href="https://gildrom.com/poetry/#wheres_she">here</a>.
           </p>
           <hr>
           <h1><strong>Where’s She?</strong></h1>
@@ -50,13 +50,13 @@
         ]]>
       </description>
       <pubDate>Fri, 27 Sep 2025 12:20:00 GMT</pubDate>
-      <guid isPermaLink="true">https://forrai-zoltan.github.io/poetry/#wheres_she-v2</guid>
+      <guid isPermaLink="true">https://gildrom.com/poetry/#wheres_she-v2</guid>
     </item>
 
 
     <item>
       <title>Reading List Announcement</title>
-      <link>https://forrai-zoltan.github.io/personal/warbles.html#reading-list</link>
+      <link>https://gildrom.com/personal/warbles.html#reading-list</link>
       <description>
         <![CDATA[
           I have a <a href="https://www.gildrom.com/library">Reading List</a>! 
@@ -65,7 +65,7 @@
         ]]>
       </description>
       <pubDate>Mon, 22 Sep 2025 20:33:00 GMT</pubDate>
-      <guid isPermaLink="true">https://forrai-zoltan.github.io/personal/warbles.html#reading-list</guid>
+      <guid isPermaLink="true">https://gildrom.com/personal/warbles.html#reading-list</guid>
     </item>
 
 

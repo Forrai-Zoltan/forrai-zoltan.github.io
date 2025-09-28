@@ -3,25 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="https://forrai-zoltan.github.io" />
-    <!-- accessing from mobile -->
-    <script src="/cdn/src/js/from-mobile.js"></script>
     <title>Warbles</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="/cdn/src/css/variables.css" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/nav.css" />
-    <link rel="stylesheet" href="/src/twitter.css" />
+    <link rel="stylesheet" href="/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/nav.css" />
+    <link rel="stylesheet" href="/src/css/twitter.css" />
   </head>
   <body>
     <header>
-      <nav id="Title-bar" aria-label="Site Title"></nav>
-      <nav id="Breadcrumbs" aria-label="Breadcrumb"></nav>
-      <nav id="Dropdown-menu" aria-label="Main Menu"></nav>
-      <script src="/src/nav.js"></script>
+      <nav id="Title-bar" aria-label="Site Title">
+        <a href="/">
+          <img
+            width="36"
+            height="36"
+            src="/src/media/img/compressed/socrates-middle-finger.avif" />
+          Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.
+        </a>
+      </nav>
+      <nav id="Dropdown-menu" aria-label="Main Menu">
+        <ul>
+          <li class="dropdown-category">
+            <a href="/personal/">Personal</a>
+            <ul>
+              <li><a href="/personal/who_am_i">Who am I?</a></li>
+              <li><a href="/personal/warbles">Warbles</a></li>
+              <li><a href="/personal/obsessions">Obsessions</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-category">
+            <a href="/literary/">Literary</a>
+            <ul>
+              <li><a href="/literary/shorts">Shorts</a></li>
+              <li><a href="/literary/novels">Novels</a></li>
+              <li><a href="/literary/essays">Essays</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-category">
+            <a href="/creative/">Creative</a>
+            <ul>
+              <li><a href="/creative/comics">Comics</a></li>
+              <li><a href="/creative/films">Films</a></li>
+              <li><a href="/creative/games">Games</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-category">
+            <a href="/beyond/">Beyond</a>
+            <ul>
+              <li><a href="/beyond/contact">Contact</a></li>
+              <li><a href="/beyond/secret">Secret</a></li>
+              <li><a href="/beyond/colophon">Colophon</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="Purple">
@@ -36,7 +74,7 @@
               can subscribe to this timeline by clicking the
               <span id="rss-hover">RSS</span>
               <img
-                src="/cdn/media/img/compressed/pointing_hand.avif"
+                src="/src/media/img/compressed/pointing_hand.avif"
                 id="pointing-hand-rss" />
               icon. If you want to give me a piece of your mind
               <a href="/beyond/contact">go ahead</a>. 💬
@@ -46,21 +84,21 @@
           <article class="tweet-box" id="poem-where-is-she">
             <time datetime="2025-Sep-27 12:17">2025-Sep-27 12:17</time>
             <p class="tweet-text">
-              Wrote a short romantic ballad. You can read it <a href="https://forrai-zoltan.github.io/poetry/#wheres_she">here</a>.
+              Wrote a short romantic ballad. You can read it
+              <a href="/literary/poetry/#wheres_she">here</a>.
             </p>
           </article>
           <article class="tweet-box" id="reading-list">
             <time datetime="2025-Sep-22 20:33">22 Sep 2025 · 20:33</time>
             <p class="tweet-text">
-              I have a <a href="/library">Reading List</a>! You can find it
-              under <a href="/personal/obsessions">Obsessions</a>. Give me some
-              good recomendations! 📚
+              I have a <a href="/personal/library/">Reading List</a>! You can
+              find it under <a href="/personal/obsessions">Obsessions</a>. Give
+              me some good recomendations! 📚
             </p>
           </article>
         </div>
       </section>
     </main>
   </body>
-  <script src="/src/script.js"></script>
-  <script src="/src/twitter.js"></script>
+  <script src="/src/js/twitter.js"></script>
 </html>
