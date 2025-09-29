@@ -1,0 +1,216 @@
+@media only screen and (max-width: 480px) {
+  ::selection {
+    background-color: var(--color-green-m);
+    color: var(--color-green-light);
+  }
+
+  :focus-visible {
+    outline: 3px solid orange;
+    transition: outline 0.2s ease;
+    border-radius: inherit;
+  }
+
+  html {
+    font-size: var(--font-size);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font);
+    scrollbar-color: var(--color-purple) transparent;
+    scrollbar-width: none;
+    caret-color: orange;
+    height: 100%;
+    /* overscroll-behavior: none; */
+  }
+
+  body {
+    color: var(--color-white);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-color: black;
+  }
+
+  header {
+    width: 100%;
+    text-decoration: none !important;
+  }
+
+  #Title-bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(
+      to right,
+      var(--color-purple),
+      var(--color-purple),
+      rgba(0, 0, 0, 0.8)
+    );
+    padding-left: 10px;
+    padding-top: 5px;
+
+    a {
+      text-decoration: none !important;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      padding: 10px;
+      padding-bottom: 0;
+      border-radius: 10px;
+      display: none;
+    }
+
+    span {
+      color: var(--color-white);
+      font-size: 30px;
+      line-height: 0.1px;
+
+      &:before {
+      }
+      &:after {
+      }
+    }
+  }
+  #Dropdown-menu {
+    display: none;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section a {
+    color: var(--color-link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-link-hover);
+    }
+
+    &:active {
+      color: var(--color-link-active);
+    }
+
+    &:visited {
+      color: var(--color-link-visited);
+
+      &:hover,
+      &:focus-visible {
+        color: var(--color-link-visited-hover);
+      }
+
+      &:active {
+        color: var(--color-link-visited-active);
+      }
+    }
+  }
+
+  #Profile-pic {
+    max-width: 100%;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 20px;
+    user-select: none;
+  }
+
+  #Green-box {
+    box-shadow: inset 0px -10px 25px -11px rgba(0, 0, 0, 0.8),
+      inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+    flex: 1;
+    border: var(--glass-border);
+    border-radius: 20px;
+    background: radial-gradient(
+      circle at top,
+      var(--color-black) 30%,
+      hsla(var(--color-green-light-a), 0.3) 90%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+    height: 100%;
+  }
+
+  a#Btn-message-me {
+    text-decoration: none;
+    font-weight: bold;
+    user-select: none;
+    border: var(--glass-border);
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 20px;
+    background: radial-gradient(
+      circle at center,
+      var(--color-purple),
+      var(--color-purple),
+      var(--color-purple-dark)
+    );
+    color: var(--color-gray-100);
+    font-size: 1.1rem;
+    font-family: inherit;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &:active {
+      transform: scale(1.02);
+      background: radial-gradient(
+        circle at center,
+        var(--color-purple),
+        var(--color-purple-dark),
+        var(--color-purple-dark)
+      );
+    }
+    span {
+      padding: 0 30px;
+      transform: translateY(3px);
+    }
+  }
+
+  h1 {
+    margin: 0;
+    margin-top: 80px;
+
+    &:before {
+      content: "The mobile view is still broken. I reccomend reading from a desktop.";
+      color: orangered;
+      position: absolute;
+      top: 100px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    text-align-last: left;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
+  hr {
+    color: hsla(var(--color-gray-100-a), 0.4);
+    border: 0.5px solid;
+    border-radius: 100%;
+    max-width: 65ch;
+    margin: 0 auto;
+  }
+  .no-wrap {
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+}
