@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 480px) {
   header {
     background: linear-gradient(to right, black, rgba(0, 0, 0, 0.75));
     padding: 5px 0 0 0;
