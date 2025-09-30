@@ -178,7 +178,7 @@
         background-repeat: no-repeat;
         background-position: center;
         z-index: 1;
-        background-image: url("/cdn/asset/ico/file.svg");
+        background-image: url("/src/asset/ico/file.svg");
 
         &::after {
           content: attr(data-label);
