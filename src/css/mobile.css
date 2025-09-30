@@ -236,7 +236,7 @@
     font-size: 2rem;
   }
 
-  h1#Gallery-h1{
+  h1#Gallery-h1 {
     white-space: initial;
     font-size: clamp(1.3rem, 7vw, 6rem);
   }
@@ -277,13 +277,6 @@
     -ms-hyphens: auto;
   }
 
-  hr {
-    color: hsla(var(--color-gray-100-a), 0.4);
-    border: 0.5px solid;
-    border-radius: 100%;
-    max-width: 65ch;
-    margin: 0 auto;
-  }
   .no-wrap {
     white-space: nowrap;
     word-break: normal;
@@ -676,4 +669,26 @@
   div#Secret-feedback {
     display: none;
   }
+
+  .pointing-hand {
+    user-select: none;
+    top: 15px;
+    position: relative;
+    margin-right: 5px;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background-color: hsla(var(--color-gray-100-a), 0.4);
+    margin: 20px 0;
+    border-radius: 100%;
+    max-width: 65ch;
+  }
+
+  p:has(.pointing-hand) {
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+
+
 }
