@@ -95,9 +95,9 @@
     background: linear-gradient(
       to bottom,
       black,
-      var(--color-gray-900) 6%,
-      var(--color-gray-900),
-      var(--color-gray-900),
+      var(--color-gray-850) 2.5%,
+background color
+      var(--color-gray-850),
       black
     );
   }
