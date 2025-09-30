@@ -129,7 +129,7 @@
       text-decoration: none;
       display: block;
       height: 100%;
-      padding-left: 2.65rem;
+      padding-left: 2.2rem;
     }
 
     ul {
@@ -244,5 +244,15 @@
     a {
       padding-left: 0.5rem;
     }
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #Dropdown-menu img {
+    height: 20px;
+    margin-right: 5px;
+    transform: translateY(2px);
   }
 }
