@@ -19,6 +19,7 @@
     scrollbar-width: none;
     caret-color: orange;
     height: 100%;
+    background-color: black;
     /* overscroll-behavior: none; */
   }
 
