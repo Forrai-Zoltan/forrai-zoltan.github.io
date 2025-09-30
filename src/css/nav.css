@@ -255,4 +255,17 @@
     margin-right: 5px;
     transform: translateY(2px);
   }
+
+  .dropdown-category > a > img:first-child {
+    display: none;
+  }
+
+  #fish-404 {
+    z-index: -1;
+    position: fixed;
+    top: 500px;
+    left: 250px;
+    scale: 1;
+    transform: scaleX(-1);
+  }
 }

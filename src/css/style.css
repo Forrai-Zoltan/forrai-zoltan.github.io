@@ -437,9 +437,7 @@
     margin: 0;
   }
 
-  header {
-    /* no fixed height needed */
-  }
+ 
 
   main {
     flex: 1 0 auto; /* takes remaining space */
