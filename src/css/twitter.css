@@ -233,6 +233,11 @@
     font-size: 0.55rem;
   }
 
+  span.tweet-grey time {
+    font-size: 0.43rem;
+
+  }
+
   p.tweet-text {
     color: black;
     font-size: 17px;
