@@ -203,6 +203,7 @@
 
   article.tweet-box {
     margin: 20px 0;
+    margin-top: 5px;
     padding: 0px 3px 5px 5px;
     background-color: rgba(161, 191, 232, 1);
     border: var(--glass-border);
