@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
   ::selection {
     background-color: var(--color-green-m);
     color: var(--color-green-light);
@@ -222,7 +222,6 @@
 
   h1#fof {
     font-size: clamp(1.3rem, 7vw, 6rem);
-
   }
 
   h1#landing {
@@ -694,6 +693,4 @@
     font-size: 0.9rem;
     line-height: 2;
   }
-
-
 }
