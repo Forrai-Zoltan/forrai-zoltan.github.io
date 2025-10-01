@@ -558,6 +558,7 @@
 
   form#Search-bar {
     margin: 20px;
+    margin-top: 5px;
     margin-inline: auto;
     padding: 0;
     font-size: 0;
