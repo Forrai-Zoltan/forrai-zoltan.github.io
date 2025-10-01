@@ -260,7 +260,7 @@
     margin-top: 0;
   }
 
-  h1#landing:before {
+  /* h1#landing:before {
     content: "The mobile view is still broken. I reccomend reading from a desktop.";
     color: orangered;
     position: absolute;
@@ -269,7 +269,7 @@
     text-align: center;
     z-index: 1;
     white-space: initial;
-  }
+  } */
 
   p {
     margin-top: 0;
