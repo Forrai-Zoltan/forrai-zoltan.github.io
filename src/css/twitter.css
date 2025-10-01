@@ -238,6 +238,12 @@
 
   }
 
+  span.tweet-grey .tweet-handle {
+    font-size: 0.5rem;
+
+
+  }
+
   p.tweet-text {
     color: black;
     font-size: 17px;
