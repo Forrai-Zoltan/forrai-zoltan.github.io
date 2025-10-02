@@ -3,7 +3,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("Search");
   const cards = document.querySelectorAll(".card");
-  const noResults = document.getElementById("NoResults");
 
   searchInput.addEventListener("input", function () {
     // Remove # and , and normalize spaces
@@ -46,8 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         card.style.display = "none";
       }
     });
-
-    noResults.style.display = matchCount === 0 ? "block" : "none";
   });
 });
 
