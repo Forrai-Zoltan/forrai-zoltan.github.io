@@ -34,7 +34,7 @@ a#navigate-back-a {
 
 a#navigate-back-a:hover div#nav-back,
 a#navigate-back-a:focus-visible div#nav-back {
-  padding-right: 300px;
+  padding-right: 275;
   color: white;
   border: 1px rgba(255, 255, 255, 0.3) solid;
   background: linear-gradient(
@@ -83,5 +83,5 @@ div#nav-back {
 
 div#nav-back span#nav-back-span {
   margin: 0 15px 0 10px;
-  transform: translateY(3px);
+  transform: translateY(3.5px);
 }
