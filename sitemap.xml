@@ -1,122 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
 <url>
-  <loc>https://www.gildrom.com/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.gildrom.com/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/personal/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/personal/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/personal/who_am_i</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/personal/who_am_i</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/personal/warbles</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/personal/warbles</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/personal/obsessions</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/personal/obsessions</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/literary/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/literary/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/literary/shorts</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/literary/shorts</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/literary/novels</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/literary/novels</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/literary/essays</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/literary/essays</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/creative/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/tavern/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/creative/comics</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/tavern/contact</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/creative/films</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/tavern/patronage</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/creative/games</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/tavern/shoppe</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/beyond/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/beyond/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/beyond/contact</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/beyond/other</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/beyond/secret</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/beyond/secret</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/beyond/colophon</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/beyond/colophon</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/personal/library/index</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.gildrom.com/personal/library/index</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/personal/CV/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.gildrom.com/personal/CV/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/literary/poetry/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.gildrom.com/literary/poetry/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/personal/library/</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.gildrom.com/personal/library/</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.gildrom.com/literary/shorts/index.html</loc>
-  <lastmod>2025-09-28T14:13:16+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.gildrom.com/literary/shorts/index.html</loc>
+<lastmod>2025-10-17T21:09:14+00:00</lastmod>
+<priority>0.64</priority>
 </url>
-
-
 </urlset>
