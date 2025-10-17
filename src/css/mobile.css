@@ -693,4 +693,8 @@
     font-size: 0.9rem;
     line-height: 2;
   }
+
+  .email svg, .email span {
+    display: none;
+  }
 }
