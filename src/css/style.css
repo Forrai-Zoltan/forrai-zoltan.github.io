@@ -139,8 +139,8 @@
     max-height: fit-content;
   }
 
-  div#Green-box a,
-  div#Green-box a::selection {
+  div#Green-box.about-green a,
+  div#Green-box.about-green a::selection {
     color: var(--color-link);
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
