@@ -39,21 +39,22 @@
       color: #1c7ed6;
     }
 
-    nav a,
-    nav a:visited {
+    nav a svg,
+    nav a svg:visited {
       font-size: 4rem;
-      color: rgb(173, 173, 173);
+      stroke: "rgb(173, 173, 173)";
       position: fixed;
+      stroke: lightgrey;
       line-height: 0.5;
       text-decoration: none;
-      padding: 5px 200px 100px 5px;
+      padding: 0 200px 100px 5px;
       user-select: none;
       -webkit-user-select: none;
     }
 
-    nav a:hover,
-    nav a:visited:hover {
-      color: lightgrey;
+    nav a svg:hover,
+    nav a svg:visited:hover {
+      stroke: white;
     }
 
     main {
@@ -101,7 +102,23 @@
     }
   </style>
   <body>
-    <nav><a href="/personal/who_am_i">&lt;-</a></nav>
+    <nav>
+      <a href="/personal/who_am_i"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="65"
+          height="65"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-left-icon lucide-arrow-left">
+          <path d="m12 19-7-7 7-7" />
+          <path d="M19 12H5" /></svg
+      ></a>
+    </nav>
     <main>
       <article>
         <h1><b>Forrai Zoltán</b></h1>
