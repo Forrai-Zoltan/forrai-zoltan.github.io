@@ -38,10 +38,12 @@
     margin: 0.5rem;
   }
 
-  aside {
+  aside,
+  .image-row {
     flex: 2.5;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
   }
 
   hr {
@@ -53,7 +55,7 @@
 
   div#Img-wrapper {
     perspective: 2000px;
-    margin-bottom: 0.5rem;
+
     position: relative;
 
     &:hover img#Profile-pic {
@@ -93,6 +95,14 @@
     user-select: none;
   }
 
+  div.image-row img {
+    width: 100%;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    height: auto;
+    border-radius: 20px;
+    user-select: none;
+  }
+
   div#Green-box {
     box-shadow: inset 0px -10px 25px -11px rgba(0, 0, 0, 0.8),
       inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
@@ -116,6 +126,47 @@
       font-size: 0.9rem;
       margin: 1.2rem 0 0.5rem 0;
       user-select: none;
+    }
+  }
+
+  div#Green-box.about-green {
+    padding: 1rem;
+    background: radial-gradient(
+      circle at top,
+      var(--color-black) 10%,
+      hsla(var(--color-green-light-a), 0.25) 90%
+    );
+    max-height: fit-content;
+  }
+
+  div#Green-box a,
+  div#Green-box a::selection {
+    color: var(--color-link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    &:hover,
+    &:focus-visible,
+    &::selection:hover {
+      color: var(--color-link-hover);
+    }
+
+    &:active {
+      color: var(--color-link-active);
+    }
+
+    &:visited,
+    &::selection:visited {
+      color: var(--color-link-visited);
+
+      &:hover,
+      &:focus-visible {
+        color: var(--color-link-visited-hover);
+      }
+
+      &:active {
+        color: var(--color-link-visited-active);
+      }
     }
   }
 
