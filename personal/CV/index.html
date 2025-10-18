@@ -9,14 +9,166 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="/src/css/variables.css" />
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <link rel="stylesheet" href="/src/css/nav.css" />
   </head>
+  <style>
+    html {
+      background-color: rgb(15, 15, 15);
+      color: white;
+      font-family: var(--font-jb-mono);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: greenyellow;
+    }
+    a:hover {
+      color: rgb(189, 251, 96);
+    }
+    a:visited {
+      color: green;
+    }
+    a:visited:hover {
+      color: rgb(22, 174, 22);
+    }
+
+    nav a,
+    nav a:visited {
+      font-size: 4rem;
+      color: rgb(173, 173, 173);
+      position: fixed;
+      line-height: 0.5;
+      text-decoration: none;
+      padding: 5px 200px 100px 5px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    nav a:hover,
+    nav a:visited:hover {
+      color: lightgrey;
+    }
+
+    main {
+      display: table;
+      margin: 0 auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    td {
+      border: 1px solid grey;
+      padding: 3px 10px 0 10px;
+      line-height: 1.7;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin: 20px 0 5px 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 30px;
+    }
+
+    #English:target {
+      animation: highlightFade 5s ease;
+    }
+
+    @keyframes highlightFade {
+      0% {
+        background-color: rgba(255, 255, 0, 0.35);
+      }
+      100% {
+        background-color: transparent;
+      }
+    }
+  </style>
   <body>
+    <nav><a href="/personal/who_am_i">&lt;-</a></nav>
     <main>
       <article>
-        <h1>Nothing yet</h1>
-        <p>To be written</p>
+        <h1><b>Forrai Zoltán</b></h1>
+        <table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>First name</td>
+              <td>Zoltán</td>
+            </tr>
+            <tr>
+              <td>Surname</td>
+              <td>Forrai</td>
+            </tr>
+            <tr>
+              <td>Age</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <td>Residence</td>
+              <td>Budapest, Hungary</td>
+            </tr>
+            <tr>
+              <td>Languages</td>
+              <td><a href="#English">English</a>, Hungarian, Latin</td>
+            </tr>
+          </tbody>
+        </table>
+        <section id="Studies">
+          <h2>Studies</h2>
+          <ul>
+            <li>
+              <b>2020–20xx MA from ELTE: Undivided Teacher Training Program;</b>
+            </li>
+            <ul>
+              <li>Teacher of English language and culture,</li>
+              <li>Teacher of history and civics.</li>
+            </ul>
+          </ul>
+        </section>
+        <section id="Certifications">
+          <h2>Certifications</h2>
+          <ul>
+            <li id="English">English Language:</li>
+            <ul>
+              <li><b>2025 Advanced (C1)</b></li>
+              <li>2018 Upper intermediate (B2)</li>
+            </ul>
+          </ul>
+        </section>
+        <section id="Achievements">
+          <h2>Achievements</h2>
+          <ul>
+            <li></li>
+          </ul>
+        </section>
+        <section id="Published Works">
+          <h2>Published Works</h2>
+          <ul>
+            <li></li>
+          </ul>
+        </section>
+        <section id="Work Experience">
+          <h2>Work Experience</h2>
+          <ul>
+            <li>
+              2022–2025 Video editing for
+              <a href="https://quickmaths.hu">Quick Maths</a>
+            </li>
+          </ul>
+        </section>
       </article>
     </main>
   </body>
