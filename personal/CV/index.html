@@ -12,8 +12,8 @@
   </head>
   <style>
     html {
-      background-color: rgb(15, 15, 15);
-      color: white;
+      background-color: rgb(20, 20, 20);
+      color: rgb(215, 215, 215);
       font-family: var(--font-jb-mono);
     }
 
@@ -22,17 +22,21 @@
       padding: 0;
     }
 
-    a {
-      color: greenyellow;
-    }
-    a:hover {
-      color: rgb(189, 251, 96);
-    }
+    a,
     a:visited {
-      color: green;
+      color: #4ea8de;
+      text-decoration: none;
+      transition: color 0.2s ease;
     }
+
+    a:hover,
     a:visited:hover {
-      color: rgb(22, 174, 22);
+      color: #74c0fc;
+    }
+
+    a:active,
+    a:visited:active {
+      color: #1c7ed6;
     }
 
     nav a,
@@ -79,7 +83,7 @@
     }
 
     ul {
-      margin: 0;
+      margin: 0 0 5px 0;
       padding-left: 30px;
     }
 
@@ -113,12 +117,12 @@
               <td>Forrai</td>
             </tr>
             <tr>
-              <td>Age</td>
-              <td>26</td>
-            </tr>
-            <tr>
               <td>Residence</td>
               <td>Budapest, Hungary</td>
+            </tr>
+            <tr>
+              <td>Contact</td>
+              <td>Website: <a href="/tavern/contact.html">gildrom.com</a></td>
             </tr>
             <tr>
               <td>Languages</td>
@@ -130,7 +134,7 @@
           <h2>Studies</h2>
           <ul>
             <li>
-              <b>2020–20xx MA from ELTE: Undivided Teacher Training Program;</b>
+              <b>2020–pres MA from ELTE: Undivided Teacher Training Program;</b>
             </li>
             <ul>
               <li>Teacher of English language and culture,</li>
