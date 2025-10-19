@@ -49,7 +49,7 @@
     article.tweet-box {
       margin: 20px auto;
       padding: 8px 3px 25px 10px;
-      width: 100%;
+
       display: flex;
       align-items: flex-start;
       gap: 5px;
