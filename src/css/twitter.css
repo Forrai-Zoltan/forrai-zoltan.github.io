@@ -63,7 +63,7 @@
       user-select: none;
     }
 
-    span.tweeter {
+    span.tweeter-me {
       font-weight: 900;
       color: black;
     }
@@ -74,7 +74,7 @@
       transform: translateY(-2px);
     }
 
-    p.tweet-text {
+    .tweet-text {
       color: black;
       font-size: 17px;
       line-height: 20px;
@@ -85,7 +85,11 @@
       padding-bottom: 10px;
     }
 
-    p img {
+    ul.tweet-text {
+      padding-left: 20px;
+    }
+
+    .tweet-text img:not(#pointing-hand-rss) {
       max-width: 100%;
       border-radius: 20px;
       margin: 20px 0 0 0;
@@ -156,8 +160,8 @@
     position: absolute;
     transform: scale(0.3) scaleX(-1);
     z-index: 999;
-    top: -95px;
-    right: -220px;
+    top: -75px;
+    right: -310px;
   }
 
   #rss-hover:hover ~ #pointing-hand-rss {
@@ -166,9 +170,9 @@
   }
 
   #rss-hover {
-    font-weight: bold;
-    color: orangered;
-    cursor: default;
+    text-decoration: underline;
+
+    cursor: help;
   }
 }
 
@@ -221,7 +225,7 @@
     margin-top: 5px;
   }
 
-  span.tweeter {
+  span.tweeter-me {
     font-weight: 900;
     color: black;
     font-size: 0.65rem;
@@ -236,16 +240,13 @@
 
   span.tweet-grey time {
     font-size: 0.43rem;
-
   }
 
   span.tweet-grey .tweet-handle {
     font-size: 0.5rem;
-
-
   }
 
-  p.tweet-text {
+  .tweet-text {
     color: black;
     font-size: 17px;
     line-height: 20px;
@@ -256,7 +257,7 @@
     padding-bottom: 10px;
   }
 
-  p img {
+  .tweet-text img {
     max-width: 100%;
     border-radius: 20px;
     margin: 20px 0 0 0;

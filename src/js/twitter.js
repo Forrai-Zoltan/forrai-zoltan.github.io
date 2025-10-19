@@ -20,13 +20,14 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   profilePic.height = 50;
 
   const tweeterSpan = document.createElement("span");
-  tweeterSpan.className = "tweeter";
+  tweeterSpan.className = "tweeter-me";
   tweeterSpan.textContent = "Zoltán Forrai";
 
-  const verified = document.createElement("object");
-  verified.data = "/src/asset/ico/twitter_verified_badge.svg";
-  verified.type = "image/svg+xml";
+  const verified = document.createElement("img");
+  verified.src = "/src/asset/ico/twitter_verified_badge.svg";
+  verified.alt = "verified badge";
   verified.width = 20;
+  verified.height = 20;
   verified.setAttribute("tabindex", "-1");
 
   const handleSpan = document.createElement("span");
