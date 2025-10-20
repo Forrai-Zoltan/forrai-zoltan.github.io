@@ -457,7 +457,7 @@
     -webkit-text-stroke: 0.3px white;
   }
 
-  span.no-wrap {
+  .no-wrap {
     white-space: nowrap;
   }
 
