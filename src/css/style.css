@@ -533,23 +533,23 @@
     will-change: padding;
   }
 
-  #newgrounds-webring .outline {
+  #newgrounds-webring.minimal .outline {
     border-radius: 8px 8px 0 0;
     scale: 1.001;
   }
 
-  #newgrounds-webring .background {
+  #newgrounds-webring.minimal .background {
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.5s ease;
   }
 
-  #newgrounds-webring:hover .background {
+  #newgrounds-webring.minimal:hover .background {
     border-radius: 10px;
     opacity: 1;
   }
 
-  #newgrounds-webring .footer {
+  #newgrounds-webring.minimal .footer {
     border-radius: 5px;
     position: relative;
     z-index: 2;
@@ -558,12 +558,12 @@
     will-change: transform;
   }
 
-  #newgrounds-webring:hover .footer {
+  #newgrounds-webring.minimal:hover .footer {
     transform: translateY(0);
     border-radius: 0 0 8px 8px;
   }
 
-  #newgrounds-webring:hover {
+  #newgrounds-webring.minimal:hover {
     transform: translateY(0);
     padding-bottom: 85px;
   }
