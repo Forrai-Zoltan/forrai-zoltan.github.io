@@ -10,7 +10,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   });
 
   box.innerHTML = "";
-  box.style.position = "relative"; // So the RSS icon can be absolutely positioned
+  box.style.position = "relative"; 
 
   const profilePic = document.createElement("img");
   profilePic.className = "profile-pic";
