@@ -238,21 +238,12 @@
       hsla(var(--color-purple-a), 0.9) 99%
     );
     flex: 7;
+  }
 
-    &.non-text {
-      background: radial-gradient(
-        circle at top,
-        transparent,
-        transparent 20%,
-        hsla(var(--color-purple-a), 0.9) 99%
-      );
-    }
-
-    > article {
-      padding: 2rem 2rem 1rem 2rem;
-      margin-inline: auto;
-      max-width: max-content;
-    }
+  section#Purple:not(.non-text) article {
+    padding: 2rem 2rem 1rem 2rem;
+    margin-inline: auto;
+    max-width: max-content;
   }
 
   section a,

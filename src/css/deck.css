@@ -1,9 +1,31 @@
 @media only screen and (min-width: 700px) {
-  form#Search-bar {
-    margin-inline: auto;
+  section#Purple.non-text {
+    background: radial-gradient(
+      circle at top,
+      transparent,
+      transparent 20%,
+      hsla(var(--color-purple-a), 0.9) 99%
+    );
+
+    article h1 {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+  }
+
+  section#Purple.non-text article {
+    margin: 20px;
     padding: 0;
-    font-size: 0;
-    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form#Search-bar {
+    max-width: 60vw;
+    width: 100%;
+    margin-left: 10px;
 
     label {
       font-size: 0.75rem;
@@ -56,7 +78,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: hsla(var(--color-green-light-a), 0.25);
+      background-color: #0d400a;
       border: var(--glass-border);
       color: var(--color-white);
       cursor: pointer;
@@ -64,7 +86,7 @@
 
       &:focus,
       &:hover {
-        background-color: hsla(var(--color-green-light-a), 0.4);
+        background-color: #11660e;
       }
 
       img {
@@ -74,11 +96,11 @@
   }
 
   div#Deck {
-    margin: 30px;
+    margin: 40px 10px 25px 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    row-gap: 30px;
+    gap: 20px;
+    row-gap: 25px;
     justify-content: center;
 
     .card {
@@ -114,7 +136,7 @@
 
       &:hover,
       &:focus-visible {
-        transform: scale(1.08);
+        transform: scale(1.06);
         z-index: 1;
         border: 0.25px solid rgba(255, 255, 255, 0.4);
 
@@ -154,9 +176,5 @@
     color: hsla(var(--color-gray-100-a), 0.4);
     border: 0.5px solid;
     border-radius: 100%;
-  }
-
-  article:has(#Search-bar) {
-    padding-top: 20px !important;
   }
 }

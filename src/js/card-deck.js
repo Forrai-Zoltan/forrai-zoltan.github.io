@@ -64,3 +64,42 @@ function refreshSpotifyWidget() {
     setInterval(refreshSpotifyWidget, 30000);
   }
 }
+
+//////////////////////////////////////
+// Only show first two rows of cards!
+
+function showOnlyTwoRows() {
+  const deck = document.getElementById("Deck");
+  const cards = Array.from(deck.children);
+
+  if (!cards.length) return;
+
+  // Reset all cards so heights are correct after resize
+  cards.forEach((card) => (card.style.display = ""));
+
+  const firstTop = cards[0].offsetTop;
+
+  // Find the bottom of the second row
+  let secondRowBottom = firstTop;
+  for (let card of cards) {
+    if (card.offsetTop === firstTop) {
+      secondRowBottom = card.offsetTop + card.offsetHeight;
+    } else {
+      secondRowBottom = card.offsetTop + card.offsetHeight;
+      break;
+    }
+  }
+
+  // Hide cards below second row, but only if they are empty
+  for (let card of cards) {
+    if (card.offsetTop >= secondRowBottom && !card.textContent.trim()) {
+      card.style.display = "none";
+    }
+  }
+}
+
+// Initial run
+showOnlyTwoRows();
+
+// Update on window resize
+window.addEventListener("resize", showOnlyTwoRows);

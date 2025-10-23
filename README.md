@@ -36,7 +36,7 @@
 - Video Games I like:
 
   - World of Warcraft Classic (Not Blizzard)
-  - Disco Elisyum
+  - Disco Elysium
   - Thief
 
 ##### Library
@@ -52,6 +52,8 @@
   - Can be found by search engines but harder to maintain. Need to decide.
 
 #### **Short:**
+
+- Tag stories with date written
 
 #### **Novels:**
 
@@ -82,6 +84,8 @@
 ### Beyond
 
 #### **Other Works**
+
+- Lit Games
 
 #### **Secret**
 
