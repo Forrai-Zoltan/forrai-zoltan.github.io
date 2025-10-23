@@ -26,12 +26,13 @@
 
 - Cover images!
 
-- Heavy Metal (Metal Hurlant) & Moebius; (underground comics)
+- Heavy Metal (Metal Hurlant) & Moebius; (underground comics; Alan Moore)
 - Weird Tales and other pulp magazines (Weird Fiction)
 - CM Maze & other play books (Vermis and alike)
 - Tolkien and his work
 - Newgrounds
 - Indie Web
+- Contemporary artist and friends I really like.
 
 - Video Games I like:
 
@@ -66,6 +67,9 @@
   - Why worse graphics make for better horror games
   - Learning to Write Series
   - "Literary Magazines and Contests Table"
+  - About Literary Theory
+  - Writing as Magic
+  - The Writer as a person
 
 ### Tavern
 
