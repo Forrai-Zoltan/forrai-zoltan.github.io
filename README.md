@@ -20,8 +20,6 @@
   - Create image gallery. -> Zoom function from warbles.
   - Fill in _CV_. Collect.
 
-#### **Warbles & RSS**
-
 #### **Obsessions:**
 
 - Cover images!
@@ -33,6 +31,7 @@
 - Newgrounds
 - Indie Web
 - Contemporary artist and friends I really like.
+- Web Bookmarks
 
 - Video Games I like:
 
@@ -95,6 +94,4 @@
 
 - Finish secret.
 
-#### **Colophon**
 
----
