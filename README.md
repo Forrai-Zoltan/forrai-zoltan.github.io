@@ -44,6 +44,8 @@
 - Connect zotero to **Library**.
   - -> Keep adding books.
   - Create groups of books.
+  - [authors](/personal/library/authors.json)
+  - [works](/personal/library/works.json)
 
 ### Literary:
 
