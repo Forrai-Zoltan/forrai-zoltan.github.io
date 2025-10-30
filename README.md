@@ -8,8 +8,11 @@
 
 - Seasonal thememing.
 - Custom favicon. Profile pic on NG.
+- Description for each page.
 - Rework for different screen sizes
   - Keep fixing the mobile view.
+
+
 
 ### Personal:
 
@@ -23,6 +26,8 @@
 #### **Obsessions:**
 
 - Cover images!
+
+- Film List
 
 - Heavy Metal (Metal Hurlant) & Moebius; (underground comics; Alan Moore)
 - Weird Tales and other pulp magazines (Weird Fiction)
@@ -52,6 +57,7 @@
 - Cover images!
 - _Plain HTML instead of marked.js ?_
   - Can be found by search engines but harder to maintain. Need to decide.
+- Progress bar
 
 #### **Short:**
 

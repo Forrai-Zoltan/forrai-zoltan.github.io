@@ -1,0 +1,32 @@
+{
+  "authors": [
+    {
+      "id": "a",
+      "name": "",
+      "bio": ""
+    },
+    {
+      "id": "a",
+      "name": "",
+      "bio": ""
+    }
+  ],
+  "books": [
+    {
+      "title": "",
+      "authors": [""],
+      "tags": "",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "",
+      "authors": [""],
+      "tags": "",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    }
+  ]
+}
