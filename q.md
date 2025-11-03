@@ -1,8 +1,4 @@
+- [Author](/personal/library/authors.json)
+- [Works](/personal/library/works.json)
 
-
-- [library](/library/data.json)
-- [authors](/library/author-ids.json)
-
-- [RSS](/cdn/rss-tweets.xml)
-
-
+- [RSS](/src/rss-tweets.xml)

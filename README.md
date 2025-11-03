@@ -12,13 +12,14 @@
 - Rework for different screen sizes
   - Keep fixing the mobile view.
 
-
+- videos
 
 ### Personal:
 
 #### **About**
 
 - Write 'About' page. -> History, personaltiy.
+  - background, Current, Goals
 
   - Create image gallery. -> Zoom function from warbles.
   - Fill in _CV_. Collect.
@@ -46,6 +47,7 @@
 
 ##### Library
 
+- Needs a redesign
 - Connect zotero to **Library**.
   - -> Keep adding books.
   - Create groups of books.
