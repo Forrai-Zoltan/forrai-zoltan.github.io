@@ -139,7 +139,7 @@
       }
 
       img {
-        min-width: 100%;
+        width: 100%;
         min-height: 100%;
         filter: brightness(0.8);
         object-fit: cover;
