@@ -304,6 +304,7 @@
       margin: 0 0 40px 0;
       padding: 0 55px;
       font-size: 2rem;
+      display: none;
     }
   }
 
@@ -320,6 +321,7 @@
 
   h1#Secret-h1 {
     text-align: center;
+    margin-top: 0;
   }
 
   section:has(article#Secret-flow) {

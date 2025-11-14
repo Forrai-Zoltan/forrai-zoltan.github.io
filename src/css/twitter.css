@@ -7,11 +7,11 @@
 
     &:hover,
     &:focus-visible {
-      color: var(--color-link-dark-hover);
+      color: var(--color-link-hover);
     }
 
     &:active {
-      color: var(--color-link-dark-active);
+      color: var(--color-link-active);
     }
 
     &:visited {
@@ -26,6 +26,11 @@
         color: var(--color-link-dark-visited-active);
       }
     }
+  }
+
+  span img {
+    padding: 0 2px;
+    transform: translateY(3px);
   }
 
   div#Timeline {
@@ -48,7 +53,7 @@
 
     article.tweet-box {
       margin: 20px auto;
-      padding: 8px 3px 25px 10px;
+      padding: 8px 3px 10px 10px;
 
       display: flex;
       align-items: flex-start;
@@ -100,8 +105,8 @@
 
     .rss-icon-link {
       position: absolute;
-      top: 8px;
-      right: 12px;
+      top: 6px;
+      right: 10px;
       z-index: 10;
     }
   }
@@ -146,6 +151,7 @@
     box-shadow: 0px 5px 10px hsla(var(--color-gray-900-a), 0.7);
     color: #fff;
     padding: 6px 10px;
+    padding-bottom: 2px;
     font-size: 18px;
     pointer-events: none;
     opacity: 0;
@@ -161,7 +167,7 @@
     transform: scale(0.3) scaleX(-1);
     z-index: 999;
     top: -75px;
-    right: -310px;
+    right: -300px;
   }
 
   #rss-hover:hover ~ #pointing-hand-rss {
