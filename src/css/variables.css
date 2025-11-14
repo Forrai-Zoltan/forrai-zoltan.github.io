@@ -171,6 +171,16 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "NewGrounds";
+  src: url("/src/asset/font/NG/NewgroundsFontRegular.woff2") format("woff2"),
+  url("/src/asset/font/NG/NewgroundsFontRegular.woff") format("woff"),
+  url("/src/asset/font/NG/NewgroundsFont-Regular.otf")   format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ------------------------------------ */
 
 :root {
@@ -251,4 +261,5 @@
   --font: "cochin";
   --font-mono: "departure-mono";
   --font-jb-mono: "JetBrainsMono";
+  --font-ng: "NewGrounds";
 }
