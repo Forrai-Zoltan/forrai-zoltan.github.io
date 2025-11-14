@@ -129,7 +129,7 @@
       text-decoration: none;
       display: block;
       height: 100%;
-      padding-left: 2.2rem;
+      padding-left: 1rem;
     }
 
     ul {
@@ -162,7 +162,7 @@
       z-index: 1;
     }
 
-    &::before {
+    /* &::before {
       content: "▶";
       position: absolute;
       left: 1rem;
@@ -171,7 +171,7 @@
       transform: translateY(-50%);
       font-size: 0.7rem;
       transition: transform 0.3s ease;
-    }
+    } */
 
     &:hover,
     &:focus-within {
