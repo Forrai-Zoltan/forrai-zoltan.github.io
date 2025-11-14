@@ -101,6 +101,13 @@
     height: auto;
     border-radius: 20px;
     user-select: none;
+    transition: scale 0.3s ease;
+
+    &:hover {
+      scale: 1.025;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+
+    }
   }
 
   div#Green-box {

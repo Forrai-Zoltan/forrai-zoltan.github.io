@@ -257,9 +257,9 @@
         filter: brightness(0.8);
   }
 
-  /* .dropdown-category ul img {
+  .dropdown-category ul img {
     display: none;
-  } */
+  }
 
   #fish-404 {
     z-index: -1;
