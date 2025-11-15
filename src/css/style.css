@@ -104,9 +104,8 @@
     transition: scale 0.2s ease;
 
     &:hover {
-      scale: 1.018;
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-
+    scale: 1.015;
+    cursor: pointer;
     }
   }
 
@@ -568,4 +567,25 @@
     transform: translateY(0);
     padding-bottom: 85px;
   } */
+
+  p {
+    margin-bottom: 10px;
+  }
+
+
+ol {
+    counter-reset: item;
+    padding-left: 50px;
+    margin-top: 0;
+  }
+
+  ol li {
+    max-width: 65ch;
+    margin-top: 15px;
+  }
+
+ ol li::marker {
+  color: orange;
+}
+
 }

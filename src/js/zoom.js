@@ -31,6 +31,7 @@
       z-index: 9999;
       padding: 20px;
       box-sizing: border-box;
+      user-select: none;
     }
     #Img-overlay[aria-hidden="true"] { display: none; }
     /* Inner container will size to viewport minus padding so image fits */
