@@ -38,6 +38,10 @@
     margin: 0.5rem;
   }
 
+  aside:has(.image-row) {
+    min-width: 460px;
+  }
+
   aside,
   .image-row {
     flex: 2.7;
