@@ -635,9 +635,6 @@
     overflow: hidden; 
     background-color: #181818; 
     border: var(--glass-border);
-
-
-
   }
 
   span#sp-shadow {
@@ -650,7 +647,7 @@
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9); 
   z-index: 2; 
   pointer-events: none;
-  border: var(--glass-border);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   a:has(#sp-shadow) {
