@@ -104,8 +104,8 @@
     transition: scale 0.2s ease;
 
     &:hover {
-    scale: 1.015;
-    cursor: pointer;
+      scale: 1.015;
+      cursor: pointer;
     }
   }
 
@@ -250,7 +250,7 @@
     background: radial-gradient(
       circle at top,
       var(--color-black),
-      hsla(var(--color-purple-a), 0.7) 
+      hsla(var(--color-purple-a), 0.7)
     );
   }
 
@@ -342,8 +342,6 @@
   h4 + p {
     margin-top: 5px;
   }
-
-
 
   ul {
     margin-bottom: 50px;
@@ -569,7 +567,6 @@
     transition: opacity 0.5s ease;
   }
 
-  
   #newgrounds-webring.minimal .footer {
     border-radius: 5px;
     position: relative;
@@ -578,7 +575,7 @@
     transition: transform 0.5s ease;
     will-change: transform;
   }
-  
+
   /* #newgrounds-webring.minimal:hover .background {
     border-radius: 10px;
     opacity: 1;
@@ -598,7 +595,6 @@
     margin-bottom: 10px;
   }
 
-
   ol {
     counter-reset: item;
     padding-left: 50px;
@@ -610,14 +606,14 @@
     margin-top: 15px;
   }
 
-  ul li:not(.dropdown-category), ul li:not(.dropdown-category) li  {
+  ul li:not(.dropdown-category),
+  ul li:not(.dropdown-category) li {
     max-width: 65ch;
     margin-top: 5px;
-
   }
 
   .about-page li::marker {
-  color: orange;
+    color: orange;
   }
 
   .mono-arrow {
@@ -627,35 +623,39 @@
   #about-spotify {
     position: relative;
     display: flex;
-    margin: 0; 
+    margin: 0;
     height: 152px;
     min-width: 100%;
-
-    border-radius: 20px; 
-    overflow: hidden; 
-    background-color: #181818; 
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #181818;
     border: var(--glass-border);
   }
 
   span#sp-shadow {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: -1.5px;
-  width: 100%; 
-  height: 152px; 
-  border-radius: 20px;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9); 
-  z-index: 2; 
-  pointer-events: none;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -1.5px;
+    width: 100%;
+    height: 152px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   a:has(#sp-shadow) {
     position: relative;
-
-    height: 154px; 
+    height: 154px;
     width: 100%;
   }
 
+
+
+
+
+
+  
 }
