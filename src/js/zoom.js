@@ -64,7 +64,6 @@
   function markZoomableImages() {
     const imgs = document.querySelectorAll('.image-row img');
     imgs.forEach((img) => {
-      img.classList.add('zoomable');
       img.setAttribute('tabindex', '0');
       img.setAttribute('role', 'button');
       img.setAttribute('aria-label', 'Open image');

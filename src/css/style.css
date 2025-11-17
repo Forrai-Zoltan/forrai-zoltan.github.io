@@ -95,7 +95,7 @@
     user-select: none;
   }
 
-  div.image-row img {
+  div.image-row img.zoomable {
     width: 100%;
     border: 0.5px solid rgba(255, 255, 255, 0.3);
     height: auto;
@@ -616,7 +616,6 @@
 
   }
 
-
   .about-page li::marker {
   color: orange;
   }
@@ -624,5 +623,32 @@
   .mono-arrow {
     font-family: var(--font-jb-mono);
   }
+
+  #about-spotify {
+    position: relative;
+    display: inline-block;
+    margin: 0; 
+    height: 152px;
+    width: 460px;
+    border-radius: 20px; 
+    overflow: hidden; 
+    background-color: #181818; 
+    border: var(--glass-border);
+  }
+
+  div#sp-shadow {
+  position: absolute;
+  top: 228px;
+  right: 14px;
+  width: 459px; 
+  height: 151px; 
+  border-radius: 20px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9); 
+  z-index: 2; 
+}
+
+
+  
+
 
 }

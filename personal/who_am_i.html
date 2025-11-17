@@ -240,6 +240,10 @@
           </p>
         </div>
         <div class="image-row">
+            <div id="sp-shadow"></div>
+            <p align="center" id="about-spotify">
+              <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&redirect=true"><img src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=spotify-embed&show_offline=true&background_color=000000&interchange=false&profanity=false&mode=dark&bar_color=53b14f&bar_color_cover=false"></a>
+            </p>
           <img
             src="/src/media/img/socrates-middle-finger.png"
             class="zoomable"
@@ -253,4 +257,14 @@
     </main>
   </body>
   <script src="/src/js/zoom.js"></script>
+  <script>
+  const spotifyImg = document.querySelector(
+    '.image-row p img[src*="spotify-github-profile.kittinanx.com"]'
+  );
+  function refreshSpotify() {
+    const baseSrc = "https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=spotify-embed&show_offline=true&background_color=000000&interchange=false&profanity=false&mode=dark&bar_color=53b14f&bar_color_cover=false";
+    spotifyImg.src = baseSrc + "&t=" + new Date().getTime();
+  }
+  setInterval(refreshSpotify, 15000);
+</script>
 </html>
