@@ -51,10 +51,12 @@
   }
 
   hr {
-    color: hsla(var(--color-gray-100-a), 0.4);
-    border: 0.5px solid;
-    max-width: 65ch;
     margin: 0 auto;
+    border: none;
+    height: 1px;
+    background: hsla(var(--color-gray-100-a), 0.9);
+    transform: scaleY(0.5); 
+    transform-origin: center;
   }
 
   div#Img-wrapper {

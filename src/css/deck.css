@@ -109,9 +109,10 @@
       display: block;
 
 
-    &:hover span {
-    color: #FFB50E !important;
-    }}
+      &:hover span {
+      color: #FFB50E !important;
+      }
+    }
   
   .card[data-tags="newgrounds"] span {
     font-family: "NewGrounds" !important;
