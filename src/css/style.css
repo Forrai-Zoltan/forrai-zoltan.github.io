@@ -626,11 +626,11 @@
 
   #about-spotify {
     position: relative;
-    display: inline-block;
+    display: flex;
     margin: 0; 
     height: 152px;
-    width: 460px;
-    min-width: 460px;
+    min-width: 100%;
+
     border-radius: 20px; 
     overflow: hidden; 
     background-color: #181818; 
@@ -639,9 +639,10 @@
 
   span#sp-shadow {
   position: absolute;
-  top: 226px;
-  right: 11px;
-  width: 459px; 
+  display: block;
+  top: 0;
+  right: -1.5px;
+  width: 100%; 
   height: 152px; 
   border-radius: 20px;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9); 
@@ -651,8 +652,10 @@
   }
 
   a:has(#sp-shadow) {
+    position: relative;
+
     height: 154px; 
-    width: 460px;
+    width: 100%;
   }
 
 }
