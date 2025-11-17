@@ -220,6 +220,8 @@
   nav#Dropdown-menu li.dropdown-category ul {
     li {
       border-radius: 5px;
+    margin-top: 0px !important;
+
 
       &:hover {
         background: linear-gradient(
