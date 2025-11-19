@@ -10,18 +10,18 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   });
 
   box.innerHTML = "";
-  box.style.position = "relative"; 
+  box.style.position = "relative";
 
   const profilePic = document.createElement("img");
   profilePic.className = "profile-pic";
-  profilePic.src = "/src/media/img/clippy.jpeg";
+  profilePic.src = "/src/media/img/compressed/profile_bw_sq.png";
   profilePic.alt = "profile pic";
   profilePic.width = 50;
   profilePic.height = 50;
 
   const tweeterSpan = document.createElement("span");
   tweeterSpan.className = "tweeter-me";
-  tweeterSpan.textContent = "Zoltán Forrai";
+  tweeterSpan.textContent = "Zoltan Forrai";
 
   const verified = document.createElement("img");
   verified.src = "/src/asset/ico/twitter_verified_badge.svg";
@@ -64,8 +64,6 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   box.appendChild(profilePic);
   box.appendChild(rightDiv);
 });
-
-
 
 // Create overlay element once
 const overlay = document.createElement("div");
