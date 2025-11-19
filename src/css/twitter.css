@@ -176,8 +176,8 @@
     position: absolute;
     transform: scale(0.3) scaleX(-1);
     z-index: 999;
-    top: -78px;
-    right: -300px;
+    top: -40px;
+    right: -205px;
   }
 
   #rss-hover:hover ~ #pointing-hand-rss {
