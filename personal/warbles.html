@@ -129,47 +129,29 @@
         <div id="Timeline">
           <article class="tweet-box pinned">
             <time>12 Sep 2025 · 00:00</time>
-            <p class="tweet-text" style="padding-bottom: 0">
-              Don’t look for me on social media. I don’t have any. <br />
-              If you want to follow me:
-            </p>
-            <ul class="tweet-text">
-              <li>
-                I have this page with an <span id="rss-hover"><b>RSS</b></span
-                ><img
-                  src="/src/media/img/compressed/pointing_hand.avif"
-                  id="pointing-hand-rss" />
-                feed.
-              </li>
-              <li>
-                I have a
-                <a style="color: #ff5600" href="https://gildrom.newgrounds.com/"
-                  >NewGrounds</a
-                >
-                account.
-              </li>
-              <svg
-                style="
-                  position: absolute;
-                  top: 12px;
-                  right: 170px;
-                  transform: rotate(45deg);
-                "
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#71767A"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-pin-icon lucide-pin">
-                <path d="M12 17v5" />
-                <path
-                  d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
-              </svg>
-            </ul>
+            <div class="tweet-text">
+              <p style="padding-bottom: 0">
+                Don’t look for me on social media. I don’t have any. <br />
+                If you want to follow me:
+              </p>
+              <ul>
+                <li>
+                  I have this page with an <span id="rss-hover"><b>RSS</b></span
+                  ><img
+                    src="/src/media/img/compressed/pointing_hand.avif"
+                    id="pointing-hand-rss" />
+                  feed.
+                </li>
+                <li>
+                  I have a
+                  <a id="NG-link" href="https://gildrom.newgrounds.com/"
+                    >NewGrounds</a
+                  >
+                  account.
+                </li>
+                <span class="pin-icon"></span>
+              </ul>
+            </div>
           </article>
 
           <hr />
@@ -177,9 +159,9 @@
 
           <!-- <article class="tweet-box" id="">
             <time>dd mmm 2025 · 00:00</time>
-            <p class="tweet-text">
+            <div class="tweet-text">
 
-            </p>
+            </div>
           </article> -->
 
           <article class="tweet-box" id="poem-where-is-she">

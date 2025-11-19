@@ -55,7 +55,7 @@
     border: none;
     height: 1px;
     background: hsla(var(--color-gray-100-a), 0.9);
-    transform: scaleY(0.5); 
+    transform: scaleY(0.5);
     transform-origin: center;
   }
 
@@ -264,37 +264,6 @@
     padding: 2rem 2rem 1rem 2rem;
     margin-inline: auto;
     max-width: max-content;
-  }
-
-  section a,
-  section a::selection {
-    color: var(--color-link);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-
-    &:hover,
-    &:focus-visible,
-    &::selection:hover {
-      color: var(--color-link-hover);
-    }
-
-    &:active {
-      color: var(--color-link-active);
-    }
-
-    &:visited,
-    &::selection:visited {
-      color: var(--color-link-visited);
-
-      &:hover,
-      &:focus-visible {
-        color: var(--color-link-visited-hover);
-      }
-
-      &:active {
-        color: var(--color-link-visited-active);
-      }
-    }
   }
 
   h1 {
@@ -658,10 +627,42 @@
     width: 100%;
   }
 
+  section a {
+    color: var(--color-link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  section a::selection {
+    color: var(--color-link);
+    background-color: var(--color-green-m);
+  }
 
+  section a:hover,
+  section a:focus-visible,
+  section a:hover::selection,
+  section a:focus-visible::selection {
+    color: var(--color-link-hover);
+  }
 
+  section a:active,
+  section a:active::selection {
+    color: var(--color-link-active);
+  }
 
+  section a:visited,
+  section a:visited::selection {
+    color: var(--color-link-visited);
+  }
 
+  section a:visited:hover,
+  section a:visited:focus-visible,
+  section a:visited:hover::selection,
+  section a:visited:focus-visible::selection {
+    color: var(--color-link-visited-hover);
+  }
 
-  
+  section a:visited:active,
+  section a:visited:active::selection {
+    color: var(--color-link-visited-active);
+  }
 }
