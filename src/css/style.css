@@ -61,7 +61,6 @@
 
   div#Img-wrapper {
     perspective: 2000px;
-
     position: relative;
 
     &:hover img#Profile-pic {
@@ -99,6 +98,9 @@
     transition: transform 0.4s ease;
     transform-origin: 10% 0%;
     user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
   }
 
   div.image-row img.zoomable {
@@ -235,6 +237,10 @@
     span {
       padding: 0 30px;
       transform: translateY(3px);
+      user-select: none;
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none;
     }
   }
 
@@ -518,6 +524,10 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
   }
 
   #newgrounds-webring.minimal {
@@ -529,6 +539,10 @@
     overflow: hidden;
     transition: padding 0.4s ease;
     will-change: padding;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
   }
 
   #newgrounds-webring.minimal .outline {

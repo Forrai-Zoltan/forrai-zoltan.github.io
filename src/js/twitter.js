@@ -13,29 +13,30 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
   box.style.position = "relative";
 
   const profilePic = document.createElement("img");
-  profilePic.className = "profile-pic";
+  profilePic.className = "profile-pic no-select";
   profilePic.src = "/src/media/img/compressed/profile_bw_sq.png";
   profilePic.alt = "profile pic";
   profilePic.width = 50;
   profilePic.height = 50;
 
   const tweeterSpan = document.createElement("span");
-  tweeterSpan.className = "tweeter-me";
+  tweeterSpan.className = "tweeter-me no-select";
   tweeterSpan.textContent = "Zoltan Forrai";
 
   const verified = document.createElement("img");
   verified.src = "/src/asset/ico/twitter_verified_badge.svg";
+  verified.className = "no-select";
   verified.alt = "verified badge";
   verified.width = 20;
   verified.height = 20;
   verified.setAttribute("tabindex", "-1");
 
   const handleSpan = document.createElement("span");
-  handleSpan.className = "tweet-handle";
+  handleSpan.className = "tweet-handle no-select";
   handleSpan.textContent = "@gildrom · ";
 
   const greySpan = document.createElement("span");
-  greySpan.className = "tweet-grey";
+  greySpan.className = "tweet-grey no-select";
   greySpan.appendChild(handleSpan);
   greySpan.appendChild(time);
 
@@ -50,10 +51,11 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
   const rssLink = document.createElement("a");
   rssLink.href = "/src/rss-tweets.xml";
-  rssLink.className = "rss-icon-link";
+  rssLink.className = "rss-icon-link no-select";
 
   const rssIcon = document.createElement("img");
   rssIcon.src = "/src/asset/ico/rss.svg";
+  rssIcon.className = "no-select";
   rssIcon.alt = "RSS Feed";
   rssIcon.width = 16;
   rssIcon.height = 16;

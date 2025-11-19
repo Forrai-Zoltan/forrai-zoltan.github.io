@@ -23,9 +23,8 @@
   }
 
   form#Search-bar {
-
     width: 100%;
-    margin: 0 10px; 
+    margin: 0 10px;
 
     label {
       font-size: 0.75rem;
@@ -83,6 +82,10 @@
       color: var(--color-white);
       cursor: pointer;
       user-select: none;
+      user-select: none;
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Old Edge */
 
       &:focus,
       &:hover {
@@ -91,6 +94,10 @@
 
       img {
         filter: invert(1);
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Old Edge */
       }
     }
   }
@@ -103,20 +110,22 @@
     row-gap: 25px;
     justify-content: center;
 
-
     .card[data-tags="newgrounds"] {
-    background: linear-gradient(to bottom, hsl(0, 0%, 0%) 50%, hsl(0, 0%, 8%)) !important;
+      background: linear-gradient(
+        to bottom,
+        hsl(0, 0%, 0%) 50%,
+        hsl(0, 0%, 8%)
+      ) !important;
       display: block;
 
-
       &:hover span {
-      color: #FFB50E !important;
+        color: #ffb50e !important;
       }
     }
-  
-  .card[data-tags="newgrounds"] span {
-    font-family: "NewGrounds" !important;
-  }
+
+    .card[data-tags="newgrounds"] span {
+      font-family: "NewGrounds" !important;
+    }
 
     .card {
       text-decoration: none;
@@ -159,6 +168,10 @@
         justify-content: center;
         font-size: clamp(0.6rem, 2vw, 1.2rem);
         overflow-wrap: break-word;
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Old Edge */
       }
 
       img {
@@ -166,6 +179,10 @@
         min-height: 100%;
         filter: brightness(0.8);
         object-fit: cover;
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Old Edge */
       }
 
       img.non-cover {
@@ -190,7 +207,7 @@
         }
 
         span {
-        color: white;
+          color: white;
         }
       }
       &:hover::before {
@@ -221,8 +238,6 @@
     z-index: -1;
   }
 
-  
-  
   hr {
     color: hsla(var(--color-gray-100-a), 0.4);
     border: 0.5px solid;
