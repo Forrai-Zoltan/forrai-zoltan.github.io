@@ -62,6 +62,11 @@
   div#img-wrapper {
     perspective: 2000px;
     position: relative;
+    background-color: black;
+  }
+
+  div#img-wrapper img {
+    background-color: black;
   }
 
   div#img-wrapper:hover img#profile-pic {
@@ -314,14 +319,6 @@
     padding: 0 55px;
     font-size: 2rem;
     display: none;
-  }
-
-  h1#landing {
-    margin: 0;
-  }
-
-  h1#landing ~ p:first-of-type {
-    margin-top: 10px;
   }
 
   h2 {
