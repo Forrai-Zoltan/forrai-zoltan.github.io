@@ -112,7 +112,7 @@ div#timeline .rss-icon-link {
   position: absolute;
   top: 6px;
   right: 10px;
-  z-index: 10;
+  z-index: 2;
 }
 
 /* Zoom overlay */
