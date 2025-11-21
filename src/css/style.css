@@ -358,7 +358,8 @@
   div#secret-feedback {
     visibility: hidden;
     text-align: center;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     font-size: 1.1rem;
     color: orangered;
   }
@@ -391,7 +392,7 @@
     user-select: none;
   }
 
- form#secret-form #riddle-password {
+  form#secret-form #riddle-password {
     margin-bottom: 0 !important;
     padding: 10px;
   }
