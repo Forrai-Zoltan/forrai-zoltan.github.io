@@ -1,6 +1,6 @@
 @media only screen and (min-width: 700px) {
-  form#Contact-form,
-  form#Secret-form {
+  form#contact-form,
+  form#secret-form {
     fieldset {
       display: flex;
       flex-direction: column;
@@ -109,7 +109,7 @@
       margin-top: 21px;
     }
 
-    div#Drop-zone {
+    div#drop-zone {
       box-sizing: border-box;
       width: 100%;
       min-height: 200px;
@@ -142,7 +142,7 @@
         transform: translate(-50%, -50%);
       }
 
-      img#Open {
+      img#open {
         display: none;
       }
 
@@ -152,10 +152,10 @@
         box-shadow: inset 0 0 5px 5px hsla(0, 0%, 10%, 0.5),
           0px 5px 10px 2px rgba(0, 0, 0, 0.5);
 
-        img#Plus {
+        img#plus {
           display: none;
         }
-        img#Open {
+        img#open {
           display: block;
         }
       }
@@ -198,7 +198,7 @@
     }
   }
 
-  form#Contact-form {
+  form#contact-form {
     padding: 10px 100px;
   }
 
@@ -221,8 +221,7 @@
     transform: translateY(3px);
   }
 
-form#Secret-form fieldset {
-      padding-top: 0;
-    }
-
+  form#secret-form fieldset {
+    padding-top: 0;
+  }
 }

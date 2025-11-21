@@ -1,6 +1,6 @@
 //SECRET GAME PASSWORD
-const riddlePassword = document.getElementById("Riddle-password");
-const feedback = document.getElementById("Secret-feedback");
+const riddlePassword = document.getElementById("riddle-password");
+const feedback = document.getElementById("secret-feedback");
 const responses = [
   "Nice try...",
   "Incorrect...",
@@ -19,7 +19,7 @@ const responses = [
   "The dolphin of the east only wakes once...",
 ];
 
-const secretForm = document.getElementById("Secret-form");
+const secretForm = document.getElementById("secret-form");
 if (secretForm) {
   secretForm.addEventListener("submit", function (e) {
     e.preventDefault();

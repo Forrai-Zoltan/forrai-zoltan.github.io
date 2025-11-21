@@ -33,7 +33,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
   const handleSpan = document.createElement("span");
   handleSpan.className = "tweet-handle no-select";
-  handleSpan.textContent = "@gildrom · ";
+  handleSpan.textContent = "@gildrom";
 
   const greySpan = document.createElement("span");
   greySpan.className = "tweet-grey no-select";
@@ -69,7 +69,7 @@ document.querySelectorAll(".tweet-box").forEach((box) => {
 
 // Create overlay element once
 const overlay = document.createElement("div");
-overlay.id = "Img-overlay";
+overlay.id = "img-overlay";
 
 const overlayImg = document.createElement("img");
 overlay.appendChild(overlayImg);

@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="/src/css/variables.css" />
   </head>
   <style>
+    @media only screen and (max-width: 700px) {
+      #cv-arrow {
+        display: none !important;
+      }
+    }
+
     @media print {
     }
 
@@ -115,7 +121,7 @@
     }
   </style>
   <body>
-    <nav>
+    <nav id="cv-arrow">
       <a href="/personal/who_am_i"
         ><svg
           xmlns="http://www.w3.org/2000/svg"

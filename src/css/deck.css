@@ -1,5 +1,5 @@
 @media only screen and (min-width: 700px) {
-  section#Purple.non-text {
+  section#purple.non-text {
     background: radial-gradient(
       circle at top,
       transparent,
@@ -14,7 +14,7 @@
     }
   }
 
-  section#Purple.non-text article {
+  section#purple.non-text article {
     margin: 20px;
     padding: 0;
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
   }
 
-  form#Search-bar {
+  form#search-bar {
     width: 100%;
     margin: 0 10px;
 
@@ -101,141 +101,119 @@
       }
     }
   }
-
-  div#Deck {
+  div#deck {
     margin: 30px 10px 25px 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     row-gap: 25px;
     justify-content: center;
-
-    .card[data-tags="newgrounds"] {
-      background: linear-gradient(
-        to bottom,
-        hsl(0, 0%, 0%) 50%,
-        hsl(0, 0%, 8%)
-      ) !important;
-      display: block;
-
-      &:hover span {
-        color: #ffb50e !important;
-      }
-    }
-
-    .card[data-tags="newgrounds"] span {
-      font-family: "NewGrounds" !important;
-    }
-
-    .card {
-      text-decoration: none;
-      border: var(--glass-border);
-      border-radius: 10px;
-      flex: 1 1 290px;
-      max-width: 290px;
-      height: 400px;
-      overflow: hidden;
-      transition: transform 0.3s ease-out;
-      will-change: transform;
-      background: linear-gradient(to bottom, hsl(0, 0%, 6%), hsl(0, 0%, 8%));
-      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-
-      font-size: 1.3rem;
-      color: hsla(var(--color-green-light-a), 0.5);
-      font-family: var(--font-mono);
-      position: relative;
-
-      span {
-        position: absolute;
-        z-index: 2;
-        pointer-events: none;
-        background-color: rgba(0, 0, 0, 0.45);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(5px);
-        width: 100%;
-        height: 25%;
-        color: var(--color-off-white);
-        font-family: var(--font);
-        bottom: 0;
-        text-align: center;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: clamp(0.6rem, 2vw, 1.2rem);
-        overflow-wrap: break-word;
-        user-select: none;
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Old Edge */
-      }
-
-      img {
-        width: 100%;
-        min-height: 100%;
-        filter: brightness(0.8);
-        object-fit: cover;
-        user-select: none;
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Old Edge */
-      }
-
-      img.non-cover {
-        width: 100%;
-        min-height: unset;
-        filter: brightness(0.8);
-        object-fit: contain;
-      }
-
-      &:has(#SpotifyWidget) {
-        align-items: flex-start;
-      }
-
-      &:hover,
-      &:focus-visible {
-        transform: scale(1.06);
-        z-index: 1;
-        border: 0.25px solid rgba(255, 255, 255, 0.4);
-
-        img {
-          filter: brightness(1);
-        }
-
-        span {
-          color: white;
-        }
-      }
-      &:hover::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 2;
-        /* box-shadow: inset 0 0 50px 8px hsla(var(--color-green-light-a), 0.2); */
-      }
-    }
   }
 
-  img#SpotifyWidget,
-  img#SpotifyWidgetPlaceholder {
-    border-radius: 20px;
-    background-color: #121212;
+  div#deck .card[data-tags="newgrounds"] {
+    background: linear-gradient(
+      to bottom,
+      hsl(0, 0%, 0%) 50%,
+      hsl(0, 0%, 8%)
+    ) !important;
+    display: block;
+  }
+
+  div#deck .card[data-tags="newgrounds"]:hover span {
+    color: #ffb50e !important;
+  }
+
+  div#deck .card[data-tags="newgrounds"] span {
+    font-family: "NewGrounds" !important;
+  }
+
+  div#deck .card {
+    text-decoration: none;
+    border: var(--glass-border);
+    border-radius: 10px;
+    flex: 1 1 290px;
     max-width: 290px;
-    height: 102.5%;
-    position: absolute !important;
+    height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    background: linear-gradient(to bottom, hsl(0, 0%, 6%), hsl(0, 0%, 8%));
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: hsla(var(--color-green-light-a), 0.5);
+    font-family: var(--font-mono);
+    position: relative;
   }
 
-  img#SpotifyWidgetPlaceholder {
-    height: 101% !important;
-    z-index: -1;
+  div#deck .card span {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 25%;
+    color: var(--color-off-white);
+    font-family: var(--font);
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.6rem, 2vw, 1.2rem);
+    overflow-wrap: break-word;
+  }
+
+  div#deck .card img {
+    width: 100%;
+    min-height: 100%;
+    filter: brightness(0.8);
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  div#deck .card img.non-cover {
+    width: 100%;
+    min-height: unset;
+    filter: brightness(0.8);
+    object-fit: contain;
+  }
+
+  div#deck .card:hover,
+  div#deck .card:focus-visible {
+    transform: scale(1.06);
+    z-index: 1;
+    border: 0.25px solid rgba(255, 255, 255, 0.4);
+  }
+
+  div#deck .card:hover img,
+  div#deck .card:focus-visible img {
+    filter: brightness(1);
+  }
+
+  div#deck .card:hover span,
+  div#deck .card:focus-visible span {
+    color: white;
+  }
+
+  div#deck .card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    /* box-shadow: inset 0 0 50px 8px hsla(var(--color-green-light-a), 0.2); */
   }
 
   hr {

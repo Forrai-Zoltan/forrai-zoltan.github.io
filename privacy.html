@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <nav id="Title-bar" aria-label="Site Title">
+      <nav id="title-bar" aria-label="Site Title">
         <a href="/">
           <img
             width="36"
@@ -31,11 +31,11 @@
       </nav>
       <input hidden type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">☰</label>
-      <nav id="Dropdown-menu" aria-label="Main Menu">
+      <nav id="dropdown-menu" aria-label="Main Menu">
         <ul>
           <li class="dropdown-category">
             <a href="/personal/"
-              ><img src="/src/asset/ico/lucide/user-round.svg" />Personal</a
+              ><img src="/src/asset/ico/lucide/user-round.svg" width="20px" />Personal</a
             >
             <ul>
               <li>
@@ -58,7 +58,7 @@
           </li>
           <li class="dropdown-category">
             <a href="/literary/"
-              ><img src="/src/asset/ico/lucide/library-big.svg" />Literary</a
+              ><img src="/src/asset/ico/lucide/library-big.svg" width="20px" />Literary</a
             >
             <ul>
               <li>
@@ -80,7 +80,7 @@
           </li>
           <li class="dropdown-category">
             <a href="/tavern/"
-              ><img src="/src/asset/ico/lucide/barrel.svg" />Tavern</a
+              ><img src="/src/asset/ico/lucide/barrel.svg" width="20px" />Tavern</a
             >
             <ul>
               <li>
@@ -102,7 +102,7 @@
           </li>
           <li class="dropdown-category">
             <a href="/beyond/"
-              ><img src="/src/asset/ico/lucide/moon.svg" />Beyond</a
+              ><img src="/src/asset/ico/lucide/moon.svg" width="20px" />Beyond</a
             >
             <ul>
               <li>
@@ -126,18 +126,8 @@
       </nav>
     </header>
     <main>
-      <style>
-        ol li::marker {
-          color: orange;
-        }
-        ul {
-          list-style-type: disc;
-        }
-      </style>
-      <section
-        id="Purple"
-        style="display: flex; flex-direction: column; align-items: center">
-        <h1 style="text-align: center; margin-top: 50px; margin-bottom: 10px">
+      <section id="purple" class="privacy-section">
+        <h1>
           Privacy Policy
         </h1>
         <ol style="margin-bottom: 0">

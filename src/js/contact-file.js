@@ -1,7 +1,7 @@
 // For Contact File upload //
 
 document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
-  const dropZoneElement = inputElement.closest("#Drop-zone");
+  const dropZoneElement = inputElement.closest("#drop-zone");
 
   let currentFile = null;
 

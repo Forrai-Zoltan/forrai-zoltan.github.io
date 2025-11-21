@@ -1,7 +1,7 @@
 // For Cards-View //
 
 document.addEventListener("DOMContentLoaded", () => {
-  const searchInput = document.getElementById("Search");
+  const searchInput = document.getElementById("search");
   const cards = document.querySelectorAll(".card");
 
   searchInput.addEventListener("input", function () {
@@ -54,22 +54,11 @@ document.querySelectorAll(".card").forEach((card) => {
   card.setAttribute("tabindex", "0");
 });
 
-function refreshSpotifyWidget() {
-  const img = document.getElementById("SpotifyWidget");
-  const baseUrl = img.src.split("?")[0];
-  const params = new URLSearchParams(img.src.split("?")[1]);
-  params.set("t", Date.now());
-  img.src = `${baseUrl}?${params.toString()}`;
-  if (img) {
-    setInterval(refreshSpotifyWidget, 30000);
-  }
-}
-
 //////////////////////////////////////
 // Only show first two rows of cards!
 
 function showOnlyTwoRows() {
-  const deck = document.getElementById("Deck");
+  const deck = document.getElementById("deck");
   const cards = Array.from(deck.children);
 
   if (!cards.length) return;

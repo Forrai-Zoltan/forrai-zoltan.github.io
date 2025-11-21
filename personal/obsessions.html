@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <nav id="Title-bar" aria-label="Site Title">
+      <nav id="title-bar" aria-label="Site Title">
         <a href="/">
           <img
             width="36"
@@ -29,11 +29,11 @@
       </nav>
       <input hidden type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">☰</label>
-      <nav id="Dropdown-menu" aria-label="Main Menu">
+      <nav id="dropdown-menu" aria-label="Main Menu">
         <ul>
           <li class="dropdown-category">
             <a href="/personal/"
-              ><img src="/src/asset/ico/lucide/user-round.svg" />Personal</a
+              ><img src="/src/asset/ico/lucide/user-round.svg" width="20px" />Personal</a
             >
             <ul>
               <li>
@@ -56,7 +56,7 @@
           </li>
           <li class="dropdown-category">
             <a href="/literary/"
-              ><img src="/src/asset/ico/lucide/library-big.svg" />Literary</a
+              ><img src="/src/asset/ico/lucide/library-big.svg" width="20px" />Literary</a
             >
             <ul>
               <li>
@@ -78,7 +78,7 @@
           </li>
           <li class="dropdown-category">
             <a href="/tavern/"
-              ><img src="/src/asset/ico/lucide/barrel.svg" />Tavern</a
+              ><img src="/src/asset/ico/lucide/barrel.svg" width="20px" />Tavern</a
             >
             <ul>
               <li>
@@ -100,7 +100,7 @@
           </li>
           <li class="dropdown-category">
             <a href="/beyond/"
-              ><img src="/src/asset/ico/lucide/moon.svg" />Beyond</a
+              ><img src="/src/asset/ico/lucide/moon.svg" width="20px" />Beyond</a
             >
             <ul>
               <li>
@@ -124,14 +124,14 @@
       </nav>
     </header>
     <main>
-      <section class="non-text" id="Purple">
+      <section class="non-text" id="purple">
         <article>
-          <h1 id="Gallery-h1">My Current Obsessions</h1>
-          <form action="" id="Search-bar">
+          <h1 id="gallery-h1">Obsessions</h1>
+          <form action="" id="search-bar">
             <div>
               <input
                 autocomplete="off"
-                id="Search"
+                id="search"
                 name="filter"
                 type="text"
                 placeholder="Filter..." /><button disabled>
@@ -140,21 +140,14 @@
             </div>
           </form>
         </article>
-        <div id="Deck">
-          <!-- <a
-            data-tags="spotify music song"
-            class="card"
-            href="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&redirect=true">
-            <img
-              id="SpotifyWidget"
-              src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false" />
-          </a> -->
+        <div id="deck">
           <a
             data-tags="library reading book recommendations"
             class="card"
-            href="/personal/library/"
-            > <span>My Library</span> <img src="/src/media/img/library-preview.png" alt=""></a
-          >
+            href="/personal/library/">
+            <span>My Library</span>
+            <img src="/src/media/img/library-preview.png" alt=""
+          /></a>
           <a data-tags="" class="card" href=""></a>
           <a data-tags="" class="card" href=""></a>
           <a data-tags="" class="card" href=""></a>

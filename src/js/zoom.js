@@ -1,27 +1,26 @@
-
 // Lightbox / Zoom helper for images inside `.image-row`
 (() => {
   // Create overlay and image elements
-  const overlay = document.createElement('div');
-  overlay.id = 'Img-overlay';
-  overlay.setAttribute('role', 'dialog');
-  overlay.setAttribute('aria-hidden', 'true');
+  const overlay = document.createElement("div");
+  overlay.id = "img-overlay";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-hidden", "true");
 
-  const overlayInner = document.createElement('div');
-  overlayInner.className = 'Img-overlay-inner';
+  const overlayInner = document.createElement("div");
+  overlayInner.className = "img-overlay-inner";
 
-  const overlayImg = document.createElement('img');
-  overlayImg.className = 'Img-overlay-img';
-  overlayImg.alt = '';
+  const overlayImg = document.createElement("img");
+  overlayImg.className = "img-overlay-img";
+  overlayImg.alt = "";
 
   overlayInner.appendChild(overlayImg);
   overlay.appendChild(overlayInner);
   document.body.appendChild(overlay);
 
   // Styling for overlay (scoped here so no external CSS changes required)
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.textContent = `
-    #Img-overlay {
+    #img-overlay {
       position: fixed;
       inset: 0;
       display: flex;
@@ -33,7 +32,7 @@
       box-sizing: border-box;
       user-select: none;
     }
-    #Img-overlay[aria-hidden="true"] { display: none; }
+    #img-overlay[aria-hidden="true"] { display: none; }
     /* Inner container will size to viewport minus padding so image fits */
     .Img-overlay-inner {
       width: calc(100% - 40px);
@@ -46,7 +45,7 @@
       box-sizing: border-box;
       overflow: hidden;
     }
-    .Img-overlay-img {
+    .img-overlay-img {
       display: block;
       max-width: 100%;
       max-height: 100%;
@@ -62,11 +61,11 @@
 
   // Gather all images inside .image-row and make them zoomable
   function markZoomableImages() {
-    const imgs = document.querySelectorAll('.image-row img');
+    const imgs = document.querySelectorAll(".image-row img");
     imgs.forEach((img) => {
-      img.setAttribute('tabindex', '0');
-      img.setAttribute('role', 'button');
-      img.setAttribute('aria-label', 'Open image');
+      img.setAttribute("tabindex", "0");
+      img.setAttribute("role", "button");
+      img.setAttribute("aria-label", "Open image");
     });
   }
 
@@ -74,10 +73,10 @@
 
   // Utility to find the list of zoomable images (we scope to same .image-row container when possible)
   function getGroupImages(currentImg) {
-    const row = currentImg.closest('.image-row');
-    if (row) return Array.from(row.querySelectorAll('img'));
+    const row = currentImg.closest(".image-row");
+    if (row) return Array.from(row.querySelectorAll("img"));
     // fallback: all zoomable images
-    return Array.from(document.querySelectorAll('.image-row img'));
+    return Array.from(document.querySelectorAll(".image-row img"));
   }
 
   let currentIndex = -1;
@@ -87,30 +86,31 @@
     currentGroup = getGroupImages(imgEl);
     currentIndex = currentGroup.indexOf(imgEl);
     overlayImg.src = imgEl.src;
-    overlayImg.alt = imgEl.alt || '';
-    overlay.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('no-scroll');
+    overlayImg.alt = imgEl.alt || "";
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("no-scroll");
   }
 
   function closeOverlay() {
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('no-scroll');
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("no-scroll");
     currentIndex = -1;
     currentGroup = [];
   }
 
   function showNext(delta) {
     if (!currentGroup.length) return;
-    currentIndex = (currentIndex + delta + currentGroup.length) % currentGroup.length;
+    currentIndex =
+      (currentIndex + delta + currentGroup.length) % currentGroup.length;
     const next = currentGroup[currentIndex];
     overlayImg.src = next.src;
-    overlayImg.alt = next.alt || '';
+    overlayImg.alt = next.alt || "";
   }
 
   // Click handler (delegated)
-  document.addEventListener('click', (e) => {
+  document.addEventListener("click", (e) => {
     const target = e.target;
-    if (target.matches('.image-row img.zoomable')) {
+    if (target.matches(".image-row img.zoomable")) {
       e.preventDefault();
       openOverlayFrom(target);
       return;
@@ -124,30 +124,35 @@
   });
 
   // Keyboard handlers
-  document.addEventListener('keydown', (e) => {
+  document.addEventListener("keydown", (e) => {
     // If focused on a zoomable image, Enter opens
     const active = document.activeElement;
-    if (e.key === 'Enter' && active && active.matches && active.matches('.image-row img.zoomable')) {
+    if (
+      e.key === "Enter" &&
+      active &&
+      active.matches &&
+      active.matches(".image-row img.zoomable")
+    ) {
       e.preventDefault();
       openOverlayFrom(active);
       return;
     }
 
     // If overlay open
-    const overlayVisible = overlay.getAttribute('aria-hidden') === 'false';
+    const overlayVisible = overlay.getAttribute("aria-hidden") === "false";
     if (!overlayVisible) return;
 
-    if (e.key === 'Escape') {
+    if (e.key === "Escape") {
       closeOverlay();
       return;
     }
 
-    if (e.key === 'ArrowRight') {
+    if (e.key === "ArrowRight") {
       showNext(1);
       return;
     }
 
-    if (e.key === 'ArrowLeft') {
+    if (e.key === "ArrowLeft") {
       showNext(-1);
       return;
     }
@@ -160,5 +165,4 @@
     }
   });
   observer.observe(document.body, { childList: true, subtree: true });
-
 })();
