@@ -223,5 +223,6 @@
 
   form#secret-form fieldset {
     padding-top: 0;
+    width: 100%;
   }
 }

@@ -335,10 +335,9 @@
 
   section#purple article#secret-flow {
     padding: 0 2rem;
-    display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    width: 80vw;
+    width: 50vw;
   }
 
   section.privacy-section {
@@ -379,12 +378,22 @@
 
   form#secret-form {
     flex: 1;
-    width: 50em;
+    width: 100%;
     align-self: center;
+  }
+
+  form#secret-form fieldset {
+    padding: 0;
+    margin-top: 20px;
   }
 
   form#secret-form label {
     user-select: none;
+  }
+
+ form#secret-form #riddle-password {
+    margin-bottom: 0 !important;
+    padding: 10px;
   }
 
   p {
