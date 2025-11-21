@@ -142,7 +142,7 @@ document.addEventListener("click", (e) => {
 // Copy LINK
 
 const links = document.getElementsByClassName("rss-icon-link");
-const message = document.getElementById("Copy-message");
+const message = document.getElementById("copy-message");
 
 if (message) {
   document.addEventListener("mousemove", function (event) {

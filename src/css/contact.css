@@ -225,4 +225,24 @@
     padding-top: 0;
     width: 100%;
   }
+
+  .lucide-info:hover {
+    stroke: lightslategray;
+    cursor: pointer;
+  }
+
+  .lucide-info:hover ~ span {
+    display: inline;
+  }
+
+  .mail-info {
+    font-size: 0.56rem;
+    font-family: var(--font-mono);
+    margin-left: 0px;
+    padding: 2px 10px;
+    background-color: rgba(60, 60, 60, 0.684);
+    border-radius: 5px;
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
