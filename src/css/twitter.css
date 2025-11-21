@@ -21,7 +21,7 @@ span img {
 }
 
 li::marker {
-  color: orangered;
+  color: orangered !important;
   margin-top: 0;
 }
 
