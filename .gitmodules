@@ -13,3 +13,6 @@
 [submodule "essays"]
 	path = literary/essays
 	url = https://github.com/Forrai-Zoltan/essays
+[submodule "secret"]
+	path = secret
+	url = https://github.com/Forrai-Zoltan/secret
