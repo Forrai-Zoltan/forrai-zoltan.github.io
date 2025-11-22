@@ -1,6 +1,6 @@
 @media only screen and (min-width: 700px) {
   form#contact-form,
-  form#secret-form {
+  form.secret-form {
     fieldset {
       display: flex;
       flex-direction: column;
