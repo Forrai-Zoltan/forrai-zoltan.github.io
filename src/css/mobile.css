@@ -236,7 +236,10 @@
   h1#index-h1 {
     text-align: center;
     font-size: clamp(1.3rem, 7vw, 6rem);
-    white-space: wrap;
+    white-space: normal; /* allows wrapping */
+    word-wrap: break-word; /* ensures long words break if needed */
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
   }
 
   h1#secret-h1 {
