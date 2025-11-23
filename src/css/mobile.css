@@ -802,6 +802,11 @@
     font-family: var(--font-jb-mono);
   }
 
+  a:has(#about-spotify) {
+    height: max-content;
+
+  }
+
   #about-spotify {
     position: relative;
     display: flex;
@@ -817,7 +822,7 @@
   #about-spotify img {
     min-width: 100%;
     max-width: 100%;
-
+    scale: 0.9;
   }
 
   span#sp-shadow {
