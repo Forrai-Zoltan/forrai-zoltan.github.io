@@ -903,6 +903,14 @@
     color: var(--color-link-visited-active);
   }
 
+  .about-green p {
+    overflow: visible;
+    white-space: nowrap;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+  }
+
   #moveMe {
     position: absolute;
     bottom: 0;
