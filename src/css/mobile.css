@@ -853,7 +853,7 @@
     box-shadow: 0px 15px 19px 2px rgba(0, 0, 0, 0.5);
   }
 
-  div#green-box.about-green {
+  .about-green {
     padding: 1rem;
     background: radial-gradient(
       circle at top,
@@ -861,34 +861,45 @@
       hsla(var(--color-green-light-a), 0.25) 90%
     );
     max-height: fit-content;
+    box-shadow: inset 0px -10px 25px -11px rgba(0, 0, 0, 0.8),
+      inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8),
+      0px 15px 19px 2px rgba(0, 0, 0, 0.5);
+    border: var(--glass-border);
+    border-radius: 20px;
+    background: radial-gradient(
+      circle at top,
+      var(--color-black) 30%,
+      hsla(var(--color-green-light-a), 0.3) 90%
+    );
+    align-items: center;
   }
 
-  div#green-box.about-green a,
-  div#green-box.about-green a::selection {
+  .about-green a,
+  .about-green a::selection {
     color: var(--color-link);
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
   }
 
-  div#green-box.about-green a:hover,
-  div#green-box.about-green a:focus-visible {
+  .about-green a:hover,
+  .about-green a:focus-visible {
     color: var(--color-link-hover);
   }
 
-  div#green-box.about-green a:active {
+  .about-green a:active {
     color: var(--color-link-active);
   }
 
-  div#green-box.about-green a:visited {
+  .about-green a:visited {
     color: var(--color-link-visited);
   }
 
-  div#green-box.about-green a:visited:hover,
-  div#green-box.about-green a:visited:focus-visible {
+  .about-green a:visited:hover,
+  .about-green a:visited:focus-visible {
     color: var(--color-link-visited-hover);
   }
 
-  div#green-box.about-green a:visited:active {
+  .about-green a:visited:active {
     color: var(--color-link-visited-active);
   }
 
@@ -947,6 +958,6 @@
   }
 
   div#copy-message {
-    width: 140px
+    width: 140px;
   }
 }
