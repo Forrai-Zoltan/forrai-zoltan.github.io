@@ -146,8 +146,13 @@ const message = document.getElementById("copy-message");
 
 if (message) {
   document.addEventListener("mousemove", function (event) {
-    message.style.left = `${event.clientX + 10}px`;
-    message.style.top = `${event.clientY + 10}px`;
+    const isMobile = window.matchMedia("(max-width: 600px)").matches;
+
+    const offsetX = isMobile ? -150 : 10;
+    const offsetY = isMobile ? -55 : 10;
+
+    message.style.left = `${event.clientX + offsetX}px`;
+    message.style.top = `${event.clientY + offsetY}px`;
   });
 }
 

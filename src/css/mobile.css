@@ -942,7 +942,11 @@
     display: block;
   }
 
- #link-to-me-div {
-  display: none;
- }
+  #link-to-me-div {
+    display: none;
+  }
+
+  div#copy-message {
+    width: 140px
+  }
 }
