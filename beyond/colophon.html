@@ -32,7 +32,9 @@
         <ul>
           <li class="dropdown-category">
             <a href="/personal/"
-              ><img src="/src/asset/ico/lucide/user-round.svg" width="20px"/>Personal</a
+              ><img
+                src="/src/asset/ico/lucide/user-round.svg"
+                width="20px" />Personal</a
             >
             <ul>
               <li>
@@ -55,7 +57,9 @@
           </li>
           <li class="dropdown-category">
             <a href="/literary/"
-              ><img src="/src/asset/ico/lucide/library-big.svg" width="20px"/>Literary</a
+              ><img
+                src="/src/asset/ico/lucide/library-big.svg"
+                width="20px" />Literary</a
             >
             <ul>
               <li>
@@ -77,7 +81,9 @@
           </li>
           <li class="dropdown-category">
             <a href="/tavern/"
-              ><img src="/src/asset/ico/lucide/barrel.svg" width="20px"/>Tavern</a
+              ><img
+                src="/src/asset/ico/lucide/barrel.svg"
+                width="20px" />Tavern</a
             >
             <ul>
               <li>
@@ -99,7 +105,9 @@
           </li>
           <li class="dropdown-category">
             <a href="/beyond/"
-              ><img src="/src/asset/ico/lucide/moon.svg" width="20px"/>Beyond</a
+              ><img
+                src="/src/asset/ico/lucide/moon.svg"
+                width="20px" />Beyond</a
             >
             <ul>
               <li>
@@ -125,48 +133,173 @@
     <main>
       <section id="purple">
         <article>
+          <style>
+            ul {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+            .indented {
+              margin-left: 40px;
+            }
+            #copy-message {
+              position: fixed;
+              background: radial-gradient(
+                circle at center,
+                hsla(var(--color-purple-hover-a), 0.95),
+                hsla(var(--color-purple-hover-a), 0.95),
+                hsla(var(--color-purple-a), 0.95)
+              );
+              border: 1px solid goldenrod;
+              border-radius: 10px;
+              box-shadow: 0px 5px 10px hsla(var(--color-gray-900-a), 0.7);
+              color: #fff;
+              padding: 6px 10px;
+              padding-bottom: 2px;
+              font-size: 18px;
+              pointer-events: none;
+              opacity: 0;
+              transition: opacity 0.2s ease-in-out, transform 0.2s ease;
+              z-index: 9999;
+            }
+            #copy-button-img {
+              transform: translateY(8px);
+              transition: transform 0.3s ease;
+              margin-left: 10px;
+              cursor: pointer;
+            }
+            #copy-button-img:hover {
+              transform: translateY(8px) scale(1.05);
+            }
+            #copy-button-img:active {
+              transform: translateY(8px) scale(0.95);
+            }
+            #tech-stack {
+              margin-top: 30px;
+            }
+            #copy-right {
+              text-align: center;
+            }
+            hr.top {
+              margin: 50px 0;
+            }
+            main a {
+              font-weight: bold;
+            }
+          </style>
           <h1 id="smaller-h1" style="padding-bottom: 0">Colophon</h1>
-          <p>
-            Thank you for visiting! The code for this website is available on my
-            <a href="https://github.com/Forrai-Zoltan/forrai-zoltan.github.io"
-              >GitHub</a
-            >.
+          <div id="copy-message" class="no-select" tabindex="-1">
+            <b>Button link copied!</b>
+          </div>
+
+          <p class="spell-line">
+            And as the chapter closes, the spell shatters...
           </p>
           <p>
-            (It goes without saying, but the site is under permanent
-            construction. Not everything works as expected—or at all. And keep
-            in mind that I'm no dev, just a humble English teacher (EFL) trying
-            his best.)
+            Thank you for visiting my site, friend! Did you enjoy your stay? I
+            sincerely hope you were able to find something fun to read. An I
+            hope my puzzles weren’t too difficult to distract from the mystery.
+            Did you find every secret I’ve hidden? Or are you still looking?
+            Well, don’t give up now!
           </p>
           <p>
-            If you wish, you can help me by becoming a beta reader (<a
-              href="/tavern/contact"
-              >message me if you're in</a
-            >). Or if you feel generous you can
-            <a href="/tavern/shoppe">browse my wares</a> or
-            <a href="/tavern/patronage">become a patron</a> for my art.
+            This website is a passion project of mine, and I put a great deal of
+            love and work into it. Every day I find something new to fix or
+            tinker with. Keep in mind, however, that I’m no dev, just a humble
+            English teacher (TEFL) trying his best. It probably goes without
+            saying, but the site is under permanent construction; not everything
+            may work as expected... or at all.
           </p>
-          <h2 style="padding-top: 20px">Technologies Used</h2>
+          <p>If you did enjoy your time here, would you consider?</p>
           <ul>
+            <li>Bookmarking my page in your browser,</li>
             <li>
-              <span style="font-family: var(--font-mono); font-size: 0.85rem">
-                Monospaced pixel font:
-                <a href="https://www.departuremono.com/">Departure Mono</a>
-              </span>
+              Following my <a href="/personal/warbles">RSS feed</a> for news and
+              updates,
             </li>
             <li>
-              Currently Playing on Spotify: Kittinan's
-              <a href="https://github.com/kittinan/spotify-github-profile">
-                spotify-github-profile</a
+              Linking to me through my button:
+              <img
+                id="copy-button-img"
+                class="no-select"
+                src="https://www.gildrom.com/button.gif" />
+            </li>
+          </ul>
+          <p>
+            I hope to see you again soon. By next time, I’ll have more stories,
+            more riddles, and more magic to share with you.
+          </p>
+          <p class="indented">
+            Until then, with the greatest of wishes, <br />
+            Your loyal friend,
+          </p>
+          <p class="indented"><b>Gildrom</b>, Forrai Zoltán</p>
+          <hr class="top" />
+          <h2>Technologies Used</h2>
+          <p>
+            The code for this website is available on my
+            <a href="https://github.com/Forrai-Zoltan">GitHub</a>.
+          </p>
+          <ul>
+            <li>
+              Domain name provider:
+              <a href="https://www.cloudflare.com/products/registrar/"
+                >Cloudflare registrar</a
               >
             </li>
             <li>
-              Font-End Form Submit:
-              <a href="https://formsubmit.co/">formsubmit.co</a>
+              Site hosted on:
+              <a href="https://docs.github.com/en/pages">GitHub Pages</a>
             </li>
             <li>
-              Markdown parser:
+              Literary Font:
+              <a href="https://en.wikipedia.org/wiki/Cochin_(typeface)"
+                >Cochin</a
+              >.
+            </li>
+            <li>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem">
+                Monospaced Pixel Font:
+                <a href="https://www.departuremono.com/">Departure Mono</a>.
+              </span>
+            </li>
+            <li>
+              <span
+                style="font-family: var(--font-jb-mono); font-size: 0.85rem">
+                Monospaced Ligature Font:
+                <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>.
+              </span>
+            </li>
+            <li>
+              <span style="font-family: var(--font-ng)">
+                <a
+                  href="https://www.newgrounds.com/dump/item/f858f852e56f5dda50ae2aa869455495"
+                  >NewGrounds Font</a
+                ></span
+              >
+              by <a href="https://filiprb.newgrounds.com/">@Filiprb</a>.
+            </li>
+            <li>
+              <a href="https://github.com/kittinan/spotify-github-profile"
+                >Spotify Widget</a
+              >
+              by <a href="https://github.com/kittinan">@Kittinan</a>
+            </li>
+            <li>
+              Markdown Renderer:
               <a href="https://github.com/markedjs/marked">marked.js</a>
+            </li>
+            <li>
+              Front-end Form Submit:
+              <a href="https://formsubmit.co/">Formsubmit</a>
+            </li>
+            <li>
+              Front-end Encryption:
+              <a href="https://github.com/robinmoisson/staticrypt"
+                >StatiCrypt</a
+              >
+            </li>
+            <li>
+              Video Hosting: <a href="https://archive.org/">Internet Archive</a>
             </li>
           </ul>
           <div id="tech-stack" class="no-select">
@@ -213,25 +346,55 @@
             /></a>
           </div>
           <hr />
-          <div id="link-to-me-div">
-            <p>
-              Link to me:
-              <img
-                class="no-select"
-                style="margin-left: 20px; transform: translateY(8px)"
-                src="https://www.gildrom.com/button.gif" />
-            </p>
-            <span id="link-to-me" class="no-wrap">
-              &lt;a href="https://www.gildrom.com"&gt;&lt;img
-              src="https://www.gildrom.com/button.gif"/&gt;&lt;/a&gt;
-            </span>
-          </div>
+
+
+
+
+          <hr />
           <p id="copy-right"></p>
         </article>
       </section>
     </main>
   </body>
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("copy-button-img");
+      const message = document.getElementById("copy-message");
+
+      if (!button || !message) return;
+
+      // Make the message follow the mouse
+      document.addEventListener("mousemove", (event) => {
+        const isMobile = window.matchMedia("(max-width: 600px)").matches;
+        const offsetX = isMobile ? -150 : 60;
+        const offsetY = isMobile ? -55 : -15;
+
+        message.style.left = `${event.clientX + offsetX}px`;
+        message.style.top = `${event.clientY + offsetY}px`;
+      });
+
+      // On click, copy HTML snippet
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        const textToCopy =
+          '<a href="https://www.gildrom.com"><img src="https://www.gildrom.com/button.gif"/></a>';
+
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(() => {
+            message.style.opacity = "1"; // show message
+
+            // Hide after 3 seconds
+            setTimeout(() => {
+              message.style.opacity = "0";
+            }, 3000);
+          })
+          .catch((err) => {
+            console.error("Failed to copy:", err);
+          });
+      });
+    });
+
     const year = new Date().getFullYear();
     const copyright = document.getElementById("copy-right");
     if (copyright) {
