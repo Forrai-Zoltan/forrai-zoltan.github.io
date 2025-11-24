@@ -970,4 +970,9 @@
   div#copy-message {
     width: 140px;
   }
+  .spell-line {
+    color: SlateBlue;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
 }

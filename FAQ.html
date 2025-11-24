@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/css/navigate-back.css" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <style>
+    ::selection {
+      background-color: var(--color-green-m);
+      color: var(--color-green-light);
+    }
+
+    :focus-visible {
+      outline: 3px solid orange;
+      transition: outline 0.2s ease;
+      border-radius: inherit;
+    }
+    html {
+      background-color: black;
+      color: var(--color-off-white);
+    }
+    body {
+      margin: 0 20vw;
+      font-family: var(--font-mono);
+    }
+    hr {
+      width: 100%;
+      border: none;
+      height: 1px;
+      background: hsla(var(--color-gray-100-a), 0.9);
+      transform: scaleY(0.5);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    main {
+      margin-top: 50px;
+    }
+    summary {
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: wheat;
+      hyphens: auto;
+      word-break: break-word;
+    }
+    summary::marker {
+      color: orange;
+    }
+    details {
+      font-size: 0.8rem;
+    }
+    details p {
+      margin-top: 20px;
+      padding-left: 30px;
+      hyphens: auto;
+      word-break: break-word;
+    }
+    @media only screen and (max-width: 700px) {
+      #navigate-back-a {
+        display: none;
+      }
+      body {
+        margin: 0 20px;
+        font-family: var(--font-mono);
+        font-size: 20px;
+      }
+      summary {
+        cursor: pointer;
+        font-size: 1rem;
+        hyphens: auto;
+        word-break: break-word;
+      }
+      details p {
+        margin-top: 10px;
+        padding-left: 5px;
+        hyphens: auto;
+        word-break: break-word;
+      }
+    }
+  </style>
+  <body>
+    <a id="navigate-back-a" href="/personal/who_am_i">
+      <div id="nav-back">
+        <img
+          src="/src/media/img/compressed/socrates-middle-finger.png"
+          alt="" />
+        <span id="nav-back-span">Go back to the main site</span>
+      </div>
+    </a>
+    <h1 title="Frantically Avoided Quandaries">FAQ</h1>
+    <p>Ask your questions here: <a href="/tavern/contact">Contact</a>.</p>
+    <hr />
+    <main>
+      <details>
+        <!-- prettier-ignore -->
+        <summary class="no-select" role="heading" aria-level="2">What is the password for the secret page?</summary>
+        <p>
+          Every once in a while, the riddle shifts, it rearranges itself.
+          Perhaps to offer you more clues or to make a puzzle harder. As a
+          result, the answer to the riddle might change as well. You can’t
+          expect the old keys to work if the keyholes have been altered. Still,
+          I wouldn’t discard any past solution. They may prove useful again
+          later...
+        </p>
+      </details>
+    </main>
+  </body>
+</html>
