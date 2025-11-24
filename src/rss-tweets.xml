@@ -18,6 +18,17 @@
 
     <!-- Add more <item> blocks here -->
 
+    <item>
+      <title>Frequently Asked Question Page</title>
+      <link>https://gildrom.com/personal/warbles.html#created-faq-page</link>
+      <description>
+        <![CDATA[
+          I've created a FAQ page. Check it out here: <a href="/FAQ">FAQ page</a>.
+        ]]>
+      </description>
+      <pubDate>Mon, 24 Nov 2025 13:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://gildrom.com/personal/warbles.html#created-faq-page</guid>
+    </item>
     
     <item>
       <title>Ballad: Where’s She?</title>
