@@ -8,6 +8,29 @@ section div#timeline a:any-link:hover {
   color: var(--color-link);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS only fade-out effect for :target */
+:target {
+  outline: 5px solid orange;
+  border-radius: inherit;
+  animation: highlightFade 8s forwards; /* total duration 2s */
+}
+
+@keyframes highlightFade {
+  0% {
+    outline-color: orange; /* fully visible immediately */
+  }
+  50% {
+    outline-color: orange; /* keep visible for 1 second */
+  }
+  100% {
+    outline-color: transparent; /* fade out by end */
+  }
+}
+
 a#NG-link {
   color: orangered !important;
 }
