@@ -34,9 +34,9 @@
     }
     #img-overlay[aria-hidden="true"] { display: none; }
     /* Inner container will size to viewport minus padding so image fits */
-    .Img-overlay-inner {
-      width: calc(100% - 40px);
-      height: calc(100% - 40px);
+    .img-overlay-inner {
+      width: calc(100vw - 40px);
+      height: calc(100vh - 40px);
       max-width: 100%;
       max-height: 100%;
       display: flex;
