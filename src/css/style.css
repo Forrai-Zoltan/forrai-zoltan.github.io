@@ -544,68 +544,6 @@
     margin-bottom: 0;
   }
 
-  #newgrounds-webring:not(.minimal) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none;
-  }
-
-  #newgrounds-webring.minimal {
-    z-index: 1;
-    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
-    margin: 30px auto;
-    border-radius: 9px;
-    height: 33px;
-    overflow: hidden;
-    transition: padding 0.4s ease;
-    will-change: padding;
-    user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none;
-  }
-
-  #newgrounds-webring.minimal .outline {
-    border-radius: 8px 8px 0 0;
-    scale: 1.001;
-  }
-
-  #newgrounds-webring.minimal .background {
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  #newgrounds-webring.minimal .footer {
-    border-radius: 5px;
-    position: relative;
-    z-index: 2;
-    transform: translateY(-310%);
-    transition: transform 0.5s ease;
-    will-change: transform;
-  }
-
-  /* #newgrounds-webring.minimal:hover .background {
-    border-radius: 10px;
-    opacity: 1;
-  } */
-
-  /* #newgrounds-webring.minimal:hover .footer {
-    transform: translateY(0);
-    border-radius: 0 0 8px 8px;
-  }
-
-  #newgrounds-webring.minimal:hover {
-    transform: translateY(0);
-    padding-bottom: 85px;
-  } */
-
   p {
     margin-bottom: 10px;
   }
@@ -747,5 +685,12 @@
     color: SlateBlue;
     font-size: 1.1rem;
     font-style: italic;
+  }
+
+  .webring-link {
+    color: whitesmoke;
+  }
+  .webring-link:hover {
+    color: white;
   }
 }
