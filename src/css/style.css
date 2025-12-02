@@ -688,7 +688,7 @@
   }
 
   .webring-link {
-    color: whitesmoke;
+    color: var(--color-off-white);
   }
   .webring-link:hover {
     color: white;

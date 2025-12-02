@@ -742,10 +742,6 @@
     list-style-type: disc;
   }
 
-  #newgrounds-webring.minimal {
-    display: none;
-  }
-
   section.privacy-section {
     display: flex;
     flex-direction: column;
@@ -974,5 +970,12 @@
     color: SlateBlue;
     font-size: 1.1rem;
     font-style: italic;
+  }
+
+  .webring-link {
+    color: var(--color-off-white);
+  }
+  .webring-link:hover {
+    color: white;
   }
 }
