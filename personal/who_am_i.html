@@ -151,6 +151,25 @@
         scrollBtn.addEventListener("click", () => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         });
+        let gPressed = false;
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "u" || e.key === "U") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            gPressed = false;
+          } else if (e.key === "g" || e.key === "G") {
+            if (gPressed) {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              gPressed = false;
+            } else {
+              gPressed = true;
+              setTimeout(() => {
+                gPressed = false;
+              }, 500);
+            }
+          } else {
+            gPressed = false;
+          }
+        });
       </script>
       <aside class="about-aside">
         <a
