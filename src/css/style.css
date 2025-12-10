@@ -10,6 +10,20 @@
     border-radius: inherit;
   }
 
+  :target {
+    scroll-margin-top: 175px;
+    animation: highlightFade 0.5s forwards;
+  }
+
+  @keyframes highlightFade {
+    0% {
+      text-decoration: underline wavy transparent;
+    }
+    100% {
+      text-decoration: underline wavy orange;
+    }
+  }
+
   html {
     font-size: var(--font-size);
     -webkit-font-smoothing: antialiased;
@@ -296,6 +310,10 @@
     letter-spacing: 0.05em;
     margin: 1rem 0 2rem 0;
     color: var(--color-off-white);
+  }
+
+  h1#landing {
+    margin-bottom: 0;
   }
 
   h1#index-h1 {
@@ -680,11 +698,6 @@
     box-shadow: inset 0 0 10px 2px hsla(0, 0%, 10%, 1),
       0px 5px 10px 2px rgba(0, 0, 0, 0.5);
     border: var(--glass-border);
-  }
-  .spell-line {
-    color: SlateBlue;
-    font-size: 1.1rem;
-    font-style: italic;
   }
 
   .webring-link {

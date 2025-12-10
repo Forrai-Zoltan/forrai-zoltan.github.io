@@ -285,3 +285,9 @@ li {
 em {
   font-style: oblique;
 }
+
+.spell-line {
+  color: SlateBlue;
+  font-size: 1.1rem;
+  font-style: italic;
+}
