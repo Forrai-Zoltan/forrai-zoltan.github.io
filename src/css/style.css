@@ -290,9 +290,10 @@
     flex: 7;
   }
 
-  section#purple:has(.about-page) {
+  section#purple:has(.long-text) {
     background: radial-gradient(
-      circle at top,
+      ellipse at top,
+      var(--color-black),
       var(--color-black),
       hsla(var(--color-purple-a), 0.7)
     );
