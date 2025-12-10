@@ -709,28 +709,29 @@
 
   .no-marker ul,
   .no-marker ol {
-    list-style: none;
+    list-style: disc;
     margin-bottom: 0;
   }
 
   .no-marker > ul {
-    padding-left: 10px;
+    padding-left: 30px;
   }
 
   .no-marker a {
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-link) !important;
+    color: rgb(196, 196, 196) !important;
   }
   .no-marker a:hover {
-    color: var(--color-link-hover) !important;
+    color: white !important;
+    text-decoration: underline;
   }
   .no-marker a:active {
     color: var(--color-link-active) !important;
   }
 
   .no-marker li::marker {
-    color: white;
+    color: rgb(196, 196, 196) !important;
   }
 
   #scrollTopBtn {
