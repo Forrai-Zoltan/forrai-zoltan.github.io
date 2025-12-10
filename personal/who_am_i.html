@@ -131,6 +131,27 @@
       </nav>
     </header>
     <main>
+      <button
+        id="scrollTopBtn"
+        aria-label="Scroll to top"
+        title="Take me to the top!">
+        ↑
+      </button>
+      <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+            scrollBtn.style.opacity = "1";
+            scrollBtn.style.pointerEvents = "auto";
+          } else {
+            scrollBtn.style.opacity = "0";
+            scrollBtn.style.pointerEvents = "none";
+          }
+        });
+        scrollBtn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      </script>
       <aside class="about-aside">
         <a
           href="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&redirect=true">
@@ -150,10 +171,10 @@
               alt="pointing hand"
               width="60"
               height="30" />
-              TL;DR:
-              <a class="no-wrap" href="/personal/CV/" title="eConomic Value"
+            TL;DR:
+            <a class="no-wrap" href="/personal/CV/" title="eConomic Value"
               >Curriculum Vitae</a
-              >
+            >
           </p>
           <hr />
           <nav class="no-marker">

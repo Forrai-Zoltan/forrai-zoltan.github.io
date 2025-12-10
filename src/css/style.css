@@ -471,12 +471,12 @@
       hsla(var(--color-gray-900-a), 0.2),
       transparent
     );
-    backdrop-filter: blur(50px);
-    font-size: 1.3rem;
-    font-family: inherit;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.6),
       inset 0px -8px 25px -10px rgba(0, 0, 0, 0.6),
       inset 0px 10px 25px -10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(50px);
+    font-size: 1.3rem;
+    font-family: inherit;
     transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
     display: flex;
     justify-content: center;
@@ -731,5 +731,36 @@
 
   .no-marker li::marker {
     color: white;
+  }
+
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 15px;
+    font-size: 25px;
+    border: var(--glass-border);
+    border-radius: 15px;
+    background-color: var(--color-gray-900);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.6),
+      inset 0px -8px 25px -10px rgba(0, 0, 0, 0.6),
+      inset 0px 10px 25px -10px rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, scale 0.2s;
+  }
+
+  #scrollTopBtn:hover {
+    scale: 1.1;
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    background-color: var(--color-gray-800);
+  }
+
+  #scrollTopBtn:active {
+    scale: 0.99;
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    background-color: var(--color-gray-850);
   }
 }
