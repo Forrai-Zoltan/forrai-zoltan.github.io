@@ -738,8 +738,8 @@
     position: fixed;
     bottom: 50px;
     right: 50px;
-    padding: 10px 15px;
-    font-size: 25px;
+    padding: 10px 10px;
+    padding-bottom: 5px;
     border: var(--glass-border);
     border-radius: 15px;
     background-color: var(--color-gray-900);
@@ -754,14 +754,14 @@
   }
 
   #scrollTopBtn:hover {
-    scale: 1.1;
-    border: 0.5px solid rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
     background-color: var(--color-gray-800);
   }
 
   #scrollTopBtn:active {
-    scale: 0.99;
-    border: 0.5px solid rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
     background-color: var(--color-gray-850);
   }
 }

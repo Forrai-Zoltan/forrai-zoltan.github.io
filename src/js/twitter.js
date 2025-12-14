@@ -139,7 +139,33 @@ document.addEventListener("click", (e) => {
   }
 });
 
+
 // Copy LINK
+
+function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text);
+  }
+
+  return new Promise((resolve, reject) => {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+
+    try {
+      document.execCommand("copy");
+      resolve();
+    } catch (err) {
+      reject(err);
+    } finally {
+      document.body.removeChild(textarea);
+    }
+  });
+}
 
 const links = document.getElementsByClassName("rss-icon-link");
 const message = document.getElementById("copy-message");
@@ -161,8 +187,8 @@ Array.from(links).forEach((linkElement) => {
     event.preventDefault();
 
     const link = this.href;
-    navigator.clipboard
-      .writeText(link)
+
+    copyToClipboard(link)
       .then(() => {
         message.style.opacity = "1"; // show message
 

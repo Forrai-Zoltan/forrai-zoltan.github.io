@@ -89,7 +89,7 @@ div#timeline img.profile-pic {
 }
 
 div#timeline span.tweeter-me {
-  font-weight: 900;
+  font-weight: bold;
   color: black;
 }
 
