@@ -369,3 +369,13 @@ form label:has(svg:hover) ~ hidden-info {
     min-width: 450px;
   }
 }
+
+h1 {
+  margin-top: 0 !important;
+  line-height: 1;
+}
+
+article {
+  padding-top: 1.5rem !important;
+  padding-bottom: 0.5rem !important;
+}

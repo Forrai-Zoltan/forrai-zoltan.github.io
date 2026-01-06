@@ -64,8 +64,9 @@ span:has(#exit) {
     display: block;
     flex: 0 0 auto;
     position: relative;
-    max-width: 600px;
+    max-width: 500px;
   }
+
 
   #cta-exit {
     flex: 1;
