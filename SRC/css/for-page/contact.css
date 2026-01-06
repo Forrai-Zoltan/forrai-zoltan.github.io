@@ -330,6 +330,11 @@ form label:has(svg:hover) ~ hidden-info {
 }
 
 @media (max-width: 600px) {
+  article {
+    padding-top: 10px;
+    max-width: none !important;
+  }
+
   textarea {
     min-height: 200px;
   }
