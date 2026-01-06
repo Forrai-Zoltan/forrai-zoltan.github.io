@@ -138,17 +138,14 @@ body:has(#burger:checked) {
 
 #burger:checked ~ .menu #top-ul > li {
   font-size: 1.5rem;
-  padding: 20px 20px 15px 25px;
+  padding: 5px 20px;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
 #burger:checked ~ .menu a {
-  padding: 20px 50px;
+  display: inline-block;
+  padding: 5px 20px;
   width: 100%;
-}
-
-#burger:checked ~ .menu li li:first-of-type a {
-  padding-top: 30px;
 }
 
 #burger:checked ~ .menu li svg {
