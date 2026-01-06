@@ -1,0 +1,393 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  box-shadow: 0px 3px 6px 0px black;
+  z-index: 10;
+  color: var(--color-alt-white-l);
+}
+
+header input {
+  display: none;
+}
+
+/* TITLE BAR */
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-purple);
+  z-index: 6;
+  background: linear-gradient(
+    to right,
+    var(--color-purple) 1%,
+    var(--color-purple),
+    transparent
+  );
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.title-bar a {
+  line-height: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--color-alt-white-l);
+}
+
+.title-bar span {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  letter-spacing: 0.05em;
+  padding-top: 2px;
+}
+
+.title-bar img {
+  height: 1.4em;
+  margin: 0.5rem 0.8rem 0.5rem 0.6rem;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .title-bar {
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-purple) 1%,
+      var(--color-purple),
+      transparent
+    );
+  }
+
+  .title-bar:hover,
+  .title-bar:focus-visible {
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-purple-hover) 1%,
+      var(--color-purple-hover),
+      transparent
+    );
+  }
+
+  .title-bar:hover::after,
+  .title-bar:focus-visible::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 55px;
+    width: 95vw;
+    height: 20px;
+    background: radial-gradient(
+      ellipse 100% 80% at 25% 0,
+      hsla(var(--color-purple-hover-a), 0.7) 0%,
+      transparent 80%
+    );
+    pointer-events: none;
+    z-index: 5;
+    border-top-left-radius: 10px;
+  }
+
+  .title-bar img {
+    height: 1em;
+    margin: 0.5rem 0.8rem 0.5rem 1.6rem;
+    border-radius: 10px;
+  }
+}
+
+/* HAMBURGER MENU FOR MOBILE */
+
+#burger-label {
+  margin: 1px;
+  font-size: 40px;
+  max-height: 40px;
+  padding: 5px 10px;
+  box-sizing: content-box;
+}
+.menu {
+  display: none;
+}
+body:has(#burger:checked) {
+  overflow: hidden;
+}
+#burger:checked ~ .menu {
+  display: block;
+  position: fixed;
+  top: 57px;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: calc(100vh - 55px);
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow-y: auto;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#burger:checked ~ .menu #top-ul > li {
+  font-size: 1.5rem;
+  padding: 20px 20px 15px 25px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+#burger:checked ~ .menu a {
+  padding: 20px 50px;
+  width: 100%;
+}
+
+#burger:checked ~ .menu li li:first-of-type a {
+  padding-top: 30px;
+}
+
+#burger:checked ~ .menu li svg {
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.menu a {
+  display: inline-block;
+  height: 100%;
+}
+
+/* PC DROPDOWN MENU */
+
+@media (min-width: 600px) {
+  header {
+    padding: 5px 0 0 0;
+  }
+
+  #burger-label,
+  .menu svg {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  /* Top-level menu container styling */
+  .menu #top-ul {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(
+      to right,
+      var(--color-gray-750),
+      var(--color-gray-800)
+    );
+    margin: 5px;
+    border-radius: 10px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu li {
+    font-size: 1.5rem;
+  }
+
+  /* Top-level menu items */
+  .menu #top-ul > li {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    border-radius: 15px 25px 25px 15px;
+    padding: 2px 2px 2px 7px;
+    border-right: 5px solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .menu #top-ul > li > svg {
+    display: flex;
+    font-size: 1.4rem;
+    margin: 0 5px;
+  }
+
+  /* Hover/focus effects on top-level items */
+  .menu #top-ul > li:hover,
+  .menu #top-ul > li:focus-within {
+    border-radius: 15px 25px 25px 15px;
+    border-right: 5px solid white;
+    background: linear-gradient(
+      to right,
+      var(--color-purple-hover),
+      rgba(0, 0, 0)
+    );
+  }
+
+  /* MOTE! DO NOT DELETE! */
+  .menu #top-ul > li::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    z-index: 6;
+  }
+
+  /* Show dropdown on hover/focus */
+  .menu #top-ul li:hover ul,
+  .menu #top-ul li:focus-within ul {
+    display: block;
+    z-index: 45;
+  }
+
+  /* Dropdown menus */
+  .menu #top-ul li ul {
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: radial-gradient(
+      ellipse 250% 100% at top left,
+      hsl(var(--color-purple-a), 0.7),
+      hsla(var(--color-gray-900-a), 0.4),
+      hsla(var(--color-gray-900-a), 0.4),
+      hsla(var(--color-gray-900-a), 0.7)
+    );
+    box-shadow: 20px 30px 25px rgba(10, 10, 10, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    list-style: none;
+  }
+
+  .menu #top-ul a {
+    padding: 3px;
+    padding-bottom: 3px;
+    padding-left: 0.7rem;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .menu #top-ul li ul li:hover,
+  .menu #top-ul li ul li:has(a:focus-visible) {
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      var(--color-purple-hover),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .menu #top-ul li ul li:hover a,
+  .menu #top-ul li ul li a:focus-visible {
+    color: white;
+  }
+
+  .menu #top-ul li ul li a:focus-visible {
+    padding: 3px;
+    padding-left: 0.7rem;
+    padding-bottom: 0;
+    margin-bottom: 3px;
+  }
+}
+
+/* REGULAR ANCHOR TAGS */
+article a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+article a:focus-visible {
+  border-radius: 3px;
+}
+
+article a::selection {
+  color: var(--color-link);
+  background-color: var(--color-green-m);
+}
+
+article a:hover,
+article a:focus-visible,
+article a:hover::selection,
+article a:focus-visible::selection {
+  color: var(--color-link-hover);
+}
+article a:active,
+article a:active::selection {
+  color: var(--color-link-active);
+}
+/* --------------------- */
+article a:visited {
+  color: var(--color-link-visited);
+}
+article a:visited:hover,
+article a:visited:focus-visible {
+  color: var(--color-link-visited-hover);
+}
+article a:visited:active {
+  color: var(--color-link-visited-active);
+}
+/* --------------------- */
+article a:visited::selection {
+  color: var(--color-link-light-visited);
+}
+article a:visited:hover::selection,
+article a:visited:focus-visible::selection {
+  color: var(--color-link-light-visited-hover);
+}
+article a:visited:active::selection {
+  color: var(--color-link-light-visited-active);
+}
+
+/* Internal Links */
+
+article a[href^="#"]:not(:has(img))::before {
+  content: "#";
+}
+/* 
+a[href^="#"]:not(:has(img)) {
+  color: orange !important;
+  text-decoration: underline 1px solid orange;
+}
+
+a[href^="#"]:not(:has(img)):hover {
+  color: hsl(39, 100%, 70%) !important;
+  text-decoration: underline 1px solid hsl(39, 100%, 70%);
+}
+
+a[href^="#"]:not(:has(img))::before {
+  content: "#";
+  color: orange;
+  text-decoration: underline 1px solid orange;
+}
+
+a[href^="#"]:not(:has(img)):hover::before {
+  content: "#";
+  color: hsl(39, 100%, 70%);
+  text-decoration: underline 1px solid hsl(39, 100%, 70%);
+}
+
+a[href^="#"]:not(:has(img)):active {
+  color: hsl(39, 100%, 40%) !important;
+  text-decoration: underline 1px solid hsl(39, 100%, 40%);
+}
+
+a[href^="#"]:not(:has(img)):active::before {
+  content: "#";
+  color: hsl(39, 100%, 40%);
+  text-decoration: underline 1px solid hsl(39, 100%, 40%);
+}
+ */

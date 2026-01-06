@@ -1,0 +1,83 @@
+:root {
+  /* COLORS */
+  --color-gray-100: hsl(225, 40%, 98%);
+  --color-gray-150: hsl(225, 40%, 97%);
+  --color-gray-200: hsl(225, 40%, 96%);
+  --color-gray-250: hsl(225, 40%, 93%);
+  --color-gray-300: hsl(220, 29%, 90%);
+  --color-gray-350: hsl(220, 29%, 85%);
+  --color-gray-400: hsl(219, 20%, 80%);
+  --color-gray-450: hsl(219, 20%, 70%);
+  --color-gray-500: hsl(219, 10%, 60%);
+  --color-gray-550: hsl(219, 10%, 50%);
+  --color-gray-600: hsl(221, 8%, 40%);
+  --color-gray-650: hsl(221, 8%, 30%);
+  --color-gray-700: hsl(218, 8%, 20%);
+  --color-gray-750: hsl(218, 8%, 16%);
+  --color-gray-800: hsl(220, 5%, 12%);
+  --color-gray-850: hsl(220, 5%, 9%);
+  --color-gray-900: hsl(210, 6%, 7%);
+
+  --color-gray-100-a: 225, 40%, 98%;
+  --color-gray-150-a: 225, 40%, 97%;
+  --color-gray-200-a: 225, 40%, 96%;
+  --color-gray-250-a: 225, 40%, 93%;
+  --color-gray-300-a: 220, 29%, 90%;
+  --color-gray-350-a: 220, 29%, 85%;
+  --color-gray-400-a: 219, 20%, 80%;
+  --color-gray-450-a: 219, 20%, 70%;
+  --color-gray-500-a: 219, 10%, 60%;
+  --color-gray-550-a: 219, 10%, 50%;
+  --color-gray-600-a: 221, 8%, 40%;
+  --color-gray-650-a: 221, 8%, 30%;
+  --color-gray-700-a: 218, 8%, 20%;
+  --color-gray-750-a: 218, 8%, 16%;
+  --color-gray-800-a: 220, 5%, 12%;
+  --color-gray-850-a: 220, 5%, 9%;
+  --color-gray-900-a: 210, 6%, 7%;
+
+  --color-purple: hsl(270, 80%, 20%);
+  --color-purple-a: 270, 80%, 20%;
+  --color-purple-dark: hsl(270, 80%, 15%);
+  --color-purple-dark-a: 270, 80%, 15%;
+  --color-purple-hover: hsl(270, 80%, 25%);
+  --color-purple-hover-a: 270, 80%, 22%;
+
+  --color-green: hsl(120, 30%, 13%);
+  --color-green-a: 120, 30%, 13%;
+  --color-green-m: hsl(120, 68%, 20%);
+  --color-green-light: hsl(120, 100%, 50%);
+  --color-green-light-a: 120, 100%, 50%;
+
+  --color-link: hsl(210, 70%, 55%);
+  --color-link-hover: hsl(210, 90%, 70%);
+  --color-link-active: hsl(210, 90%, 35%);
+
+  --color-link-dark: hsl(210, 90%, 40%);
+  --color-link-dark-hover: hsl(210, 100%, 55%);
+  --color-link-dark-active: hsl(210, 100%, 20%);
+
+  --color-link-visited: hsl(270, 45%, 55%);
+  --color-link-visited-hover: hsl(270, 45%, 70%);
+  --color-link-visited-active: hsl(270, 45%, 35%);
+
+  --color-link-light-visited: hsl(269, 100%, 71%);
+  --color-link-light-visited-hover: hsl(269, 100%, 83%);
+  --color-link-light-visited-active: hsl(270, 45%, 50%);
+
+  --color-link-dark-visited: hsl(270, 65%, 40%);
+  --color-link-dark-visited-hover: hsl(270, 65%, 65%);
+  --color-link-dark-visited-active: hsl(270, 65%, 20%);
+
+  --color-alt-white: hsl(0, 0%, 82.5%);
+  --color-alt-white-l: hsl(0, 0%, 90%);
+  --color-magic: SlateBlue;
+
+  --font: "cochin";
+  --font-mono: "departure-mono";
+  --font-jb-mono: "JetBrainsMono";
+  --font-ng: "NewGrounds";
+
+  font-size: 15px;
+}
+

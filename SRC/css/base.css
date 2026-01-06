@@ -1,0 +1,180 @@
+/* RESETS AND PLAIN HTML ELEMENTS ONLY! */
+
+html {
+  background-color: black;
+  color: white;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-green-m) transparent;
+  caret-color: orange;
+
+}
+
+html * {
+  box-sizing: border-box;
+  accent-color: black;
+}
+
+section {
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 100vw;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+hr {
+  border: none;
+  background-color: whitesmoke;
+  height: 1px;
+}
+
+svg {
+  width: 1em; /* matches font size of parent */
+  height: 1em; /* matches font size of parent */
+  box-sizing: content-box;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--color-alt-white);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+summary:hover,
+details[open] > summary {
+  color: white;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+
+  /* layout & box */
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+
+  /* text */
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  text-transform: none;
+
+  /* interaction */
+  cursor: pointer;
+  user-select: none;
+
+  /* visuals */
+  box-shadow: none;
+  outline: none;
+
+  /* platform quirks */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: var(--color-alt-white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+article:not(.note) a:not([href^="/"], [href^="#"], :has(img))::after {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-left: 0.25em;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='gainsboro' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
+    no-repeat center;
+  background-size: contain;
+  vertical-align: text-bottom;
+  margin-bottom: 4px;
+  font-size: 1.4rem;
+}
+
+article:not(.note) a:not([href^="/"], [href^="#"], :has(img)):hover::after {
+  content: "";
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
+    no-repeat center;
+}
+
+:focus-visible {
+  outline: 3px solid orange;
+  transition: outline 0.2s ease;
+  border-radius: inherit;
+}
+
+/* CSS only fade-out effect for :target */
+:target {
+  outline: 5px solid orange;
+  outline-offset: 10px;
+  animation: highlightFade 8s forwards; /* total duration 2s */
+}
+
+@keyframes highlightFade {
+  0% {
+    outline-color: orange; /* fully visible immediately */
+  }
+  50% {
+    outline-color: orange; /* keep visible for 1 second */
+  }
+  100% {
+    outline-color: transparent; /* fade out by end */
+  }
+}
+
+/* MAC OS ONLY STYLES */
+/* MACOS and Windows have different ways of displaying text.
+ This css makes them look identitcal. */
+@media (min-width: 600px) {
+  @supports (-webkit-font-smoothing: antialiased) {
+    .title-bar span {
+      transform: translateY(4px);
+    }
+
+    .menu a,
+    .menu span {
+      transform: translateY(2px);
+    }
+
+    .btn span {
+      display: inline-block;
+      transform: translateY(3px);
+    }
+
+    .mac-fix {
+      display: inline-block;
+      transform: translateY(4px);
+    }
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "works": [
+    {
+    "title": "The uses of supernatural power",
+    "authors": ["a38"],
+    "tags": "history",
+    "status": "reading",
+    "rating": null,
+    "notes": "<a href='https://archive.org/details/usesofsupernatur0000klan/mode/2up' target='_blank' rel='noopener noreferrer'>Uses of Supernatural Power – Archive.org scan</a>"
+    },
+    {
+      "title": "Jerusalem",
+      "authors": ["a33"],
+      "tags": "hisorical fiction",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Quack This Way",
+      "authors": ["a30", "a37"],
+      "tags": "biography",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Critical Theory Today",
+      "authors": ["a36"],
+      "tags": "literary criticism, theory",
+      "status": "reading",
+      "rating": null,
+      "notes": "A User-Friendly Guide"
+    },
+    {
+      "title": "Maze",
+      "authors": ["a35"],
+      "tags": "puzzle",
+      "status": "read",
+      "rating": 10,
+      "notes": ""
+    },
+    {
+      "title": "Mac Flecknoe",
+      "authors": ["a1"],
+      "tags": "poem, satire",
+      "status": "read",
+      "rating": 8.5,
+      "notes": ""
+    },
+    {
+      "title": "The Country Wife",
+      "authors": ["a2"],
+      "tags": "drama, comedy",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "The Rape of the Lock",
+      "authors": ["a3"],
+      "tags": "poem",
+      "status": "read",
+      "rating": 8,
+      "notes": ""
+    },
+    {
+      "title": "Moll Flanders",
+      "authors": ["a4"],
+      "tags": "novel",
+      "status": "read",
+      "rating": 7,
+      "notes": ""
+    },
+    {
+      "title": "Elegy Written in a Country Churchyard",
+      "authors": ["a5"],
+      "tags": "poem",
+      "status": "read",
+      "rating": 7,
+      "notes": ""
+    },
+    {
+      "title": "A Sentimental Journey",
+      "authors": ["a6"],
+      "tags": "novel",
+      "status": "unread",
+      "rating": null,
+      "notes": "A Sentimental Journey Through France and Italy"
+    },
+    {
+      "title": "The Tyger",
+      "authors": ["a7"],
+      "tags": "poem",
+      "status": "read",
+      "rating": 7,
+      "notes": ""
+    },
+    {
+      "title": "The Lamb",
+      "authors": ["a7"],
+      "tags": "poem",
+      "status": "read",
+      "rating": 7,
+      "notes": ""
+    },
+    {
+      "title": "Tintern Abbey",
+      "authors": ["a8"],
+      "tags": "poem",
+      "status": "unread",
+      "rating": null,
+      "notes": "Lines Composed a Few Miles above Tintern Abbey, On Revisiting the Banks of the Wye during a Tour. July 13, 1798"
+    },
+    {
+      "title": "Manfred",
+      "authors": ["a9"],
+      "tags": "dramatic poem",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "The Lady of Shalott",
+      "authors": ["a10"],
+      "tags": "poem",
+      "status": "unread",
+      "rating": null,
+      "notes": "The Lady of Shalott (1832)"
+    },
+    {
+      "title": "My Last Duchess",
+      "authors": ["a11"],
+      "tags": "poem",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Reneszánsz",
+      "authors": ["a13"],
+      "tags": "🇭🇺, history",
+      "status": "unread",
+      "rating": null,
+      "notes": "Translate: Sujtó László"
+    },
+    {
+      "title": "Az angol irodalom története",
+      "authors": [],
+      "tags": "🇭🇺, history, literature",
+      "status": "unread",
+      "rating": null,
+      "notes": "<ol><li><input type='checkbox' disabled>A középkor</li><li><input type='checkbox' disabled>A kora újkor</li><li><input type='checkbox' disabled>1640—1830 első rész</li><li><input type='checkbox' disabled>1640—1830 második rész</li><li><input type='checkbox' disabled>A viktoriánus és a modernista időszak</li><li><input type='checkbox' disabled>1930-tól napjainkig első rész</li><li><input type='checkbox' disabled>1930-tól napjainkig második rész</li></ol>"
+    },
+    {
+      "title": "Lingva Latina I",
+      "authors": ["a14"],
+      "tags": "latin, language book",
+      "status": "unread",
+      "rating": null,
+      "notes": "Lingva Latina per se illvstrata pars I Familia Romana"
+    },
+    {
+      "title": "The Prince",
+      "authors": ["a15"],
+      "tags": "politics",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Save the Cat",
+      "authors": ["a16"],
+      "tags": "screenwriting",
+      "status": "unread",
+      "rating": null,
+      "notes": "Save the Cat, The Last Book On Screenwriting That You'll Ever Need"
+    },
+    {
+      "title": "In Search of Shakespeare",
+      "authors": ["a17"],
+      "tags": "history, literature",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Flow",
+      "authors": ["a18"],
+      "tags": "psychology",
+      "status": "unread",
+      "rating": null,
+      "notes": "Flow: The Psychology of Optimal Experience"
+    },
+    {
+      "title": "Renaissance People",
+      "authors": ["a19", "a20"],
+      "tags": "history",
+      "status": "unread",
+      "rating": null,
+      "notes": "Renaissance People Lives that Shpaed the Modern Age"
+    },
+    {
+      "title": "Meditations",
+      "authors": ["a21"],
+      "tags": "philosophy, stoicism",
+      "status": "read",
+      "rating": 9.5,
+      "notes": "Translate: Huszti József"
+    },
+    {
+      "title": "Poetics",
+      "authors": ["a12"],
+      "tags": "philosophy, literature, ",
+      "status": "read",
+      "rating": 9,
+      "notes": "<ul><li>How to Tell a Story. Translate: Philip Freeman</li></ul>"
+    },
+    {
+      "title": "Paradise Lost",
+      "authors": ["a22"],
+      "tags": "epic, poem",
+      "status": "unread",
+      "rating": null,
+      "notes": "Paradise Lost & Other Poems. (Paradise Regained, Samson Agonistes, On the morning of Christ's Nativity, Lycidas, L'Allegro, Il penseroso. Sonnets: On Shakespeare, On His Being Arrived to the Age of 23, When the Assailt Was Intended to the City, To a Virtuous Young Lady, To the Lady Nergaret Ley, On the Detraction Which Followed Upon My Writing Certain Treatises, On the Same, To Mr. H. Laws, on His Aires, On the religious Memory of Mrs. Thomson, On the Late Massacher in Piemont, On His Blindness (Sonnet XVI or XIX), To Mr. Lawrence, To Cyriak Skinner, To Mr. Cyriack Skinner Upon His Blindness, On His Deceased Wife)"
+    },
+    {
+      "title": "The Silmarillion",
+      "authors": ["a23"],
+      "tags": "fantasy",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "The Fall of Gondolin",
+      "authors": ["a23"],
+      "tags": "fantasy",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Beren and Luthien",
+      "authors": ["a23"],
+      "tags": "fantasy",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "The Hobbit",
+      "authors": ["a23"],
+      "tags": "fantasy",
+      "status": "read",
+      "rating": 8.5,
+      "notes": ""
+    },
+    {
+      "title": "The Children of Húrin",
+      "authors": ["a23"],
+      "tags": "fantasy",
+      "status": "unread",
+      "rating": null,
+      "notes": "Narn I Chîn Húrin"
+    },
+    {
+      "title": "The Lord of the Rings",
+      "authors": ["a23"],
+      "tags": "fantasy",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "The Origin of Species",
+      "authors": ["a24"],
+      "tags": "biology, science",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "American Literary Criticism from the Thirties to Eighties",
+      "authors": ["a25"],
+      "tags": "literary criticism, literature",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "The Great Gatsby",
+      "authors": ["a26"],
+      "tags": "novel",
+      "status": "read",
+      "rating": 8,
+      "notes": ""
+    },
+    {
+      "title": "Hamlet",
+      "authors": ["a27"],
+      "tags": "drama, tragedy",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Dune",
+      "authors": ["a28"],
+      "tags": "sci-fi",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "authors": ["a29"],
+      "tags": "fantasy",
+      "status": "reading",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "authors": ["a29"],
+      "tags": "fantasy",
+      "status": "reading",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "authors": ["a29"],
+      "tags": "fantasy",
+      "status": "reading",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "authors": ["a29"],
+      "tags": "fantasy",
+      "status": "reading",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "authors": ["a29"],
+      "tags": "fantasy",
+      "status": "reading",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "authors": ["a29"],
+      "tags": "fantasy",
+      "status": "reading",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows",
+      "authors": ["a29"],
+      "tags": "fantasy",
+      "status": "reading",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Infinite Jest",
+      "authors": ["a30"],
+      "tags": "",
+      "status": "unread",
+      "rating": null,
+      "notes": ""
+    },
+    {
+      "title": "Vermis",
+      "authors": ["a31"],
+      "tags": "game guide",
+      "status": "read",
+      "rating": 10,
+      "notes": ""
+    }
+  ]
+}

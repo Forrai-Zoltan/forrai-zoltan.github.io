@@ -1,0 +1,200 @@
+main {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.4rem;
+  min-height: calc(100vh - 57px);
+  height: fit-content;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    padding-top: 1.5px;
+    min-height: calc(100vh - 93px);
+    margin: 1px;
+  }
+}
+
+main-content > article {
+  margin-inline: auto;
+  padding: 2rem min(5rem, 4%);
+  font-size: 1.5rem;
+  inline-size: fit-content;
+  max-inline-size: 70ch;
+  color: var(--color-alt-white);
+  box-sizing: content-box;
+}
+
+.box {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.box.thick {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.box.bg-purple {
+  box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.6),
+    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+  background: radial-gradient(
+    circle at top,
+    hsl(0, 0%, 6%),
+    hsl(0, 0%, 6%),
+    hsla(var(--color-purple-a), 0.9) 99%
+  );
+}
+
+.box.bg-purple.dark {
+  background: radial-gradient(
+    ellipse 80% 130% at top,
+    black 45%,
+    hsla(var(--color-purple-a), 0.9) 99%
+  );
+}
+
+.box.bg-purple.alt {
+  background: radial-gradient(
+    ellipse 80% 130% at top,
+    hsl(0, 0%, 6%) 45%,
+    hsla(var(--color-purple-a), 0.9) 99%
+  );
+}
+
+.box.bg-green {
+  background: radial-gradient(
+    circle at top,
+    black 30%,
+    hsla(var(--color-green-light-a), 0.3) 90%
+  );
+  box-shadow: inset 0px -10px 25px -11px rgba(0, 0, 0, 0.8),
+    0px 15px 19px 2px rgba(0, 0, 0, 0.5),
+    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+}
+
+.box.bg-green.alt {
+  background: radial-gradient(
+    ellipse 80% 130% at top,
+    hsl(0, 0%, 6%) 45%,
+    hsla(var(--color-green-light-a), 0.2)
+  );
+}
+
+main-content {
+  width: 100%;
+  background-color: #222;
+}
+
+section:has(.note) {
+  padding-inline: 1rem;
+}
+
+.note {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  color: black;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.4);
+  background-color: #c0c0c0;
+  margin: 2rem;
+  margin-inline: auto;
+  padding: 0.2rem 2rem 3rem 2rem;
+  inline-size: fit-content;
+  max-inline-size: 70ch;
+  box-sizing: content-box;
+  position: relative;
+
+  &.dark {
+    background-color: hsl(0, 0%, 35%);
+    color: whitesmoke;
+  }
+}
+
+.note.bent::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -75px;
+  background-color: #222;
+  width: 200px;
+  height: 80px;
+  z-index: 1;
+  -webkit-transform: rotate(40deg) translateY(-50%);
+  -moz-transform: rotate(40deg) translateY(-50%);
+  -ms-transform: rotate(40deg) translateY(-50%);
+  -o-transform: rotate(40deg) translateY(-50%);
+  transform: rotate(40deg) translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  .note {
+    margin: 1rem 0;
+    padding: 1rem;
+
+    * {
+      line-height: 1.4 !important;
+    }
+  }
+}
+
+.btn {
+  text-align: center;
+  color: var(--color-gray-100);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transform: scale(0.94) rotate(0.02deg);
+  backface-visibility: hidden;
+  width: 90%;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: clamp(1.8rem, 2.5vw, 1.8rem);
+  white-space: nowrap;
+  background: radial-gradient(
+    circle at center,
+    var(--color-purple),
+    var(--color-purple),
+    var(--color-purple-dark)
+  );
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+.btn span {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: scale(1) rotate(0.02deg);
+  will-change: transform;
+  cursor: pointer;
+  background: radial-gradient(
+    circle at center,
+    var(--color-purple-hover),
+    var(--color-purple-hover),
+    var(--color-purple),
+    var(--color-purple-dark)
+  );
+  box-shadow: 0px 15px 19px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(1.02);
+  background: radial-gradient(
+    circle at center,
+    var(--color-purple),
+    var(--color-purple-dark),
+    var(--color-purple-dark)
+  );
+}
+
+.faq-ds details {
+  counter-increment: n;
+}
+.faq-ds summary::before {
+  content: counter(n) ". ";
+}

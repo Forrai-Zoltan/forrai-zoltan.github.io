@@ -1,0 +1,113 @@
+#newgrounds-webring {
+  border-radius: 8px;
+  overflow: hidden;
+  outline: 2px solid var(--color-alt-white);
+  margin: 0px auto;
+}
+
+#exit-nav-internal {
+  border-bottom: 1px solid var(--color-alt-white);
+}
+
+article#exit nav a {
+  color: var(--color-alt-white);
+}
+
+article#exit nav a:hover {
+  color: white;
+}
+
+buttons-88x31 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  buttons-88x31 {
+    margin-bottom: -18px;
+  }
+}
+
+buttons-88x31 img {
+  border-radius: 2px;
+}
+
+buttons-88x31 a:hover {
+  outline: 1px solid white;
+  border-radius: 2px;
+}
+
+.button-gif {
+  margin: 20px 0 25px 0;
+  margin-inline: auto;
+  transform: scale(1.1);
+  will-change: transform;
+  transition: transform 0.2s ease;
+}
+
+.button-gif:hover {
+  transform: scale(1.2);
+}
+
+.button-gif:hover ~ .code .pointing-hand {
+  opacity: 1;
+}
+
+.code {
+  position: relative;
+}
+
+.pointing-hand {
+  opacity: 0;
+  position: absolute;
+  scale: 0.25;
+  top: -45px;
+  left: -200px;
+  transition: opacity 0.2s ease;
+  /* filter: 
+  drop-shadow(4px 0 0 orange)
+  drop-shadow(-4px 0 0 orange)
+  drop-shadow(0 4px 0 orange)
+  drop-shadow(0 -4px 0 orange); */
+}
+
+tech-stack-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+tech-stack-icons img {
+  width: 50px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  height: 50px;
+}
+
+tech-stack-icons a:hover img,
+tech-stack-icons a:focus-visible img {
+  border-radius: 12px;
+  filter: brightness(1.15);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
+}
+
+tech-stack-icons a:focus-visible {
+  border-radius: 12px;
+}
+
+.rss-icon {
+  display: inline;
+  padding: 1px;
+  padding-right: 5px;
+}
+
+a:hover .rss-icon {
+  filter: brightness(1.2);
+}

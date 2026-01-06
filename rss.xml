@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/SRC/rss-style.xslt"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gildrom.com</title>
+    <link>https://www.gildrom.com/</link>
+    <atom:link
+      rel="self"
+      href="https://www.gildrom.com/rss.xml" />
+    <description>Updates from gildrom.com</description>
+    <image>
+      <title>gildrom.com</title>
+      <url>https://www.gildrom.com/favicon.ico</url>
+      <link>https://www.gildrom.com/</link>
+    </image> 
+    <!-- <item>
+      <title>Template・Template</title>
+      <pubDate>Thu, 27 Apr 2006</pubDate>
+      <category></category>
+      <link>https://www.gildrom.com/</link>
+      <guid>https://www.gildrom.com/</guid>
+      <description><![CDATA[Template]]></description>
+    </item> -->
+    <!-- //// //// //// ITEMS //// //// //// -->
+
+
+
+
+
+  </channel>
+</rss>

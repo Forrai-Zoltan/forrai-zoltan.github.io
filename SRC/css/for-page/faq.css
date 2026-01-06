@@ -1,0 +1,54 @@
+details {
+  font-family: var(--font-mono);
+  margin: 1rem 0;
+  background-color: rgba(10, 10, 10, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 5px solid var(--color-magic);
+}
+
+details[open] > *:not(summary) {
+  margin: 0;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+details[open] summary {
+  background-color: rgba(20, 20, 20, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+details[open] summary:hover {
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+summary {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+summary::marker {
+  font-size: 1.3em;
+  line-height: 0;
+}
+
+summary:hover {
+  background-color: rgba(20, 20, 20, 0.8);
+}
+
+faq-container {
+  margin-top: 50px;
+}
+
+@media (min-width: 600px) {
+  summary {
+    font-size: 1.4rem;
+    min-width: 70ch;
+  }
+
+  details[open] > *:not(summary) {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,187 @@
+
+@font-face {
+  font-family: "departure-mono";
+  src: url("/SRC/asset/font/departuremono/DepartureMono-Regular.woff2")
+      format("woff2"),
+    url("/SRC/asset/font/departuremono/DepartureMono-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------------------------------ */
+
+@font-face {
+  font-family: "cochin";
+  src: url("/SRC/asset/font/cochin/CochinLTStd.woff2") format("woff2"),
+    url("/SRC/asset/font/cochin/CochinLTStd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cochin";
+  src: url("/SRC/asset/font/cochin/CochinLTStd-Bold.woff2") format("woff2"),
+    url("/SRC/asset/font/cochin/CochinLTStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cochin";
+  src: url("/SRC/asset/font/cochin/CochinLTStd-Italic.woff2") format("woff2"),
+    url("/SRC/asset/font/cochin/CochinLTStd-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "cochin";
+  src: url("/SRC/asset/font/cochin/CochinLTStd-BoldItalic.woff2")
+      format("woff2"),
+    url("/SRC/asset/font/cochin/CochinLTStd-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ------------------------------------ */
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-BoldItalic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-ExtraBoldItalic.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-ExtraLight.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-ExtraLightItalic.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-Italic.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-LightItalic.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-MediumItalic.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-SemiBoldItalic.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-Thin.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/SRC/asset/font/JetBrainsMono/JetBrainsMono-ThinItalic.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* ------------------------------------ */
+
+@font-face {
+  font-family: "NewGrounds";
+  src: url("/SRC/asset/font/NG/NewgroundsFontRegular.woff2") format("woff2"),
+    url("/SRC/asset/font/NG/NewgroundsFontRegular.woff") format("woff"),
+    url("/SRC/asset/font/NG/NewgroundsFont-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,1 +1,0 @@
-# forrai-zoltan.github.io

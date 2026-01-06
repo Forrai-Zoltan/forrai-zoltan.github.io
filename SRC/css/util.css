@@ -1,0 +1,51 @@
+.no-decor {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-marker {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.unselect,
+.unselect * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1ch;
+}
+
+@media (min-width: 600px) {
+  .row {
+    gap: 10ch;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-div {
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.no-wrap {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+}
