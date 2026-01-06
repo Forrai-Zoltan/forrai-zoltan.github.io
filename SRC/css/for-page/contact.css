@@ -360,7 +360,7 @@ form label:has(svg:hover) ~ hidden-info {
 
   p:has(hidden-info) input,
   js-file-field:has(hidden-info) div#drop-zone {
-    margin-top: 5px !important;
+    margin-top: 10px !important;
   }
 
   form label svg {

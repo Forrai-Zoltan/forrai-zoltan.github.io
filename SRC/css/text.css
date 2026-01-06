@@ -235,6 +235,9 @@ main-content > dev-notice:has(h1) {
 release-note {
   p:not(:first-of-type) {
     margin-left: 3ch;
+    hyphens: auto;
+    line-break: auto;
+    word-break: normal;
   }
 
   ul {
@@ -247,11 +250,11 @@ release-note {
 @media (max-width: 600px) {
   release-note {
     p:not(:first-of-type) {
-      margin-left: 0;
+      margin-left: 1ch;
     }
 
     ul {
-      margin-left: 2ch;
+      margin-left: 3ch;
     }
   }
 }
