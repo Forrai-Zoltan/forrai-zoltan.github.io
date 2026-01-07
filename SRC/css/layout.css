@@ -77,7 +77,7 @@ main-content > article {
 
 .box.bg-green.alt {
   background: radial-gradient(
-    ellipse 80% 130% at top,
+    ellipse 90% 140% at top,
     hsl(0, 0%, 6%) 45%,
     hsla(var(--color-green-light-a), 0.2)
   );

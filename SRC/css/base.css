@@ -6,7 +6,6 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--color-green-m) transparent;
   caret-color: orange;
-
 }
 
 html * {
@@ -33,7 +32,7 @@ img {
 
 hr {
   border: none;
-  background-color: whitesmoke;
+  background-color: var(--color-alt-white);
   height: 1px;
 }
 

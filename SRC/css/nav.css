@@ -136,20 +136,25 @@ body:has(#burger:checked) {
   list-style: none;
 }
 
+#burger:checked ~ .menu #top-ul li {
+  padding-block: 1vh;
+}
+
 #burger:checked ~ .menu #top-ul > li {
   font-size: 1.5rem;
-  padding: 5px 20px;
+  padding-block: 2vh;
+  padding-inline: 10px;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
 #burger:checked ~ .menu a {
   display: inline-block;
-  padding: 5px 20px;
+  padding-inline: 20px;
   width: 100%;
 }
 
 #burger:checked ~ .menu li svg {
-  padding-right: 10px;
+  padding-right: 2%;
   vertical-align: top;
 }
 
