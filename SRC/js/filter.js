@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = searchInput.closest("form");
 
   if (form) {
+    // Prevent form submission on Enter
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); // stop page refresh
+      applyFilter(); // trigger filtering if needed
+    });
+
     form.addEventListener("reset", () => {
       cards.forEach((card) => {
         card.style.display = "";
@@ -16,8 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  searchInput.addEventListener("input", function () {
-    const cleanedInput = this.value.replace(/[#,\s]+/g, " ").toLowerCase();
+  // Filtering function
+  const applyFilter = () => {
+    const cleanedInput = searchInput.value
+      .replace(/[#,\s]+/g, " ")
+      .toLowerCase();
     const rawTokens = cleanedInput
       .split(" ")
       .filter((token) => token.trim() !== "" && token !== "-");
@@ -47,5 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       card.style.display = includesAll && excludesAll ? "" : "none";
     });
-  });
+  };
+
+  // Run filter on user input
+  searchInput.addEventListener("input", applyFilter);
+
+  // Auto-fill from URL and apply filter
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get("q");
+  if (query) {
+    searchInput.value = query;
+    applyFilter(); // directly trigger filtering
+  }
 });

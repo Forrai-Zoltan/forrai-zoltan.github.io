@@ -64,16 +64,14 @@ header {
 header ul li mark {
   background-color: oklch(from var(--tag-color) l c h / 0.15);
   border-radius: 999px;
-  color: var(--tag-color);
+  color: var(--tag-color) !important;
   line-height: var(--line-height);
-  padding: 0 1ch;
+  padding: 0 0.5ch;
+  margin-inline: -0.25ch;
+  cursor: pointer;
 
   &:first-of-type {
-    margin-inline-end: -0.25ch;
-  }
-
-  & + mark {
-    margin-inline: -0.25ch;
+    margin-inline-start: -0.5ch;
   }
 
   &::selection {
@@ -102,10 +100,18 @@ header ul li mark {
   &:is(#horror, #dark-fantasy, ) {
     --tag-color: hsl(277, 80%, 50%);
   }
+
+  a {
+    color: var(--tag-color);
+    text-decoration: none;
+
+    &:hover {
+      color: oklch(from var(--tag-color) 70% c h);
+    }
+  }
 }
 
-header ul li a,
-a {
+header ul li:not(:has(mark)) a {
   color: var(--color-link);
   &::selection {
     color: var(--color-link);
