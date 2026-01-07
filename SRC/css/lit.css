@@ -16,6 +16,12 @@
   color: var(--color-page);
 }
 
+:focus-visible {
+  border-radius: inherit;
+  outline: 2px solid orange;
+  transition: outline 0.2s ease;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -66,9 +72,9 @@ header ul li mark {
   border-radius: 999px;
   color: var(--tag-color) !important;
   line-height: var(--line-height);
-  padding: 0 0.5ch;
   margin-inline: -0.25ch;
   cursor: pointer;
+  padding: 0 0.5ch;
 
   &:first-of-type {
     margin-inline-start: -0.5ch;
@@ -103,16 +109,23 @@ header ul li mark {
 
   a {
     color: var(--tag-color);
+    padding: 0 0.5ch;
     text-decoration: none;
 
     &:hover {
       color: oklch(from var(--tag-color) 70% c h);
+    }
+
+    &:active {
+      color: oklch(from var(--tag-color) 40% c h);
     }
   }
 }
 
 header ul li:not(:has(mark)) a {
   color: var(--color-link);
+  border-radius: 10px;
+
   &::selection {
     color: var(--color-link);
   }

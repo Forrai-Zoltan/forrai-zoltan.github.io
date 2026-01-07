@@ -1,4 +1,5 @@
 document.querySelectorAll("mark").forEach((mark) => {
+  mark.style.padding = "0";
   const text = mark.textContent;
   const link = document.createElement("a");
 
