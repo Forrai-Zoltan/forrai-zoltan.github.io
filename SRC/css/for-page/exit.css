@@ -22,7 +22,6 @@ buttons-88x31 {
   margin: 20px 0;
 }
 
-
 buttons-88x31 img {
   border-radius: 2px;
 }
@@ -112,4 +111,7 @@ a:hover .rss-icon {
   filter: brightness(1.2);
 }
 
-
+.morse {
+  white-space: nowrap;
+  overflow: hidden;
+}
