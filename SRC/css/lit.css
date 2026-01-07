@@ -1,45 +1,14 @@
 :root {
   --color-page: #121212;
-  --color-text: oklch(from hsl(0 0% 83%) l c h);
+  --color-text: hsl(0 0% 80%);
   --color-text-d: oklch(from var(--color-text) 50% c h);
-  --color-link: oklch(from hsl(210, 70%, 50%) l c h);
+  --color-link: hsl(210, 70%, 50%);
   --color-link-l: oklch(from var(--color-link) 70% c h);
   --color-link-d: oklch(from var(--color-link) 40% c h);
-
   --font-mono: 12pt "departure-mono";
   --font-size: 15pt;
   --line-height: 1.5;
   --page-width: 70ch;
-}
-
-header ul li mark {
-  background-color: oklch(from var(--tag-color) l c h / 0.18);
-  border-radius: 999px;
-  color: var(--tag-color);
-  display: inline-block;
-  padding: 0 0.6em;
-  margin-right: -0.5ch;
-
-  &::selection {
-    color: var(--tag-color);
-    background-color: oklch(from var(--tag-color) l c h / 0.2);
-  }
-
-  &.r {
-    --tag-color: hsl(0, 80%, 50%);
-  }
-  &.v {
-    --tag-color: hsl(277, 80%, 50%);
-  }
-  &.l {
-    --tag-color: hsl(257, 100%, 65%);
-  }
-  &.b {
-    --tag-color: hsl(208, 80%, 50%);
-  }
-  &.g {
-    --tag-color: hsl(129, 80%, 35%);
-  }
 }
 
 ::selection {
@@ -92,6 +61,42 @@ header {
   }
 }
 
+header ul li mark {
+  background-color: oklch(from var(--tag-color) l c h / 0.15);
+  border-radius: 999px;
+  color: var(--tag-color);
+  padding: 0 1ch;
+
+  &:first-of-type {
+    margin-inline-end: -0.25ch;
+  }
+
+  & + mark {
+    margin-inline: -0.25ch;
+  }
+
+  &::selection {
+    color: var(--tag-color);
+    background-color: oklch(from var(--tag-color) l c h / 0.2);
+  }
+
+  &:is(#vampire, #adventure, #psycho, ) {
+    --tag-color: hsl(0, 75%, 50%);
+  }
+  &:is(#horror, #dark-fantasy, ) {
+    --tag-color: hsl(277, 80%, 50%);
+  }
+  &:is(#fantasy, ) {
+    --tag-color: hsl(257, 100%, 65%);
+  }
+  &:is(#poetry, #ballad, ) {
+    --tag-color: hsl(208, 80%, 50%);
+  }
+  &:is(#sci-fi, ) {
+    --tag-color: hsl(129, 80%, 35%);
+  }
+}
+
 header ul li a,
 a {
   color: var(--color-link);
@@ -107,20 +112,6 @@ a {
   &:active,
   &:active::selection {
     color: var(--color-link-d);
-  }
-}
-
-footer {
-  border-top: 2.2px dashed var(--color-text-d);
-  color: var(--color-text-d);
-  font: var(--font-mono);
-  margin-block: 100px 50px;
-  padding-block: 15px 0;
-  text-align: center;
-
-  *::selection {
-    background-color: var(--color-text-d);
-    color: var(--color-page);
   }
 }
 
@@ -194,12 +185,6 @@ article {
   }
 }
 
-@media (max-width: 500px) {
-  article blockquote {
-    margin-left: 15px;
-  }
-}
-
 hr {
   border: none;
   margin: 1em 0;
@@ -211,5 +196,25 @@ hr {
     content: "* * *";
     font-size: 1em;
     letter-spacing: 1em;
+  }
+}
+
+footer {
+  border-top: 2.2px dashed var(--color-text-d);
+  color: var(--color-text-d);
+  font: var(--font-mono);
+  margin-block: 100px 50px;
+  padding-block: 15px 0;
+  text-align: center;
+
+  *::selection {
+    background-color: var(--color-text-d);
+    color: var(--color-page);
+  }
+}
+
+@media (max-width: 500px) {
+  article blockquote {
+    margin-left: 15px;
   }
 }
