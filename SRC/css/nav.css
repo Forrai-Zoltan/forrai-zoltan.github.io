@@ -359,37 +359,3 @@ article a:visited:active::selection {
 article a[href^="#"]:not(:has(img))::before {
   content: "#";
 }
-/* 
-a[href^="#"]:not(:has(img)) {
-  color: orange !important;
-  text-decoration: underline 1px solid orange;
-}
-
-a[href^="#"]:not(:has(img)):hover {
-  color: hsl(39, 100%, 70%) !important;
-  text-decoration: underline 1px solid hsl(39, 100%, 70%);
-}
-
-a[href^="#"]:not(:has(img))::before {
-  content: "#";
-  color: orange;
-  text-decoration: underline 1px solid orange;
-}
-
-a[href^="#"]:not(:has(img)):hover::before {
-  content: "#";
-  color: hsl(39, 100%, 70%);
-  text-decoration: underline 1px solid hsl(39, 100%, 70%);
-}
-
-a[href^="#"]:not(:has(img)):active {
-  color: hsl(39, 100%, 40%) !important;
-  text-decoration: underline 1px solid hsl(39, 100%, 40%);
-}
-
-a[href^="#"]:not(:has(img)):active::before {
-  content: "#";
-  color: hsl(39, 100%, 40%);
-  text-decoration: underline 1px solid hsl(39, 100%, 40%);
-}
- */

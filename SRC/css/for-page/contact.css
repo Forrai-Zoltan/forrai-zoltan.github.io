@@ -119,7 +119,6 @@ fieldset {
 
 article {
   padding-top: 10px;
-  max-width: min-content !important;
 }
 
 input,
@@ -297,11 +296,7 @@ hidden-info {
   font-family: var(--font-jb-mono);
 }
 
-@media (min-width: 600px) {
-  hidden-info {
-    display: none;
-  }
-}
+
 
 form label:has(svg:hover) ~ hidden-info {
   display: inline-block;
@@ -310,24 +305,6 @@ form label:has(svg:hover) ~ hidden-info {
   padding-left: 5px;
 }
 
-@media (min-width: 600px) {
-  fieldset {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-  #file-noJS {
-    max-width: 390px;
-  }
-
-  .main-copy {
-    text-align: center;
-  }
-
-  hr {
-    display: none;
-  }
-}
 
 @media (max-width: 600px) {
   article {
@@ -368,12 +345,7 @@ form label:has(svg:hover) ~ hidden-info {
   }
 }
 
-@media (min-width: 1020px) {
-  input,
-  textarea {
-    min-width: 450px;
-  }
-}
+
 
 @media (min-width: 600px) {
   @supports not (-webkit-font-smoothing: antialiased) {
@@ -386,6 +358,44 @@ form label:has(svg:hover) ~ hidden-info {
       padding-top: 1.5rem !important;
       padding-bottom: 0.5rem !important;
     }
+  }
+
+  input,
+  textarea {
+    min-width: 300px;
+    max-width: 100%;
+  }
+
+  fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  #file-noJS {
+    max-width: 390px;
+  }
+
+  .main-copy {
+    text-align: center;
+  }
+
+  hr {
+    display: none;
+  }
+
+  hidden-info {
+    display: none;
+  }
+}
+
+@media (min-width: 1020px) {
+  input,
+  textarea {
+    min-width: 450px;
+  }
+
+  article {
+  min-width: max-content !important;
   }
 }
 

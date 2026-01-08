@@ -18,9 +18,9 @@ main {
 }
 
 main-content > article {
+  font-size: 1.5rem;
   margin-inline: auto;
   padding: 2rem min(5rem, 4%);
-  font-size: 1.5rem;
   inline-size: fit-content;
   max-inline-size: 70ch;
   color: var(--color-alt-white);
@@ -94,7 +94,7 @@ section:has(.note) {
 
 .note {
   font-family: var(--font-mono);
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   color: black;
   box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.4);
   background-color: #c0c0c0;
@@ -105,6 +105,10 @@ section:has(.note) {
   max-inline-size: 70ch;
   box-sizing: content-box;
   position: relative;
+
+  p {
+    font-size: 1.2rem !important;
+  }
 
   &.dark {
     background-color: hsl(0, 0%, 35%);
@@ -197,4 +201,10 @@ section:has(.note) {
 }
 .faq-ds summary::before {
   content: counter(n) ". ";
+}
+
+image-cv {
+  a {
+    text-decoration: underline;
+  }
 }
