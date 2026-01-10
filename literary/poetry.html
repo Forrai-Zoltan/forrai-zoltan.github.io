@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Novels・gildrom.com</title>
-    <link rel="icon" type="image/png" href="/favicon.ico" />
     <link
       rel="alternate"
       type="application/rss+xml"
       href="https://www.gildrom.com/rss.xml" />
-    <!-- Theme -->
     <meta name="theme-color" content="#000000" />
-    <!-- Style -->
     <link rel="stylesheet" href="/SRC/css/var.css" />
     <link rel="stylesheet" href="/SRC/css/font.css" />
     <link rel="stylesheet" href="/SRC/css/base.css" />
@@ -20,6 +16,9 @@
     <link rel="stylesheet" href="/SRC/css/nav.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
     <link rel="stylesheet" href="/SRC/css/deck.css" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Poetry・gildrom.com</title>
+    <meta name="description" content="Links to my poems." />
   </head>
   <body>
     <header>
@@ -76,19 +75,19 @@
             <span>Literary</span>
             <ul>
               <li>
-                <a href="/literary/shorts">
-                  <svg>
-                    <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
-                  </svg>
-                  Shorts
-                </a>
-              </li>
-              <li>
-                <a href="/literary/novels">
+                <a href="/literary/fiction">
                   <svg>
                     <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
                   </svg>
-                  Novels
+                  Fiction
+                </a>
+              </li>
+              <li>
+                <a href="/literary/poetry">
+                  <svg>
+                    <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
+                  </svg>
+                  Poetry
                 </a>
               </li>
               <li>
@@ -176,16 +175,13 @@
               list="tags"
               type="search"
               name="filter"
-              placeholder="NOVELS・Filter Cards" />
+              placeholder="POETRY・Filter Cards" />
             <input
               id="reset-x"
               type="reset"
               value="X"
               title="clear search"
               aria-label="clear search" />
-            <datalist id="tags">
-              <option value=""></option>
-            </datalist>
           </search>
         </form>
         <noscript>
@@ -194,9 +190,12 @@
           </noscript-span>
         </noscript>
         <deck-section class="novels">
-          <!-- <a id="" href="#" data-tags="">
-            <title-span></title-span>
-          </a> -->
+          <a
+            id="where_she"
+            href="/literary/poetry/wheres_she"
+            data-tags="poetry ballad fantasy">
+            <title-span>Where&rsquo;s She?</title-span>
+          </a>
         </deck-section>
       </main-content>
     </main>

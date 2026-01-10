@@ -42,3 +42,7 @@ image-cv {
   flex-grow: 1;
   min-height: 0;
 }
+
+image-cv svg {
+  transform: translateY(5px);
+}

@@ -4,7 +4,10 @@ document.querySelectorAll("mark").forEach((mark) => {
   const link = document.createElement("a");
 
   link.textContent = text;
-  link.href = `/literary/shorts?q=${encodeURIComponent(text)}`;
+  const isPoetryPage = window.location.pathname.includes("/poetry");
+  link.href = isPoetryPage
+    ? `/literary/poetry?q=${encodeURIComponent(text)}`
+    : `/literary/fiction?q=${encodeURIComponent(text)}`;
 
   mark.textContent = "";
   mark.appendChild(link);
