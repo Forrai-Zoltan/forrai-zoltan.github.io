@@ -88,61 +88,6 @@ main-content {
   background-color: #222;
 }
 
-section:has(.note) {
-  padding-inline: 1rem;
-}
-
-.note {
-  font-family: var(--font-mono);
-  font-size: 1.2rem !important;
-  color: black;
-  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.4);
-  background-color: #c0c0c0;
-  margin: 2rem;
-  margin-inline: auto;
-  padding: 0.2rem 2rem 3rem 2rem;
-  inline-size: fit-content;
-  max-inline-size: 70ch;
-  box-sizing: content-box;
-  position: relative;
-
-  p {
-    font-size: 1.2rem !important;
-  }
-
-  &.dark {
-    background-color: hsl(0, 0%, 35%);
-    color: whitesmoke;
-  }
-}
-
-.note.bent::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  right: -75px;
-  background-color: #222;
-  width: 200px;
-  height: 80px;
-  z-index: 1;
-  -webkit-transform: rotate(40deg) translateY(-50%);
-  -moz-transform: rotate(40deg) translateY(-50%);
-  -ms-transform: rotate(40deg) translateY(-50%);
-  -o-transform: rotate(40deg) translateY(-50%);
-  transform: rotate(40deg) translateY(-50%);
-}
-
-@media (max-width: 600px) {
-  .note {
-    margin: 1rem 0;
-    padding: 1rem;
-
-    * {
-      line-height: 1.4 !important;
-    }
-  }
-}
-
 .btn {
   text-align: center;
   color: var(--color-gray-100);
@@ -196,12 +141,6 @@ section:has(.note) {
   );
 }
 
-.faq-ds details {
-  counter-increment: n;
-}
-.faq-ds summary::before {
-  content: counter(n) ". ";
-}
 
 image-cv {
   a {

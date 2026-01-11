@@ -52,3 +52,11 @@ faq-container {
     font-size: 1.2rem;
   }
 }
+
+
+.faq-ds details {
+  counter-increment: n;
+}
+.faq-ds summary::before {
+  content: counter(n) ". ";
+}

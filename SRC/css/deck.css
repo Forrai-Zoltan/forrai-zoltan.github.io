@@ -4,12 +4,6 @@ deck-section {
     background-image: url(/SRC/media/img/socrates-middle-finger.png);
   }
 
-  &.shorts {
-    #reverie-ride {
-      
-    }
-  }
-
   &.essays {
     #devlog {
       background-image: url(/SRC/media/cover/devlog.png);

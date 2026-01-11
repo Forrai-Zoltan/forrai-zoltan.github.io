@@ -234,29 +234,3 @@ main-content > dev-notice:has(h1) {
   }
 }
 
-release-note {
-  p:not(:first-of-type) {
-    margin-left: 3ch;
-    hyphens: auto;
-    line-break: auto;
-    word-break: normal;
-  }
-
-  ul {
-    margin-left: 5ch;
-    padding-left: 0;
-    list-style-type: square;
-  }
-}
-
-@media (max-width: 600px) {
-  release-note {
-    p:not(:first-of-type) {
-      margin-left: 1ch;
-    }
-
-    ul {
-      margin-left: 3ch;
-    }
-  }
-}
