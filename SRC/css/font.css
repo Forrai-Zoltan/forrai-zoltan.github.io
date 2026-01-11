@@ -1,10 +1,18 @@
-
 @font-face {
   font-family: "departure-mono";
   src: url("/SRC/asset/font/departuremono/DepartureMono-Regular.woff2")
       format("woff2"),
     url("/SRC/asset/font/departuremono/DepartureMono-Regular.woff")
       format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ------------------------------------ */
+
+@font-face {
+  font-family: "special-elite";
+  src: url("/SRC/asset/font/Special_Elite/SpecialElite-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -172,16 +180,4 @@
     format("woff2");
   font-weight: 100;
   font-style: italic;
-}
-
-/* ------------------------------------ */
-
-@font-face {
-  font-family: "NewGrounds";
-  src: url("/SRC/asset/font/NG/NewgroundsFontRegular.woff2") format("woff2"),
-    url("/SRC/asset/font/NG/NewgroundsFontRegular.woff") format("woff"),
-    url("/SRC/asset/font/NG/NewgroundsFont-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }

@@ -203,4 +203,7 @@ dev-notice span {
   }
 }
 
-
+.typewriter {
+  font-family: var(--font-typewriter);
+  font-size: 1.3rem;
+}
