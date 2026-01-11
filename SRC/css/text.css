@@ -122,7 +122,11 @@ code,
   margin: 0;
 }
 
-article li::marker {
+article ol li::marker {
+  color: orange;
+}
+
+article ul li::marker {
   content: "◈ ";
   color: orange;
 }
