@@ -123,6 +123,7 @@ code,
 }
 
 article ol li::marker {
+  content: unset;
   color: orange;
 }
 
