@@ -1,0 +1,145 @@
+:root {
+  --color-page: #121212;
+  --color-text: hsl(0 0% 80%);
+  --color-link: hsl(210, 70%, 50%);
+  --color-link-l: oklch(from var(--color-link) 70% c h);
+  --color-link-d: oklch(from var(--color-link) 40% c h);
+  --font-typewriter: "special-elite";
+  --font-mono: "departure-mono";
+  --font-size: 22px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-page);
+  color: var(--color-text);
+  font-size: var(--font-size);
+  font-family: "cochin";
+}
+
+article {
+  margin-inline: auto;
+  width: fit-content;
+  max-width: 60ch;
+  padding: 0.5rem;
+}
+
+ul {
+  padding-left: 30px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+
+  li::marker {
+    content: "◈ ";
+    color: orange;
+  }
+}
+
+ul.no-mark {
+  list-style: none;
+  padding-left: 15px;
+
+  > li {
+    &::marker {
+      content: unset;
+    }
+  }
+
+  &.flex {
+    margin-bottom: 20px;
+
+    li {
+      padding-block: 5px;
+    }
+  }
+}
+
+h1 {
+  font-family: var(--font-typewriter);
+  font-size: clamp(1.8rem, 12vw, 4rem);
+  margin: 20px 0 0;
+  line-height: normal 1;
+}
+
+h2 {
+  font-family: var(--font-typewriter);
+  font-size: clamp(1.5rem, 8vw, 2rem);
+  margin: 40px 0 0;
+
+  &:first-of-type {
+    margin-top: 60px;
+  }
+}
+
+h3 {
+  font-family: var(--font-typewriter);
+  font-size: clamp(1.2rem, 6vw, 1.5rem);
+  margin: 20px 0 0;
+}
+
+p {
+  margin-block: 0 10px;
+  line-height: 1.5;
+}
+
+b {
+  color: orange;
+}
+
+magic-spell {
+  color: SlateBlue;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+a {
+  color: var(--color-link);
+  border-radius: 10px;
+
+  &:hover {
+    color: var(--color-link-l);
+  }
+
+  &:active {
+    color: var(--color-link-d);
+  }
+}
+
+.center {
+  margin-inline: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.secret-svg {
+  display: block;
+  margin: 40px;
+  margin-inline: auto;
+  width: 50px;
+}
+
+.unselect,
+.unselect * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+@media (min-width: 600px) {
+  ul.no-mark.flex {
+    margin-bottom: 40px;
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}

@@ -123,6 +123,7 @@ code,
 }
 
 article li::marker {
+  content: "◈ ";
   color: orange;
 }
 

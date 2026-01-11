@@ -99,6 +99,10 @@ release-note {
     margin-left: 5ch;
     padding-left: 0;
     list-style-type: square;
+    
+    li::marker {
+      content: unset;
+    }
   }
 }
 
