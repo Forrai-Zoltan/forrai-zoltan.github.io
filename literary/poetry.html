@@ -175,6 +175,7 @@
               list="tags"
               type="search"
               name="filter"
+              autocomplete="off"
               placeholder="POETRY・Filter Cards" />
             <input
               id="reset-x"
@@ -182,6 +183,10 @@
               value="X"
               title="clear search"
               aria-label="clear search" />
+            <datalist id="tags">
+              <option value="ballad"></option>
+              <option value="fantasy"></option>
+            </datalist>
           </search>
         </form>
         <noscript>
@@ -193,7 +198,7 @@
           <a
             id="where_she"
             href="/literary/poetry/wheres_she"
-            data-tags="poetry ballad fantasy">
+            data-tags="ballad fantasy">
             <title-span>Where&rsquo;s She?</title-span>
           </a>
         </deck-section>

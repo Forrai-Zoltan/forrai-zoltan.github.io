@@ -30,7 +30,7 @@ h1.mono {
 
 h1.alt {
   font-size: clamp(1.9rem, 6vw, 3.5rem);
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -203,34 +203,4 @@ dev-notice span {
   }
 }
 
-main-content > dev-notice:has(h1) {
-  padding: 10px;
-  margin-top: 1.5rem;
-  background-image: repeating-linear-gradient(
-    -45deg,
-    hsla(52, 100%, 40%, 1) 0 40px,
-    hsla(0, 0%, 7%, 1) 40px 90px
-  );
-  z-index: 2;
-
-  h1 {
-    line-height: 1;
-    margin: 0;
-  }
-
-  span {
-    display: inline-block;
-    font-size: clamp(3rem, 17vw, 4rem);
-    text-transform: none;
-    padding: 0px 0px 0px 5px;
-
-    version-n {
-      font-family: var(--font-mono);
-      -webkit-text-stroke: 0px black;
-      font-size: clamp(3rem, 17vw, 3.51rem);
-      display: inline-block;
-      transform: translateY(-1px);
-    }
-  }
-}
 
