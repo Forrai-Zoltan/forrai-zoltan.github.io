@@ -189,3 +189,18 @@ html {
     opacity: 0.6;
   }
 }
+
+@media print {
+  * {
+    color: #121212 !important;
+  }
+
+  ul li::marker {
+    color: #121212;
+  }
+
+  article {
+    box-shadow: none;
+  }
+
+}
