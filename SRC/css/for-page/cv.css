@@ -159,12 +159,14 @@ html {
   width: 90px;
   height: auto;
   z-index: -1;
+  opacity: 0.5;
 }
 
 #fingers {
   #f1 {
     top: 10%;
     right: 18%;
+    opacity: 0.7;
   }
   #f2 {
     top: 32%;
@@ -178,10 +180,12 @@ html {
   #f4 {
     top: 80%;
     right: 5%;
+    opacity: 0.3;
   }
   #f5 {
     width: 100px;
     top: 90%;
     left: 20%;
+    opacity: 0.6;
   }
 }
