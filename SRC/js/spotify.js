@@ -3,4 +3,4 @@ const img = document.querySelector(
 );
 setInterval(() => {
   img.src = img.src.split("&t=")[0] + "&t=" + Date.now();
-}, 15000);
+}, 5000);

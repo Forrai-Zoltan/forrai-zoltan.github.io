@@ -11,38 +11,58 @@ aside {
 }
 
 @media (max-width: 600px) {
-  #spotify-p {
+  pspotify-p {
     max-width: fit-content;
   }
-  #spotify-p img {
+  pspotify-p img {
     min-width: calc(100vw - 12px);
   }
 }
-#spotify-p {
+
+pspotify-p {
   position: relative;
   margin: 0;
   aspect-ratio: 3 / 1;
   background-color: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.6),
+      inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
 }
 
-#spotify-p::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.6),
-    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
-  z-index: 1;
+footer {
+  padding: 15px;
+  background: radial-gradient(
+    ellipse 90% 140% at top,
+    hsl(0, 0%, 6%) 45%,
+    hsla(var(--color-green-light-a), 0.2)
+  );
+
+  p {
+    margin-top: 0px;
+  }
 }
 
-image-cv {
-  flex-grow: 1;
-  min-height: 0;
-}
-
-image-cv svg {
+footer svg {
   transform: translateY(5px);
+}
+
+footer a {
+  text-decoration: underline;
 }

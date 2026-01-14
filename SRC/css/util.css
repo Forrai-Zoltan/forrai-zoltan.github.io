@@ -17,8 +17,10 @@
   display: none;
 }
 
-.unselect,
-.unselect * {
+img,
+footer,
+.unselectable,
+.unselectable * {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -38,6 +40,7 @@
   }
 }
 
+[align="center"],
 .center-text {
   text-align: center;
 }

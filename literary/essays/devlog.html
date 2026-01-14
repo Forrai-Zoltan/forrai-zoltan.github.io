@@ -13,38 +13,43 @@
     <link rel="stylesheet" href="/SRC/css/base.css" />
     <link rel="stylesheet" href="/SRC/css/text.css" />
     <link rel="stylesheet" href="/SRC/css/layout.css" />
-    <link rel="stylesheet" href="/SRC/css/nav.css" />
+    <link rel="stylesheet" href="/SRC/css/header.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
     <link rel="stylesheet" href="/SRC/css/for-page/devlog.css" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>DEV LOG・[0.1.0]</title>
     <meta name="description" content="Changelog for gildrom.com" />
   </head>
-  <body>
+  <body
+    bgcolor="#121212"
+    text="#D2D2D2"
+    link="#3C8CDD"
+    alink="#0959AA"
+    vlink="#8C59C0">
     <header>
-      <nav class="title-bar">
+      <nav>
         <a href="/">
-          <img src="/favicon.ico" />
-          <span>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</span>
+          <img align="left" width="35" src="/favicon.ico" />
+          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
         </a>
-        <label id="burger-label" for="burger">
-          <svg>
+        <label for="burger">
+          <svg width="0" height="0">
             <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
           </svg>
         </label>
       </nav>
       <input id="burger" type="checkbox" />
-      <nav class="menu">
-        <ul id="top-ul">
+      <nav>
+        <ul>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
             </svg>
-            <span>Personal</span>
+            <b>Personal</b>
             <ul>
               <li>
                 <a href="/personal/about">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
                   </svg>
                   Who am I?
@@ -52,7 +57,7 @@
               </li>
               <li>
                 <a href="/personal/obsessions">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
                   </svg>
                   Obsessions
@@ -60,7 +65,7 @@
               </li>
               <li>
                 <a href="/personal/library">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
                   </svg>
                   Library
@@ -69,14 +74,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
             </svg>
-            <span>Literary</span>
+            <b>Literary</b>
             <ul>
               <li>
                 <a href="/literary/fiction">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
                   </svg>
                   Fiction
@@ -84,7 +89,7 @@
               </li>
               <li>
                 <a href="/literary/poetry">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
                   </svg>
                   Poetry
@@ -92,7 +97,7 @@
               </li>
               <li>
                 <a href="/literary/essays">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
                   </svg>
                   Essays
@@ -101,14 +106,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
             </svg>
-            <span>Tavern</span>
+            <b>Tavern</b>
             <ul>
               <li>
                 <a href="/tavern/contact">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
                   </svg>
                   Contact
@@ -116,7 +121,7 @@
               </li>
               <li>
                 <a href="/tavern/warbles">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
                   </svg>
                   Warbles
@@ -124,7 +129,7 @@
               </li>
               <li>
                 <a href="/tavern/patronage">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
                   </svg>
                   Patronage
@@ -133,14 +138,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
             </svg>
-            <span>Beyond</span>
+            <b>Beyond</b>
             <ul>
               <li>
                 <a href="/beyond/other">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
                   </svg>
                   Other Works
@@ -148,7 +153,7 @@
               </li>
               <li>
                 <a href="/beyond/secret">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
                   </svg>
                   Secret
@@ -156,7 +161,7 @@
               </li>
               <li>
                 <a href="/beyond/epilogue">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
                   </svg>
                   Epilogue
@@ -168,110 +173,102 @@
       </nav>
     </header>
     <main>
-      <main-content class="box">
-        <dev-notice class="center-text">
+      <dossier-page>
+        <dev-notice>
           <h1>
             <span>DEV LOG <version-n>[0.1.0]</version-n></span>
           </h1>
         </dev-notice>
-        <section>
-          <article class="note bent">
-            <p># TODO</p>
-            <ul class="no-marker">
-              <!-- MAX 3 -->
-              <li> - [ ] Empty pages written</li>
-              <li> - [ ] Warbles page redesigned</li>
-              <li> - [ ] Library redesigned</li>
+        <note-bent>
+          <p># TODO</p>
+          <ul>
+            <!-- MAX 3 -->
+            <li> - [ ] Empty pages written</li>
+            <li> - [ ] Warbles page redesigned</li>
+            <li> - [ ] Library redesigned</li>
+          </ul>
+          <p>## LONG TERM</p>
+          <ul>
+            <li> - [ ] Secret Riddle</li>
+            <li> - [ ] Downloadable epub files</li>
+          </ul>
+        </note-bent>
+        <note-dark>
+          <p># CHANGELOG</p>
+          <!-- <release-note></release-note> -->
+          <!--
+                <release-note>
+                <p>
+                  <b>
+                    ## [1.0.0] ------ • FEATURE COMPLETE!
+                  </b>
+                </p>
+                <p></p>
+                <p><b>Notable changes: </b></p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </release-note>
+                -->
+          <!--
+                <release-note>
+                <p>
+                  <b>
+                    ## [0.1.1] ----26 •
+                  </b>
+                </p>
+                <p></p>
+                <p><b>Notable changes: </b></p>
+                <ul>
+                  <li>At least 1 page must be written fully!!!</li>
+                  <li></li>
+                  <li></li>
+                  <li>Rewrote my CV. Added consistent styling with the rest of the site.</li>
+                  <li>Disabled browser autofill for search bars. Added my own datalist for them.</li>
+                  <li>
+                    Most pages now have a description meta tag in the head.
+                    <b>TODO:</b> refine them later.
+                  </li>
+                  <li>
+                    Renames the Literary Section. Shorts -> Fiction. Novels page were removed, added Poetry page instead. Essays left unchanged.
+                  </li>
+                </ul>
+              </release-note>
+                -->
+          <release-note>
+            <p>
+              <b>
+                ## [0.1.0] 100126 • A COMPLETE REFACTOR OF THE WHOLE WEBSITE
+              </b>
+            </p>
+            <p>
+              Two years ago I wrote my first line of HTML. These two years have
+              taught me a lot, and I felt it was time to retire the old HTML and
+              CSS, and rewrite the whole site from the bottom up.
+            </p>
+            <p>
+              Consider this the <i>Beta release</i> of the site. Some pages are
+              still missing but everything rests on solid ground.
+            </p>
+            <p><b>Notable changes: </b></p>
+            <ul>
+              <li>Removed bloat and simplified the codebase.</li>
+              <li>
+                Fiction pages received cleaner markup and css. Using oklch color
+                space and nested selectors.
+              </li>
+              <li>
+                Instead of many separate submodules and GitHub sub-repos, the
+                website now lives in a singular monorepo, making migration much
+                simpler if needed.
+              </li>
             </ul>
-            <p>## LONG TERM</p>
-            <ul class="no-marker">
-              <li> - [ ] Secret Riddle</li>
-              <li> - [ ] Downloadable epub files</li>
-            </ul>
-          </article>
-        </section>
-        <section>
-          <article class="note dark">
-            <p># CHANGELOG</p>
-            <!-- <release-note></release-note> -->
-            <!-- 
-              <release-note>
-              <p>
-                <b>
-                  ## [1.0.0] ------ • FEATURE COMPLETE!
-                </b>
-              </p> 
-              <p></p>
-              <p><b>Notable changes: </b></p>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </release-note>
-              -->
-
-            <!-- 
-              <release-note>
-              <p>
-                <b>
-                  ## [0.1.1] ----26 • 
-                </b>
-              </p> 
-              <p></p>
-              <p><b>Notable changes: </b></p>
-              <ul>
-                <li>At least 1 page must be written fully!!!</li>
-                <li></li>
-                <li></li>
-                <li>Rewrote my CV. Added consistent styling with the rest of the site.</li>
-                <li>Disabled browser autofill for search bars. Added my own datalist for them.</li>
-                <li>
-                  Most pages now have a description meta tag in the head. 
-                  <b>TODO:</b> refine them later.
-                </li>
-                <li>
-                  Renames the Literary Section. Shorts -> Fiction. Novels page were removed, added Poetry page instead. Essays left unchanged.
-                </li>
-              </ul>
-            </release-note>
-              -->
-            <release-note>
-              <p>
-                <b>
-                  ## [0.1.0] 100126 • A COMPLETE REFACTOR OF THE WHOLE WEBSITE
-                </b>
-              </p>
-              <p>
-                Two years ago I wrote my first line of HTML. These two years
-                have taught me a lot, and I felt it was time to retire the old
-                HTML and CSS, and rewrite the whole site from the bottom up.
-              </p>
-              <p>
-                Consider this the <i>Beta release</i> of the site. Some pages
-                are still missing but everything rests on solid ground.<mono
-                  class="emoji"
-                  >^^</mono
-                >
-              </p>
-              <p><b>Notable changes: </b></p>
-              <ul>
-                <li>Removed bloat and simplified the codebase.</li>
-                <li>
-                  Fiction pages received cleaner markup and css. Using oklch
-                  color space and nested selectors.
-                </li>
-                <li>
-                  Instead of many separate submodules and GitHub sub-repos, the
-                  website now lives in a singular monorepo, making migration
-                  much simpler if needed.
-                </li>
-              </ul>
-              <p class="center-text">* * *</p>
-            </release-note>
-          </article>
-        </section>
-      </main-content>
+            <p align="center">* * *</p>
+          </release-note>
+        </note-dark>
+      </dossier-page>
     </main>
   </body>
 </html>

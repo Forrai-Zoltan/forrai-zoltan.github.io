@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/SRC/css/base.css" />
     <link rel="stylesheet" href="/SRC/css/text.css" />
     <link rel="stylesheet" href="/SRC/css/layout.css" />
-    <link rel="stylesheet" href="/SRC/css/nav.css" />
+    <link rel="stylesheet" href="/SRC/css/header.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
     <link rel="stylesheet" href="/SRC/css/for-page/contact.css" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
@@ -24,31 +24,36 @@
       name="description"
       content="Contact page to reach Zoltan Forrai aka Gildrom on gildrom.com" />
   </head>
-  <body>
+  <body
+    bgcolor="#121212"
+    text="#D2D2D2"
+    link="#3C8CDD"
+    alink="#0959AA"
+    vlink="#8C59C0">
     <header>
-      <nav class="title-bar">
+      <nav>
         <a href="/">
-          <img src="/favicon.ico" />
-          <span>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</span>
+          <img align="left" height="30" src="/favicon.ico" />
+          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
         </a>
-        <label id="burger-label" for="burger">
-          <svg>
+        <label for="burger">
+          <svg width="0" height="0">
             <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
           </svg>
         </label>
       </nav>
       <input id="burger" type="checkbox" />
-      <nav class="menu">
-        <ul id="top-ul">
+      <nav>
+        <ul>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
             </svg>
-            <span>Personal</span>
+            <b>Personal</b>
             <ul>
               <li>
                 <a href="/personal/about">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
                   </svg>
                   Who am I?
@@ -56,7 +61,7 @@
               </li>
               <li>
                 <a href="/personal/obsessions">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
                   </svg>
                   Obsessions
@@ -64,7 +69,7 @@
               </li>
               <li>
                 <a href="/personal/library">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
                   </svg>
                   Library
@@ -73,14 +78,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
             </svg>
-            <span>Literary</span>
+            <b>Literary</b>
             <ul>
               <li>
                 <a href="/literary/fiction">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
                   </svg>
                   Fiction
@@ -88,7 +93,7 @@
               </li>
               <li>
                 <a href="/literary/poetry">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
                   </svg>
                   Poetry
@@ -96,7 +101,7 @@
               </li>
               <li>
                 <a href="/literary/essays">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
                   </svg>
                   Essays
@@ -105,14 +110,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
             </svg>
-            <span>Tavern</span>
+            <b>Tavern</b>
             <ul>
               <li>
                 <a href="/tavern/contact">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
                   </svg>
                   Contact
@@ -120,7 +125,7 @@
               </li>
               <li>
                 <a href="/tavern/warbles">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
                   </svg>
                   Warbles
@@ -128,7 +133,7 @@
               </li>
               <li>
                 <a href="/tavern/patronage">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
                   </svg>
                   Patronage
@@ -137,14 +142,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
             </svg>
-            <span>Beyond</span>
+            <b>Beyond</b>
             <ul>
               <li>
                 <a href="/beyond/other">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
                   </svg>
                   Other Works
@@ -152,7 +157,7 @@
               </li>
               <li>
                 <a href="/beyond/secret">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
                   </svg>
                   Secret
@@ -160,7 +165,7 @@
               </li>
               <li>
                 <a href="/beyond/epilogue">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
                   </svg>
                   Epilogue
@@ -172,28 +177,25 @@
       </nav>
     </header>
     <main>
-      <main-content class="box bg-purple alt">
+      <main-content>
         <article>
-          <h1 class="center-text alt">What&rsquo;s on your mind?</h1>
-          <p class="main-copy"> Comments, questions, curses? Ask away! </p>
+          <h1 align="center">What&rsquo;s on your mind?</h1>
+          <p align="center"> Comments, questions, curses? Ask away! </p>
           <noscript>
-            <noscript-span class="center-text">
+            <noscript-span>
               This page uses JS to make the file upload field not suck ass.
             </noscript-span>
           </noscript>
           <thanks-background>
             <a href="#"></a>
-            <thanks-section id="toast" class="box">
-              <a class="close" href="#">
-                <svg>
+            <thanks-section id="toast">
+              <a href="#">
+                <svg width="20" height="20">
                   <use href="/SRC/asset/svg/closeX.svg#icon-closeX"></use>
                 </svg>
               </a>
               <div>Message Received!</div>
-              <img
-                class="center-div"
-                src="/SRC/asset/anim/reading.gif"
-                alt="" />
+              <img src="/SRC/asset/anim/reading.gif" alt="" />
             </thanks-section>
           </thanks-background>
           <form
@@ -209,14 +211,14 @@
                     autocomplete="off"
                     id="name"
                     type="text"
-                    name=""
+                    name="name"
                     placeholder="William Shakespeare" />
                 </p>
+
                 <p>
                   <label for="email"
                     >Email (opt.)
                     <svg
-                      class="move-down"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -232,7 +234,6 @@
                     </svg>
                   </label>
                   <hidden-info>For replying. My eyes only.</hidden-info>
-
                   <input
                     autocomplete="off"
                     id="email"
@@ -247,7 +248,6 @@
                     <label for="file-noJS"
                       >Upload File
                       <svg
-                        class="move-down"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -277,7 +277,6 @@
                     <label for="file"
                       >Upload File
                       <svg
-                        class="move-down"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -295,12 +294,7 @@
                     <hidden-info>Max one. Max 500mb.</hidden-info>
                   </p>
                   <div id="drop-zone">
-                    <input
-                      id="file"
-                      class="drop-zone-input"
-                      name="attachment"
-                      type="file"
-                      accept="*" />
+                    <input id="file" name="attachment" type="file" accept="*" />
                     <svg id="plus">
                       <use
                         href="/SRC/asset/svg/folder.svg#folder-plus-icon"></use>
@@ -334,7 +328,6 @@
                 </p>
               </section>
             </fieldset>
-
             <hidden-inputs>
               <!-- Spam filter -->
               <input
@@ -349,9 +342,8 @@
                 name="_next"
                 value="https://gildrom.com/tavern/contact#toast" />
             </hidden-inputs>
-
-            <button class="btn" type="submit">
-              <span class="mac-fix">Send your message!</span>
+            <button type="submit">
+              <b>Send your message!</b>
             </button>
           </form>
         </article>

@@ -3,21 +3,22 @@ aside {
   flex-direction: column;
   gap: 7px;
 }
+
+aside img {
+  width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  flex: 0 0 auto;
+}
+
 @media (max-width: 600px) {
-  #cta-exit {
+  footer {
     padding: 20px 0px !important;
   }
 }
 
-image-aside {
-  flex: 0 0 auto;
-}
-
-#pfp {
-  width: 100%;
-}
-
-#cta-exit {
+footer {
   flex: 1 1 auto;
   padding: 30px 0px;
   display: flex;
@@ -31,23 +32,29 @@ image-aside {
   justify-content: space-between;
 }
 
-span:has(#exit) {
-  font-size: 1.3rem;
-  color: silver;
+footer a[href="/tavern/contact"] {
+  z-index: 1;
 }
 
-#exit {
+p:has(a[href="/exit"]) {
+  margin: 0;
+  font-size: 1.3rem;
+  color: silver;
+  line-height: 1;
+}
+
+a[href="/exit"] {
   text-decoration-line: underline;
   text-decoration-color: silver;
   text-decoration-thickness: 0.5px;
   text-underline-offset: 3px;
 }
 
-#exit:focus-visible {
+a[href="/exit"]:focus-visible {
   border-radius: 3px;
 }
 
-#exit:hover {
+a[href="/exit"]:hover {
   color: white;
   text-decoration-line: underline;
   text-decoration-color: white;
@@ -60,23 +67,13 @@ span:has(#exit) {
     gap: 0.6rem;
   }
 
-  image-aside {
+  aside img {
     display: block;
     flex: 0 0 auto;
     position: relative;
-    max-width: 500px;
   }
 
-
-  #cta-exit {
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem auto;
-    min-height: max-content;
-  }
-
-  #cta {
+  footer a[href="/tavern/contact"] {
     z-index: 1;
   }
 }

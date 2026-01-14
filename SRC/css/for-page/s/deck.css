@@ -1,22 +1,21 @@
 /* //// //// //// COVER IMAGES //// //// //// */
 deck-section {
+  a img {
+    display: none;
+  }
   #soc {
     background-image: url(/SRC/media/img/socrates-middle-finger.png);
   }
 
-  &.essays {
-    #devlog {
-      background-image: url(/SRC/media/cover/devlog.png);
-    }
+  #devlog {
+    background-image: url(/SRC/media/cover/devlog.png);
   }
 
-  &.other {
-    #NG {
-      background-image: url(/SRC/media/cover/cover-ng.bmp);
-      background-color: black;
-      background-size: contain;
-      background-position: top;
-    }
+  #NG {
+    background-image: url(/SRC/media/cover/cover-ng.bmp);
+    background-color: black;
+    background-size: contain;
+    background-position: top;
   }
 }
 
@@ -61,15 +60,15 @@ input[type="search"] {
   }
 }
 
-input[type="search"]:placeholder-shown ~ #reset-x {
+input[type="search"]:placeholder-shown ~ [type="reset"] {
   display: none;
 }
 
-input[type="search"]:not(:placeholder-shown) ~ #reset-x {
+input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
   display: inline;
 }
 
-#reset-x {
+[type="reset"] {
   position: absolute;
   right: 0.5em;
   top: 50%;

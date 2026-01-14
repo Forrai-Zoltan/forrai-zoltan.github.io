@@ -5,6 +5,12 @@ header {
   box-shadow: 0px 3px 6px 0px black;
   z-index: 10;
   color: var(--color-alt-white-l);
+
+  svg {
+    width: 1em; /* matches font size of parent */
+    height: 1em; /* matches font size of parent */
+    box-sizing: content-box;
+  }
 }
 
 header input {
@@ -13,7 +19,7 @@ header input {
 
 /* TITLE BAR */
 
-.title-bar {
+nav:has(h1) {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,7 +36,7 @@ header input {
   cursor: pointer;
 }
 
-.title-bar a {
+nav:has(h1) a {
   line-height: 1;
   display: flex;
   width: 100%;
@@ -41,21 +47,23 @@ header input {
   color: var(--color-alt-white-l);
 }
 
-.title-bar span {
+nav:has(h1) h1 {
   font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
   letter-spacing: 0.05em;
   padding-top: 2px;
+  margin: 0;
+  font-weight: 100;
 }
 
-.title-bar img {
-  height: 1.4em;
+nav:has(h1) img {
+  width: 1.4em;
   margin: 0.5rem 0.8rem 0.5rem 0.6rem;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.05);
   border-radius: 10px;
 }
 
 @media (min-width: 600px) {
-  .title-bar {
+  nav:has(h1) {
     background: linear-gradient(
       to right,
       transparent,
@@ -65,8 +73,8 @@ header input {
     );
   }
 
-  .title-bar:hover,
-  .title-bar:focus-visible {
+  nav:has(h1):hover,
+  nav:has(h1):focus-visible {
     background: linear-gradient(
       to right,
       transparent,
@@ -76,8 +84,8 @@ header input {
     );
   }
 
-  .title-bar:hover::after,
-  .title-bar:focus-visible::after {
+  nav:has(h1):hover::after,
+  nav:has(h1):focus-visible::after {
     content: "";
     position: absolute;
     left: 5px;
@@ -94,8 +102,8 @@ header input {
     border-top-left-radius: 10px;
   }
 
-  .title-bar img {
-    height: 1em;
+  nav:has(h1) img {
+    width: 1em;
     margin: 0.5rem 0.8rem 0.5rem 1.6rem;
     border-radius: 10px;
   }
@@ -103,20 +111,20 @@ header input {
 
 /* HAMBURGER MENU FOR MOBILE */
 
-#burger-label {
+label[for="burger"] {
   margin: 1px;
   font-size: 40px;
   max-height: 40px;
   padding: 5px 10px;
   box-sizing: content-box;
 }
-.menu {
+header nav:has(ul) {
   display: none;
 }
 body:has(#burger:checked) {
   overflow: hidden;
 }
-#burger:checked ~ .menu {
+#burger:checked ~ nav:has(ul) {
   display: block;
   position: fixed;
   top: 57px;
@@ -130,35 +138,36 @@ body:has(#burger:checked) {
   overflow-y: auto;
 }
 
-.menu ul {
+header nav:has(ul) ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#burger:checked ~ .menu #top-ul li {
+#burger:checked ~ nav:has(ul) > ul li {
   padding-block: 1vh;
 }
 
-#burger:checked ~ .menu #top-ul > li {
+#burger:checked ~ nav:has(ul) > ul > li {
+  font-weight: 100;
   font-size: 1.5rem;
   padding-block: 2vh;
   padding-inline: 10px;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
-#burger:checked ~ .menu a {
+#burger:checked ~ nav:has(ul) a {
   display: inline-block;
   padding-inline: 20px;
   width: 100%;
 }
 
-#burger:checked ~ .menu li svg {
+#burger:checked ~ nav:has(ul) li svg {
   padding-right: 2%;
   vertical-align: top;
 }
 
-.menu a {
+header nav:has(ul) a {
   display: inline-block;
   height: 100%;
 }
@@ -170,16 +179,17 @@ body:has(#burger:checked) {
     padding: 5px 0 0 0;
   }
 
-  #burger-label,
-  .menu svg {
+  label[for="burger"],
+  header nav:has(ul) ul svg {
     display: none;
   }
-  .menu {
+
+  header nav:has(ul) {
     display: block;
   }
 
   /* Top-level menu container styling */
-  .menu #top-ul {
+  header nav:has(ul) > ul {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(
@@ -193,12 +203,13 @@ body:has(#burger:checked) {
     padding: 0;
   }
 
-  .menu li {
+  header nav:has(ul) li {
     font-size: 1.5rem;
+    font-weight: 100;
   }
 
   /* Top-level menu items */
-  .menu #top-ul > li {
+  header nav:has(ul) > ul > li {
     display: flex;
     position: relative;
     width: 100%;
@@ -211,15 +222,15 @@ body:has(#burger:checked) {
     -webkit-user-select: none;
   }
 
-  .menu #top-ul > li > svg {
+  header nav:has(ul) > ul > li > svg {
     display: flex;
     font-size: 1.4rem;
     margin: 0 5px;
   }
 
   /* Hover/focus effects on top-level items */
-  .menu #top-ul > li:hover,
-  .menu #top-ul > li:focus-within {
+  header nav:has(ul) > ul > li:hover,
+  header nav:has(ul) > ul > li:focus-within {
     border-radius: 15px 25px 25px 15px;
     border-right: 5px solid white;
     background: linear-gradient(
@@ -230,7 +241,7 @@ body:has(#burger:checked) {
   }
 
   /* MOTE! DO NOT DELETE! */
-  .menu #top-ul > li::after {
+  header nav:has(ul) > ul > li::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -241,14 +252,14 @@ body:has(#burger:checked) {
   }
 
   /* Show dropdown on hover/focus */
-  .menu #top-ul li:hover ul,
-  .menu #top-ul li:focus-within ul {
+  header nav:has(ul) > ul li:hover ul,
+  header nav:has(ul) > ul li:focus-within ul {
     display: block;
     z-index: 45;
   }
 
   /* Dropdown menus */
-  .menu #top-ul li ul {
+  header nav:has(ul) > ul li ul {
     display: none;
     margin-top: 5px;
     position: absolute;
@@ -271,7 +282,7 @@ body:has(#burger:checked) {
     list-style: none;
   }
 
-  .menu #top-ul a {
+  header nav:has(ul) > ul a {
     padding: 3px;
     padding-bottom: 3px;
     padding-left: 0.7rem;
@@ -280,8 +291,8 @@ body:has(#burger:checked) {
     height: 100%;
   }
 
-  .menu #top-ul li ul li:hover,
-  .menu #top-ul li ul li:has(a:focus-visible) {
+  header nav:has(ul) > ul li ul li:hover,
+  header nav:has(ul) > ul li ul li:has(a:focus-visible) {
     border-radius: 5px;
     cursor: pointer;
     background: linear-gradient(
@@ -291,12 +302,12 @@ body:has(#burger:checked) {
     );
   }
 
-  .menu #top-ul li ul li:hover a,
-  .menu #top-ul li ul li a:focus-visible {
+  header nav:has(ul) > ul li ul li:hover a,
+  header nav:has(ul) > ul li ul li a:focus-visible {
     color: white;
   }
 
-  .menu #top-ul li ul li a:focus-visible {
+  header nav:has(ul) > ul li ul li a:focus-visible {
     padding: 3px;
     padding-left: 0.7rem;
     padding-bottom: 0;

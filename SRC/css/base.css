@@ -19,6 +19,8 @@ section {
 
 body {
   margin: 0;
+  background-color: black;
+  color: white;
 }
 
 main {
@@ -36,12 +38,6 @@ hr {
   height: 1px;
 }
 
-svg {
-  width: 1em; /* matches font size of parent */
-  height: 1em; /* matches font size of parent */
-  box-sizing: content-box;
-}
-
 summary {
   cursor: pointer;
   color: var(--color-alt-white);
@@ -49,6 +45,12 @@ summary {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+  box-sizing: content-box;
 }
 
 summary:hover,
@@ -157,16 +159,20 @@ article:not(.note) a:not([href^="/"], [href^="#"], :has(img)):hover::after {
  This css makes them look identitcal. */
 @media (min-width: 600px) {
   @supports (-webkit-font-smoothing: antialiased) {
-    .title-bar span {
+    nav:has(h1) h1,
+    img[src="/SRC/asset/svg/rss.svg"],
+    form label svg {
+      display: inline-block;
       transform: translateY(4px);
     }
 
-    .menu a,
-    .menu span {
+    nav:has(ul) a,
+    nav:has(ul) b {
       transform: translateY(2px);
     }
 
-    .btn span {
+    footer a[href="/tavern/contact"] b,
+    button b {
       display: inline-block;
       transform: translateY(3px);
     }

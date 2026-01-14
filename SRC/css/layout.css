@@ -17,7 +17,46 @@ main {
   }
 }
 
-main-content > article {
+:is(exit-content, main-content) {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.6),
+    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+
+main-content {
+  background: radial-gradient(
+    ellipse 80% 130% at top,
+    hsl(0, 0%, 6%) 45%,
+    hsla(var(--color-purple-a), 0.9) 99%
+  );
+}
+
+deck-box {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.6),
+    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+  background: radial-gradient(
+    ellipse 80% 130% at top,
+    black 45%,
+    hsla(var(--color-purple-a), 0.9) 99%
+  );
+  width: 100%;
+}
+
+exit-content {
+  background: radial-gradient(
+    ellipse 90% 140% at top,
+    hsl(0, 0%, 6%) 45%,
+    hsla(var(--color-green-light-a), 0.15) 99%
+  );
+}
+
+:is(exit-content, main-content) > article {
   font-size: 1.5rem;
   margin-inline: auto;
   padding: 2rem min(5rem, 4%);
@@ -25,6 +64,25 @@ main-content > article {
   max-inline-size: 70ch;
   color: var(--color-alt-white);
   box-sizing: content-box;
+}
+
+footer {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at top,
+    black 30%,
+    hsla(var(--color-green-light-a), 0.3) 90%
+  );
+  box-shadow: inset 0px -10px 25px -11px rgba(0, 0, 0, 0.8),
+    0px 15px 19px 2px rgba(0, 0, 0, 0.5),
+    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem auto;
+  min-height: max-content;
 }
 
 .box {
@@ -83,11 +141,7 @@ main-content > article {
   );
 }
 
-main-content {
-  width: 100%;
-  background-color: #222;
-}
-
+button,
 .btn {
   text-align: center;
   color: var(--color-gray-100);
@@ -111,11 +165,14 @@ main-content {
   will-change: transform;
 }
 
+button span,
 .btn span {
   will-change: transform;
   backface-visibility: hidden;
 }
 
+button:hover,
+button:focus-visible,
 .btn:hover,
 .btn:focus-visible {
   transform: scale(1) rotate(0.02deg);
@@ -128,22 +185,16 @@ main-content {
     var(--color-purple),
     var(--color-purple-dark)
   );
-  box-shadow: 0px 15px 19px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 19px 2px rgba(0, 0, 0, 0.4);
 }
 
+button:active,
 .btn:active {
-  transform: scale(1.02);
+  transform: scale(0.97);
   background: radial-gradient(
     circle at center,
     var(--color-purple),
     var(--color-purple-dark),
     var(--color-purple-dark)
   );
-}
-
-
-image-cv {
-  a {
-    text-decoration: underline;
-  }
 }

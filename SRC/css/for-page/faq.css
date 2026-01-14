@@ -53,10 +53,9 @@ faq-container {
   }
 }
 
-
-.faq-ds details {
+details {
   counter-increment: n;
 }
-.faq-ds summary::before {
+summary::before {
   content: counter(n) ". ";
 }

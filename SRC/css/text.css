@@ -24,7 +24,7 @@ article h1 {
   margin-block: clamp(0rem, 5vw, 1rem) 1.5rem;
 }
 
-h1.mono {
+h1.error {
   font-size: clamp(2.5rem, 10vw, 4rem);
 }
 
@@ -58,8 +58,7 @@ h4 {
 p {
   line-height: 1.7em;
   font-size: 1.5rem;
-
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   hyphens: auto;
   overflow-wrap: anywhere;
   word-break: normal;
@@ -67,24 +66,32 @@ p {
   text-wrap: pretty;
 }
 
-.secret-svg {
-  margin: 40px auto 0;
-  width: 50px;
+p:has(#sigil) {
+  margin-top: 40px;
+  line-height: 0;
+  font-size: 3.5rem;
 }
 
-.mono {
+.departure {
   font-family: var(--font-mono);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
-jb-mono,
 .jb-mono {
   font-family: var(--font-jb-mono);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
-.ft-ng {
-  font-family: var(--font-ng);
-  font-size: 1.2rem;
+
+jb-emoji {
+  font-family: var(--font-jb-mono);
+  font-size: 1.25rem;
+  color: orange;
+}
+
+h1.alt {
+  margin: 20px 0!important;
+  line-height: 1;
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
 }
 
 noscript-span {
@@ -92,12 +99,14 @@ noscript-span {
   line-height: 1.7em;
   display: block;
   margin: 10px;
+  text-align: center;
+
   text-decoration: underline wavy orangered 1px;
   text-underline-offset: 7px;
 }
 
 noscript-span,
-.err {
+.error {
   font-family: var(--font-mono);
   color: orangered;
 }
@@ -113,6 +122,15 @@ noscript-span,
 
 code,
 .code {
+  line-height: 1.7em;
+  font-size: 1.5rem;
+
+  margin-bottom: 10px;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-break: auto;
+  text-wrap: pretty;
   font-family: var(--font-mono);
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
@@ -120,6 +138,12 @@ code,
   border-radius: 7px;
   padding: 5px 15px;
   margin: 0;
+  position: relative;
+  margin-block: 20px;
+  font-size: 1.1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 article ol li::marker {
@@ -154,10 +178,6 @@ em-oblique {
   font-style: oblique 10deg;
 }
 
-.emoji {
-  color: orange;
-}
-
 magic-spell {
   color: SlateBlue;
   font-size: 1.6rem;
@@ -166,6 +186,7 @@ magic-spell {
 
 dev-notice {
   display: inline-block;
+  text-align: center;
   width: 100%;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;

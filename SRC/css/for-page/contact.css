@@ -33,6 +33,9 @@ thanks-background:has(thanks-section:target) > a {
 }
 
 thanks-section {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px 10px 20px 20px;
+  overflow: hidden;
   position: fixed;
   top: 13%;
   left: 50%;
@@ -69,10 +72,10 @@ thanks-section img {
   border-radius: 10px;
 }
 
-.close {
+thanks-section a {
   position: absolute;
-  top: 0.1rem;
-  right: 0.4rem;
+  top: 0rem;
+  right: 0.2rem;
   cursor: pointer;
   width: 30px;
   height: 34px;
@@ -83,14 +86,14 @@ body:has(thanks-section:target) > *:not(thanks-section) {
   pointer-events: none;
 }
 
-form .btn {
+form button {
   display: block;
   width: 50%;
   margin-inline: auto;
   margin-top: 20px;
 }
 
-.btn:focus-visible {
+button:focus-visible {
   outline: 3px solid orange;
   border-radius: 20px;
 }
@@ -211,7 +214,7 @@ div#drop-zone {
     }
   }
 
-  input.drop-zone-input {
+  input#file {
     display: none;
   }
 
@@ -296,15 +299,12 @@ hidden-info {
   font-family: var(--font-jb-mono);
 }
 
-
-
 form label:has(svg:hover) ~ hidden-info {
   display: inline-block;
   transform: translateY(10px);
   position: absolute;
   padding-left: 5px;
 }
-
 
 @media (max-width: 600px) {
   article {
@@ -315,7 +315,7 @@ form label:has(svg:hover) ~ hidden-info {
   textarea {
     min-height: 200px;
   }
-  form .btn {
+  form button {
     width: 100%;
     margin: 0;
     margin-top: 20px;
@@ -345,15 +345,17 @@ form label:has(svg:hover) ~ hidden-info {
   }
 }
 
+article h1 {
+  margin: 0 0 5px 0 !important;
+  line-height: 1;
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
+}
 
-
+article h1 + p {
+  margin-block: 5px;
+}
 @media (min-width: 600px) {
   @supports not (-webkit-font-smoothing: antialiased) {
-    h1 {
-      margin-top: 0 !important;
-      line-height: 1;
-    }
-
     article {
       padding-top: 1.5rem !important;
       padding-bottom: 0.5rem !important;
@@ -395,11 +397,6 @@ form label:has(svg:hover) ~ hidden-info {
   }
 
   article {
-  min-width: max-content !important;
+    min-width: max-content !important;
   }
-}
-
-.move-down {
-  display: inline-block;
-  transform: translateY(4px);
 }

@@ -1,16 +1,38 @@
-#exit-nav-internal {
+nav:has(a[href="/rss.xml"]) {
   border-bottom: 1px solid var(--color-alt-white);
 }
 
-article#exit nav a {
+nav:has(a[href="/rss.xml"]) ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10ch;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  li::marker {
+    content: none;
+  }
+}
+
+nav:has(a[href="/rss.xml"]) a {
   color: var(--color-alt-white);
 }
 
-article#exit nav a:hover {
+nav:has(a[href="/rss.xml"]) a:hover {
   color: white;
 }
 
 buttons-88x31 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -31,43 +53,47 @@ buttons-88x31 a:hover {
   border-radius: 2px;
 }
 
-.button-gif {
+img[src="/SRC/btn.gif"] {
   display: inline-block;
   margin-left: 8px;
   transform: scale(1.1);
   transition: transform 0.2s ease;
   vertical-align: text-bottom;
   will-change: transform;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-ul:has(.button-gif:hover) ~ .code .pointing-hand {
+ul:has(img[src="/SRC/btn.gif"]:hover)
+  ~ code
+  img[src="/SRC/asset/icon/pointing-hand.png"] {
   opacity: 1;
 }
 
-.button-gif:hover {
+img[src="/SRC/btn.gif"]:hover {
   transform: scale(1.2);
 }
 
-.button-gif:hover ~ .code .pointing-hand {
+img[src="/SRC/btn.gif"]:hover
+  ~ code
+  img[src="/SRC/asset/icon/pointing-hand.png"] {
   opacity: 1;
 }
 
-.code {
-  position: relative;
-  margin-block: 20px;
-  font-size: 1.1rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.pointing-hand {
+img[src="/SRC/asset/icon/pointing-hand.png"] {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   opacity: 0;
   position: absolute;
-  scale: 0.25;
-  top: -45px;
-  left: -200px;
+  width: 75px;
+  top: 8px;
+  left: -80px;
   transition: opacity 0.2s ease;
+
   /* filter: 
   drop-shadow(4px 0 0 orange)
   drop-shadow(-4px 0 0 orange)
@@ -76,6 +102,10 @@ ul:has(.button-gif:hover) ~ .code .pointing-hand {
 }
 
 tech-stack-icons {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -101,13 +131,17 @@ tech-stack-icons a:focus-visible {
   border-radius: 12px;
 }
 
-.rss-icon {
-  display: inline;
+img[src="/SRC/asset/svg/rss.svg"] {
+  display: inline-block ;
   padding: 1px;
   padding-right: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-a:hover .rss-icon {
+a:hover image[src="/SRC/asset/svg/rss.svg"] {
   filter: brightness(1.2);
 }
 

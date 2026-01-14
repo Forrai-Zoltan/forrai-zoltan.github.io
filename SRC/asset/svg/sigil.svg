@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" >
+
+  <symbol id="sigil" viewBox="0 0 100 100" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Define a glow filter -->
+    <defs>
+      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+
+    <path
+      fill="none"
+      d="M 50 10 L80 65 L50 85 L20 65 L50 10"
+      filter="url(#glow)" />
+    <g filter="url(#glow)">
+      <path fill="none" d="M 51 30 L51 72" />
+      <path fill="none" d="M 51 60 L62 51.33" />
+      <path fill="none" d="M 51 72 L67 60.33" />
+    </g>
+  </symbol>
+  
+</svg>

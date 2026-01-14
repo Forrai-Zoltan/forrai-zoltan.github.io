@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/SRC/css/base.css" />
     <link rel="stylesheet" href="/SRC/css/text.css" />
     <link rel="stylesheet" href="/SRC/css/layout.css" />
-    <link rel="stylesheet" href="/SRC/css/nav.css" />
+    <link rel="stylesheet" href="/SRC/css/header.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>Legal Leaves・gildrom.com</title>
@@ -21,31 +21,36 @@
       name="description"
       content="Privacy Policy, Terms of Service, and Creative Commons License for gildrom.com" />
   </head>
-  <body>
+  <body
+    bgcolor="#121212"
+    text="#D2D2D2"
+    link="#3C8CDD"
+    alink="#0959AA"
+    vlink="#8C59C0">
     <header>
-      <nav class="title-bar">
+      <nav>
         <a href="/">
-          <img src="/favicon.ico" />
-          <span>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</span>
+          <img align="left" height="30" src="/favicon.ico" />
+          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
         </a>
-        <label id="burger-label" for="burger">
-          <svg>
+        <label for="burger">
+          <svg width="0" height="0">
             <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
           </svg>
         </label>
       </nav>
       <input id="burger" type="checkbox" />
-      <nav class="menu">
-        <ul id="top-ul">
+      <nav>
+        <ul>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
             </svg>
-            <span>Personal</span>
+            <b>Personal</b>
             <ul>
               <li>
                 <a href="/personal/about">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
                   </svg>
                   Who am I?
@@ -53,7 +58,7 @@
               </li>
               <li>
                 <a href="/personal/obsessions">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
                   </svg>
                   Obsessions
@@ -61,7 +66,7 @@
               </li>
               <li>
                 <a href="/personal/library">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
                   </svg>
                   Library
@@ -70,14 +75,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
             </svg>
-            <span>Literary</span>
+            <b>Literary</b>
             <ul>
               <li>
                 <a href="/literary/fiction">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
                   </svg>
                   Fiction
@@ -85,7 +90,7 @@
               </li>
               <li>
                 <a href="/literary/poetry">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
                   </svg>
                   Poetry
@@ -93,7 +98,7 @@
               </li>
               <li>
                 <a href="/literary/essays">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
                   </svg>
                   Essays
@@ -102,14 +107,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
             </svg>
-            <span>Tavern</span>
+            <b>Tavern</b>
             <ul>
               <li>
                 <a href="/tavern/contact">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
                   </svg>
                   Contact
@@ -117,7 +122,7 @@
               </li>
               <li>
                 <a href="/tavern/warbles">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
                   </svg>
                   Warbles
@@ -125,7 +130,7 @@
               </li>
               <li>
                 <a href="/tavern/patronage">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
                   </svg>
                   Patronage
@@ -134,14 +139,14 @@
             </ul>
           </li>
           <li tabindex="0">
-            <svg>
+            <svg width="20" height="20">
               <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
             </svg>
-            <span>Beyond</span>
+            <b>Beyond</b>
             <ul>
               <li>
                 <a href="/beyond/other">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
                   </svg>
                   Other Works
@@ -149,7 +154,7 @@
               </li>
               <li>
                 <a href="/beyond/secret">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
                   </svg>
                   Secret
@@ -157,7 +162,7 @@
               </li>
               <li>
                 <a href="/beyond/epilogue">
-                  <svg>
+                  <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
                   </svg>
                   Epilogue
@@ -169,12 +174,12 @@
       </nav>
     </header>
     <main>
-      <main-content class="box bg-purple alt">
-        <dev-notice class="center-text">
+      <main-content>
+        <dev-notice>
           <span>page under writing</span>
         </dev-notice>
         <article>
-          <h1 class="center-text">Legal Leaves</h1>
+          <h1 align="center">Legal Leaves</h1>
 
           <h2>My Strict No-Ai Policy</h2>
 

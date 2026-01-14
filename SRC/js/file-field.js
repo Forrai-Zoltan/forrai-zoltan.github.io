@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document.querySelectorAll(".drop-zone-input").forEach((inputElement) => {
+document.querySelectorAll("#file").forEach((inputElement) => {
   const dropZoneElement = inputElement.closest("#drop-zone");
 
   let currentFile = null;

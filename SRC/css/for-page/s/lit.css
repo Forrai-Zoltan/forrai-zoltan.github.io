@@ -1,6 +1,6 @@
 :root {
   --color-page: #121212;
-  --color-text: hsl(0 0% 80%);
+  --color-text: #cccccc;
   --color-text-d: oklch(from var(--color-text) 50% c h);
   --color-link: hsl(210, 70%, 50%);
   --color-link-l: oklch(from var(--color-link) 70% c h);
