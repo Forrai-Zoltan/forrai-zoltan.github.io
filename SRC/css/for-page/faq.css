@@ -1,11 +1,14 @@
 details {
   font-family: var(--font-mono);
-  margin: 1rem 0;
+  margin: 1rem auto;
   background-color: rgba(10, 10, 10, 0.8);
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 5px solid var(--color-magic);
+  width: 100%;
+  max-width: min(70ch, 85%);
+
 }
 
 details[open] > *:not(summary) {
@@ -45,7 +48,7 @@ faq-container {
 @media (min-width: 600px) {
   summary {
     font-size: 1.4rem;
-    min-width: 70ch;
+    width: 100%;
   }
 
   details[open] > *:not(summary) {

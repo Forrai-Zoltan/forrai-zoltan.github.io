@@ -1,4 +1,4 @@
-dev-notice:has(h1) {
+dev-notice {
   padding: 10px;
   margin-top: 1.5rem;
   background-image: repeating-linear-gradient(
@@ -7,11 +7,6 @@ dev-notice:has(h1) {
     hsla(0, 0%, 7%, 1) 40px 90px
   );
   z-index: 2;
-
-  h1 {
-    line-height: 1;
-    margin: 0;
-  }
 
   span {
     display: inline-block;
@@ -103,13 +98,16 @@ note-dark {
   box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.4);
   margin: 2rem;
   margin-inline: auto;
-  padding: 0.2rem 2rem 3rem 2rem;
+  padding: 0.2rem 3rem 3rem 3rem;
   inline-size: fit-content;
   max-inline-size: 70ch;
   box-sizing: content-box;
   position: relative;
   background-color: hsl(0, 0%, 35%);
   color: whitesmoke;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 
   * {
     font-size: 1.2rem !important;
@@ -119,18 +117,24 @@ note-dark {
     list-style: square;
     padding: 0;
     margin: 0;
-    max-width: 65ch;
-    line-height: 1.7;
+    max-width: 62ch;
 
     li {
-      margin-top: 5px;
+      margin-top: 15px;
+      line-height: 1.7;
+      padding-left: 10px;
     }
   }
 }
 
+release-note:not(:last-of-type) {
+  margin-bottom: 80px;
+}
+
 release-note {
   display: block;
-  border-top: 1.5px solid var(--color-alt-white);
+  border-top: 1.5px dashed hsl(from var(--color-alt-white) h s l / 0.5);
+  padding-top: 10px;
 
   p:not(:first-of-type) {
     margin-left: 3ch;
@@ -169,5 +173,19 @@ release-note {
     * {
       line-height: 1.4 !important;
     }
+  }
+}
+
+dossier-page a:any-link {
+  --color: LightSkyBlue;
+  color: var(--color);
+  text-decoration: underline dashed 1.5px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: hsl(from var(--color) h s 80%);
+  }
+  &:active {
+    color: hsl(from var(--color) h s 40%);
   }
 }

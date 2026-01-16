@@ -19,18 +19,13 @@ html {
   margin-top: 0;
 }
 
-article h1 {
+h1 {
   font-size: clamp(2.5rem, 12vw, 5rem);
   margin-block: clamp(0rem, 5vw, 1rem) 1.5rem;
 }
 
 h1.error {
   font-size: clamp(2.5rem, 10vw, 4rem);
-}
-
-h1.alt {
-  font-size: clamp(1.9rem, 6vw, 3.5rem);
-  margin-bottom: 0;
 }
 
 h2 {
@@ -87,9 +82,10 @@ jb-emoji {
   font-size: 1.25rem;
   color: orange;
 }
-
 h1.alt {
-  margin: 20px 0!important;
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
+  margin-bottom: 0;
+  margin: 20px 0 !important;
   line-height: 1;
   font-size: clamp(1.9rem, 6vw, 3.5rem);
 }

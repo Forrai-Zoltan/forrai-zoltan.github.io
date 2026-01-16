@@ -1,0 +1,155 @@
+::selection {
+  color: black;
+  background-color: lightskyblue;
+}
+
+main-content {
+  display: block;
+  height: calc(100vh - 102px);
+  overflow: hidden;
+  position: relative;
+  box-shadow: none;
+}
+
+main-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.6),
+    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+}
+
+tweet-timeline {
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+  padding-block: 20px;
+}
+
+status-update {
+  position: relative;
+  display: block;
+  margin: 1rem auto;
+  padding: 32px 20px 5px 75px;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(185, 229, 255);
+  width: 100%;
+  max-width: min(60ch, 85%);
+  min-height: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.1rem !important;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.3;
+
+  * {
+    font-size: 1.1rem !important;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  &:before {
+    content: "Zoltan Forrai";
+    background-image: url("/SRC/media/photo/head-shot-s-sq.png");
+    display: inline-flex;
+
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    height: 55px;
+    padding-left: 65px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.2px black;
+    -webkit-text-fill-color: black;
+  }
+
+  &:after {
+    content: "@gildrom・" attr(datetime);
+    background-image: url("/SRC/asset/svg/verified.svg");
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    left: 178px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    padding-left: 20px;
+    color: #545e63;
+    background-position: left -1px;
+  }
+}
+
+status-update:first-of-type {
+  opacity: 0;
+  transform: translateY(var(--first-post-height));
+  animation: fadeIn 0.5s forwards 1s;
+  margin-bottom: var(--first-post-height);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--first-post-height));
+    margin-bottom: var(--first-post-height);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    margin-bottom: 0;
+  }
+}
+
+status-update img:not(a img) {
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  margin-top: 15px;
+  cursor: zoom-in;
+}
+
+interaction-row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding-inline: 0 50%;
+  margin-top: 10px;
+
+  input {
+    display: none;
+  }
+}
+
+interaction-row label {
+  scale: 1.1;
+}
+
+interaction-row a,
+interaction-row label {
+  color: hsl(0, 0%, 45%);
+  cursor: pointer;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+interaction-row a:hover,
+interaction-row label:hover {
+  color: hsl(0, 0%, 60%);
+}
+
+interaction-row a:active,
+interaction-row label:active {
+  scale: 0.9;
+}
+
+[id="heart"]:checked ~ label svg {
+  fill: palevioletred;
+  stroke: palevioletred;
+}
