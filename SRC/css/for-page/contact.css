@@ -1,3 +1,6 @@
+main-content {
+  padding: 50px 10px 0 10px;
+}
 thanks-background a[href^="#"]:not(:has(img))::before {
   content: "";
 }
@@ -88,7 +91,7 @@ body:has(thanks-section:target) > *:not(thanks-section) {
 
 form button {
   display: block;
-  width: 50%;
+  width: 30%;
   margin-inline: auto;
   margin-top: 20px;
 }
@@ -118,11 +121,11 @@ fieldset {
   border: none;
   padding: 0;
   margin: 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-article {
-  padding-top: 10px;
-}
+
 
 input,
 textarea {
@@ -307,11 +310,6 @@ form label:has(svg:hover) ~ hidden-info {
 }
 
 @media (max-width: 600px) {
-  article {
-    padding-top: 10px;
-    max-width: none !important;
-  }
-
   textarea {
     min-height: 200px;
   }
@@ -364,7 +362,7 @@ article h1 + p {
 
   input,
   textarea {
-    min-width: 300px;
+    min-width: 200px;
     max-width: 100%;
   }
 
@@ -390,13 +388,3 @@ article h1 + p {
   }
 }
 
-@media (min-width: 1020px) {
-  input,
-  textarea {
-    min-width: 450px;
-  }
-
-  article {
-    min-width: max-content !important;
-  }
-}

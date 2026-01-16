@@ -116,8 +116,8 @@ interaction-row {
   display: flex;
   gap: 10px;
   justify-content: space-between;
-  padding-inline: 0 50%;
-  margin-top: 10px;
+  padding-inline: 5px 60%;
+  margin-top: 20px;
 
   input {
     display: none;
