@@ -57,7 +57,6 @@ status-update {
     content: "Zoltan Forrai";
     background-image: url("/SRC/media/photo/head-shot-s-sq.png");
     display: inline-flex;
-
     position: absolute;
     top: 12px;
     left: 10px;
@@ -68,6 +67,7 @@ status-update {
     font-weight: 900;
     -webkit-text-stroke: 0.2px black;
     -webkit-text-fill-color: black;
+    pointer-events: none;
   }
 
   &:after {
