@@ -271,8 +271,8 @@ header nav:has(ul) a {
     background: radial-gradient(
       ellipse 250% 100% at top left,
       hsl(var(--color-purple-a), 0.7),
-      hsla(var(--color-gray-900-a), 0.4),
-      hsla(var(--color-gray-900-a), 0.4),
+      hsla(var(--color-gray-900-a), 0.6),
+      hsla(var(--color-gray-900-a), 0.6),
       hsla(var(--color-gray-900-a), 0.7)
     );
     box-shadow: 20px 30px 25px rgba(10, 10, 10, 0.4);
@@ -300,6 +300,11 @@ header nav:has(ul) a {
       var(--color-purple-hover),
       rgba(0, 0, 0, 0)
     );
+  }
+
+  header nav:has(ul) > ul li ul li a,
+  header nav:has(ul) > ul li ul li a {
+    color: var(--color-alt-white);
   }
 
   header nav:has(ul) > ul li ul li:hover a,
