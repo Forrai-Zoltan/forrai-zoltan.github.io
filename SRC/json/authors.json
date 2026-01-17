@@ -1,46 +1,46 @@
 {
   "authors": [
     {
-    "id": "a38",
-    "name": "Gábor Klaniczay",
-    "corpus": "",
-    "bio": "<img src='https://upload.wikimedia.org/wikipedia/commons/3/37/Gabor-klaniczay.jpg' alt='Gábor Klaniczay'><a href='https://en.wikipedia.org/wiki/G%C3%A1bor_Klaniczay'>Gábor Klaniczay</a> (1950–) is a Hungarian historian, a specialist in the history of religions and cultures of Renaissance and Baroque Europe."
+      "id": "a38",
+      "name": "Gábor Klaniczay",
+      "corpus": "",
+      "bio": "<img src='https://upload.wikimedia.org/wikipedia/commons/3/37/Gabor-klaniczay.jpg' alt='Gábor Klaniczay'><a href='https://en.wikipedia.org/wiki/G%C3%A1bor_Klaniczay'>Gábor Klaniczay</a> (1950–) is a Hungarian historian, a specialist in the history of religions and cultures of Renaissance and Baroque Europe."
     },
     {
-    "id": "a37",
-    "name": "Bryan A. Garner",
-    "corpus": "",
-    "bio": " <img src='' alt='Bryan A. Garner'><a href='https://en.wikipedia.org/wiki/Bryan_A._Garner'>Bryan Andrew Garner</a> (1958–) is an American lawyer, lexicographer, and legal writing expert. He is the author of several influential books on legal writing and style."
+      "id": "a37",
+      "name": "Bryan A. Garner",
+      "corpus": "",
+      "bio": " <img src='' alt='Bryan A. Garner'><a href='https://en.wikipedia.org/wiki/Bryan_A._Garner'>Bryan Andrew Garner</a> (1958–) is an American lawyer, lexicographer, and legal writing expert. He is the author of several influential books on legal writing and style."
     },
     {
-    "id": "a36",
-    "name": "Lois Tyson",
-    "corpus": "",
-    "bio": ""
-  },
+      "id": "a36",
+      "name": "Lois Tyson",
+      "corpus": "",
+      "bio": ""
+    },
     {
-    "id": "a35",
-    "name": "Christopher Manson",
-    "corpus": "",
-    "bio": " <img src='' alt='Christopher Manson'><a href='https://en.wikipedia.org/wiki/Christopher_Manson'>Christopher Manson</a> (1950?) is an American author and illustrator, best known for his puzzle book MAZE published in 1985."
-  },
+      "id": "a35",
+      "name": "Christopher Manson",
+      "corpus": "",
+      "bio": " <img src='' alt='Christopher Manson'><a href='https://en.wikipedia.org/wiki/Christopher_Manson'>Christopher Manson</a> (1950?) is an American author and illustrator, best known for his puzzle book MAZE published in 1985."
+    },
     {
-    "id": "a34",
-    "name": "Amy Hennig",
-    "corpus": "",
-    "bio": " <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Amy_hennig_gdca_2019_cropped.jpg/800px-Amy_hennig_gdca_2019_cropped.jpg' alt='Amy Hennig'><a href='https://en.wikipedia.org/wiki/Amy_Hennig'>Amy Hennig</a> (1964–) is an American video game director and scriptwriter, known for her work on the Uncharted series and Legacy of Kain series."
-  },
+      "id": "a34",
+      "name": "Amy Hennig",
+      "corpus": "",
+      "bio": " <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Amy_hennig_gdca_2019_cropped.jpg/800px-Amy_hennig_gdca_2019_cropped.jpg' alt='Amy Hennig'><a href='https://en.wikipedia.org/wiki/Amy_Hennig'>Amy Hennig</a> (1964–) is an American video game director and scriptwriter, known for her work on the Uncharted series and Legacy of Kain series."
+    },
     {
-    "id": "a33",
-    "name": "Alan Moore",
-    "corpus": "",
-    "bio": "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Alan_Moore_%282%29.jpg/1024px-Alan_Moore_%282%29.jpg' alt='Alan Moore'><a href='https://en.wikipedia.org/wiki/Alan_Moore'>Alan Moore</a> (1953–) is an English author widely recognised as one of the best comic book writers in the English language."
-  },
+      "id": "a33",
+      "name": "Alan Moore",
+      "corpus": "",
+      "bio": "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Alan_Moore_%282%29.jpg/1024px-Alan_Moore_%282%29.jpg' alt='Alan Moore'><a href='https://en.wikipedia.org/wiki/Alan_Moore'>Alan Moore</a> (1953–) is an English author widely recognised as one of the best comic book writers in the English language."
+    },
     {
-    "id": "a32",
-    "name": "H. P. Lovecraft",
-    "corpus": "",
-    "bio": "<img src='https://upload.wikimedia.org/wikipedia/commons/1/10/H._P._Lovecraft%2C_June_1934.jpg' alt='H.P Lovecraft'><a href='https://en.wikipedia.org/wiki/H._P._Lovecraft'>Howard Phillips Lovecraft</a> (1890–1937) was an American writer of weird, horror, fantasy, and science fiction. He is best known for his creation of the Cthulhu Mythos, but his legacy is also apparent in terms like \"Lovecraftian horror\" and an enduring fandom."
+      "id": "a32",
+      "name": "H. P. Lovecraft",
+      "corpus": "",
+      "bio": "<img src='https://upload.wikimedia.org/wikipedia/commons/1/10/H._P._Lovecraft%2C_June_1934.jpg' alt='H.P Lovecraft'><a href='https://en.wikipedia.org/wiki/H._P._Lovecraft'>Howard Phillips Lovecraft</a> (1890–1937) was an American writer of weird, horror, fantasy, and science fiction. He is best known for his creation of the Cthulhu Mythos, but his legacy is also apparent in terms like \"Lovecraftian horror\" and an enduring fandom."
     },
     {
       "id": "a31",

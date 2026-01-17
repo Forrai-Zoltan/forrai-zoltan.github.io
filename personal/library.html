@@ -174,12 +174,53 @@
         </ul>
       </nav>
     </header>
+    <noscript>
+      <noscript-span>
+        This page uses JS to render the tables and make them interactive.
+      </noscript-span>
+    </noscript>
     <main>
-      <main-content>
-        <dev-notice>
-          <span>page under re-development</span>
-        </dev-notice>
-      </main-content>
+      <section id="top-section">
+        <search>
+          <input
+            type="search"
+            name="q"
+            id=""
+            placeholder="LIBRARY・Filter Rows" />
+        </search>
+      </section>
+      <div id="library-body">
+        
+        <table id="works-table">
+          <thead>
+            <tr>
+              <th id="title">Title</th>
+              <th id="authors">Authors</th>
+              <th id="tags">Tags</th>
+              <th id="status">Status</th>
+              <th id="rating">Rating</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot></tfoot>
+        </table>
+
+        <section id="work-section">
+          <button id="work-close" aria-label="Close">×</button>
+          <h1>W Title</h1>
+          <ul>
+            <li id="s-authors">Authors: <span></span> </li>
+            <li id="s-tags">Tags: <span></span></li>
+            <li id="s-status">Status: <span></span></li>
+            <li id="s-rating">Rating: <span></span></li>
+          </ul>
+          <div id="s-note"></div>
+        </section>
+
+       
+        
+      </div>
     </main>
   </body>
+  <script src="/SRC/js/library.js"></script>
 </html>
