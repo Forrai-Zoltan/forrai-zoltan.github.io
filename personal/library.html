@@ -185,20 +185,25 @@
           <input
             type="search"
             name="q"
-            id=""
-            placeholder="LIBRARY・Filter Rows" />
+            id="filter"
+            autocomplete="off"
+            placeholder="LIBRARY・Filter Works" />
+          <input
+            type="reset"
+            value="X"
+            title="clear search"
+            aria-label="clear search" />
         </search>
       </section>
       <div id="library-body">
-        
         <table id="works-table">
           <thead>
             <tr>
-              <th id="title">Title</th>
-              <th id="authors">Authors</th>
-              <th id="tags">Tags</th>
-              <th id="status">Status</th>
-              <th id="rating">Rating</th>
+              <th title="Title" id="title">Title</th>
+              <th title="Authors" id="authors">Authors</th>
+              <th title="Tags" id="tags">Tags</th>
+              <th title="Status" id="status">Status</th>
+              <th title="Rating" id="rating">Rating</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -206,7 +211,7 @@
         </table>
 
         <section id="work-section">
-          <button id="work-close" aria-label="Close">×</button>
+          <button class="work-close" aria-label="Close">×</button>
           <h1>W Title</h1>
           <ul>
             <li id="s-authors">Authors: <span></span> </li>
@@ -217,8 +222,21 @@
           <div id="s-note"></div>
         </section>
 
-       
-        
+        <section id="author-section">
+          <button class="work-close" aria-label="Close">×</button>
+          <h1>A Title</h1>
+          <div id="s-bio"></div>
+          <table>
+            <thead>
+              <tr>
+                <th id="as-title">Title</th>
+                <th id="as-tags">Tags</th>
+                <th id="as-status">Status</th>
+                <th id="as-rating">Rating</th>
+              </tr>
+            </thead>
+          </table>
+        </section>
       </div>
     </main>
   </body>
