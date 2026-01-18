@@ -91,7 +91,7 @@ body:has(thanks-section:target) > *:not(thanks-section) {
 
 form button {
   display: block;
-  width: 30%;
+  width: 30% !important;
   min-width: fit-content; 
   padding-inline: 20px;
   margin-inline: auto;
