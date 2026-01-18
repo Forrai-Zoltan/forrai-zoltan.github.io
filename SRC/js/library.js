@@ -674,7 +674,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (firstHighlightedRow) {
               firstHighlightedRow.scrollIntoView({
                 behavior: "smooth",
-                block: "center",
+                block: "nearest",
               });
             }
           }
