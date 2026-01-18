@@ -1,3 +1,5 @@
+// Vibecoded with CGPT and Claue (Bugfixes by Claude)
+
 document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.querySelector("#works-table tbody");
   const workSection = document.querySelector("#work-section");
