@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const sRating = document.querySelector("#s-rating span");
   const sNote = document.querySelector("#s-note");
 
+  // Add Wikipedia cache near the top with other variables
+  const wikipediaCache = {};
+
   let workOpen = false;
   let authorOpen = false;
 
@@ -82,6 +85,51 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  // Updated fetchWikipediaData with caching
+  async function fetchWikipediaData(authorName) {
+    // Check cache first
+    if (wikipediaCache[authorName]) {
+      return wikipediaCache[authorName];
+    }
+
+    try {
+      const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
+        authorName
+      )}`;
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        wikipediaCache[authorName] = null; // Cache negative results too
+        return null;
+      }
+
+      const data = await response.json();
+
+      const result = {
+        image: data.thumbnail
+          ? {
+              src: data.thumbnail.source,
+              alt: authorName,
+            }
+          : null,
+        link:
+          data.content_urls?.desktop?.page ||
+          `https://en.wikipedia.org/wiki/${encodeURIComponent(authorName)}`,
+        exists:
+          data.type !==
+          "https://mediawiki.org/wiki/HyperSwitch/errors/not_found",
+      };
+
+      // Cache the result
+      wikipediaCache[authorName] = result;
+      return result;
+    } catch (error) {
+      console.log("Could not fetch Wikipedia data for", authorName);
+      wikipediaCache[authorName] = null; // Cache the failure
+      return null;
+    }
+  }
+
   Promise.all([
     fetch("/SRC/json/works.json").then((res) => res.json()),
     fetch("/SRC/json/authors.json").then((res) => res.json()),
@@ -105,7 +153,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const authorTableBody = authorTable.querySelector("tbody");
         if (!authorTableBody) return;
 
-        const originalAuthorRows = Array.from(authorTableBody.querySelectorAll("tr"));
+        const originalAuthorRows = Array.from(
+          authorTableBody.querySelectorAll("tr")
+        );
 
         // Remove old listeners if they exist by cloning headers
         if (authorTableListenersAttached) {
@@ -126,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
           th.addEventListener("click", () => {
             const column = index;
             let direction;
-            
+
             if (authorTableSortState.column !== column) {
               direction = "asc";
             } else if (authorTableSortState.direction === "asc") {
@@ -136,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
               direction = "asc";
             }
-            
+
             authorTableSortState = { column, direction };
 
             // Remove previous indicators
@@ -160,7 +210,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!direction) {
               rowsToDisplay = originalAuthorRows;
             } else {
-              rowsToDisplay = Array.from(authorTableBody.querySelectorAll("tr")).sort((a, b) => {
+              rowsToDisplay = Array.from(
+                authorTableBody.querySelectorAll("tr")
+              ).sort((a, b) => {
                 let aText = a.children[column].textContent.trim();
                 let bText = b.children[column].textContent.trim();
                 if (th.id === "as-rating") {
@@ -168,8 +220,16 @@ document.addEventListener("DOMContentLoaded", () => {
                   bText = parseFloat(bText) || 0;
                 }
                 return direction === "asc"
-                  ? aText < bText ? -1 : aText > bText ? 1 : 0
-                  : aText > bText ? -1 : aText < bText ? 1 : 0;
+                  ? aText < bText
+                    ? -1
+                    : aText > bText
+                    ? 1
+                    : 0
+                  : aText > bText
+                  ? -1
+                  : aText < bText
+                  ? 1
+                  : 0;
               });
             }
 
@@ -181,22 +241,68 @@ document.addEventListener("DOMContentLoaded", () => {
         authorTableListenersAttached = true;
       }
 
-      // Populate author section with works by a specific author
-      function populateAuthorSection(authorId) {
+      // Updated populateAuthorSection function
+      async function populateAuthorSection(authorId) {
         const authorData = authorsData.authors.find((a) => a.id === authorId);
         const authorName = authorMap[authorId] || authorId;
-        
-        authorSection.querySelector("h1").textContent = authorName;
-        authorSection.querySelector("#s-bio").innerHTML = authorData ? authorData.bio || "" : "";
 
-        const authorTableBody = authorSection.querySelector("table tbody") || (() => {
-          const tbody = document.createElement("tbody");
-          authorSection.querySelector("table").appendChild(tbody);
-          return tbody;
-        })();
-        
+        // Immediately update the title
+        authorSection.querySelector("h1").textContent = authorName;
+
+        // Show bio with author name as plain text immediately (before Wikipedia fetch)
+        const bioElement = authorSection.querySelector("#s-bio");
+        if (authorData) {
+          // Show author name + bio immediately (name will become a link when Wikipedia loads)
+          bioElement.innerHTML = `${authorName} ${authorData.bio || ""}`;
+        } else {
+          bioElement.innerHTML = "";
+        }
+
+        // Clear/reset image immediately
+        const imgElement = authorSection.querySelector("#a-img");
+        imgElement.src = "";
+        imgElement.alt = "";
+        imgElement.style.display = "none";
+
+        // Clear the works table immediately
+        const authorTableBody =
+          authorSection.querySelector("table tbody") ||
+          (() => {
+            const tbody = document.createElement("tbody");
+            authorSection.querySelector("table").appendChild(tbody);
+            return tbody;
+          })();
+
         authorTableBody.innerHTML = "";
 
+        // Now fetch Wikipedia data asynchronously
+        fetchWikipediaData(authorName).then((wikiData) => {
+          // Update image when ready
+          if (wikiData && wikiData.image) {
+            imgElement.src = wikiData.image.src;
+            imgElement.alt = wikiData.image.alt;
+            imgElement.style.display = "";
+          }
+
+          // Update bio with Wikipedia link when ready
+          if (authorData) {
+            let bioHTML = "";
+
+            // Add Wikipedia link if available, otherwise just keep the name
+            if (wikiData && wikiData.link) {
+              bioHTML = `<a href="${wikiData.link}" target="_blank" rel="noopener noreferrer">${authorName}</a> `;
+            } else {
+              bioHTML = `${authorName} `;
+            }
+
+            // Add bio text
+            bioHTML += authorData.bio || "";
+
+            bioElement.innerHTML = bioHTML;
+          }
+        });
+
+        // Populate works table (no need to wait for Wikipedia)
         worksData.works
           .filter((work) => work.authors.includes(authorId))
           .forEach((work) => {
@@ -212,18 +318,16 @@ document.addEventListener("DOMContentLoaded", () => {
             titleLink.href = `#${workSlug}`;
             titleLink.addEventListener("click", (e) => {
               e.preventDefault();
-              
-              // Remove highlight from main table
+
               const prev = tableBody.querySelectorAll("tr.highlighted");
               prev.forEach((row) => row.classList.remove("highlighted"));
 
-              // Highlight corresponding main table row
               const mainRow = Array.from(tableBody.querySelectorAll("tr")).find(
-                (r) => r.querySelector("td:first-child").textContent === work.title
+                (r) =>
+                  r.querySelector("td:first-child").textContent === work.title
               );
               if (mainRow) mainRow.classList.add("highlighted");
 
-              // Update URL hash
               history.replaceState(null, "", `#${workSlug}`);
 
               renderWork(work);
@@ -247,7 +351,6 @@ document.addEventListener("DOMContentLoaded", () => {
             authorTableBody.appendChild(row);
           });
 
-        // Setup sorting for this newly populated table
         setupAuthorTableSorting();
       }
 
@@ -268,7 +371,7 @@ document.addEventListener("DOMContentLoaded", () => {
         titleLink.href = `#${slug}`;
         titleLink.addEventListener("click", (e) => {
           e.preventDefault();
-          
+
           // Remove highlight from any previously highlighted rows
           const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
           prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
@@ -297,10 +400,13 @@ document.addEventListener("DOMContentLoaded", () => {
           authorLink.href = `#${authorSlug}`;
           authorLink.addEventListener("click", (e) => {
             e.preventDefault();
-            
+
             // Remove highlight from any previously highlighted rows
-            const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
-            prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
+            const prevHighlighted =
+              tableBody.querySelectorAll("tr.highlighted");
+            prevHighlighted.forEach((row) =>
+              row.classList.remove("highlighted")
+            );
             tr.classList.add("highlighted");
 
             // Update URL hash
@@ -426,12 +532,13 @@ document.addEventListener("DOMContentLoaded", () => {
           authorLink.textContent = authorMap[authorId] || authorId;
           authorLink.addEventListener("click", (e) => {
             e.preventDefault();
-            
+
             // Highlight the corresponding row in main table by matching the work title
             const rows = Array.from(tableBody.querySelectorAll("tr"));
             rows.forEach((row) => row.classList.remove("highlighted"));
-            const matchingRow = rows.find((row) =>
-              row.querySelector("td:first-child").textContent === work.title
+            const matchingRow = rows.find(
+              (row) =>
+                row.querySelector("td:first-child").textContent === work.title
             );
             if (matchingRow) matchingRow.classList.add("highlighted");
 
@@ -448,7 +555,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sAuthors.appendChild(document.createTextNode(", "));
           }
         });
-        
+
         sTags.textContent = work.tags || "";
         sStatus.textContent = work.status || "";
         sRating.textContent = work.rating !== null ? work.rating : "";
@@ -545,11 +652,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (worksMap[hash]) {
           renderWork(worksMap[hash]);
           openWorkSection();
-          
+
           // Highlight corresponding row in main table
           const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
           prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
-          
+
           const workTitle = worksMap[hash].title;
           const rows = Array.from(tableBody.querySelectorAll("tr"));
           const mainRow = rows.find(
@@ -561,19 +668,24 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         } else {
           // Try to find author by slug
-          const author = authorsData.authors.find((a) => slugify(a.name) === hash);
+          const author = authorsData.authors.find(
+            (a) => slugify(a.name) === hash
+          );
           if (author) {
             openAuthorSection();
             populateAuthorSection(author.id);
 
             // Highlight all main table rows with this author
-            const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
-            prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
-            
+            const prevHighlighted =
+              tableBody.querySelectorAll("tr.highlighted");
+            prevHighlighted.forEach((row) =>
+              row.classList.remove("highlighted")
+            );
+
             const authorName = author.name;
             const mainRows = Array.from(tableBody.querySelectorAll("tr"));
             let firstHighlightedRow = null;
-            
+
             mainRows.forEach((row) => {
               const authorsTd = row.querySelector("td:nth-child(2)");
               if (authorsTd && authorsTd.textContent.includes(authorName)) {
@@ -581,7 +693,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!firstHighlightedRow) firstHighlightedRow = row;
               }
             });
-            
+
             if (firstHighlightedRow) {
               firstHighlightedRow.scrollIntoView({
                 behavior: "smooth",
@@ -601,7 +713,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Search functionality (initialized after data loads)
   function initializeSearch() {
-    const searchInput = document.querySelector('#top-section input[type="search"]');
+    const searchInput = document.querySelector(
+      '#top-section input[type="search"]'
+    );
     const tableContainer = document.querySelector("#works-table");
 
     if (!searchInput || !tableBody) return;
@@ -624,7 +738,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const phraseRegex = /"([^"]+)"|(\S+)/g;
       let match;
       const rawTokens = [];
-      
+
       while ((match = phraseRegex.exec(input)) !== null) {
         if (match[1]) {
           rawTokens.push(match[1]);
@@ -635,7 +749,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const includeTokens = [];
       const excludeTokens = [];
-      
+
       rawTokens.forEach((token) => {
         if (token.startsWith("-") && token.length > 1) {
           excludeTokens.push(token.slice(1));
@@ -650,8 +764,12 @@ document.addEventListener("DOMContentLoaded", () => {
           .map((td) => td.textContent.toLowerCase())
           .join(" ");
 
-        const includesAll = includeTokens.every((token) => text.includes(token));
-        const excludesAll = excludeTokens.every((token) => !text.includes(token));
+        const includesAll = includeTokens.every((token) =>
+          text.includes(token)
+        );
+        const excludesAll = excludeTokens.every(
+          (token) => !text.includes(token)
+        );
 
         if (includesAll && excludesAll) {
           row.style.display = "";
@@ -669,7 +787,9 @@ document.addEventListener("DOMContentLoaded", () => {
     searchInput.addEventListener("input", debouncedFilter);
 
     // Reset button
-    const searchReset = document.querySelector('#top-section input[type="reset"]');
+    const searchReset = document.querySelector(
+      '#top-section input[type="reset"]'
+    );
     if (searchReset) {
       searchReset.addEventListener("click", () => {
         searchInput.value = "";
@@ -680,19 +800,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Update handle height for each section
   const handleSections = document.querySelectorAll("section:not(#top-section)");
-  
+
   function updateHandleHeight() {
     handleSections.forEach((section) => {
       section.style.setProperty("--handle-height", section.scrollHeight + "px");
     });
   }
-  
+
   updateHandleHeight();
-  
+
   handleSections.forEach((section) => {
     section.addEventListener("input", updateHandleHeight);
     section.addEventListener("scroll", updateHandleHeight);
   });
-  
+
   window.addEventListener("resize", updateHandleHeight);
 });
