@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
   }
 
-  [workSection, authorSection].forEach(section => {
-    section.addEventListener("mousedown", e => {
+  [workSection, authorSection].forEach((section) => {
+    section.addEventListener("mousedown", (e) => {
       const rect = section.getBoundingClientRect();
       if (e.clientX - rect.left < 10) {
         startResize(e, section);
@@ -38,10 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.addEventListener("mousemove", e => {
+  document.addEventListener("mousemove", (e) => {
     if (!isResizing || !resizingSection) return;
     const dx = startX - e.clientX; // left-edge drag
-    const newWidth = Math.min(window.innerWidth, Math.max(300, startWidth + dx));
+    const newWidth = Math.min(
+      window.innerWidth,
+      Math.max(300, startWidth + dx)
+    );
     resizingSection.style.width = `${newWidth}px`;
   });
 
@@ -54,12 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   Promise.all([
-    fetch("/SRC/json/works.json").then(res => res.json()),
-    fetch("/SRC/json/authors.json").then(res => res.json())
+    fetch("/SRC/json/works.json").then((res) => res.json()),
+    fetch("/SRC/json/authors.json").then((res) => res.json()),
   ])
     .then(([worksData, authorsData]) => {
       const authorMap = {};
-      authorsData.authors.forEach(author => {
+      authorsData.authors.forEach((author) => {
         authorMap[author.id] = author.name;
       });
 
@@ -69,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const worksMap = {};
-      worksData.works.forEach(work => {
+      worksData.works.forEach((work) => {
         const slug = slugify(work.title);
         worksMap[slug] = work;
 
@@ -84,9 +87,9 @@ document.addEventListener("DOMContentLoaded", () => {
         titleLink.textContent = work.title;
         titleLink.href = `#${slug}`;
         titleLink.addEventListener("click", () => {
-          // Remove highlight from any previously highlighted row
-          const prevHighlighted = tableBody.querySelector("tr.highlighted");
-          if (prevHighlighted) prevHighlighted.classList.remove("highlighted");
+          // Remove highlight from any previously highlighted rows
+          const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
+          prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
 
           // Highlight the clicked row
           tr.classList.add("highlighted");
@@ -102,12 +105,18 @@ document.addEventListener("DOMContentLoaded", () => {
         work.authors.forEach((authorId, index) => {
           const authorLink = document.createElement("a");
           authorLink.textContent = authorMap[authorId] || authorId;
-          const slug = getAuthorSlug({id: authorId, name: authorMap[authorId] || authorId});
+          const slug = getAuthorSlug({
+            id: authorId,
+            name: authorMap[authorId] || authorId,
+          });
           authorLink.href = `#${slug}`;
           authorLink.addEventListener("click", () => {
-            // Remove highlight from any previously highlighted row
-            const prevHighlighted = tableBody.querySelector("tr.highlighted");
-            if (prevHighlighted) prevHighlighted.classList.remove("highlighted");
+            // Remove highlight from any previously highlighted rows
+            const prevHighlighted =
+              tableBody.querySelectorAll("tr.highlighted");
+            prevHighlighted.forEach((row) =>
+              row.classList.remove("highlighted")
+            );
             tr.classList.add("highlighted");
 
             // Open the author section
@@ -119,66 +128,81 @@ document.addEventListener("DOMContentLoaded", () => {
             authorSection.querySelector("h1").textContent = authorName;
 
             // Find author details in authorsData
-            const authorData = authorsData.authors.find(a => a.id === authorId);
-            authorSection.querySelector("#s-bio").innerHTML = authorData ? authorData.bio || "" : "";
+            const authorData = authorsData.authors.find(
+              (a) => a.id === authorId
+            );
+            authorSection.querySelector("#s-bio").innerHTML = authorData
+              ? authorData.bio || ""
+              : "";
 
             // Populate author table with works by this author
-            const authorTableBody = authorSection.querySelector("table tbody") || (() => {
-              const tbody = document.createElement("tbody");
-              authorSection.querySelector("table").appendChild(tbody);
-              return tbody;
-            })();
+            const authorTableBody =
+              authorSection.querySelector("table tbody") ||
+              (() => {
+                const tbody = document.createElement("tbody");
+                authorSection.querySelector("table").appendChild(tbody);
+                return tbody;
+              })();
             authorTableBody.innerHTML = "";
 
-            worksData.works.filter(work => work.authors.includes(authorId)).forEach(work => {
-              const row = document.createElement("tr");
-              if (work.status && work.status.toLowerCase() === "read") {
-                row.classList.add("is-read");
-              }
+            worksData.works
+              .filter((work) => work.authors.includes(authorId))
+              .forEach((work) => {
+                const row = document.createElement("tr");
+                if (work.status && work.status.toLowerCase() === "read") {
+                  row.classList.add("is-read");
+                }
 
-              const tdTitle = document.createElement("td");
-              const titleLink = document.createElement("a");
-              titleLink.textContent = work.title;
-              titleLink.href = "#";
-              titleLink.addEventListener("click", () => {
-                // Remove highlight from main table
-                const prev = tableBody.querySelector("tr.highlighted");
-                if (prev) prev.classList.remove("highlighted");
+                const tdTitle = document.createElement("td");
+                const titleLink = document.createElement("a");
+                titleLink.textContent = work.title;
+                titleLink.href = "#";
+                titleLink.addEventListener("click", () => {
+                  // Remove highlight from main table
+                  const prev = tableBody.querySelectorAll("tr.highlighted");
+                  prev.forEach((row) => row.classList.remove("highlighted"));
 
-                // Highlight corresponding main table row
-                const mainRow = Array.from(tableBody.querySelectorAll("tr"))
-                  .find(r => r.querySelector("td:first-child").textContent === work.title);
-                if (mainRow) mainRow.classList.add("highlighted");
+                  // Highlight corresponding main table row
+                  const mainRow = Array.from(
+                    tableBody.querySelectorAll("tr")
+                  ).find(
+                    (r) =>
+                      r.querySelector("td:first-child").textContent ===
+                      work.title
+                  );
+                  if (mainRow) mainRow.classList.add("highlighted");
 
-                // Update URL hash
-                const workSlug = slugify(work.title);
-                history.replaceState(null, "", "#" + workSlug);
+                  // Update URL hash
+                  const workSlug = slugify(work.title);
+                  history.replaceState(null, "", "#" + workSlug);
 
-                renderWork(work);
-                openWorkSection();
+                  renderWork(work);
+                  openWorkSection();
+                });
+                tdTitle.appendChild(titleLink);
+                row.appendChild(tdTitle);
+
+                const tdTags = document.createElement("td");
+                tdTags.textContent = work.tags || "";
+                row.appendChild(tdTags);
+
+                const tdStatus = document.createElement("td");
+                tdStatus.textContent = work.status || "";
+                row.appendChild(tdStatus);
+
+                const tdRating = document.createElement("td");
+                tdRating.textContent = work.rating !== null ? work.rating : "";
+                row.appendChild(tdRating);
+
+                authorTableBody.appendChild(row);
               });
-              tdTitle.appendChild(titleLink);
-              row.appendChild(tdTitle);
-
-              const tdTags = document.createElement("td");
-              tdTags.textContent = work.tags || "";
-              row.appendChild(tdTags);
-
-              const tdStatus = document.createElement("td");
-              tdStatus.textContent = work.status || "";
-              row.appendChild(tdStatus);
-
-              const tdRating = document.createElement("td");
-              tdRating.textContent = work.rating !== null ? work.rating : "";
-              row.appendChild(tdRating);
-
-              authorTableBody.appendChild(row);
-            });
 
             // Add three-state sorting to the author table (after populating all rows)
             const authorTable = authorSection.querySelector("table");
             const authorHeaders = authorTable.querySelectorAll("thead th");
-            const originalAuthorRows = Array.from(authorTable.querySelectorAll("tbody tr"));
+            const originalAuthorRows = Array.from(
+              authorTable.querySelectorAll("tbody tr")
+            );
             let currentAuthorSort = { column: null, direction: null };
 
             authorHeaders.forEach((th, index) => {
@@ -198,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 currentAuthorSort = { column, direction };
 
                 // Remove previous indicators
-                authorHeaders.forEach(h => {
+                authorHeaders.forEach((h) => {
                   const existing = h.querySelector(".sort-indicator");
                   if (existing) existing.remove();
                 });
@@ -218,21 +242,32 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!direction) {
                   rowsToDisplay = originalAuthorRows;
                 } else {
-                  rowsToDisplay = Array.from(authorTable.querySelectorAll("tbody tr")).sort((a, b) => {
+                  rowsToDisplay = Array.from(
+                    authorTable.querySelectorAll("tbody tr")
+                  ).sort((a, b) => {
                     let aText = a.children[column].textContent.trim();
                     let bText = b.children[column].textContent.trim();
                     if (th.id === "as-rating") {
                       aText = parseFloat(aText) || 0;
                       bText = parseFloat(bText) || 0;
                     }
-                    return direction === "asc" ? (aText < bText ? -1 : aText > bText ? 1 : 0)
-                                               : (aText > bText ? -1 : aText < bText ? 1 : 0);
+                    return direction === "asc"
+                      ? aText < bText
+                        ? -1
+                        : aText > bText
+                        ? 1
+                        : 0
+                      : aText > bText
+                      ? -1
+                      : aText < bText
+                      ? 1
+                      : 0;
                   });
                 }
 
                 const tbody = authorTable.querySelector("tbody");
                 tbody.innerHTML = "";
-                rowsToDisplay.forEach(row => tbody.appendChild(row));
+                rowsToDisplay.forEach((row) => tbody.appendChild(row));
               });
             });
           });
@@ -288,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
           currentSort = { column, direction };
 
           // Remove any existing indicators
-          headers.forEach(h => {
+          headers.forEach((h) => {
             const existing = h.querySelector(".sort-indicator");
             if (existing) existing.remove();
           });
@@ -308,31 +343,33 @@ document.addEventListener("DOMContentLoaded", () => {
           if (!direction) {
             rowsToDisplay = originalRows;
           } else {
-            rowsToDisplay = Array.from(tableBody.querySelectorAll("tr")).sort((a, b) => {
-              let aText = a.children[column].textContent.trim();
-              let bText = b.children[column].textContent.trim();
+            rowsToDisplay = Array.from(tableBody.querySelectorAll("tr")).sort(
+              (a, b) => {
+                let aText = a.children[column].textContent.trim();
+                let bText = b.children[column].textContent.trim();
 
-              // Convert numeric columns
-              if (th.id === "rating") {
-                aText = parseFloat(aText) || 0;
-                bText = parseFloat(bText) || 0;
+                // Convert numeric columns
+                if (th.id === "rating") {
+                  aText = parseFloat(aText) || 0;
+                  bText = parseFloat(bText) || 0;
+                }
+
+                // For authors, use full string
+                if (th.id === "authors") {
+                  aText = aText.toLowerCase();
+                  bText = bText.toLowerCase();
+                }
+
+                if (aText < bText) return direction === "asc" ? -1 : 1;
+                if (aText > bText) return direction === "asc" ? 1 : -1;
+                return 0;
               }
-
-              // For authors, use full string
-              if (th.id === "authors") {
-                aText = aText.toLowerCase();
-                bText = bText.toLowerCase();
-              }
-
-              if (aText < bText) return direction === "asc" ? -1 : 1;
-              if (aText > bText) return direction === "asc" ? 1 : -1;
-              return 0;
-            });
+            );
           }
 
           // Clear table body and append sorted rows
           tableBody.innerHTML = "";
-          rowsToDisplay.forEach(row => tableBody.appendChild(row));
+          rowsToDisplay.forEach((row) => tableBody.appendChild(row));
         });
       });
 
@@ -343,68 +380,87 @@ document.addEventListener("DOMContentLoaded", () => {
 
         work.authors.forEach((authorId, index) => {
           const authorLink = document.createElement("a");
-          const slug = getAuthorSlug({id: authorId, name: authorMap[authorId] || authorId});
+          const slug = getAuthorSlug({
+            id: authorId,
+            name: authorMap[authorId] || authorId,
+          });
           authorLink.href = `#${slug}`;
           authorLink.textContent = authorMap[authorId] || authorId;
           authorLink.addEventListener("click", () => {
             // Highlight the corresponding row in main table
             const rows = Array.from(tableBody.querySelectorAll("tr"));
-            rows.forEach(row => row.classList.remove("highlighted"));
-            const matchingRow = rows.find(row =>
-              work.authors.every(id => row.querySelector("td:nth-child(2)").textContent.includes(authorMap[id] || id))
+            rows.forEach((row) => row.classList.remove("highlighted"));
+            const matchingRow = rows.find((row) =>
+              work.authors.every((id) =>
+                row
+                  .querySelector("td:nth-child(2)")
+                  .textContent.includes(authorMap[id] || id)
+              )
             );
             if (matchingRow) matchingRow.classList.add("highlighted");
 
             // Open author section
             openAuthorSection();
             const authorSection = document.querySelector("#author-section");
-            authorSection.querySelector("h1").textContent = authorMap[authorId] || authorId;
+            authorSection.querySelector("h1").textContent =
+              authorMap[authorId] || authorId;
 
-            const authorData = authorsData.authors.find(a => a.id === authorId);
-            authorSection.querySelector("#s-bio").innerHTML = authorData ? authorData.bio || "" : "";
+            const authorData = authorsData.authors.find(
+              (a) => a.id === authorId
+            );
+            authorSection.querySelector("#s-bio").innerHTML = authorData
+              ? authorData.bio || ""
+              : "";
 
             // Populate author table with works by this author
-            const authorTableBody = authorSection.querySelector("table tbody") || (() => {
-              const tbody = document.createElement("tbody");
-              authorSection.querySelector("table").appendChild(tbody);
-              return tbody;
-            })();
+            const authorTableBody =
+              authorSection.querySelector("table tbody") ||
+              (() => {
+                const tbody = document.createElement("tbody");
+                authorSection.querySelector("table").appendChild(tbody);
+                return tbody;
+              })();
             authorTableBody.innerHTML = "";
 
-            worksData.works.filter(w => w.authors.includes(authorId)).forEach(w => {
-              const row = document.createElement("tr");
+            worksData.works
+              .filter((w) => w.authors.includes(authorId))
+              .forEach((w) => {
+                const row = document.createElement("tr");
 
-              const tdTitle = document.createElement("td");
-              const titleLink = document.createElement("a");
-              titleLink.textContent = w.title;
-              titleLink.href = "#";
-              titleLink.addEventListener("click", () => {
-                const prev = tableBody.querySelector("tr.highlighted");
-                if (prev) prev.classList.remove("highlighted");
-                // Highlight corresponding row in main table
-                const rowsMain = Array.from(tableBody.querySelectorAll("tr"));
-                const mainRow = rowsMain.find(r => r.querySelector("td:first-child").textContent === w.title);
-                if (mainRow) mainRow.classList.add("highlighted");
-                renderWork(w);
-                openWorkSection();
+                const tdTitle = document.createElement("td");
+                const titleLink = document.createElement("a");
+                titleLink.textContent = w.title;
+                titleLink.href = "#";
+                titleLink.addEventListener("click", () => {
+                  const prev = tableBody.querySelectorAll("tr.highlighted");
+                  prev.forEach((row) => row.classList.remove("highlighted"));
+                  // Highlight corresponding row in main table
+                  const rowsMain = Array.from(tableBody.querySelectorAll("tr"));
+                  const mainRow = rowsMain.find(
+                    (r) =>
+                      r.querySelector("td:first-child").textContent === w.title
+                  );
+                  if (mainRow) mainRow.classList.add("highlighted");
+                  renderWork(w);
+                  openWorkSection();
+                });
+                tdTitle.appendChild(titleLink);
+                row.appendChild(tdTitle);
+
+                const tdTags = document.createElement("td");
+                tdTags.textContent = w.tags || "";
+                row.appendChild(tdTags);
+
+                const tdStatus = document.createElement("td");
+                tdStatus.textContent = w.status || "";
+                row.appendChild(tdStatus);
+
+                const tdRating = document.createElement("td");
+                tdRating.textContent = w.rating !== null ? w.rating : "";
+                row.appendChild(tdRating);
+
+                authorTableBody.appendChild(row);
               });
-              tdTitle.appendChild(titleLink);
-              row.appendChild(tdTitle);
-
-              const tdTags = document.createElement("td");
-              tdTags.textContent = w.tags || "";
-              row.appendChild(tdTags);
-
-              const tdStatus = document.createElement("td");
-              tdStatus.textContent = w.status || "";
-              row.appendChild(tdStatus);
-
-              const tdRating = document.createElement("td");
-              tdRating.textContent = w.rating !== null ? w.rating : "";
-              row.appendChild(tdRating);
-
-              authorTableBody.appendChild(row);
-            });
           });
 
           sAuthors.appendChild(authorLink);
@@ -447,7 +503,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sNote.innerHTML = "";
       }
 
-      document.querySelectorAll(".work-close").forEach(btn => {
+      document.querySelectorAll(".work-close").forEach((btn) => {
         btn.addEventListener("click", () => {
           const section = btn.closest("section");
           section.classList.remove("is-open");
@@ -455,17 +511,23 @@ document.addEventListener("DOMContentLoaded", () => {
           if (section.id === "author-section") authorOpen = false;
 
           if (section.id === "work-section") clearSection();
-          // Always remove highlight from main table row when closing either section
-          const highlightedRow = tableBody.querySelector("tr.highlighted");
-          if (highlightedRow) highlightedRow.classList.remove("highlighted");
+
+          // Remove highlight from all main table rows
+          const highlightedRows = tableBody.querySelectorAll("tr.highlighted");
+          highlightedRows.forEach((row) => row.classList.remove("highlighted"));
+
           // Clear URL hash when closing a section
           if (window.location.hash) {
-            history.replaceState(null, "", window.location.pathname + window.location.search);
+            history.replaceState(
+              null,
+              "",
+              window.location.pathname + window.location.search
+            );
           }
         });
       });
 
-      // Close both sections and remove highlight when Escape key is pressed
+      // Close both sections and remove all highlights when Escape key is pressed
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
           let closed = false;
@@ -480,12 +542,18 @@ document.addEventListener("DOMContentLoaded", () => {
             authorOpen = false;
             closed = true;
           }
-          // Remove highlight from main table row
-          const highlightedRow = tableBody.querySelector("tr.highlighted");
-          if (highlightedRow) highlightedRow.classList.remove("highlighted");
+
+          // Remove highlight from all main table rows
+          const highlightedRows = tableBody.querySelectorAll("tr.highlighted");
+          highlightedRows.forEach((row) => row.classList.remove("highlighted"));
+
           // Clear URL hash if either section was closed
           if (closed && window.location.hash) {
-            history.replaceState(null, "", window.location.pathname + window.location.search);
+            history.replaceState(
+              null,
+              "",
+              window.location.pathname + window.location.search
+            );
           }
         }
       });
@@ -506,12 +574,14 @@ document.addEventListener("DOMContentLoaded", () => {
           openWorkSection();
           // Highlight corresponding row in main table
           // Remove previous highlight
-          const prevHighlighted = tableBody.querySelector("tr.highlighted");
-          if (prevHighlighted) prevHighlighted.classList.remove("highlighted");
+          const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
+          prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
           // Find row whose first td matches the work title
           const workTitle = worksMap[hash].title;
           const rows = Array.from(tableBody.querySelectorAll("tr"));
-          const mainRow = rows.find(r => r.querySelector("td:first-child").textContent === workTitle);
+          const mainRow = rows.find(
+            (r) => r.querySelector("td:first-child").textContent === workTitle
+          );
           if (mainRow) {
             mainRow.classList.add("highlighted");
             // Scroll the highlighted row into view
@@ -519,69 +589,81 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         } else {
           const slug = hash;
-          const author = authorsData.authors.find(a => {
+          const author = authorsData.authors.find((a) => {
             let authorSlug = slugify(a.name);
             return authorSlug === slug;
           });
           if (author) {
             openAuthorSection();
-            const authorSectionEl = document.querySelector('#author-section');
-            authorSectionEl.querySelector('h1').textContent = author.name;
-            authorSectionEl.querySelector('#s-bio').innerHTML = author.bio || '';
+            const authorSectionEl = document.querySelector("#author-section");
+            authorSectionEl.querySelector("h1").textContent = author.name;
+            authorSectionEl.querySelector("#s-bio").innerHTML =
+              author.bio || "";
 
-            const authorTableBody = authorSectionEl.querySelector('table tbody') || (() => {
-              const tbody = document.createElement('tbody');
-              authorSectionEl.querySelector('table').appendChild(tbody);
-              return tbody;
-            })();
-            authorTableBody.innerHTML = '';
+            const authorTableBody =
+              authorSectionEl.querySelector("table tbody") ||
+              (() => {
+                const tbody = document.createElement("tbody");
+                authorSectionEl.querySelector("table").appendChild(tbody);
+                return tbody;
+              })();
+            authorTableBody.innerHTML = "";
 
-            worksData.works.filter(w => w.authors.includes(author.id)).forEach(w => {
-              const row = document.createElement('tr');
-              if (w.status && w.status.toLowerCase() === "read") {
-                row.classList.add("is-read");
-              }
+            worksData.works
+              .filter((w) => w.authors.includes(author.id))
+              .forEach((w) => {
+                const row = document.createElement("tr");
+                if (w.status && w.status.toLowerCase() === "read") {
+                  row.classList.add("is-read");
+                }
 
-              const tdTitle = document.createElement('td');
-              const titleLink = document.createElement('a');
-              titleLink.textContent = w.title;
-              titleLink.href = '#';
-              titleLink.addEventListener('click', () => {
-                const prev = tableBody.querySelector('tr.highlighted');
-                if (prev) prev.classList.remove('highlighted');
-                const mainRow = Array.from(tableBody.querySelectorAll('tr'))
-                  .find(r => r.querySelector('td:first-child').textContent === w.title);
-                if (mainRow) mainRow.classList.add('highlighted');
-                renderWork(w);
-                openWorkSection();
+                const tdTitle = document.createElement("td");
+                const titleLink = document.createElement("a");
+                titleLink.textContent = w.title;
+                titleLink.href = "#";
+                titleLink.addEventListener("click", () => {
+                  const prev = tableBody.querySelectorAll("tr.highlighted");
+                  prev.forEach((row) => row.classList.remove("highlighted"));
+                  const mainRow = Array.from(
+                    tableBody.querySelectorAll("tr")
+                  ).find(
+                    (r) =>
+                      r.querySelector("td:first-child").textContent === w.title
+                  );
+                  if (mainRow) mainRow.classList.add("highlighted");
+                  renderWork(w);
+                  openWorkSection();
+                });
+                tdTitle.appendChild(titleLink);
+                row.appendChild(tdTitle);
+
+                const tdTags = document.createElement("td");
+                tdTags.textContent = w.tags || "";
+                row.appendChild(tdTags);
+
+                const tdStatus = document.createElement("td");
+                tdStatus.textContent = w.status || "";
+                row.appendChild(tdStatus);
+
+                const tdRating = document.createElement("td");
+                tdRating.textContent = w.rating !== null ? w.rating : "";
+                row.appendChild(tdRating);
+
+                authorTableBody.appendChild(row);
               });
-              tdTitle.appendChild(titleLink);
-              row.appendChild(tdTitle);
-
-              const tdTags = document.createElement('td');
-              tdTags.textContent = w.tags || '';
-              row.appendChild(tdTags);
-
-              const tdStatus = document.createElement('td');
-              tdStatus.textContent = w.status || '';
-              row.appendChild(tdStatus);
-
-              const tdRating = document.createElement('td');
-              tdRating.textContent = w.rating !== null ? w.rating : '';
-              row.appendChild(tdRating);
-
-              authorTableBody.appendChild(row);
-            });
 
             // Highlight all main table rows whose authors column contains the author name
             // Remove previous highlight
-            const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
-            prevHighlighted.forEach(row => row.classList.remove("highlighted"));
+            const prevHighlighted =
+              tableBody.querySelectorAll("tr.highlighted");
+            prevHighlighted.forEach((row) =>
+              row.classList.remove("highlighted")
+            );
             const authorName = author.name;
             const mainRows = Array.from(tableBody.querySelectorAll("tr"));
             // Track the first highlighted row
             let firstHighlightedRow = null;
-            mainRows.forEach(row => {
+            mainRows.forEach((row) => {
               const authorsTd = row.querySelector("td:nth-child(2)");
               if (authorsTd && authorsTd.textContent.includes(authorName)) {
                 row.classList.add("highlighted");
@@ -590,98 +672,109 @@ document.addEventListener("DOMContentLoaded", () => {
             });
             // Scroll the first highlighted row into view
             if (firstHighlightedRow) {
-              firstHighlightedRow.scrollIntoView({ behavior: "smooth", block: "center" });
+              firstHighlightedRow.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
             }
           }
         }
       }
     })
-    .catch(err => {
+    .catch((err) => {
       console.error("Failed to load library data:", err);
     });
-    const searchInput = document.querySelector('#top-section input[type="search"]');
-    const tableContainer = document.querySelector('#works-table');
+  const searchInput = document.querySelector(
+    '#top-section input[type="search"]'
+  );
+  const tableContainer = document.querySelector("#works-table");
 
-    if (searchInput && tableBody) {
-      // Add "No results" message element if not present
-      let noResultsMessage = tableContainer.querySelector('.no-results-message');
-      if (!noResultsMessage) {
-        noResultsMessage = document.createElement('div');
-        noResultsMessage.className = 'no-results-message';
-        noResultsMessage.textContent = 'No results found.';
-        noResultsMessage.style.display = 'none';
-        noResultsMessage.style.textAlign = 'center';
-        noResultsMessage.style.padding = '1em';
-        tableContainer.appendChild(noResultsMessage);
-      }
-
-      function applyTableFilter() {
-        // Tokenize input, supporting quoted phrases
-        const input = searchInput.value.replace(/[\s#]+/g, ' ').toLowerCase();
-        // Regex: match quoted phrases or unquoted words
-        const phraseRegex = /"([^"]+)"|(\S+)/g;
-        let match;
-        const rawTokens = [];
-        while ((match = phraseRegex.exec(input)) !== null) {
-          if (match[1]) {
-            rawTokens.push(match[1]);
-          } else if (match[2]) {
-            rawTokens.push(match[2]);
-          }
-        }
-
-        const includeTokens = [];
-        const excludeTokens = [];
-        rawTokens.forEach(token => {
-          if (token.startsWith('-') && token.length > 1) {
-            excludeTokens.push(token.slice(1));
-          } else {
-            includeTokens.push(token);
-          }
-        });
-
-        let visibleCount = 0;
-        tableBody.querySelectorAll('tr').forEach(row => {
-          const text = Array.from(row.children)
-            .map(td => td.textContent.toLowerCase())
-            .join(' ');
-
-          const includesAll = includeTokens.every(token => text.includes(token));
-          const excludesAll = excludeTokens.every(token => !text.includes(token));
-
-          if (includesAll && excludesAll) {
-            row.style.display = '';
-            visibleCount++;
-          } else {
-            row.style.display = 'none';
-          }
-        });
-
-        noResultsMessage.style.display = visibleCount === 0 ? '' : 'none';
-      }
-
-      searchInput.addEventListener('input', applyTableFilter);
-
-      // Reset button
-      const searchReset = document.querySelector('#top-section input[type="reset"]');
-      if (searchReset && searchInput) {
-        searchReset.addEventListener('click', () => {
-          searchInput.value = '';
-          searchInput.dispatchEvent(new Event('input'));
-        });
-      }
+  if (searchInput && tableBody) {
+    // Add "No results" message element if not present
+    let noResultsMessage = tableContainer.querySelector(".no-results-message");
+    if (!noResultsMessage) {
+      noResultsMessage = document.createElement("div");
+      noResultsMessage.className = "no-results-message";
+      noResultsMessage.textContent = "No results found.";
+      noResultsMessage.style.display = "none";
+      noResultsMessage.style.textAlign = "center";
+      noResultsMessage.style.padding = "1em";
+      tableContainer.appendChild(noResultsMessage);
     }
+
+    function applyTableFilter() {
+      // Tokenize input, supporting quoted phrases
+      const input = searchInput.value.replace(/[\s#]+/g, " ").toLowerCase();
+      // Regex: match quoted phrases or unquoted words
+      const phraseRegex = /"([^"]+)"|(\S+)/g;
+      let match;
+      const rawTokens = [];
+      while ((match = phraseRegex.exec(input)) !== null) {
+        if (match[1]) {
+          rawTokens.push(match[1]);
+        } else if (match[2]) {
+          rawTokens.push(match[2]);
+        }
+      }
+
+      const includeTokens = [];
+      const excludeTokens = [];
+      rawTokens.forEach((token) => {
+        if (token.startsWith("-") && token.length > 1) {
+          excludeTokens.push(token.slice(1));
+        } else {
+          includeTokens.push(token);
+        }
+      });
+
+      let visibleCount = 0;
+      tableBody.querySelectorAll("tr").forEach((row) => {
+        const text = Array.from(row.children)
+          .map((td) => td.textContent.toLowerCase())
+          .join(" ");
+
+        const includesAll = includeTokens.every((token) =>
+          text.includes(token)
+        );
+        const excludesAll = excludeTokens.every(
+          (token) => !text.includes(token)
+        );
+
+        if (includesAll && excludesAll) {
+          row.style.display = "";
+          visibleCount++;
+        } else {
+          row.style.display = "none";
+        }
+      });
+
+      noResultsMessage.style.display = visibleCount === 0 ? "" : "none";
+    }
+
+    searchInput.addEventListener("input", applyTableFilter);
+
+    // Reset button
+    const searchReset = document.querySelector(
+      '#top-section input[type="reset"]'
+    );
+    if (searchReset && searchInput) {
+      searchReset.addEventListener("click", () => {
+        searchInput.value = "";
+        searchInput.dispatchEvent(new Event("input"));
+      });
+    }
+  }
   // Update handle height for each section
-  const handleSections = document.querySelectorAll('section:not(#top-section)');
+  const handleSections = document.querySelectorAll("section:not(#top-section)");
   function updateHandleHeight() {
-    handleSections.forEach(section => {
-      section.style.setProperty('--handle-height', section.scrollHeight + 'px');
+    handleSections.forEach((section) => {
+      section.style.setProperty("--handle-height", section.scrollHeight + "px");
     });
   }
   updateHandleHeight();
-  handleSections.forEach(section => {
-    section.addEventListener('input', updateHandleHeight);
-    section.addEventListener('scroll', updateHandleHeight);
-    window.addEventListener('resize', updateHandleHeight);
+  handleSections.forEach((section) => {
+    section.addEventListener("input", updateHandleHeight);
+    section.addEventListener("scroll", updateHandleHeight);
+    window.addEventListener("resize", updateHandleHeight);
   });
 });

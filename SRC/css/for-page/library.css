@@ -310,8 +310,6 @@ input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
     border-bottom: none;
   }
 
- 
-
   thead th {
     box-sizing: border-box;
     overflow: hidden;
