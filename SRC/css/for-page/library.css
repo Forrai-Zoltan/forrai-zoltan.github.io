@@ -356,10 +356,10 @@ section:not(#top-section)::before {
   position: absolute;
   left: 0;
   top: 0;
-  width: 10px;
+  width: 8px;
   height: var(--handle-height);
-  background-color: rgba(0, 0, 0, 0.097);
-  border-left: 1px solid #101014;
+  background-color: #1b1c2b;
+  border-left: 1px solid #222333;
   cursor: ew-resize;
 }
 
