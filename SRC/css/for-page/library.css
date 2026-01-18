@@ -310,26 +310,7 @@ input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
     border-bottom: none;
   }
 
-  thead th#title,
-  tbody td:nth-child(1) {
-    width: 30%;
-  }
-  thead th#authors,
-  tbody td:nth-child(2) {
-    width: 20% !important;
-  }
-  thead th#tags,
-  tbody td:nth-child(3) {
-    width: 20% !important;
-  }
-  thead th#status,
-  tbody td:nth-child(4) {
-    width: 10% !important;
-  }
-  thead th#rating,
-  tbody td:nth-child(5) {
-    width: 10% !important;
-  }
+ 
 
   thead th {
     box-sizing: border-box;
