@@ -515,7 +515,12 @@ section:not(#top-section) table {
   table-layout: auto;
   width: 100%;
 
+  th {
+    padding: 2px 8px;
+  }
+
   td {
     line-height: 1;
+    padding: 8px 8px;
   }
 }
