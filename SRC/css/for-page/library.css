@@ -387,8 +387,8 @@ section:not(#top-section)::before {
 section:not(#top-section) {
   h1 {
     font-size: clamp(1.9rem, 6vw, 3rem);
-
-    margin: 10px 20px 10px 30px;
+    box-sizing: border-box;
+    margin: 10px 50px 10px 30px;
     line-height: 1;
     overflow-wrap: break-word;
     hyphens: auto;
@@ -427,6 +427,11 @@ section:not(#top-section) table {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+
+  * {
+    overflow-wrap: normal;
+    hyphens: none;
+  }
 }
 
 section.is-open {
