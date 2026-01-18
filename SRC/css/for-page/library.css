@@ -514,4 +514,8 @@ table th {
 section:not(#top-section) table {
   table-layout: auto;
   width: 100%;
+
+  td {
+    line-height: 1;
+  }
 }
