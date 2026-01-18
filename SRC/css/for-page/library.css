@@ -387,7 +387,7 @@ section:not(#top-section)::before {
 section:not(#top-section) {
   h1 {
     font-size: clamp(1.9rem, 6vw, 3rem);
-    
+
     margin: 10px 20px 10px 30px;
     line-height: 1;
     overflow-wrap: break-word;
@@ -485,9 +485,11 @@ section:not(#top-section) {
 }
 
 #s-note {
+  padding-left: 20px;
 
-  ol, ul {
-    padding-left: 50px;
+  ol,
+  ul {
+    padding-left: 30px;
 
     input {
       margin-right: 5px;

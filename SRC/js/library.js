@@ -504,6 +504,19 @@ document.addEventListener("DOMContentLoaded", () => {
         if (worksMap[hash]) {
           renderWork(worksMap[hash]);
           openWorkSection();
+          // Highlight corresponding row in main table
+          // Remove previous highlight
+          const prevHighlighted = tableBody.querySelector("tr.highlighted");
+          if (prevHighlighted) prevHighlighted.classList.remove("highlighted");
+          // Find row whose first td matches the work title
+          const workTitle = worksMap[hash].title;
+          const rows = Array.from(tableBody.querySelectorAll("tr"));
+          const mainRow = rows.find(r => r.querySelector("td:first-child").textContent === workTitle);
+          if (mainRow) {
+            mainRow.classList.add("highlighted");
+            // Scroll the highlighted row into view
+            mainRow.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
         } else {
           const slug = hash;
           const author = authorsData.authors.find(a => {
@@ -559,6 +572,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
               authorTableBody.appendChild(row);
             });
+
+            // Highlight all main table rows whose authors column contains the author name
+            // Remove previous highlight
+            const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
+            prevHighlighted.forEach(row => row.classList.remove("highlighted"));
+            const authorName = author.name;
+            const mainRows = Array.from(tableBody.querySelectorAll("tr"));
+            // Track the first highlighted row
+            let firstHighlightedRow = null;
+            mainRows.forEach(row => {
+              const authorsTd = row.querySelector("td:nth-child(2)");
+              if (authorsTd && authorsTd.textContent.includes(authorName)) {
+                row.classList.add("highlighted");
+                if (!firstHighlightedRow) firstHighlightedRow = row;
+              }
+            });
+            // Scroll the first highlighted row into view
+            if (firstHighlightedRow) {
+              firstHighlightedRow.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
           }
         }
       }
@@ -569,13 +602,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.querySelector('#top-section input[type="search"]');
     const tableContainer = document.querySelector('#works-table');
 
-
     if (searchInput && tableBody) {
-      const applyTableFilter = () => {
-        const cleanedInput = searchInput.value.replace(/[\s#]+/g, ' ').toLowerCase();
-        const rawTokens = cleanedInput
-          .split(' ')
-          .filter(token => token.trim() !== '' && token !== '-');
+      // Add "No results" message element if not present
+      let noResultsMessage = tableContainer.querySelector('.no-results-message');
+      if (!noResultsMessage) {
+        noResultsMessage = document.createElement('div');
+        noResultsMessage.className = 'no-results-message';
+        noResultsMessage.textContent = 'No results found.';
+        noResultsMessage.style.display = 'none';
+        noResultsMessage.style.textAlign = 'center';
+        noResultsMessage.style.padding = '1em';
+        tableContainer.appendChild(noResultsMessage);
+      }
+
+      function applyTableFilter() {
+        // Tokenize input, supporting quoted phrases
+        const input = searchInput.value.replace(/[\s#]+/g, ' ').toLowerCase();
+        // Regex: match quoted phrases or unquoted words
+        const phraseRegex = /"([^"]+)"|(\S+)/g;
+        let match;
+        const rawTokens = [];
+        while ((match = phraseRegex.exec(input)) !== null) {
+          if (match[1]) {
+            rawTokens.push(match[1]);
+          } else if (match[2]) {
+            rawTokens.push(match[2]);
+          }
+        }
 
         const includeTokens = [];
         const excludeTokens = [];
@@ -588,7 +641,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         let visibleCount = 0;
-
         tableBody.querySelectorAll('tr').forEach(row => {
           const text = Array.from(row.children)
             .map(td => td.textContent.toLowerCase())
@@ -606,7 +658,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         noResultsMessage.style.display = visibleCount === 0 ? '' : 'none';
-      };
+      }
 
       searchInput.addEventListener('input', applyTableFilter);
 
