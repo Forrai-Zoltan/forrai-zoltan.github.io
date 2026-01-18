@@ -36,7 +36,7 @@ line-height: 1.6;
 }
 note-bent {
 display: block;
-background-color: #c0c0c0;
+background-color: hsl(0, 0%, 60%);
 color: black;
 width: max-content;
 margin: 30px auto;
@@ -97,7 +97,7 @@ inline-size: fit-content;
 max-inline-size: 70ch;
 box-sizing: content-box;
 position: relative;
-background-color: hsl(0, 0%, 35%);
+background-color: hsl(0, 0%, 27%);
 color: whitesmoke;
 -webkit-hyphens: auto;
 -ms-hyphens: auto;
