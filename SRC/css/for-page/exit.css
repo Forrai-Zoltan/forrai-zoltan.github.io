@@ -14,10 +14,10 @@ nav:has(a[href="/rss.xml"]) ul {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
 
-  li::marker {
-    content: none;
-  }
+nav:has(a[href="/rss.xml"]) ul li::marker {
+  content: none;
 }
 
 nav:has(a[href="/rss.xml"]) a {
@@ -66,9 +66,7 @@ img[src="/SRC/btn.gif"] {
   -ms-user-select: none;
 }
 
-ul:has(img[src="/SRC/btn.gif"]:hover)
-  ~ code
-  img[src="/SRC/asset/icon/pointing-hand.png"] {
+ul:has(img[src="/SRC/btn.gif"]:hover) ~ code img[src="/SRC/asset/icon/pointing-hand.png"] {
   opacity: 1;
 }
 
@@ -76,9 +74,7 @@ img[src="/SRC/btn.gif"]:hover {
   transform: scale(1.2);
 }
 
-img[src="/SRC/btn.gif"]:hover
-  ~ code
-  img[src="/SRC/asset/icon/pointing-hand.png"] {
+img[src="/SRC/btn.gif"]:hover ~ code img[src="/SRC/asset/icon/pointing-hand.png"] {
   opacity: 1;
 }
 
@@ -93,12 +89,6 @@ img[src="/SRC/asset/icon/pointing-hand.png"] {
   top: 8px;
   left: -80px;
   transition: opacity 0.2s ease;
-
-  /* filter: 
-  drop-shadow(4px 0 0 orange)
-  drop-shadow(-4px 0 0 orange)
-  drop-shadow(0 4px 0 orange)
-  drop-shadow(0 -4px 0 orange); */
 }
 
 tech-stack-icons {
@@ -132,7 +122,7 @@ tech-stack-icons a:focus-visible {
 }
 
 img[src="/SRC/asset/svg/rss.svg"] {
-  display: inline-block ;
+  display: inline-block;
   padding: 1px;
   padding-right: 5px;
   user-select: none;
@@ -148,4 +138,60 @@ a:hover image[src="/SRC/asset/svg/rss.svg"] {
 .morse {
   white-space: nowrap;
   overflow: hidden;
+}
+
+/* Mobile Adaptations */
+@media screen and (max-width: 768px) {
+  /* Navigation adjustments */
+  nav:has(a[href="/rss.xml"]) ul {
+    gap: 3ch;
+  }
+  
+  /* Reduce padding on buttons container */
+  buttons-88x31 {
+    padding: 0.75rem;
+    margin: 15px 0;
+    gap: 4px;
+  }
+  
+  /* Tech stack icons stay same size on mobile */
+  tech-stack-icons {
+    gap: 4px;
+    margin-top: 15px;
+  }
+  
+  /* Hide pointing hand on mobile (no hover state) */
+  img[src="/SRC/asset/icon/pointing-hand.png"] {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Keep navigation horizontal with tighter spacing */
+  nav:has(a[href="/rss.xml"]) ul {
+    gap: 1.5ch;
+    flex-wrap: wrap;
+  }
+  
+  /* Further reduce button container padding */
+  buttons-88x31 {
+    padding: 0.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Reduce transform scale on small screens */
+  img[src="/SRC/btn.gif"] {
+    transform: scale(1.05);
+  }
+  
+  img[src="/SRC/btn.gif"]:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Tablet landscape adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav:has(a[href="/rss.xml"]) ul {
+    gap: 6ch;
+  }
 }
