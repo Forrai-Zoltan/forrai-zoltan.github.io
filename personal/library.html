@@ -174,11 +174,7 @@
         </ul>
       </nav>
     </header>
-    <noscript>
-      <noscript-span>
-        This page uses JS to render the tables and make them interactive.
-      </noscript-span>
-    </noscript>
+    
     <main>
       <section id="top-section">
         <search>
@@ -194,6 +190,11 @@
             title="clear search"
             aria-label="clear search" />
         </search>
+        <noscript>
+          <noscript-span>
+            This page uses JS to render the tables and make them interactive.
+          </noscript-span>
+        </noscript>
       </section>
       <div id="library-body">
         <table id="works-table">
@@ -230,9 +231,9 @@
             <table>
               <colgroup>
                 <col id="col-title" style="min-width: 50%" />
-                <col id="col-tags" style="width: 25%" />
-                <col id="col-status" style="width: 2%" />
-                <col id="col-rating" style="width: 2%" />
+                <col id="col-tags" style="max-width: 30%" />
+                <col id="col-status" style="max-width: 2%" />
+                <col id="col-rating" style="max-width: 2%" />
               </colgroup>
               <thead>
                 <tr>
