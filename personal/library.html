@@ -225,17 +225,25 @@
         <section id="author-section">
           <button class="work-close" aria-label="Close">×</button>
           <h1>A Title</h1>
-          <div id="s-bio"></div>
-          <table>
-            <thead>
-              <tr>
-                <th id="as-title">Title</th>
-                <th id="as-tags">Tags</th>
-                <th id="as-status">Status</th>
-                <th id="as-rating">Rating</th>
-              </tr>
-            </thead>
-          </table>
+          <div>
+            <div id="s-bio"></div>
+            <table>
+              <colgroup>
+                <col id="col-title" style="min-width: 50%" />
+                <col id="col-tags" style="width: 25%" />
+                <col id="col-status" style="width: 2%" />
+                <col id="col-rating" style="width: 2%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th id="as-title">Title</th>
+                  <th id="as-tags">Tags</th>
+                  <th id="as-status">Status</th>
+                  <th id="as-rating">Rating</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
         </section>
       </div>
     </main>

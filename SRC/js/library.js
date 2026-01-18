@@ -455,10 +455,9 @@ document.addEventListener("DOMContentLoaded", () => {
           if (section.id === "author-section") authorOpen = false;
 
           if (section.id === "work-section") clearSection();
-          if (section.id === "work-section") {
-            const highlightedRow = tableBody.querySelector("tr.highlighted");
-            if (highlightedRow) highlightedRow.classList.remove("highlighted");
-          }
+          // Always remove highlight from main table row when closing either section
+          const highlightedRow = tableBody.querySelector("tr.highlighted");
+          if (highlightedRow) highlightedRow.classList.remove("highlighted");
           // Clear URL hash when closing a section
           if (window.location.hash) {
             history.replaceState(null, "", window.location.pathname + window.location.search);
@@ -466,25 +465,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
-      // Close sections when Escape key is pressed
+      // Close both sections and remove highlight when Escape key is pressed
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
+          let closed = false;
           if (workOpen) {
             workSection.classList.remove("is-open");
             workOpen = false;
             clearSection();
-            const highlightedRow = tableBody.querySelector("tr.highlighted");
-            if (highlightedRow) highlightedRow.classList.remove("highlighted");
-            if (window.location.hash) {
-              history.replaceState(null, "", window.location.pathname + window.location.search);
-            }
+            closed = true;
           }
           if (authorOpen) {
             authorSection.classList.remove("is-open");
             authorOpen = false;
-            if (window.location.hash) {
-              history.replaceState(null, "", window.location.pathname + window.location.search);
-            }
+            closed = true;
+          }
+          // Remove highlight from main table row
+          const highlightedRow = tableBody.querySelector("tr.highlighted");
+          if (highlightedRow) highlightedRow.classList.remove("highlighted");
+          // Clear URL hash if either section was closed
+          if (closed && window.location.hash) {
+            history.replaceState(null, "", window.location.pathname + window.location.search);
           }
         }
       });
@@ -618,4 +619,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
     }
+  // Update handle height for each section
+  const handleSections = document.querySelectorAll('section:not(#top-section)');
+  function updateHandleHeight() {
+    handleSections.forEach(section => {
+      section.style.setProperty('--handle-height', section.scrollHeight + 'px');
+    });
+  }
+  updateHandleHeight();
+  handleSections.forEach(section => {
+    section.addEventListener('input', updateHandleHeight);
+    section.addEventListener('scroll', updateHandleHeight);
+    window.addEventListener('resize', updateHandleHeight);
+  });
 });
