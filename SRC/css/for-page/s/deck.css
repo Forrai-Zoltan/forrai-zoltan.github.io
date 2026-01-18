@@ -129,6 +129,10 @@ deck-section a {
   background-repeat: no-repeat;
   background-clip: content-box;
 
+  br {
+    display: none
+  }
+
   &:hover,
   &:focus-visible {
     filter: brightness(1.1);
