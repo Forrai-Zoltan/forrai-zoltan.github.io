@@ -277,32 +277,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
         authorTableBody.innerHTML = "";
 
-        // Now fetch Wikipedia data asynchronously
-        fetchWikipediaData(authorName).then((wikiData) => {
-          // Update image when ready
-          if (wikiData && wikiData.image) {
-            imgElement.src = wikiData.image.src;
-            imgElement.alt = wikiData.image.alt;
-            imgElement.style.display = "";
-          }
+        // Check wiki field: "off" = skip, URL = use that, empty/undefined = query
+        const wikiField = authorData?.wiki;
 
-          // Update bio with Wikipedia link when ready
+        if (wikiField === "off") {
+          // Skip Wikipedia entirely - just show name and bio
           if (authorData) {
-            let bioHTML = "";
-
-            // Add Wikipedia link if available, otherwise just keep the name
-            if (wikiData && wikiData.link) {
-              bioHTML = `<a href="${wikiData.link}" target="_blank" rel="noopener noreferrer">${authorName}</a> `;
-            } else {
-              bioHTML = `${authorName} `;
+            bioElement.innerHTML = `${authorName} ${authorData.bio || ""}`;
+          }
+        } else if (wikiField && wikiField !== "off") {
+          // Use provided Wikipedia link
+          fetchWikipediaData(authorName, wikiField).then((wikiData) => {
+            if (wikiData && wikiData.image) {
+              imgElement.src = wikiData.image.src;
+              imgElement.alt = wikiData.image.alt;
+              imgElement.style.display = "";
             }
 
-            // Add bio text
-            bioHTML += authorData.bio || "";
+            if (authorData) {
+              let bioHTML = `<a href="${wikiField}" target="_blank" rel="noopener noreferrer">${authorName}</a> `;
+              bioHTML += authorData.bio || "";
+              bioElement.innerHTML = bioHTML;
+            }
+          });
+        } else {
+          // No wiki field or empty - do normal Wikipedia query
+          fetchWikipediaData(authorName).then((wikiData) => {
+            if (wikiData && wikiData.image) {
+              imgElement.src = wikiData.image.src;
+              imgElement.alt = wikiData.image.alt;
+              imgElement.style.display = "";
+            }
 
-            bioElement.innerHTML = bioHTML;
-          }
-        });
+            if (authorData) {
+              let bioHTML = "";
+              if (wikiData && wikiData.link) {
+                bioHTML = `<a href="${wikiData.link}" target="_blank" rel="noopener noreferrer">${authorName}</a> `;
+              } else {
+                bioHTML = `${authorName} `;
+              }
+              bioHTML += authorData.bio || "";
+              bioElement.innerHTML = bioHTML;
+            }
+          });
+        }
 
         // Populate works table (no need to wait for Wikipedia)
         worksData.works
