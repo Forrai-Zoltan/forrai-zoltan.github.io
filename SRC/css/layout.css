@@ -12,7 +12,7 @@ main {
     flex-direction: row;
     padding: 8px;
     padding-top: 1.5px;
-    min-height: calc(100vh - 93px);
+    min-height: calc(100vh - 87px);
     margin: 1px;
   }
 }

@@ -59,7 +59,7 @@ section {
   position: fixed;
   width: calc(100% - 18px);
   z-index: 10;
-  top: 93px;
+  top: 87px;
   box-shadow: 0 -50px black;
 }
 
@@ -124,7 +124,7 @@ table:not(#author-section table) thead {
 
 table:not(#author-section table) tbody {
   display: block;
-  height: calc(100vh - 188px);
+  height: calc(100vh - 183px);
   overflow-y: auto;
 }
 
@@ -620,7 +620,7 @@ section:not(#top-section) table td {
   }
 
   #library-body {
-    margin-top: 19px;
+    margin-top: 52px;
   }
 
   input[type="search"] {

@@ -19,9 +19,15 @@ section {
 
 body {
   margin: 0;
-  margin-top: 92px;
+  margin-top: 86px;
   background-color: black;
   color: white;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin-top: 58px;
+  }
 }
 
 main {

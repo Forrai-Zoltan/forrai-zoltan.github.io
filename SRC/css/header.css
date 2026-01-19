@@ -91,7 +91,7 @@ nav:has(h1) img {
     content: "";
     position: absolute;
     left: 5px;
-    top: 55px;
+    top: 50px;
     width: 95vw;
     height: 20px;
     background: radial-gradient(
