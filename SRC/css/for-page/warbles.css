@@ -5,7 +5,7 @@
 
 main-content {
   display: block;
-  height: calc(100vh - 102px);
+  height: calc(100vh - 97px);
   overflow: hidden;
   position: relative;
   box-shadow: none;
