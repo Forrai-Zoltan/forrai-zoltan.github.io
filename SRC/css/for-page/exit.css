@@ -195,3 +195,16 @@ a:hover image[src="/SRC/asset/svg/rss.svg"] {
     gap: 6ch;
   }
 }
+
+section:has(code) {
+  margin-block: 20px 0;
+
+}
+
+section:has(code) ul {
+  margin-block: 20px 30px;
+   
+  li {
+    margin-top: 10px;
+  }
+}
