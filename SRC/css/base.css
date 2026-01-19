@@ -131,7 +131,6 @@ article:not(.note) a:not([href^="/"], [href^="#"], :has(img)):hover::after {
 
 :focus-visible {
   outline: 3px solid orange;
-  transition: outline 0.2s ease;
   border-radius: inherit;
 }
 
