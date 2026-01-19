@@ -19,6 +19,7 @@ section {
 
 body {
   margin: 0;
+  margin-top: 92px;
   background-color: black;
   color: white;
 }

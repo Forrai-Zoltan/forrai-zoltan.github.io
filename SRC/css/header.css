@@ -1,16 +1,17 @@
 header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: black;
   box-shadow: 0px 3px 6px 0px black;
   z-index: 100;
   color: var(--color-alt-white-l);
+}
 
-  svg {
-    width: 1em; /* matches font size of parent */
-    height: 1em; /* matches font size of parent */
-    box-sizing: content-box;
-  }
+header svg {
+  width: 1em; /* matches font size of parent */
+  height: 1em; /* matches font size of parent */
+  box-sizing: content-box;
 }
 
 header input:not([type="search"]) {

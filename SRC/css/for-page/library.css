@@ -35,7 +35,7 @@ main {
 #library-body {
   position: relative;
   width: 100%;
-  margin-top: 147px;
+  margin-top: 57px;
   background-color: #1a1b26;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
@@ -226,6 +226,7 @@ table:not(#author-section table) thead th {
   box-sizing: border-box;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -501,21 +502,6 @@ section:not(#top-section) table td {
 
 @media screen and (max-width: 768px) {
   /* Adjust top section for mobile */
-  #top-section {
-    width: calc(100% - 10px);
-    padding: 8px;
-    top: 60px;
-  }
-
-  #library-body {
-    margin-top: 110px;
-  }
-
-  /* Make search input more touch-friendly */
-  input[type="search"] {
-    font-size: 16px; /* Prevents zoom on iOS */
-    padding: 10px 10px 10px 40px;
-  }
 
   [type="reset"] {
     font-size: 1.5em;
@@ -627,12 +613,18 @@ section:not(#top-section) table td {
 }
 
 /* Extra small devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+  #top-section {
+    width: calc(100% - 12px);
+    top: 62px;
+  }
+
+  #library-body {
+    margin-top: 19px;
+  }
+
   input[type="search"] {
     font-size: 14px;
-    padding: 8px 8px 8px 35px;
-    background-size: 14px 14px;
-    background-position: 10px center;
   }
 
   table:not(#author-section table) thead th {
