@@ -663,3 +663,14 @@ section:not(#top-section) table td {
     font-size: 1.3rem;
   }
 }
+
+.is-read:not(section .is-read) td:nth-child(1),
+.is-read:not(section .is-read) td:nth-child(1) * {
+  color: hsl(120, 100%, 30%) !important;
+  font-weight: bold;
+}
+
+section .is-read td {
+  background-color: hsla(120, 100%, 30%, 0.2) !important;
+  font-weight: bold;
+}
