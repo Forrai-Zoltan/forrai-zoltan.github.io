@@ -461,6 +461,12 @@ section:not(#top-section) ul {
   color: gray;
 }
 
+#work-section > ul {
+  border-block: hsl(0, 0%, 0%, 0.2) 2px dashed;
+  padding-block: 15px 5px;
+  background-color: hsl(0, 0%, 0%, 0.1);
+}
+
 section:not(#top-section) ul span {
   color: white;
 }

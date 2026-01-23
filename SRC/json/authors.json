@@ -1,10 +1,16 @@
 {
   "authors": [
     {
+      "id": "a40",
+      "name": "Julia Cameron",
+      "corpus": "",
+      "bio": "(1948&ndash;) is an American teacher, author, artist, poet, playwright, novelist, filmmaker, composer, and journalist."
+    },
+    {
       "id": "a39",
       "name": "Clark Ashton Smith",
       "corpus": "",
-      "bio": "(1893&ndash;1961) was an influential American writer of fantasy, horror, and science fiction stories and poetry, and an artist. "
+      "bio": "(1893&ndash;1961) was an influential American writer of fantasy, horror, and science fiction stories and poetry, and an artist."
     },
     {
       "id": "a38",

@@ -1,12 +1,20 @@
 {
   "works": [
     {
-    "title": "The uses of supernatural power",
-    "authors": ["a38"],
-    "tags": "history",
-    "status": "reading",
-    "rating": null,
-    "notes": "<a href='https://archive.org/details/usesofsupernatur0000klan/mode/2up' target='_blank' rel='noopener noreferrer'>Uses of Supernatural Power – Archive.org scan</a>"
+      "title": "The artist’s way: a spiritual path to higher creativity",
+      "authors": ["a40"],
+      "tags": "",
+      "status": "reading",
+      "rating": null,
+      "notes": "<a href='https://archive.org/details/artistswayspirit0000came_s3j5/mode/2up' target='_blank' rel='noopener noreferrer'>Internet Archive</a>"
+    },
+    {
+      "title": "The uses of supernatural power",
+      "authors": ["a38"],
+      "tags": "history",
+      "status": "reading",
+      "rating": null,
+      "notes": "<a href='https://archive.org/details/usesofsupernatur0000klan/mode/2up' target='_blank' rel='noopener noreferrer'>Uses of Supernatural Power – Archive.org scan</a>"
     },
     {
       "title": "Jerusalem",
