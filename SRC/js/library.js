@@ -13,17 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const sRating = document.querySelector("#s-rating span");
   const sNote = document.querySelector("#s-note");
 
-  // Add Wikipedia cache near the top with other variables
   const wikipediaCache = {};
 
   let workOpen = false;
   let authorOpen = false;
 
-  // Track author table sort state and listeners to prevent duplication
   let authorTableSortState = { column: null, direction: null };
   let authorTableListenersAttached = false;
 
-  // Initialize left-side drag for resizing
   let isResizing = false;
   let startX = 0;
   let startWidth = 0;
@@ -49,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("mousemove", (e) => {
     if (!isResizing || !resizingSection) return;
-    const dx = startX - e.clientX; // left-edge drag
+    const dx = startX - e.clientX;
     const newWidth = Math.min(
       window.innerWidth,
       Math.max(300, startWidth + dx)
@@ -65,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Utility functions defined early
   function slugify(text) {
     return text
       .toLowerCase()
@@ -87,21 +83,24 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  // Updated fetchWikipediaData with caching
-  async function fetchWikipediaData(authorName) {
-    // Check cache first
+  async function fetchWikipediaData(authorName, customUrl = null) {
     if (wikipediaCache[authorName]) {
       return wikipediaCache[authorName];
     }
 
     try {
-      const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
-        authorName
-      )}`;
+      const url = customUrl
+        ? `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
+            customUrl.split("/").pop()
+          )}`
+        : `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
+            authorName
+          )}`;
+
       const response = await fetch(url);
 
       if (!response.ok) {
-        wikipediaCache[authorName] = null; // Cache negative results too
+        wikipediaCache[authorName] = null;
         return null;
       }
 
@@ -109,12 +108,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const result = {
         image: data.thumbnail
-          ? {
-              src: data.thumbnail.source,
-              alt: authorName,
-            }
+          ? { src: data.thumbnail.source, alt: authorName }
           : null,
         link:
+          customUrl ||
           data.content_urls?.desktop?.page ||
           `https://en.wikipedia.org/wiki/${encodeURIComponent(authorName)}`,
         exists:
@@ -122,12 +119,11 @@ document.addEventListener("DOMContentLoaded", () => {
           "https://mediawiki.org/wiki/HyperSwitch/errors/not_found",
       };
 
-      // Cache the result
       wikipediaCache[authorName] = result;
       return result;
     } catch (error) {
       console.log("Could not fetch Wikipedia data for", authorName);
-      wikipediaCache[authorName] = null; // Cache the failure
+      wikipediaCache[authorName] = null;
       return null;
     }
   }
@@ -146,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return slugify(author.name);
       }
 
-      // Setup author table sorting (reusable function to avoid duplicate listeners)
       function setupAuthorTableSorting() {
         const authorTable = authorSection.querySelector("table");
         if (!authorTable) return;
@@ -159,7 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
           authorTableBody.querySelectorAll("tr")
         );
 
-        // Remove old listeners if they exist by cloning headers
         if (authorTableListenersAttached) {
           authorHeaders.forEach((th) => {
             const newTh = th.cloneNode(true);
@@ -167,10 +161,8 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
 
-        // Reset sort state when setting up new table
         authorTableSortState = { column: null, direction: null };
 
-        // Get fresh reference after potential cloning
         const freshHeaders = authorTable.querySelectorAll("thead th");
 
         freshHeaders.forEach((th, index) => {
@@ -191,13 +183,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             authorTableSortState = { column, direction };
 
-            // Remove previous indicators
             freshHeaders.forEach((h) => {
               const existing = h.querySelector(".sort-indicator");
               if (existing) existing.remove();
             });
 
-            // Add indicator for current sort
             if (direction) {
               const indicator = document.createElement("span");
               indicator.className = "sort-indicator";
@@ -207,7 +197,6 @@ document.addEventListener("DOMContentLoaded", () => {
               th.appendChild(indicator);
             }
 
-            // Sort rows
             let rowsToDisplay;
             if (!direction) {
               rowsToDisplay = originalAuthorRows;
@@ -243,30 +232,24 @@ document.addEventListener("DOMContentLoaded", () => {
         authorTableListenersAttached = true;
       }
 
-      // Updated populateAuthorSection function
       async function populateAuthorSection(authorId) {
         const authorData = authorsData.authors.find((a) => a.id === authorId);
         const authorName = authorMap[authorId] || authorId;
 
-        // Immediately update the title
         authorSection.querySelector("h1").textContent = authorName;
 
-        // Show bio with author name as plain text immediately (before Wikipedia fetch)
         const bioElement = authorSection.querySelector("#s-bio");
         if (authorData) {
-          // Show author name + bio immediately (name will become a link when Wikipedia loads)
           bioElement.innerHTML = `${authorName} ${authorData.bio || ""}`;
         } else {
           bioElement.innerHTML = "";
         }
 
-        // Clear/reset image immediately
         const imgElement = authorSection.querySelector("#a-img");
         imgElement.src = "";
         imgElement.alt = "";
         imgElement.style.display = "none";
 
-        // Clear the works table immediately
         const authorTableBody =
           authorSection.querySelector("table tbody") ||
           (() => {
@@ -277,16 +260,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         authorTableBody.innerHTML = "";
 
-        // Check wiki field: "off" = skip, URL = use that, empty/undefined = query
         const wikiField = authorData?.wiki;
 
         if (wikiField === "off") {
-          // Skip Wikipedia entirely - just show name and bio
           if (authorData) {
             bioElement.innerHTML = `${authorName} ${authorData.bio || ""}`;
           }
         } else if (wikiField && wikiField !== "off") {
-          // Use provided Wikipedia link
           fetchWikipediaData(authorName, wikiField).then((wikiData) => {
             if (wikiData && wikiData.image) {
               imgElement.src = wikiData.image.src;
@@ -301,7 +281,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         } else {
-          // No wiki field or empty - do normal Wikipedia query
           fetchWikipediaData(authorName).then((wikiData) => {
             if (wikiData && wikiData.image) {
               imgElement.src = wikiData.image.src;
@@ -322,7 +301,6 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
 
-        // Populate works table (no need to wait for Wikipedia)
         worksData.works
           .filter((work) => work.authors.includes(authorId))
           .forEach((work) => {
@@ -375,6 +353,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const worksMap = {};
+      const rowEventListeners = new WeakMap();
+
       worksData.works.forEach((work) => {
         const slug = slugify(work.title);
         worksMap[slug] = work;
@@ -384,31 +364,32 @@ document.addEventListener("DOMContentLoaded", () => {
           tr.classList.add("is-read");
         }
 
-        // Title
+        const cleanupFunctions = [];
+
         const tdTitle = document.createElement("td");
         const titleLink = document.createElement("a");
         titleLink.textContent = work.title;
         titleLink.href = `#${slug}`;
-        titleLink.addEventListener("click", (e) => {
+        const titleClickHandler = (e) => {
           e.preventDefault();
 
-          // Remove highlight from any previously highlighted rows
           const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
           prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
 
-          // Highlight the clicked row
           tr.classList.add("highlighted");
 
-          // Update URL hash
           history.replaceState(null, "", `#${slug}`);
 
           renderWork(work);
           openWorkSection();
-        });
+        };
+        titleLink.addEventListener("click", titleClickHandler);
+        cleanupFunctions.push(() =>
+          titleLink.removeEventListener("click", titleClickHandler)
+        );
         tdTitle.appendChild(titleLink);
         tr.appendChild(tdTitle);
 
-        // Authors
         const tdAuthors = document.createElement("td");
         work.authors.forEach((authorId, index) => {
           const authorLink = document.createElement("a");
@@ -418,10 +399,9 @@ document.addEventListener("DOMContentLoaded", () => {
             name: authorMap[authorId] || authorId,
           });
           authorLink.href = `#${authorSlug}`;
-          authorLink.addEventListener("click", (e) => {
+          const authorClickHandler = (e) => {
             e.preventDefault();
 
-            // Remove highlight from any previously highlighted rows
             const prevHighlighted =
               tableBody.querySelectorAll("tr.highlighted");
             prevHighlighted.forEach((row) =>
@@ -429,13 +409,15 @@ document.addEventListener("DOMContentLoaded", () => {
             );
             tr.classList.add("highlighted");
 
-            // Update URL hash
             history.replaceState(null, "", `#${authorSlug}`);
 
-            // Open the author section and populate it
             openAuthorSection();
             populateAuthorSection(authorId);
-          });
+          };
+          authorLink.addEventListener("click", authorClickHandler);
+          cleanupFunctions.push(() =>
+            authorLink.removeEventListener("click", authorClickHandler)
+          );
           tdAuthors.appendChild(authorLink);
 
           if (index < work.authors.length - 1) {
@@ -444,25 +426,65 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         tr.appendChild(tdAuthors);
 
-        // Tags
         const tdTags = document.createElement("td");
-        tdTags.textContent = work.tags || "";
+        if (work.tags) {
+          const tags = work.tags.split(",").map((t) => t.trim());
+          tags.forEach((tag, index) => {
+            const tagLink = document.createElement("a");
+            tagLink.textContent = tag;
+            tagLink.href = "#";
+            tagLink.style.cursor = "pointer";
+            const tagClickHandler = (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              const searchInput = document.querySelector(
+                '#top-section input[type="search"]'
+              );
+              if (searchInput) {
+                const currentValue = searchInput.value;
+                const regex = new RegExp(
+                  "\\b" + tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b"
+                );
+
+                if (regex.test(currentValue)) {
+                  searchInput.value = currentValue
+                    .replace(regex, "")
+                    .replace(/\s+/g, " ")
+                    .trim();
+                } else {
+                  searchInput.value = currentValue.trim()
+                    ? currentValue.trim() + " " + tag
+                    : tag;
+                }
+
+                searchInput.dispatchEvent(new Event("input"));
+              }
+            };
+            tagLink.addEventListener("click", tagClickHandler);
+            cleanupFunctions.push(() =>
+              tagLink.removeEventListener("click", tagClickHandler)
+            );
+            tdTags.appendChild(tagLink);
+            if (index < tags.length - 1) {
+              tdTags.appendChild(document.createTextNode(", "));
+            }
+          });
+        }
         tr.appendChild(tdTags);
 
-        // Status
         const tdStatus = document.createElement("td");
         tdStatus.textContent = work.status;
         tr.appendChild(tdStatus);
 
-        // Rating
         const tdRating = document.createElement("td");
         tdRating.textContent = work.rating !== null ? work.rating : "";
         tr.appendChild(tdRating);
 
+        rowEventListeners.set(tr, cleanupFunctions);
+
         tableBody.appendChild(tr);
       });
 
-      // Keep original row order
       const originalRows = Array.from(tableBody.querySelectorAll("tr"));
 
       let currentSort = { column: null, direction: null };
@@ -474,7 +496,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const column = index;
           let direction;
 
-          // Cycle: null → asc → desc → null
           if (currentSort.column !== column) {
             direction = "asc";
           } else if (currentSort.direction === "asc") {
@@ -487,13 +508,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
           currentSort = { column, direction };
 
-          // Remove any existing indicators
           headers.forEach((h) => {
             const existing = h.querySelector(".sort-indicator");
             if (existing) existing.remove();
           });
 
-          // Add new indicator if sorted
           if (direction) {
             const indicator = document.createElement("span");
             indicator.className = "sort-indicator";
@@ -503,7 +522,6 @@ document.addEventListener("DOMContentLoaded", () => {
             th.appendChild(indicator);
           }
 
-          // Determine rows to display
           let rowsToDisplay;
           if (!direction) {
             rowsToDisplay = originalRows;
@@ -513,13 +531,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 let aText = a.children[column].textContent.trim();
                 let bText = b.children[column].textContent.trim();
 
-                // Convert numeric columns
                 if (th.id === "rating") {
                   aText = parseFloat(aText) || 0;
                   bText = parseFloat(bText) || 0;
                 }
 
-                // For authors, use full string
                 if (th.id === "authors") {
                   aText = aText.toLowerCase();
                   bText = bText.toLowerCase();
@@ -532,7 +548,6 @@ document.addEventListener("DOMContentLoaded", () => {
             );
           }
 
-          // Clear table body and append sorted rows
           tableBody.innerHTML = "";
           rowsToDisplay.forEach((row) => tableBody.appendChild(row));
         });
@@ -553,7 +568,6 @@ document.addEventListener("DOMContentLoaded", () => {
           authorLink.addEventListener("click", (e) => {
             e.preventDefault();
 
-            // Highlight the corresponding row in main table by matching the work title
             const rows = Array.from(tableBody.querySelectorAll("tr"));
             rows.forEach((row) => row.classList.remove("highlighted"));
             const matchingRow = rows.find(
@@ -562,10 +576,8 @@ document.addEventListener("DOMContentLoaded", () => {
             );
             if (matchingRow) matchingRow.classList.add("highlighted");
 
-            // Update URL hash
             history.replaceState(null, "", `#${slug}`);
 
-            // Open author section and populate it
             openAuthorSection();
             populateAuthorSection(authorId);
           });
@@ -576,7 +588,45 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
 
-        sTags.textContent = work.tags || "";
+        sTags.innerHTML = "";
+        if (work.tags) {
+          const tags = work.tags.split(",").map((t) => t.trim());
+          tags.forEach((tag, index) => {
+            const tagLink = document.createElement("a");
+            tagLink.textContent = tag;
+            tagLink.href = "#";
+            tagLink.style.cursor = "pointer";
+            tagLink.addEventListener("click", (e) => {
+              e.preventDefault();
+              const searchInput = document.querySelector(
+                '#top-section input[type="search"]'
+              );
+              if (searchInput) {
+                const currentValue = searchInput.value;
+                const regex = new RegExp(
+                  "\\b" + tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b"
+                );
+
+                if (regex.test(currentValue)) {
+                  searchInput.value = currentValue
+                    .replace(regex, "")
+                    .replace(/\s+/g, " ")
+                    .trim();
+                } else {
+                  searchInput.value = currentValue.trim()
+                    ? currentValue.trim() + " " + tag
+                    : tag;
+                }
+
+                searchInput.dispatchEvent(new Event("input"));
+              }
+            });
+            sTags.appendChild(tagLink);
+            if (index < tags.length - 1) {
+              sTags.appendChild(document.createTextNode(", "));
+            }
+          });
+        }
         sStatus.textContent = work.status || "";
         sRating.textContent = work.rating !== null ? work.rating : "";
         sNote.innerHTML = work.notes || "";
@@ -620,11 +670,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (section.id === "work-section") clearSection();
 
-          // Remove highlight from all main table rows
           const highlightedRows = tableBody.querySelectorAll("tr.highlighted");
           highlightedRows.forEach((row) => row.classList.remove("highlighted"));
 
-          // Clear URL hash when closing a section
           if (window.location.hash) {
             history.replaceState(
               null,
@@ -635,7 +683,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
-      // Close both sections and remove all highlights when Escape key is pressed
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
           let closed = false;
@@ -651,11 +698,9 @@ document.addEventListener("DOMContentLoaded", () => {
             closed = true;
           }
 
-          // Remove highlight from all main table rows
           const highlightedRows = tableBody.querySelectorAll("tr.highlighted");
           highlightedRows.forEach((row) => row.classList.remove("highlighted"));
 
-          // Clear URL hash if either section was closed
           if (closed && window.location.hash) {
             history.replaceState(
               null,
@@ -666,14 +711,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Handle URL hash on page load
       const hash = window.location.hash.slice(1);
       if (hash) {
         if (worksMap[hash]) {
           renderWork(worksMap[hash]);
           openWorkSection();
 
-          // Highlight corresponding row in main table
           const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
           prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
 
@@ -687,7 +730,6 @@ document.addEventListener("DOMContentLoaded", () => {
             mainRow.scrollIntoView({ behavior: "smooth", block: "center" });
           }
         } else {
-          // Try to find author by slug
           const author = authorsData.authors.find(
             (a) => slugify(a.name) === hash
           );
@@ -695,7 +737,6 @@ document.addEventListener("DOMContentLoaded", () => {
             openAuthorSection();
             populateAuthorSection(author.id);
 
-            // Highlight all main table rows with this author
             const prevHighlighted =
               tableBody.querySelectorAll("tr.highlighted");
             prevHighlighted.forEach((row) =>
@@ -724,14 +765,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      // Setup search functionality after data is loaded
       initializeSearch();
     })
     .catch((err) => {
       console.error("Failed to load library data:", err);
     });
 
-  // Search functionality (initialized after data loads)
   function initializeSearch() {
     const searchInput = document.querySelector(
       '#top-section input[type="search"]'
@@ -740,7 +779,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!searchInput || !tableBody) return;
 
-    // Add "No results" message element if not present
     let noResultsMessage = tableContainer.querySelector(".no-results-message");
     if (!noResultsMessage) {
       noResultsMessage = document.createElement("div");
@@ -753,7 +791,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function applyTableFilter() {
-      // Tokenize input, supporting quoted phrases
       const input = searchInput.value.replace(/[\s#]+/g, " ").toLowerCase();
       const phraseRegex = /"([^"]+)"|(\S+)/g;
       let match;
@@ -802,23 +839,20 @@ document.addEventListener("DOMContentLoaded", () => {
       noResultsMessage.style.display = visibleCount === 0 ? "" : "none";
     }
 
-    // Use debounced version for better performance
     const debouncedFilter = debounce(applyTableFilter, 150);
     searchInput.addEventListener("input", debouncedFilter);
 
-    // Reset button
     const searchReset = document.querySelector(
       '#top-section input[type="reset"]'
     );
     if (searchReset) {
       searchReset.addEventListener("click", () => {
         searchInput.value = "";
-        applyTableFilter(); // Apply immediately on reset, no need for debounce
+        applyTableFilter();
       });
     }
   }
 
-  // Update handle height for each section
   const handleSections = document.querySelectorAll("section:not(#top-section)");
 
   function updateHandleHeight() {
