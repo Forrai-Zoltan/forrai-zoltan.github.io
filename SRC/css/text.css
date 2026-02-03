@@ -145,6 +145,8 @@ code,
 article ol li::marker {
   content: unset;
   color: orange;
+  font-family: var(--font-typewriter);
+  font-size: 1.3rem;
 }
 
 article ul li::marker {
@@ -166,7 +168,7 @@ article ul {
 
 article li {
   line-height: 1.7em;
-  max-width: 65ch;
+  
   margin-top: 5px;
 }
 
@@ -229,4 +231,20 @@ dev-notice span {
 .typewriter {
   font-family: var(--font-typewriter);
   font-size: 1.3rem;
+}
+
+article ol#footnotes {
+  padding-left: 25px;
+}
+
+article ol#footnotes li {
+  font-size: 1.3rem !important;
+  line-height: 1.5;
+  max-width: 77ch;
+  text-align: justify;
+  hyphens: auto;
+
+  &::marker {
+    font-size: 1rem !important;
+  }
 }

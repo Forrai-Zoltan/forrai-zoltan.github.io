@@ -6,6 +6,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--color-green-m) transparent;
   caret-color: orange;
+  scroll-padding-top: 420px;
 }
 
 html * {
@@ -107,6 +108,10 @@ button:focus {
   outline: none;
 }
 
+abbr {
+  font-variant: all-small-caps;
+}
+
 a {
   color: var(--color-alt-white);
   text-decoration: none;
@@ -140,6 +145,30 @@ a:not(
     no-repeat center;
 }
 
+article sup {
+  line-height: 0 !important;
+}
+
+article sup a:any-link {
+  font-family: var(--font-typewriter);
+  font-size: 0.8rem;
+  color: orange;
+
+  font-weight: bold;
+
+  &:hover {
+    color: gold;
+  }
+
+  &::before {
+    content: "[";
+  }
+
+  &::after {
+    content: "]";
+  }
+}
+
 :focus-visible {
   outline: 3px solid orange;
   border-radius: inherit;
@@ -147,20 +176,30 @@ a:not(
 
 /* CSS only fade-out effect for :target */
 :target {
-  outline: 5px solid orange;
-  outline-offset: 10px;
-  animation: highlightFade 8s forwards; /* total duration 2s */
+  &:not(:is(#footnotes *, span:has(+ sup))) {
+    outline: 5px solid orange;
+    outline-offset: 10px;
+    animation: highlightFade 5s forwards;
+  }
+
+  &:is(#footnotes *, span:has(+ sup)) {
+    text-decoration: underline 1px solid orange;
+    animation: highlightFade 5s forwards;
+  }
 }
 
 @keyframes highlightFade {
   0% {
     outline-color: orange; /* fully visible immediately */
+    text-decoration: underline 1px solid orange;
   }
   50% {
     outline-color: orange; /* keep visible for 1 second */
+    text-decoration: underline 1px solid orange;
   }
   100% {
     outline-color: transparent; /* fade out by end */
+    text-decoration: underline 1px solid transparent;
   }
 }
 

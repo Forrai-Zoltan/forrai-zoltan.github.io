@@ -439,7 +439,7 @@ article a:visited:active::selection {
   color: var(--color-link-light-visited-active);
 }
 
-/* Internal anchor links */
+/* Internal anchor links
 article a[href^="#"]:not(:has(img))::before {
   content: "#";
-}
+} */
