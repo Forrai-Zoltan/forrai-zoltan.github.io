@@ -178,43 +178,72 @@
     </header>
     <main>
       <main-content>
-          <noscript>
-            <noscript-span>
-              This page uses JS to make the file upload field not suck ass.
-            </noscript-span>
-          </noscript>
-          <thanks-background>
-            <a href="#"></a>
-            <thanks-section id="toast">
-              <a href="#">
-                <svg width="20" height="20">
-                  <use href="/SRC/asset/svg/closeX.svg#icon-closeX"></use>
-                </svg>
-              </a>
-              <div>Message Received!</div>
-              <img src="/SRC/asset/anim/reading.gif" alt="" />
-            </thanks-section>
-          </thanks-background>
-          <form
-            method="POST"
-            enctype="multipart/form-data"
-            action="https://formsubmit.co/780a58d32afbae6fd8888e0fde53deb6">
-            <fieldset>
-              <section>
-                <p>
-                  <label for="name">Name</label>
-                  <input
-                    required
-                    autocomplete="off"
-                    id="name"
-                    type="text"
-                    name="name"
-                    placeholder="William Shakespeare" />
-                </p>
+        <noscript>
+          <noscript-span>
+            This page uses JS to make the file upload field not suck ass.
+          </noscript-span>
+        </noscript>
+        <thanks-background>
+          <a href="#"></a>
+          <thanks-section id="toast">
+            <a href="#">
+              <svg width="20" height="20">
+                <use href="/SRC/asset/svg/closeX.svg#icon-closeX"></use>
+              </svg>
+            </a>
+            <div>Message Received!</div>
+            <img src="/SRC/asset/anim/reading.gif" alt="" />
+          </thanks-section>
+        </thanks-background>
+        <form
+          method="POST"
+          enctype="multipart/form-data"
+          action="https://formsubmit.co/780a58d32afbae6fd8888e0fde53deb6">
+          <fieldset>
+            <section>
+              <p>
+                <label for="name">Name</label>
+                <input
+                  required
+                  autocomplete="off"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="William Shakespeare" />
+              </p>
 
+              <p>
+                <label for="email"
+                  >Email (opt.)
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </label>
+                <hidden-info>For replying. My eyes only.</hidden-info>
+                <input
+                  autocomplete="off"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="shakespeare@globe.uk" />
+              </p>
+
+              <!-- Noscript input field -->
+              <noscript>
                 <p>
-                  <label for="email"
-                    >Email (opt.)
+                  <label for="file-noJS"
+                    >Upload File
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -230,120 +259,101 @@
                       <path d="M12 8h.01" />
                     </svg>
                   </label>
-                  <hidden-info>For replying. My eyes only.</hidden-info>
+                  <hidden-info> Max one. Max 500mb. </hidden-info>
                   <input
-                    autocomplete="off"
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="shakespeare@globe.uk" />
+                    id="file-noJS"
+                    type="file"
+                    name="attachment"
+                    accept="image/png, image/jpeg" />
                 </p>
+              </noscript>
 
-                <!-- Noscript input field -->
-                <noscript>
-                  <p>
-                    <label for="file-noJS"
-                      >Upload File
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 16v-4" />
-                        <path d="M12 8h.01" />
-                      </svg>
-                    </label>
-                    <hidden-info> Max one. Max 500mb. </hidden-info>
-                    <input
-                      id="file-noJS"
-                      type="file"
-                      name="attachment"
-                      accept="image/png, image/jpeg" />
-                  </p>
-                </noscript>
-
-                <!-- JS input field -->
-                <js-file-field>
-                  <p>
-                    <label for="file"
-                      >Upload File
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 16v-4" />
-                        <path d="M12 8h.01" />
-                      </svg>
-                    </label>
-                    <hidden-info>Max one. Max 500mb.</hidden-info>
-                  </p>
-                  <div id="drop-zone">
-                    <input id="file" name="attachment" type="file" accept="*" />
-                    <svg id="plus">
-                      <use
-                        href="/SRC/asset/svg/folder.svg#folder-plus-icon"></use>
-                    </svg>
-                    <svg id="open">
-                      <use
-                        href="/SRC/asset/svg/folder.svg#folder-open-icon"></use>
-                    </svg>
-                  </div>
-                </js-file-field>
-              </section>
-
-              <section>
+              <!-- JS input field -->
+              <js-file-field>
                 <p>
-                  <label for="subject">Subject</label>
-                  <input
-                    required
-                    autocomplete="off"
-                    id="subject"
-                    name="_subject"
-                    placeholder="About the Gilded Lily!" />
+                  <label for="file"
+                    >Upload File
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 16v-4" />
+                      <path d="M12 8h.01" />
+                    </svg>
+                  </label>
+                  <hidden-info>Max one. Max 500mb.</hidden-info>
                 </p>
-                <p>
-                  <label for="message">Message</label>
-                  <textarea
-                    autocomplete="off"
-                    required
-                    id="message"
-                    name="message"
-                    placeholder="Uneasy lies the head that wears a crown..."></textarea>
-                </p>
-              </section>
-            </fieldset>
-            <hidden-inputs>
-              <!-- Spam filter -->
-              <input
-                type="hidden"
-                name="_blacklist"
-                value="WhatsApp, whatsapp" />
-              <!-- Honey -->
-              <input type="text" name="_honey" style="display: none" />
-              <!-- Redirect to Thank You page -->
-              <input
-                type="hidden"
-                name="_next"
-                value="https://gildrom.com/tavern/contact#toast" />
-            </hidden-inputs>
-            <button type="submit">
-              <b>Send your message!</b>
-            </button>
-          </form>
+                <div id="drop-zone">
+                  <input id="file" name="attachment" type="file" accept="*" />
+                  <svg id="plus">
+                    <use
+                      href="/SRC/asset/svg/folder.svg#folder-plus-icon"></use>
+                  </svg>
+                  <svg id="open">
+                    <use
+                      href="/SRC/asset/svg/folder.svg#folder-open-icon"></use>
+                  </svg>
+                </div>
+              </js-file-field>
+            </section>
 
+            <section>
+              <p>
+                <label for="subject">Subject</label>
+                <input
+                  required
+                  autocomplete="off"
+                  id="subject"
+                  name="_subject"
+                  placeholder="About the Gilded Lily!" />
+              </p>
+              <p>
+                <label for="message">Message</label>
+                <textarea
+                  autocomplete="off"
+                  required
+                  id="message"
+                  name="message"
+                  placeholder="Uneasy lies the head that wears a crown..."></textarea>
+              </p>
+            </section>
+          </fieldset>
+          <hidden-inputs>
+            <!-- Spam filter -->
+            <input type="hidden" name="_blacklist" value="WhatsApp, whatsapp" />
+            <!-- Honey -->
+            <input type="text" name="_honey" style="display: none" />
+            <!-- Redirect to Thank You page -->
+            <input
+              type="hidden"
+              name="_next"
+              value="https://gildrom.com/tavern/contact#toast" />
+          </hidden-inputs>
+          <button type="submit">
+            <svg
+              style="font-size: 1.5rem; transform: translateY(5px)"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-send-icon lucide-send">
+              <path
+                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+              <path d="m21.854 2.147-10.94 10.939" />
+            </svg>
+            <b>Send</b>
+          </button>
+        </form>
       </main-content>
     </main>
     <script src="/SRC/js/file-field.js"></script>
