@@ -6,7 +6,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--color-green-m) transparent;
   caret-color: orange;
-  scroll-padding-top: 420px;
+  scroll-padding-top: 100px;
 }
 
 html * {
