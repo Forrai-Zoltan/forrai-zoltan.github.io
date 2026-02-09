@@ -28,9 +28,9 @@ main {
 
 main-content {
   background: radial-gradient(
-    ellipse 80% 130% at top,
-    hsl(0, 0%, 6%) 45%,
-    hsla(var(--color-purple-a), 0.9) 99%
+    ellipse 80% 170% at top,
+    hsl(0, 0%, 6%) 50%,
+    hsla(var(--color-purple-a), 0.9) 100%
   );
 }
 
