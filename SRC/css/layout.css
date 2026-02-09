@@ -29,9 +29,23 @@ main {
 main-content {
   background: radial-gradient(
     ellipse 80% 170% at top,
-    hsl(0, 0%, 6%) 50%,
-    hsla(var(--color-purple-a), 0.9) 100%
+    hsl(0, 0%, 6%) 40%,
+    hsla(var(--color-purple-a), 0.9) 85%
   );
+}
+
+main-content.long {
+  background: linear-gradient(
+      0.245turn,
+      hsla(var(--color-purple-a), 0.6),
+      transparent 20% 78%
+    ),
+    linear-gradient(
+      0.755turn,
+      hsla(var(--color-purple-a), 0.6),
+      transparent 20% 78%
+    ),
+    hsl(0, 0%, 6%);
 }
 
 deck-box {
@@ -140,7 +154,6 @@ footer {
     hsla(var(--color-green-light-a), 0.2)
   );
 }
-
 
 button:not(.work-close),
 .btn {
