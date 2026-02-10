@@ -66,3 +66,13 @@ footer svg {
 footer a {
   text-decoration: underline;
 }
+
+details {
+  border-left: 2px solid orange;
+  padding-left: 20px;
+  margin-top: 20px;
+
+  & summary::marker {
+    color: orange;
+  }
+}

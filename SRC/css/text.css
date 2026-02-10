@@ -168,7 +168,7 @@ article ul {
 
 article li {
   line-height: 1.7em;
-  
+
   margin-top: 5px;
 }
 
@@ -247,4 +247,10 @@ article ol#footnotes li {
   &::marker {
     font-size: 1rem !important;
   }
+}
+
+img.inline-hand {
+  height: 25px;
+  float: left;
+  margin: 12px 5px 0 0;
 }
