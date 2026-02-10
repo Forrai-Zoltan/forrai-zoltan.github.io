@@ -114,6 +114,7 @@ gallery-row {
   scrollbar-color: rgba(119, 255, 144, 0.15) transparent;
   position: relative;
   direction: rtl;
+  overscroll-behavior: contain;
 }
 
 gallery-row::-webkit-scrollbar {
