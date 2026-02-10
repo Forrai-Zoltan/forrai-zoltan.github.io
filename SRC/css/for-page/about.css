@@ -6,7 +6,18 @@ aside {
 
 @media (min-width: 600px) {
   aside {
-    width: clamp(500px, 35vw, 40vw);
+    position: fixed;
+    top: 88px;
+    left: 9px;
+    height: calc(100vh - 97px);
+    overflow-y: auto;
+    width: clamp(300px, 35vw, 390px);
+  }
+  
+  /* Add margin to main content so it's not hidden under the fixed aside */
+  main {
+    margin-left: calc(clamp(300px, 35vw, 390px) + 9px);
+    padding-left: 0.6rem !important;
   }
 }
 
@@ -22,6 +33,7 @@ aside {
 pspotify-p {
   position: relative;
   margin: 0;
+  max-width: 100%;
   aspect-ratio: 3 / 1;
   background-color: #181818;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -31,7 +43,6 @@ pspotify-p {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-
   &::before {
     content: "";
     position: absolute;
@@ -53,7 +64,6 @@ footer {
     hsl(0, 0%, 6%) 45%,
     hsla(var(--color-green-light-a), 0.2)
   );
-
   p {
     margin-top: 0px;
   }
@@ -71,7 +81,6 @@ details {
   border-left: 2px solid orange;
   padding-left: 20px;
   margin-top: 20px;
-
   & summary::marker {
     color: orange;
   }
