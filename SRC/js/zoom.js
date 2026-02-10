@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll("main :not(a) img");
+  const images = document.querySelectorAll("main :not(a) img, gallery-row img");
 
   images.forEach((img) => {
     img.addEventListener("click", () => {
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.style.display = "flex";
       overlay.style.alignItems = "center";
       overlay.style.justifyContent = "center";
-      overlay.style.cursor = "zoom-out";
       overlay.style.zIndex = 9999;
 
       // Create zoomed image
