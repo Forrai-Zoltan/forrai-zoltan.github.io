@@ -4,7 +4,7 @@ html {
   background-color: black;
   color: white;
   scrollbar-width: thin;
-  scrollbar-color: var(--color-green-m) transparent;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
   caret-color: orange;
   scroll-padding-top: 100px;
 }
