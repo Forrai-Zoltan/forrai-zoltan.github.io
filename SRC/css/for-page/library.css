@@ -3,17 +3,7 @@
   padding: 0;
 }
 
-/* For WebKit browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
 
-/* For Firefox */
-* {
-  scrollbar-width: none !important;
-  -ms-overflow-style: none;
-}
 
 html,
 body {
