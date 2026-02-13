@@ -36,7 +36,7 @@ main-content {
 
 main-content.long {
   background: linear-gradient(
-      0.247turn,
+      0.246turn,
       hsla(var(--color-purple-a), 0.6),
       transparent 20% 78%
     ),
