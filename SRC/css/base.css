@@ -176,30 +176,21 @@ article sup a:any-link {
 
 /* CSS only fade-out effect for :target */
 :target {
-  &:not(:is(#footnotes *, span:has(+ sup))) {
-    outline: 5px solid orange;
-    outline-offset: 10px;
-    animation: highlightFade 5s forwards;
-  }
-
-  &:is(#footnotes *, span:has(+ sup)) {
-    text-decoration: underline 1px solid orange;
-    animation: highlightFade 5s forwards;
-  }
+  border-radius: inherit;
+  outline: 5px solid orange;
+  outline-offset: 10px;
+  animation: highlightFade 5s forwards;
 }
 
 @keyframes highlightFade {
   0% {
     outline-color: orange; /* fully visible immediately */
-    text-decoration: underline 1px solid orange;
   }
   50% {
     outline-color: orange; /* keep visible for 1 second */
-    text-decoration: underline 1px solid orange;
   }
   100% {
     outline-color: transparent; /* fade out by end */
-    text-decoration: underline 1px solid transparent;
   }
 }
 
