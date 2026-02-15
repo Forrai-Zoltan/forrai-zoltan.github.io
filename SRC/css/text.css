@@ -254,3 +254,13 @@ img.inline-hand {
   float: left;
   margin: 12px 5px 0 0;
 }
+
+.highlight {
+  strong {
+    color: orange;
+  }
+
+  em-oblique {
+    color: #46da1a;
+  }
+}
