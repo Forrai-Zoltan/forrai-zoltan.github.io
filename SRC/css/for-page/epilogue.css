@@ -25,25 +25,6 @@ img[src="/SRC/btn.gif"]:active {
   transform: scale(1.05);
 }
 
-img[src="/SRC/btn.gif"]:hover
-  ~ code
-  img[src="/SRC/asset/icon/pointing-hand.png"] {
-  opacity: 1;
-}
-
-img[src="/SRC/asset/icon/pointing-hand.png"] {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  opacity: 0;
-  position: absolute;
-  width: 75px;
-  top: 8px;
-  left: -80px;
-  transition: opacity 0.2s ease;
-}
-
 img[src="/SRC/asset/svg/rss.svg"] {
   display: inline-block;
   padding: 1px;
@@ -56,14 +37,6 @@ img[src="/SRC/asset/svg/rss.svg"] {
 
 a:hover image[src="/SRC/asset/svg/rss.svg"] {
   filter: brightness(1.2);
-}
-
-/* Mobile Adaptations */
-@media screen and (max-width: 768px) {
-  /* Hide pointing hand on mobile (no hover state) */
-  img[src="/SRC/asset/icon/pointing-hand.png"] {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 480px) {

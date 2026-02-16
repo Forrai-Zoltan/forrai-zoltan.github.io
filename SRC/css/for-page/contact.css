@@ -25,7 +25,7 @@ thanks-background:has(thanks-section:target) {
   top: 0;
   left: 0;
   z-index: 10000;
-  border-radius: 0;
+  border-radius: 15px;
   pointer-events: auto !important;
 }
 

@@ -256,11 +256,11 @@ img.inline-hand {
 }
 
 .highlight {
+  em-oblique {
+    color: #46da1a;
+  }
   strong {
     color: orange;
   }
 
-  em-oblique {
-    color: #46da1a;
-  }
 }
