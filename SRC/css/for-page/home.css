@@ -41,25 +41,25 @@ footer a[href="/tavern/contact"] {
   z-index: 1;
 }
 
-p:has(a[href="/exit"]) {
+p:has(a[href="/colophon"]) {
   margin: 0;
   font-size: 1.3rem;
   color: silver;
   line-height: 1;
 }
 
-a[href="/exit"] {
+a[href="/colophon"] {
   text-decoration-line: underline;
   text-decoration-color: silver;
   text-decoration-thickness: 0.5px;
   text-underline-offset: 3px;
 }
 
-a[href="/exit"]:focus-visible {
+a[href="/colophon"]:focus-visible {
   border-radius: 3px;
 }
 
-a[href="/exit"]:hover {
+a[href="/colophon"]:hover {
   color: white;
   text-decoration-line: underline;
   text-decoration-color: white;
