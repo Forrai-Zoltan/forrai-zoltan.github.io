@@ -48,7 +48,7 @@ buttons-88x31 img {
   border-radius: 2px;
 }
 
-buttons-88x31 a:hover {
+buttons-88x31 a:not(div a):hover {
   outline: 1px solid white;
   border-radius: 2px;
 }
