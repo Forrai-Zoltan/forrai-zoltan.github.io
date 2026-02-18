@@ -39,12 +39,13 @@ status-update {
   color: black;
   background-color: rgb(185, 229, 255);
   width: 100%;
-  max-width: min(60ch, 85%);
+  max-width: min(62ch, 85%);
   min-height: 100px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.1rem !important;
   overflow-wrap: break-word;
   word-break: break-word;
+  hyphens: auto;
   line-height: 1.3;
 }
 
