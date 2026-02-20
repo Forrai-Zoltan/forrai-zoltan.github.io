@@ -15,7 +15,165 @@
     <link rel="stylesheet" href="/SRC/css/layout.css" />
     <link rel="stylesheet" href="/SRC/css/header.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
-    <link rel="stylesheet" href="/SRC/css/for-page/exit.css" />
+    <style>
+      nav:has(a[href="/rss.xml"]) {
+        border-bottom: 1px solid var(--color-alt-white);
+      }
+
+      nav:has(a[href="/rss.xml"]) ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10ch;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+
+      nav:has(a[href="/rss.xml"]) ul li::marker {
+        content: none;
+      }
+
+      nav:has(a[href="/rss.xml"]) a {
+        color: var(--color-alt-white);
+      }
+
+      nav:has(a[href="/rss.xml"]) a:hover {
+        color: white;
+      }
+
+      buttons-88x31 {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 1rem;
+        border-radius: 10px !important;
+        margin: 20px 0;
+      }
+
+      buttons-88x31 img {
+        border-radius: 2px;
+      }
+
+      buttons-88x31 a:not(div a):hover {
+        outline: 1px solid white;
+        border-radius: 2px;
+      }
+
+      tech-stack-icons {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      tech-stack-icons img {
+        width: 50px;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        height: 50px;
+      }
+
+      tech-stack-icons a:hover img,
+      tech-stack-icons a:focus-visible img {
+        border-radius: 12px;
+        filter: brightness(1.15);
+        box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
+      }
+
+      tech-stack-icons a:focus-visible {
+        border-radius: 12px;
+      }
+
+      .morse {
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      /* Mobile Adaptations */
+      @media screen and (max-width: 768px) {
+        /* Navigation adjustments */
+        nav:has(a[href="/rss.xml"]) ul {
+          gap: 3ch;
+        }
+
+        /* Reduce padding on buttons container */
+        buttons-88x31 {
+          padding: 0.75rem;
+          margin: 15px 0;
+          gap: 4px;
+        }
+
+        /* Tech stack icons stay same size on mobile */
+        tech-stack-icons {
+          gap: 4px;
+          margin-top: 15px;
+        }
+
+        /* Hide pointing hand on mobile (no hover state) */
+        img[src="/SRC/asset/icon/pointing-hand.png"] {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        /* Keep navigation horizontal with tighter spacing */
+        nav:has(a[href="/rss.xml"]) ul {
+          gap: 1.5ch;
+          flex-wrap: wrap;
+        }
+
+        /* Further reduce button container padding */
+        buttons-88x31 {
+          padding: 0.5rem;
+          margin: 10px 0;
+        }
+
+        /* Reduce transform scale on small screens */
+        img[src="/SRC/btn.gif"] {
+          transform: scale(1.05);
+        }
+
+        img[src="/SRC/btn.gif"]:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      /* Tablet landscape adjustments */
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        nav:has(a[href="/rss.xml"]) ul {
+          gap: 6ch;
+        }
+      }
+
+      section:has(code) {
+        margin-block: 20px 0;
+      }
+
+      section:has(code) ul {
+        margin-block: 20px 30px;
+
+        li {
+          margin-top: 10px;
+        }
+      }
+    </style>
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>Colophon・gildrom.com</title>
   </head>
