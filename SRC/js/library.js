@@ -129,8 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   Promise.all([
-    fetch("/SRC/json/works.json").then((res) => res.json()),
-    fetch("/SRC/json/authors.json").then((res) => res.json()),
+    fetch("/works.json").then((res) => res.json()),
+    fetch("/authors.json").then((res) => res.json()),
   ])
     .then(([worksData, authorsData]) => {
       const authorMap = {};

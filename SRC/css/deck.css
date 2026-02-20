@@ -3,16 +3,13 @@ deck-section {
   a img {
     display: none;
   }
+
   #soc {
     background-image: url(/SRC/media/img/socrates-middle-finger.png);
   }
 
-  #devlog {
-    background-image: url(/SRC/media/cover/devlog.png);
-  }
-
   #NG {
-    background-image: url(/SRC/media/cover/cover-ng.bmp);
+    background-image: url(/SRC/media/img/cover-ng.bmp);
     background-color: black;
     background-size: contain;
     background-position: top;
@@ -130,7 +127,7 @@ deck-section a {
   background-clip: content-box;
 
   br {
-    display: none
+    display: none;
   }
 
   &:hover,
