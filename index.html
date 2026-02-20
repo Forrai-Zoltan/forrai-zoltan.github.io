@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/SRC/css/header.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
     <style>
+      
+
       aside {
         display: flex;
         flex-direction: column;
@@ -56,13 +58,6 @@
 
       footer a[href="/tavern/contact"] {
         z-index: 1;
-      }
-
-      p:has(a[href="/beyond/colophon"]) {
-        margin: 0;
-        font-size: 1.3rem;
-        color: silver;
-        line-height: 1;
       }
 
       a[href="/beyond/colophon"] {
@@ -319,7 +314,10 @@
             <b>Send me a Message!</b>
           </a>
           <svg-links>
-            <a title="Newgrounds" href="//gildrom.newgrounds.com/">
+            <a
+              title="Newgrounds"
+              target="_blank"
+              href="//gildrom.newgrounds.com/">
               <img width="50" src="/SRC/asset/svg/ng_tank.svg" />
             </a>
             <a title="Colophon" href="/beyond/colophon">
@@ -328,7 +326,7 @@
             <a title="Warbler" href="/tavern/warbler">
               <img width="43" src="/SRC/asset/svg/bird.svg" />
             </a>
-            <a title="RSS" href="/rss.xml">
+            <a title="RSS" target="_blank" href="/rss.xml">
               <img width="33" src="/SRC/asset/svg/rss-line.svg" />
             </a>
           </svg-links>
