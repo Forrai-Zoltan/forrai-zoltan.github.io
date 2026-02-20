@@ -22,7 +22,7 @@
         gap: 7px;
       }
 
-      aside img {
+      aside > img {
         width: 500px;
         border-radius: 20px;
         overflow: hidden;
@@ -42,7 +42,7 @@
 
       footer {
         flex: 1 1 auto;
-        padding: 30px 0px;
+        padding: 30px 0px 15px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -89,7 +89,7 @@
           gap: 0.6rem;
         }
 
-        aside img {
+        aside > img {
           display: block;
           flex: 0 0 auto;
           position: relative;
@@ -97,6 +97,26 @@
 
         footer a[href="/tavern/contact"] {
           z-index: 1;
+        }
+
+        svg-links {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+        }
+
+        a[href="/tavern/warbles"] img {
+          transform: scaleX(-1);
+        }
+
+        svg-links a img {
+          filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+        }
+
+        svg-links a:hover img {
+          filter: drop-shadow(2px 2px 4px rgba(15, 15, 15, 0.7))
+            brightness(1.15);
         }
       }
     </style>
@@ -297,7 +317,20 @@
           <a class="btn" href="/tavern/contact">
             <b>Send me a Message!</b>
           </a>
-          <p>[[ <a href="/beyond/colophon">Colophon & Links</a> ]]</p>
+          <svg-links>
+            <a title="Newgrounds" href="//gildrom.newgrounds.com/">
+              <img width="50" src="/SRC/asset/svg/ng_tank.svg" />
+            </a>
+            <a title="Colophon" href="/beyond/colophon">
+              <img width="40" src="/SRC/asset/svg/finprint.svg" />
+            </a>
+            <a title="Warbles" href="/tavern/warbles">
+              <img width="43" src="/SRC/asset/svg/bird.svg" />
+            </a>
+            <a title="RSS" href="/rss.xml">
+              <img width="33" src="/SRC/asset/svg/rss-line.svg" />
+            </a>
+          </svg-links>
         </footer>
       </aside>
     </main>
