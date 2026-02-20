@@ -180,6 +180,8 @@ magic-spell {
   color: SlateBlue;
   font-size: 1.6rem;
   font-style: italic;
+  margin-bottom: 50px;
+  display: block;
 }
 
 dev-notice {

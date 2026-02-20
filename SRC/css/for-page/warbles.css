@@ -151,7 +151,7 @@ interaction-row label:active {
   scale: 0.9;
 }
 
-[id="heart"]:checked ~ label svg {
+[class="heart"]:checked ~ label svg {
   fill: palevioletred;
   stroke: palevioletred;
 }
