@@ -317,7 +317,7 @@ form label:has(svg:hover) ~ hidden-info {
   textarea {
     min-height: 200px;
   }
-  
+
   form button {
     width: 100% !important;
     min-width: unset !important;
@@ -329,7 +329,7 @@ form label:has(svg:hover) ~ hidden-info {
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  
+
   form label {
     display: block;
     margin-top: 25px;
@@ -353,7 +353,7 @@ form label:has(svg:hover) ~ hidden-info {
   form label svg {
     display: none;
   }
-  
+
   fieldset {
     display: block;
     width: 100%;
@@ -388,9 +388,6 @@ article h1 + p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
-  }
-  #file-noJS {
-    max-width: 390px;
   }
 
   .main-copy {
