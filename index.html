@@ -106,17 +106,17 @@
           align-items: flex-end;
         }
 
-        a[href="/tavern/warbles"] img {
+        a[href="/tavern/warbler"] img {
           transform: scaleX(-1);
         }
 
         svg-links a img {
-          filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7)) saturate(0.85);
         }
 
         svg-links a:hover img {
-          filter: drop-shadow(2px 2px 4px rgba(15, 15, 15, 0.7))
-            brightness(1.15);
+          filter: drop-shadow(2px 2px 4px rgba(15, 15, 15, 0.7)) saturate(1)
+            brightness(1.2);
         }
       }
     </style>
@@ -226,11 +226,11 @@
                 </a>
               </li>
               <li>
-                <a href="/tavern/warbles">
+                <a href="/tavern/warbler">
                   <svg width="20" height="20">
                     <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
                   </svg>
-                  Warbles
+                  Warbler
                 </a>
               </li>
               <li>
@@ -324,7 +324,7 @@
             <a title="Colophon" href="/beyond/colophon">
               <img width="40" src="/SRC/asset/svg/finprint.svg" />
             </a>
-            <a title="Warbler" href="/tavern/warbles">
+            <a title="Warbler" href="/tavern/warbler">
               <img width="43" src="/SRC/asset/svg/bird.svg" />
             </a>
             <a title="RSS" href="/rss.xml">
