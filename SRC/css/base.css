@@ -1,5 +1,26 @@
 /* RESETS AND PLAIN HTML ELEMENTS ONLY! */
 
+:root {
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 html {
   background-color: black;
   color: white;
@@ -7,6 +28,8 @@ html {
   scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
   caret-color: orange;
   scroll-padding-top: 100px;
+  scrollbar-gutter: auto;
+  overflow-y: overlay;
 }
 
 html * {
@@ -23,6 +46,7 @@ body {
   margin-top: 86px;
   background-color: black;
   color: white;
+  scrollbar-gutter: auto;
 }
 
 @media (max-width: 600px) {
