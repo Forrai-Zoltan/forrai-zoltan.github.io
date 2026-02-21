@@ -30,12 +30,6 @@
         cursor: pointer;
       }
 
-      ul:has(img[src="/SRC/btn.gif"]:hover)
-        ~ code
-        img[src="/SRC/asset/icon/pointing-hand.png"] {
-        opacity: 1;
-      }
-
       img[src="/SRC/btn.gif"]:hover {
         transform: scale(1.2);
       }
@@ -43,7 +37,8 @@
         transform: scale(1.05);
       }
 
-      img[src="/SRC/asset/svg/rss.svg"] {
+      img[src="/SRC/asset/svg/rss.svg"],
+      img[src="/SRC/asset/svg/ng.svg"] {
         display: inline-block;
         padding: 1px;
         padding-right: 5px;
@@ -53,8 +48,11 @@
         -ms-user-select: none;
       }
 
-      a:hover image[src="/SRC/asset/svg/rss.svg"] {
-        filter: brightness(1.2);
+      a:hover img[src="/SRC/asset/svg/rss.svg"] {
+        filter: brightness(1.225);
+      }
+      a:hover img[src="/SRC/asset/svg/ng.svg"] {
+        filter: brightness(1.55);
       }
 
       @media screen and (max-width: 480px) {
@@ -83,6 +81,16 @@
 
       letter-section {
         text-align: justify;
+      }
+
+      magic-spell {
+        text-align: right;
+      }
+
+      p:not([align="center"]):has(b) {
+        padding-left: 30px;
+        margin-block: 40px;
+        font-size: 1.6rem;
       }
     </style>
     <link rel="icon" type="image/png" href="/favicon.ico" />
@@ -294,8 +302,10 @@
             <ul>
               <li>
                 Following me on
-                <a target="_blank" href="https://gildrom.newgrounds.com/"
-                  >Newgrounds</a
+                <a target="_blank" href="https://gildrom.newgrounds.com/">
+                  <img src="/SRC/asset/svg/ng.svg" height="20" /><b
+                    >Newgrounds</b
+                  ></a
                 >. It&rsquo;s the only
                 <em-oblique>&ldquo;social media</em-oblique>&rdquo; I have.
               </li>
@@ -312,7 +322,9 @@
               <li>
                 Following my
                 <a href="/rss.xml">
-                  <img src="/SRC/asset/svg/rss.svg" height="20" />RSS Feed</a
+                  <img src="/SRC/asset/svg/rss.svg" height="20" /><b
+                    >RSS Feed</b
+                  ></a
                 >
                 for news and updates.
               </li>

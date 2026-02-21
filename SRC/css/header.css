@@ -154,8 +154,12 @@ body:has(#burger:checked) {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
@@ -182,11 +186,21 @@ header nav:has(ul) ul {
 }
 
 /* Staggered animation */
-#burger:checked ~ nav:has(ul) > ul > li:nth-child(1) { animation-delay: 0.05s; }
-#burger:checked ~ nav:has(ul) > ul > li:nth-child(2) { animation-delay: 0.1s; }
-#burger:checked ~ nav:has(ul) > ul > li:nth-child(3) { animation-delay: 0.15s; }
-#burger:checked ~ nav:has(ul) > ul > li:nth-child(4) { animation-delay: 0.2s; }
-#burger:checked ~ nav:has(ul) > ul > li:nth-child(5) { animation-delay: 0.25s; }
+#burger:checked ~ nav:has(ul) > ul > li:nth-child(1) {
+  animation-delay: 0.05s;
+}
+#burger:checked ~ nav:has(ul) > ul > li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+#burger:checked ~ nav:has(ul) > ul > li:nth-child(3) {
+  animation-delay: 0.15s;
+}
+#burger:checked ~ nav:has(ul) > ul > li:nth-child(4) {
+  animation-delay: 0.2s;
+}
+#burger:checked ~ nav:has(ul) > ul > li:nth-child(5) {
+  animation-delay: 0.25s;
+}
 
 #burger:checked ~ nav:has(ul) > ul > li {
   font-weight: 100;
@@ -385,57 +399,57 @@ header nav:has(ul) a {
 
 /* ===== ARTICLE LINKS ===== */
 
-article a {
+:is(main-content, exit-content) a {
   color: var(--color-link);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
-article a:focus-visible {
+:is(main-content, exit-content) a:focus-visible {
   border-radius: 3px;
 }
 
-article a::selection {
+:is(main-content, exit-content) a::selection {
   color: var(--color-link);
   background-color: var(--color-green-m);
 }
 
-article a:hover,
-article a:focus-visible,
-article a:hover::selection,
-article a:focus-visible::selection {
+:is(main-content, exit-content) a:hover,
+:is(main-content, exit-content) a:focus-visible,
+:is(main-content, exit-content) a:hover::selection,
+:is(main-content, exit-content) a:focus-visible::selection {
   color: var(--color-link-hover);
 }
 
-article a:active,
-article a:active::selection {
+:is(main-content, exit-content) a:active,
+:is(main-content, exit-content) a:active::selection {
   color: var(--color-link-active);
 }
 
-article a:visited {
+:is(main-content, exit-content) a:visited {
   color: var(--color-link-visited);
 }
 
-article a:visited:hover,
-article a:visited:focus-visible {
+:is(main-content, exit-content) a:visited:hover,
+:is(main-content, exit-content) a:visited:focus-visible {
   color: var(--color-link-visited-hover);
 }
 
-article a:visited:active {
+:is(main-content, exit-content) a:visited:active {
   color: var(--color-link-visited-active);
 }
 
-article a:visited::selection {
+:is(main-content, exit-content) a:visited::selection {
   color: var(--color-link-light-visited);
 }
 
-article a:visited:hover::selection,
-article a:visited:focus-visible::selection {
+:is(main-content, exit-content) a:visited:hover::selection,
+:is(main-content, exit-content) a:visited:focus-visible::selection {
   color: var(--color-link-light-visited-hover);
 }
 
-article a:visited:active::selection {
+:is(main-content, exit-content) a:visited:active::selection {
   color: var(--color-link-light-visited-active);
 }
 

@@ -131,7 +131,7 @@ interaction-row label {
 
 interaction-row a,
 interaction-row label {
-  color: hsl(0, 0%, 45%);
+  color: hsl(0, 0%, 45%) !important;
   cursor: pointer;
 }
 

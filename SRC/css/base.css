@@ -201,6 +201,7 @@ article sup a:any-link {
   @supports (-webkit-font-smoothing: antialiased) {
     nav:has(h1) h1,
     img[src="/SRC/asset/svg/rss.svg"],
+    img[src="/SRC/asset/svg/ng.svg"],
     form label svg {
       display: inline-block;
       transform: translateY(4px);

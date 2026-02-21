@@ -239,6 +239,13 @@ footer {
   }
 }
 
+.review {
+  color: oklch(from var(--color-text-d) 65% c h / 1) !important;
+}
+.review a:any-link {
+  color: var(--color-link);
+}
+
 @media (max-width: 500px) {
   article blockquote {
     margin-left: 15px;

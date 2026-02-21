@@ -55,7 +55,7 @@ thanks-section {
   width: fit-content;
   text-align: center;
   z-index: 1000;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   color: white;
 }
 
@@ -66,19 +66,21 @@ thanks-section:target {
 
 thanks-section div {
   padding-block: 15px;
-  color: orange;
+  font-weight: bold;
+  color: hsla(var(--color-green-light-a), 0.8);
   margin-inline: 20px;
   font-family: var(--font-mono);
 }
 
 thanks-section img {
   border-radius: 10px;
+  width: 50vw;
 }
 
 thanks-section a {
   position: absolute;
   top: 0rem;
-  right: 0.2rem;
+  right: 0.6rem;
   cursor: pointer;
   width: 30px;
   height: 34px;
@@ -298,7 +300,7 @@ form label svg:hover {
 
 hidden-info {
   font-size: 1.1rem;
-  color: grey;
+  color: lightslategrey;
   font-family: var(--font-jb-mono);
 }
 
