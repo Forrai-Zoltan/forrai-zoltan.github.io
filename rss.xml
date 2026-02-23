@@ -14,18 +14,54 @@
       <link>https://www.gildrom.com/</link>
     </image> 
     <!-- <item>
-      <title>Template・Template</title>
-      <pubDate>Thu, 27 Apr 2006</pubDate>
-      <category></category>
+      <title></title>
       <link>https://www.gildrom.com/</link>
-      <guid>https://www.gildrom.com/</guid>
-      <description><![CDATA[Template]]></description>
+      <pubDate> ,. </pubDate>
+      <guid isPermaLink="false"> -. </guid>
+      <description><![CDATA[
+
+      ]]></description>
     </item> -->
     <!-- //// //// //// ITEMS //// //// //// -->
 
 
-
-
-
+    <item>
+      <title>Why RSS and not a Newsletter?</title>
+      <link>https://www.gildrom.com/</link>
+      <pubDate>Sun, 22 Feb 2026 17:10:28</pubDate>
+      <guid isPermaLink="false">2602221748vl1</guid>
+      <description><![CDATA[
+        <h1>Why RSS and not a Newsletter?</h1>
+        <p>
+          I find the concept of newsletters quite revolting. First, collecting emails is
+          a <a href="/legal#anonymity">violation of your anonymity</a>. Then, the
+          letters themselves are rarely anything more than poorly disguised adverts.
+          Newsletters are marketing tools. Used to circumvent adblockers, competition,
+          and to reach you directly through your inbox.
+        </p>
+        <p>Newsletters are antithetical to my values and beliefs.</p>
+        <p>
+          While RSS is more awkward, it puts the control into your hands. I can&rsquo;t
+          know who subscribes, when or if the posts are opened, and I don&rsquo;t have your
+          email to sell to third parties. It&rsquo;s a more peaceful format of
+          information delivery.
+        </p>
+        <h2>What will appear in this feed?</h2>
+        <p>
+          News about substantial updates to the website. When a new literary piece is
+          published. When a piece of information has a time factor. I won&rsquo;t bother
+          you with every <a href="/tavern/warbler">warble</a> I post.
+        </p>
+        <p>And I will not coerce you into buying some shitty course or pdf.</p>
+        <br />
+        <hr />
+        <p>
+          That&rsquo;s all for now. <br />
+          <a href="/tavern/contact">Contact me</a> or email me at
+          <a href="mailto:zoltan.forrai@gildrom.com">zoltan.forrai@gildrom.com</a>.
+        </p>
+        <p>Zoltan Forrai from <a href="/">www.gildrom.com</a></p>
+      ]]></description>
+    </item>
   </channel>
 </rss>
