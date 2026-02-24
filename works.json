@@ -2,8 +2,8 @@
   "works": [
     {
       "title": "The artist’s way: a spiritual path to higher creativity",
-      "authors": ["a40"],
-      "tags": "",
+      "authors": ["Julia Cameron"],
+      "tags": "self-help",
       "status": "reading",
       "rating": null,
       "file": "",
@@ -11,7 +11,7 @@
     },
     {
       "title": "The uses of supernatural power",
-      "authors": ["a38"],
+      "authors": ["Gábor Klaniczay"],
       "tags": "history",
       "status": "reading",
       "rating": null,
@@ -20,7 +20,7 @@
     },
     {
       "title": "Jerusalem",
-      "authors": ["a33"],
+      "authors": ["Alan Moore"],
       "tags": "hisorical fiction",
       "status": "unread",
       "rating": null,
@@ -29,7 +29,7 @@
     },
     {
       "title": "Quack This Way",
-      "authors": ["a30", "a37"],
+      "authors": ["Wallace", "Bryan A. Garner"],
       "tags": "biography",
       "status": "unread",
       "rating": null,
@@ -38,7 +38,7 @@
     },
     {
       "title": "Critical Theory Today",
-      "authors": ["a36"],
+      "authors": ["Lois Tyson"],
       "tags": "literary criticism, theory",
       "status": "reading",
       "rating": null,
@@ -47,7 +47,7 @@
     },
     {
       "title": "Maze",
-      "authors": ["a35"],
+      "authors": ["Christopher Manson"],
       "tags": "puzzle",
       "status": "read",
       "rating": 10,
@@ -56,7 +56,7 @@
     },
     {
       "title": "Mac Flecknoe",
-      "authors": ["a1"],
+      "authors": ["Dryden"],
       "tags": "poem, satire",
       "status": "read",
       "rating": 8.5,
@@ -65,7 +65,7 @@
     },
     {
       "title": "The Country Wife",
-      "authors": ["a2"],
+      "authors": ["Wycherley"],
       "tags": "drama, comedy",
       "status": "unread",
       "rating": null,
@@ -74,7 +74,7 @@
     },
     {
       "title": "The Rape of the Lock",
-      "authors": ["a3"],
+      "authors": ["Pope"],
       "tags": "poem",
       "status": "read",
       "rating": 8,
@@ -83,7 +83,7 @@
     },
     {
       "title": "Moll Flanders",
-      "authors": ["a4"],
+      "authors": ["Defoe"],
       "tags": "novel",
       "status": "read",
       "rating": 7,
@@ -92,7 +92,7 @@
     },
     {
       "title": "Elegy Written in a Country Churchyard",
-      "authors": ["a5"],
+      "authors": ["Thomas Gray"],
       "tags": "poem",
       "status": "read",
       "rating": 7,
@@ -101,7 +101,7 @@
     },
     {
       "title": "A Sentimental Journey",
-      "authors": ["a6"],
+      "authors": ["Sterne"],
       "tags": "novel",
       "status": "unread",
       "rating": null,
@@ -110,7 +110,7 @@
     },
     {
       "title": "The Tyger",
-      "authors": ["a7"],
+      "authors": ["Blake"],
       "tags": "poem",
       "status": "read",
       "rating": 7,
@@ -119,7 +119,7 @@
     },
     {
       "title": "The Lamb",
-      "authors": ["a7"],
+      "authors": ["Blake"],
       "tags": "poem",
       "status": "read",
       "rating": 7,
@@ -128,7 +128,7 @@
     },
     {
       "title": "Tintern Abbey",
-      "authors": ["a8"],
+      "authors": ["Wordsworth"],
       "tags": "poem",
       "status": "unread",
       "rating": null,
@@ -137,7 +137,7 @@
     },
     {
       "title": "Manfred",
-      "authors": ["a9"],
+      "authors": ["Byron"],
       "tags": "dramatic poem",
       "status": "unread",
       "rating": null,
@@ -146,7 +146,7 @@
     },
     {
       "title": "The Lady of Shalott",
-      "authors": ["a10"],
+      "authors": ["Tennyson"],
       "tags": "poem",
       "status": "unread",
       "rating": null,
@@ -155,7 +155,7 @@
     },
     {
       "title": "My Last Duchess",
-      "authors": ["a11"],
+      "authors": ["Robert Browning"],
       "tags": "poem",
       "status": "unread",
       "rating": null,
@@ -164,7 +164,7 @@
     },
     {
       "title": "Reneszánsz",
-      "authors": ["a13"],
+      "authors": ["Jean Delumeau"],
       "tags": "🇭🇺, history",
       "status": "unread",
       "rating": null,
@@ -182,7 +182,7 @@
     },
     {
       "title": "Lingva Latina I",
-      "authors": ["a14"],
+      "authors": ["Hans H. Ørberg"],
       "tags": "latin, language book",
       "status": "unread",
       "rating": null,
@@ -191,7 +191,7 @@
     },
     {
       "title": "The Prince",
-      "authors": ["a15"],
+      "authors": ["Machiavelli"],
       "tags": "politics",
       "status": "unread",
       "rating": null,
@@ -200,7 +200,7 @@
     },
     {
       "title": "Save the Cat",
-      "authors": ["a16"],
+      "authors": ["Blake Snyder"],
       "tags": "screenwriting",
       "status": "unread",
       "rating": null,
@@ -209,7 +209,7 @@
     },
     {
       "title": "In Search of Shakespeare",
-      "authors": ["a17"],
+      "authors": ["Michael Wood"],
       "tags": "history, literature",
       "status": "unread",
       "rating": null,
@@ -218,7 +218,7 @@
     },
     {
       "title": "Flow",
-      "authors": ["a18"],
+      "authors": ["Csikszentmihalyi"],
       "tags": "psychology",
       "status": "unread",
       "rating": null,
@@ -227,7 +227,7 @@
     },
     {
       "title": "Renaissance People",
-      "authors": ["a19", "a20"],
+      "authors": ["Robert C. Davis", "Beth Lindsmith"],
       "tags": "history",
       "status": "unread",
       "rating": null,
@@ -236,7 +236,7 @@
     },
     {
       "title": "Meditations",
-      "authors": ["a21"],
+      "authors": ["Marcus Aurelius"],
       "tags": "philosophy, stoicism",
       "status": "read",
       "rating": 9.5,
@@ -245,7 +245,7 @@
     },
     {
       "title": "Poetics",
-      "authors": ["a12"],
+      "authors": ["Aristotle"],
       "tags": "philosophy, literature, ",
       "status": "read",
       "rating": 9,
@@ -254,7 +254,7 @@
     },
     {
       "title": "Paradise Lost",
-      "authors": ["a22"],
+      "authors": ["Milton"],
       "tags": "epic, poem",
       "status": "unread",
       "rating": null,
@@ -263,7 +263,7 @@
     },
     {
       "title": "The Silmarillion",
-      "authors": ["a23"],
+      "authors": ["Tolkien"],
       "tags": "fantasy",
       "status": "unread",
       "rating": null,
@@ -272,7 +272,7 @@
     },
     {
       "title": "The Fall of Gondolin",
-      "authors": ["a23"],
+      "authors": ["Tolkien"],
       "tags": "fantasy",
       "status": "unread",
       "rating": null,
@@ -281,7 +281,7 @@
     },
     {
       "title": "Beren and Luthien",
-      "authors": ["a23"],
+      "authors": ["Tolkien"],
       "tags": "fantasy",
       "status": "unread",
       "rating": null,
@@ -290,7 +290,7 @@
     },
     {
       "title": "The Hobbit",
-      "authors": ["a23"],
+      "authors": ["Tolkien"],
       "tags": "fantasy",
       "status": "read",
       "rating": 8.5,
@@ -299,7 +299,7 @@
     },
     {
       "title": "The Children of Húrin",
-      "authors": ["a23"],
+      "authors": ["Tolkien"],
       "tags": "fantasy",
       "status": "unread",
       "rating": null,
@@ -308,7 +308,7 @@
     },
     {
       "title": "The Lord of the Rings",
-      "authors": ["a23"],
+      "authors": ["Tolkien"],
       "tags": "fantasy",
       "status": "unread",
       "rating": null,
@@ -317,7 +317,7 @@
     },
     {
       "title": "The Origin of Species",
-      "authors": ["a24"],
+      "authors": ["Darwin"],
       "tags": "biology, science",
       "status": "unread",
       "rating": null,
@@ -326,7 +326,7 @@
     },
     {
       "title": "American Literary Criticism from the Thirties to Eighties",
-      "authors": ["a25"],
+      "authors": ["Vincent B. Leitch"],
       "tags": "literary criticism, literature",
       "status": "unread",
       "rating": null,
@@ -335,7 +335,7 @@
     },
     {
       "title": "The Great Gatsby",
-      "authors": ["a26"],
+      "authors": ["Fitzgerald"],
       "tags": "novel",
       "status": "read",
       "rating": 8,
@@ -344,7 +344,7 @@
     },
     {
       "title": "Hamlet",
-      "authors": ["a27"],
+      "authors": ["Shakespeare"],
       "tags": "drama, tragedy",
       "status": "unread",
       "rating": null,
@@ -353,7 +353,7 @@
     },
     {
       "title": "Dune",
-      "authors": ["a28"],
+      "authors": ["Frank Herbert"],
       "tags": "sci-fi",
       "status": "unread",
       "rating": null,
@@ -362,7 +362,7 @@
     },
     {
       "title": "Harry Potter and the Philosopher's Stone",
-      "authors": ["a29"],
+      "authors": ["Rowling"],
       "tags": "fantasy",
       "status": "reading",
       "rating": null,
@@ -371,7 +371,7 @@
     },
     {
       "title": "Harry Potter and the Chamber of Secrets",
-      "authors": ["a29"],
+      "authors": ["Rowling"],
       "tags": "fantasy",
       "status": "reading",
       "rating": null,
@@ -380,7 +380,7 @@
     },
     {
       "title": "Harry Potter and the Prisoner of Azkaban",
-      "authors": ["a29"],
+      "authors": ["Rowling"],
       "tags": "fantasy",
       "status": "reading",
       "rating": null,
@@ -389,7 +389,7 @@
     },
     {
       "title": "Harry Potter and the Goblet of Fire",
-      "authors": ["a29"],
+      "authors": ["Rowling"],
       "tags": "fantasy",
       "status": "reading",
       "rating": null,
@@ -398,7 +398,7 @@
     },
     {
       "title": "Harry Potter and the Order of the Phoenix",
-      "authors": ["a29"],
+      "authors": ["Rowling"],
       "tags": "fantasy",
       "status": "reading",
       "rating": null,
@@ -407,7 +407,7 @@
     },
     {
       "title": "Harry Potter and the Half-Blood Prince",
-      "authors": ["a29"],
+      "authors": ["Rowling"],
       "tags": "fantasy",
       "status": "reading",
       "rating": null,
@@ -416,7 +416,7 @@
     },
     {
       "title": "Harry Potter and the Deathly Hallows",
-      "authors": ["a29"],
+      "authors": ["Rowling"],
       "tags": "fantasy",
       "status": "reading",
       "rating": null,
@@ -425,7 +425,7 @@
     },
     {
       "title": "Infinite Jest",
-      "authors": ["a30"],
+      "authors": ["Wallace"],
       "tags": "",
       "status": "unread",
       "rating": null,
@@ -434,7 +434,7 @@
     },
     {
       "title": "Vermis",
-      "authors": ["a31"],
+      "authors": ["Pastiboo"],
       "tags": "game guide",
       "status": "read",
       "rating": 10,
