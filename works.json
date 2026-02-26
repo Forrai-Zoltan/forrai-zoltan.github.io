@@ -1,13 +1,31 @@
 {
   "works": [
     {
+      "title": "Gesta Regum Britannie",
+      "authors": ["unknown"],
+      "tags": "epic, poem",
+      "status": "unread",
+      "rating": null,
+      "file": "Gesta-Regum-Britannie.pdf",
+      "notes": "Latin poem of 5000 hexameters adapting the <a href='/personal/library#historia-regum-britannie'> Historia Regum Britannie</a>. <br> <a href='https://archive.org/details/historiaregumbri0000geof' target='_blank'>Internet Archive</a>"
+    },
+    {
+      "title": "Historia Regum Britannie",
+      "authors": ["Geoffrey of Monmouth"],
+      "tags": "legend",
+      "status": "reading",
+      "rating": null,
+      "file": "Historia-Regum-Britannie.pdf",
+      "notes": "English translation on the <a href='https://archive.org/details/historyofkingsof00geof/mode/2up'>Internet Archive</a>."
+    },
+    {
       "title": "The artist’s way: a spiritual path to higher creativity",
       "authors": ["Julia Cameron"],
       "tags": "self-help",
       "status": "reading",
       "rating": null,
       "file": "",
-      "notes": "<a href='https://archive.org/details/artistswayspirit0000came_s3j5/mode/2up' target='_blank' rel='noopener noreferrer'>Internet Archive</a> "
+      "notes": "<a href='https://archive.org/details/artistswayspirit0000came_s3j5/mode/2up' target='_blank'>Internet Archive</a>"
     },
     {
       "title": "The uses of supernatural power",
@@ -16,7 +34,7 @@
       "status": "reading",
       "rating": null,
       "file": "",
-      "notes": "<a href='https://archive.org/details/usesofsupernatur0000klan/mode/2up' target='_blank' rel='noopener noreferrer'>Uses of Supernatural Power – Archive.org scan</a>"
+      "notes": "<a href='https://archive.org/details/usesofsupernatur0000klan/mode/2up' target='_blank'>Uses of Supernatural Power – Archive.org scan</a>"
     },
     {
       "title": "Jerusalem",

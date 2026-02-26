@@ -1,6 +1,12 @@
 {
   "authors": [
     {
+      "id": "Geoffrey of Monmouth",
+      "name": "Geoffrey of Monmouth",
+      "corpus": "",
+      "bio": "(1095&ndash;1155) was a Christian cleric from Monmouth, Wales, and one of the major figures in the popularity of tales of King Arthur. "
+    },
+    {
       "id": "Julia Cameron",
       "name": "Julia Cameron",
       "corpus": "",

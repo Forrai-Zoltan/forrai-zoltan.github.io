@@ -1,5 +1,3 @@
-// Vibecoded with CGPT and Claue (Bugfixes by Claude)
-
 document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.querySelector("#works-table tbody");
   const workSection = document.querySelector("#work-section");
@@ -392,33 +390,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const tdAuthors = document.createElement("td");
         work.authors.forEach((authorId, index) => {
-          const authorLink = document.createElement("a");
-          authorLink.textContent = authorMap[authorId] || authorId;
-          const authorSlug = getAuthorSlug({
-            id: authorId,
-            name: authorMap[authorId] || authorId,
-          });
-          authorLink.href = `#${authorSlug}`;
-          const authorClickHandler = (e) => {
-            e.preventDefault();
-
-            const prevHighlighted =
-              tableBody.querySelectorAll("tr.highlighted");
-            prevHighlighted.forEach((row) =>
-              row.classList.remove("highlighted")
+          if (authorId === "unknown") {
+            const textNode = document.createTextNode(
+              authorMap[authorId] || authorId
             );
-            tr.classList.add("highlighted");
+            tdAuthors.appendChild(textNode);
+          } else {
+            const authorLink = document.createElement("a");
+            authorLink.textContent = authorMap[authorId] || authorId;
+            const authorSlug = getAuthorSlug({
+              id: authorId,
+              name: authorMap[authorId] || authorId,
+            });
+            authorLink.href = `#${authorSlug}`;
+            const authorClickHandler = (e) => {
+              e.preventDefault();
 
-            history.replaceState(null, "", `#${authorSlug}`);
+              const prevHighlighted =
+                tableBody.querySelectorAll("tr.highlighted");
+              prevHighlighted.forEach((row) =>
+                row.classList.remove("highlighted")
+              );
+              tr.classList.add("highlighted");
 
-            openAuthorSection();
-            populateAuthorSection(authorId);
-          };
-          authorLink.addEventListener("click", authorClickHandler);
-          cleanupFunctions.push(() =>
-            authorLink.removeEventListener("click", authorClickHandler)
-          );
-          tdAuthors.appendChild(authorLink);
+              history.replaceState(null, "", `#${authorSlug}`);
+
+              openAuthorSection();
+              populateAuthorSection(authorId);
+            };
+            authorLink.addEventListener("click", authorClickHandler);
+            cleanupFunctions.push(() =>
+              authorLink.removeEventListener("click", authorClickHandler)
+            );
+            tdAuthors.appendChild(authorLink);
+          }
 
           if (index < work.authors.length - 1) {
             tdAuthors.appendChild(document.createTextNode(", "));
@@ -558,31 +563,38 @@ document.addEventListener("DOMContentLoaded", () => {
         sAuthors.innerHTML = "";
 
         work.authors.forEach((authorId, index) => {
-          const authorLink = document.createElement("a");
-          const slug = getAuthorSlug({
-            id: authorId,
-            name: authorMap[authorId] || authorId,
-          });
-          authorLink.href = `#${slug}`;
-          authorLink.textContent = authorMap[authorId] || authorId;
-          authorLink.addEventListener("click", (e) => {
-            e.preventDefault();
-
-            const rows = Array.from(tableBody.querySelectorAll("tr"));
-            rows.forEach((row) => row.classList.remove("highlighted"));
-            const matchingRow = rows.find(
-              (row) =>
-                row.querySelector("td:first-child").textContent === work.title
+          if (authorId === "unknown") {
+            const textNode = document.createTextNode(
+              authorMap[authorId] || authorId
             );
-            if (matchingRow) matchingRow.classList.add("highlighted");
+            sAuthors.appendChild(textNode);
+          } else {
+            const authorLink = document.createElement("a");
+            const slug = getAuthorSlug({
+              id: authorId,
+              name: authorMap[authorId] || authorId,
+            });
+            authorLink.href = `#${slug}`;
+            authorLink.textContent = authorMap[authorId] || authorId;
+            authorLink.addEventListener("click", (e) => {
+              e.preventDefault();
 
-            history.replaceState(null, "", `#${slug}`);
+              const rows = Array.from(tableBody.querySelectorAll("tr"));
+              rows.forEach((row) => row.classList.remove("highlighted"));
+              const matchingRow = rows.find(
+                (row) =>
+                  row.querySelector("td:first-child").textContent === work.title
+              );
+              if (matchingRow) matchingRow.classList.add("highlighted");
 
-            openAuthorSection();
-            populateAuthorSection(authorId);
-          });
+              history.replaceState(null, "", `#${slug}`);
 
-          sAuthors.appendChild(authorLink);
+              openAuthorSection();
+              populateAuthorSection(authorId);
+            });
+
+            sAuthors.appendChild(authorLink);
+          }
           if (index < work.authors.length - 1) {
             sAuthors.appendChild(document.createTextNode(", "));
           }
@@ -711,31 +723,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      const hash = window.location.hash.slice(1);
-      if (hash) {
-        if (worksMap[hash]) {
-          renderWork(worksMap[hash]);
-          openWorkSection();
-
-          const prevHighlighted = tableBody.querySelectorAll("tr.highlighted");
-          prevHighlighted.forEach((row) => row.classList.remove("highlighted"));
-
-          const workTitle = worksMap[hash].title;
-          const rows = Array.from(tableBody.querySelectorAll("tr"));
-          const mainRow = rows.find(
-            (r) => r.querySelector("td:first-child").textContent === workTitle
-          );
-          if (mainRow) {
-            mainRow.classList.add("highlighted");
-            mainRow.scrollIntoView({ behavior: "smooth", block: "center" });
-          }
-        } else {
-          const author = authorsData.authors.find(
-            (a) => slugify(a.name) === hash
-          );
-          if (author) {
-            openAuthorSection();
-            populateAuthorSection(author.id);
+      function handleHashNavigation() {
+        const hash = window.location.hash.slice(1);
+        if (hash) {
+          if (worksMap[hash]) {
+            renderWork(worksMap[hash]);
+            openWorkSection();
 
             const prevHighlighted =
               tableBody.querySelectorAll("tr.highlighted");
@@ -743,27 +736,55 @@ document.addEventListener("DOMContentLoaded", () => {
               row.classList.remove("highlighted")
             );
 
-            const authorName = author.name;
-            const mainRows = Array.from(tableBody.querySelectorAll("tr"));
-            let firstHighlightedRow = null;
+            const workTitle = worksMap[hash].title;
+            const rows = Array.from(tableBody.querySelectorAll("tr"));
+            const mainRow = rows.find(
+              (r) => r.querySelector("td:first-child").textContent === workTitle
+            );
+            if (mainRow) {
+              mainRow.classList.add("highlighted");
+              mainRow.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+          } else {
+            const author = authorsData.authors.find(
+              (a) => slugify(a.name) === hash
+            );
+            if (author) {
+              openAuthorSection();
+              populateAuthorSection(author.id);
 
-            mainRows.forEach((row) => {
-              const authorsTd = row.querySelector("td:nth-child(2)");
-              if (authorsTd && authorsTd.textContent.includes(authorName)) {
-                row.classList.add("highlighted");
-                if (!firstHighlightedRow) firstHighlightedRow = row;
-              }
-            });
+              const prevHighlighted =
+                tableBody.querySelectorAll("tr.highlighted");
+              prevHighlighted.forEach((row) =>
+                row.classList.remove("highlighted")
+              );
 
-            if (firstHighlightedRow) {
-              firstHighlightedRow.scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
+              const authorName = author.name;
+              const mainRows = Array.from(tableBody.querySelectorAll("tr"));
+              let firstHighlightedRow = null;
+
+              mainRows.forEach((row) => {
+                const authorsTd = row.querySelector("td:nth-child(2)");
+                if (authorsTd && authorsTd.textContent.includes(authorName)) {
+                  row.classList.add("highlighted");
+                  if (!firstHighlightedRow) firstHighlightedRow = row;
+                }
               });
+
+              if (firstHighlightedRow) {
+                firstHighlightedRow.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                });
+              }
             }
           }
         }
       }
+
+      handleHashNavigation();
+
+      window.addEventListener("hashchange", handleHashNavigation);
 
       initializeSearch();
     })
