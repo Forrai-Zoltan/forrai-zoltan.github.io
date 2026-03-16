@@ -177,7 +177,6 @@
         <form>
           <search>
             <input
-              list="tags"
               type="search"
               name="filter"
               autocomplete="off"
@@ -187,16 +186,6 @@
               value="X"
               title="clear search"
               aria-label="clear search" />
-            <datalist id="tags">
-              <option value="Corpus Artistae"></option>
-              <option value="devlog"></option>
-              <option value="grammar"></option>
-              <option value="web development"></option>
-              <option value="literature"></option>
-              <option value="literary theory"></option>
-              <option value="bibliography"></option>
-              <option value="criticism"></option>
-            </datalist>
           </search>
         </form>
         <noscript>
@@ -205,6 +194,13 @@
           </noscript-span>
         </noscript>
         <deck-section>
+          <a
+            id="exploring-the-canon"
+            href="/literary/essays/canon"
+            data-tags="canon">
+            <title-span>Exploring the Canon</title-span>
+            <br />
+          </a>
           <a
             id="lierary-theory-bibliography"
             href="/literary/essays/literary-theory"

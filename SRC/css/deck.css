@@ -161,7 +161,7 @@ title-span {
   border-radius: 5px;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: clamp(1rem, 6vw, 1.3rem);
+  font-size: clamp(1rem, 6vw, 1.2rem);
 
   &:empty {
     background-color: transparent;

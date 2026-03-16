@@ -48,6 +48,10 @@ main-content.long {
     hsl(0, 0%, 6%);
 }
 
+main-content.dark {
+  background: #131210;
+}
+
 deck-box {
   border-radius: 20px;
   overflow: hidden;

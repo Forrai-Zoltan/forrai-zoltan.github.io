@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="/SRC/css/layout.css" />
     <link rel="stylesheet" href="/SRC/css/header.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
+    <link rel="stylesheet" href="/SRC/css/lit-theo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>Literary Theory・gildrom.com</title>
     <meta name="description" content="" />
@@ -172,10 +178,130 @@
       </nav>
     </header>
     <main>
-      <main-content class="long">
-        <article>
-          <h1 class="alt">Literary Theory</h1>
-        </article>
+      <main-content id="lit-theo" class="dark">
+        <page-wrapper>
+          <page-header>
+            <h1>Literary Theory &amp; Criticism</h1>
+            <p>
+              My personal annotated bibliography from Plato to the present.
+              Entries are ordered chronologically. Use
+              <kbd>Ctrl + F</kbd> to search by any tag, author, title, term, or
+              keyword. Click a title to expand its entry.
+            </p>
+            <p>
+              <b>Note&colon;</b> This bibliography is not comprehensive. The
+              entries reflect my own reading journey into theory. This page is a
+              compainon to my <a href="/personal/library">Library</a>.
+            </p>
+          </page-header>
+          <div class="legend">
+            <div class="legend-label">Tag legend</div>
+            <span class="tag tag-period">period</span>
+            <span class="tag tag-type">text type</span>
+            <span class="tag tag-school">school / movement</span>
+            <span class="tag tag-lang">language / translation</span>
+          </div>
+          <!-- ==== TEMPLATE ==== -->
+          <!-- ENTRY START -->
+          <article class="entry" id="template">
+            <details>
+              <summary>
+                <entry-header>
+                  <entry-byline>
+                    Author ·
+                    <original-year>year (orig. pub.)</original-year>
+                    · citation information · [Read: yyyy-mm]
+                    <a href=""></a>
+                  </entry-byline>
+                  <entry-title>Title (TEMPLATE)</entry-title>
+                  <div class="tags">
+                    <span class="tag tag-period">period</span>
+                    <span class="tag tag-type">type</span>
+                    <span class="tag tag-school">school</span>
+                    <span class="tag tag-lang">language</span>
+                  </div>
+                </entry-header>
+              </summary>
+              <details open>
+                <summary>
+                  Context &amp; Argument<summary-icon>+</summary-icon>
+                </summary>
+                <div class="field">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit odit nesciunt repellendus dolorem fugit
+                    doloribus corporis, nemo, ipsam ut, libero distinctio.
+                    Asperiores facilis voluptatibus quidem soluta dicta
+                    dignissimos consequatur inventore.
+                  </p>
+                </div>
+              </details>
+              <details>
+                <summary>
+                  Notes &amp; Response <summary-icon>+</summary-icon>
+                </summary>
+                <div class="field">
+                  <p class="reader-response">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+                    blanditiis aspernatur minus itaque at possimus reprehenderit
+                    eveniet unde corporis illum quae ex, repudiandae cumque
+                    nostrum facere, veniam consequatur? Tempora, quam.
+                  </p>
+                </div>
+              </details>
+              <details>
+                <summary>Key terms <summary-icon>+</summary-icon></summary>
+                <div class="field">
+                  <key-terms>
+                    <span class="term">term 1</span>
+                    <span class="term">term 2</span>
+                    <span class="term">term 3</span>
+                  </key-terms>
+                </div>
+              </details>
+              <details>
+                <summary>Connections <summary-icon>+</summary-icon></summary>
+                <div class="field">
+                  <connections-group>
+                    <connections-label
+                      >Connection Type (influence, response,
+                      application)</connections-label
+                    >
+                    <a class="connection-link" href="#">
+                      Reference
+                      <connection-year>year</connection-year>
+                    </a>
+                  </connections-group>
+                </div>
+              </details>
+            </details>
+          </article>
+          <!-- ENTRY END -->
+
+          <div class="section-divider">
+            <h2>Primary Texts</h2>
+            <hr />
+          </div>
+          <!-- ========================
+            ENTRIES
+          ========================= -->
+
+          <div class="section-divider">
+            <h2>Secondary Texts</h2>
+            <hr />
+          </div>
+          <!-- ========================
+            ENTRIES
+          ========================= -->
+
+          <div class="section-divider">
+            <h2>Related Texts</h2>
+            <hr />
+          </div>
+          <!-- ========================
+            ENTRIES
+          ========================= -->
+        </page-wrapper>
       </main-content>
     </main>
   </body>
