@@ -394,4 +394,5 @@ connection-year {
   flex: 1;
   border: none;
   border-top: 1px solid var(--border-light);
+  background-color: transparent;
 }
