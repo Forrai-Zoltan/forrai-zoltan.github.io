@@ -1,6 +1,258 @@
 {
   "works": [
     {
+      "title": "The Gold-Bug",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "read",
+      "rating": 6,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition) <p></p>"
+    },
+    {
+      "title": "The Balloon-Hoax",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "read",
+      "rating": 4,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition) <h2>Reflections</h2> <p></p>"
+    },
+    {
+      "title": "The Facts in the Case of M. Valdemar",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "read",
+      "rating": 5,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "MS. Found in a Bottle",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "read",
+      "rating": 6,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "A Descent into the Maelström",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "read",
+      "rating": 6.5,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Black Cat",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Fall of the House of Usher",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Pit and the Pendulum",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Premature Burial",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Masque of the Red Death",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Cask of Amontillado",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Imp of the Perverse",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Island of the Fay",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Oval Portrait",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Tell-Tale Heart",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Domain of Arnheim",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "Landor's Cottage",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Assignation: Venice",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "William Wilson",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "Berenice",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "Eleonora",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "Ligeia",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Murders in the Rue Morgue",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Mystery of Marie Rogêt",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Purloined Letter",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Colloquy of Monos and Una",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "The Conversation of Eiros and Charmion",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
+      "title": "A Tale of the Ragged Mountains",
+      "authors": ["Poe"],
+      "tags": "horror, short story",
+      "status": "reading",
+      "rating": null,
+      "file": "",
+      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
+    },
+    {
       "title": "Gesta Regum Britannie",
       "authors": ["unknown"],
       "tags": "epic, poem",

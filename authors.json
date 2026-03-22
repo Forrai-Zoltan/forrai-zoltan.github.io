@@ -1,6 +1,12 @@
 {
   "authors": [
     {
+      "id": "Poe",
+      "name": "Edgar Allan Poe",
+      "corpus": "",
+      "bio": "(1809&ndash;1849) was an American writer, poet, editor, and literary critic who is best known for his poetry and short stories, particularly his tales involving mystery and the macabre. He is widely regarded as one of the central figures of Romanticism and Gothic fiction in the United States and of early American literature."
+    },
+    {
       "id": "Geoffrey of Monmouth",
       "name": "Geoffrey of Monmouth",
       "corpus": "",

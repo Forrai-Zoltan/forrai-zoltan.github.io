@@ -360,6 +360,8 @@ section:not(#top-section) h1 {
   line-height: 1;
   overflow-wrap: break-word;
   hyphens: auto;
+  font-family: var(--font-typewriter)
+
 }
 
 #author-section > div {
@@ -667,4 +669,21 @@ section:not(#top-section) table td {
 section .is-read td {
   background-color: hsla(120, 100%, 30%, 0.2) !important;
   font-weight: bold;
+}
+
+section #s-note {
+  color: grey !important;
+  font-style: oblique;
+}
+
+section #s-note * {
+  color: white !important;
+  font-style: normal;
+}
+
+section #s-note h2 {
+  margin-top: 20px;
+  line-height: 1 !important;
+  font-size: 2rem !important;
+  font-family: var(--font-typewriter);
 }
