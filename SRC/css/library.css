@@ -23,7 +23,7 @@ main {
 #library-body {
   position: relative;
   width: 100%;
-  margin-top: 57px;
+  margin-top: 50px;
   background-color: #1a1b26;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
@@ -41,7 +41,7 @@ section {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-radius: 10px 10px 0 0;
   border-bottom: none;
   position: fixed;
@@ -686,4 +686,11 @@ section #s-note h2 {
   line-height: 1 !important;
   font-size: 2rem !important;
   font-family: var(--font-typewriter);
+}
+
+#crit-lit {
+  padding: 0px 5px 0px 15px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 23px;
 }
