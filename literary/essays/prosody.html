@@ -15,10 +15,9 @@
     <link rel="stylesheet" href="/SRC/css/layout.css" />
     <link rel="stylesheet" href="/SRC/css/header.css" />
     <link rel="stylesheet" href="/SRC/css/util.css" />
-    <link rel="stylesheet" href="/SRC/css/deck.css" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
-    <title>Essays・gildrom.com</title>
-    <meta name="description" content="Links to my essays." />
+    <title>Prosody・gildrom.com</title>
+    <meta name="description" content="" />
   </head>
   <body
     bgcolor="#121212"
@@ -29,7 +28,7 @@
     <header>
       <nav>
         <a href="/">
-          <img align="left" height="30" src="/favicon.ico" />
+          <img align="left" width="35" src="/favicon.ico" />
           <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
         </a>
         <label for="burger">
@@ -173,44 +172,11 @@
       </nav>
     </header>
     <main>
-      <deck-box>
-        <form>
-          <search>
-            <input
-              type="search"
-              name="filter"
-              autocomplete="off"
-              placeholder="ESSAYS・Filter Cards" />
-            <input
-              type="reset"
-              value="X"
-              title="clear search"
-              aria-label="clear search" />
-          </search>
-        </form>
-        <noscript>
-          <noscript-span>
-            This page uses JS to make the filter-field above functional.
-          </noscript-span>
-        </noscript>
-        <deck-section>
-          <a
-            id="notes-on-prosody"
-            href="/literary/essays/prosody"
-            data-tags="canon">
-            <title-span>Notes on Prosody</title-span>
-            <br />
-          </a>
-          <a
-            id="exploring-the-canon"
-            href="/literary/essays/canon"
-            data-tags="canon">
-            <title-span>Exploring the Canon</title-span>
-            <br />
-          </a>
-        </deck-section>
-      </deck-box>
+      <main-content class="dark">
+        <article>
+          <h1 class="alt" align="center">Notes on Prosody</h1>
+        </article>
+      </main-content>
     </main>
   </body>
-  <script src="/SRC/js/filter.js"></script>
 </html>
