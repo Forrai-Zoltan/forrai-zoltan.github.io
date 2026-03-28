@@ -3,227 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      href="https://www.gildrom.com/rss.xml" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>Zoltan Forrai・Writer & Wizard</title>
-    <meta
-      name="description"
-      content="Personal website of Gildrom Qeeney aka Zoltan Forrai. Read weird fiction, noir, and fantasy. Solve secrets, and uncover a mystery." />
+    <meta name="description" content="Personal website of Forrai Zoltan." />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="stylesheet" href="/SRC/css/fonts.css" />
+    <link rel="stylesheet" href="/SRC/css/variable.css" />
+    <link rel="stylesheet" href="/SRC/css/base.css" />
+    <link rel="stylesheet" href="/SRC/css/header.css" />
+    <link rel="stylesheet" href="/SRC/css/component.css" />
+    <script src="/SRC/js/script.js" defer></script>
   </head>
-  <body
-    bgcolor="#121212"
-    text="#D2D2D2" 
-    link="#3C8CDD"
-    alink="#0959AA"
-    vlink="#8C59C0">
+  <body>
     <header>
-      <nav>
-        <a href="/">
-          <img align="left" height="30" src="/favicon.ico" />
-          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
+      <menu-bar>
+        <a href="/" id="brand-title">
+          <img width="30" height="30" src="/favicon.ico" />
+          <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
-        <label for="burger">
-          <svg width="0" height="0">
-            <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
-          </svg>
-        </label>
-      </nav>
-      <input id="burger" type="checkbox" />
-      <nav>
-        <ul>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
+        <menu>
+          <toggle-btn title="Theme Toggle">
+            <label class="toggle">
+              <input type="checkbox" id="theme-toggle" checked />
+              <span class="track"></span>
+              <span class="thumb"></span>
+            </label>
+          </toggle-btn>
+          <label for="burger">
+            <svg width="40" height="40">
+              <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
             </svg>
-            <b>Personal</b>
-            <ul>
-              <li>
-                <a href="/personal/about">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
-                  </svg>
-                  Who am I?
-                </a>
-              </li>
-              <li>
-                <a href="/personal/obsessions">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
-                  </svg>
-                  Obsessions
-                </a>
-              </li>
-              <li>
-                <a href="/personal/library">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
-                  </svg>
-                  Library
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
-            </svg>
-            <b>Literary</b>
-            <ul>
-              <li>
-                <a href="/literary/fiction">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
-                  </svg>
-                  Fiction
-                </a>
-              </li>
-              <li>
-                <a href="/literary/poetry">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
-                  </svg>
-                  Poetry
-                </a>
-              </li>
-              <li>
-                <a href="/literary/essays">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
-                  </svg>
-                  Essays
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
-            </svg>
-            <b>Tavern</b>
-            <ul>
-              <li>
-                <a href="/tavern/contact">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
-                  </svg>
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/warbler">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
-                  </svg>
-                  Warbler
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/patronage">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
-                  </svg>
-                  Patronage
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
-            </svg>
-            <b>Beyond</b>
-            <ul>
-              <li>
-                <a href="/beyond/other">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
-                  </svg>
-                  Other Works
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/secret">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
-                  </svg>
-                  Secret
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/epilogue">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
-                  </svg>
-                  Epilogue
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+          </label>
+        </menu>
+      </menu-bar>
     </header>
+    <input type="checkbox" id="burger" />
+    <nav id="nav-select">
+      <ul>
+        <li tabindex="0" data-icon="personal">
+          <b>Personal</b>
+          <ul>
+            <li><a href="/personal/about">Who am I?</a></li>
+            <li><a href="/personal/obsessions">Obsessions</a></li>
+            <li><a href="/personal/library">Library</a></li>
+          </ul>
+        </li>
+        <li tabindex="0" data-icon="literary">
+          <b>Literary</b>
+          <ul>
+            <li><a href="/literary/fiction">Fiction</a></li>
+            <li><a href="/literary/poetry">Poetry</a></li>
+            <li><a href="/literary/essays">Essays</a></li>
+          </ul>
+        </li>
+        <li tabindex="0" data-icon="tavern">
+          <b>Tavern</b>
+          <ul>
+            <li><a href="/tavern/contact">Contact</a></li>
+            <li><a href="/tavern/warbler">Warbler</a></li>
+            <li><a href="/tavern/patronage">Patronage</a></li>
+          </ul>
+        </li>
+        <li tabindex="0" data-icon="beyond">
+          <b>Beyond</b>
+          <ul>
+            <li><a href="/beyond/other">Other Works</a></li>
+            <li><a href="/beyond/secret">Secret</a></li>
+            <li><a href="/beyond/epilogue">Epilogue</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <main>
-      <main-content>
-        <article>
-          <h1>Zoltan Forrai</h1>
-          <p>
-            Greetings. The name&rsquo;s Zoltan, although online many know me by
-            my alias, Gildrom. I&rsquo;m an English teacher by trade, writer by
-            night, and wizard at heart. Read
-            <a href="/personal/about">my lore</a>.
-          </p>
-          <p>
-            I find many facets of contemporary life quite alienating, and choose
-            to abjure them from my life. I&rsquo;ve forsaken all social media
-            and made my home here some time ago.
-          </p>
-          <p>
-            This, is not really a website. It&rsquo;s a hermitage in the shape
-            of a website. It&rsquo;s an archive for my writing, my art, and
-            other crimes. I&rsquo;m certain you&rsquo;ll find something to
-            enjoy. So go ahead, read some
-            <a href="/literary/fiction">fiction</a>, or find some
-            <a href="/beyond/secret">secrets</a>.
-          </p>
-          <p align="center">
-            <svg id="sigil" width="50" height="50">
-              <use href="/SRC/asset/svg/sigil.svg#sigil"></use>
-            </svg>
-          </p>
-        </article>
-      </main-content>
-      <aside>
-        <img
-          width="350"
-          src="/SRC/media/photo/head-shot-original.png"
-          alt="Zoltan Forrai headshot" />
-        <footer>
-          <a class="btn" href="/tavern/contact">
-            <b>Send me a Message!</b>
-          </a>
-          <svg-links>
-            <a
-              title="Newgrounds"
-              target="_blank"
-              href="//gildrom.newgrounds.com/">
-              <img width="50" src="/SRC/asset/svg/ng_tank.svg" />
-            </a>
-            <a title="Colophon" href="/beyond/colophon">
-              <img width="40" src="/SRC/asset/svg/finprint.svg" />
-            </a>
-            <a title="Warbler" href="/tavern/warbler">
-              <img width="43" src="/SRC/asset/svg/bird.svg" />
-            </a>
-            <a title="RSS" target="_blank" href="/rss.xml">
-              <img width="33" src="/SRC/asset/svg/rss-line.svg" />
-            </a>
-          </svg-links>
-        </footer>
-      </aside>
+      <article></article>
+      <aside></aside>
     </main>
   </body>
 </html>

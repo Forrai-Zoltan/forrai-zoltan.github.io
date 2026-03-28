@@ -1,0 +1,62 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* FIXES */
+
+@media (min-width: 600px) {
+  /* MacOS text display. */
+  @supports (-webkit-font-smoothing: antialiased) {
+    #brand-title span {
+      transform: translateY(4px);
+    }
+    #nav-select li b, #nav-select a {
+      transform: translateY(2px);
+    }
+  }
+}
+
+/* GLOBAL STYLES */
+html {
+  font-size: var(--f-size-def);
+  background-color: var(--c-bg);
+  color: var(--c-text);
+}
+
+body {
+  font-family: var(--ff-lit);
+}
