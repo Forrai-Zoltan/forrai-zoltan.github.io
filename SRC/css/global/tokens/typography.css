@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
   /* FONTS */
   --ff-lit: "cochin";
@@ -22,6 +22,6 @@
   --lh-x: 2.5;
 }
 
-:root.dark {
-  color-scheme: dark;
+:root.light {
+  color-scheme: light;
 }

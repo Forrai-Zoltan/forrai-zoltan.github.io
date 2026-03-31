@@ -30,9 +30,9 @@
   --header-height-mobile: 50px;
 
   --nav-icon-size: 1.4rem;
-  --nav-icon-offset: 6px;
+  --nav-icon-offset: 4.5px;
 
   /* MAIN */
   --body-margin-top: calc(var(--header-height) + 6.5px);
-  --body-margin-top-mobile: calc(var(--header-height-mobile) + 6.5px);
+  --body-margin-top-mobile: calc(var(--header-height-mobile));
 }

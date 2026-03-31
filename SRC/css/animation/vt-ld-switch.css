@@ -1,0 +1,27 @@
+
+
+
+@media (min-width: 600px) {
+  @media (prefers-reduced-motion: no-preference) {
+    ::view-transition {
+      user-select: none;
+      -moz-user-select: none;
+    }
+
+    ::view-transition-old(root) {
+      animation-delay: 200ms;
+    }
+    ::view-transition-new(root) {
+      animation: circle-in 600ms;
+    }
+
+    @keyframes circle-in {
+      from {
+        clip-path: circle(0% at 97.7% 2.5%);
+      }
+      to {
+        clip-path: circle(150% at 97.7% 2.5%);
+      }
+    }
+  }
+}

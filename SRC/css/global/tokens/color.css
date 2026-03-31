@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
   /* GREY SCALE */
   --c-g-90: light-dark(hsl(210, 6%, 7%), hsl(225, 40%, 98%));
@@ -23,13 +23,12 @@
   --black: black;
   --white: white;
   --off-black: hsl(0, 0%, 20%);
-  --off-white: hsl(0, 0%, 90%);
+  --off-white: hsl(0, 0%, 80%);
 
   --glass-border: 1px solid
     light-dark(hsla(0, 0%, 0%, 0.3), hsla(0, 0%, 100%, 0.2));
   --glass-border-b: 1px solid
     light-dark(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 100%, 0.4));
-
 
   --c-purple: light-dark(hsl(270, 80%, 35%), hsl(270, 80%, 20%));
   --c-purple-l: hsl(from var(--c-purple) h s calc(l + 5));
@@ -62,6 +61,6 @@
   --c-main-box-bg: light-dark(var(--c-g-30), hsl(0, 0%, 6%));
 }
 
-:root.dark {
-  color-scheme: dark;
+:root.light {
+  color-scheme: light;
 }

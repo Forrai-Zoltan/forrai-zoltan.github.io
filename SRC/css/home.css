@@ -14,6 +14,28 @@ aside > img {
   -moz-user-select: none;
 }
 
+svg-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  scale: 0.8;
+}
+
+a[href="/tavern/warbler"] img {
+  transform: scaleX(-1);
+}
+
+svg-links a img {
+  filter: drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7)) saturate(0)
+    brightness(var(--svg-link-brightness));
+}
+
+svg-links a:hover img {
+  filter: drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7)) saturate(1)
+    brightness(var(--svg-link-brightness));
+}
+
 html.light {
   aside:has(> img) {
     position: relative;

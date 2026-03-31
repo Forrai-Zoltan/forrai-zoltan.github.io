@@ -1,4 +1,6 @@
 @import "../element/btn-switch.css" layer(element);
+@import url(/SRC/css/animation/vt-ld-switch.css);
+
 
 body > header {
   height: var(--header-height);
@@ -204,11 +206,8 @@ menu label[for="burger"],
   mask-repeat: no-repeat;
   mask-size: contain;
   vertical-align: middle;
-  margin-right: 10px;
-  transform: translateY(calc(var(--nav-icon-offset) * -1));
-}
-#nav > ul > li > b::before {
   margin-right: 7px;
+  transform: translateY(calc(var(--nav-icon-offset) * -1));
 }
 
 /* Section icons */

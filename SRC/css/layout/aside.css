@@ -5,22 +5,29 @@ main > aside {
 }
 
 main > aside > footer {
-  display: block;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 30px;
   width: 100%;
+  min-width: fit-content;
+  height: 100%;
+  min-height: 20px;
+  padding: 30px 0px 15px 0px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  
   border-radius: var(--br-l);
   border: var(--glass-border);
   box-shadow: var(--glass-shadow-b);
-  min-height: 20px;
-  min-width: 20px;
-  flex: 1 0; /* Must be separate from main-box! */
+
   background: var(--grad-foot-green-rad);
   /* background-color: var(--c-main-box-bg); */
 }
 
 html.light main > aside > footer {
-
   position: relative;
-
   &::after {
     content: "";
     position: absolute;
@@ -42,5 +49,11 @@ html.light main > aside > footer {
 @media (max-width: 599px) {
   main > aside {
     min-width: 100%;
+    gap: 0.4rem;
+
+  }
+
+  footer {
+    padding: 20px 0px !important;
   }
 }

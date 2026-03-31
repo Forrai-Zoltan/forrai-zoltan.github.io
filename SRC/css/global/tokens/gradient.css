@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
   /* TITLEBAR */
   --grad-titlebar: linear-gradient(
@@ -55,8 +55,8 @@
     radial-gradient(
       ellipse 280% 80% at top left,
       hsla(from var(--c-purple) h s calc(l + 40) / 0.8),
-      hsla(from var(--c-g-20) h s l / 0.6),
-      hsla(from var(--c-g-20) h s l / 0.6),
+      hsla(from var(--c-g-20) h s l / 0.5),
+      hsla(from var(--c-g-20) h s l / 0.5),
       hsla(from var(--c-g-20) h s l / 0.4)
     ),
     radial-gradient(
@@ -107,6 +107,6 @@
   );
 }
 
-:root.dark {
-  color-scheme: dark;
+:root.light {
+  color-scheme: light;
 }

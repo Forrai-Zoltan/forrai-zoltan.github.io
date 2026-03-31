@@ -1,8 +1,19 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
   --grad-nav-dropdown-shadow: 10px 15px 20px
     hsla(from var(--black) h s l / 0.35);
+
+  --glass-shadow: inset 0px -10px 25px -11px hsla(from var(--black) h s l / 0.8),
+    inset 0px 15px 20px -10px hsla(from var(--black) h s l / 0.8),
+    0px 15px 19px 2px rgba(0, 0, 0, 0.5);
+
+  --glass-shadow-p: var(--glass-shadow);
+  --glass-shadow-b: var(--glass-shadow);
+}
+
+:root.light {
+  color-scheme: light;
 
   --glass-shadow: inset 0px -10px 25px -5px hsla(from var(--white) h s l / 0.8),
     inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
@@ -17,14 +28,4 @@
       hsla(from var(--white) h s l / 0.8),
     inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
     3px 5px 8px 0px hsla(from var(--c-blue, black) h s l / 0.5);
-}
-
-:root.dark {
-  color-scheme: dark;
-
-  --glass-shadow-p: var(--glass-shadow);
-  --glass-shadow-b: var(--glass-shadow);
-
-  --glass-shadow: inset 0px -10px 25px -10px hsla(from var(--black) h s l / 0.6),
-    inset 0px 15px 25px -10px hsla(from var(--black) h s l / 0.8);
 }

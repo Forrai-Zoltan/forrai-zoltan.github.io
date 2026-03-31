@@ -11,7 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 img,
 picture,
 video,
@@ -25,6 +24,7 @@ textarea,
 select {
   font: inherit;
 }
+
 h1,
 h2,
 h3,
@@ -33,6 +33,10 @@ h5,
 h6 {
   text-wrap: balance;
   line-height: var(--lh-s);
+  overflow-wrap: break-word;
+}
+p {
+  overflow-wrap: break-word;
 }
 
 /* BASE STYLES */
@@ -93,6 +97,11 @@ html.light {
 }
 
 @media (max-width: 599px) {
+  p {
+    text-wrap: pretty;
+    text-wrap: balance;
+  }
+
   body {
     min-height: calc(100vh - var(--body-margin-top-mobile));
     margin-top: var(--body-margin-top-mobile);
@@ -100,33 +109,16 @@ html.light {
 
   main {
     flex-direction: column;
+    padding: 0.4rem;
+    gap: 0.4rem;
   }
 
   main-box {
     flex: 1;
     min-height: fit-content;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  ::view-transition {
-    user-select: none;
-    -moz-user-select: none;
-  }
-
-  ::view-transition-old(root) {
-    animation-delay: 200ms;
-  }
-  ::view-transition-new(root) {
-    animation: circle-in 600ms;
-  }
-
-  @keyframes circle-in {
-    from {
-      clip-path: circle(0% at 97.7% 2.5%);
-    }
-    to {
-      clip-path: circle(150% at 97.7% 2.5%);
-    }
+  main a {
+    font-weight: bold;
   }
 }

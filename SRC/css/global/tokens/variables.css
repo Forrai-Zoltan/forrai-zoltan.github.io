@@ -5,13 +5,20 @@
 @import "shadow.css";
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
   --bugfix: 1px solid red;
 
   --glass-blur: blur(10px);
+
+  --svg-link-filter-bright: 1;
+  --svg-link-brightness: calc(var(--svg-link-filter-bright) - 0.15);
+
+
 }
 
-:root.dark {
-  color-scheme: dark;
+:root.light {
+  color-scheme: light;
+
+  --svg-link-brightness: calc(var(--svg-link-filter-bright) + 0.15);
 }
