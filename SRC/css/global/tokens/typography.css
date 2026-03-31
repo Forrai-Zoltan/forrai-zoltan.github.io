@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light;
+
+  /* FONTS */
+  --ff-lit: "cochin";
+
+  --f-size-def: 15px;
+  --f-size-m: 1.5rem;
+
+  --f-size-x: clamp(2.5rem, 12vw, 5rem);
+
+  --f-size-brand: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  --f-size-brand-mobile: clamp(1.5rem, 2vw + 0.8rem, 2.5rem);
+
+
+  /* LINE HEIGHT */
+  --lh-s: 1;
+  --lh-n: 1.2;
+  --lh-d: 1.5;
+  --lh-m: 1.7;
+  --lh-l: 2;
+  --lh-x: 2.5;
+}
+
+:root.dark {
+  color-scheme: dark;
+}

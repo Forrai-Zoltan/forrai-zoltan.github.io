@@ -1,0 +1,132 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  line-height: var(--lh-s);
+}
+
+/* BASE STYLES */
+html {
+  font-size: var(--f-size-def);
+  background-color: var(--c-canvas-bg);
+  color: var(--c-text);
+}
+
+body {
+  font-family: var(--ff-lit);
+  margin-top: var(--body-margin-top);
+  line-height: var(--lh-m);
+}
+
+main {
+  height: 100%;
+  min-height: calc(100vh - var(--body-margin-top));
+  padding: 0 9px 9px 9px;
+  display: flex;
+  gap: 9px;
+}
+
+main-box {
+  display: block;
+  width: 100%;
+  border-radius: var(--br-l);
+  border: var(--glass-border);
+
+  min-height: 20px;
+  min-width: 20px;
+}
+
+a {
+  color: var(--c-text-a);
+
+  &:hover {
+    color: var(--c-text-a-hov);
+  }
+  &:active {
+    color: var(--c-text-a-act);
+  }
+  &:visited {
+    color: var(--c-text-a-v);
+  }
+  &:visited:hover {
+    color: var(--c-text-a-v-hov);
+  }
+  &:visited:active {
+    color: var(--c-text-a-v-act);
+  }
+}
+
+html.light {
+  main a {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 599px) {
+  body {
+    min-height: calc(100vh - var(--body-margin-top-mobile));
+    margin-top: var(--body-margin-top-mobile);
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main-box {
+    flex: 1;
+    min-height: fit-content;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition {
+    user-select: none;
+    -moz-user-select: none;
+  }
+
+  ::view-transition-old(root) {
+    animation-delay: 200ms;
+  }
+  ::view-transition-new(root) {
+    animation: circle-in 600ms;
+  }
+
+  @keyframes circle-in {
+    from {
+      clip-path: circle(0% at 97.7% 2.5%);
+    }
+    to {
+      clip-path: circle(150% at 97.7% 2.5%);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+article {
+  font-size: var(--f-size-m);
+  box-sizing: content-box; /* To make the text itself 70ch */
+  max-inline-size: 70ch;
+  margin-inline: auto;
+  padding: 2rem min(5rem, 4%);
+}
+
+#brand-title span {
+  line-height: var(--lh-s);
+  font-size: var(--f-size-brand);
+  letter-spacing: 0.05em;
+  hyphens: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6) + p {
+  margin-top: 0;
+}
+
+p + p {
+  margin-top: var(--mp-m);
+}
+
+h1 {
+  font-size: var(--f-size-x);
+  margin-block: calc(var(--mp-s) - 0.04em) calc(var(--mp-s) - 0.09em);
+  color: light-dark(var(--c-purple-d), var(--c-g-65));
+}
+
+@media (max-width: 599px) {
+  p {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light;
+
+  --grad-nav-dropdown-shadow: 10px 15px 20px
+    hsla(from var(--black) h s l / 0.35);
+
+  --glass-shadow: inset 0px -10px 25px -5px hsla(from var(--white) h s l / 0.8),
+    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
+    5px 5px 5px 0px hsla(from var(--black) h s l / 0.5);
+
+  --glass-shadow-p: inset 0px -10px 25px -5px
+      hsla(from var(--white) h s l / 0.8),
+    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
+    3px 5px 8px 0px hsla(from var(--c-purple, black) h s l / 0.5);
+
+  --glass-shadow-b: inset 0px -10px 25px -5px
+      hsla(from var(--white) h s l / 0.8),
+    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
+    3px 5px 8px 0px hsla(from var(--c-blue, black) h s l / 0.5);
+}
+
+:root.dark {
+  color-scheme: dark;
+
+  --glass-shadow-p: var(--glass-shadow);
+  --glass-shadow-b: var(--glass-shadow);
+
+  --glass-shadow: inset 0px -10px 25px -10px hsla(from var(--black) h s l / 0.6),
+    inset 0px 15px 25px -10px hsla(from var(--black) h s l / 0.8);
+}

@@ -1,0 +1,12 @@
+@media (min-width: 600px) {
+  /* MacOS text display. */
+  @supports (-webkit-font-smoothing: antialiased) {
+    #brand-title span {
+      transform: translateY(4px);
+    }
+    #nav li b,
+    #nav a {
+      transform: translateY(2px);
+    }
+  }
+}

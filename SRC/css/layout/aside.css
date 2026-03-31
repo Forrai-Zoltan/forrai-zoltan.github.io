@@ -1,0 +1,46 @@
+main > aside {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+main > aside > footer {
+  display: block;
+  width: 100%;
+  border-radius: var(--br-l);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow-b);
+  min-height: 20px;
+  min-width: 20px;
+  flex: 1 0; /* Must be separate from main-box! */
+  background: var(--grad-foot-green-rad);
+  /* background-color: var(--c-main-box-bg); */
+}
+
+html.light main > aside > footer {
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+    border-radius: 16px 16px 0 0;
+    pointer-events: none;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 599px) {
+  main > aside {
+    min-width: 100%;
+  }
+}

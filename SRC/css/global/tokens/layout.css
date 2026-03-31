@@ -1,0 +1,38 @@
+:root {
+  /* Z-INDEX */
+  --z-below: -1;
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* MARGIN & PADDING */
+  --mp-s: 0.5em;
+  --mp-m: 1em;
+  --mp-l: 1.5em;
+  --mp-x: 2em;
+
+  /* BORDER RADIOUS */
+  --br-t: 5px;
+  --br-s: 10px;
+  --br-m: 15px;
+  --br-l: 20px;
+  --br-x: 25px;
+
+  /* HEADER */
+  --titlebar-height: 45px;
+
+  --header-height: calc(var(--titlebar-height) + 31px + 5px);
+  --header-height-mobile: 50px;
+
+  --nav-icon-size: 1.4rem;
+  --nav-icon-offset: 6px;
+
+  /* MAIN */
+  --body-margin-top: calc(var(--header-height) + 6.5px);
+  --body-margin-top-mobile: calc(var(--header-height-mobile) + 6.5px);
+}

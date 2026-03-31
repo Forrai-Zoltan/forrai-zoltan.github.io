@@ -1,0 +1,112 @@
+:root {
+  color-scheme: light;
+
+  /* TITLEBAR */
+  --grad-titlebar: linear-gradient(
+    to right,
+    transparent,
+    var(--c-purple) 1%,
+    var(--c-purple),
+    transparent
+  );
+
+  --grad-titlebar-mobile: linear-gradient(
+    to right,
+    var(--c-purple),
+    var(--c-purple),
+    transparent
+  );
+
+  --grad-titlebar-l: linear-gradient(
+    to right,
+    transparent,
+    var(--c-purple-l) 1%,
+    var(--c-purple-l),
+    transparent
+  );
+
+  --grad-titlebar-after: light-dark(
+    radial-gradient(
+      ellipse 100% 80% at 25% 0,
+      hsl(from var(--c-purple-l) h s l / 0.4) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 100% 80% at 25% 0,
+      hsl(from var(--c-purple-l) h s l / 0.8) 0%,
+      transparent 80%
+    )
+  );
+
+  /* NAV */
+  --grad-nav-strip: linear-gradient(
+    to right,
+    light-dark(hsla(from var(--c-g-45) h s 72%), var(--c-g-25)),
+    light-dark(var(--c-g-45), var(--c-g-20))
+  );
+
+  --grad-nav-item-hover: linear-gradient(
+    to right,
+    var(--c-purple-l),
+    light-dark(transparent, black)
+  );
+
+  --grad-nav-dropdown: light-dark(
+    radial-gradient(
+      ellipse 280% 80% at top left,
+      hsla(from var(--c-purple) h s calc(l + 40) / 0.8),
+      hsla(from var(--c-g-20) h s l / 0.6),
+      hsla(from var(--c-g-20) h s l / 0.6),
+      hsla(from var(--c-g-20) h s l / 0.4)
+    ),
+    radial-gradient(
+      ellipse 285% 100% at top left,
+      hsla(from var(--c-purple) h s l / 0.8),
+      hsla(from var(--c-g-10) h s l / 0.6),
+      hsla(from var(--c-g-10) h s l / 0.6),
+      hsla(from var(--c-g-10) h s l / 0.7)
+    )
+  );
+
+  --grad-nav-dropdown-mobile: radial-gradient(
+    ellipse 300% 50% at top left,
+    hsla(from var(--c-purple-l) h s l / 0.2),
+    hsla(from var(--c-g-10) h s l / 0.4),
+    hsla(from var(--c-g-10) h s l / 0.4),
+    hsla(from var(--c-g-10) h s l / 0.6)
+  );
+
+  /* --- */
+
+  --grad-mb-purple-rad: light-dark(
+    radial-gradient(
+      ellipse 80% 170% at top,
+      white,
+      transparent 20%,
+      hsla(from var(--c-purple) h s l / 0.5) 85%
+    ),
+    radial-gradient(
+      ellipse 80% 170% at top,
+      transparent 40%,
+      hsla(from var(--c-purple) h s l / 0.9) 85%
+    )
+  );
+
+  --grad-foot-green-rad: light-dark(
+    radial-gradient(
+      circle at top,
+      white,
+      transparent 20%,
+      hsla(from var(--c-blue) h s l / 0.6) 90%
+    ),
+    radial-gradient(
+      circle at top,
+      transparent 30%,
+      hsla(from var(--c-green) h s l / 1) 90%
+    )
+  );
+}
+
+:root.dark {
+  color-scheme: dark;
+}

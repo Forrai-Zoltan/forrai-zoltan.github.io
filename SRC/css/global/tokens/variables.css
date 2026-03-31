@@ -1,0 +1,17 @@
+@import "layout.css";
+@import "typography.css";
+@import "color.css";
+@import "gradient.css";
+@import "shadow.css";
+
+:root {
+  color-scheme: light;
+
+  --bugfix: 1px solid red;
+
+  --glass-blur: blur(10px);
+}
+
+:root.dark {
+  color-scheme: dark;
+}
