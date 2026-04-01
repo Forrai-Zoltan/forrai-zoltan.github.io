@@ -24,7 +24,20 @@ p + p {
 h1 {
   font-size: var(--f-size-x);
   margin-block: calc(var(--mp-s) - 0.04em) calc(var(--mp-s) - 0.09em);
+}
+
+.hero {
   color: light-dark(var(--c-purple-d), var(--c-g-65));
+}
+
+.small-h1 {
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
+}
+
+ul li::marker {
+  content: "◈ ";
+  color: light-dark(/* var(--c-blue) */ hsl(270, 80%, 35%), hsl(39, 100%, 50%));
+
 }
 
 @media (max-width: 599px) {

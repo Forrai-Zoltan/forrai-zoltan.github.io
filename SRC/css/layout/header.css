@@ -30,7 +30,7 @@ a#brand-title {
   align-items: center;
   width: 100%;
   text-decoration: none;
-  color: hsl(from var(--off-white) h s calc(l + 7.5)) ;
+  color: hsl(from var(--off-white) h s calc(l + 7.5));
   /* intentionally theme-invariant */
 
   &:hover,
@@ -90,8 +90,7 @@ menu label[for="burger"],
 /* ================================================
     NAV — DESKTOP  (min-width: 700px)
     =============================================== */
-@media (min-width: 600px) {
-
+@media (min-width: 661px) {
   header menu {
     gap: 10px;
   }
@@ -195,6 +194,10 @@ menu label[for="burger"],
 
 #nav > ul li {
   list-style: none;
+
+  &::marker {
+    content: ""; /* Removes the orange diamond */
+  }
 }
 
 #nav a {
@@ -282,9 +285,13 @@ menu label[for="burger"],
      NAV — MOBILE  (max-width: 699px)
      ================================================ */
 
-@media (max-width: 599px) {
+@media (max-width: 660px) {
   menu toggle-btn {
     margin-right: 5px;
+  }
+
+  .audio-btn {
+    display: none;
   }
 
   body > header {

@@ -46,7 +46,7 @@ html.light main > aside > footer {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 660px) {
   main > aside {
     min-width: 100%;
     gap: 0.4rem;

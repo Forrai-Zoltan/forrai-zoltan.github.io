@@ -61,12 +61,13 @@ html {
 body {
   font-family: var(--ff-lit);
   margin-top: var(--body-margin-top);
+  height: calc(100vh - var(--body-margin-top));
   line-height: var(--lh-m);
 }
 
 main {
-  height: 100%;
-  min-height: calc(100vh - var(--body-margin-top));
+
+  min-height: 100%;
   padding: 0 9px 9px 9px;
   display: flex;
   gap: 9px;
@@ -102,13 +103,41 @@ a {
   }
 }
 
+a:not(.note a, deck-section a, [href^="/"], [href^="#"], :has(img))::after {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-left: 0.2em;
+  vertical-align: text-bottom;
+  margin-bottom: 2px;
+  font-size: 1.4rem;
+  background-color: var(--c-text);
+  background-size: contain;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
+    no-repeat center / contain;
+}
+
+a:not(
+    .note a,
+    deck-section a,
+    [href^="/"],
+    [href^="#"],
+    :has(img)
+  ):hover::after {
+  content: "";
+  background-color: var(--c-text);
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
+    no-repeat center;
+}
+
 html.light {
   main a {
     font-weight: bold;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 660px) {
   p {
     text-wrap: pretty;
     text-wrap: balance;

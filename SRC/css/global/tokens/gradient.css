@@ -30,14 +30,14 @@
     linear-gradient(
       to right,
       transparent,
-      hsl(from var(--c-purple-l) h s calc(l + 10)) 1%,
+      hsl(from var(--c-purple-l) h s calc(l + 10)) 5%,
       hsl(from var(--c-purple-l) h s calc(l + 10)),
       transparent
     ),
     linear-gradient(
       to right,
       transparent,
-      var(--c-purple-l) 1%,
+      var(--c-purple-l) 5%,
       var(--c-purple-l),
       transparent
     )
@@ -101,7 +101,7 @@
       ellipse 80% 170% at top,
       white,
       transparent 20%,
-      hsla(from var(--c-purple) h s l / 0.5) 85%
+      hsla(from var(--c-purple) h s calc(l + 5) / 0.6) 85%
     ),
     radial-gradient(
       ellipse 80% 170% at top,

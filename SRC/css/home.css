@@ -1,4 +1,3 @@
-@import "theme/main-box.css";
 @import "layout/aside.css";
 @import "element/svg-sigil.css";
 @import "element/btn.css";
@@ -63,7 +62,7 @@ html.light {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 660px) {
   aside img {
     min-width: 100%;
   }

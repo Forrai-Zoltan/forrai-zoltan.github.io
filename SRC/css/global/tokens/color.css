@@ -35,6 +35,7 @@
   --c-green: hsl(120, 80%, 17%);
 
   --c-blue: hsl(210, 80%, 40%);
+  --c-blue-l: hsl(from var(--c-blue) h calc(s - 10) calc(l + 10));
 
   /* TEXT */
   --c-text: light-dark(var(--black), var(--off-white));
@@ -43,7 +44,7 @@
   --c-text-a-hid: var(--c-text);
   --c-text-a-hid-l: hsl(from var(--c-text-a-hid) h s calc(l + 10));
 
-  --c-text-a: light-dark(hsl(210, 90%, 40%), hsl(210, 70%, 55%));
+  --c-text-a: light-dark(var(--c-blue), var(--c-blue-l));
   --c-text-a-hov: hsl(from var(--c-text-a) h calc(s + 20) calc(l + 15));
   --c-text-a-act: hsl(from var(--c-text-a) h calc(s + 20) calc(l - 20));
 
