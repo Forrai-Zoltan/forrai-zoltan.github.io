@@ -65,13 +65,18 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("load", () => {
+  // Respect the mute preference set by the audio toggle button.
+  const muted = localStorage.getItem("audioMuted") === "true";
+
   const audio = new Audio("/SRC/asset/sound/tweet.mp3");
   audio.preload = "auto";
   audio.volume = 0.2;
   audio.load();
 
   setTimeout(() => {
-    audio.currentTime = 0;
-    audio.play();
+    if (!muted) {
+      audio.currentTime = 0;
+      audio.play();
+    }
   }, 0);
 });

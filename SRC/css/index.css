@@ -1,7 +1,9 @@
-@import "global/fonts.css";
-@import "global/tokens/variables.css";
-@import "global/base.css";
-@import "global/fixes.css";
-@import "global/typography.css";
+@layer one, two;
 
-@import "layout/header.css";
+@import "global/fonts.css" layer(one);
+@import "global/tokens/variables.css" layer(one);
+@import "global/base.css" layer(one);
+@import "global/fixes.css" layer(one);
+@import "global/typography.css" layer(one);
+
+@import "layout/header.css" layer(two);

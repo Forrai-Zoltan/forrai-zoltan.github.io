@@ -1,6 +1,6 @@
 @import "../element/btn-switch.css" layer(element);
+@import "../element/btn-audio.css" layer(element);
 @import url(/SRC/css/animation/vt-ld-switch.css);
-
 
 body > header {
   height: var(--header-height);
@@ -30,7 +30,7 @@ a#brand-title {
   align-items: center;
   width: 100%;
   text-decoration: none;
-  color: var(--off-white);
+  color: hsl(from var(--off-white) h s calc(l + 7.5)) ;
   /* intentionally theme-invariant */
 
   &:hover,
@@ -58,7 +58,11 @@ a#brand-title {
 #brand-title img {
   margin: 0.5rem 0.8rem 0.5rem 1.6rem;
   border-radius: var(--br-s);
-  box-shadow: 0 0 10px 5px hsla(from var(--white) h s l / 0.05);
+  box-shadow: 0 2px 10px 5px
+    light-dark(
+      hsla(from var(--white) h s l / 0.11),
+      hsla(from var(--white) h s l / 0.07)
+    );
 }
 
 #brand-title span {
@@ -87,6 +91,11 @@ menu label[for="burger"],
     NAV — DESKTOP  (min-width: 700px)
     =============================================== */
 @media (min-width: 600px) {
+
+  header menu {
+    gap: 10px;
+  }
+
   #nav {
     position: fixed;
     top: var(--titlebar-height);
@@ -120,6 +129,7 @@ menu label[for="burger"],
     position: relative;
     width: 100%;
     align-items: center;
+    font-weight: 100;
     line-height: normal;
     text-align: left;
     border-radius: var(--br-m) var(--br-x) var(--br-x) var(--br-m);
@@ -307,8 +317,8 @@ menu label[for="burger"],
   menu label[for="burger"] {
     display: block;
     margin: 1px;
-    font-size: 40px;
-    max-height: 40px;
+    font-size: 20px;
+    max-height: 35px;
     padding: 0px 7px 0px 0px;
     box-sizing: content-box;
     cursor: pointer;

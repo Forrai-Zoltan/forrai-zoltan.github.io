@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    /* Default colors (Light Mode) */
+    :root {
+      --sigil-color: hsl(270, 80%, 50%); 
+    }
+
+    /* Colors for Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --sigil-color: hsl(270, 80%, 70%); 
+      }
+    }
+
+    .sigil-path {
+      stroke: var(--sigil-color);
+      transition: stroke 0.3s ease;
+    }
+  </style>
+
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <animate 
+      attributeName="stroke-opacity" 
+      values="1; 0.6; 1" 
+      keyTimes="0; 0.5; 1"
+      dur="8s" 
+      keySplines="0.4 0 0.9 1; 0.1 0.9 0.2 1"
+      repeatCount="indefinite" />
+    
+    <g class="sigil-path">
+      <path d="M 50 10 L80 65 L50 85 L20 65 L50 10" />
+      <path d="M 51 30 L51 72" />
+      <path d="M 51 60 L62 51.33" />
+      <path d="M 51 72 L67 60.33" />
+    </g>
+  </g>
+</svg>

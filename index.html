@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/SRC/css/index.css" />
     <link rel="stylesheet" href="/SRC/css/home.css" />
     <script src="/SRC/js/script.js" defer></script>
+    <script src="/SRC/js/audio-toggle.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,15 +19,19 @@
           <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
         <menu>
+          <button
+            class="audio-btn"
+            id="toggleBtn"
+            aria-label="Toggle audio"></button>
           <toggle-btn title="Theme Toggle">
             <label class="toggle">
-              <input type="checkbox" id="theme-toggle" checked />
+              <input type="checkbox" id="theme-toggle" />
               <span class="track"></span>
               <span class="thumb"></span>
             </label>
           </toggle-btn>
           <label for="burger">
-            <svg width="40" height="40">
+            <svg width="35" height="35">
               <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
             </svg>
           </label>
@@ -93,6 +98,7 @@
             <a href="/literary/fiction">fiction</a>, or find some
             <a href="/beyond/secret">secrets</a>.
           </p>
+
           <svg class="sigil" width="52" height="52">
             <use href="/SRC/asset/svg/sigil.svg#sigil"></use>
           </svg>
@@ -103,19 +109,24 @@
           src="/SRC/media/photo/head-shot-original.png"
           alt="Photo of my face." />
         <footer>
-          <p>asd</p>
+          <a class="btn" href="/tavern/contact">
+            <span>Send me a Message!</span>
+          </a>
           <svg-links>
-            <a title="Newgrounds" target="_blank" href="//gildrom.newgrounds.com/">
-              <img width="50" src="/SRC/asset/svg/ng_tank.svg">
+            <a
+              title="Newgrounds"
+              target="_blank"
+              href="//gildrom.newgrounds.com/">
+              <img width="50" src="/SRC/asset/svg/ng_tank.svg" />
             </a>
             <a title="Colophon" href="/beyond/colophon">
-              <img width="40" src="/SRC/asset/svg/finprint.svg">
+              <img width="40" src="/SRC/asset/svg/finprint.svg" />
             </a>
             <a title="Warbler" href="/tavern/warbler">
-              <img width="43" src="/SRC/asset/svg/bird.svg">
+              <img width="43" src="/SRC/asset/svg/bird.svg" />
             </a>
             <a title="RSS" target="_blank" href="/rss.xml">
-              <img width="33" src="/SRC/asset/svg/rss-line.svg">
+              <img width="33" src="/SRC/asset/svg/rss-line.svg" />
             </a>
           </svg-links>
         </footer>

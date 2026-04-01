@@ -1,8 +1,7 @@
 @import "theme/main-box.css";
-
 @import "layout/aside.css";
-
 @import "element/svg-sigil.css";
+@import "element/btn.css";
 
 aside > img {
   border-radius: var(--br-l);
@@ -35,6 +34,7 @@ svg-links a:hover img {
   filter: drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7)) saturate(1)
     brightness(var(--svg-link-brightness));
 }
+
 
 html.light {
   aside:has(> img) {

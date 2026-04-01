@@ -10,7 +10,7 @@
       </filter>
 
       <filter id="drop" x="-50%" y="-50%" width="200%" height="200%">
-        <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="oklch(50% 0.2 300)" flood-opacity="0.5" />
+        <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="hsl(270, 80%, 80%)" flood-opacity="0.5" />
       </filter>
     </defs>
 

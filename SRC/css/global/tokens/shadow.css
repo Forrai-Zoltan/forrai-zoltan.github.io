@@ -10,6 +10,7 @@
 
   --glass-shadow-p: var(--glass-shadow);
   --glass-shadow-b: var(--glass-shadow);
+
 }
 
 :root.light {
@@ -17,7 +18,7 @@
 
   --glass-shadow: inset 0px -10px 25px -5px hsla(from var(--white) h s l / 0.8),
     inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
-    5px 5px 5px 0px hsla(from var(--black) h s l / 0.5);
+    3px 3px 5px 0px hsla(from var(--black) h s l / 0.6);
 
   --glass-shadow-p: inset 0px -10px 25px -5px
       hsla(from var(--white) h s l / 0.8),

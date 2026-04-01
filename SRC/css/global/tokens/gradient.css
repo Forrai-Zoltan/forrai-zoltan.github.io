@@ -2,12 +2,21 @@
   color-scheme: dark;
 
   /* TITLEBAR */
-  --grad-titlebar: linear-gradient(
-    to right,
-    transparent,
-    var(--c-purple) 1%,
-    var(--c-purple),
-    transparent
+  --grad-titlebar: light-dark(
+    linear-gradient(
+      to right,
+      transparent,
+      hsl(from var(--c-purple) h s calc(l + 5)) 1%,
+      hsl(from var(--c-purple) h s calc(l + 5)),
+      transparent
+    ),
+    linear-gradient(
+      to right,
+      transparent,
+      var(--c-purple) 1%,
+      var(--c-purple),
+      transparent
+    )
   );
 
   --grad-titlebar-mobile: linear-gradient(
@@ -17,12 +26,21 @@
     transparent
   );
 
-  --grad-titlebar-l: linear-gradient(
-    to right,
-    transparent,
-    var(--c-purple-l) 1%,
-    var(--c-purple-l),
-    transparent
+  --grad-titlebar-l: light-dark(
+    linear-gradient(
+      to right,
+      transparent,
+      hsl(from var(--c-purple-l) h s calc(l + 10)) 1%,
+      hsl(from var(--c-purple-l) h s calc(l + 10)),
+      transparent
+    ),
+    linear-gradient(
+      to right,
+      transparent,
+      var(--c-purple-l) 1%,
+      var(--c-purple-l),
+      transparent
+    )
   );
 
   --grad-titlebar-after: light-dark(
@@ -104,6 +122,22 @@
       transparent 30%,
       hsla(from var(--c-green) h s l / 1) 90%
     )
+  );
+
+  /* ----------------------------- */
+
+  --grad-btn-p: radial-gradient(
+    circle at center,
+    var(--c-purple-l),
+    var(--c-purple) 30%,
+    var(--c-purple-d) 80%
+  );
+
+  --grad-btn-p-l: radial-gradient(
+    circle at center,
+    hsl(from var(--c-purple-l) h s calc(l + 10)),
+    hsl(from var(--c-purple) h s calc(l + 10)),
+    var(--c-purple-d) 90%
   );
 }
 

@@ -4,6 +4,8 @@
     #brand-title span {
       transform: translateY(4px);
     }
+
+    .btn span,
     #nav li b,
     #nav a {
       transform: translateY(2px);

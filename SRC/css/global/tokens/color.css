@@ -23,15 +23,11 @@
   --black: black;
   --white: white;
   --off-black: hsl(0, 0%, 20%);
-  --off-white: hsl(0, 0%, 80%);
-
-  --glass-border: 1px solid
-    light-dark(hsla(0, 0%, 0%, 0.3), hsla(0, 0%, 100%, 0.2));
-  --glass-border-b: 1px solid
-    light-dark(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 100%, 0.4));
+  --off-white: hsl(0, 0%, 85%);
 
   --c-purple: light-dark(hsl(270, 80%, 35%), hsl(270, 80%, 20%));
   --c-purple-l: hsl(from var(--c-purple) h s calc(l + 5));
+  --c-purple-d: hsl(from var(--c-purple) h s calc(l - 5));
 
   --c-purple-l2: hsl(from var(--c-purple) h s calc(l + 45));
   --c-purple-d: hsl(from var(--c-purple) h s calc(l - 5));
