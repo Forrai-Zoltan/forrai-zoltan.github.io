@@ -1,35 +1,92 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll("gallery-row img");
 
-  images.forEach((img) => {
+  images.forEach((img, index) => {
     img.addEventListener("click", () => {
-      // Create overlay
+      let currentIndex = index;
+      let isSwiping = false;
+
       const overlay = document.createElement("div");
-      overlay.style.position = "fixed";
-      overlay.style.top = 0;
-      overlay.style.left = 0;
-      overlay.style.width = "100vw";
-      overlay.style.height = "100vh";
-      overlay.style.backgroundColor = "rgba(0,0,0,0.9)";
-      overlay.style.display = "flex";
-      overlay.style.alignItems = "center";
-      overlay.style.justifyContent = "center";
-      overlay.style.zIndex = 9999;
+      overlay.className = "zoom-overlay";
 
-      // Create zoomed image
       const zoomImg = document.createElement("img");
-      zoomImg.src = img.src;
-      zoomImg.style.maxWidth = "90%";
-      zoomImg.style.maxHeight = "90%";
-      zoomImg.style.boxShadow = "0 0 20px rgba(0,0,0,0.5)";
-      zoomImg.style.borderRadius = "10px";
-
       overlay.appendChild(zoomImg);
-      document.body.appendChild(overlay);
+
+      function updateImage() {
+        const currentImg = images[currentIndex];
+        zoomImg.src = currentImg.src;
+
+        if (currentImg.alt) {
+          overlay.dataset.caption = currentImg.alt;
+        } else {
+          delete overlay.dataset.caption;
+        }
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+      }
+
+      function showPrev() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+      }
+
+      
+
+      // ✅ Keyboard support
+      function handleKey(e) {
+        if (e.key === "ArrowRight") {
+          showNext();
+        } else if (e.key === "ArrowLeft") {
+          showPrev();
+        } else if (e.key === "Escape") {
+          cleanup();
+        }
+      }
+
+      document.addEventListener("keydown", handleKey);
+
+      // ✅ Swipe support
+      let startX = 0;
+      let endX = 0;
+
+      overlay.addEventListener("touchstart", (e) => {
+        isSwiping = false;
+        startX = e.touches[0].clientX;
+      });
+
+      overlay.addEventListener("touchmove", () => {
+        isSwiping = true;
+      });
+
+      overlay.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+
+        const diff = startX - endX;
+
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) {
+            showNext();
+          } else {
+            showPrev();
+          }
+        }
+      });
+
+      // Close logic (clean!)
+      function cleanup() {
+        document.removeEventListener("keydown", handleKey);
+        overlay.remove();
+      }
 
       overlay.addEventListener("click", () => {
-        overlay.remove();
+        if (!isSwiping) cleanup();
       });
+
+      updateImage();
+      document.body.appendChild(overlay);
     });
   });
 });

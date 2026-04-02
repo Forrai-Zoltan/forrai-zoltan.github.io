@@ -184,11 +184,10 @@ menu label[for="burger"],
     border-radius: var(--br-t);
     cursor: pointer;
     background: linear-gradient(to right, var(--c-purple-l), transparent);
-  }
 
-  #nav a:hover,
-  #nav a:has(a:focus-visible) {
-    color: var(--white);
+    a {
+      color: var(--white);
+    }
   }
 }
 

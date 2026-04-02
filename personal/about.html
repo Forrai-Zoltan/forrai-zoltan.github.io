@@ -3,324 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      href="https://www.gildrom.com/rss.xml" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="/SRC/css/var.css" />
-    <link rel="stylesheet" href="/SRC/css/font.css" />
-    <link rel="stylesheet" href="/SRC/css/base.css" />
-    <link rel="stylesheet" href="/SRC/css/text.css" />
-    <link rel="stylesheet" href="/SRC/css/layout.css" />
-    <link rel="stylesheet" href="/SRC/css/header.css" />
-    <link rel="stylesheet" href="/SRC/css/util.css" />
-    <style>
-      aside {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        z-index: 99;
-      }
-
-      @media (min-width: 600px) {
-        aside {
-          position: fixed;
-          top: 88px;
-          left: 9px;
-          height: calc(100vh - 97px);
-          overflow-y: auto;
-          width: clamp(300px, 35vw, 390px);
-        }
-
-        /* Add margin to main content so it's not hidden under the fixed aside */
-        main {
-          margin-left: calc(clamp(300px, 35vw, 390px) + 9px);
-          padding-left: 0.6rem !important;
-        }
-      }
-
-      @media (max-width: 600px) {
-        pspotify-p {
-          max-width: fit-content;
-        }
-        pspotify-p img {
-          min-width: calc(100vw - 12px);
-        }
-        gallery-row {
-          border-radius: 5px;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 2px;
-          width: 100%;
-          max-height: 100vw !important;
-          margin-bottom: 5px !important;
-          overflow-y: auto;
-          scrollbar-width: none; /* Firefox */
-          -ms-overflow-style: none; /* IE and Edge */
-        }
-      }
-
-      pspotify-p {
-        position: relative;
-        margin: 0;
-        max-width: 100%;
-        aspect-ratio: 3 / 1;
-        background-color: #181818;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 20px;
-        overflow: hidden;
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          pointer-events: none;
-          box-shadow: inset 0px -10px 25px -10px rgba(0, 0, 0, 0.6),
-            inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
-          z-index: 1;
-        }
-      }
-
-      footer {
-        padding: 15px;
-        padding-right: 0px;
-        background: radial-gradient(
-          ellipse 90% 140% at top,
-          hsl(0, 0%, 6%) 45%,
-          hsla(var(--color-green-light-a), 0.2)
-        );
-        position: relative;
-
-        p {
-          margin-block: 5px 10px;
-        }
-      }
-
-      footer svg {
-        transform: translateY(5px);
-      }
-
-      footer a {
-        text-decoration: underline;
-      }
-
-      details {
-        border-left: 2px solid orange;
-        padding-left: 20px;
-        margin-top: 20px;
-        & summary::marker {
-          color: orange;
-        }
-      }
-
-      gallery-row {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3px;
-        width: 100%;
-        max-height: 93%;
-        margin-bottom: 40px;
-        padding: 5px 15px 40px 1px;
-        overflow-y: auto;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(119, 255, 144, 0.15) transparent;
-        position: relative;
-        direction: ltr;
-        overscroll-behavior: contain;
-      }
-
-      gallery-row::-webkit-scrollbar {
-        width: 2px;
-      }
-
-      gallery-row::-webkit-scrollbar-track {
-        background: transparent;
-      }
-
-      gallery-row::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 3px;
-      }
-
-      gallery-row::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.5);
-      }
-
-      gallery-row img {
-        box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
-        border-radius: 5px;
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        display: block;
-        cursor: pointer;
-        outline: 1px solid transparent;
-
-        &:hover {
-          outline: 1px solid rgba(255, 255, 255, 0.25);
-        }
-      }
-    </style>
-    <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>About・Who am I?</title>
-    <meta
-      name="description"
-      content="Self description and lore of Forrai Zoltán (Zoltan Forrai aka Gildrom.)" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
+    <script type="module" src="/index.js"></script>
   </head>
-  <body
-    bgcolor="#121212"
-    text="#D2D2D2"
-    link="#3C8CDD"
-    alink="#0959AA"
-    vlink="#8C59C0">
+  <body class="page-about">
     <header>
-      <nav>
-        <a href="/">
-          <img align="left" height="30" src="/favicon.ico" />
-          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
+      <title-bar>
+        <a href="/" id="brand-title">
+          <img width="30" height="30" src="/favicon.ico" />
+          <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
-        <label for="burger">
-          <svg width="0" height="0">
-            <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
-          </svg>
-        </label>
-      </nav>
-      <input id="burger" type="checkbox" />
-      <nav>
-        <ul>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
+        <menu>
+          <button
+            class="audio-btn"
+            id="toggleBtn"
+            aria-label="Toggle audio"></button>
+          <toggle-btn title="Theme Toggle">
+            <label class="toggle">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="track"></span>
+              <span class="thumb"></span>
+            </label>
+          </toggle-btn>
+          <label for="burger">
+            <svg width="35" height="35">
+              <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
             </svg>
+          </label>
+        </menu>
+      </title-bar>
+      <input type="checkbox" id="burger" />
+      <nav id="nav">
+        <ul>
+          <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li>
-                <a href="/personal/about">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
-                  </svg>
-                  Who am I?
-                </a>
-              </li>
-              <li>
-                <a href="/personal/obsessions">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
-                  </svg>
-                  Obsessions
-                </a>
-              </li>
-              <li>
-                <a href="/personal/library">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
-                  </svg>
-                  Library
-                </a>
-              </li>
+              <li><a href="/personal/about">Who am I?</a></li>
+              <li><a href="/personal/obsessions">Obsessions</a></li>
+              <li><a href="/personal/library">Library</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
-            </svg>
+          <li tabindex="0" data-icon="literary">
             <b>Literary</b>
             <ul>
-              <li>
-                <a href="/literary/fiction">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
-                  </svg>
-                  Fiction
-                </a>
-              </li>
-              <li>
-                <a href="/literary/poetry">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
-                  </svg>
-                  Poetry
-                </a>
-              </li>
-              <li>
-                <a href="/literary/essays">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
-                  </svg>
-                  Essays
-                </a>
-              </li>
+              <li><a href="/literary/fiction">Fiction</a></li>
+              <li><a href="/literary/poetry">Poetry</a></li>
+              <li><a href="/literary/essays">Essays</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
-            </svg>
+          <li tabindex="0" data-icon="tavern">
             <b>Tavern</b>
             <ul>
-              <li>
-                <a href="/tavern/contact">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
-                  </svg>
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/warbler">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
-                  </svg>
-                  Warbler
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/patronage">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
-                  </svg>
-                  Patronage
-                </a>
-              </li>
+              <li><a href="/tavern/contact">Contact</a></li>
+              <li><a href="/tavern/warbler">Warbler</a></li>
+              <li><a href="/tavern/patronage">Patronage</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
-            </svg>
+          <li tabindex="0" data-icon="beyond">
             <b>Beyond</b>
             <ul>
-              <li>
-                <a href="/beyond/other">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
-                  </svg>
-                  Other Works
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/secret">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
-                  </svg>
-                  Secret
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/epilogue">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
-                  </svg>
-                  Epilogue
-                </a>
-              </li>
+              <li><a href="/beyond/other">Other Works</a></li>
+              <li><a href="/beyond/secret">Secret</a></li>
+              <li><a href="/beyond/epilogue">Epilogue</a></li>
             </ul>
           </li>
         </ul>
@@ -328,31 +74,39 @@
     </header>
     <main>
       <aside>
-        <pspotify-p>
+        <pspotify-p class="sheen">
           <a
             href="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&redirect=true">
             <img
+              id="spotify-light"
+              src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false&mode=light" />
+            <img
+              id="spotify-dark"
               src="https://spotify-github-profile.kittinanx.com/api/view?uid=11160815676&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false&mode=dark" />
           </a>
         </pspotify-p>
-        <footer align="center">
-          <p>
+        <footer class="center sheen">
+          <span>
             [[
             <a href="/personal/CV/">
               <svg width="20" height="20">
                 <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
               </svg>
-              Curriculum Vitae</a
+              <b>Curriculum Vitae</b></a
             >
             ]]
-          </p>
+          </span>
           <gallery-row>
-            <img src="/SRC/media/photo/head-shot-original.png" alt="" />
-            <img src="/SRC/media/img/socrates-middle-finger.png" alt="" />
+            <img
+              src="/SRC/media/photo/head-shot-original.png"
+              alt="The only decent photo I have of myself." />
+            <img
+              src="/SRC/media/img/socrates-middle-finger.png"
+              alt="Socrates flipping the bird." />
           </gallery-row>
         </footer>
       </aside>
-      <main-content class="long">
+      <main-box class="bgc1 sheen">
         <article>
           <h1 align="center">About</h1>
           <noscript>
@@ -397,31 +151,28 @@
           <p>
             Verily, I find it somewhat difficult to define what this website may
             be. It&rsquo;s not a
-            <em-oblique> book blog,</em-oblique> although I do
+            <i> book blog,</i> although I do
             <a href="/personal/library">review books</a>. Not a
-            <em-oblique>writer&rsquo;s portfolio,</em-oblique>
+            <i>writer&rsquo;s portfolio,</i>
             although I do <a href="/literary/fiction">self-publish</a> my works
-            on here. And certainly not a plain
-            <em-oblique> weblog</em-oblique> either, although, again, I do share
-            <a href="/literary/essays">essays</a> and update a
+            on here. And certainly not a plain <i> weblog</i> either, although,
+            again, I do share <a href="/literary/essays">essays</a> and update a
             <a href="/tavern/warbler">microblog</a>. Let&rsquo;s simply call it
-            a <em-oblique>literary</em-oblique> website.
+            a <i>literary</i> website.
           </p>
           <p>
             However, as stated at the top of every page, a full-time writer
             I&rsquo;m not. My schedule is awash and drowning in
             responsibilities, and I cannot yet commit myself to lengthy literary
             labour.
-            <em-oblique>But,</em-oblique> should you savour this style of mine,
-            I can promise to continue with my relentlessly pretentious purple
-            prose and perfumed poetry, and provide you with the weirdest of
-            fiction, free of charge.
+            <i>But,</i> should you savour this style of mine, I can promise to
+            continue with my relentlessly pretentious purple prose and perfumed
+            poetry, and provide you with the weirdest of fiction, free of
+            charge.
           </p>
-          <p align="center">
-            <svg id="sigil" width="50" height="50">
-              <use href="/SRC/asset/svg/sigil.svg#sigil"></use>
-            </svg>
-          </p>
+          <svg class="sigil" width="50" height="50">
+            <use href="/SRC/asset/svg/sigil.svg#sigil"></use>
+          </svg>
           <h2>Who am I?</h2>
           <p>
             Speaking plainly, this site exists to help answer this question. To
@@ -448,7 +199,7 @@
           </p>
           <details>
             <summary>
-              <em-oblique><b>More about me...</b></em-oblique>
+              <i><b>More about me...</b></i>
             </summary>
             <p>
               I enjoy heavy metal and rock-adjacent music, anything from
@@ -544,7 +295,7 @@
             <em-oblique>epilogue</em-oblique>.
           </p>
         </article>
-      </main-content>
+      </main-box>
     </main>
     <script src="/SRC/js/spotify.js"></script>
     <script src="/SRC/js/zoom.js"></script>

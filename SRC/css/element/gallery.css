@@ -1,0 +1,132 @@
+/* Gallery Row */
+gallery-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  width: 100%;
+  max-height: 93%;
+  margin-bottom: 40px;
+  padding: 5px 15px 40px 1px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(119, 255, 144, 0.15) transparent;
+  position: relative;
+  direction: ltr;
+  overscroll-behavior: contain;
+}
+
+@media (max-width: 660px) {
+  gallery-row {
+    border-radius: 5px;
+    gap: 2px;
+    max-height: 100vw !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+/* Scrollbar */
+gallery-row::-webkit-scrollbar {
+  width: 2px;
+}
+
+gallery-row::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+gallery-row::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+gallery-row::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Gallery Images */
+gallery-row img {
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  outline: 1px solid transparent;
+}
+
+gallery-row img:hover {
+  outline: var(--glass-border-b);
+}
+
+/* Scroll Stop */
+body:has(.zoom-overlay) {
+  overflow: hidden;
+}
+
+/* Overlay */
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  z-index: 9999;
+}
+
+.zoom-overlay img {
+  max-width: 75%;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Overlay Spacers and Caption */
+.zoom-overlay::before {
+  content: "";
+  flex: 1;
+  padding: 0 20px 0 20px;
+  position: relative;
+  top: 5vh;
+}
+
+.zoom-overlay::after {
+  content: attr(data-caption);
+  flex: 1;
+  position: relative;
+  top: 5vh;
+  align-self: flex-start;
+  text-align: justify;
+  padding: 0 20px 200px 20px;
+  max-height: 90vh;
+  overflow-y: auto;
+  font-size: var(--f-size-m);
+  line-height: var(--lh-n);
+  color: var(--off-white);
+}
+
+/* Responsive Overlay */
+@media (max-width: 900px) {
+  .zoom-overlay {
+    flex-direction: column;
+  }
+
+  .zoom-overlay img {
+    max-width: 90%;
+    max-height: 60vh;
+  }
+
+  .zoom-overlay::after {
+    max-height: 35vh;
+    max-width: 70ch;
+    margin-inline: auto;
+    padding: 0 20px 50px;
+    line-height: 1.3;
+    top: 5vw;
+  }
+
+  .zoom-overlay::before {
+    display: none;
+  }
+}

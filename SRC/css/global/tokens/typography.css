@@ -3,15 +3,22 @@
 
   /* FONTS */
   --ff-lit: "cochin";
+  --ff-type: "special-elite";
+  --ff-mono: "departure-mono";
+  --ff-jb-mono: "JetBrainsMono";
 
   --f-size-def: 15px;
   --f-size-m: 1.5rem;
 
-  --f-size-x: clamp(2.5rem, 12vw, 5rem);
+  --f-size-h1: clamp(2.5rem, 12vw, 5rem);
+  --f-size-h2: clamp(2rem, 10vw, 3rem);
+  --f-size-h3: clamp(1.6rem, 8vw, 2rem);
+  --f-size-h4: clamp(1.4rem, 6vw, 1.8rem);
+  --f-size-h5: clamp(1.2rem, 4vw, 1.4rem);
+  --f-size-h6: clamp(1rem, 3vw, 1.2rem);
 
   --f-size-brand: clamp(1.5rem, 2vw + 1rem, 2.5rem);
   --f-size-brand-mobile: clamp(1.5rem, 2vw + 0.8rem, 2.5rem);
-
 
   /* LINE HEIGHT */
   --lh-s: 1;

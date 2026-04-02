@@ -11,6 +11,8 @@
   --glass-shadow-p: var(--glass-shadow);
   --glass-shadow-b: var(--glass-shadow);
 
+  --spt-shadow-darker: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  --spt-shadow-dark: light-dark(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
 }
 
 :root.light {

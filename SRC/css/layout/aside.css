@@ -8,52 +8,131 @@ main > aside > footer {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  gap: 30px;
   width: 100%;
   min-width: fit-content;
-  height: 100%;
   min-height: 20px;
   padding: 30px 0px 15px 0px;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  
+
   border-radius: var(--br-l);
   border: var(--glass-border);
   box-shadow: var(--glass-shadow-b);
 
-  background: var(--grad-foot-green-rad);
   /* background-color: var(--c-main-box-bg); */
 }
 
-html.light main > aside > footer {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0)
-    );
-    border-radius: 16px 16px 0 0;
-    pointer-events: none;
-    z-index: 2;
-  }
+main > aside > footer:has(svg-links) {
+  justify-content: space-between;
+  background: var(--grad-foot-green-rad);
+  gap: 30px;
 }
+
+main > aside > footer:has(gallery-row) {
+  padding: 15px;
+  padding-right: 0px;
+  position: relative;
+  background: var(--grad-foot-green-rad);
+}
+
+/* ------------------------------ */
 
 @media (max-width: 660px) {
   main > aside {
     min-width: 100%;
     gap: 0.4rem;
-
   }
 
-  footer {
-    padding: 20px 0px !important;
+  main > aside > footer {
+    padding: 20px 0px;
+  }
+}
+
+/* about */
+body.page-about {
+  main > aside {
+    gap: 7px;
+    z-index: var(--z-raised);
+  }
+
+  main > aside > footer span {
+    display: block;
+    width: 100%;
+    margin-block: 5px 10px;
+    font-size: var(--f-size-m);
+    color: var(--c-text-a-hid);
+  }
+
+  main > aside > footer svg {
+    transform: translateY(5px);
+    width: 1em;
+    height: 1em;
+  }
+
+  main > aside > footer a {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 661px) {
+    aside {
+      position: fixed;
+      top: 88px;
+      left: 9px;
+      height: calc(100vh - 97px);
+      width: clamp(300px, 35vw, 390px);
+    }
+
+    /* Add margin to main content so it's not hidden under the fixed aside */
+    main {
+      margin-left: calc(clamp(300px, 35vw, 390px) + 9px);
+      padding-left: 0.6rem !important;
+    }
+  }
+}
+
+/* home */
+body.page-home {
+  aside > img {
+    border-radius: var(--br-l);
+    border: var(--glass-border-b);
+    box-shadow: var(--glass-shadow);
+    width: 500px; /* These two are for the smooth scaling. */
+    max-width: 100%; /* Idk how they work, but don't delete! */
+    user-select: none;
+    -moz-user-select: none;
+  }
+
+  svg-links {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    scale: 0.8;
+  }
+
+  svg-links a[href="/tavern/warbler"] img {
+    transform: scaleX(-1);
+  }
+
+  svg-links a img {
+    filter: drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7)) saturate(0)
+      brightness(var(--svg-link-brightness));
+  }
+
+  svg-links a:hover img {
+    filter: drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7)) saturate(1)
+      brightness(var(--svg-link-brightness));
+  }
+
+  html.light {
+    aside > img {
+      filter: brightness(1.05) contrast(0.95) sepia(0.05) hue-rotate(240deg);
+    }
+  }
+
+  @media (max-width: 660px) {
+    aside > img {
+      min-width: 100%;
+    }
   }
 }

@@ -1,3 +1,5 @@
+import { playPop } from "./audio.js";
+
 /* COLOR SWITCHER */
 const html = document.documentElement;
 const toggle = document.getElementById("theme-toggle");
@@ -22,10 +24,8 @@ const transitionTheme = (isDark) => {
 const saved = localStorage.getItem(key);
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const theme = saved || (prefersDark ? "dark" : "light");
-
 label.classList.add("no-transition");
 updateTheme(theme === "dark");
-
 requestAnimationFrame(() => {
   requestAnimationFrame(() => {
     label.classList.remove("no-transition");
@@ -33,3 +33,18 @@ requestAnimationFrame(() => {
 });
 
 toggle.onchange = () => transitionTheme(!toggle.checked);
+
+/* KEYBOARD SHORTCUT */
+document.addEventListener("keydown", (e) => {
+  const tag = document.activeElement.tagName;
+  const isTyping =
+    tag === "INPUT" ||
+    tag === "TEXTAREA" ||
+    tag === "SELECT" ||
+    document.activeElement.isContentEditable;
+  if (e.key === "t" && !isTyping) {
+    const isDark = html.classList.contains("light");
+    transitionTheme(isDark);
+    playPop(!isDark);
+  }
+});
