@@ -3,7 +3,7 @@ import { playPop } from "./audio.js";
 /* COLOR SWITCHER */
 const html = document.documentElement;
 const toggle = document.getElementById("theme-toggle");
-const label = toggle.closest(".toggle");
+toggle.checked = !html.classList.contains("dark");
 const key = "theme";
 
 const updateTheme = (isDark) => {
@@ -21,18 +21,7 @@ const transitionTheme = (isDark) => {
   document.startViewTransition(() => updateTheme(isDark));
 };
 
-const saved = localStorage.getItem(key);
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const theme = saved || (prefersDark ? "dark" : "light");
-label.classList.add("no-transition");
-updateTheme(theme === "dark");
-requestAnimationFrame(() => {
-  requestAnimationFrame(() => {
-    label.classList.remove("no-transition");
-  });
-});
-
-toggle.onchange = () => transitionTheme(!toggle.checked);
+toggle.onclick = () => transitionTheme(html.classList.contains("light"));
 
 /* KEYBOARD SHORTCUT */
 document.addEventListener("keydown", (e) => {

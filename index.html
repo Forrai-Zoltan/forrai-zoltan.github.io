@@ -6,6 +6,18 @@
     <title>Zoltan Forrai・Writer & Wizard</title>
     <meta name="description" content="Personal website of Forrai Zoltan." />
     <link rel="icon" type="image/png" href="/favicon.ico" />
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const isDark = saved ? saved === "dark" : prefersDark;
+        const html = document.documentElement;
+        html.classList.add(isDark ? "dark" : "light");
+        html.classList.remove(isDark ? "light" : "dark");
+      })();
+    </script>
     <link rel="stylesheet" href="/index.css" />
     <script type="module" src="/index.js"></script>
   </head>
