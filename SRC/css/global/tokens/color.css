@@ -26,14 +26,17 @@
   --off-white: hsl(0, 0%, 85%);
 
   --c-purple: light-dark(hsl(270, 80%, 35%), hsl(270, 80%, 20%));
+
   --c-purple-l: hsl(from var(--c-purple) h s calc(l + 5));
   --c-purple-d: hsl(from var(--c-purple) h s calc(l - 5));
 
   --c-purple-l2: hsl(from var(--c-purple) h s calc(l + 45));
   --c-purple-d: hsl(from var(--c-purple) h s calc(l - 5));
 
+
   --c-green: hsl(120, 80%, 17%);
 
+  
   --c-blue: hsl(210, 80%, 40%);
   --c-blue-l: hsl(from var(--c-blue) h calc(s - 10) calc(l + 15));
 

@@ -20,7 +20,7 @@ gallery-row {
     border-radius: 5px;
     gap: 2px;
     max-height: 100vw !important;
-    margin-bottom: 5px !important;
+    padding-bottom: 5px;
   }
 }
 
@@ -44,7 +44,7 @@ gallery-row::-webkit-scrollbar-thumb:hover {
 
 /* Gallery Images */
 gallery-row img {
-  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   width: 100%;
   aspect-ratio: 1 / 1;

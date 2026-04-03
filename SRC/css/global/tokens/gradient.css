@@ -113,19 +113,19 @@
   --mb-purple-long: linear-gradient(
       89.5deg,
       light-dark(
-        hsla(from var(--c-purple) h s calc(l + 5) / 0.6),
+        hsla(from var(--c-purple) h s calc(l + 10) / 0.5),
         hsla(from var(--c-purple) h s l / 0.6)
       ),
-      transparent 15%
+      transparent 12%
     ),
     /* This is correct, don't delete! */
       linear-gradient(
         270.5deg,
         light-dark(
-          hsla(from var(--c-purple) h s calc(l + 5) / 0.6),
+          hsla(from var(--c-purple) h s calc(l + 10) / 0.5),
           hsla(from var(--c-purple) h s l / 0.6)
         ),
-        transparent 15%
+        transparent 12%
       );
 
   --grad-foot-green-rad: light-dark(

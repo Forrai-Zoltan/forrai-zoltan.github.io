@@ -5,9 +5,13 @@ main-box.bg1 {
 
 main-box.long {
   background: var(--mb-purple-long);
-  
-
   box-shadow: var(--glass-shadow-p);
+}
+
+@media (max-width: 661px) {
+  main-box.long {
+    background: none;
+  }
 }
 
 /* Always at the bottom!! */
