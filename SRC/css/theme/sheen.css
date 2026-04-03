@@ -1,6 +1,6 @@
 html.light .sheen {
   position: relative;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -8,6 +8,7 @@ html.light .sheen {
     left: 0;
     right: 0;
     height: 50%;
+
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.3),
