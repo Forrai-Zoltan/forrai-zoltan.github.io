@@ -40,11 +40,11 @@ main-box.deck {
     background-position: 12px center;
     background-size: 16px 16px;
 
-    color: light-dark(hsl(120, 100%, 31%), hsla(120, 100%, 50%, 0.6));
+    color: light-dark(hsl(120, 81%, 40%), hsla(120, 100%, 50%, 0.6));
     background-color: light-dark(var(--c-g-35), var(--c-g-20));
     box-shadow: inset 0 0 5px 5px
         light-dark(rgba(255, 255, 255, 0.2), hsla(0, 0%, 10%, 1)),
-      0px 5px 10px 2px light-dark(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+      0px 0px 10px 5px light-dark(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
 
     &::placeholder {
       color: light-dark(var(--c-g-55), var(--c-g-40));
@@ -55,8 +55,9 @@ main-box.deck {
       outline: none;
       background-color: light-dark(var(--c-g-25), var(--c-g-25));
       box-shadow: inset 0 0 5px 5px
-          light-dark(rgba(255, 255, 255, 0.5), hsla(0, 0%, 10%, 0.3)),
-        0px 5px 10px 2px light-dark(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+          light-dark(rgba(255, 255, 255, 0.6), hsla(0, 0%, 10%, 0.3)),
+        0px 0px 10px 5px
+          light-dark(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
     }
 
     &:focus::placeholder {
@@ -122,7 +123,7 @@ main-box.deck {
     transition: transform 0.15s ease-out, box-shadow 0.15s ease;
     will-change: transform, box-shadow;
 
-    color: var(--off-white);
+    color: light-dark(hsla(0, 0%, 0%, 0.7), var(--off-white));
 
     box-shadow: var(--glass-shadow-b);
 
@@ -147,6 +148,7 @@ main-box.deck {
       filter: brightness(1.1);
       transform: scale(1.04);
       z-index: 1;
+      color: light-dark(hsla(0, 0%, 0%, 0.8), var(--off-white));
     }
 
     &:active {
@@ -154,30 +156,30 @@ main-box.deck {
     }
   }
 
-
-
-
-
-
   title-span {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
     width: calc(100% - 20px);
     min-height: 15%;
     max-height: 24%;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.65);
+
+    border-radius: 5px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(1rem, 6vw, 1.2rem);
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: light-dark(
+      hsla(210, 80%, 40%, 0.3),
+      hsla(0, 0%, 0%, 0.65)
+    );
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: clamp(1rem, 6vw, 1.2rem);
 
     &:empty {
       background-color: transparent;
