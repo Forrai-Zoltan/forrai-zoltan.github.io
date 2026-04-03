@@ -22,19 +22,6 @@ main > aside > footer {
   /* background-color: var(--c-main-box-bg); */
 }
 
-main > aside > footer:has(svg-links) {
-  justify-content: space-between;
-  background: var(--grad-foot-green-rad);
-  gap: 30px;
-}
-
-main > aside > footer:has(gallery-row) {
-  padding: 15px;
-  padding-right: 0px;
-  position: relative;
-  background: var(--grad-foot-green-rad);
-}
-
 /* ------------------------------ */
 
 @media (max-width: 660px) {
@@ -50,6 +37,13 @@ main > aside > footer:has(gallery-row) {
 
 /* about */
 body.page-about {
+  main > aside > footer {
+    padding: 15px 0 ;
+    position: relative;
+    background: var(--grad-foot-green-rad);
+    
+  }
+
   main > aside {
     gap: 7px;
     z-index: var(--z-raised);
@@ -92,6 +86,12 @@ body.page-about {
 
 /* home */
 body.page-home {
+  main > aside > footer {
+    justify-content: space-between;
+    background: var(--grad-foot-green-rad);
+    gap: 30px;
+  }
+
   aside > img {
     border-radius: var(--br-l);
     border: var(--glass-border-b);

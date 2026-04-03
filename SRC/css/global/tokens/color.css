@@ -37,6 +37,8 @@
   --c-blue: hsl(210, 80%, 40%);
   --c-blue-l: hsl(from var(--c-blue) h calc(s - 10) calc(l + 15));
 
+  --c-high-light: light-dark(var(--c-blue), orange) ;
+
   /* TEXT */
   --c-text: light-dark(var(--black), var(--off-white));
 

@@ -3,6 +3,14 @@ main-box.bg1 {
   box-shadow: var(--glass-shadow-p);
 }
 
+main-box.long {
+  background: var(--mb-purple-long);
+  
+
+  box-shadow: var(--glass-shadow-p);
+}
+
+/* Always at the bottom!! */
 main-box.bgc1 {
   background-color: var(--c-main-box-bg);
 }

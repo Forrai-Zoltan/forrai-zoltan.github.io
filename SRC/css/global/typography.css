@@ -43,7 +43,7 @@ h3 {
   margin-top: 0;
 }
 
-p + p {
+:is(p, hr) + :is(p, ol, ul) {
   margin-top: var(--mp-m);
 }
 
@@ -51,26 +51,35 @@ p + p {
 
 ul li::marker {
   content: "◈ ";
-  color: light-dark(var(--c-blue) /* hsl(270, 80%, 35%) */, hsl(39, 100%, 50%));
+  color: var(--c-high-light);
 }
 ol li::marker {
   font-family: var(--ff-type);
   font-size: 1.3rem;
-  color: light-dark(var(--c-blue) /* hsl(270, 80%, 35%) */, hsl(39, 100%, 50%));
+  color: var(--c-high-light);
 }
 
 details {
-  border-left: 2px solid
-    light-dark(var(--c-blue) /* hsl(270, 80%, 35%) */, hsl(39, 100%, 50%));
+  border-left: 2px solid var(--c-high-light);
   padding-left: 20px;
   margin-top: 20px;
+}
 
-  & summary::marker {
-    color: light-dark(
-      var(--c-blue) /* hsl(270, 80%, 35%) */,
-      hsl(39, 100%, 50%)
-    );
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &::marker {
+    color: var(--c-high-light);
   }
+}
+
+em {
+  font-style: oblique 15deg;
 }
 
 /* --------------------------------- */

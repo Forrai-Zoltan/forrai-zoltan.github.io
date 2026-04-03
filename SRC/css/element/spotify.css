@@ -1,8 +1,12 @@
 pspotify-p {
   position: relative;
   margin: 0;
-  max-width: 100%;
-  aspect-ratio: 3 / 1;
+  width: 100%;
+
+  aspect-ratio: 3/1;
+
+  /* Needed for height! */
+  flex-shrink: 0;
 
   overflow: hidden;
 
@@ -17,7 +21,7 @@ pspotify-p {
   -moz-user-select: none;
   -ms-user-select: none;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
 
@@ -35,8 +39,17 @@ pspotify-p {
   }
 }
 
+pspotify-p a {
+  display: block;
+}
 #spotify-light {
   display: none;
+}
+
+pspotify-p img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 html.light {

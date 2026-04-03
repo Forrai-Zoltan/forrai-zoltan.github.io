@@ -1,3 +1,9 @@
 .center {
   text-align: center;
 }
+
+.emo {
+  color: var(--c-high-light);
+  font-family: var(--ff-jb-mono);
+  font-size: var(--f-size-s);
+}

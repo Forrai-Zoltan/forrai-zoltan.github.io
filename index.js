@@ -7,3 +7,13 @@ if (document.querySelector(".audio-btn")) {
 if (document.querySelector("toggle-btn")) {
   await import("/SRC/js/theme.js");
 }
+
+// Spotify Box
+if (document.querySelector("pspotify-p")) {
+  await import("/SRC/js/spotify.js");
+}
+
+// Gallery
+if (document.querySelector("gallery-row")) {
+  await import("/SRC/js/zoom.js");
+}
