@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
+(() => {
   const searchInput = document.querySelector(
     'input[type="search"][name="filter"]'
   );
   const cards = document.querySelectorAll("deck-section a");
   if (!searchInput) return;
+
   const form = searchInput.closest("form");
   if (form) {
     form.addEventListener("submit", (e) => {
@@ -47,19 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Run filter on user input
   searchInput.addEventListener("input", applyFilter);
-
-  // Blur on Escape
   searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Escape") searchInput.blur();
   });
 
-  // Auto-fill from URL and apply filter
   const urlParams = new URLSearchParams(window.location.search);
   const query = urlParams.get("q");
   if (query) {
     searchInput.value = query;
     applyFilter();
   }
-});
+})();

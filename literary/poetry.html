@@ -3,177 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      href="https://www.gildrom.com/rss.xml" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="/SRC/css/var.css" />
-    <link rel="stylesheet" href="/SRC/css/font.css" />
-    <link rel="stylesheet" href="/SRC/css/base.css" />
-    <link rel="stylesheet" href="/SRC/css/text.css" />
-    <link rel="stylesheet" href="/SRC/css/layout.css" />
-    <link rel="stylesheet" href="/SRC/css/header.css" />
-    <link rel="stylesheet" href="/SRC/css/util.css" />
-    <link rel="stylesheet" href="/SRC/css/deck.css" />
-    <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>Poetry・gildrom.com</title>
-    <meta name="description" content="Links to my poems." />
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const isDark = saved ? saved === "dark" : prefersDark;
+        const html = document.documentElement;
+        html.classList.add(isDark ? "dark" : "light");
+        html.classList.remove(isDark ? "light" : "dark");
+      })();
+    </script>
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
+    <script type="module" src="/index.js"></script>
   </head>
-  <body
-    bgcolor="#121212"
-    text="#D2D2D2"
-    link="#3C8CDD"
-    alink="#0959AA"
-    vlink="#8C59C0">
+  <body class="page-home">
     <header>
-      <nav>
-        <a href="/">
-          <img align="left" height="30" src="/favicon.ico" />
-          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
+      <title-bar>
+        <a href="/" id="brand-title">
+          <img width="30" height="30" src="/favicon.ico" />
+          <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
-        <label for="burger">
-          <svg width="0" height="0">
-            <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
-          </svg>
-        </label>
-      </nav>
-      <input id="burger" type="checkbox" />
-      <nav>
-        <ul>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
+        <menu>
+          <button
+            class="audio-btn"
+            id="toggleBtn"
+            aria-label="Toggle audio"></button>
+          <toggle-btn title="Theme Toggle">
+            <label class="toggle">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="track"></span>
+              <span class="thumb"></span>
+            </label>
+          </toggle-btn>
+          <label for="burger">
+            <svg width="35" height="35">
+              <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
             </svg>
+          </label>
+        </menu>
+      </title-bar>
+      <input type="checkbox" id="burger" />
+      <nav id="nav">
+        <ul>
+          <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li>
-                <a href="/personal/about">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
-                  </svg>
-                  Who am I?
-                </a>
-              </li>
-              <li>
-                <a href="/personal/obsessions">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
-                  </svg>
-                  Obsessions
-                </a>
-              </li>
-              <li>
-                <a href="/personal/library">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
-                  </svg>
-                  Library
-                </a>
-              </li>
+              <li><a href="/personal/about">Who am I?</a></li>
+              <li><a href="/personal/obsessions">Obsessions</a></li>
+              <li><a href="/personal/library">Library</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
-            </svg>
+          <li tabindex="0" data-icon="literary">
             <b>Literary</b>
             <ul>
-              <li>
-                <a href="/literary/fiction">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
-                  </svg>
-                  Fiction
-                </a>
-              </li>
-              <li>
-                <a href="/literary/poetry">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
-                  </svg>
-                  Poetry
-                </a>
-              </li>
-              <li>
-                <a href="/literary/essays">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
-                  </svg>
-                  Essays
-                </a>
-              </li>
+              <li><a href="/literary/fiction">Fiction</a></li>
+              <li><a href="/literary/poetry">Poetry</a></li>
+              <li><a href="/literary/essays">Essays</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
-            </svg>
+          <li tabindex="0" data-icon="tavern">
             <b>Tavern</b>
             <ul>
-              <li>
-                <a href="/tavern/contact">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
-                  </svg>
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/warbler">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
-                  </svg>
-                  Warbler
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/patronage">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
-                  </svg>
-                  Patronage
-                </a>
-              </li>
+              <li><a href="/tavern/contact">Contact</a></li>
+              <li><a href="/tavern/warbler">Warbler</a></li>
+              <li><a href="/tavern/patronage">Patronage</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
-            </svg>
+          <li tabindex="0" data-icon="beyond">
             <b>Beyond</b>
             <ul>
-              <li>
-                <a href="/beyond/other">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
-                  </svg>
-                  Other Works
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/secret">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
-                  </svg>
-                  Secret
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/epilogue">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
-                  </svg>
-                  Epilogue
-                </a>
-              </li>
+              <li><a href="/beyond/other">Other Works</a></li>
+              <li><a href="/beyond/secret">Secret</a></li>
+              <li><a href="/beyond/epilogue">Epilogue</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <deck-box>
+      <main-box class="deck bg1">
         <form>
           <search>
             <input
@@ -188,22 +100,15 @@
               aria-label="clear search" />
           </search>
         </form>
-        <noscript>
-          <noscript-span>
-            This page uses JS to make the filter-field above functional.
-          </noscript-span>
-        </noscript>
         <deck-section>
           <a
             id="where_she"
             href="/literary/poetry/wheres_she"
             data-tags="ballad fantasy">
             <title-span>Where&rsquo;s She?</title-span>
-            <br />
           </a>
         </deck-section>
-      </deck-box>
+      </main-box>
     </main>
   </body>
-  <script src="/SRC/js/filter.js"></script>
 </html>

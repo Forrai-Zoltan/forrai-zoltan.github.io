@@ -65,12 +65,12 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3);
+  background: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
 }
 
 html {
@@ -78,7 +78,8 @@ html {
   background-color: var(--c-canvas-bg);
   color: var(--c-text);
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+  scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
+    transparent;
   scroll-padding-top: 100px;
   scrollbar-gutter: auto;
   caret-color: orange;
@@ -108,7 +109,7 @@ main-box {
   min-width: 20px;
 }
 
-a {
+a:not(h1 a) {
   color: var(--c-text-a);
 
   &:hover {
@@ -141,19 +142,6 @@ a:not(.note a, deck-section a, [href^="/"], [href^="#"], :has(img))::after {
   background-size: contain;
   mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
     no-repeat center / contain;
-}
-
-a:not(
-    .note a,
-    deck-section a,
-    [href^="/"],
-    [href^="#"],
-    :has(img)
-  ):hover::after {
-  content: "";
-  background-color: var(--c-text);
-  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
-    no-repeat center;
 }
 
 html.light {

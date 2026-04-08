@@ -1,0 +1,389 @@
+@import url(/SRC/css/global/fonts.css);
+@import url(/SRC/css/global/tokens/variables.css);
+@import url(/SRC/css/element/btn-switch.css);
+@import url(/SRC/css/element/btn-audio.css);
+@import url(/SRC/css/element/svg-sigil.css);
+@import url(/SRC/css/global/util.css);
+
+:root {
+  --color-page: light-dark(#cccccc, #121212);
+  --color-text: light-dark(#121212, #cccccc);
+  --color-link: light-dark(hsl(210, 100%, 40%), hsl(210, 100%, 55%));
+  --color-link-l: hsl(from var(--color-link) h s calc(l + 10));
+  --color-link-d: hsl(from var(--color-link) h s calc(l - 10));
+
+  --grey: light-dark(hsl(0, 0%, 55%), hsl(0, 0%, 25%));
+
+  --font-typewriter: "special-elite";
+  --font-mono: "departure-mono";
+  --font-size: 22px;
+}
+
+:root {
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  position: relative;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-page);
+  color: var(--color-text);
+  font-size: var(--font-size);
+  font-family: "cochin";
+  scrollbar-width: thin;
+  scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
+    transparent;
+  scroll-padding-top: 100px;
+  scrollbar-gutter: auto;
+}
+
+article,
+header {
+  position: relative;
+  box-sizing: border-box;
+  margin-inline: auto;
+  width: 100%;
+  overflow-wrap: break-word;
+  max-width: 60ch;
+  padding-inline: 0.5rem;
+  backdrop-filter: blur(0.7px);
+  background-color: oklch(from var(--color-page) l c h / 0.7);
+  box-shadow: 0 0 10px 10px oklch(from var(--color-page) l c h / 0.7);
+  z-index: 2;
+}
+
+header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+menu {
+  padding: 0;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  gap: 10px;
+  right: 0;
+  top: 0px;
+  padding: 5px 15px;
+  z-index: 10;
+  background-color: hsla(from var(--color-page) h s l / 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+menu a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 0.5;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+
+ul {
+  padding-left: 30px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+
+  li::marker {
+    content: "◈ ";
+    color: light-dark(#e87f24, orange);
+  }
+}
+
+li {
+  padding-block: 3px;
+  hyphens: auto;
+}
+
+#education-list ul {
+  border-left: 1.5px solid var(--grey);
+  padding-left: 40px;
+  margin-left: -14.5px;
+}
+
+skills-section > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  > li {
+    padding-block: 10px;
+  }
+  > li::marker {
+    content: none;
+  }
+}
+
+h1 {
+  font-family: var(--font-typewriter);
+  font-size: clamp(1.8rem, 12vw, 3.9rem);
+  margin: 30px 0 0;
+  line-height: normal 1;
+}
+
+h2 {
+  font-family: var(--font-typewriter);
+  font-size: clamp(1.5rem, 8vw, 2rem);
+  margin: 50px 0 0;
+}
+
+h3 {
+  font-family: var(--font-typewriter);
+  font-size: clamp(1.2rem, 6vw, 1.5rem);
+  margin: 30px 0 0;
+}
+
+p {
+  margin-block: 0 10px;
+  line-height: 1.5;
+  hyphens: auto;
+}
+
+b {
+  color: light-dark(#e87f24, orange);
+}
+
+magic-spell {
+  color: SlateBlue;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+a {
+  color: var(--color-link);
+  border-radius: 10px;
+
+  &:hover {
+    color: var(--color-link-l);
+  }
+
+  &:active {
+    color: var(--color-link-d);
+  }
+}
+
+details {
+  border-left: 1.5px solid light-dark(#e87f24, orange);
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-left: 14px;
+}
+
+summary {
+  cursor: pointer;
+
+  &::marker {
+    color: light-dark(#e87f24, orange);
+  }
+}
+
+details p {
+  margin-top: 10px;
+}
+
+em {
+  font-style: oblique 15deg;
+}
+
+.sigil {
+  margin-block: 1.5rem;
+}
+
+.emo {
+  color: var(--c-high-light);
+  font-family: var(--ff-jb-mono);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.arrowed {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-block: 10px 50px;
+  display: flow-root;
+}
+
+.pfp {
+  width: 40%;
+  border-radius: 8px;
+  float: left;
+  margin-right: 25px;
+}
+
+hr {
+  background-color: var(--grey);
+  height: 1px;
+  border: 0;
+  width: 95%;
+  margin-inline: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  margin-inline: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+:is(#f1, #f2, #f3, #f4, #f5) {
+  position: absolute;
+  width: 90px;
+  height: auto;
+  z-index: 1;
+  opacity: 0.5;
+  filter: invert(0);
+}
+
+#f1 {
+  top: 10%;
+  right: 18%;
+  opacity: 0.6;
+}
+#f2 {
+  top: 38%;
+  left: 7%;
+  opacity: 0.25;
+}
+#f3 {
+  width: 100px;
+  top: 52%;
+  right: 38%;
+}
+#f4 {
+  top: 70%;
+  right: 5%;
+  opacity: 0.15;
+}
+#f5 {
+  width: 100px;
+  top: 89%;
+  left: 15%;
+  opacity: 0.5;
+}
+
+html.light {
+  :is(#f1, #f2, #f3, #f4, #f5) {
+    filter: invert(1);
+    opacity: 0.5;
+  }
+
+  #f1 {
+    opacity: 0.6;
+  }
+  #f2 {
+    opacity: 0.35;
+  }
+
+  #f4 {
+    opacity: 0.25;
+  }
+  #f5 {
+    opacity: 0.5;
+  }
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  width: auto;
+  overflow: hidden;
+  color: light-dark(
+    hsl(from var(--grey) h s 35%),
+    hsl(from var(--grey) h s 40%)
+  );
+}
+
+td {
+  line-height: 1;
+  padding: 7px 14px 3px 14px;
+  text-align: left;
+  border: 1px dashed var(--grey);
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding-top: 50px;
+  }
+
+  menu {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  details {
+    margin-left: 5px;
+  }
+
+  #education-list {
+    padding-left: 25px;
+  }
+
+  skills-section > ul {
+    padding-left: 0px;
+  }
+}
+
+@media print {
+  * {
+    color: #121212 !important;
+  }
+
+  ul li::marker {
+    color: #121212;
+  }
+
+  article,
+  header {
+    box-shadow: none;
+  }
+
+  menu,
+  :is(#f1, #f2, #f3, #f4, #f5),
+  .status {
+    display: none;
+  }
+}

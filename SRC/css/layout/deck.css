@@ -130,8 +130,8 @@ main-box.deck {
     background-image: light-dark(
       linear-gradient(
         to bottom,
-        hsl(from var(--c-blue) h s calc(l + 30)),
-        hsl(from var(--c-blue) h s calc(l + 50))
+        hsl(from var(--c-blue) h s calc(l + 30) / 0.5),
+        hsl(from var(--c-blue) h s calc(l + 50) / 0.8)
       ),
       linear-gradient(to bottom, hsl(0, 0%, 6%), hsl(0, 0%, 9%))
     );
@@ -170,7 +170,7 @@ main-box.deck {
 
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: clamp(1rem, 6vw, 1.2rem);
     font-family: Arial, Helvetica, sans-serif;
 
@@ -188,3 +188,4 @@ main-box.deck {
     }
   }
 }
+

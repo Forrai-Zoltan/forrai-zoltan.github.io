@@ -6,6 +6,7 @@
 - JS warnings
 - Selection :: color 
 
+
 ## Pages
 - CV
 - Lit Theo
@@ -26,3 +27,10 @@
 - faq,
 - legal
 - RSS
+
+
+## SEO
+
+- Name on about page.
+- Location!
+

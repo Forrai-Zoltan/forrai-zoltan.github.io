@@ -16,24 +16,35 @@ article {
 /* HEADERS */
 
 h1 {
-  font-size: var(--f-size-h1);
+  --base-fs: var(--f-size-h1);
+}
+h2 {
+  --base-fs: var(--f-size-h2);
+}
+h3 {
+  --base-fs: var(--f-size-h3);
+}
+h4 {
+  --base-fs: var(--f-size-h4);
+}
+h5 {
+  --base-fs: var(--f-size-h5);
+}
+h6 {
+  --base-fs: var(--f-size-h6);
+}
+
+h1 {
+  font-size: var(--base-fs);
   margin-block: var(--mp-s);
 }
 
-h1.hero {
-  color: light-dark(var(--c-purple-d), var(--c-g-65));
-}
-
-h1.small-h1 {
-  font-size: clamp(1.9rem, 6vw, 3.5rem);
-}
-
 h2 {
-  font-size: var(--f-size-h2);
+  font-size: var(--base-fs);
   margin-block: var(--mp-l) calc(var(--mp-s) / 2);
 }
 h3 {
-  font-size: var(--f-size-h3);
+  font-size: var(--base-fs);
   margin-block: var(--mp-l) var(--mp-s);
 }
 
@@ -68,18 +79,41 @@ details {
 summary {
   cursor: pointer;
   font-weight: bold;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
 
   &::marker {
     color: var(--c-high-light);
   }
 }
 
+/* inline */
+
 em {
   font-style: oblique 15deg;
+}
+
+/* Classes */
+
+h1.hero {
+  color: light-dark(var(--c-purple-d), var(--c-g-65));
+}
+
+.hero a {
+  text-decoration: none;
+  color: light-dark(var(--c-purple-d), var(--c-g-65));
+
+  &:hover {
+    text-decoration: underline dashed 6px;
+  }
+}
+
+h1.small-h1 {
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
+}
+
+.error {
+  color: light-dark(red, orangered);
+  font-size: calc(var(--base-fs) - 0.7rem);
+  font-family: var(--ff-mono);
 }
 
 /* --------------------------------- */

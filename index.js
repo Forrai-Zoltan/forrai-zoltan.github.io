@@ -17,3 +17,8 @@ if (document.querySelector("pspotify-p")) {
 if (document.querySelector("gallery-row")) {
   await import("/SRC/js/zoom.js");
 }
+
+// Filter
+if (document.querySelector(".deck")) {
+  await import("/SRC/js/filter.js");
+}
