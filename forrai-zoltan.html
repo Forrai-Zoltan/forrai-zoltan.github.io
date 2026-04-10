@@ -223,6 +223,11 @@
       });
     });
 
+    document.querySelector("a.eng-trans").addEventListener("click", (e) => {
+      e.preventDefault();
+      location.replace(e.currentTarget.href);
+    });
+
     // Save scroll % just before leaving
     document.addEventListener("click", (e) => {
       const link = e.target.closest("a[href]");
