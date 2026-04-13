@@ -1,23 +1,10 @@
 @import url(/SRC/css/global/fonts.css);
+@import url(/SRC/css/global/reset.css);
 @import url(/SRC/css/global/tokens/variables.css);
 @import url(/SRC/css/element/btn-switch.css);
 @import url(/SRC/css/element/btn-audio.css);
 @import url(/SRC/css/element/svg-sigil.css);
 @import url(/SRC/css/global/util.css);
-
-:root {
-  --color-page: light-dark(#cccccc, #121212);
-  --color-text: light-dark(#121212, #cccccc);
-  --color-link: light-dark(hsl(210, 100%, 40%), hsl(210, 100%, 55%));
-  --color-link-l: hsl(from var(--color-link) h s calc(l + 10));
-  --color-link-d: hsl(from var(--color-link) h s calc(l - 10));
-
-  --grey: light-dark(hsl(0, 0%, 55%), hsl(0, 0%, 25%));
-
-  --font-typewriter: "special-elite";
-  --font-mono: "departure-mono";
-  --font-size: 22px;
-}
 
 :root {
   scrollbar-width: thin;
@@ -64,8 +51,7 @@ html {
   scrollbar-gutter: auto;
 }
 
-article,
-header {
+article {
   position: relative;
   box-sizing: border-box;
   margin-inline: auto;
@@ -73,6 +59,7 @@ header {
   overflow-wrap: break-word;
   max-width: 60ch;
   padding-inline: 0.5rem;
+  padding-top: 20px;
   backdrop-filter: blur(0.7px);
   background-color: oklch(from var(--color-page) l c h / 0.7);
   box-shadow: 0 0 10px 10px oklch(from var(--color-page) l c h / 0.7);
@@ -80,24 +67,38 @@ header {
 }
 
 header {
-  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.2rem;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  z-index: 10;
+  background-color: hsla(from var(--color-page) h s l / 1);
+}
+
+header div {
+  width: 100%;
+  max-width: 58ch;
+  display: flex;
+  justify-content: space-between;
 }
 
 menu {
-  padding: 0;
+  padding: 5px 10px;
   display: flex;
-  position: fixed;
+  position: absolute;
   align-items: center;
   gap: 10px;
   right: 0;
-  top: 0px;
-  padding: 5px 15px;
+  top: 0;
+  bottom: 0;
   z-index: 10;
-  background-color: hsla(from var(--color-page) h s l / 0.5);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
@@ -177,12 +178,6 @@ p {
 
 b {
   color: light-dark(#e87f24, orange);
-}
-
-magic-spell {
-  color: SlateBlue;
-  font-size: 1.2rem;
-  font-style: italic;
 }
 
 a {
@@ -288,7 +283,7 @@ footer {
 }
 #f3 {
   width: 100px;
-  top: 56%;
+  top: 46%;
   right: 38%;
 }
 #f4 {
@@ -301,6 +296,71 @@ footer {
   top: 90%;
   left: 15%;
   opacity: 0.5;
+}
+
+.example {
+  display: flex;
+  gap: 2px;
+  width: 55ch;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.example a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  aspect-ratio: 1;
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  border: var(--glass-border);
+  border-radius: 10px;
+  transform: scale(0.952);
+  transition: transform 0.2s ease, filter 0.2s ease;
+  overflow: hidden;
+  box-shadow: var(--glass-shadow);
+  background-color: var(--color-page);
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: clamp(1rem, 6vw, 1.1rem);
+  font-family: Arial, Helvetica, sans-serif;
+
+  &:hover {
+    transform: scale(1);
+    border: var(--glass-border-b);
+  }
+}
+
+.example a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+html.light .example a {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+
+    pointer-events: none;
+    z-index: 2;
+  }
 }
 
 html.light {
@@ -322,25 +382,6 @@ html.light {
   #f5 {
     opacity: 0.5;
   }
-}
-
-table {
-  margin-top: 20px;
-  border-collapse: collapse;
-  font-size: 0.9rem;
-  width: auto;
-  overflow: hidden;
-  color: light-dark(
-    hsl(from var(--grey) h s 35%),
-    hsl(from var(--grey) h s 40%)
-  );
-}
-
-td {
-  line-height: 1;
-  padding: 7px 14px 3px 14px;
-  text-align: left;
-  border: 1px dashed var(--grey);
 }
 
 @media (max-width: 1000px) {

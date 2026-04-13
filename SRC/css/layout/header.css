@@ -25,7 +25,7 @@ title-bar {
   background: var(--grad-titlebar);
 }
 
-a#brand-title {
+title-bar a {
   display: flex;
   align-items: center;
   width: 100%;
@@ -55,7 +55,7 @@ a#brand-title {
   }
 }
 
-#brand-title img {
+title-bar a img {
   margin: 0.5rem 0.8rem 0.5rem 1.6rem;
   border-radius: var(--br-s);
   box-shadow: 0 2px 10px 5px
@@ -65,7 +65,7 @@ a#brand-title {
     );
 }
 
-#brand-title span {
+title-bar a span {
   line-height: var(--lh-s);
   font-size: var(--f-size-brand);
   letter-spacing: 0.05em;
@@ -95,7 +95,7 @@ menu label[for="burger"],
     gap: 10px;
   }
 
-  #nav {
+  header nav {
     position: fixed;
     top: var(--titlebar-height);
     width: 100%;
@@ -103,12 +103,12 @@ menu label[for="burger"],
     -moz-user-select: none;
   }
 
-  #nav li {
+  header nav li {
     font-size: var(--f-size-m);
   }
 
   /* Top-level strip */
-  #nav > ul {
+  header nav > ul {
     display: flex;
     justify-content: space-between;
     margin: 5px;
@@ -118,12 +118,12 @@ menu label[for="burger"],
     background: var(--grad-nav-strip);
   }
 
-  #nav > ul:has(> li:last-of-type:hover) {
+  header nav > ul:has(> li:last-of-type:hover) {
     border-radius: var(--br-s) var(--br-l) var(--br-l) var(--br-s);
   }
 
   /* Top-level items */
-  #nav > ul > li {
+  header nav > ul > li {
     display: flex;
     position: relative;
     width: 100%;
@@ -145,7 +145,7 @@ menu label[for="burger"],
   }
 
   /* Bridge pseudo-element keeps dropdown reachable while cursor travels */
-  #nav > ul > li::after {
+  header nav > ul > li::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -156,7 +156,7 @@ menu label[for="burger"],
   }
 
   /* Dropdown lists */
-  #nav > ul li ul {
+  header nav > ul li ul {
     display: none;
     margin-top: 5px;
     position: absolute;
@@ -172,15 +172,15 @@ menu label[for="burger"],
     -webkit-backdrop-filter: var(--glass-blur);
   }
 
-  #nav > ul > li:hover ul,
-  #nav > ul > li:focus-within ul {
+  header nav > ul > li:hover ul,
+  header nav > ul > li:focus-within ul {
     display: block;
     z-index: var(--z-dropdown);
   }
 
   /* Dropdown item hover */
-  #nav ul li ul li:hover,
-  #nav ul li ul li:has(a:focus-visible) {
+  header nav ul li ul li:hover,
+  header nav ul li ul li:has(a:focus-visible) {
     border-radius: var(--br-t);
     cursor: pointer;
     background: linear-gradient(to right, var(--c-purple-l), transparent);
@@ -191,7 +191,7 @@ menu label[for="burger"],
   }
 }
 
-#nav > ul li {
+header nav > ul li {
   list-style: none;
 
   &::marker {
@@ -199,7 +199,7 @@ menu label[for="burger"],
   }
 }
 
-#nav a {
+header nav a {
   padding: 3px 3px 3px 10.5px;
   display: block;
   max-width: 100%;
@@ -208,8 +208,8 @@ menu label[for="burger"],
   color: var(--c-text-a-hid);
 }
 
-#nav a::before,
-#nav > ul > li > b::before {
+header nav a::before,
+header nav > ul > li > b::before {
   content: "";
   display: inline-block;
   width: var(--nav-icon-size);
@@ -223,60 +223,60 @@ menu label[for="burger"],
 }
 
 /* Section icons */
-#nav > ul > li[data-icon="personal"] b::before {
+header nav > ul > li[data-icon="personal"] b::before {
   mask-image: url("/SRC/asset/svg/icon-user-round.svg");
 }
-#nav > ul > li[data-icon="literary"] b::before {
+header nav > ul > li[data-icon="literary"] b::before {
   mask-image: url("/SRC/asset/svg/icon-library.svg");
 }
-#nav > ul > li[data-icon="tavern"] b::before {
+header nav > ul > li[data-icon="tavern"] b::before {
   mask-image: url("/SRC/asset/svg/icon-barrel.svg");
 }
-#nav > ul > li[data-icon="beyond"] b::before {
+header nav > ul > li[data-icon="beyond"] b::before {
   mask-image: url("/SRC/asset/svg/icon-moon.svg");
 }
 
 /* Personal */
-#nav a[href="/personal/about"]::before {
+header nav a[href="/personal/about"]::before {
   mask-image: url("/SRC/asset/svg/icon-fingerprint.svg");
 }
-#nav a[href="/personal/obsessions"]::before {
+header nav a[href="/personal/obsessions"]::before {
   mask-image: url("/SRC/asset/svg/icon-star.svg");
 }
-#nav a[href="/personal/library"]::before {
+header nav a[href="/personal/library"]::before {
   mask-image: url("/SRC/asset/svg/icon-book-open.svg");
 }
 
 /* Literary */
-#nav a[href="/literary/fiction"]::before {
+header nav a[href="/literary/fiction"]::before {
   mask-image: url("/SRC/asset/svg/icon-book-closed.svg");
 }
-#nav a[href="/literary/poetry"]::before {
+header nav a[href="/literary/poetry"]::before {
   mask-image: url("/SRC/asset/svg/icon-pencil.svg");
 }
-#nav a[href="/literary/essays"]::before {
+header nav a[href="/literary/essays"]::before {
   mask-image: url("/SRC/asset/svg/icon-notebook-pen.svg");
 }
 
 /* Tavern */
-#nav a[href="/tavern/contact"]::before {
+header nav a[href="/tavern/contact"]::before {
   mask-image: url("/SRC/asset/svg/icon-send.svg");
 }
-#nav a[href="/tavern/warbler"]::before {
+header nav a[href="/tavern/warbler"]::before {
   mask-image: url("/SRC/asset/svg/icon-bird.svg");
 }
-#nav a[href="/tavern/patronage"]::before {
+header nav a[href="/tavern/patronage"]::before {
   mask-image: url("/SRC/asset/svg/icon-sparkles.svg");
 }
 
 /* Beyond */
-#nav a[href="/beyond/other"]::before {
+header nav a[href="/beyond/other"]::before {
   mask-image: url("/SRC/asset/svg/icon-palette.svg");
 }
-#nav a[href="/beyond/secret"]::before {
+header nav a[href="/beyond/secret"]::before {
   mask-image: url("/SRC/asset/svg/icon-lock.svg");
 }
-#nav a[href="/beyond/epilogue"]::before {
+header nav a[href="/beyond/epilogue"]::before {
   mask-image: url("/SRC/asset/svg/icon-scroll-text.svg");
 }
 
@@ -309,13 +309,13 @@ menu label[for="burger"],
     }
   }
 
-  #brand-title img {
+  header a img {
     margin: 0.5rem 0.8rem 0.5rem 0.6rem;
     width: 35px;
     height: 35px;
   }
 
-  #brand-title span {
+  header a span {
     padding-top: 4px;
     font-size: var(--f-size-brand-mobile);
   }
@@ -335,7 +335,7 @@ menu label[for="burger"],
     overflow: hidden;
   }
 
-  #nav {
+  header nav {
     display: none;
   }
 
@@ -350,7 +350,7 @@ menu label[for="burger"],
   }
 
   /* Overlay backdrop */
-  #nav::before {
+  header nav::before {
     content: "";
     position: fixed;
     width: 100vw;
@@ -362,12 +362,12 @@ menu label[for="burger"],
   }
 
   /* Show all levels flat on mobile */
-  #nav > ul,
-  #nav > ul li ul {
+  header nav > ul,
+  header nav > ul li ul {
     display: block;
   }
 
-  #nav > ul {
+  header nav > ul {
     position: relative;
     margin: 6.5px 10px 10px 7px;
     padding: 10px;
@@ -379,12 +379,12 @@ menu label[for="burger"],
     -webkit-backdrop-filter: var(--glass-blur);
   }
 
-  #nav > ul > li {
+  header nav > ul > li {
     margin: 5px 0 15px 5px;
     border-bottom: var(--glass-border);
   }
 
-  #nav > ul li ul {
+  header nav > ul li ul {
     position: relative;
     width: 100%;
     top: 100%;
@@ -395,7 +395,7 @@ menu label[for="burger"],
     border: none;
   }
 
-  #nav > ul li ul li a {
+  header nav > ul li ul li a {
     font-size: calc(var(--f-size-m) -0.2rem);
     line-height: var(--lh-s);
     padding: 10px 10px 0px 20px;

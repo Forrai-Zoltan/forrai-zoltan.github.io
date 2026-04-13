@@ -1,10 +1,11 @@
-.sigil {
+svg:has(use[href="/SRC/asset/svg/sigil.svg#sigil"]) {
   font-size: 3.5rem;
   display: block;
   margin: 0 auto;
   margin-block: 2.5rem;
 }
 
-.sigil + :is(h1, h2, h3, h4, h5, h6) {
+svg:has(use[href="/SRC/asset/svg/sigil.svg#sigil"])
+  + :is(h1, h2, h3, h4, h5, h6) {
   margin-top: 0;
 }

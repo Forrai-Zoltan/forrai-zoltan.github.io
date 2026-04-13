@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.emo {
+emo-icon {
   color: var(--c-high-light);
   font-family: var(--ff-jb-mono);
   font-size: 1rem;

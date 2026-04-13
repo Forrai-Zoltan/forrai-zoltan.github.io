@@ -8,6 +8,7 @@
 @import "gradient.css";
 @import "shadow.css"; */
 
+@import url(/SRC/css/global/reset.css) layer(global);
 @import url(/SRC/css/global/base.css) layer(global);
 @import url(/SRC/css/global/typography.css) layer(global);
 @import url(/SRC/css/animation/INDEX.css) layer(global);

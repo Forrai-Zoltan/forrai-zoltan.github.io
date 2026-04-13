@@ -2,20 +2,14 @@ pspotify-p {
   position: relative;
   margin: 0;
   width: 100%;
-
   aspect-ratio: 3/1;
-
   /* Needed for height! */
   flex-shrink: 0;
-
   overflow: hidden;
-
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-
   background-color: light-dark(white, #181818);
   box-shadow: 3px 3px 5px 0px hsla(from var(--black) h s l / 0.3);
-
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -24,26 +18,19 @@ pspotify-p {
   &::after {
     content: "";
     position: absolute;
-
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
     pointer-events: none;
-
     box-shadow: inset 0px -10px 25px -10px var(--spt-shadow-dark),
       inset 0px 15px 20px -10px var(--spt-shadow-darker);
-
     z-index: 1;
   }
 }
 
 pspotify-p a {
   display: block;
-}
-#spotify-light {
-  display: none;
 }
 
 pspotify-p img {
@@ -52,7 +39,33 @@ pspotify-p img {
   display: block;
 }
 
+#spotify-light {
+  display: none;
+}
+
 html.light {
+  pspotify-p {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0)
+      );
+      border-radius: 16px 16px 0 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+  }
+
   #spotify-dark {
     display: none;
   }

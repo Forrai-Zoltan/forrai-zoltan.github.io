@@ -6,13 +6,6 @@ article {
   padding: 2rem min(5rem, 4%);
 }
 
-#brand-title span {
-  line-height: var(--lh-s);
-  font-size: var(--f-size-brand);
-  letter-spacing: 0.05em;
-  hyphens: none;
-}
-
 /* HEADERS */
 
 h1 {
@@ -37,6 +30,7 @@ h6 {
 h1 {
   font-size: var(--base-fs);
   margin-block: var(--mp-s);
+  text-align: center;
 }
 
 h2 {
@@ -93,17 +87,9 @@ em {
 
 /* Classes */
 
-h1.hero {
+body[data-page="home"] h1 {
   color: light-dark(var(--c-purple-d), var(--c-g-65));
-}
-
-.hero a {
-  text-decoration: none;
-  color: light-dark(var(--c-purple-d), var(--c-g-65));
-
-  &:hover {
-    text-decoration: underline dashed 6px;
-  }
+  text-align: left;
 }
 
 h1.small-h1 {
@@ -117,9 +103,3 @@ h1.small-h1 {
 }
 
 /* --------------------------------- */
-
-@media (max-width: 599px) {
-  p {
-    text-align: justify;
-  }
-}

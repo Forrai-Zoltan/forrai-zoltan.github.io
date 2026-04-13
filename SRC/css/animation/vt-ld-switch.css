@@ -1,6 +1,4 @@
-
-
-
+/* View Transition : Light-Dark switch */
 @media (min-width: 600px) {
   @media (prefers-reduced-motion: no-preference) {
     ::view-transition {
@@ -9,7 +7,7 @@
     }
 
     ::view-transition-old(root) {
-      animation-delay: 200ms;
+      animation-delay: 300ms;
     }
     ::view-transition-new(root) {
       animation: circle-in 600ms;

@@ -20,25 +20,14 @@
     <link rel="stylesheet" href="/index.css" />
     <script type="module" src="/index.js"></script>
   </head>
-  <body class="page-home">
+  <body>
     <header>
       <title-bar>
         <a href="/" id="brand-title">
           <img width="30" height="30" src="/favicon.ico" />
           <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
-        <menu>
-          <button
-            class="audio-btn"
-            id="toggleBtn"
-            aria-label="Toggle audio"></button>
-          <toggle-btn title="Theme Toggle">
-            <label class="toggle">
-              <input type="checkbox" id="theme-toggle" />
-              <span class="track"></span>
-              <span class="thumb"></span>
-            </label>
-          </toggle-btn>
+        <menu id="tools">
           <label for="burger">
             <svg width="35" height="35">
               <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
@@ -85,14 +74,14 @@
       </nav>
     </header>
     <main>
-      <main-box class="bgc1 bg1 sheen">
+      <main-box class="bg-base bg-grad-oval sheen center">
         <article>
-          <h1 class="center error">404! Page Not Found</h1>
-          <p class="center">
+          <h1 class="error">404! Page Not Found</h1>
+          <p>
             The page you are looking for has been moved, cancelled, or never
             existed.
           </p>
-          <p class="center">
+          <p>
             <a href="/">Home</a> — <a href="/tavern/contact">Contact</a> —
             <a href="/faq">FAQ</a> — <a href="/legal">Legal</a>
           </p>

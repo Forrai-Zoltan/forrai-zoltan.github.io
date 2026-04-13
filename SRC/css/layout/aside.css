@@ -36,11 +36,12 @@ main > aside > footer {
 }
 
 /* about */
-body.page-about {
+body[data-page="about"] {
   main > aside > footer {
     padding: 15px 0;
     position: relative;
     background: var(--grad-foot-green-rad);
+    text-align: center;
   }
 
   main > aside {
@@ -84,7 +85,7 @@ body.page-about {
 }
 
 /* home */
-body.page-home {
+body[data-page="home"] {
   main > aside > footer {
     justify-content: space-between;
     background: var(--grad-foot-green-rad);
@@ -133,5 +134,27 @@ body.page-home {
 html.light {
   aside > img {
     filter: brightness(1.2) contrast(0.8) sepia(0.1) hue-rotate(240deg);
+  }
+
+  aside > footer {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0)
+      );
+      border-radius: 16px 16px 0 0;
+      pointer-events: none;
+      z-index: 2;
+    }
   }
 }

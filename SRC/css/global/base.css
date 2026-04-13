@@ -1,76 +1,19 @@
-/* RESET */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-img,
-picture,
-video,
-canvas {
-  display: block;
-  max-width: 100%;
-}
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-  line-height: var(--lh-s);
-  overflow-wrap: break-word;
-}
-p {
-  overflow-wrap: break-word;
-}
-button {
-  appearance: none;
-  -webkit-appearance: none;
-  margin: 0;
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-  outline: none;
-  box-shadow: none;
-}
-
 /* BASE STYLES */
 :root {
   scrollbar-width: thin;
 }
-
 ::-webkit-scrollbar {
   width: 4px;
 }
-
 ::-webkit-scrollbar-track {
   background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
   border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  &:hover {
+    background: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  }
 }
 
 html {
@@ -88,12 +31,12 @@ html {
 body {
   font-family: var(--ff-lit);
   margin-top: var(--body-margin-top);
-  height: calc(100vh - var(--body-margin-top));
+  min-height: calc(100vh - var(--body-margin-top));
   line-height: var(--lh-m);
 }
 
 main {
-  min-height: 100%;
+  min-height: calc(100vh - var(--body-margin-top));
   padding: 0 9px 9px 9px;
   display: flex;
   gap: 9px;
@@ -104,9 +47,13 @@ main-box {
   width: 100%;
   border-radius: var(--br-l);
   border: var(--glass-border);
-
   min-height: 20px;
   min-width: 20px;
+}
+
+p {
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 a:not(h1 a) {
@@ -129,7 +76,7 @@ a:not(h1 a) {
   }
 }
 
-a:not(.note a, deck-section a, [href^="/"], [href^="#"], :has(img))::after {
+a:not([href^="/"], [href^="#"], :has(img))::after {
   content: "";
   display: inline-block;
   width: 0.75em;
@@ -151,11 +98,6 @@ html.light {
 }
 
 @media (max-width: 660px) {
-  p {
-    text-wrap: pretty;
-    text-wrap: balance;
-  }
-
   body {
     min-height: calc(100vh - var(--body-margin-top-mobile));
     margin-top: var(--body-margin-top-mobile);

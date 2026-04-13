@@ -13,33 +13,24 @@ gallery-row {
   direction: ltr;
   overscroll-behavior: contain;
   z-index: var(--z-raised);
-}
 
-@media (max-width: 660px) {
-  gallery-row {
-    border-radius: 5px;
-    gap: 2px;
-    max-height: 100vw !important;
-    padding-bottom: 5px;
+  /* Scrollbars */
+  &::-webkit-scrollbar {
+    width: 2px;
   }
-}
 
-/* Scrollbar */
-gallery-row::-webkit-scrollbar {
-  width: 2px;
-}
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-gallery-row::-webkit-scrollbar-track {
-  background: transparent;
-}
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
 
-gallery-row::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
-}
-
-gallery-row::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
 }
 
 /* Gallery Images */
@@ -52,10 +43,10 @@ gallery-row img {
   display: block;
   cursor: pointer;
   outline: 1px solid transparent;
-}
 
-gallery-row img:hover {
-  outline: var(--glass-border-b);
+  &:hover {
+    outline: var(--glass-border-b);
+  }
 }
 
 /* Scroll Stop */
@@ -73,6 +64,30 @@ body:has(.zoom-overlay) {
   justify-content: center;
   flex-direction: row;
   z-index: 9999;
+
+  /* Overlay Spacers and Caption */
+  &::before {
+    content: "";
+    flex: 1;
+    padding: 0 20px 0 20px;
+    position: relative;
+    top: 5vh;
+  }
+
+  &::after {
+    content: attr(data-caption);
+    flex: 1;
+    position: relative;
+    top: 5vh;
+    align-self: flex-start;
+    text-align: justify;
+    padding: 0 20px 200px 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+    font-size: var(--f-size-m);
+    line-height: var(--lh-n);
+    color: var(--off-white);
+  }
 }
 
 .zoom-overlay img {
@@ -80,30 +95,6 @@ body:has(.zoom-overlay) {
   max-height: 90vh;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Overlay Spacers and Caption */
-.zoom-overlay::before {
-  content: "";
-  flex: 1;
-  padding: 0 20px 0 20px;
-  position: relative;
-  top: 5vh;
-}
-
-.zoom-overlay::after {
-  content: attr(data-caption);
-  flex: 1;
-  position: relative;
-  top: 5vh;
-  align-self: flex-start;
-  text-align: justify;
-  padding: 0 20px 200px 20px;
-  max-height: 90vh;
-  overflow-y: auto;
-  font-size: var(--f-size-m);
-  line-height: var(--lh-n);
-  color: var(--off-white);
 }
 
 /* Responsive Overlay */
@@ -128,5 +119,14 @@ body:has(.zoom-overlay) {
 
   .zoom-overlay::before {
     display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  gallery-row {
+    border-radius: 5px;
+    gap: 2px;
+    max-height: 100vw !important;
+    padding-bottom: 5px;
   }
 }
