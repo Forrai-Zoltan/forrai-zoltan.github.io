@@ -58,7 +58,7 @@
       </div>
       <menu>
         <a
-          class="hun-trans"
+          id="hun-trans"
           hreflang="hu"
           lang="hu"
           aria-label="Magyar verzió"
@@ -232,7 +232,7 @@
       <!--  -->
       <footer>
         <span class="center">
-          <span>Reach out:</span>
+          <span>Get in touch:</span>
           <a href="mailto:zoltan.forrai@gildrom.com">
             <span>zoltan.forrai@gildrom.com</span>
           </a>
@@ -250,16 +250,7 @@
     <img width="100" height="100" id="f5" src="/SRC/asset/icon/fp5.webp" />
   </body>
   <script>
-    document.querySelectorAll("summary").forEach((el) => {
-      el.addEventListener("mousedown", (e) => {
-        if (e.detail > 1) {
-          // double-click or more
-          e.preventDefault(); // prevents text selection
-        }
-      });
-    });
-
-    document.querySelector("a.hun-trans").addEventListener("click", (e) => {
+    document.querySelector("a#hun-trans").addEventListener("click", (e) => {
       e.preventDefault();
       location.replace(e.currentTarget.href);
     });

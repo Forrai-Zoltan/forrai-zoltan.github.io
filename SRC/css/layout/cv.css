@@ -99,8 +99,6 @@ menu {
   top: 0;
   bottom: 0;
   z-index: 10;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
 }
 
 menu a {
@@ -387,12 +385,18 @@ html.light {
 @media (max-width: 1000px) {
   header {
     padding-top: 50px;
+    padding-top: 5px;
+  }
+
+  header div {
+    flex-direction: column;
   }
 
   menu {
-    width: 100%;
     display: flex;
     justify-content: end;
+    align-items: start;
+    padding-top: 10px;
   }
 
   details {
@@ -405,6 +409,20 @@ html.light {
 
   skills-section > ul {
     padding-left: 0px;
+  }
+
+  .example {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .example a:not(:has(img)) {
+    flex: none;
+    aspect-ratio: 5/1;
+  }
+
+  article {
+    margin-top: 50px;
   }
 }
 

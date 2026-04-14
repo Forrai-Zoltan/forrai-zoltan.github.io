@@ -1,9 +1,11 @@
-article {
+article,
+faq-container {
   font-size: var(--f-size-m);
   box-sizing: content-box; /* To make the text itself 70ch */
   max-inline-size: 70ch;
   margin-inline: auto;
   padding: 2rem min(5rem, 4%);
+  display: block;
 }
 
 /* HEADERS */
@@ -77,6 +79,15 @@ summary {
   &::marker {
     color: var(--c-high-light);
   }
+}
+
+faq-container {
+  padding-top: 0;
+}
+
+faq-container details {
+  background-color: light-dark(var(--c-g-40), var(--c-g-20));
+  border-radius: 2px  5px 5px 2px;
 }
 
 /* inline */

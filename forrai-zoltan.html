@@ -56,7 +56,7 @@
       </div>
       <menu>
         <a
-          class="eng-trans"
+          id="eng-trans"
           hreflang="en"
           lang="en"
           aria-label="Magyar verzió"
@@ -246,16 +246,7 @@
     <img width="100" height="100" id="f5" src="/SRC/asset/icon/fp5.webp" />
   </body>
   <script>
-    document.querySelectorAll("summary").forEach((el) => {
-      el.addEventListener("mousedown", (e) => {
-        if (e.detail > 1) {
-          // double-click or more
-          e.preventDefault(); // prevents text selection
-        }
-      });
-    });
-
-    document.querySelector("a.eng-trans").addEventListener("click", (e) => {
+    document.querySelector("a#eng-trans").addEventListener("click", (e) => {
       e.preventDefault();
       location.replace(e.currentTarget.href);
     });

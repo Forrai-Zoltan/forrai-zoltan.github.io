@@ -36,3 +36,8 @@ if (document.querySelector("gallery-row")) {
 if (document.querySelector(".deck")) {
   await import("/SRC/js/filter.js");
 }
+
+// Summary
+if (document.querySelector("summary")) {
+  await import("/SRC/js/summary.js");
+}
