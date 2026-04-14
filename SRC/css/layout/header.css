@@ -360,7 +360,7 @@ header nav a[href="/beyond/epilogue"]::before {
     display: none;
   }
 
-  #burger:checked ~ #nav {
+  #burger:checked ~ nav {
     display: block;
     position: fixed;
     width: 100%;

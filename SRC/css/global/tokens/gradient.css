@@ -2,21 +2,12 @@
   color-scheme: dark;
 
   /* TITLEBAR */
-  --grad-titlebar: light-dark(
-    linear-gradient(
-      to right,
-      transparent,
-      hsl(from var(--c-purple) h s calc(l + 5)) 1%,
-      hsl(from var(--c-purple) h s calc(l + 5)),
-      transparent
-    ),
-    linear-gradient(
-      to right,
-      transparent,
-      var(--c-purple) 1%,
-      var(--c-purple),
-      transparent
-    )
+  --grad-titlebar: linear-gradient(
+    to right,
+    transparent,
+    light-dark(hsl(from var(--c-purple) h s calc(l + 5)), var(--c-purple)) 1%,
+    light-dark(hsl(from var(--c-purple) h s calc(l + 5)), var(--c-purple)),
+    transparent
   );
 
   --grad-titlebar-mobile: linear-gradient(
@@ -26,34 +17,23 @@
     transparent
   );
 
-  --grad-titlebar-l: light-dark(
-    linear-gradient(
-      to right,
-      transparent,
-      hsl(from var(--c-purple-l) h s calc(l + 10)) 5%,
-      hsl(from var(--c-purple-l) h s calc(l + 10)),
-      transparent
-    ),
-    linear-gradient(
-      to right,
-      transparent,
-      var(--c-purple-l) 5%,
-      var(--c-purple-l),
-      transparent
-    )
+  --grad-titlebar-l: linear-gradient(
+    to right,
+    transparent,
+    light-dark(hsl(from var(--c-purple-l) h s calc(l + 10)), var(--c-purple-l))
+      5%,
+    light-dark(hsl(from var(--c-purple-l) h s calc(l + 10)), var(--c-purple-l)),
+    transparent
   );
 
-  --grad-titlebar-after: light-dark(
-    radial-gradient(
-      ellipse 100% 80% at 25% 0,
-      hsl(from var(--c-purple-l) h s l / 0.4) 0%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse 100% 80% at 25% 0,
-      hsl(from var(--c-purple-l) h s l / 0.8) 0%,
-      transparent 80%
-    )
+  --grad-titlebar-after: radial-gradient(
+    ellipse 100% 80% at 25% 0,
+    light-dark(
+        hsl(from var(--c-purple-l) h s l / 0.4),
+        hsl(from var(--c-purple-l) h s l / 0.8)
+      )
+      0%,
+    transparent 80%
   );
 
   /* NAV */
@@ -69,19 +49,22 @@
     light-dark(transparent, black)
   );
 
-  --grad-nav-dropdown: light-dark(
-    radial-gradient(
-      ellipse 280% 80% at top left,
+  --grad-nav-dropdown: radial-gradient(
+    ellipse 280% 80% at top left,
+    light-dark(
       hsla(from var(--c-purple) h s calc(l + 40) / 0.8),
-      hsla(from var(--c-g-20) h s l / 0.5),
-      hsla(from var(--c-g-20) h s l / 0.5),
-      hsla(from var(--c-g-20) h s l / 0.4)
+      hsla(from var(--c-purple) h s l / 0.8)
     ),
-    radial-gradient(
-      ellipse 285% 100% at top left,
-      hsla(from var(--c-purple) h s l / 0.8),
-      hsla(from var(--c-g-10) h s l / 0.6),
-      hsla(from var(--c-g-10) h s l / 0.6),
+    light-dark(
+      hsla(from var(--c-g-20) h s l / 0.5),
+      hsla(from var(--c-g-10) h s l / 0.6)
+    ),
+    light-dark(
+      hsla(from var(--c-g-20) h s l / 0.5),
+      hsla(from var(--c-g-10) h s l / 0.6)
+    ),
+    light-dark(
+      hsla(from var(--c-g-20) h s l / 0.4),
       hsla(from var(--c-g-10) h s l / 0.7)
     )
   );
@@ -96,18 +79,15 @@
 
   /* --- */
 
-  --grad-mb-purple-rad: light-dark(
-    radial-gradient(
-      ellipse 80% 170% at top,
-      white,
-      transparent 20%,
-      hsla(from var(--c-purple) h s calc(l + 5) / 0.6) 85%
-    ),
-    radial-gradient(
-      ellipse 80% 170% at top,
-      transparent 40%,
-      hsla(from var(--c-purple) h s l / 0.9) 85%
-    )
+  --grad-mb-purple-rad: radial-gradient(
+    ellipse 80% 170% at top,
+    light-dark(white, transparent),
+    light-dark(transparent, transparent) 40%,
+    light-dark(
+        hsla(from var(--c-purple) h s calc(l + 5) / 0.6),
+        hsla(from var(--c-purple) h s l / 0.9)
+      )
+      85%
   );
 
   --mb-purple-long: linear-gradient(
@@ -128,18 +108,15 @@
         transparent 12%
       );
 
-  --grad-foot-green-rad: light-dark(
-    radial-gradient(
-      circle at top,
-      white,
-      transparent 20%,
-      hsla(from var(--c-blue) h s l / 0.6) 90%
-    ),
-    radial-gradient(
-      circle at top,
-      transparent 30%,
-      hsla(from var(--c-green) h s l / 1) 90%
-    )
+  --grad-foot-green-rad: radial-gradient(
+    circle at top,
+    light-dark(white, transparent),
+    light-dark(transparent, transparent) 30%,
+    light-dark(
+        hsla(from var(--c-blue) h s l / 0.6),
+        hsla(from var(--c-green) h s l / 1)
+      )
+      90%
   );
 
   /* ----------------------------- */
@@ -156,6 +133,12 @@
     hsl(from var(--c-purple-l) h s calc(l + 10)),
     hsl(from var(--c-purple) h s calc(l + 10)),
     var(--c-purple-d) 90%
+  );
+
+  --grad-card: linear-gradient(
+    to bottom,
+    light-dark(hsl(from var(--c-blue) h s calc(l + 30) / 0.5), hsl(0, 0%, 6%)),
+    light-dark(hsl(from var(--c-blue) h s calc(l + 50) / 0.8), hsl(0, 0%, 9%))
   );
 }
 

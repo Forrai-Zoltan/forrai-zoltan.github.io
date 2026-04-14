@@ -49,6 +49,10 @@ gallery-row img {
   }
 }
 
+html.light gallery-row img {
+  filter: brightness(1.2) contrast(0.8);
+}
+
 /* Scroll Stop */
 body:has(.zoom-overlay) {
   overflow: hidden;

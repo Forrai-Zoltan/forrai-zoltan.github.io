@@ -66,6 +66,16 @@ ol li::marker {
   color: var(--c-high-light);
 }
 
+faq-container {
+  padding-top: 0;
+}
+
+faq-container details {
+  background-color: light-dark(var(--c-g-40), var(--c-g-15));
+  border-radius: 10px;
+  border: var(--glass-border);
+}
+
 details {
   border-left: 2px solid var(--c-high-light);
   padding-left: 20px;
@@ -79,15 +89,6 @@ summary {
   &::marker {
     color: var(--c-high-light);
   }
-}
-
-faq-container {
-  padding-top: 0;
-}
-
-faq-container details {
-  background-color: light-dark(var(--c-g-40), var(--c-g-20));
-  border-radius: 2px  5px 5px 2px;
 }
 
 /* inline */

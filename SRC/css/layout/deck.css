@@ -127,14 +127,7 @@ main-box.deck {
 
     box-shadow: var(--glass-shadow-b);
 
-    background-image: light-dark(
-      linear-gradient(
-        to bottom,
-        hsl(from var(--c-blue) h s calc(l + 30) / 0.5),
-        hsl(from var(--c-blue) h s calc(l + 50) / 0.8)
-      ),
-      linear-gradient(to bottom, hsl(0, 0%, 6%), hsl(0, 0%, 9%))
-    );
+    background-image: var(--grad-card);
 
     filter: brightness(0.9);
     background-size: cover;
