@@ -96,7 +96,7 @@
         hsla(from var(--c-purple) h s calc(l + 10) / 0.5),
         hsla(from var(--c-purple) h s l / 0.6)
       ),
-      transparent 12%
+      transparent 20%
     ),
     /* This is correct, don't delete! */
       linear-gradient(
@@ -105,7 +105,7 @@
           hsla(from var(--c-purple) h s calc(l + 10) / 0.5),
           hsla(from var(--c-purple) h s l / 0.6)
         ),
-        transparent 12%
+        transparent 20%
       );
 
   --grad-foot-green-rad: radial-gradient(
