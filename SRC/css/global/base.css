@@ -76,7 +76,7 @@ a:not(h1 a) {
   }
 }
 
-a:not([href^="/"], [href^="#"], :has(img))::after {
+a:not([href^="/"], deck-section a, [href^="#"], :has(img))::after {
   content: "";
   display: inline-block;
   width: 0.75em;

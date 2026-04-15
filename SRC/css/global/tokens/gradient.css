@@ -27,9 +27,9 @@
   );
 
   --grad-titlebar-after: radial-gradient(
-    ellipse 100% 80% at 25% 0,
+    ellipse 100% 80% at 20% 0,
     light-dark(
-        hsl(from var(--c-purple-l) h s l / 0.4),
+        hsl(from var(--c-purple-l) h s calc(l + 5) / 0.4),
         hsl(from var(--c-purple-l) h s l / 0.8)
       )
       0%,

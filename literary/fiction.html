@@ -4,50 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiction・gildrom.com</title>
-    <script>
-      (function () {
-        const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        const isDark = saved ? saved === "dark" : prefersDark;
-        const html = document.documentElement;
-        html.classList.add(isDark ? "dark" : "light");
-        html.classList.remove(isDark ? "light" : "dark");
-      })();
-    </script>
     <link rel="icon" type="image/png" href="/favicon.ico" />
-    <link rel="stylesheet" href="/index.css" />
+    <script>(function () {
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const isDark = saved ? saved === "dark" : prefersDark;
+      const html = document.documentElement;
+      html.classList.add(isDark ? "dark" : "light");
+      html.classList.remove(isDark ? "light" : "dark");
+    })();</script>
     <script type="module" src="/index.js"></script>
+    <link rel="stylesheet" href="/index.css" />
   </head>
-  <body class="page-home">
+  <body>
     <header>
       <title-bar>
-        <a href="/" id="brand-title">
+        <a href="/">
           <img width="30" height="30" src="/favicon.ico" />
           <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
-        <menu>
-          <button
-            class="audio-btn"
-            id="toggleBtn"
-            aria-label="Toggle audio"></button>
-          <toggle-btn title="Theme Toggle">
-            <label class="toggle">
-              <input type="checkbox" id="theme-toggle" />
-              <span class="track"></span>
-              <span class="thumb"></span>
-            </label>
-          </toggle-btn>
-          <label for="burger">
-            <svg width="35" height="35">
-              <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
-            </svg>
-          </label>
-        </menu>
       </title-bar>
-      <input type="checkbox" id="burger" />
-      <nav id="nav">
+      <nav>
         <ul>
           <li tabindex="0" data-icon="personal">
             <b>Personal</b>
@@ -85,7 +62,7 @@
       </nav>
     </header>
     <main>
-      <main-box class="deck bg1">
+      <main-box class="deck bg-grad-oval">
         <form>
           <search>
             <input

@@ -1,11 +1,4 @@
-(function () {
-  const saved = localStorage.getItem("theme");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const isDark = saved ? saved === "dark" : prefersDark;
-  const html = document.documentElement;
-  html.classList.add(isDark ? "dark" : "light");
-  html.classList.remove(isDark ? "light" : "dark");
-})();
+
 
 // Menu html inset
 if (document.querySelector("title-bar")) {
