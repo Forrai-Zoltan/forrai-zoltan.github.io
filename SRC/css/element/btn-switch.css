@@ -1,21 +1,23 @@
 toggle-btn {
   display: grid;
   align-items: center;
+  width: 56px;
+
 }
 
-toggle-btn .toggle {
+toggle-btn label {
   position: relative;
   width: 56px;
   height: 28px;
   cursor: pointer;
 }
 
-toggle-btn .toggle input {
+toggle-btn label input {
   position: absolute;
   display: none;
 }
 
-toggle-btn .track {
+toggle-btn theme-track {
   inset: 0;
   position: absolute;
   border-radius: 28px;
@@ -25,7 +27,7 @@ toggle-btn .track {
   box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.2);
 }
 
-toggle-btn .thumb {
+toggle-btn theme-thumb {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -43,12 +45,12 @@ toggle-btn .thumb {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon-moon' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E");
 }
 
-toggle-btn .toggle.no-transition .thumb,
-toggle-btn .toggle.no-transition .track {
+toggle-btn label.no-transition theme-thumb,
+toggle-btn label.no-transition theme-track {
   transition: none;
 }
 
-html.light toggle-btn .thumb {
+html.light toggle-btn theme-thumb {
   transform: translateX(28px);
   background-size: 14px;
   background-position: center;

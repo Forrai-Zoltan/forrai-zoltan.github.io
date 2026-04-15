@@ -4,7 +4,7 @@ if (document.querySelector("title-bar")) {
 }
 
 // Audio Toggle
-if (document.querySelector(".audio-btn")) {
+if (document.getElementById("toggleBtn")) {
   await import("/SRC/js/audio.js");
 }
 

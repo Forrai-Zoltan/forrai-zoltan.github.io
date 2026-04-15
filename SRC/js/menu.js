@@ -7,13 +7,9 @@ if (titleBar) {
   menu.insertAdjacentHTML(
     "afterbegin",
     `
-    <button class="audio-btn" id="toggleBtn" aria-label="Toggle audio"></button>
-    <toggle-btn title="Theme Toggle">
-      <label class="toggle">
-        <input type="checkbox" id="theme-toggle" />
-        <span class="track"></span>
-        <span class="thumb"></span>
-      </label>
+    <button  id="toggleBtn" aria-label="Toggle audio"></button>
+    <toggle-btn>
+
     </toggle-btn>
   `
   );

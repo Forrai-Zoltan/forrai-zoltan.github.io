@@ -2,9 +2,20 @@ import { playPop } from "./audio.js";
 
 /* COLOR SWITCHER */
 const html = document.documentElement;
-const toggle = document.getElementById("theme-toggle");
+const toggle = document.querySelector("toggle-btn");
 toggle.checked = !html.classList.contains("dark");
 const key = "theme";
+
+toggle.insertAdjacentHTML(
+  "afterbegin",
+  `
+    <label>
+      <input type="checkbox" />
+      <theme-track></theme-track>
+      <theme-thumb></theme-thumb>
+    </label>
+`
+);
 
 const updateTheme = (isDark) => {
   html.classList.toggle("dark", isDark);
@@ -21,7 +32,11 @@ const transitionTheme = (isDark) => {
   document.startViewTransition(() => updateTheme(isDark));
 };
 
-toggle.onclick = () => transitionTheme(html.classList.contains("light"));
+toggle.onclick = () => {
+  const isDark = html.classList.contains("light");
+  transitionTheme(isDark);
+  playPop(!isDark);
+};
 
 /* KEYBOARD SHORTCUT */
 document.addEventListener("keydown", (e) => {

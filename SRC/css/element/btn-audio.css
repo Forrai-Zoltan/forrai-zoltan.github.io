@@ -1,4 +1,4 @@
-.audio-btn {
+#toggleBtn {
   position: relative;
   margin-right: 5px;
   width: 25px;
@@ -36,7 +36,7 @@
   }
 }
 
-.audio-btn.muted::after {
+#toggleBtn.muted::after {
   mask-image: var(--icon-off);
   -webkit-mask-image: var(--icon-off);
 }
