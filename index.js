@@ -1,5 +1,3 @@
-
-
 // Menu html inset
 if (document.querySelector("title-bar")) {
   await import("/SRC/js/menu.js");
@@ -20,8 +18,11 @@ if (document.querySelector("pspotify-p")) {
   await import("/SRC/js/spotify.js");
 }
 
-// Gallery
-if (document.querySelector("gallery-row")) {
+//Zoom
+if (
+  document.querySelector("tweet-timeline") ||
+  document.querySelector("gallery-row")
+) {
   await import("/SRC/js/zoom.js");
 }
 

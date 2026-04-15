@@ -84,10 +84,11 @@ body:has(.zoom-overlay) {
     position: relative;
     top: 5vh;
     align-self: flex-start;
-    text-align: justify;
+
     padding: 0 20px 200px 20px;
     max-height: 90vh;
     overflow-y: auto;
+    font-family: "Courier New", Courier, monospace;
     font-size: var(--f-size-m);
     line-height: var(--lh-n);
     color: var(--off-white);

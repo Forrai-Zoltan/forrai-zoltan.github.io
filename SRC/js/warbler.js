@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const savedHearts = JSON.parse(localStorage.getItem("heartStates") || "{}");
-
   document.querySelectorAll("status-update").forEach((update, index) => {
     const uniqueId = `heart-${index}`;
     const html = `
@@ -26,12 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
       </interaction-row>
     `;
     update.insertAdjacentHTML("beforeend", html);
-
     const checkbox = document.getElementById(uniqueId);
     if (savedHearts[uniqueId]) {
       checkbox.checked = true;
     }
-
     checkbox.addEventListener("change", () => {
       const heartStates = JSON.parse(
         localStorage.getItem("heartStates") || "{}"
@@ -52,31 +49,57 @@ window.addEventListener("load", () => {
   );
   if (!firstPost) return;
 
-  const style = getComputedStyle(firstPost);
-  const marginTop = parseFloat(style.marginTop);
-  const marginBottom = parseFloat(style.marginBottom);
+  const STORAGE_KEY = "last_seen_status";
+  const currentDatetime = firstPost.getAttribute("datetime");
+  const lastSeen = localStorage.getItem(STORAGE_KEY);
+  const isNew = lastSeen !== currentDatetime;
 
-  const fullHeight = firstPost.offsetHeight + marginTop + marginBottom;
+  if (isNew) {
+    localStorage.setItem(STORAGE_KEY, currentDatetime);
 
-  document.documentElement.style.setProperty(
-    "--first-post-height",
-    `-${fullHeight}px`
-  );
-});
+    const styleTag = document.createElement("style");
+    styleTag.textContent = `
+      status-update:first-of-type {
+        opacity: 0;
+        transform: translateY(var(--first-post-height));
+        animation: fadeIn 0.5s forwards 1s;
+        margin-bottom: var(--first-post-height);
+      }
 
-window.addEventListener("load", () => {
-  // Respect the mute preference set by the audio toggle button.
-  const muted = localStorage.getItem("audioMuted") === "true";
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(var(--first-post-height));
+          margin-bottom: var(--first-post-height);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+          margin-bottom: 0;
+        }
+      }
+    `;
+    document.head.appendChild(styleTag);
 
-  const audio = new Audio("/SRC/asset/sound/tweet.mp3");
-  audio.preload = "auto";
-  audio.volume = 0.2;
-  audio.load();
+    const style = getComputedStyle(firstPost);
+    const marginTop = parseFloat(style.marginTop);
+    const marginBottom = parseFloat(style.marginBottom);
+    const fullHeight = firstPost.offsetHeight + marginTop + marginBottom;
+    document.documentElement.style.setProperty(
+      "--first-post-height",
+      `-${fullHeight}px`
+    );
 
-  setTimeout(() => {
-    if (!muted) {
-      audio.currentTime = 0;
-      audio.play();
-    }
-  }, 0);
+    const muted = localStorage.getItem("audioMuted") === "true";
+    const audio = new Audio("/SRC/asset/sound/tweet.mp3");
+    audio.preload = "auto";
+    audio.volume = 0.2;
+    audio.load();
+    setTimeout(() => {
+      if (!muted) {
+        audio.currentTime = 0;
+        audio.play();
+      }
+    }, 0);
+  }
 });
