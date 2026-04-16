@@ -1,15 +1,16 @@
 body[data-page="contact"] main-box {
   padding: 40px 10px 0 10px;
 }
+
 thanks-background a[href^="#"]:not(:has(img))::before {
   content: "";
 }
 thanks-background a {
-  color: var(--off-white) !important;
+  color: var(--c-text);
   text-decoration: none !important;
 }
 thanks-background a:hover {
-  color: white !important;
+  color: orangered;
 }
 
 thanks-background {
@@ -25,7 +26,6 @@ thanks-background:has(thanks-section:target) {
   top: 0;
   left: 0;
   z-index: 10000;
-  border-radius: 15px;
   pointer-events: auto !important;
 }
 
@@ -36,19 +36,17 @@ thanks-background:has(thanks-section:target) > a {
 }
 
 thanks-section {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px 10px 20px 20px;
+  border: var(--glass-border);
+  border-radius: 15px 15px 20px 20px;
   overflow: hidden;
   position: fixed;
   top: 13%;
   left: 50%;
   transform: translate(-50%, 0);
-  background: rgba(0, 0, 0, 0.85);
+  background: var(--c-page);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: inset 0px -10px 25px -11px rgba(0, 0, 0, 0.8),
-    0px 15px 19px 2px rgba(0, 0, 0, 0.5),
-    inset 0px 15px 20px -10px rgba(0, 0, 0, 0.8);
+  box-shadow: var(--glass-shadow);
   padding: 10px;
   padding-top: 0;
   max-width: 90%;
@@ -56,7 +54,7 @@ thanks-section {
   text-align: center;
   z-index: 1000;
   font-size: 2.8rem;
-  color: white;
+  color: var(--c-text);
 }
 
 thanks-section:target {
@@ -65,10 +63,12 @@ thanks-section:target {
 }
 
 thanks-section div {
-  padding-block: 15px;
+  padding-block: 10px 5px;
   font-weight: bold;
   margin-inline: 20px;
-  font-family: var(--font-mono);
+  font-family: var(--ff-jb-mono);
+  color: light-dark(hsl(120, 80%, 35%), hsl(120, 99%, 40%));
+
 }
 
 thanks-section img {
@@ -78,12 +78,12 @@ thanks-section img {
 
 thanks-section a {
   position: absolute;
-  top: 0rem;
+  top: -0.6rem;
   right: 0.6rem;
   cursor: pointer;
   width: 30px;
   height: 34px;
-  scale: 0.7;
+  scale: 1;
 }
 
 body:has(thanks-section:target) > *:not(thanks-section) {
@@ -135,7 +135,7 @@ fieldset {
 
 input,
 textarea {
-  color: var(--off-white);
+  color: var(--c-text);
   border: 1px solid light-dark(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 100%, 0.2));
   box-shadow: inset 0 0 5px 5px
       light-dark(rgba(255, 255, 255, 0.2), hsla(0, 0%, 10%, 1)),
@@ -268,7 +268,7 @@ div#drop-zone {
 }
 
 .drop-zone-thumb.selected {
-  outline: 2px dashed  light-dark(var(--c-g-55), var(--c-g-40));
+  outline: 2px dashed light-dark(var(--c-g-55), var(--c-g-40));
   outline-offset: 4px;
 }
 
@@ -303,10 +303,10 @@ form textarea {
 }
 
 form label svg {
-  color: grey;
+  color: light-dark(var(--c-g-55), var(--c-g-40));
 }
 form label svg:hover {
-  color: var(--off-white);
+  color: light-dark(var(--c-g-75), var(--c-g-60));
   cursor: pointer;
 }
 
