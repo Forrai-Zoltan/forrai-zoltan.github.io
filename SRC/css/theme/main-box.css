@@ -16,7 +16,7 @@ main-box.long {
 
 /* Always at the bottom!! */
 main-box.bg-base {
-  background-color: var(--c-main-box-bg);
+  background-color: var(--c-page);
 }
 
 html.light main-box {

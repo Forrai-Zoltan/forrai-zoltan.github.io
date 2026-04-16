@@ -58,12 +58,12 @@ h3 {
 
 ul li::marker {
   content: "◈ ";
-  color: var(--c-high-light);
+  color: var(--c-highlight);
 }
 ol li::marker {
   font-family: var(--ff-type);
   font-size: 1.3rem;
-  color: var(--c-high-light);
+  color: var(--c-highlight);
 }
 
 faq-container {
@@ -77,7 +77,7 @@ faq-container details {
 }
 
 details {
-  border-left: 2px solid var(--c-high-light);
+  border-left: 2px solid var(--c-highlight);
   padding-left: 20px;
   margin-top: 20px;
 }
@@ -87,7 +87,7 @@ summary {
   font-weight: bold;
 
   &::marker {
-    color: var(--c-high-light);
+    color: var(--c-highlight);
   }
 }
 

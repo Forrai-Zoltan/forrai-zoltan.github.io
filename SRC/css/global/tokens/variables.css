@@ -18,18 +18,6 @@
     light-dark(hsla(0, 0%, 20%, 0.2), hsla(0, 0%, 100%, 0.2));
   --glass-border-b: 1px solid
     light-dark(hsla(0, 0%, 0%, 0.65), hsla(0, 0%, 100%, 0.4));
-
-  --color-page: light-dark(#cccccc, #121212);
-  --color-text: light-dark(#121212, #cccccc);
-  --color-link: light-dark(hsl(210, 100%, 40%), hsl(210, 100%, 55%));
-  --color-link-l: hsl(from var(--color-link) h s calc(l + 10));
-  --color-link-d: hsl(from var(--color-link) h s calc(l - 10));
-
-  --grey: light-dark(hsl(0, 0%, 55%), hsl(0, 0%, 25%));
-
-  --font-typewriter: "special-elite";
-  --font-mono: "departure-mono";
-  --font-size: 22px;
 }
 
 :root.light {

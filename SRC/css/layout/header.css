@@ -226,7 +226,7 @@ header nav a {
   max-width: 100%;
   height: 100%;
   text-decoration: none;
-  color: var(--c-text-a-hid);
+  color: var(--c-text);
 }
 
 header nav a::before,
@@ -310,7 +310,7 @@ header nav a[href="/beyond/epilogue"]::before {
     margin-right: 5px;
   }
 
-  .audio-btn {
+  #toggleBtn {
     display: none;
   }
 

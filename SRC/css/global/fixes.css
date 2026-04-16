@@ -1,7 +1,8 @@
 @media (min-width: 600px) {
   /* MacOS text display. */
   @supports (-webkit-font-smoothing: antialiased) {
-    header a span {
+    header a span,
+    form label svg {
       transform: translateY(4px);
     }
 

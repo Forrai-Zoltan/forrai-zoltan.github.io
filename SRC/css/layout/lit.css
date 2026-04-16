@@ -4,19 +4,6 @@
 @import url(/SRC/css/element/btn-audio.css);
 @import url(/SRC/css/element/btn-switch.css);
 
-:root {
-  --color-page: light-dark(#cccccc, #121212);
-  --color-text: light-dark(#121212, #cccccc);
-  --color-text-d: oklch(from var(--color-text) 50% c h);
-  --color-link: hsl(210, 70%, 50%);
-  --color-link-l: oklch(from var(--color-link) 70% c h);
-  --color-link-d: oklch(from var(--color-link) 40% c h);
-  --font-mono: 12pt "departure-mono";
-  --font-size: 15pt;
-  --line-height: 1.5;
-  --page-width: 70ch;
-}
-
 ::-webkit-scrollbar {
   width: 2px;
 }
@@ -32,8 +19,8 @@
 }
 
 ::selection {
-  background-color: var(--color-text);
-  color: var(--color-page);
+  background-color: var(--c-text);
+  color: var(--c-page);
 }
 
 :focus-visible {
@@ -51,12 +38,12 @@
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-page);
-  color: var(--color-text);
+  background-color: var(--c-page);
+  color: var(--c-text);
   font-size: var(--font-size);
   line-height: var(--line-height);
   padding: 10px;
-  scrollbar-color: var(--color-text) transparent;
+  scrollbar-color: var(--c-text) transparent;
   scrollbar-width: thin;
 }
 
@@ -67,13 +54,13 @@ body {
 
 header {
   ul {
-    color: var(--color-text-d);
+    color: var(--c-text-d);
     font: var(--font-mono);
     list-style: none;
 
     *::selection {
-      background-color: var(--color-text-d);
-      color: var(--color-page);
+      background-color: var(--c-text-d);
+      color: var(--c-page);
     }
 
     &::before,
@@ -93,12 +80,8 @@ header menu {
   position: fixed;
   align-items: center;
   gap: 10px;
-  right: 0;
-  top: 8px;
-}
-
-menu toggle-btn {
-  margin-right: 15px;
+  top: 8.5px;
+  right: 15px;
 }
 
 header ul li mark {
@@ -157,21 +140,21 @@ header ul li mark {
 }
 
 header ul li:not(:has(mark)) a {
-  color: var(--color-link);
+  color: var(--c-text-a);
   border-radius: 10px;
 
   &::selection {
-    color: var(--color-link);
+    color: var(--c-text-a);
   }
 
   &:hover,
   &:hover::selection {
-    color: var(--color-link-l);
+    color: var(--c-text-a-hov);
   }
 
   &:active,
   &:active::selection {
-    color: var(--color-link-d);
+    color: var(--c-text-a-act);
   }
 }
 
@@ -185,7 +168,7 @@ img {
 }
 
 h1 {
-  background-color: var(--color-page);
+  background-color: var(--c-page);
   box-sizing: content-box;
   font-size: clamp(1rem, 8vw, 2rem);
   font-weight: normal;
@@ -252,7 +235,7 @@ hr {
   text-align: center;
 
   &::before {
-    color: var(--color-text-d);
+    color: var(--c-text-d);
     content: "* * *";
     font-size: 1em;
     letter-spacing: 1em;
@@ -260,27 +243,41 @@ hr {
 }
 
 footer {
-  border-top: 1.5px dashed var(--color-text-d);
-  color: var(--color-text-d);
+  border-top: 1.5px dashed var(--c-text-d);
+  color: var(--c-text-d);
   font: var(--font-mono);
-  margin-block: 20% 0;
+  margin-block: 40% 0;
   padding-block: 15px;
   text-align: center;
 
   *::selection {
-    background-color: var(--color-text-d);
-    color: var(--color-page);
+    background-color: var(--c-text-d);
+    color: var(--c-page);
   }
 }
 
 .review {
   color: light-dark(
-    oklch(from var(--color-text-d) 45% c h / 1),
-    oklch(from var(--color-text-d) 65% c h / 1)
+    oklch(from var(--c-text-d) 45% c h / 1),
+    oklch(from var(--c-text-d) 65% c h / 1)
   );
 }
 .review a:any-link {
-  color: var(--color-link);
+  color: var(--c-text-a);
+
+  &::selection {
+    color: var(--c-text-a);
+  }
+
+  &:hover,
+  &:hover::selection {
+    color: var(--c-text-a-hov);
+  }
+
+  &:active,
+  &:active::selection {
+    color: var(--c-text-a-act);
+  }
 }
 
 @media (max-width: 500px) {

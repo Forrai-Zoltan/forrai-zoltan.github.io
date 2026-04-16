@@ -19,7 +19,7 @@ main > aside > footer {
   border: var(--glass-border);
   box-shadow: var(--glass-shadow-b);
 
-  /* background-color: var(--c-main-box-bg); */
+  /* background-color: var(--c-page); */
 }
 
 /* ------------------------------ */
@@ -54,7 +54,7 @@ body[data-page="about"] {
     width: 100%;
     margin-block: 5px 10px;
     font-size: var(--f-size-m);
-    color: var(--c-text-a-hid);
+
   }
 
   main > aside > footer svg {

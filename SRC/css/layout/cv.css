@@ -40,9 +40,9 @@ html {
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-page);
-  color: var(--color-text);
-  font-size: var(--font-size);
+  background-color: var(--c-page);
+  color: var(--c-text);
+  font-size: var(--font-size-cv);
   font-family: "cochin";
   scrollbar-width: thin;
   scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
@@ -61,8 +61,8 @@ article {
   padding-inline: 0.5rem;
   padding-top: 20px;
   backdrop-filter: blur(0.7px);
-  background-color: oklch(from var(--color-page) l c h / 0.7);
-  box-shadow: 0 0 10px 10px oklch(from var(--color-page) l c h / 0.7);
+  background-color: oklch(from var(--c-page) l c h / 0.7);
+  box-shadow: 0 0 10px 10px oklch(from var(--c-page) l c h / 0.7);
   z-index: 2;
 }
 
@@ -79,7 +79,7 @@ header {
   gap: 10px;
   flex-wrap: wrap;
   z-index: 10;
-  background-color: hsla(from var(--color-page) h s l / 1);
+  background-color: hsla(from var(--c-page) h s l / 1);
 }
 
 header div {
@@ -90,13 +90,13 @@ header div {
 }
 
 menu {
-  padding: 5px 10px;
+  padding: 0;
   display: flex;
   position: absolute;
   align-items: center;
   gap: 10px;
-  right: 0;
-  top: 0;
+  top: 8.5px;
+  right: 15px;
   bottom: 0;
   z-index: 10;
 }
@@ -150,20 +150,20 @@ skills-section > ul {
 }
 
 h1 {
-  font-family: var(--font-typewriter);
+  font-family: var(--ff-type);
   font-size: clamp(1.8rem, 12vw, 3.9rem);
   margin: 30px 0 0;
   line-height: normal 1;
 }
 
 h2 {
-  font-family: var(--font-typewriter);
+  font-family: var(--ff-type);
   font-size: clamp(1.5rem, 8vw, 2rem);
   margin: 50px 0 0;
 }
 
 h3 {
-  font-family: var(--font-typewriter);
+  font-family: var(--ff-type);
   font-size: clamp(1.2rem, 6vw, 1.5rem);
   margin: 30px 0 0;
 }
@@ -179,15 +179,15 @@ b {
 }
 
 a {
-  color: var(--color-link);
+  color: var(--c-text-a);
   border-radius: 10px;
 
   &:hover {
-    color: var(--color-link-l);
+    color: var(--c-text-a-hov);
   }
 
   &:active {
-    color: var(--color-link-d);
+    color: var(--c-text-a-act);
   }
 }
 
@@ -219,7 +219,7 @@ em {
 }
 
 .emo {
-  color: var(--c-high-light);
+  color: var(--c-highlight);
   font-family: var(--ff-jb-mono);
   font-size: 0.9rem;
   font-weight: bold;
@@ -319,7 +319,7 @@ footer {
   transition: transform 0.2s ease, filter 0.2s ease;
   overflow: hidden;
   box-shadow: var(--glass-shadow);
-  background-color: var(--color-page);
+  background-color: var(--c-page);
 
   text-transform: uppercase;
   font-weight: bold;

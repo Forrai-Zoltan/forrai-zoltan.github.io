@@ -28,6 +28,14 @@
   --lh-m: 1.7;
   --lh-l: 2;
   --lh-x: 2.5;
+
+  /* Literature */
+  --font-mono: 12pt "departure-mono";
+  --font-size: 15pt;
+  --line-height: 1.5;
+  --page-width: 70ch;
+
+  --font-size-cv: 22px;
 }
 
 :root.light {

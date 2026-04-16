@@ -3,7 +3,7 @@
 }
 
 emo-icon {
-  color: var(--c-high-light);
+  color: var(--c-highlight);
   font-family: var(--ff-jb-mono);
   font-size: 1rem;
   font-weight: bold;
