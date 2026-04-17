@@ -1,11 +1,9 @@
 import { playPop } from "./audio.js";
-
 /* COLOR SWITCHER */
 const html = document.documentElement;
 const toggle = document.querySelector("toggle-btn");
-toggle.checked = !html.classList.contains("dark");
+toggle.checked = html.id !== "dark";
 const key = "theme";
-
 toggle.insertAdjacentHTML(
   "afterbegin",
   `
@@ -16,14 +14,11 @@ toggle.insertAdjacentHTML(
     </label>
 `
 );
-
 const updateTheme = (isDark) => {
-  html.classList.toggle("dark", isDark);
-  html.classList.toggle("light", !isDark);
+  html.id = isDark ? "dark" : "light";
   toggle.checked = !isDark;
   localStorage.setItem(key, isDark ? "dark" : "light");
 };
-
 const transitionTheme = (isDark) => {
   if (!document.startViewTransition) {
     updateTheme(isDark);
@@ -31,13 +26,11 @@ const transitionTheme = (isDark) => {
   }
   document.startViewTransition(() => updateTheme(isDark));
 };
-
 toggle.onclick = () => {
-  const isDark = html.classList.contains("light");
+  const isDark = html.id === "light";
   transitionTheme(isDark);
   playPop(!isDark);
 };
-
 /* KEYBOARD SHORTCUT */
 document.addEventListener("keydown", (e) => {
   const tag = document.activeElement.tagName;
@@ -47,7 +40,7 @@ document.addEventListener("keydown", (e) => {
     tag === "SELECT" ||
     document.activeElement.isContentEditable;
   if (e.key === "t" && !isTyping) {
-    const isDark = html.classList.contains("light");
+    const isDark = html.id === "light";
     transitionTheme(isDark);
     playPop(!isDark);
   }

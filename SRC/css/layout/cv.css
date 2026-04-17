@@ -116,7 +116,7 @@ ul {
 
   li::marker {
     content: "◈ ";
-    color: light-dark(#e87f24, orange);
+    color: var(--c-highlight);
   }
 }
 
@@ -125,7 +125,7 @@ li {
   hyphens: auto;
 }
 
-#education-list ul {
+ul:not(:has(div)) ul {
   border-left: 1.5px solid var(--grey);
   padding-left: 40px;
   margin-left: -14.5px;
@@ -175,7 +175,7 @@ p {
 }
 
 b {
-  color: light-dark(#e87f24, orange);
+  color: var(--c-highlight);
 }
 
 a {
@@ -192,7 +192,7 @@ a {
 }
 
 details {
-  border-left: 1.5px solid light-dark(#e87f24, orange);
+  border-left: 1.5px solid var(--c-highlight);
   padding-left: 15px;
   margin-top: 20px;
   margin-left: 14px;
@@ -202,7 +202,7 @@ summary {
   cursor: pointer;
 
   &::marker {
-    color: light-dark(#e87f24, orange);
+    color: var(--c-highlight);
   }
 }
 
@@ -214,28 +214,12 @@ em {
   font-style: oblique 15deg;
 }
 
-.sigil {
-  margin-block: 1.5rem;
-}
-
-.emo {
-  color: var(--c-highlight);
-  font-family: var(--ff-jb-mono);
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.arrowed {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
 section {
   margin-block: 10px 50px;
   display: flow-root;
 }
 
-.pfp {
+section img {
   width: 40%;
   border-radius: 8px;
   float: left;
@@ -296,7 +280,7 @@ footer {
   opacity: 0.5;
 }
 
-.example {
+ul div {
   display: flex;
   gap: 2px;
   width: 55ch;
@@ -304,7 +288,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.example a {
+ul div a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,14 +316,14 @@ footer {
   }
 }
 
-.example a img {
+ul div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-html.light .example a {
+html#light ul div a {
   position: relative;
 
   &::before {
@@ -361,7 +345,7 @@ html.light .example a {
   }
 }
 
-html.light {
+html#light {
   :is(#f1, #f2, #f3, #f4, #f5) {
     filter: invert(1);
     opacity: 0.5;
@@ -411,12 +395,12 @@ html.light {
     padding-left: 0px;
   }
 
-  .example {
+  ul div {
     flex-direction: column;
     width: 100%;
   }
 
-  .example a:not(:has(img)) {
+  ul div a:not(:has(img)) {
     flex: none;
     aspect-ratio: 5/1;
   }
@@ -441,8 +425,7 @@ html.light {
   }
 
   menu,
-  :is(#f1, #f2, #f3, #f4, #f5),
-  .status {
+  :is(#f1, #f2, #f3, #f4, #f5) {
     display: none;
   }
 }

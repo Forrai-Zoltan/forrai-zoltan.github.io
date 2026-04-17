@@ -1,25 +1,28 @@
-main-box.bg-grad-oval {
+/* bg-grad-oval */
+:is([data-page="404"], [data-page="home"], [data-page="deck"]) main-box {
   background: var(--grad-mb-purple-rad);
   box-shadow: var(--glass-shadow-p);
 }
-
-main-box.long {
+/* long */
+:is([data-page="faq"], [data-page="about"]) main-box {
   background: var(--mb-purple-long);
   box-shadow: var(--glass-shadow-p);
-}
-
-@media (max-width: 661px) {
-  main-box.long {
+  @media (max-width: 661px) {
     background: none;
   }
 }
-
-/* Always at the bottom!! */
-main-box.bg-base {
+/* bg-base */
+:is(
+    [data-page="404"],
+    [data-page="faq"],
+    [data-page="home"],
+    [data-page="about"]
+  )
+  main-box {
   background-color: var(--c-page);
 }
 
-html.light main-box {
+html#light main-box {
   position: relative;
 
   &::before {
@@ -38,5 +41,10 @@ html.light main-box {
     border-radius: 16px 16px 0 0;
     pointer-events: none;
     z-index: 2;
+  }
+
+  &.bg-base:not(.bg-grad-oval, .long) {
+    background-color: var(--c-page);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
   }
 }

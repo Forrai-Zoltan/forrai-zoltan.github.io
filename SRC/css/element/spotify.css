@@ -43,7 +43,7 @@ pspotify-p img {
   display: none;
 }
 
-html.light {
+html#light {
   pspotify-p {
     position: relative;
 

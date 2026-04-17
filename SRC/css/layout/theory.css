@@ -1,0 +1,374 @@
+:root {
+  --bg-card: light-dark(hsl(42, 50%, 98%), hsl(36, 9%, 10%));
+  --bg-summary: light-dark(hsl(32, 50%, 96%), hsl(45, 9%, 12%));
+  --bg-field: light-dark(hsl(42, 50%, 98%), hsl(36, 10%, 10%));
+
+  --tag-g-bg: light-dark(hsl(150, 38%, 84%), hsl(150, 28%, 14%));
+  --tag-g-text: light-dark(hsl(147, 34%, 25%), hsl(147, 34%, 75%));
+
+  --tag-y-bg: light-dark(hsl(40, 37%, 83%), hsl(40, 27%, 13%));
+  --tag-y-text: light-dark(hsl(44, 34%, 25%), hsl(44, 34%, 75%));
+
+  --tag-p-bg: light-dark(hsl(264, 38%, 84%), hsl(264, 28%, 14%));
+  --tag-p-text: light-dark(hsl(266, 35%, 28%), hsl(266, 25%, 78%));
+
+  --tag-r-bg: light-dark(hsl(0, 38%, 84%), hsl(0, 28%, 14%));
+  --tag-r-text: light-dark(hsl(0, 35%, 28%), hsl(0, 25%, 78%));
+}
+
+body[data-page="theory"] main-box {
+  font-family: var(--ff-sans);
+  padding: 2rem 1.5rem;
+}
+
+body[data-page="theory"] main-box {
+  page-wrapper {
+    display: block;
+    max-width: 75ch;
+    margin: 0 auto;
+  }
+
+  page-header {
+    display: block;
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  page-header h1 {
+    font-family: var(--ff-serif);
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+    font-weight: 400;
+    color: var(--c-text);
+
+    line-height: 1.3;
+    margin-block: 27px 0.75rem;
+    text-align: left;
+  }
+
+  page-header p {
+    font-size: 1.1rem;
+    color: var(--c-text-d);
+    line-height: 1.6;
+    max-width: 68ch;
+  }
+
+  tag-row * {
+    font-family: var(--ff-mono);
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    line-height: normal;
+  }
+
+  tag-period {
+    background: var(--tag-g-bg);
+    color: var(--tag-g-text);
+    border: var(--glass-border);
+  }
+  tag-type {
+    background: var(--tag-y-bg);
+    color: var(--tag-y-text);
+    border: var(--glass-border);
+  }
+  tag-school {
+    background: var(--tag-p-bg);
+    color: var(--tag-p-text);
+    border: var(--glass-border);
+  }
+  tag-lang {
+    background: var(--tag-r-bg);
+    color: var(--tag-r-text);
+    border: var(--glass-border);
+  }
+
+  article {
+    background: var(--bg-card);
+    border: var(--glass-border);
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: border-color 0.15s ease;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  details {
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+    border-left: none;
+  }
+
+  details:has(entry-header) {
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+    border-left: none;
+  }
+
+  details entry-header {
+    border-left: 3px solid transparent;
+  }
+  details[open] entry-header {
+    border-left: 3px solid var(--accent);
+  }
+
+  summary:has(entry-header) {
+    padding: 0;
+    list-style: none;
+  }
+
+  summary {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+  }
+
+  details details summary {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  entry-header {
+    display: block;
+    padding: 1.25rem 1.5rem 1rem;
+  }
+
+  entry-byline {
+    display: block;
+    font-family: var(--ff-mono);
+    font-size: 0.9rem;
+    color: var(--c-text);
+
+    letter-spacing: 0.03em;
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-right: 20px;
+    line-height: normal;
+  }
+
+  entry-byline original-year {
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  entry-byline a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    margin-left: 0.2em;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='SlateBlue' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
+      no-repeat center !important;
+    background-size: contain;
+    vertical-align: text-bottom;
+    margin-bottom: 2px;
+    font-size: 1.4rem;
+  }
+
+  entry-byline a:hover::after {
+    content: "";
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236eb3f7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
+      no-repeat center !important;
+  }
+
+  entry-title {
+    display: block;
+    font-family: var(--ff-serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--c-text);
+    line-height: 1.4;
+    margin-bottom: 0.9rem;
+  }
+
+  tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  details {
+    border-top: var(--glass-border);
+  }
+
+  summary {
+    font-weight: normal;
+    line-height: normal;
+  }
+
+  details details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 1.5rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--c-text);
+    background-color: var(--bg-summary);
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    list-style: none;
+    transition: background 0.1s ease, color 0.1s ease;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary:hover,
+  details[open] > summary {
+    color: var(--c-text);
+  }
+
+  summary-icon {
+    font-family: var(--ff-mono);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  details details[open] summary summary-icon {
+    transform: rotate(45deg);
+  }
+
+  details[open] > *:not(summary, details) {
+    border-left: 1px solid hsl(0, 0%, 45%);
+  }
+
+  details > *:not(summary, details) {
+    padding: 1.1rem 1.5rem;
+    background: var(--bg-field);
+    border-top: var(--glass-border);
+  }
+
+  details > *:not(summary, details) p:first-of-type {
+    margin-top: 0;
+  }
+  details > *:not(summary, details) p {
+    font-size: 1rem;
+    color: var(--c-text);
+
+    line-height: 1.8;
+  }
+}
+
+key-terms {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  line-height: normal;
+}
+
+key-terms span {
+  font-family: var(--ff-mono);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 3px;
+  border: var(--glass-border);
+  color: var(--c-text);
+
+  background: var(--bg-summary);
+}
+
+connections-group {
+  display: block;
+  margin-bottom: 1.5rem;
+  line-height: normal;
+}
+
+connections-group:last-child {
+  margin-bottom: 0;
+}
+
+connections-label {
+  display: block;
+  font-family: var(--ff-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-text);
+
+  margin-bottom: 0.4rem;
+}
+
+connections-group a {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+  line-height: 1.6;
+  padding: 0.15rem 0;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.15s ease;
+}
+
+connections-group a:hover {
+  border-bottom-color: var(--accent);
+}
+
+connection-year {
+  font-family: var(--ff-mono);
+  font-size: 0.75rem;
+  color: var(--c-text);
+
+  margin-left: 0.4rem;
+}
+
+reader-response {
+  display: block;
+}
+
+reader-response p {
+  font-family: var(--ff-serif);
+  font-size: 0rem;
+  font-style: italic;
+  color: var(--c-text);
+
+  line-height: 1.85;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--accent);
+}
+
+page-wrapper > div {
+  margin: 2.5rem 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: normal;
+}
+
+page-wrapper > div h2 {
+  color: var(--c-text-d);
+  font-family: var(--ff-serif);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  white-space: nowrap;
+  margin-block: 5px 7.5px;
+  line-height: normal;
+}
+
+page-wrapper > div hr {
+  flex: 1;
+  border: none;
+  margin-block: 7.5px;
+  border-top: 0.5px solid var(--c-text-d);
+  background-color: transparent;
+}

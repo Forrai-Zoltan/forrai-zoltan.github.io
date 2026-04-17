@@ -108,7 +108,7 @@ h1.small-h1 {
   font-size: clamp(1.9rem, 6vw, 3.5rem);
 }
 
-.error {
+[data-page="404"] h1 {
   color: light-dark(red, orangered);
   font-size: calc(var(--base-fs) - 0.7rem);
   font-family: var(--ff-mono);

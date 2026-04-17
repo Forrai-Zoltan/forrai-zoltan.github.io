@@ -56,8 +56,10 @@ p {
   hyphens: auto;
 }
 
-a:not(h1 a) {
+a {
   color: var(--c-text-a);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 
   &:hover {
     color: var(--c-text-a-hov);
@@ -91,7 +93,7 @@ a:not([href^="/"], deck-section a, [href^="#"], :has(img))::after {
     no-repeat center / contain;
 }
 
-html.light {
+html#light {
   main a {
     font-weight: bold;
   }
@@ -109,7 +111,6 @@ html.light {
     gap: 0.4rem;
     min-height: 100%;
     min-height: calc(100vh - var(--body-margin-top-mobile));
-
   }
 
   main-box {

@@ -29,7 +29,10 @@
   --c-canvas-bg: light-dark(var(--c-g-35), var(--black));
   --c-page: light-dark(var(--c-g-30), hsl(0, 0%, 7%));
   --c-text: light-dark(hsl(0, 0%, 6%), var(--c-g-60));
-  --c-text-d: oklch(from var(--c-text) 50% c h);
+  --c-text-d: light-dark(
+    hsl(from var(--c-text) h s 20%),
+    hsl(from var(--c-text) h s 60%)
+  );
 
   /* LINKS */
   --c-text-a: light-dark(
@@ -43,9 +46,10 @@
   --c-text-a-v-act: hsl(from var(--c-text-a-v) h s calc(l - 5));
 
   /* COLOR PALETTE */
+  --accent: SlateBlue;
+  --c-highlight: light-dark(var(--c-blue), orange);
   --c-purple: light-dark(hsl(270, 80%, 35%), hsl(270, 80%, 20%));
   --c-blue: light-dark(hsl(210, 100%, 40%), hsl(210, 100%, 55%));
-  --c-highlight: light-dark(var(--c-blue), orange);
   --c-green: hsl(120, 80%, 17%);
 
   /* MIXS */
@@ -53,6 +57,6 @@
   --c-purple-d: hsl(from var(--c-purple) h s calc(l - 5));
 }
 
-:root.light {
+:root#light {
   color-scheme: light;
 }

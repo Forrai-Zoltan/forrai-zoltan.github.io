@@ -8,19 +8,15 @@
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = saved ? saved === "dark" : prefersDark;
-        const html = document.documentElement;
-        html.classList.add(isDark ? "dark" : "light");
-        html.classList.remove(isDark ? "light" : "dark");
+        document.documentElement.id = isDark ? "dark" : "light";
       })();
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
   </head>
-  <body>
+  <body data-page="faq">
     <header>
       <title-bar>
         <a href="/">
@@ -66,7 +62,7 @@
       </nav>
     </header>
     <main>
-      <main-box class="bg-base long">
+      <main-box>
         <h1>FAQ</h1>
         <!-- The details' ids are numbered for linking. -->
         <faq-container>

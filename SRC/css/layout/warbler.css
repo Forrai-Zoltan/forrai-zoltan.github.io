@@ -52,11 +52,11 @@ status-update {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: inset 0px 15px 20px -10px hsla(from var(--black) h s l / 0.7),
-    inset -0px -10px 25px -11px hsla(from var(--black) h s l / 0.7);
+  box-shadow: inset 0px 15px 20px -10px hsla(from var(--black) h s l / 0.3),
+    inset -0px -10px 25px -11px hsla(from var(--black) h s l / 0.3);
 }
 
-html.light status-update {
+html#light status-update {
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -242,7 +242,7 @@ interaction-row label:active {
     }
   } */
 
-html.light {
+html#light {
   status-update {
     border: var(--glass-border);
   }

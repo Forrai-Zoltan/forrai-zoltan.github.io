@@ -1,96 +1,92 @@
-main-box.deck {
-  /* //// //// //// COVER IMAGES //// //// //// */
-  deck-section {
-    a img {
-      display: none;
-    }
-
-    #soc {
-      background-image: url(/SRC/media/img/socrates-middle-finger.png);
-    }
-
-    #NG {
-      background-image: url(/SRC/media/img/cover-ng.bmp);
-      background-size: contain;
-      background-position: top;
-    }
-  }
-
-  /* //// //// //// OTHER //// //// //// */
-
-  search {
-    position: relative;
-    width: 90%;
-    margin: 15px auto;
-  }
-
-  input[type="search"] {
-    width: 100%;
-    padding: 5px;
-    padding-left: 40px;
-    border: 1px solid light-dark(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 100%, 0.2));
-    border-radius: var(--br-s);
-    font-family: var(--ff-mono);
-    font-size: 1.1rem;
-    line-height: 1;
-
-    background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23808080' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>\<circle cx='11' cy='11' r='8'/>\<line x1='21' y1='21' x2='16.65' y2='16.65'/>\</svg>");
-    background-repeat: no-repeat;
-    background-position: 12px center;
-    background-size: 16px 16px;
-
-    color: light-dark(hsl(120, 81%, 40%), hsla(120, 100%, 50%, 0.6));
-    background-color: light-dark(var(--c-g-35), var(--c-g-20));
-    box-shadow: inset 0 0 5px 5px
-        light-dark(rgba(255, 255, 255, 0.2), hsla(0, 0%, 10%, 1)),
-      0px 0px 10px 5px light-dark(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
-
-    &::placeholder {
-      color: light-dark(var(--c-g-55), var(--c-g-40));
-    }
-
-    &:focus {
-      border-radius: var(--br-s);
-      outline: none;
-      background-color: light-dark(var(--c-g-25), var(--c-g-25));
-      box-shadow: inset 0 0 5px 5px
-          light-dark(rgba(255, 255, 255, 0.6), hsla(0, 0%, 10%, 0.3)),
-        0px 0px 10px 5px
-          light-dark(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
-    }
-
-    &:focus::placeholder {
-      color: light-dark(var(--c-g-60), var(--c-g-50));
-    }
-  }
-
-  input[type="search"]:placeholder-shown ~ [type="reset"] {
+/* //// //// //// COVER IMAGES //// //// //// */
+deck-section {
+  a img {
     display: none;
   }
 
-  input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
-    display: inline;
+  #soc {
+    background-image: url(/SRC/media/img/socrates-middle-finger.png);
   }
 
-  [type="reset"] {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0.5em;
-    transform: translateY(-50%);
-    border: none;
-    padding: 0;
-    font-family: var(--ff-mono);
-    font-size: 1.2em;
-    color: orangered;
-    background: transparent;
-    cursor: pointer;
-
-    &:hover {
-      color: red;
-    }
+  #NG {
+    background-image: url(/SRC/media/img/cover-ng.bmp);
+    background-size: contain;
+    background-position: top;
   }
 }
+
+/* //// //// //// OTHER //// //// //// */
+
+search {
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 5px;
+  padding-left: 40px;
+  border: 1px solid light-dark(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 100%, 0.2));
+  border-radius: var(--br-s);
+  font-family: var(--ff-mono);
+  font-size: 1.1rem;
+  line-height: 1;
+
+  background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23808080' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>\<circle cx='11' cy='11' r='8'/>\<line x1='21' y1='21' x2='16.65' y2='16.65'/>\</svg>");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 16px 16px;
+
+  color: light-dark(hsl(120, 81%, 40%), hsla(120, 100%, 50%, 0.6));
+  background-color: light-dark(var(--c-g-35), var(--c-g-20));
+
+  &::placeholder {
+    color: light-dark(var(--c-g-55), var(--c-g-40));
+  }
+
+  &:focus {
+    border-radius: var(--br-s);
+    outline: none;
+    background-color: light-dark(var(--c-g-25), var(--c-g-25));
+  }
+
+  &:focus::placeholder {
+    color: light-dark(var(--c-g-60), var(--c-g-50));
+  }
+}
+
+input[type="search"]:placeholder-shown ~ [type="reset"] {
+  display: none;
+}
+
+input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
+  display: inline;
+}
+
+[type="reset"] {
+  width: 0;
+  min-width: 20px;
+  box-shadow: none;
+  margin: 0;
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2em;
+  display: block;
+  padding: 0;
+  color: orangered;
+  font-family: var(--ff-mono);
+
+  &:hover {
+    color: red;
+  }
+}
+
 deck-section {
   padding: 1rem 2rem 2rem 2rem;
   gap: 1.5rem;
@@ -187,6 +183,6 @@ deck-section a.dark {
   }
 }
 
-html.light .dark {
+html#light .dark {
   box-shadow: 3px 5px 8px 0px rgba(0, 0, 0, 0.5);
 }

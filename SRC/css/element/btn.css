@@ -43,7 +43,7 @@ btn-span {
   backface-visibility: hidden;
 }
 
-html.light a:has(btn-span) {
+html#light :is(a:has(btn-span), button[type="submit"]) {
   position: relative;
 
   &::before {

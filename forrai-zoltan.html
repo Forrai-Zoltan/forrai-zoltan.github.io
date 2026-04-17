@@ -11,13 +11,9 @@
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = saved ? saved === "dark" : prefersDark;
-        const html = document.documentElement;
-        html.classList.add(isDark ? "dark" : "light");
-        html.classList.remove(isDark ? "light" : "dark");
+        document.documentElement.id = isDark ? "dark" : "light";
       })();
     </script>
     <script type="module" src="/index.js"></script>
@@ -40,7 +36,7 @@
       }
     </script>
   </head>
-  <body>
+  <body data-page="cv">
     <!--  -->
     <header>
       <div>
@@ -73,7 +69,7 @@
       <p style="display: none">Zoltan Forrai = Forrai Zoltán = Gildrom</p>
       <!--  -->
       <section>
-        <img class="pfp" src="/SRC/media/photo/head-shot-original.png" />
+        <img src="/SRC/media/photo/head-shot-original.png" />
         <p>Budapesti kreatív vagyok, média és filmkészítési háttérrel.</p>
         <p>
           Írok, rajzolok, és néha programozok is. Jelenleg angolt és történelmet
@@ -101,7 +97,7 @@
         </p>
       </details>
       <h2>Tanulmányok</h2>
-      <ul id="education-list">
+      <ul>
         <li>
           <strong>MA</strong>
           <span>@ ELTE, Budapest <em>(befejezéshez közel áll)</em></span>
@@ -137,7 +133,7 @@
                 <a target="_blank" href="https://gildrom.com/">gildrom.com</a>
               </li>
             </ul>
-            <div class="example">
+            <div>
               <a href="/literary/fiction/befitting">Befitting</a>
               <a href="/literary/fiction/reverie_ride">Reverie Ride</a>
               <a href="/literary/fiction/the_cure">The Cure</a>
@@ -150,7 +146,7 @@
                 >
               </li>
             </ul>
-            <div class="example">
+            <div>
               <a
                 href="https://www.newgrounds.com/art/view/gildrom/welcoming-committee">
                 <img
@@ -204,7 +200,8 @@
             <ul>
               <li>
                 <strong>Webfejlesztés:</strong> Kisebb webes projektek építése
-                és karbantartása. (HTML, CSS, JS, Git, GitHub)
+                és karbantartása. (HTML, CSS, JS, Git)
+                <a href="https://github.com/Forrai-Zoltan">GitHub</a>.
               </li>
             </ul>
           </li>

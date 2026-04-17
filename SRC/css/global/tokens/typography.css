@@ -7,6 +7,9 @@
   --ff-mono: "departure-mono";
   --ff-jb-mono: "JetBrainsMono";
 
+  --ff-serif: "Libre Baskerville", Georgia, serif;
+  --ff-sans: "DM Sans", system-ui, sans-serif;
+
   --f-size-def: 15px;
   --f-size-s: 1.2rem;
   --f-size-m: 1.5rem;
@@ -38,6 +41,6 @@
   --font-size-cv: 22px;
 }
 
-:root.light {
+:root#light {
   color-scheme: light;
 }

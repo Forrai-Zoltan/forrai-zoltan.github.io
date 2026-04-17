@@ -50,24 +50,32 @@
   );
 
   --grad-nav-dropdown: radial-gradient(
-    ellipse 280% 80% at top left,
-    light-dark(
-      hsla(from var(--c-purple) h s calc(l + 40) / 0.8),
-      hsla(from var(--c-purple) h s l / 0.8)
+      ellipse 280% 80% at top left,
+      light-dark(
+        hsla(from var(--c-purple) h s calc(l + 40) / 0.8),
+        hsla(from var(--c-purple) h s l / 0.8)
+      ),
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.2),
+        hsla(from var(--c-g-10) h s l / 0.1)
+      ),
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.2),
+        hsla(from var(--c-g-10) h s l / 0.1)
+      ),
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.2),
+        hsla(from var(--c-g-10) h s l / 0.1)
+      )
     ),
-    light-dark(
-      hsla(from var(--c-g-20) h s l / 0.5),
-      hsla(from var(--c-g-10) h s l / 0.6)
-    ),
-    light-dark(
-      hsla(from var(--c-g-20) h s l / 0.5),
-      hsla(from var(--c-g-10) h s l / 0.6)
-    ),
-    light-dark(
-      hsla(from var(--c-g-20) h s l / 0.4),
-      hsla(from var(--c-g-10) h s l / 0.7)
-    )
-  );
+    linear-gradient(
+      to right,
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.4),
+        hsla(from var(--c-g-10) h s l / 0.5)
+      ),
+      transparent
+    );
 
   --grad-nav-dropdown-mobile: radial-gradient(
     ellipse 300% 50% at top left,
@@ -142,6 +150,6 @@
   );
 }
 
-:root.light {
+:root#light {
   color-scheme: light;
 }

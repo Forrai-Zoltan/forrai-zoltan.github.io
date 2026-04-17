@@ -3,190 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      href="https://www.gildrom.com/rss.xml" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="/SRC/css/var.css" />
-    <link rel="stylesheet" href="/SRC/css/font.css" />
-    <link rel="stylesheet" href="/SRC/css/base.css" />
-    <link rel="stylesheet" href="/SRC/css/text.css" />
-    <link rel="stylesheet" href="/SRC/css/layout.css" />
-    <link rel="stylesheet" href="/SRC/css/header.css" />
-    <link rel="stylesheet" href="/SRC/css/util.css" />
-    <link rel="stylesheet" href="/SRC/css/lit-theo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Literary Theory・gildrom-com</title>
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const isDark = saved ? saved === "dark" : prefersDark;
+        const html = document.documentElement;
+        html.classList.add(isDark ? "dark" : "light");
+        html.classList.remove(isDark ? "light" : "dark");
+      })();
+    </script>
+    <script type="module" src="/index.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
       rel="stylesheet" />
-    <link rel="icon" type="image/png" href="/favicon.ico" />
-    <title>Literary Theory・gildrom.com</title>
-    <meta name="description" content="" />
+    <link rel="stylesheet" href="/index.css" />
   </head>
-  <body
-    bgcolor="#121212"
-    text="#D2D2D2"
-    link="#3C8CDD"
-    alink="#0959AA"
-    vlink="#8C59C0">
+  <body data-page="theory">
     <header>
-      <nav>
+      <title-bar>
         <a href="/">
-          <img align="left" width="35" src="/favicon.ico" />
-          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
+          <img width="30" height="30" src="/favicon.ico" />
+          <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
-        <label for="burger">
-          <svg width="0" height="0">
-            <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
-          </svg>
-        </label>
-      </nav>
-      <input id="burger" type="checkbox" />
+      </title-bar>
       <nav>
         <ul>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
-            </svg>
+          <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li>
-                <a href="/personal/about">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
-                  </svg>
-                  Who am I?
-                </a>
-              </li>
-              <li>
-                <a href="/personal/obsessions">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
-                  </svg>
-                  Obsessions
-                </a>
-              </li>
-              <li>
-                <a href="/personal/library">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
-                  </svg>
-                  Library
-                </a>
-              </li>
+              <li><a href="/personal/about">Who am I?</a></li>
+              <li><a href="/personal/obsessions">Obsessions</a></li>
+              <li><a href="/personal/library">Library</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
-            </svg>
+          <li tabindex="0" data-icon="literary">
             <b>Literary</b>
             <ul>
-              <li>
-                <a href="/literary/fiction">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
-                  </svg>
-                  Fiction
-                </a>
-              </li>
-              <li>
-                <a href="/literary/poetry">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
-                  </svg>
-                  Poetry
-                </a>
-              </li>
-              <li>
-                <a href="/literary/essays">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
-                  </svg>
-                  Essays
-                </a>
-              </li>
+              <li><a href="/literary/fiction">Fiction</a></li>
+              <li><a href="/literary/poetry">Poetry</a></li>
+              <li><a href="/literary/essays">Essays</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
-            </svg>
+          <li tabindex="0" data-icon="tavern">
             <b>Tavern</b>
             <ul>
-              <li>
-                <a href="/tavern/contact">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
-                  </svg>
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/warbler">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
-                  </svg>
-                  Warbler
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/patronage">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
-                  </svg>
-                  Patronage
-                </a>
-              </li>
+              <li><a href="/tavern/contact">Contact</a></li>
+              <li><a href="/tavern/warbler">Warbler</a></li>
+              <li><a href="/tavern/patronage">Patronage</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
-            </svg>
+          <li tabindex="0" data-icon="beyond">
             <b>Beyond</b>
             <ul>
-              <li>
-                <a href="/beyond/other">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
-                  </svg>
-                  Other Works
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/secret">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
-                  </svg>
-                  Secret
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/epilogue">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
-                  </svg>
-                  Epilogue
-                </a>
-              </li>
+              <li><a href="/beyond/other">Other Works</a></li>
+              <li><a href="/beyond/secret">Secret</a></li>
+              <li><a href="/beyond/epilogue">Epilogue</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <main-content id="lit-theo" class="dark">
+      <main-box class="bg-base">
         <page-wrapper>
           <page-header>
             <h1>Literary Theory, Analysis, &amp; Criticism</h1>
             <p>
               My personal annotated bibliography from Plato to the present.
               Entries are ordered chronologically. Use
-              <kbd>Ctrl</kbd> + <kbd>F</kbd> to search by tag, author,
-              title, term, or keyword. Click a title to expand its entry.
+              <kbd>Ctrl</kbd> + <kbd>F</kbd> to search by tag, author, title,
+              term, or keyword. Click a title to expand its entry.
             </p>
             <p>
               <b>Note&colon;</b> This bibliography is not comprehensive. The
@@ -196,7 +87,7 @@
           </page-header>
           <!-- ==== TEMPLATE ==== -->
           <!-- ENTRY START -->
-          <article class="entry" id="template">
+          <article id="template">
             <details>
               <summary>
                 <entry-header>
@@ -207,19 +98,19 @@
                     <a href=""></a>
                   </entry-byline>
                   <entry-title>Title (TEMPLATE)</entry-title>
-                  <div class="tags">
-                    <span class="tag tag-period">time period</span>
-                    <span class="tag tag-type">text type</span>
-                    <span class="tag tag-school">school / movement</span>
-                    <span class="tag tag-lang">language / translation</span>
-                  </div>
+                  <tag-row>
+                    <tag-period>time period</tag-period>
+                    <tag-type>text type</tag-type>
+                    <tag-school>school / movement</tag-school>
+                    <tag-lang>language / translation</tag-lang>
+                  </tag-row>
                 </entry-header>
               </summary>
               <details open>
                 <summary>
                   Context &amp; Argument<summary-icon>+</summary-icon>
                 </summary>
-                <div class="field">
+                <div>
                   <p
                     data-comm="Summary: Argument -> claim + evidence + warrant (reason)">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -234,32 +125,31 @@
                 <summary>
                   Notes &amp; Response <summary-icon>+</summary-icon>
                 </summary>
-                <div
-                  class="field">
-                  <p class="reader-response">
+                <reader-response>
+                  <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
-                </div>
+                </reader-response>
               </details>
               <details>
                 <summary>Key terms <summary-icon>+</summary-icon></summary>
-                <div class="field">
+                <div>
                   <key-terms>
-                    <span class="term">term 1</span>
-                    <span class="term">term 2</span>
-                    <span class="term">term 3</span>
+                    <span>term 1</span>
+                    <span>term 2</span>
+                    <span>term 3</span>
                   </key-terms>
                 </div>
               </details>
               <details>
                 <summary>Connections <summary-icon>+</summary-icon></summary>
-                <div class="field">
+                <div>
                   <connections-group>
                     <connections-label
                       >Connection Type (influence, response,
                       application)</connections-label
                     >
-                    <a class="connection-link" href="#">
+                    <a href="#">
                       Reference
                       <connection-year>year</connection-year>
                     </a>
@@ -270,31 +160,31 @@
           </article>
           <!-- ENTRY END -->
 
-          <div class="section-divider">
+          <div>
             <h2>Primary Texts</h2>
             <hr />
             <!--original, foundational theoretical texts-->
           </div>
 
-          <div class="section-divider">
+          <div>
             <h2>Secondary Texts</h2>
             <hr />
             <!--comment on, explain, apply, or critique primary texts-->
           </div>
 
-          <div class="section-divider">
+          <div>
             <h2>Applied Criticism</h2>
             <hr />
             <!--commenting on and deploying a theoretical framework-->
           </div>
 
-          <div class="section-divider">
+          <div>
             <h2>Related Texts</h2>
             <hr />
             <!--provide context but not directly about literary theory-->
           </div>
         </page-wrapper>
-      </main-content>
+      </main-box>
     </main>
   </body>
 </html>

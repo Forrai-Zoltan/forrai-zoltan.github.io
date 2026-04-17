@@ -25,8 +25,9 @@ title-bar {
   background: var(--grad-titlebar);
 }
 
-html.light title-bar {
+html#light title-bar {
   position: relative;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
 
   &::before {
     content: "";
@@ -124,6 +125,26 @@ menu label[for="burger"],
     -moz-user-select: none;
   }
 
+  html#light header nav {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5.5px;
+      left: 5.5px;
+      right: 5.5px;
+      height: 45%;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0)
+      );
+      border-radius: 10px 10px 0 0;
+      pointer-events: none;
+      z-index: 100;
+    }
+  }
+
   header nav li {
     font-size: var(--f-size-m);
   }
@@ -139,8 +160,16 @@ menu label[for="burger"],
     background: var(--grad-nav-strip);
   }
 
+  html#light header nav > ul {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  }
+
   header nav > ul:has(> li:last-of-type:hover) {
     border-radius: var(--br-s) var(--br-l) var(--br-l) var(--br-s);
+  }
+
+  html#light header nav > ul:has(> li:last-of-type:hover) {
+    border-radius: var(--br-s) var(--br-s) var(--br-s) var(--br-s);
   }
 
   /* Top-level items */
@@ -165,13 +194,21 @@ menu label[for="burger"],
     }
   }
 
+  html#light header nav > ul > li {
+    &:hover,
+    &:focus-within {
+      background-clip: padding-box;
+      border-right: 5px solid rgba(255, 255, 255, 0);
+    }
+  }
+
   /* Bridge pseudo-element keeps dropdown reachable while cursor travels */
   header nav > ul > li::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 0;
-    height: 5px;
+    height: 7px;
     width: 100%;
     z-index: var(--z-raised);
   }
@@ -179,7 +216,7 @@ menu label[for="burger"],
   /* Dropdown lists */
   header nav > ul li ul {
     display: none;
-    margin-top: 5px;
+    margin-top: 6px;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -300,10 +337,6 @@ header nav a[href="/beyond/secret"]::before {
 header nav a[href="/beyond/epilogue"]::before {
   mask-image: url("/SRC/asset/svg/icon-scroll-text.svg");
 }
-
-/* ================================================
-     NAV — MOBILE  (max-width: 699px)
-     ================================================ */
 
 @media (max-width: 660px) {
   menu toggle-btn {

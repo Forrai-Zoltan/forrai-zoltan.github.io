@@ -54,7 +54,6 @@ body[data-page="about"] {
     width: 100%;
     margin-block: 5px 10px;
     font-size: var(--f-size-m);
-
   }
 
   main > aside > footer svg {
@@ -131,7 +130,7 @@ body[data-page="home"] {
   }
 }
 
-html.light {
+html#light {
   aside > img {
     filter: brightness(1.2) contrast(0.8) sepia(0.1) hue-rotate(240deg);
   }
