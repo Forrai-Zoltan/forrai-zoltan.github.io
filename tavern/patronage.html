@@ -12,15 +12,13 @@
           "(prefers-color-scheme: dark)"
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
-        const html = document.documentElement;
-        html.classList.add(isDark ? "dark" : "light");
-        html.classList.remove(isDark ? "light" : "dark");
+        document.documentElement.id = isDark ? "dark" : "light";
       })();
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
   </head>
-  <body>
+  <body data-page="patronage">
     <header>
       <title-bar>
         <a href="/">
@@ -66,9 +64,9 @@
       </nav>
     </header>
     <main>
-      <main-box class="bg-base bg-grad-oval">
+      <main-box>
         <article>
-          <h1 class="small-h1">I have yet to earn your support!</h1>
+          <h1>I have yet to earn your support!</h1>
           <p>
             But they have! Consider supporting some of these wonderful sites and
             projects:

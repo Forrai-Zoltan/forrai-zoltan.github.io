@@ -104,7 +104,7 @@ body[data-page="home"] h1 {
   text-align: left;
 }
 
-h1.small-h1 {
+[data-page="patronage"] h1 {
   font-size: clamp(1.9rem, 6vw, 3.5rem);
 }
 

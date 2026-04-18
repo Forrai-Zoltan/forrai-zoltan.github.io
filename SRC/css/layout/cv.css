@@ -1,3 +1,6 @@
+/* ============================================================
+   IMPORTS
+   ============================================================ */
 @import url(/SRC/css/global/fonts.css);
 @import url(/SRC/css/global/reset.css);
 @import url(/SRC/css/global/tokens/variables.css);
@@ -6,6 +9,9 @@
 @import url(/SRC/css/element/svg-sigil.css);
 @import url(/SRC/css/global/util.css);
 
+/* ============================================================
+      ROOT & SCROLLBAR
+      ============================================================ */
 :root {
   scrollbar-width: thin;
 }
@@ -27,6 +33,9 @@
   background: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
 }
 
+/* ============================================================
+      BASE RESET
+      ============================================================ */
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +46,9 @@ html {
   position: relative;
 }
 
+/* ============================================================
+      HTML / BODY
+      ============================================================ */
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,32 +56,21 @@ html {
   color: var(--c-text);
   font-size: var(--font-size-cv);
   font-family: "cochin";
+  scroll-padding-top: 100px;
   scrollbar-width: thin;
   scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
     transparent;
-  scroll-padding-top: 100px;
   scrollbar-gutter: auto;
 }
 
-article {
-  position: relative;
-  box-sizing: border-box;
-  margin-inline: auto;
-  width: 100%;
-  overflow-wrap: break-word;
-  max-width: 60ch;
-  padding-inline: 0.5rem;
-  padding-top: 20px;
-  backdrop-filter: blur(0.7px);
-  background-color: oklch(from var(--c-page) l c h / 0.7);
-  box-shadow: 0 0 10px 10px oklch(from var(--c-page) l c h / 0.7);
-  z-index: 2;
-}
-
+/* ============================================================
+      LAYOUT: HEADER, ARTICLE, FOOTER
+      ============================================================ */
 header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
   max-width: 100%;
   padding: 0.2rem;
@@ -78,7 +79,6 @@ header {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
-  z-index: 10;
   background-color: hsla(from var(--c-page) h s l / 1);
 }
 
@@ -89,16 +89,44 @@ header div {
   justify-content: space-between;
 }
 
-menu {
-  padding: 0;
+article {
+  position: relative;
+  box-sizing: border-box;
+  z-index: 2;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 60ch;
+  padding-inline: 0.5rem;
+  padding-top: 20px;
+  overflow-wrap: break-word;
+  backdrop-filter: blur(0.7px);
+  background-color: oklch(from var(--c-page) l c h / 0.7);
+  box-shadow: 0 0 10px 10px oklch(from var(--c-page) l c h / 0.7);
+}
+
+footer {
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  width: fit-content;
+  text-align: center;
+}
+
+/* ============================================================
+      NAVIGATION MENU
+      ============================================================ */
+menu {
   position: absolute;
-  align-items: center;
-  gap: 10px;
   top: 8.5px;
   right: 15px;
   bottom: 0;
   z-index: 10;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 menu a {
@@ -109,46 +137,9 @@ menu a {
   margin-right: 5px;
 }
 
-ul {
-  padding-left: 30px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-
-  li::marker {
-    content: "◈ ";
-    color: var(--c-highlight);
-  }
-}
-
-li {
-  padding-block: 3px;
-  hyphens: auto;
-}
-
-ul:not(:has(div)) ul {
-  border-left: 1.5px solid var(--grey);
-  padding-left: 40px;
-  margin-left: -14.5px;
-}
-
-skills-section > ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-left: 15px;
-
-  ul {
-    margin-bottom: 0;
-  }
-
-  > li {
-    padding-block: 10px;
-  }
-  > li::marker {
-    content: none;
-  }
-}
-
+/* ============================================================
+      TYPOGRAPHY: HEADINGS
+      ============================================================ */
 h1 {
   font-family: var(--ff-type);
   font-size: clamp(1.8rem, 12vw, 3.9rem);
@@ -168,6 +159,9 @@ h3 {
   margin: 30px 0 0;
 }
 
+/* ============================================================
+      TYPOGRAPHY: INLINE & BLOCK ELEMENTS
+      ============================================================ */
 p {
   margin-block: 0 10px;
   line-height: 1.5;
@@ -176,6 +170,10 @@ p {
 
 b {
   color: var(--c-highlight);
+}
+
+em {
+  font-style: oblique 15deg;
 }
 
 a {
@@ -191,11 +189,12 @@ a {
   }
 }
 
-details {
-  border-left: 1.5px solid var(--c-highlight);
-  padding-left: 15px;
-  margin-top: 20px;
-  margin-left: 14px;
+hr {
+  height: 1px;
+  border: 0;
+  width: 95%;
+  margin-inline: auto;
+  background-color: var(--grey);
 }
 
 summary {
@@ -206,145 +205,226 @@ summary {
   }
 }
 
+details {
+  margin-top: 20px;
+  margin-left: 14px;
+  padding-left: 15px;
+  border-left: 1.5px solid var(--c-highlight);
+}
+
 details p {
   margin-top: 10px;
 }
 
-em {
-  font-style: oblique 15deg;
-}
-
+/* ============================================================
+      SECTION
+      ============================================================ */
 section {
-  margin-block: 10px 50px;
   display: flow-root;
+  margin-block: 10px 50px;
 }
 
 section img {
   width: 40%;
-  border-radius: 8px;
   float: left;
   margin-right: 25px;
+  border-radius: 8px;
 }
 
-hr {
-  background-color: var(--grey);
-  height: 1px;
-  border: 0;
-  width: 95%;
-  margin-inline: auto;
+/* ============================================================
+      LISTS
+      ============================================================ */
+ul {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+
+  li::marker {
+    content: "◈ ";
+    color: var(--c-highlight);
+  }
 }
 
-footer {
+li {
+  padding-block: 3px;
+  hyphens: auto;
+}
+
+/* Nested unordered lists */
+ul:not(:has(div)) ul {
+  border-left: 1.5px solid var(--grey);
+  padding-left: 40px;
+  margin-left: -14.5px;
+}
+
+/* ============================================================
+      SKILLS SECTION
+      ============================================================ */
+skills-section > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  > li {
+    padding-block: 10px;
+
+    b {
+      margin-left: -10px;
+    }
+  }
+
+  > li::marker {
+    content: none;
+  }
+}
+
+skills-section span:not(li > span) {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* ============================================================
+      ORDERED LIST (CARD GRID)
+      ============================================================ */
+ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px 0;
+  margin: 10px auto;
+}
+
+ol li {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-bottom: 20px;
-  margin-inline: auto;
-  width: fit-content;
-  text-align: center;
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 5px;
+  line-height: 1;
+  border: var(--glass-border);
+  border-radius: 15px;
+  background-color: light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1);
+  }
 }
 
-:is(#f1, #f2, #f3, #f4, #f5) {
-  position: absolute;
-  width: 90px;
-  height: auto;
-  z-index: 1;
-  opacity: 0.5;
-  filter: invert(0);
+ol img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  transition: transform 0.2s ease;
 }
 
-#f1 {
-  top: 10%;
-  right: 18%;
-  opacity: 0.6;
-}
-#f2 {
-  top: 38%;
-  left: 7%;
-  opacity: 0.25;
-}
-#f3 {
-  width: 100px;
-  top: 46%;
-  right: 38%;
-}
-#f4 {
-  top: 72%;
-  right: 5%;
-  opacity: 0.15;
-}
-#f5 {
-  width: 100px;
-  top: 90%;
-  left: 15%;
-  opacity: 0.5;
+ol span {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  transition: transform 0.2s ease;
 }
 
+/* ============================================================
+      UNORDERED LIST: LINK CARD ROW (ul div)
+      ============================================================ */
 ul div {
   display: flex;
   gap: 2px;
   width: 55ch;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin-inline: auto;
+  margin-block: 10px 35px;
+
+  &:has(img) {
+    margin-block: 10px 20px;
+  }
 }
 
 ul div a {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  flex: 1;
-  aspect-ratio: 1;
-  background-color: transparent;
-  text-decoration: none;
-  color: inherit;
-  border: var(--glass-border);
-  border-radius: 10px;
-  transform: scale(0.952);
-  transition: transform 0.2s ease, filter 0.2s ease;
+  aspect-ratio: 3/1;
   overflow: hidden;
-  box-shadow: var(--glass-shadow);
-  background-color: var(--c-page);
-
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: clamp(1rem, 6vw, 1.1rem);
   font-family: Arial, Helvetica, sans-serif;
+  color: inherit;
+  border: var(--glass-border);
+  border-radius: 10px;
+  background-color: var(--c-page);
+  box-shadow: var(--glass-shadow);
+  transform: scale(0.952);
+  transition: transform 0.2s ease, filter 0.2s ease;
 
   &:hover {
     transform: scale(1);
     border: var(--glass-border-b);
   }
-}
 
-ul div a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-html#light ul div a {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 40%;
-
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0)
-    );
-
-    pointer-events: none;
-    z-index: 2;
+  &:has(img) {
+    aspect-ratio: 1/1.2;
   }
 }
 
+ul div a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================
+      DECORATIVE FLOATS (#f1–#f5)
+      ============================================================ */
+:is(#f1, #f2, #f3, #f4, #f5) {
+  position: absolute;
+  z-index: 1;
+  width: 90px;
+  height: auto;
+  opacity: 0.5;
+  filter: invert(0);
+}
+
+#f1 {
+  top: 9%;
+  right: 18%;
+  opacity: 0.6;
+}
+#f2 {
+  top: 30%;
+  left: 7%;
+  opacity: 0.25;
+}
+#f3 {
+  top: 42%;
+  right: 38%;
+  width: 100px;
+}
+#f4 {
+  top: 70%;
+  right: 5%;
+  opacity: 0.15;
+}
+#f5 {
+  top: 90%;
+  left: 15%;
+  width: 100px;
+  opacity: 0.5;
+}
+
+/* ============================================================
+      LIGHT MODE OVERRIDES (html#light)
+      ============================================================ */
 html#light {
   :is(#f1, #f2, #f3, #f4, #f5) {
     filter: invert(1);
@@ -357,18 +437,61 @@ html#light {
   #f2 {
     opacity: 0.35;
   }
-
   #f4 {
     opacity: 0.25;
   }
   #f5 {
     opacity: 0.5;
   }
+
+  ol li {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      border-radius: 15px 15px 0 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0)
+      );
+      pointer-events: none;
+      z-index: 2;
+    }
+  }
+
+  ul div a {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0)
+      );
+      pointer-events: none;
+      z-index: 2;
+    }
+  }
 }
 
+/* ============================================================
+      RESPONSIVE: MOBILE (max-width: 1000px)
+      ============================================================ */
 @media (max-width: 1000px) {
   header {
-    padding-top: 50px;
     padding-top: 5px;
   }
 
@@ -385,10 +508,6 @@ html#light {
 
   details {
     margin-left: 5px;
-  }
-
-  #education-list {
-    padding-left: 25px;
   }
 
   skills-section > ul {
@@ -408,8 +527,15 @@ html#light {
   article {
     margin-top: 50px;
   }
+
+  ol {
+    margin: 10px 0;
+  }
 }
 
+/* ============================================================
+      PRINT
+      ============================================================ */
 @media print {
   * {
     color: #121212 !important;

@@ -1,5 +1,13 @@
 /* bg-grad-oval */
-:is([data-page="404"], [data-page="home"], [data-page="deck"]) main-box {
+:is(
+    [data-page="404"],
+    [data-page="home"],
+    [data-page="deck"],
+    [data-page="contact"],
+    [data-page="warbler"],
+    [data-page="patronage"]
+  )
+  main-box {
   background: var(--grad-mb-purple-rad);
   box-shadow: var(--glass-shadow-p);
 }
@@ -16,7 +24,11 @@
     [data-page="404"],
     [data-page="faq"],
     [data-page="home"],
-    [data-page="about"]
+    [data-page="about"],
+    [data-page="theory"],
+    [data-page="contact"],
+    [data-page="warbler"],
+    [data-page="patronage"]
   )
   main-box {
   background-color: var(--c-page);

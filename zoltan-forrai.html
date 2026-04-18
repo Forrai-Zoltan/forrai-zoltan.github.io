@@ -13,7 +13,9 @@
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
       })();
@@ -105,7 +107,7 @@
       <ul>
         <li>
           <strong>MA</strong>
-          <span>@ ELTE, Budapest (<em>near completion</em>)</span>
+          <span>@ ELTE, Budapest <em>(ongoing)</em></span>
           <ul>
             <li>
               Undivided Masters: Teacher of English language and culture,
@@ -132,43 +134,40 @@
         <ul>
           <li>
             <b>Creative:</b>
-            <ul>
-              <li>
-                Writing (speculative fiction, poetry, & essays):
-                <a target="_blank" href="//gildrom.com/">gildrom.com</a>
-              </li>
-            </ul>
+            <p>
+              Writing (speculative fiction, poetry, & essays):
+              <a target="_blank" href="//gildrom.com/">gildrom.com</a>
+              <br />
+              <span>Sample work:</span>
+            </p>
             <div>
               <a href="/literary/fiction/befitting">Befitting</a>
               <a href="/literary/fiction/reverie_ride">Reverie Ride</a>
               <a href="/literary/fiction/the_cure">The Cure</a>
             </div>
-            <ul>
-              <li>
-                Monochromatic digital illustration:
-                <a target="_blank" href="//gildrom.newgrounds.com/"
-                  >gildrom.newgrounds.com</a
-                >
-              </li>
-            </ul>
+            <p>
+              Monochromatic digital illustration:
+              <a target="_blank" href="//gildrom.newgrounds.com/"
+                >gildrom.newgrounds.com</a
+              >
+              <br />
+              <span>Sample work:</span>
+            </p>
             <div>
               <a
                 href="https://www.newgrounds.com/art/view/gildrom/welcoming-committee">
                 <img
-                  alt="Welcoming Committee"
-                  style="object-position: 0% 0%"
+                  style="object-position: 50% 0%"
                   src="https://art.ngfiles.com/medium_views/7245000/7245376_2687155_gildrom_untitled-7245376.7901b63b8a4dfa82e813dfdb9156a448.webp?f1764727101" />
               </a>
               <a href="https://www.newgrounds.com/art/view/gildrom/wings">
                 <img
-                  alt="Wings"
                   style="object-position: 0% 0%"
                   src="https://art.ngfiles.com/medium_views/7001000/7001128_2381830_gildrom_untitled-7001128.7d4ee458abee6c3e7e8b051966b039b0.webp?f1756783933" />
               </a>
               <a
                 href="https://www.newgrounds.com/art/view/gildrom/unguis-the-crawler">
                 <img
-                  alt="Unguis the Crawler"
                   style="object-position: 0% 0%"
                   src="https://art.ngfiles.com/medium_views/6897000/6897646_2250787_gildrom_unguis.2adcba4f3c12177acac34e1aaaf11e80.webp?f1753561452" />
               </a>
@@ -189,25 +188,76 @@
             <ul>
               <li>
                 <strong>Video Production:</strong> Experience with long-form
-                footage and structured edits. (Adobe Premiere Pro, Blender
-                Sequencer)
-              </li>
-              <li>
-                <strong>Image & Design:</strong> Digital painting and graphics,
-                raster edits, compositing. (Adobe Photoshop, Affinity, Krita)
+                footage and structured edits.
               </li>
             </ul>
+            <ul>
+              <li>
+                <strong>Image & Design:</strong> Digital painting and graphics,
+                raster edits, compositing.
+              </li>
+            </ul>
+            <ol>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/ps.svg" />
+                <span>Photoshop</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/pr.svg" />
+                <span>Premiere Pro</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/blender-dark.svg" />
+                <span>Blender Sequencer</span>
+              </li>
+            </ol>
           </li>
           <!--  -->
           <li>
-            <b>Technical:</b>
+            <b>Technical: </b>
             <ul>
               <li>
-                <strong>Web Development:</strong> Building and maintaining
-                small-scale web projects. (HTML, CSS, JS, Git)
-                <a href="https://github.com/Forrai-Zoltan">GitHub</a>.
+                <strong>Web Development:</strong> Building small-scale web
+                projects.
               </li>
             </ul>
+            <ol>
+              <a href="https://github.com/Forrai-Zoltan">
+                <li>
+                  <img
+                    src="https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/github-dark.svg" />
+                  <span><strong>GitHub</strong></span>
+                </li>
+              </a>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/git.svg" />
+                <span>Git</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/obsidian-dark.svg" />
+                <span>Obsidian</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/html.svg" />
+                <span>HTML</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/css.svg" />
+                <span>CSS</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/javascript.svg" />
+                <span>Javascript</span>
+              </li>
+            </ol>
           </li>
           <!--  -->
         </ul>

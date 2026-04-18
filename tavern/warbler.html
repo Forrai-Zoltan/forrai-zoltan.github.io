@@ -12,9 +12,7 @@
           "(prefers-color-scheme: dark)"
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
-        const html = document.documentElement;
-        html.classList.add(isDark ? "dark" : "light");
-        html.classList.remove(isDark ? "light" : "dark");
+        document.documentElement.id = isDark ? "dark" : "light";
       })();
     </script>
     <script type="module" src="/index.js"></script>

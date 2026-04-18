@@ -12,9 +12,7 @@
           "(prefers-color-scheme: dark)"
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
-        const html = document.documentElement;
-        html.classList.add(isDark ? "dark" : "light");
-        html.classList.remove(isDark ? "light" : "dark");
+        document.documentElement.id = isDark ? "dark" : "light";
       })();
     </script>
     <script type="module" src="/index.js"></script>
@@ -69,7 +67,7 @@
       </nav>
     </header>
     <main>
-      <main-box class="bg-base">
+      <main-box>
         <page-wrapper>
           <page-header>
             <h1>Literary Theory, Analysis, &amp; Criticism</h1>

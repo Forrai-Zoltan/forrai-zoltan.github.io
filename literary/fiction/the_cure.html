@@ -13,9 +13,7 @@
           "(prefers-color-scheme: dark)"
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
-        const html = document.documentElement;
-        html.classList.add(isDark ? "dark" : "light");
-        html.classList.remove(isDark ? "light" : "dark");
+        document.documentElement.id = isDark ? "dark" : "light";
       })();
     </script>
     <script type="module" src="/index.js"></script>
@@ -168,10 +166,10 @@
       </article>
     </main>
     <footer>
-      <p class="review">
+      <review-reminder>
         What did you think of this piece?
         <a href="/tavern/contact">Let me know</a>.
-      </p>
+      </review-reminder>
       <br />
       <p>&copy; 2026 Forrai Zoltán. All rights reserved.</p>
     </footer>

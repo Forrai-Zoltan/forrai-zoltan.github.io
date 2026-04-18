@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiction・gildrom.com</title>
     <link rel="icon" type="image/png" href="/favicon.ico" />
-    <script>(function () {
-      const saved = localStorage.getItem("theme");
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const isDark = saved ? saved === "dark" : prefersDark;
-      const html = document.documentElement;
-      html.classList.add(isDark ? "dark" : "light");
-      html.classList.remove(isDark ? "light" : "dark");
-    })();</script>
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const isDark = saved ? saved === "dark" : prefersDark;
+        document.documentElement.id = isDark ? "dark" : "light";
+      })();
+    </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
   </head>
@@ -62,7 +64,7 @@
       </nav>
     </header>
     <main>
-      <main-box class="deck bg-grad-oval">
+      <main-box>
         <form>
           <search>
             <input

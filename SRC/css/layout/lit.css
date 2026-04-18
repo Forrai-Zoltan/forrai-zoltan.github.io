@@ -256,13 +256,14 @@ footer {
   }
 }
 
-.review {
+review-reminder {
+  display: block;
   color: light-dark(
     oklch(from var(--c-text-d) 45% c h / 1),
     oklch(from var(--c-text-d) 65% c h / 1)
   );
 }
-.review a:any-link {
+review-reminder a:any-link {
   color: var(--c-text-a);
 
   &::selection {

@@ -11,7 +11,9 @@
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
       })();
@@ -100,7 +102,7 @@
       <ul>
         <li>
           <strong>MA</strong>
-          <span>@ ELTE, Budapest <em>(befejezéshez közel áll)</em></span>
+          <span>@ ELTE, Budapest <em>(folyamatban)</em></span>
           <ul>
             <li>
               Osztatlan mesterképzés: Angol nyelv és kultúra tanára, történelem
@@ -127,43 +129,40 @@
         <ul>
           <li>
             <b>Kreatív:</b>
-            <ul>
-              <li>
-                Kreatív írás angolul (spekulatív fikció, líra, esszé):
-                <a target="_blank" href="https://gildrom.com/">gildrom.com</a>
-              </li>
-            </ul>
+            <p>
+              Kreatív írás angolul (spekulatív fikció, líra, esszé):
+              <a target="_blank" href="https://gildrom.com/">gildrom.com</a>
+              <br />
+              <span>Minta munka:</span>
+            </p>
             <div>
               <a href="/literary/fiction/befitting">Befitting</a>
               <a href="/literary/fiction/reverie_ride">Reverie Ride</a>
               <a href="/literary/fiction/the_cure">The Cure</a>
             </div>
-            <ul>
-              <li>
-                Monokromatikus digitális illusztráció:
-                <a target="_blank" href="https://gildrom.newgrounds.com/art"
-                  >gildrom.newgrounds.com</a
-                >
-              </li>
-            </ul>
+            <p>
+              Monokromatikus digitális illusztráció:
+              <a target="_blank" href="https://gildrom.newgrounds.com/art"
+                >gildrom.newgrounds.com</a
+              >
+              <br />
+              <span>Minta munka:</span>
+            </p>
             <div>
               <a
                 href="https://www.newgrounds.com/art/view/gildrom/welcoming-committee">
                 <img
-                  alt="Welcoming Committee"
-                  style="object-position: 0% 0%"
+                  style="object-position: 50% 0%"
                   src="https://art.ngfiles.com/medium_views/7245000/7245376_2687155_gildrom_untitled-7245376.7901b63b8a4dfa82e813dfdb9156a448.webp?f1764727101" />
               </a>
               <a href="https://www.newgrounds.com/art/view/gildrom/wings">
                 <img
-                  alt="Wings"
                   style="object-position: 0% 0%"
                   src="https://art.ngfiles.com/medium_views/7001000/7001128_2381830_gildrom_untitled-7001128.7d4ee458abee6c3e7e8b051966b039b0.webp?f1756783933" />
               </a>
               <a
                 href="https://www.newgrounds.com/art/view/gildrom/unguis-the-crawler">
                 <img
-                  alt="Unguis the Crawler"
                   style="object-position: 0% 0%"
                   src="https://art.ngfiles.com/medium_views/6897000/6897646_2250787_gildrom_unguis.2adcba4f3c12177acac34e1aaaf11e80.webp?f1753561452" />
               </a>
@@ -184,26 +183,73 @@
             <ul>
               <li>
                 <strong>Videókészítés:</strong> Tapasztalat hosszú formátumú
-                felvételekkel és strukturált vágással. (Adobe Premiere Pro,
-                Blender Sequencer)
+                felvételekkel és strukturált vágással.
               </li>
               <li>
                 <strong>Kép és dizájn:</strong> Digitális festészet és grafika,
-                raszteres szerkesztés, kompozitálás. (Adobe Photoshop, Affinity,
-                Krita)
+                raszteres szerkesztés, kompozitálás.
               </li>
             </ul>
+            <ol>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/ps.svg" />
+                <span>Photoshop</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/pr.svg" />
+                <span>Premiere Pro</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/blender-dark.svg" />
+                <span>Blender Sequencer</span>
+              </li>
+            </ol>
           </li>
           <!--  -->
           <li>
-            <b>Technikai:</b>
+            <b>Technikai: </b>
             <ul>
               <li>
-                <strong>Webfejlesztés:</strong> Kisebb webes projektek építése
-                és karbantartása. (HTML, CSS, JS, Git)
-                <a href="https://github.com/Forrai-Zoltan">GitHub</a>.
+                <strong>Webfejlesztés:</strong> Kisebb webes projektek építése.
               </li>
             </ul>
+            <ol>
+              <a href="https://github.com/Forrai-Zoltan">
+                <li>
+                  <img
+                    src="https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/github-dark.svg" />
+                  <span><strong>GitHub</strong></span>
+                </li>
+              </a>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/git.svg" />
+                <span>Git</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/obsidian-dark.svg" />
+                <span>Obsidian</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/html.svg" />
+                <span>HTML</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/css.svg" />
+                <span>CSS</span>
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/javascript.svg" />
+                <span>Javascript</span>
+              </li>
+            </ol>
           </li>
           <!--  -->
         </ul>
