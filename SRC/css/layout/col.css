@@ -25,7 +25,7 @@ nav:has(a[href="/rss.xml"]) a {
 }
 
 nav:has(a[href="/rss.xml"]) a:hover {
-  color: white;
+  color: light-dark(black, white);
 }
 
 buttons-88x31 {
@@ -37,8 +37,8 @@ buttons-88x31 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: light-dark(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)) ;
+  border: var(--glass-border-b);
   box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px !important;
