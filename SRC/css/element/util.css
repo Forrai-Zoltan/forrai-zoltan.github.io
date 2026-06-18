@@ -1,0 +1,10 @@
+.center {
+  text-align: center;
+}
+
+emo-icon {
+  color: var(--c-highlight);
+  font-family: var(--ff-jb-mono);
+  font-size: 1rem;
+  font-weight: bold;
+}

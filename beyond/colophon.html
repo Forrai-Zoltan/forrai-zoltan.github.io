@@ -3,377 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      href="https://www.gildrom.com/rss.xml" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="/SRC/css/var.css" />
-    <link rel="stylesheet" href="/SRC/css/font.css" />
-    <link rel="stylesheet" href="/SRC/css/base.css" />
-    <link rel="stylesheet" href="/SRC/css/text.css" />
-    <link rel="stylesheet" href="/SRC/css/layout.css" />
-    <link rel="stylesheet" href="/SRC/css/header.css" />
-    <link rel="stylesheet" href="/SRC/css/util.css" />
-    <style>
-      nav:has(a[href="/rss.xml"]) {
-        border-bottom: 1px solid var(--color-alt-white);
-      }
-
-      nav:has(a[href="/rss.xml"]) ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 10ch;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-      }
-
-      nav:has(a[href="/rss.xml"]) ul li::marker {
-        content: none;
-      }
-
-      nav:has(a[href="/rss.xml"]) a {
-        color: var(--color-alt-white);
-      }
-
-      nav:has(a[href="/rss.xml"]) a:hover {
-        color: white;
-      }
-
-      buttons-88x31 {
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-        background-color: rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
-        padding: 1rem;
-        border-radius: 10px !important;
-        margin: 20px 0;
-      }
-
-      buttons-88x31 img {
-        border-radius: 2px;
-      }
-
-      buttons-88x31 a:not(div a):hover {
-        outline: 1px solid white;
-        border-radius: 2px;
-      }
-
-      tech-stack-icons {
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        margin-top: 20px;
-        flex-wrap: wrap;
-      }
-
-      tech-stack-icons img {
-        width: 50px;
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 12px;
-        height: 50px;
-      }
-
-      tech-stack-icons a:hover img,
-      tech-stack-icons a:focus-visible img {
-        border-radius: 12px;
-        filter: brightness(1.15);
-        box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
-      }
-
-      tech-stack-icons a:focus-visible {
-        border-radius: 12px;
-      }
-
-      .morse {
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
-      /* Mobile Adaptations */
-      @media screen and (max-width: 768px) {
-        /* Navigation adjustments */
-        nav:has(a[href="/rss.xml"]) ul {
-          gap: 3ch;
-        }
-
-        /* Reduce padding on buttons container */
-        buttons-88x31 {
-          padding: 0.75rem;
-          margin: 15px 0;
-          gap: 4px;
-        }
-
-        /* Tech stack icons stay same size on mobile */
-        tech-stack-icons {
-          gap: 4px;
-          margin-top: 15px;
-        }
-
-        /* Hide pointing hand on mobile (no hover state) */
-        img[src="/SRC/asset/icon/pointing-hand.png"] {
-          display: none;
-        }
-      }
-
-      @media screen and (max-width: 480px) {
-        /* Keep navigation horizontal with tighter spacing */
-        nav:has(a[href="/rss.xml"]) ul {
-          gap: 1.5ch;
-          flex-wrap: wrap;
-        }
-
-        /* Further reduce button container padding */
-        buttons-88x31 {
-          padding: 0.5rem;
-          margin: 10px 0;
-        }
-
-        /* Reduce transform scale on small screens */
-        img[src="/SRC/btn.gif"] {
-          transform: scale(1.05);
-        }
-
-        img[src="/SRC/btn.gif"]:hover {
-          transform: scale(1.1);
-        }
-      }
-
-      /* Tablet landscape adjustments */
-      @media screen and (min-width: 769px) and (max-width: 1024px) {
-        nav:has(a[href="/rss.xml"]) ul {
-          gap: 6ch;
-        }
-      }
-
-      section:has(code) {
-        margin-block: 20px 0;
-      }
-
-      section:has(code) ul {
-        margin-block: 20px 30px;
-
-        li {
-          margin-top: 10px;
-        }
-      }
-    </style>
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>Colophon・gildrom.com</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://gildrom.com/#person",
+        "name": "Zoltan Forrai",
+        "alternateName": ["Forrai Zoltán", "Gildrom"],
+        "image": "/SRC/media/photo/head-shot-original.png",
+        "email": "mailto:zoltan.forrai@gildrom.com",
+        "jobTitle": "Writer",
+        "url": "https://gildrom.com",
+        "sameAs": [
+          "https://gildrom.newgrounds.com/",
+          "https://github.com/Forrai-Zoltan",
+          "https://forrai-zoltan.github.io/"
+        ]
+      }
+    </script>
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const isDark = saved ? saved === "dark" : prefersDark;
+        document.documentElement.id = isDark ? "dark" : "light";
+      })();
+    </script>
+    <script type="module" src="/index.js"></script>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/SRC/css/layout/col.css" />
   </head>
-  <body
-    bgcolor="#121212"
-    text="#D2D2D2"
-    link="#3C8CDD"
-    alink="#0959AA"
-    vlink="#8C59C0">
+  <body data-page="home">
     <header>
-      <nav>
+      <title-bar>
         <a href="/">
-          <img align="left" height="30" src="/favicon.ico" />
-          <h1>Part&nbsp;Time&nbsp;Writer. Full&nbsp;Time&nbsp;Wizard.</h1>
+          <img width="30" height="30" src="/favicon.ico" />
+          <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
         </a>
-        <label for="burger">
-          <svg width="0" height="0">
-            <use href="/SRC/asset/svg/nav.svg#icon-menu"></use>
-          </svg>
-        </label>
-      </nav>
-      <input id="burger" type="checkbox" />
+      </title-bar>
       <nav>
         <ul>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-user-round"></use>
-            </svg>
+          <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li>
-                <a href="/personal/about">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-fingerprint"></use>
-                  </svg>
-                  Who am I?
-                </a>
-              </li>
-              <li>
-                <a href="/personal/obsessions">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-star"></use>
-                  </svg>
-                  Obsessions
-                </a>
-              </li>
-              <li>
-                <a href="/personal/library">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-open"></use>
-                  </svg>
-                  Library
-                </a>
-              </li>
+              <li><a href="/personal/about">Who am I?</a></li>
+              <li><a href="/personal/obsessions">Obsessions</a></li>
+              <li><a href="/personal/library">Library</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-library"></use>
-            </svg>
+          <li tabindex="0" data-icon="literary">
             <b>Literary</b>
             <ul>
-              <li>
-                <a href="/literary/fiction">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-book-closed"></use>
-                  </svg>
-                  Fiction
-                </a>
-              </li>
-              <li>
-                <a href="/literary/poetry">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-pencil"></use>
-                  </svg>
-                  Poetry
-                </a>
-              </li>
-              <li>
-                <a href="/literary/essays">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-notebook-pen"></use>
-                  </svg>
-                  Essays
-                </a>
-              </li>
+              <li><a href="/literary/fiction">Fiction</a></li>
+              <li><a href="/literary/poetry">Poetry</a></li>
+              <li><a href="/literary/essays">Essays</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-barrel"></use>
-            </svg>
+          <li tabindex="0" data-icon="tavern">
             <b>Tavern</b>
             <ul>
-              <li>
-                <a href="/tavern/contact">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-send"></use>
-                  </svg>
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/warbler">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-bird"></use>
-                  </svg>
-                  Warbler
-                </a>
-              </li>
-              <li>
-                <a href="/tavern/patronage">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-sparkles"></use>
-                  </svg>
-                  Patronage
-                </a>
-              </li>
+              <li><a href="/tavern/contact">Contact</a></li>
+              <li><a href="/tavern/warbler">Warbler</a></li>
+              <li><a href="/tavern/patronage">Patronage</a></li>
             </ul>
           </li>
-          <li tabindex="0">
-            <svg width="20" height="20">
-              <use href="/SRC/asset/svg/nav.svg#icon-moon"></use>
-            </svg>
+          <li tabindex="0" data-icon="beyond">
             <b>Beyond</b>
             <ul>
-              <li>
-                <a href="/beyond/other">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-palette"></use>
-                  </svg>
-                  Other Works
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/secret">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-lock"></use>
-                  </svg>
-                  Secret
-                </a>
-              </li>
-              <li>
-                <a href="/beyond/epilogue">
-                  <svg width="20" height="20">
-                    <use href="/SRC/asset/svg/nav.svg#icon-scroll-text"></use>
-                  </svg>
-                  Epilogue
-                </a>
-              </li>
+              <li><a href="/beyond/other">Other Works</a></li>
+              <li><a href="/beyond/secret">Secret</a></li>
+              <li><a href="/beyond/epilogue">Epilogue</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <exit-content>
-        <article>
-          <nav>
-            <ul>
-              <li><a href="/rss.xml"> RSS </a></li>
-              <li><a href="/faq">FAQ</a></li>
-              <li><a href="/legal">Legal</a></li>
-              <li><a href="/RES/secret/secret.html">⋈</a></li>
-            </ul>
-          </nav>
-          <buttons-88x31>
-            <img src="/SRC/asset/icon/btn/btn-kb.webp" />
-            <!-- First -->
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://gildrom.newgrounds.com/">
-              <img src="/SRC/asset/icon/btn/btn-ng.gif" alt="My Newgrounds" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.bpunderground.hu/">
-              <img
-                width="88"
-                height="31"
-                src="/SRC/asset/icon/btn/bpu.svg"
-                alt="Budapest Underground" />
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.borealart.net/">
-              <img src="" alt="borealart.net" />
-            </a>
-            <!-- Last -->
-            <img src="/SRC/asset/icon/btn/btn-vhs.webp" />
-            <style>
-              #newgrounds-webring .background {
-                overflow: auto;
-                border-bottom: 5px solid black;
-              }
-            </style>
+      <main-box>
+        <exit-content>
+          <article>
+            <nav>
+              <ul>
+                <li><a href="/zoltan-forrai">CV</a></li>
+                <li><a href="/rss.xml"> RSS </a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/RES/secret/secret.html">⋈</a></li>
+              </ul>
+            </nav>
+            <buttons-88x31>
+              <img src="/SRC/asset/icon/btn/btn-kb.webp" />
+              <!-- First -->
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://gildrom.newgrounds.com/">
+                <img src="/SRC/asset/icon/btn/btn-ng.gif" alt="My Newgrounds" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.bpunderground.hu/">
+                <img
+                  width="88"
+                  height="31"
+                  src="/SRC/asset/icon/btn/bpu.svg"
+                  alt="Budapest Underground" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.borealart.net/">
+                <img src="" alt="borealart.net" />
+              </a>
+              <!-- Last -->
+              <img src="/SRC/asset/icon/btn/btn-vhs.webp" />
+            </buttons-88x31>
             <div
               id="newgrounds-webring"
               style="
@@ -381,256 +129,252 @@
                 border: 2px solid white;
                 border-radius: 10px;
                 overflow: hidden;
+                margin-inline: auto;
               ">
               <script
                 design="minimal"
                 src="https://youtherthyf-madehouse.neocities.org/NG-widget/webring.js"></script>
             </div>
-          </buttons-88x31>
-          <p align="center">
-            <svg id="sigil" width="50" height="50">
-              <use href="/SRC/asset/svg/sigil.svg#sigil"></use>
-            </svg>
-          </p>
-          <tech-stack-list>
-            <h2>Colophon — Technologies Used</h2>
-            <p>
-              The source code for this website is available on
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/Forrai-Zoltan"
-                >GitHub</a
-              >. Keep in mind, however, that I&rsquo;m no dev, just a humble
-              English teacher trying his best.
-              <jb-emoji> :) </jb-emoji>
-            </p>
-            <ul>
-              <li>
-                Domain name provider:
+            <tech-stack-list>
+              <h2>Colophon — Technologies Used</h2>
+              <p>
+                The source code for this website is available on
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.cloudflare.com/products/registrar/">
-                  Cloudflare registrar</a
-                >
-              </li>
-              <li>
-                Site hosted on:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://docs.github.com/en/pages"
-                  >GitHub Pages</a
-                >
-              </li>
-              <li>
-                Video Hosting:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://archive.org/"
-                  >Internet Archive</a
-                >
-              </li>
-              <li>
-                Front-end Form Submit:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://formsubmit.co/"
-                  >Formsubmit</a
-                >
-              </li>
-              <li>
-                Front-end Encryption:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/robinmoisson/staticrypt"
-                  >Staticrypt</a
-                >
-              </li>
-              <li>
-                Library images from:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.wikimedia.org/"
-                  >Wikimedia</a
-                >
-              </li>
-              <li>
-                JS vibe coded with:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://claude.ai/"
-                  >Claude</a
-                >
-              </li>
-              <li>
-                RSS Styling:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.rss.style/"
-                  >RSS Style</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/kittinan/spotify-github-profile"
-                  >Spotify Widget</a
-                >
-                by
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/kittinan"
-                  >Kittinan</a
-                >
-              </li>
-              <li>
-                SVG icons from:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://lucide.dev/"
-                  >Lucide Icons</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/onemarc/tech-icons"
-                  >Tech Icons</a
-                >
-                by
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/onemarc"
-                  >Onemarc</a
-                >
-              </li>
-              <li>
-                Literary Font:
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://en.wikipedia.org/wiki/Cochin_(typeface)"
-                  >Cochin</a
-                >
-              </li>
-              <li>
-                <span class="typewriter">
-                  Typewriter Font:
+                  href="https://github.com/Forrai-Zoltan"
+                  >GitHub</a
+                >. Keep in mind, however, that I&rsquo;m no dev, just a humble
+                English teacher trying his best.
+                <jb-emoji> :) </jb-emoji>
+              </p>
+              <ul>
+                <li>
+                  Domain name provider:
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://fonts.google.com/specimen/Special+Elite"
-                    >Special Elite</a
+                    href="https://www.cloudflare.com/products/registrar/">
+                    Cloudflare registrar</a
                   >
-                </span>
-              </li>
-              <li>
-                <span class="departure">
-                  Monospaced Pixel Font:
+                </li>
+                <li>
+                  Site hosted on:
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.departuremono.com/"
-                    >Departure Mono</a
+                    href="https://docs.github.com/en/pages"
+                    >GitHub Pages</a
                   >
-                </span>
-              </li>
-              <li>
-                <span class="jb-mono">
-                  Monospaced Ligature Font:
+                </li>
+                <li>
+                  Video Hosting:
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.jetbrains.com/lp/mono/"
-                    >JetBrains Mono</a
+                    href="https://archive.org/"
+                    >Internet Archive</a
                   >
-                </span>
-              </li>
-            </ul>
-            <tech-stack-icons>
-              <img
-                width="50"
-                height="50"
-                title="macOs"
-                src="https://github.com/onemarc/tech-icons/raw/main/icons/macos-dark.svg" />
-              <img
-                width="50"
-                height="50"
-                title="Linux"
-                src="https://github.com/onemarc/tech-icons/raw/main/icons/linux-dark.svg" />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vscodium.com/">
+                </li>
+                <li>
+                  Front-end Form Submit:
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://formsubmit.co/"
+                    >Formsubmit</a
+                  >
+                </li>
+                <li>
+                  Front-end Encryption:
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/robinmoisson/staticrypt"
+                    >Staticrypt</a
+                  >
+                </li>
+                <li>
+                  Library images from:
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.wikimedia.org/"
+                    >Wikimedia</a
+                  >
+                </li>
+                <li>
+                  JS vibe coded with:
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://claude.ai/"
+                    >Claude</a
+                  >
+                </li>
+                <li>
+                  RSS Styling:
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.rss.style/"
+                    >RSS Style</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/kittinan/spotify-github-profile"
+                    >Spotify Widget</a
+                  >
+                  by
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/kittinan"
+                    >Kittinan</a
+                  >
+                </li>
+                <li>
+                  SVG icons from:
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://lucide.dev/"
+                    >Lucide Icons</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/onemarc/tech-icons"
+                    >Tech Icons</a
+                  >
+                  by
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/onemarc"
+                    >Onemarc</a
+                  >
+                </li>
+                <li>
+                  Literary Font:
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://en.wikipedia.org/wiki/Cochin_(typeface)"
+                    >Cochin</a
+                  >
+                </li>
+                <li>
+                  <span class="typewriter">
+                    Typewriter Font:
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://fonts.google.com/specimen/Special+Elite"
+                      >Special Elite</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="departure">
+                    Monospaced Pixel Font:
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.departuremono.com/"
+                      >Departure Mono</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="jb-mono">
+                    Monospaced Ligature Font:
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.jetbrains.com/lp/mono/"
+                      >JetBrains Mono</a
+                    >
+                  </span>
+                </li>
+              </ul>
+              <tech-stack-icons>
                 <img
                   width="50"
                   height="50"
-                  title="VSCodium"
-                  src="https://github.com/onemarc/tech-icons/raw/main/icons/vscodium-dark.svg" />
-              </a>
-              <img
-                width="50"
-                height="50"
-                title="HTML"
-                src="https://github.com/onemarc/tech-icons/raw/main/icons/html.svg" />
-              <img
-                width="50"
-                height="50"
-                title="CSS"
-                src="https://github.com/onemarc/tech-icons/raw/main/icons/css.svg" />
-              <img
-                width="50"
-                height="50"
-                title="Javascript"
-                src="https://github.com/onemarc/tech-icons/raw/main/icons/javascript.svg" />
-              <img
-                width="50"
-                height="50"
-                title="git"
-                src="https://github.com/onemarc/tech-icons/raw/main/icons/git.svg" />
-              <img
-                width="50"
-                height="50"
-                title="GitHub"
-                src="https://github.com/onemarc/tech-icons/raw/main/icons/github-dark.svg" />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://obsidian.md/">
+                  title="macOs"
+                  src="https://github.com/onemarc/tech-icons/raw/main/icons/macos-dark.svg" />
                 <img
                   width="50"
                   height="50"
-                  title="Obsidian.md"
-                  src="https://github.com/onemarc/tech-icons/raw/main/icons/obsidian-dark.svg" />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.blender.org/">
+                  title="Linux"
+                  src="https://github.com/onemarc/tech-icons/raw/main/icons/linux-dark.svg" />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vscodium.com/">
+                  <img
+                    width="50"
+                    height="50"
+                    title="VSCodium"
+                    src="https://github.com/onemarc/tech-icons/raw/main/icons/vscodium-dark.svg" />
+                </a>
                 <img
                   width="50"
                   height="50"
-                  title="Blender"
-                  src="https://github.com/onemarc/tech-icons/raw/main/icons/blender-dark.svg" />
-              </a>
-            </tech-stack-icons>
-            <hr />
-          </tech-stack-list>
-        </article>
-      </exit-content>
+                  title="HTML"
+                  src="https://github.com/onemarc/tech-icons/raw/main/icons/html.svg" />
+                <img
+                  width="50"
+                  height="50"
+                  title="CSS"
+                  src="https://github.com/onemarc/tech-icons/raw/main/icons/css.svg" />
+                <img
+                  width="50"
+                  height="50"
+                  title="Javascript"
+                  src="https://github.com/onemarc/tech-icons/raw/main/icons/javascript.svg" />
+                <img
+                  width="50"
+                  height="50"
+                  title="git"
+                  src="https://github.com/onemarc/tech-icons/raw/main/icons/git.svg" />
+                <img
+                  width="50"
+                  height="50"
+                  title="GitHub"
+                  src="https://github.com/onemarc/tech-icons/raw/main/icons/github-dark.svg" />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://obsidian.md/">
+                  <img
+                    width="50"
+                    height="50"
+                    title="Obsidian.md"
+                    src="https://github.com/onemarc/tech-icons/raw/main/icons/obsidian-dark.svg" />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.blender.org/">
+                  <img
+                    width="50"
+                    height="50"
+                    title="Blender"
+                    src="https://github.com/onemarc/tech-icons/raw/main/icons/blender-dark.svg" />
+                </a>
+              </tech-stack-icons>
+              <hr />
+            </tech-stack-list>
+          </article>
+        </exit-content>
+      </main-box>
     </main>
   </body>
 </html>

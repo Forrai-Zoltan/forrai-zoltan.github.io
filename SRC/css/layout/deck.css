@@ -10,50 +10,49 @@ deck-section {
 
   #NG {
     background-image: url(/SRC/media/img/cover-ng.bmp);
-    background-color: black;
     background-size: contain;
     background-position: top;
   }
 }
 
-/* //// //// //// OTHER STYLES //// //// //// */
+/* //// //// //// OTHER //// //// //// */
+
 search {
+  position: relative;
   width: 90%;
   margin: 15px auto;
-  position: relative;
 }
 
 input[type="search"] {
   width: 100%;
-  font-size: 1.1rem;
   padding: 5px;
   padding-left: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 5px 5px hsla(0, 0%, 10%, 1),
-    0px 5px 10px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  color: hsla(var(--color-green-light-a), 0.6);
-  background-color: var(--color-gray-800);
-  background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a0a0a0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>\<circle cx='11' cy='11' r='8'/>\<line x1='21' y1='21' x2='16.65' y2='16.65'/>\</svg>");
+  border: 1px solid light-dark(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 100%, 0.2));
+  border-radius: var(--br-s);
+  font-family: var(--ff-mono);
+  font-size: 1.1rem;
+  line-height: 1;
+
+  background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23808080' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>\<circle cx='11' cy='11' r='8'/>\<line x1='21' y1='21' x2='16.65' y2='16.65'/>\</svg>");
   background-repeat: no-repeat;
   background-position: 12px center;
   background-size: 16px 16px;
-  font-family: var(--font-mono);
+
+  color: light-dark(hsl(120, 81%, 40%), hsla(120, 100%, 50%, 0.6));
+  background-color: light-dark(var(--c-g-35), var(--c-g-20));
 
   &::placeholder {
-    color: var(--color-gray-600);
-    font-family: var(--font-mono);
+    color: light-dark(var(--c-g-55), var(--c-g-40));
   }
 
   &:focus {
-    background-color: var(--color-gray-750);
-    box-shadow: inset 0 0 5px 5px hsla(0, 0%, 10%, 0.3);
+    border-radius: var(--br-s);
     outline: none;
-    border-radius: 10px;
+    background-color: light-dark(var(--c-g-25), var(--c-g-25));
   }
 
   &:focus::placeholder {
-    color: var(--color-gray-500);
+    color: light-dark(var(--c-g-60), var(--c-g-50));
   }
 }
 
@@ -66,6 +65,10 @@ input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
 }
 
 [type="reset"] {
+  width: 0;
+  min-width: 20px;
+  box-shadow: none;
+  margin: 0;
   position: absolute;
   right: 0.5em;
   top: 50%;
@@ -77,7 +80,7 @@ input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
   display: block;
   padding: 0;
   color: orangered;
-  font-family: var(--font-mono);
+  font-family: var(--ff-mono);
 
   &:hover {
     color: red;
@@ -85,57 +88,55 @@ input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
 }
 
 deck-section {
-  padding-inline: 2rem;
-  padding-block: 1rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   gap: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+
 @media (max-width: 1000px) {
-  deck-section {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-}
-@media (max-width: 600px) {
   deck-section {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
 deck-section a {
-  color: white;
-  aspect-ratio: 3 / 4;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  background-image: linear-gradient(to bottom, hsl(0, 0%, 6%), hsl(0, 0%, 9%));
-  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5),
-    inset 0px 2px 12px -1px rgba(0, 0, 0, 0.5);
-  transition: transform 0.15s ease-out, box-shadow 0.15s ease;
-  will-change: transform;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  aspect-ratio: 3 / 4;
   position: relative;
-  overflow: hidden;
   height: 100%;
-  filter: brightness(0.9);
+  overflow: hidden;
 
+  text-decoration: none;
+
+  border: var(--glass-border);
+  border-radius: var(--br-s);
+
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease;
+  will-change: transform, box-shadow;
+
+  color: light-dark(hsla(0, 0%, 0%, 0.7), var(--off-white));
+
+  box-shadow: var(--glass-shadow-b);
+
+  background-image: var(--grad-card);
+
+  filter: brightness(0.9);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: content-box;
 
-  br {
-    display: none;
-  }
-
   &:hover,
   &:focus-visible {
+    border-radius: var(--br-s);
     filter: brightness(1.1);
     transform: scale(1.04);
     z-index: 1;
-    border-radius: 10px;
+    color: light-dark(hsla(0, 0%, 0%, 0.8), var(--off-white));
   }
 
   &:active {
@@ -144,28 +145,44 @@ deck-section a {
 }
 
 title-span {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
   width: calc(100% - 20px);
   min-height: 15%;
   max-height: 24%;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.65);
+
+  border-radius: 5px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: clamp(1rem, 6vw, 1.2rem);
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: light-dark(hsla(210, 80%, 40%, 0.3), hsla(0, 0%, 0%, 0.65));
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: clamp(1rem, 6vw, 1.2rem);
 
   &:empty {
     background-color: transparent;
     backdrop-filter: unset;
     -webkit-backdrop-filter: unset;
   }
+}
+
+deck-section a.dark {
+  background-color: black;
+  box-shadow: 0px 15px 19px 2px rgba(0, 0, 0, 0.5);
+
+  title-span {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+html#light .dark {
+  box-shadow: 3px 5px 8px 0px rgba(0, 0, 0, 0.5);
 }
