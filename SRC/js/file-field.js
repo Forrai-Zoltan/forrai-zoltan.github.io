@@ -88,7 +88,7 @@ function updateThumbnails(dropZoneElement, file) {
     reader.onload = () => {
       thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
       thumbnailElement.style.backgroundSize = "cover";
-      thumbnailElement.style.boxShadow = "0px 5px 10px 2px rgba(0, 0, 0, 0.5)";
+      thumbnailElement.style.boxShadow = "0px 2px 5px 2px rgba(0, 0, 0, 0.5)";
       thumbnailElement.style.width = "100%";
       thumbnailElement.style.height = "70px";
     };

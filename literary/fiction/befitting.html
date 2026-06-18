@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="/SRC/css/font.css" />
-    <link rel="stylesheet" href="/SRC/css/lit.css" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>Befitting・gildrom.com</title>
     <meta name="description" content="" />
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const isDark = saved ? saved === "dark" : prefersDark;
+        document.documentElement.id = isDark ? "dark" : "light";
+      })();
+    </script>
+    <script type="module" src="/index.js"></script>
+    <link rel="stylesheet" href="/SRC/css/layout/lit.css" />
   </head>
-  <body>
+  <body data-page="literature">
     <header>
       <ul>
         <li>Website: <a href="/literary/fiction">GILDROM.com</a></li>
@@ -24,6 +33,10 @@
           <mark id="adventure">#adventure</mark>
         </li>
       </ul>
+      <menu>
+        <button id="toggleBtn" aria-label="Toggle audio"></button>
+        <toggle-btn></toggle-btn>
+      </menu>
     </header>
     <main>
       <article>
@@ -49,7 +62,7 @@
           and raised it hastily to his lips. Empty. Not one miserable drop. He
           reached for another jug, one he had pinched from a cleric on his way
           to the foothills, a tiny clay flask, white in colour, unassuming. He
-          uncorked it with his teeth and took a swing from what he thought would
+          uncorked it with his teeth and took a swig from what he thought would
           be a spirit. Salted, stale water filled his mouth and he had to spit
           it out. He cursed, put the flask away and continued climbing.
         </p>
@@ -74,7 +87,7 @@
           lintel of the gaping entrance. He drew his axe from his belt, and
           slowly and warily marched towards the ziggurat. The wind turned colder
           and a familiar stench of rot and decay vexed his senses. He stopped in
-          his track when he realised he had been watched.
+          his tracks when he realised he had been watched.
         </p>
         <p>
           Two tall figures cloaked in dark velvets emerged from the opening.
@@ -85,20 +98,20 @@
           visages. What he first believed to be cloth was a cloak made of
           decomposing flesh and skin which wrapped itself tightly around the
           gaunt figures. It looked as if their once human skin were flayed and
-          then draped over them again, dressed in their own agony! What a
-          mockery of the living! A long slit-like opening in the front revealed
-          the skeletal structure under the decaying skin. Empty sockets watched
-          his every flinch, lips of naked teeth scorned him with unsaid words.
+          then draped over them again, dressed in their own agony. A mockery of
+          the living. A long slit-like opening in the front revealed the
+          skeletal structure under the decaying skin. Empty sockets watched his
+          every flinch, lips of naked teeth scorned him with unsaid words.
         </p>
         <hr />
         <p-center>To be continued...</p-center>
       </article>
     </main>
     <footer>
-      <p class="review">
+      <review-reminder>
         What did you think of this piece?
         <a href="/tavern/contact">Let me know</a>.
-      </p>
+      </review-reminder>
       <br />
       <p>&copy; 2026 Forrai Zoltán. All rights reserved.</p>
     </footer>

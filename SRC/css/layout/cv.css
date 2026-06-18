@@ -1,0 +1,599 @@
+
+@import url(/SRC/css/global/fonts.css);
+@import url(/SRC/css/global/variables.css);
+@import url(/SRC/css/element/btn-switch.css);
+@import url(/SRC/css/element/btn-audio.css);
+@import url(/SRC/css/element/svg-sigil.css);
+@import url(/SRC/css/element/util.css);
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  line-height: var(--lh-s);
+  overflow-wrap: break-word;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  outline: none;
+  box-shadow: none;
+}
+
+:root {
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: light-dark(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.5));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  position: relative;
+}
+
+/* ============================================================
+      HTML / BODY
+      ============================================================ */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--c-page);
+  color: var(--c-text);
+  font-size: var(--font-size-cv);
+  font-family: "cochin";
+  scroll-padding-top: 100px;
+  scrollbar-width: thin;
+  scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3))
+    transparent;
+  scrollbar-gutter: auto;
+}
+
+/* ============================================================
+      LAYOUT: HEADER, ARTICLE, FOOTER
+      ============================================================ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: hsla(from var(--c-page) h s l / 1);
+}
+
+header div {
+  width: 100%;
+  max-width: 58ch;
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  position: relative;
+  box-sizing: border-box;
+  z-index: 2;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 60ch;
+  padding-inline: 0.5rem;
+  padding-top: 20px;
+  overflow-wrap: break-word;
+  backdrop-filter: blur(0.7px);
+  background-color: oklch(from var(--c-page) l c h / 0.7);
+  box-shadow: 0 0 10px 10px oklch(from var(--c-page) l c h / 0.7);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  width: fit-content;
+  text-align: center;
+}
+
+/* ============================================================
+      NAVIGATION MENU
+      ============================================================ */
+menu {
+  position: absolute;
+  top: 8.5px;
+  right: 15px;
+  bottom: 0;
+  z-index: 10;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+menu a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 0.5;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+
+/* ============================================================
+      TYPOGRAPHY: HEADINGS
+      ============================================================ */
+h1 {
+  font-family: var(--ff-type);
+  font-size: clamp(1.8rem, 12vw, 3.9rem);
+  margin: 30px 0 0;
+  line-height: normal 1;
+}
+
+h2 {
+  font-family: var(--ff-type);
+  font-size: clamp(1.5rem, 8vw, 2rem);
+  margin: 50px 0 0;
+}
+
+h3 {
+  font-family: var(--ff-type);
+  font-size: clamp(1.2rem, 6vw, 1.5rem);
+  margin: 30px 0 0;
+}
+
+/* ============================================================
+      TYPOGRAPHY: INLINE & BLOCK ELEMENTS
+      ============================================================ */
+p {
+  margin-block: 0 10px;
+  line-height: 1.5;
+  hyphens: auto;
+}
+
+b {
+  color: var(--c-highlight);
+}
+
+em {
+  font-style: oblique 15deg;
+}
+
+a {
+  color: var(--c-text-a);
+  border-radius: 10px;
+
+  &:hover {
+    color: var(--c-text-a-hov);
+  }
+
+  &:active {
+    color: var(--c-text-a-act);
+  }
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  width: 95%;
+  margin-inline: auto;
+  background-color: var(--grey);
+}
+
+summary {
+  cursor: pointer;
+
+  &::marker {
+    color: var(--c-highlight);
+  }
+}
+
+details {
+  margin-top: 20px;
+  margin-left: 14px;
+  padding-left: 15px;
+  border-left: 1.5px solid var(--c-highlight);
+}
+
+details p {
+  margin-top: 10px;
+}
+
+/* ============================================================
+      SECTION
+      ============================================================ */
+section {
+  display: flow-root;
+  margin-block: 10px 50px;
+}
+
+section img {
+  width: 40%;
+  float: left;
+  margin-right: 25px;
+  border-radius: 8px;
+}
+
+/* ============================================================
+      LISTS
+      ============================================================ */
+ul {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+
+  li::marker {
+    content: "◈ ";
+    color: var(--c-highlight);
+  }
+}
+
+li {
+  padding-block: 3px;
+  hyphens: auto;
+}
+
+/* Nested unordered lists */
+ul:not(:has(div)) ul {
+  border-left: 1.5px solid var(--grey);
+  padding-left: 40px;
+  margin-left: -14.5px;
+}
+
+/* ============================================================
+      SKILLS SECTION
+      ============================================================ */
+skills-section > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  > li {
+    padding-block: 10px;
+
+    b {
+      margin-left: -10px;
+    }
+  }
+
+  > li::marker {
+    content: none;
+  }
+}
+
+skills-section span:not(li > span) {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* ============================================================
+      ORDERED LIST (CARD GRID)
+      ============================================================ */
+ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px 0;
+  margin: 10px auto;
+}
+
+ol li {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 5px;
+  line-height: 1;
+  border: var(--glass-border);
+  border-radius: 15px;
+  background-color: light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+ol img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  transition: transform 0.2s ease;
+}
+
+ol span {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  transition: transform 0.2s ease;
+}
+
+/* ============================================================
+      UNORDERED LIST: LINK CARD ROW (ul div)
+      ============================================================ */
+ul div {
+  display: flex;
+  gap: 2px;
+  width: 55ch;
+  margin-inline: auto;
+  margin-block: 10px 35px;
+
+  &:has(img) {
+    margin-block: 10px 20px;
+  }
+}
+
+ul div a {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3/1;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: clamp(1rem, 6vw, 1.1rem);
+  font-family: Arial, Helvetica, sans-serif;
+  color: inherit;
+  border: var(--glass-border);
+  border-radius: 10px;
+  background-color: var(--c-page);
+  box-shadow: var(--glass-shadow);
+  transform: scale(0.952);
+  transition: transform 0.2s ease, filter 0.2s ease;
+
+  &:hover {
+    transform: scale(1);
+    border: var(--glass-border-b);
+  }
+
+  &:has(img) {
+    aspect-ratio: 1/1.2;
+  }
+}
+
+ul div a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================
+      DECORATIVE FLOATS (#f1–#f5)
+      ============================================================ */
+:is(#f1, #f2, #f3, #f4, #f5) {
+  position: absolute;
+  z-index: 1;
+  width: 90px;
+  height: auto;
+  opacity: 0.5;
+  filter: invert(0);
+}
+
+#f1 {
+  top: 9%;
+  right: 18%;
+  opacity: 0.6;
+}
+#f2 {
+  top: 30%;
+  left: 7%;
+  opacity: 0.25;
+}
+#f3 {
+  top: 42%;
+  right: 38%;
+  width: 100px;
+}
+#f4 {
+  top: 70%;
+  right: 5%;
+  opacity: 0.15;
+}
+#f5 {
+  top: 90%;
+  left: 15%;
+  width: 100px;
+  opacity: 0.5;
+}
+
+/* ============================================================
+      LIGHT MODE OVERRIDES (html#light)
+      ============================================================ */
+html#light {
+  :is(#f1, #f2, #f3, #f4, #f5) {
+    filter: invert(1);
+    opacity: 0.5;
+  }
+
+  #f1 {
+    opacity: 0.6;
+  }
+  #f2 {
+    opacity: 0.35;
+  }
+  #f4 {
+    opacity: 0.25;
+  }
+  #f5 {
+    opacity: 0.5;
+  }
+
+  ol li {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      border-radius: 15px 15px 0 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0)
+      );
+      pointer-events: none;
+      z-index: 2;
+    }
+  }
+
+  ul div a {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0)
+      );
+      pointer-events: none;
+      z-index: 2;
+    }
+  }
+}
+
+/* ============================================================
+      RESPONSIVE: MOBILE (max-width: 1000px)
+      ============================================================ */
+@media (max-width: 1000px) {
+  header {
+    padding-top: 5px;
+  }
+
+  header div {
+    flex-direction: column;
+  }
+
+  menu {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding-top: 10px;
+  }
+
+  details {
+    margin-left: 5px;
+  }
+
+  skills-section > ul {
+    padding-left: 0px;
+  }
+
+  ul div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  ul div a:not(:has(img)) {
+    flex: none;
+    aspect-ratio: 5/1;
+  }
+
+  article {
+    margin-top: 50px;
+  }
+
+  ol {
+    margin: 10px 0;
+  }
+}
+
+/* ============================================================
+      PRINT
+      ============================================================ */
+@media print {
+  * {
+    color: #121212 !important;
+  }
+
+  ul li::marker {
+    color: #121212;
+  }
+
+  article,
+  header {
+    box-shadow: none;
+  }
+
+  menu,
+  :is(#f1, #f2, #f3, #f4, #f5) {
+    display: none;
+  }
+}
