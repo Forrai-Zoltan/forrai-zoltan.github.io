@@ -1,37 +1,16 @@
-@layer token, global, layout, theme, element, util;
+/* Global */
+@import "/SRC/CSS/global/fonts.css";
+@import "/SRC/CSS/global/variables.css";
+@import "/SRC/CSS/global/base.css";
+@import "/SRC/CSS/global/typo.css";
 
-@import url(/SRC/css/global/fonts.css) layer(token);
-@import url(/SRC/css/global/tokens/variables.css) layer(token);
-/* @import "layout.css";
-@import "typography.css";
-@import "color.css";
-@import "gradient.css";
-@import "shadow.css"; */
+/* Base Layout */
+@import "/SRC/css/layout/header.css";
+@import "/SRC/css/layout/aside.css";
+@import "/SRC/css/layout/main-box.css";
 
-@import url(/SRC/css/global/reset.css) layer(global);
-@import url(/SRC/css/global/base.css) layer(global);
-@import url(/SRC/css/global/typography.css) layer(global);
-@import url(/SRC/css/animation/INDEX.css) layer(global);
-/* @import url(vt-ld-switch.css);
- */
+/* Elements */
+@import "/SRC/CSS/element/svg-sigil.css";
+@import "/SRC/CSS/element/util.css";
 
-@import url(/SRC/css/layout/INDEX.css) layer(layout);
-/* @import url(aside.css);
-@import url(header.css); */
 
-@import url(/SRC/css/theme/INDEX.css) layer(theme);
-/* @import url(main-box.css);
-@import url(sheen.css);
- */
-
-@import url(/SRC/css/element/INDEX.css) layer(element);
-/* @import url(btn-audio.css);
-@import url(btn-switch.css);
-@import url(btn.css);
-@import url(gallery.css);
-@import url(spotify.css);
-@import url(svg-sigil.css);
- */
-
-@import url(/SRC/css/global/util.css) layer(util);
-@import url(/SRC/css/global/fixes.css) layer(util);

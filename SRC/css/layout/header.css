@@ -47,7 +47,7 @@ html#light title-bar {
   }
 }
 
-title-bar a {
+title-bar a:any-link {
   display: flex;
   align-items: center;
   width: 100%;
@@ -243,7 +243,7 @@ menu label[for="burger"],
     cursor: pointer;
     background: linear-gradient(to right, var(--c-purple-l), transparent);
 
-    a {
+    a:any-link {
       color: var(--white);
     }
   }
@@ -257,7 +257,7 @@ header nav > ul li {
   }
 }
 
-header nav a {
+header nav a:any-link {
   padding: 3px 3px 3px 10.5px;
   display: block;
   max-width: 100%;

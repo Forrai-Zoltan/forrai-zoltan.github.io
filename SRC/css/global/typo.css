@@ -78,17 +78,30 @@ faq-container details {
 
 details {
   border-left: 2px solid var(--c-highlight);
-  padding-left: 20px;
+  padding-left: 0;
   margin-top: 20px;
 }
 
 summary {
   cursor: pointer;
+  padding-left: 20px;
   font-weight: bold;
 
   &::marker {
     color: var(--c-highlight);
   }
+}
+
+details[open] summary {
+  border-bottom: var(--glass-border);
+
+}
+
+details p {
+  padding-left: 20px;
+  line-height: 1.5;
+  padding-top: 10px;
+
 }
 
 /* inline */
@@ -115,3 +128,30 @@ body[data-page="home"] h1 {
 }
 
 /* --------------------------------- */
+
+dev-notice {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  color: black;
+  /* text-shadow: 1.5px 0 black, -1.5px 0 black, 0 1.5px black, 0 -1.5px black,
+    1.5px 1.5px black, -1.5px -1.5px black, 1.5px -1.5px black,
+    -1.5px 1.5px black; */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    hsla(52, 100%, 40%, 1) 0 20px,
+    hsla(0, 0%, 7%, 1) 20px 40px
+  );
+}
+
+dev-notice span {
+  background-color: hsla(52, 100%, 40%, 1);
+  padding-inline: 2px;
+}

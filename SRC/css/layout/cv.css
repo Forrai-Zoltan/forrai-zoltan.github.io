@@ -1,17 +1,62 @@
-/* ============================================================
-   IMPORTS
-   ============================================================ */
+
 @import url(/SRC/css/global/fonts.css);
-@import url(/SRC/css/global/reset.css);
-@import url(/SRC/css/global/tokens/variables.css);
+@import url(/SRC/css/global/variables.css);
 @import url(/SRC/css/element/btn-switch.css);
 @import url(/SRC/css/element/btn-audio.css);
 @import url(/SRC/css/element/svg-sigil.css);
-@import url(/SRC/css/global/util.css);
+@import url(/SRC/css/element/util.css);
 
-/* ============================================================
-      ROOT & SCROLLBAR
-      ============================================================ */
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  line-height: var(--lh-s);
+  overflow-wrap: break-word;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  outline: none;
+  box-shadow: none;
+}
+
 :root {
   scrollbar-width: thin;
 }
@@ -25,17 +70,14 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  background: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  background: light-dark(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.5));
 }
 
-/* ============================================================
-      BASE RESET
-      ============================================================ */
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +100,7 @@ html {
   font-family: "cochin";
   scroll-padding-top: 100px;
   scrollbar-width: thin;
-  scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
+  scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3))
     transparent;
   scrollbar-gutter: auto;
 }

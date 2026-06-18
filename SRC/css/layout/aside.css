@@ -60,6 +60,7 @@ body[data-page="about"] {
     transform: translateY(5px);
     width: 1em;
     height: 1em;
+
   }
 
   main > aside > footer a {
@@ -107,6 +108,8 @@ body[data-page="home"] {
     justify-content: space-between;
     align-items: flex-end;
     scale: 0.8;
+  user-select: none;
+
   }
 
   svg-links a[href="/tavern/warbler"] img {

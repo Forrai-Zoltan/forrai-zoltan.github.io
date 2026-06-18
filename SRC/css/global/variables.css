@@ -1,0 +1,336 @@
+:root {
+  color-scheme: dark;
+
+
+  /* FONTS */
+  --ff-lit: "cochin";
+  --ff-type: "special-elite";
+  --ff-mono: "departure-mono";
+  --ff-jb-mono: "JetBrainsMono";
+
+  --ff-serif: "Libre Baskerville", Georgia, serif;
+  --ff-sans: "DM Sans", system-ui, sans-serif;
+
+  --f-size-def: 15px;
+  --f-size-s: 1.2rem;
+  --f-size-m: 1.5rem;
+
+  --f-size-h1: clamp(2.5rem, 12vw, 5rem);
+  --f-size-h2: clamp(2rem, 10vw, 3rem);
+  --f-size-h3: clamp(1.6rem, 8vw, 2rem);
+  --f-size-h4: clamp(1.4rem, 6vw, 1.8rem);
+  --f-size-h5: clamp(1.2rem, 4vw, 1.4rem);
+  --f-size-h6: clamp(1rem, 3vw, 1.2rem);
+
+  --f-size-brand: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  --f-size-brand-mobile: clamp(1.5rem, 2vw + 0.8rem, 2.5rem);
+
+  /* LINE HEIGHT */
+  --lh-s: 1;
+  --lh-n: 1.2;
+  --lh-d: 1.5;
+  --lh-m: 1.7;
+  --lh-l: 2;
+  --lh-x: 2.5;
+
+  /* Literature */
+  --font-mono: 12pt "departure-mono";
+  --font-size: 15pt;
+  --line-height: 1.5;
+  --page-width: 70ch;
+
+  --font-size-cv: 22px;
+    /* Z-INDEX */
+    --z-below: -1;
+    --z-base: 0;
+    --z-raised: 10;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-overlay: 300;
+    --z-modal: 400;
+    --z-toast: 500;
+    --z-tooltip: 600;
+  
+    /* MARGIN & PADDING */
+    --mp-s: 0.5em;
+    --mp-m: 1em;
+    --mp-l: 1.5em;
+    --mp-x: 2em;
+  
+    /* BORDER RADIOUS */
+    --br-t: 5px;
+    --br-s: 10px;
+    --br-m: 15px;
+    --br-l: 20px;
+    --br-x: 25px;
+  
+    /* HEADER */
+    --titlebar-height: 45px;
+  
+    --header-height: calc(var(--titlebar-height) + 31px + 5px);
+    --header-height-mobile: 50px;
+  
+    --nav-icon-size: 1.4rem;
+    --nav-icon-offset: 4.5px;
+  
+    /* MAIN */
+    --body-margin-top: calc(var(--header-height) + 6.5px);
+    --body-margin-top-mobile: calc(var(--header-height-mobile));
+
+    /* GREY SCALE */
+    --c-g-90: light-dark(hsl(210, 6%, 7%), hsl(225, 40%, 98%));
+    --c-g-85: light-dark(hsl(220, 5%, 9%), hsl(225, 40%, 97%));
+    --c-g-80: light-dark(hsl(220, 5%, 12%), hsl(225, 40%, 96%));
+    --c-g-75: light-dark(hsl(218, 8%, 16%), hsl(225, 40%, 93%));
+    --c-g-70: light-dark(hsl(218, 8%, 20%), hsl(220, 29%, 90%));
+    --c-g-65: light-dark(hsl(221, 8%, 30%), hsl(220, 29%, 85%));
+    --c-g-60: light-dark(hsl(221, 8%, 40%), hsl(219, 20%, 80%));
+    --c-g-55: light-dark(hsl(219, 10%, 50%), hsl(219, 20%, 70%));
+    --c-g-50: light-dark(hsl(219, 10%, 60%), hsl(219, 10%, 60%));
+    --c-g-45: light-dark(hsl(219, 20%, 70%), hsl(219, 10%, 50%));
+    --c-g-40: light-dark(hsl(219, 20%, 80%), hsl(221, 8%, 40%));
+    --c-g-35: light-dark(hsl(220, 29%, 85%), hsl(221, 8%, 30%));
+    --c-g-30: light-dark(hsl(220, 29%, 90%), hsl(218, 8%, 20%));
+    --c-g-25: light-dark(hsl(225, 40%, 93%), hsl(218, 8%, 16%));
+    --c-g-20: light-dark(hsl(225, 40%, 96%), hsl(220, 5%, 12%));
+    --c-g-15: light-dark(hsl(225, 40%, 97%), hsl(220, 5%, 9%));
+    --c-g-10: light-dark(hsl(225, 40%, 98%), hsl(210, 6%, 7%));
+  
+    --grey: light-dark(hsl(0, 0%, 55%), hsl(0, 0%, 25%));
+    --black: black;
+    --white: white;
+    --off-black: hsl(218, 8%, 20%);
+    --off-white: hsl(220, 29%, 85%);
+  
+    /* TEXT */
+    --c-canvas-bg: light-dark(var(--c-g-35), var(--black));
+    --c-page: light-dark(var(--c-g-30), hsl(0, 0%, 7%));
+    --c-text: light-dark(hsl(0, 0%, 6%), var(--c-g-60));
+    --c-text-d: light-dark(
+      hsl(from var(--c-text) h s 20%),
+      hsl(from var(--c-text) h s 60%)
+    );
+  
+    /* LINKS */
+    --c-text-a: light-dark(
+      hsl(from var(--c-blue) h calc(s + 30) l),
+      var(--c-blue)
+    );
+    --c-text-a-hov: hsl(from var(--c-text-a) h s calc(l + 20));
+    --c-text-a-act: hsl(from var(--c-text-a) h s calc(l - 10));
+    --c-text-a-v: hsl(from var(--c-text-a) calc(h + 60) calc(s - 50) l);
+    --c-text-a-v-hov: hsl(from var(--c-text-a-v) h s calc(l + 20));
+    --c-text-a-v-act: hsl(from var(--c-text-a-v) h s calc(l - 5));
+  
+    /* COLOR PALETTE */
+    --accent: SlateBlue;
+    --c-highlight: light-dark(var(--c-blue), orange);
+    --c-purple: light-dark(hsl(270, 80%, 35%), hsl(270, 80%, 20%));
+    --c-blue: light-dark(hsl(210, 100%, 40%), hsl(210, 100%, 55%));
+    --c-green: hsl(120, 80%, 17%);
+  
+    /* MIXS */
+    --c-purple-l: hsl(from var(--c-purple) h s calc(l + 5));
+    --c-purple-d: hsl(from var(--c-purple) h s calc(l - 5));
+
+
+  /* TITLEBAR */
+  --grad-titlebar: linear-gradient(
+    to right,
+    transparent,
+    light-dark(hsl(from var(--c-purple) h s calc(l + 5)), var(--c-purple)) 1%,
+    light-dark(hsl(from var(--c-purple) h s calc(l + 5)), var(--c-purple)),
+    transparent
+  );
+
+  --grad-titlebar-mobile: linear-gradient(
+    to right,
+    var(--c-purple),
+    var(--c-purple),
+    transparent
+  );
+
+  --grad-titlebar-l: linear-gradient(
+    to right,
+    transparent,
+    light-dark(hsl(from var(--c-purple-l) h s calc(l + 10)), var(--c-purple-l))
+      5%,
+    light-dark(hsl(from var(--c-purple-l) h s calc(l + 10)), var(--c-purple-l)),
+    transparent
+  );
+
+  --grad-titlebar-after: radial-gradient(
+    ellipse 100% 80% at 20% 0,
+    light-dark(
+        hsl(from var(--c-purple-l) h s calc(l + 5) / 0.4),
+        hsl(from var(--c-purple-l) h s l / 0.8)
+      )
+      0%,
+    transparent 80%
+  );
+
+  /* NAV */
+  --grad-nav-strip: linear-gradient(
+    to right,
+    light-dark(hsla(from var(--c-g-45) h s 72%), var(--c-g-25)),
+    light-dark(var(--c-g-45), var(--c-g-20))
+  );
+
+  --grad-nav-item-hover: linear-gradient(
+    to right,
+    var(--c-purple-l),
+    light-dark(transparent, black)
+  );
+
+  --grad-nav-dropdown: radial-gradient(
+      ellipse 280% 80% at top left,
+      light-dark(
+        hsla(from var(--c-purple) h s calc(l + 40) / 0.8),
+        hsla(from var(--c-purple) h s l / 0.8)
+      ),
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.2),
+        hsla(from var(--c-g-10) h s l / 0.1)
+      ),
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.2),
+        hsla(from var(--c-g-10) h s l / 0.1)
+      ),
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.2),
+        hsla(from var(--c-g-10) h s l / 0.1)
+      )
+    ),
+    linear-gradient(
+      to right,
+      light-dark(
+        hsla(from var(--c-g-20) h s l / 0.4),
+        hsla(from var(--c-g-10) h s l / 0.5)
+      ),
+      transparent
+    );
+
+  --grad-nav-dropdown-mobile: radial-gradient(
+    ellipse 300% 50% at top left,
+    hsla(from var(--c-purple-l) h s l / 0.2),
+    hsla(from var(--c-g-10) h s l / 0.4),
+    hsla(from var(--c-g-10) h s l / 0.4),
+    hsla(from var(--c-g-10) h s l / 0.6)
+  );
+
+  /* --- */
+
+  --grad-mb-purple-rad: radial-gradient(
+    ellipse 80% 170% at top,
+    light-dark(white, transparent),
+    light-dark(transparent, transparent) 40%,
+    light-dark(
+        hsla(from var(--c-purple) h s calc(l + 5) / 0.6),
+        hsla(from var(--c-purple) h s l / 0.9)
+      )
+      85%
+  );
+
+  --mb-purple-long: linear-gradient(
+      89.5deg,
+      light-dark(
+        hsla(from var(--c-purple) h s calc(l + 10) / 0.5),
+        hsla(from var(--c-purple) h s l / 0.6)
+      ),
+      transparent 20%
+    ),
+    /* This is correct, don't delete! */
+      linear-gradient(
+        270.5deg,
+        light-dark(
+          hsla(from var(--c-purple) h s calc(l + 10) / 0.5),
+          hsla(from var(--c-purple) h s l / 0.6)
+        ),
+        transparent 20%
+      );
+
+  --grad-foot-green-rad: radial-gradient(
+    circle at top,
+    light-dark(white, transparent),
+    light-dark(transparent, transparent) 30%,
+    light-dark(
+        hsla(from var(--c-blue) h s l / 0.6),
+        hsla(from var(--c-green) h s l / 1)
+      )
+      90%
+  );
+
+  /* ----------------------------- */
+
+  --grad-btn-p: radial-gradient(
+    circle at center,
+    var(--c-purple-l),
+    var(--c-purple) 30%,
+    var(--c-purple-d) 80%
+  );
+
+  --grad-btn-p-l: radial-gradient(
+    circle at center,
+    hsl(from var(--c-purple-l) h s calc(l + 10)),
+    hsl(from var(--c-purple) h s calc(l + 10)),
+    var(--c-purple-d) 90%
+  );
+
+  --grad-card: linear-gradient(
+    to bottom,
+    light-dark(hsl(from var(--c-blue) h s calc(l + 30) / 0.5), hsl(0, 0%, 6%)),
+    light-dark(hsl(from var(--c-blue) h s calc(l + 50) / 0.8), hsl(0, 0%, 9%))
+  );
+
+
+
+
+
+
+
+  --bugfix: 1px solid red;
+
+  --glass-blur: blur(10px);
+
+  --svg-link-filter-bright: 1;
+  --svg-link-brightness: calc(var(--svg-link-filter-bright) - 0.15);
+
+  --glass-border: 1px solid
+    light-dark(hsla(0, 0%, 20%, 0.2), hsla(0, 0%, 100%, 0.2));
+  --glass-border-b: 1px solid
+    light-dark(hsla(0, 0%, 0%, 0.65), hsla(0, 0%, 100%, 0.4));
+
+    --grad-nav-dropdown-shadow: 10px 10px 10px
+    hsla(from var(--black) h s l / 0.35);
+
+  --glass-shadow: inset 0px -10px 25px -11px hsla(from var(--black) h s l / 0.8),
+    inset 0px 15px 20px -10px hsla(from var(--black) h s l / 0.8),
+    0px 15px 19px 2px rgba(0, 0, 0, 0.5);
+
+  --glass-shadow-p: var(--glass-shadow);
+  --glass-shadow-b: var(--glass-shadow);
+
+  --spt-shadow-darker: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  --spt-shadow-dark: light-dark(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+:root#light {
+  color-scheme: light;
+
+  --svg-link-brightness: calc(var(--svg-link-filter-bright) + 0.15);
+
+
+  --glass-shadow: inset 0px -10px 25px -5px hsla(from var(--white) h s l / 0.8),
+    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
+    3px 3px 5px 0px hsla(from var(--black) h s l / 0.6);
+
+  --glass-shadow-p: inset 0px -10px 25px -5px
+      hsla(from var(--white) h s l / 0.8),
+    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
+    3px 5px 8px 0px hsla(from var(--c-purple, black) h s l / 0.5);
+
+  --glass-shadow-b: inset 0px -10px 25px -5px
+      hsla(from var(--white) h s l / 0.8),
+    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
+    3px 5px 8px 0px hsla(from var(--c-blue) h s l / 0.5);
+}

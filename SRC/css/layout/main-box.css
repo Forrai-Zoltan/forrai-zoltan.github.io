@@ -12,7 +12,7 @@
   box-shadow: var(--glass-shadow-p);
 }
 /* long */
-:is([data-page="faq"], [data-page="about"]) main-box {
+:is([data-page="faq"], [data-page="about"], [data-page="ep"] ) main-box {
   background: var(--mb-purple-long);
   box-shadow: var(--glass-shadow-p);
   @media (max-width: 661px) {
@@ -28,7 +28,8 @@
     [data-page="theory"],
     [data-page="contact"],
     [data-page="warbler"],
-    [data-page="patronage"]
+    [data-page="patronage"],
+    [data-page="ep"]
   )
   main-box {
   background-color: var(--c-page);

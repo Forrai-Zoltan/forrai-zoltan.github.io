@@ -1,3 +1,55 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  line-height: var(--lh-s);
+  overflow-wrap: break-word;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
 /* BASE STYLES */
 :root {
   scrollbar-width: thin;
@@ -9,7 +61,7 @@
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  background: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3));
   border-radius: 4px;
   &:hover {
     background: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
@@ -21,7 +73,7 @@ html {
   background-color: var(--c-canvas-bg);
   color: var(--c-text);
   scrollbar-width: thin;
-  scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))
+  scrollbar-color: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3))
     transparent;
   scroll-padding-top: 100px;
   scrollbar-gutter: auto;
@@ -56,7 +108,7 @@ p {
   hyphens: auto;
 }
 
-a {
+p a, span a, main-box:not(:has(deck-section)) a {
   color: var(--c-text-a);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -119,5 +171,22 @@ html#light {
 
   main a {
     font-weight: bold;
+  }
+}
+
+/* Fixes */
+@media (min-width: 600px) {
+  /* MacOS text display. */
+  @supports (-webkit-font-smoothing: antialiased) {
+    header a span,
+    form label svg {
+      transform: translateY(4px);
+    }
+
+    .btn span,
+    header nav li b,
+    header nav a {
+      transform: translateY(2px);
+    }
   }
 }
