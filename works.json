@@ -1,636 +1,853 @@
 {
   "works": [
     {
-      "title": "The Gold-Bug",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "read",
-      "rating": 6,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition) <p></p>"
-    },
-    {
-      "title": "The Balloon-Hoax",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "read",
-      "rating": 4,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition) <h2>Reflections</h2> <p></p>"
-    },
-    {
-      "title": "The Facts in the Case of M. Valdemar",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "read",
-      "rating": 5,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "MS. Found in a Bottle",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "read",
-      "rating": 6,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "A Descent into the Maelström",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "read",
-      "rating": 6.5,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Black Cat",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Fall of the House of Usher",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Pit and the Pendulum",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Premature Burial",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Masque of the Red Death",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Cask of Amontillado",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Imp of the Perverse",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Island of the Fay",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Oval Portrait",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Tell-Tale Heart",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Domain of Arnheim",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "Landor's Cottage",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Assignation: Venice",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "William Wilson",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "Berenice",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "Eleonora",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "Ligeia",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Murders in the Rue Morgue",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Mystery of Marie Rogêt",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Purloined Letter",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Colloquy of Monos and Una",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "The Conversation of Eiros and Charmion",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "A Tale of the Ragged Mountains",
-      "authors": ["Poe"],
-      "tags": "horror, short story",
-      "status": "reading",
-      "rating": null,
-      "notes": "Read in: Tales of Mystery & Imagination (Collins Classics Edition)"
-    },
-    {
-      "title": "Gesta Regum Britannie",
-      "authors": ["unknown"],
-      "tags": "epic, poem",
-      "status": "unread",
-      "rating": null,
-      "notes": "Latin poem of 5000 hexameters adapting the <a href='/personal/library#historia-regum-britannie'> Historia Regum Britannie</a>. <br> <a href='https://archive.org/details/historiaregumbri0000geof' target='_blank'>Internet Archive</a>"
-    },
-    {
-      "title": "Historia Regum Britannie",
-      "authors": ["Geoffrey of Monmouth"],
-      "tags": "legend",
-      "status": "reading",
-      "rating": null,
-      "notes": "English translation on the <a href='https://archive.org/details/historyofkingsof0000geof_n4k0'>Internet Archive</a>."
-    },
-    {
-      "title": "The artist’s way: a spiritual path to higher creativity",
-      "authors": ["Julia Cameron"],
-      "tags": "self-help",
-      "status": "reading",
-      "rating": null,
-      "notes": "<a href='https://archive.org/details/artistswayspirit0000came_s3j5/mode/2up' target='_blank'>Internet Archive</a>"
-    },
-    {
-      "title": "The uses of supernatural power",
-      "authors": ["Gábor Klaniczay"],
-      "tags": "history",
-      "status": "reading",
-      "rating": null,
-      "notes": "<a href='https://archive.org/details/usesofsupernatur0000klan/mode/2up' target='_blank'>Uses of Supernatural Power – Archive.org scan</a>"
-    },
-    {
-      "title": "Jerusalem",
-      "authors": ["Alan Moore"],
-      "tags": "hisorical fiction",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "Quack This Way",
-      "authors": ["Wallace", "Bryan A. Garner"],
-      "tags": "biography",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "Critical Theory Today",
-      "authors": ["Lois Tyson"],
-      "tags": "literary criticism, theory",
-      "status": "reading",
-      "rating": null,
-      "notes": "A User-Friendly Guide"
-    },
-    {
-      "title": "Maze",
+      "title": "Maze: Solve the World’s most Challenging Puzzle",
       "authors": ["Christopher Manson"],
-      "tags": "puzzle",
-      "status": "read",
+      "tags": "imersive puzzle",
+      "status": "READ",
       "rating": 10,
       "notes": ""
     },
     {
-      "title": "Mac Flecknoe",
-      "authors": ["Dryden"],
-      "tags": "poem, satire",
-      "status": "read",
-      "rating": 8.5,
+      "title": "How to Read a Book",
+      "authors": ["Mortimer J. Adler", "Charles Van Doren"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": "<a href='https://dn710009.ca.archive.org/0/items/howto-read-abook/HowtoReadABook.pdf'>Internet Archive</a>"
+    },
+    {
+      "title": "Iliad",
+      "authors": ["Homer"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "The Country Wife",
-      "authors": ["Wycherley"],
-      "tags": "drama, comedy",
-      "status": "unread",
-      "rating": null,
+      "title": "Odyssey",
+      "authors": ["Homer"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "The Rape of the Lock",
-      "authors": ["Pope"],
-      "tags": "poem",
-      "status": "read",
-      "rating": 8,
+      "title": "The Old Testament",
+      "authors": [""],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Moll Flanders",
-      "authors": ["Defoe"],
-      "tags": "novel",
-      "status": "read",
-      "rating": 7,
+      "title": "Tragedies",
+      "authors": ["Aeschylus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Elegy Written in a Country Churchyard",
-      "authors": ["Thomas Gray"],
-      "tags": "poem",
-      "status": "read",
-      "rating": 7,
+      "title": "Tragedies",
+      "authors": ["Sophocles"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "A Sentimental Journey",
-      "authors": ["Sterne"],
-      "tags": "novel",
-      "status": "unread",
-      "rating": null,
-      "notes": "A Sentimental Journey Through France and Italy"
-    },
-    {
-      "title": "The Tyger",
-      "authors": ["Blake"],
-      "tags": "poem",
-      "status": "read",
-      "rating": 7,
+      "title": "History (of the Persian War)",
+      "authors": ["Heredotus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "The Lamb",
-      "authors": ["Blake"],
-      "tags": "poem",
-      "status": "read",
-      "rating": 7,
+      "title": "Tragedies",
+      "authors": ["Euripides"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Tintern Abbey",
-      "authors": ["Wordsworth"],
-      "tags": "poem",
-      "status": "unread",
-      "rating": null,
-      "notes": "Lines Composed a Few Miles above Tintern Abbey, On Revisiting the Banks of the Wye during a Tour. July 13, 1798"
-    },
-    {
-      "title": "Manfred",
-      "authors": ["Byron"],
-      "tags": "dramatic poem",
-      "status": "unread",
-      "rating": null,
+      "title": "History of the Peleponnesian War",
+      "authors": ["Thucydides"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "The Lady of Shalott",
-      "authors": ["Tennyson"],
-      "tags": "poem",
-      "status": "unread",
-      "rating": null,
-      "notes": "The Lady of Shalott (1832)"
-    },
-    {
-      "title": "My Last Duchess",
-      "authors": ["Robert Browning"],
-      "tags": "poem",
-      "status": "unread",
-      "rating": null,
+      "title": "Medical writings",
+      "authors": ["Hippocrates"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Reneszánsz",
-      "authors": ["Jean Delumeau"],
-      "tags": "🇭🇺, history",
-      "status": "unread",
-      "rating": null,
-      "notes": "Translate: Sujtó László"
-    },
-    {
-      "title": "Az angol irodalom története",
-      "authors": [],
-      "tags": "🇭🇺, history, literature",
-      "status": "unread",
-      "rating": null,
-      "notes": "<ol><li><input type='checkbox' disabled>A középkor</li><li><input type='checkbox' disabled>A kora újkor</li><li><input type='checkbox' disabled>1640—1830 első rész</li><li><input type='checkbox' disabled>1640—1830 második rész</li><li><input type='checkbox' disabled>A viktoriánus és a modernista időszak</li><li><input type='checkbox' disabled>1930-tól napjainkig első rész</li><li><input type='checkbox' disabled>1930-tól napjainkig második rész</li></ol>"
-    },
-    {
-      "title": "Lingva Latina I",
-      "authors": ["Hans H. Ørberg"],
-      "tags": "latin, language book",
-      "status": "unread",
-      "rating": null,
-      "notes": "Lingva Latina per se illvstrata pars I Familia Romana"
-    },
-    {
-      "title": "The Prince",
-      "authors": ["Machiavelli"],
-      "tags": "politics",
-      "status": "unread",
-      "rating": null,
+      "title": "Comedies",
+      "authors": ["Aristophanes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Save the Cat",
-      "authors": ["Blake Snyder"],
-      "tags": "screenwriting",
-      "status": "unread",
-      "rating": null,
-      "notes": "Save the Cat, The Last Book On Screenwriting That You'll Ever Need"
-    },
-    {
-      "title": "In Search of Shakespeare",
-      "authors": ["Michael Wood"],
-      "tags": "history, literature",
-      "status": "unread",
-      "rating": null,
+      "title": "Dialogues",
+      "authors": ["Plato"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Flow",
-      "authors": ["Csikszentmihalyi"],
-      "tags": "psychology",
-      "status": "unread",
-      "rating": null,
-      "notes": "Flow: The Psychology of Optimal Experience"
+      "title": "Works",
+      "authors": ["Aristotle"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
     },
     {
-      "title": "Renaissance People",
-      "authors": ["Robert C. Davis", "Beth Lindsmith"],
-      "tags": "history",
-      "status": "unread",
-      "rating": null,
-      "notes": "Renaissance People Lives that Shpaed the Modern Age"
+      "title": "Letters",
+      "authors": ["Epicurus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Elements",
+      "authors": ["Euclid"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["Archimedes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "On Conic Sections",
+      "authors": ["Apolloinus of Perga"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["Cicero"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "On the Nature of Things",
+      "authors": ["Lucretius"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["Virgil"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["Horace"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "History of Rome",
+      "authors": ["Livy"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["Ovid"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Lives of the Noble Grecians and Romans of Moralia",
+      "authors": ["Plutarch"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Histories Annals Agricola Germania",
+      "authors": ["Tacitus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Introduction to Arithmetic",
+      "authors": ["Nicomachus of Gerasa"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Discourses Encheridion (Handbook)",
+      "authors": ["Epictetus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Almagest",
+      "authors": ["Ptolemy"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["Lucian"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
     },
     {
       "title": "Meditations",
-      "authors": ["Marcus Aurelius"],
-      "tags": "philosophy, stoicism",
-      "status": "read",
-      "rating": 9.5,
-      "notes": "Translate: Huszti József"
-    },
-    {
-      "title": "Poetics",
-      "authors": ["Aristotle"],
-      "tags": "philosophy, literature, ",
-      "status": "read",
-      "rating": 9,
-      "notes": "<ul><li>How to Tell a Story. Translate: Philip Freeman</li></ul>"
-    },
-    {
-      "title": "Paradise Lost",
-      "authors": ["Milton"],
-      "tags": "epic, poem",
-      "status": "unread",
-      "rating": null,
-      "notes": "Paradise Lost & Other Poems. (Paradise Regained, Samson Agonistes, On the morning of Christ's Nativity, Lycidas, L'Allegro, Il penseroso. Sonnets: On Shakespeare, On His Being Arrived to the Age of 23, When the Assailt Was Intended to the City, To a Virtuous Young Lady, To the Lady Nergaret Ley, On the Detraction Which Followed Upon My Writing Certain Treatises, On the Same, To Mr. H. Laws, on His Aires, On the religious Memory of Mrs. Thomson, On the Late Massacher in Piemont, On His Blindness (Sonnet XVI or XIX), To Mr. Lawrence, To Cyriak Skinner, To Mr. Cyriack Skinner Upon His Blindness, On His Deceased Wife)"
-    },
-    {
-      "title": "The Silmarillion",
-      "authors": ["Tolkien"],
-      "tags": "fantasy",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "The Fall of Gondolin",
-      "authors": ["Tolkien"],
-      "tags": "fantasy",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "Beren and Luthien",
-      "authors": ["Tolkien"],
-      "tags": "fantasy",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "The Hobbit",
-      "authors": ["Tolkien"],
-      "tags": "fantasy",
-      "status": "read",
-      "rating": 8.5,
-      "notes": ""
-    },
-    {
-      "title": "The Children of Húrin",
-      "authors": ["Tolkien"],
-      "tags": "fantasy",
-      "status": "unread",
-      "rating": null,
-      "notes": "Narn I Chîn Húrin"
-    },
-    {
-      "title": "The Lord of the Rings",
-      "authors": ["Tolkien"],
-      "tags": "fantasy",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "The Origin of Species",
-      "authors": ["Darwin"],
-      "tags": "biology, science",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "American Literary Criticism from the Thirties to Eighties",
-      "authors": ["Vincent B. Leitch"],
-      "tags": "literary criticism, literature",
-      "status": "unread",
-      "rating": null,
-      "notes": ""
-    },
-    {
-      "title": "The Great Gatsby",
-      "authors": ["Fitzgerald"],
-      "tags": "novel",
-      "status": "read",
+      "authors": ["Marcus Auerelius"],
+      "tags": "canon: wr",
+      "status": "READ",
       "rating": 8,
       "notes": ""
     },
     {
-      "title": "Hamlet",
-      "authors": ["Shakespeare"],
-      "tags": "drama, tragedy",
-      "status": "unread",
-      "rating": null,
+      "title": "On the Natural Faculties",
+      "authors": ["Galen"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Dune",
-      "authors": ["Frank Herbert"],
-      "tags": "sci-fi",
-      "status": "unread",
-      "rating": null,
+      "title": "The New Testament",
+      "authors": [""],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Harry Potter and the Philosopher's Stone",
-      "authors": ["Rowling"],
-      "tags": "fantasy",
-      "status": "reading",
-      "rating": null,
+      "title": "The Enneads",
+      "authors": ["Plotinus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Harry Potter and the Chamber of Secrets",
-      "authors": ["Rowling"],
-      "tags": "fantasy",
-      "status": "reading",
-      "rating": null,
+      "title": "Works",
+      "authors": ["St. Augustine"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Harry Potter and the Prisoner of Azkaban",
-      "authors": ["Rowling"],
-      "tags": "fantasy",
-      "status": "reading",
-      "rating": null,
+      "title": "The Song of Roland",
+      "authors": ["Aristotle"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Harry Potter and the Goblet of Fire",
-      "authors": ["Rowling"],
-      "tags": "fantasy",
-      "status": "reading",
-      "rating": null,
+      "title": "The Nibelungnlied",
+      "authors": ["Aristotle"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": "The Völsunga Saga is the Scandinavian version of the same legend."
+    },
+    {
+      "title": "The Saga of Burnt Njal",
+      "authors": ["Aristotle"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Harry Potter and the Order of the Phoenix",
-      "authors": ["Rowling"],
-      "tags": "fantasy",
-      "status": "reading",
-      "rating": null,
+      "title": "Summa Theologica",
+      "authors": ["St. Thomas Aquinas"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Harry Potter and the Half-Blood Prince",
-      "authors": ["Rowling"],
-      "tags": "fantasy",
-      "status": "reading",
-      "rating": null,
+      "title": "Works",
+      "authors": ["Dante Alighieri"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Harry Potter and the Deathly Hallows",
-      "authors": ["Rowling"],
-      "tags": "fantasy",
-      "status": "reading",
-      "rating": null,
+      "title": "Works",
+      "authors": ["Geoffrey Chaucer"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Infinite Jest",
-      "authors": ["Wallace"],
-      "tags": "",
-      "status": "unread",
-      "rating": null,
+      "title": "Notebooks",
+      "authors": ["Leonardo da Vinci"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     },
     {
-      "title": "Vermis",
-      "authors": ["Pastiboo"],
-      "tags": "game guide",
-      "status": "read",
-      "rating": 10,
+      "title": "The Prince",
+      "authors": ["Niccolo Machiavelli"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Discoursees on the First Ten Books of Livy",
+      "authors": ["Niccolo Machiavelli"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Praise of Folly",
+      "authors": ["Desiderius Erasmus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "On the Revolutions of Heavenly Spheres",
+      "authors": ["Nicolaus Copernicus"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Utopia",
+      "authors": ["Sir Thomas More"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Three Treatises Table-Talk",
+      "authors": ["Martin Luther"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Gargantua and Pantagruel",
+      "authors": ["Francois Rabelais"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Institutes of the Christian Religion",
+      "authors": ["John Calvin"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Essays",
+      "authors": ["Michel de Montaigne"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "On the Loadstone and Magnetic Bodies",
+      "authors": ["William Gilbert"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Don Quixote",
+      "authors": ["Miguel de Cervantes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Prothalamion",
+      "authors": ["Edmund Spencer"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "The Fairie Queene",
+      "authors": ["Edmund Spencer"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Essays",
+      "authors": ["Francis Bacon"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Advancement of Learning",
+      "authors": ["Francis Bacon"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Novum Organum",
+      "authors": ["Francis Bacon"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "New Atlantis",
+      "authors": ["Francis Bacon"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["William Shakespeare"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "The Starry Messenger",
+      "authors": ["Galileo Galilei"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Dialogues Concerning Two New Sciences",
+      "authors": ["Galileo Galilei"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Epitome of Copernician Astronomy",
+      "authors": ["Johannes Kepler"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Concernign the Harmonies of the World",
+      "authors": ["Johannes Kepler"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "On the Motion of the Heart and Blood in Animals",
+      "authors": ["William Harvey"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "On the Circulation of the Blood",
+      "authors": ["William Harvey"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "On the Generation of Animals",
+      "authors": ["William Harvey"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "The Leviathan",
+      "authors": ["Thomas Hobbes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Rules for the Direction of the Mind",
+      "authors": ["René Descartes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Discourse on Method",
+      "authors": ["René Descartes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Geometry",
+      "authors": ["René Descartes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Meditations of First Philosophy",
+      "authors": ["René Descartes"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Works",
+      "authors": ["John Milton"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Comedies",
+      "authors": ["Moliere"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "The Provincial Letters",
+      "authors": ["Blaise Pascal"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Pensées",
+      "authors": ["Blaise Pascal"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Scientific Treatises",
+      "authors": ["Blaise Pascal"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Treatises on Light",
+      "authors": ["Christiaan Huygens"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Ethics",
+      "authors": ["Benedict de Spinoza"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Letter Concerning Toleration",
+      "authors": ["John Locke"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Of Civil Government",
+      "authors": ["John Locke"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Essay Concerning Human Understanding",
+      "authors": ["John Locke"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Some Thoughts Concernign Education",
+      "authors": ["John Locke"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Tragedies",
+      "authors": ["Jean Baptiste Racine"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Mathematical Principles of Natural Philosophy",
+      "authors": ["Isaac Newton"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Optics",
+      "authors": ["Isaac Newton"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Discourse on Metaphysics",
+      "authors": ["Gottfied Wilhelm von Leibniz"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "New Essays Concerning Human Understanding",
+      "authors": ["Gottfied Wilhelm von Leibniz"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Monadology",
+      "authors": ["Gottfied Wilhelm von Leibniz"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Robinson Crusoe",
+      "authors": ["Daniel Defoe"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "A Tale of a Tub",
+      "authors": ["Jonathan Swift"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Journal to Stella",
+      "authors": ["Jonathan Swift"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Gulliver’s Travels",
+      "authors": ["Jonathan Swift"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "A Modest Proposal",
+      "authors": ["Jonathan Swift"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "The Way of the World",
+      "authors": ["William Congreve"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Principles of Human Knowledge",
+      "authors": ["George Berkeley"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Essay on Criticism",
+      "authors": ["Alexander Pope"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Rape of the Lock",
+      "authors": ["Alexander Pope"],
+      "tags": "canon: wr",
+      "status": "READ",
+      "rating": 7.5,
+      "notes": ""
+    },
+    {
+      "title": "Essay on Man",
+      "authors": ["Alexander Pope"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Persian Letters",
+      "authors": ["Charles de Secondat, Baron de Montesquieu"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Spirit of Laws",
+      "authors": ["Charles de Secondat, Baron de Montesquieu"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Letters on the English",
+      "authors": ["Voltaire"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Candide",
+      "authors": ["Voltaire"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Philosphical Dictionary",
+      "authors": ["Voltaire"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Joseph Andrews",
+      "authors": ["Henry Fielding"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
+      "notes": ""
+    },
+    {
+      "title": "Tom Jones",
+      "authors": ["Henry Fielding"],
+      "tags": "canon: wr",
+      "status": "",
+      "rating": 0,
       "notes": ""
     }
+
   ]
 }
