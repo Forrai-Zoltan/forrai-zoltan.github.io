@@ -92,7 +92,7 @@ summary {
   }
 }
 
-details[open] summary {
+faq-container details[open] summary {
   border-bottom: var(--glass-border);
 
 }
