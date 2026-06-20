@@ -335,7 +335,7 @@ header nav a[href="/beyond/other"]::before {
 header nav a[href="/beyond/secret"]::before {
   mask-image: url("/SRC/asset/svg/icon-lock.svg");
 }
-header nav a[href="/beyond/epilogue"]::before {
+header nav a[href="/beyond/colophon"]::before {
   mask-image: url("/SRC/asset/svg/icon-scroll-text.svg");
 }
 

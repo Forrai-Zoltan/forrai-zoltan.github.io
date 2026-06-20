@@ -12,7 +12,7 @@ document
       tooltip.style.position = "fixed";
       tooltip.style.background = "#270647";
       tooltip.style.color = "#fff";
-      tooltip.style.padding = "8px 12px";
+      tooltip.style.padding = "4px 12px 2px 12px";
       tooltip.style.borderRadius = "5px";
       tooltip.style.border = "1px solid orange";
       tooltip.style.fontSize = "14px";

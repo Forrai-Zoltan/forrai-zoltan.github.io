@@ -76,7 +76,7 @@
             <ul>
               <li><a href="/beyond/other">Other Works</a></li>
               <li><a href="/beyond/secret">Secret</a></li>
-              <li><a href="/beyond/epilogue">Epilogue</a></li>
+              <li><a href="/beyond/colophon">Colophon</a></li>
             </ul>
           </li>
         </ul>
@@ -94,6 +94,99 @@
                 <li><a href="/RES/secret/secret.html">⋈</a></li>
               </ul>
             </nav>
+            <hr />
+            <h3>Colophon</h3>
+            <magic-spell>
+              <em>And as the chapter closes, the spell shatters...</em>
+            </magic-spell>
+            <br />
+            <br />
+            <section>
+              <style>
+                magic-spell {
+                  color: slateblue;
+                }
+                img[src="/SRC/btn.gif"] {
+                  display: inline-block;
+                  margin-left: 8px;
+                  transform: scale(1.1);
+                  transition: transform 0.2s ease;
+                  vertical-align: text-bottom;
+                  will-change: transform;
+                  user-select: none;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  cursor: pointer;
+                }
+
+                img[src="/SRC/btn.gif"]:hover {
+                  transform: scale(1.2);
+                }
+                img[src="/SRC/btn.gif"]:active {
+                  transform: scale(1.05);
+                }
+
+                img[src="/SRC/asset/svg/rss.svg"],
+                img[src="/SRC/asset/svg/ng.svg"] {
+                  display: inline-block;
+                  padding: 1px;
+                  padding-right: 5px;
+                  user-select: none;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                }
+                section:has(ul) ul {
+                  margin-block: 10px 0;
+
+                  li {
+                    margin-top: 10px;
+                  }
+                }
+
+                section ul li::marker {
+                  content: "※ ";
+                  color: light-dark(default, orange);
+                }
+              </style>
+              <p>
+                <span class="highlight">
+                  <strong>If you liked my site, would you consider...</strong>
+                </span>
+              </p>
+              <ul>
+                <li>
+                  Following me on
+                  <a target="_blank" href="https://gildrom.newgrounds.com/">
+                    <img src="/SRC/asset/svg/ng.svg" height="20" /><b
+                      >Newgrounds</b
+                    ></a
+                  >. It&rsquo;s the only
+                  <em-oblique>&ldquo;social media</em-oblique>&rdquo; I have.
+                </li>
+                <li>
+                  Sharing my site, or linking to me through my button:
+                  <img src="/SRC/btn.gif" />
+                  <noscript>
+                    <code>
+                      &lt;a href="//gildrom.com"&gt;&lt;img
+                      src="//gildrom.com/SRC/btn.gif"/&gt;&lt;/a&gt;
+                    </code>
+                  </noscript>
+                </li>
+                <li>
+                  Following my
+                  <a href="/rss.xml">
+                    <img src="/SRC/asset/svg/rss.svg" height="20" /><b
+                      >RSS Feed</b
+                    ></a
+                  >
+                  for news and updates.
+                </li>
+              </ul>
+            </section>
+            <h3>Some sites you might like</h3>
             <buttons-88x31>
               <img src="/SRC/asset/icon/btn/btn-kb.webp" />
               <!-- First -->
@@ -136,7 +229,7 @@
                 src="https://youtherthyf-madehouse.neocities.org/NG-widget/webring.js"></script>
             </div>
             <tech-stack-list>
-              <h2>Colophon — Technologies Used</h2>
+              <h3>Technologies used</h3>
               <p>
                 The source code for this website is available on
                 <a
@@ -376,5 +469,7 @@
         </exit-content>
       </main-box>
     </main>
+    <script src="/SRC/js/btn-gif.js"></script>
+    <script src="/SRC/js/scroll-mouse.js"></script>
   </body>
 </html>
