@@ -462,15 +462,16 @@ section.is-open {
 
 .work-close {
   position: absolute;
-  top: 20px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  padding: 0 0 10px 10px;
   border: none;
-  border-radius: 8px;
+  border-radius: 0px 0px 0px 50px;
   background-color: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
   color: light-dark(#1a1a2e, #fff);
-  font-size: 1.2rem;
+  font-size: 2rem !important;
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -646,8 +647,8 @@ section:not(#top-section) table td {
   }
 
   .work-close {
-    top: 15px;
-    right: 15px;
+    top: 0px;
+    right: 0px;
     width: 40px;
     height: 40px;
     font-size: 1.4rem;

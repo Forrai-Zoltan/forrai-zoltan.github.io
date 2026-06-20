@@ -23,6 +23,7 @@ title-bar {
   user-select: none;
   -webkit-user-select: none;
   background: var(--grad-titlebar);
+  border-radius: 0 0 10px 10px;
 }
 
 html#light title-bar {
@@ -306,14 +307,14 @@ header nav a[href="/personal/library"]::before {
 }
 
 /* Literary */
+header nav a[href="/literary/essays"]::before {
+  mask-image: url("/SRC/asset/svg/icon-notebook-pen.svg");
+}
 header nav a[href="/literary/fiction"]::before {
   mask-image: url("/SRC/asset/svg/icon-book-closed.svg");
 }
-header nav a[href="/literary/poetry"]::before {
-  mask-image: url("/SRC/asset/svg/icon-pencil.svg");
-}
-header nav a[href="/literary/essays"]::before {
-  mask-image: url("/SRC/asset/svg/icon-notebook-pen.svg");
+header nav a[href="/literary/games"]::before {
+  mask-image: url("/SRC/asset/svg/puzzle.svg");
 }
 
 /* Tavern */

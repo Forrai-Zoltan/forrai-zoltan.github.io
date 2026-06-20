@@ -8,7 +8,9 @@
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
       })();
@@ -37,9 +39,9 @@
           <li tabindex="0" data-icon="literary">
             <b>Literary</b>
             <ul>
-              <li><a href="/literary/fiction">Fiction</a></li>
-              <li><a href="/literary/poetry">Poetry</a></li>
               <li><a href="/literary/essays">Essays</a></li>
+              <li><a href="/literary/fiction">Fiction</a></li>
+              <li><a href="/literary/games">Games</a></li>
             </ul>
           </li>
           <li tabindex="0" data-icon="tavern">
