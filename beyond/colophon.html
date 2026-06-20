@@ -97,14 +97,15 @@
             <hr />
             <h3>Colophon</h3>
             <magic-spell>
-              <em>And as the chapter closes, the spell shatters...</em>
+              <i>And as the chapter closes, the spell shatters...</i>
             </magic-spell>
             <br />
             <br />
             <section>
               <style>
                 magic-spell {
-                  color: slateblue;
+                  color: light-dark(orangered, slateblue);
+                  font-weight: bold;
                 }
                 img[src="/SRC/btn.gif"] {
                   display: inline-block;
@@ -136,6 +137,7 @@
                   -webkit-user-select: none;
                   -moz-user-select: none;
                   -ms-user-select: none;
+                  transform: translateY(4px);
                 }
                 section:has(ul) ul {
                   margin-block: 10px 0;
