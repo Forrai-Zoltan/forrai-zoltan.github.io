@@ -94,14 +94,12 @@ summary {
 
 faq-container details[open] summary {
   border-bottom: var(--glass-border);
-
 }
 
 details p {
   padding-left: 20px;
   line-height: 1.5;
   padding-top: 10px;
-
 }
 
 /* inline */
@@ -155,3 +153,20 @@ dev-notice span {
   background-color: hsla(52, 100%, 40%, 1);
   padding-inline: 2px;
 }
+
+.typewriter {
+  font-family: var(--ff-type);
+  font-size: 1.3rem;
+}
+
+.departure {
+  font-family: var(--ff-mono);
+  font-size: 1.2rem;
+}
+
+.jb-mono {
+  font-family: var(--ff-jb-mono);
+  font-size: 1.26rem;
+}
+
+
