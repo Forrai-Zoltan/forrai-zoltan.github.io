@@ -140,6 +140,34 @@ document.addEventListener("DOMContentLoaded", () => {
         return slugify(author.name);
       }
 
+      function findAuthorBySlug(slug) {
+        const author = authorsData.authors.find(
+          (a) => slugify(a.name) === slug
+        );
+
+        if (author) {
+          return { type: "author", author };
+        }
+
+        const authorIdsFromWorks = new Set();
+        worksData.works.forEach((work) => {
+          work.authors.forEach((authorId) => authorIdsFromWorks.add(authorId));
+        });
+
+        for (const authorId of authorIdsFromWorks) {
+          const authorName = authorMap[authorId] || authorId;
+          if (slugify(authorName) === slug) {
+            return {
+              type: "works-only",
+              authorId,
+              authorName,
+            };
+          }
+        }
+
+        return null;
+      }
+
       function setupAuthorTableSorting() {
         const authorTable = authorSection.querySelector("table");
         if (!authorTable) return;
@@ -746,12 +774,13 @@ document.addEventListener("DOMContentLoaded", () => {
               mainRow.scrollIntoView({ behavior: "smooth", block: "center" });
             }
           } else {
-            const author = authorsData.authors.find(
-              (a) => slugify(a.name) === hash
-            );
-            if (author) {
-              openAuthorSection();
-              populateAuthorSection(author.id);
+            const authorMatch = findAuthorBySlug(hash);
+
+            if (authorMatch) {
+              if (authorMatch.type === "author") {
+                openAuthorSection();
+                populateAuthorSection(authorMatch.author.id);
+              }
 
               const prevHighlighted =
                 tableBody.querySelectorAll("tr.highlighted");
@@ -759,7 +788,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 row.classList.remove("highlighted")
               );
 
-              const authorName = author.name;
+              const authorName =
+                authorMatch.type === "author"
+                  ? authorMatch.author.name
+                  : authorMatch.authorName;
+
               const mainRows = Array.from(tableBody.querySelectorAll("tr"));
               let firstHighlightedRow = null;
 

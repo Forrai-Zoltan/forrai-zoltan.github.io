@@ -43,6 +43,7 @@ gallery-row img {
   display: block;
   cursor: pointer;
   outline: 1px solid transparent;
+  user-select: none;
 
   &:hover {
     outline: var(--glass-border-b);

@@ -8,6 +8,47 @@ faq-container {
   display: block;
 }
 
+:is([data-page="home"]) status-update {
+  display: block;
+  font-size: var(--f-size-s);
+  font-family: var(--ff-jb-mono);
+  margin-top: 15px;
+  line-height: 1.4;
+  color: light-dark(
+    hsla(from var(--c-text) h s calc(l + 20)),
+    hsla(from var(--c-text) h s calc(l - 20))
+  );
+
+
+  padding: 0 20px;
+  width: fit-content;
+  margin-inline: auto;
+
+  cursor: default;
+  text-align: justify;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+
+  &::before {
+    content: "💭 ";
+  }
+}
+
+:is([data-page="home"]) status-update[data-moji]:not([data-moji=""])::before {
+  content: attr(data-moji) " ";
+}
+
+emo-icon,
+emo-icon::selection {
+  color: var(--c-highlight);
+  font-family: var(--ff-jb-mono);
+  font-size: 1rem;
+  font-weight: bold;
+}
 /* HEADERS */
 
 h1 {
@@ -137,11 +178,8 @@ dev-notice {
   font-weight: bold;
   -webkit-text-stroke: 1px black;
   font-size: 1.5rem;
-  padding: 5px 20px;
+  padding: 0px 20px;
   color: black;
-  /* text-shadow: 1.5px 0 black, -1.5px 0 black, 0 1.5px black, 0 -1.5px black,
-    1.5px 1.5px black, -1.5px -1.5px black, 1.5px -1.5px black,
-    -1.5px 1.5px black; */
   background-image: repeating-linear-gradient(
     -45deg,
     hsla(52, 100%, 40%, 1) 0 20px,
@@ -166,7 +204,5 @@ dev-notice span {
 
 .jb-mono {
   font-family: var(--ff-jb-mono);
-  font-size: 1.26rem;
+  font-size: 1.27rem;
 }
-
-

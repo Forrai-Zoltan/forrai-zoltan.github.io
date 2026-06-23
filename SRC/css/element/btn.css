@@ -38,6 +38,16 @@ button[type="submit"],
   }
 }
 
+a:has(btn-span):any-link {
+  display: inline-block;
+  margin: 5px;
+
+}
+
+.staticrypt-decrypt-button {
+  padding: 12px 5px 5px 5px;
+}
+
 btn-span {
   font-weight: bold;
   white-space: nowrap;

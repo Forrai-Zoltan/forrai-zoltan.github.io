@@ -36,7 +36,7 @@ body[data-page="theory"] main-box {
   }
 
   page-header h1 {
-    font-family: var(--ff-serif);
+
     font-size: clamp(1.6rem, 5vw, 2.5rem);
     font-weight: 400;
     color: var(--c-text);

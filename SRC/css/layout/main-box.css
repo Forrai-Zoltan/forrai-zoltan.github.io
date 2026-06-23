@@ -11,8 +11,13 @@
   background: var(--grad-mb-purple-rad);
   box-shadow: var(--glass-shadow-p);
 }
+/* centered */
+:is([data-page="404"]) {
+  text-align: center;
+}
+
 /* long */
-:is([data-page="faq"], [data-page="about"], [data-page="ep"] ) main-box {
+:is([data-page="faq"], [data-page="about"], [data-page="ep"]) main-box {
   background: var(--mb-purple-long);
   box-shadow: var(--glass-shadow-p);
   @media (max-width: 661px) {

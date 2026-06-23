@@ -46,8 +46,6 @@ thanks-section {
   left: 50%;
   transform: translate(-50%, 0);
   background: var(--c-page);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(10px);
   box-shadow: var(--glass-shadow);
   padding: 10px;
   padding-top: 0;
@@ -68,7 +66,7 @@ thanks-section div {
   padding-block: 10px 5px;
   font-weight: bold;
   margin-inline: 20px;
-  font-family: var(--ff-jb-mono);
+  font-family: var(--ff-type);
   color: light-dark(hsl(120, 80%, 35%), hsl(120, 99%, 40%));
 }
 

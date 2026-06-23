@@ -54,13 +54,12 @@ button {
   box-shadow: none;
 }
 
-
 ::-webkit-scrollbar {
   width: 2px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
-} 
+}
 ::-webkit-scrollbar-thumb {
   background: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3));
   border-radius: 2px;
@@ -197,7 +196,10 @@ header ul li:not(:has(mark)) a {
   border-radius: 10px;
 
   &::selection {
-    color: var(--c-text-a);
+    color: light-dark(
+      hsl(from var(--c-text-a) h s l),
+      hsl(from var(--c-text-a) h 100% calc(l - 25))
+    );
   }
 
   &:hover,
@@ -338,4 +340,10 @@ review-reminder a:any-link {
   article blockquote {
     margin-left: 15px;
   }
+}
+
+ul {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: 20px;
 }

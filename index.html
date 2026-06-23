@@ -7,7 +7,7 @@
     <title>Zoltan Forrai・Writer & Wizard</title>
     <meta
       name="description"
-      content="Personal website of Forrai Zoltán, also known as Zoltan Forrai and Gildrom." />
+      content="Personal website of Forrai Zoltán. Part-Time Writer. Full-Time Wizard." />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -45,7 +45,7 @@
       <title-bar>
         <a href="/">
           <img width="30" height="30" src="/favicon.ico" />
-          <span>Part&#8209;Time&nbsp;Writer. Full&#8209;Time&nbsp;Wizard.</span>
+          <span>GILDROM QEENEY</span>
         </a>
       </title-bar>
       <nav>
@@ -89,10 +89,6 @@
       <main-box>
         <article>
           <h1>Zoltan Forrai</h1>
-          <p style="display: none">
-            I am Forrai Zoltán, also known as Zoltan Forrai and online as
-            Gildrom.
-          </p>
           <p>
             Greetings. The name&rsquo;s Zoltan, although online many know me by
             my alias, Gildrom. I&rsquo;m an English teacher by trade, writer by
@@ -118,13 +114,14 @@
         </article>
       </main-box>
       <aside>
-        <img
-          src="/SRC/media/photo/head-shot-original.png"
-          alt="Photo of Forrai Zoltán (Zoltan Forrai, also known as Gildrom)." />
+        <img src="/SRC/media/photo/head-shot-original.png" alt="Me in 2022." />
         <footer>
-          <a href="/tavern/contact">
-            <btn-span>Send me a Message!</btn-span>
-          </a>
+          <div>
+            <a href="/tavern/contact">
+              <btn-span>Send me a Message!</btn-span>
+            </a>
+            <status-update data-moji="" title=""></status-update>
+          </div>
           <svg-links>
             <a
               title="Newgrounds"
@@ -132,7 +129,7 @@
               href="//gildrom.newgrounds.com/">
               <img width="50" src="/SRC/asset/svg/ng_tank.svg" />
             </a>
-            <a title="Colophon" href="/faq">
+            <a title="FAQ" href="/faq">
               <img width="40" src="/SRC/asset/svg/finprint.svg" />
             </a>
             <a title="Warbler" href="/tavern/warbler">
@@ -145,5 +142,26 @@
         </footer>
       </aside>
     </main>
+    <script>
+      (async function () {
+        const res = await fetch("/tavern/warbler.html");
+        const html = await res.text();
+
+        const doc = new DOMParser().parseFromString(html, "text/html");
+
+        const latest = doc.querySelector("status-update");
+        const target = document.querySelector("status-update");
+
+        if (latest && target) {
+          target.textContent = latest.textContent.trim();
+
+          const moji = latest.getAttribute("data-moji");
+          const datetime = latest.getAttribute("datetime");
+
+          if (moji) target.setAttribute("data-moji", moji);
+          if (datetime) target.setAttribute("title", datetime);
+        }
+      })();
+    </script>
   </body>
 </html>

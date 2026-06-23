@@ -5,24 +5,21 @@ main > aside {
 }
 
 main > aside > footer {
+  max-width: 100%;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   width: 100%;
   min-width: fit-content;
   min-height: 20px;
-  padding: 30px 0px 15px 0px;
+  padding: 15px 0px 15px 0px;
   align-items: center;
   text-align: center;
 
   border-radius: var(--br-l);
   border: var(--glass-border);
   box-shadow: var(--glass-shadow-b);
-
-  /* background-color: var(--c-page); */
 }
-
-/* ------------------------------ */
 
 @media (max-width: 660px) {
   main > aside {
@@ -60,11 +57,16 @@ body[data-page="about"] {
     transform: translateY(5px);
     width: 1em;
     height: 1em;
-
   }
 
   main > aside > footer a {
     text-decoration: underline;
+    color: var(--c-text);
+    user-select: none;
+
+    &:hover {
+      color: white;
+    }
   }
 
   @media (min-width: 661px) {
@@ -89,7 +91,12 @@ body[data-page="home"] {
   main > aside > footer {
     justify-content: space-between;
     background: var(--grad-foot-green-rad);
-    gap: 30px;
+    gap: 10px;
+    max-width: 500px;
+  }
+
+  footer div {
+    width: 100%;
   }
 
   aside > img {
@@ -108,8 +115,7 @@ body[data-page="home"] {
     justify-content: space-between;
     align-items: flex-end;
     scale: 0.8;
-  user-select: none;
-
+    user-select: none;
   }
 
   svg-links a[href="/tavern/warbler"] img {
@@ -159,4 +165,8 @@ html#light {
       z-index: 2;
     }
   }
+}
+
+footer:has(status-update:hover) svg-links a[href="/tavern/warbler"] img {
+  filter: saturate(1) brightness(var(--svg-link-brightness)) hue-rotate(160deg);
 }
