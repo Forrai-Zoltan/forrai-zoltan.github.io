@@ -7,7 +7,7 @@ if (titleBar) {
   menu.insertAdjacentHTML(
     "afterbegin",
     `
-    <button  id="toggleBtn" aria-label="Toggle audio"></button>
+    <button tabindex="0" title="Press: 'M'" id="toggleBtn" aria-label="Toggle audio"></button>
     <toggle-btn>
 
     </toggle-btn>

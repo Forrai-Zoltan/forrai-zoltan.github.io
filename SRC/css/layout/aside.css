@@ -117,6 +117,14 @@ body[data-page="home"] {
     scale: 0.8;
     user-select: none;
   }
+  svg-links a {
+    border-radius: 10px;
+    outline-offset: 5px;
+
+    &[href="/rss.xml"] {
+      outline-offset: 10px;
+    }
+  }
 
   svg-links a[href="/tavern/warbler"] img {
     transform: scaleX(-1);
@@ -127,7 +135,8 @@ body[data-page="home"] {
       brightness(var(--svg-link-brightness));
   }
 
-  svg-links a:hover img {
+  svg-links a:hover img,
+  svg-links a:focus-visible img {
     filter: drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7)) saturate(1)
       brightness(var(--svg-link-brightness));
   }

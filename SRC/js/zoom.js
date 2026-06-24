@@ -1,7 +1,26 @@
 const images = document.querySelectorAll("gallery-row img");
 
 images.forEach((img, index) => {
+  img.setAttribute("tabindex", "0");
+
+  img.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+
+      if (document.querySelector(".zoom-overlay")) {
+        document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape" }));
+        return;
+      }
+
+      img.click();
+    }
+  });
+  
   img.addEventListener("click", () => {
+    if (document.querySelector(".zoom-overlay")) {
+      document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape" }));
+      return;
+    }
     let currentIndex = index;
     let isSwiping = false;
 

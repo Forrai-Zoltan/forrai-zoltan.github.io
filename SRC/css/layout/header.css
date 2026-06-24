@@ -53,6 +53,8 @@ title-bar a:any-link {
   align-items: center;
   width: 100%;
   text-decoration: none;
+  margin-right: 20px;
+  border-radius: 10px;
   color: hsl(from var(--off-white) h s calc(l + 7.5));
   /* intentionally theme-invariant */
 
@@ -238,6 +240,11 @@ menu label[for="burger"],
   }
 
   /* Dropdown item hover */
+  header nav ul li ul li {
+    padding-bottom: 3px;
+  }
+
+  /* Dropdown item hover */
   header nav ul li ul li:hover,
   header nav ul li ul li:has(a:focus-visible) {
     border-radius: var(--br-t);
@@ -259,11 +266,13 @@ header nav > ul li {
 }
 
 header nav a:any-link {
-  padding: 3px 3px 3px 10.5px;
+  padding: 3px 3px 0px 10.5px;
   display: block;
   max-width: 100%;
   height: 100%;
   text-decoration: none;
+  border-radius: 5px;
+
   color: var(--c-text);
 }
 

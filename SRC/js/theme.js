@@ -7,13 +7,21 @@ const key = "theme";
 toggle.insertAdjacentHTML(
   "afterbegin",
   `
-    <label>
-      <input type="checkbox" />
+    <label tabindex="0" title="Press: 'T'" for="theme" >
+      <input id="theme" type="checkbox" />
       <theme-track></theme-track>
       <theme-thumb></theme-thumb>
     </label>
 `
 );
+const label = toggle.querySelector('label');
+
+label.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    toggle.click();
+  }
+});
 const updateTheme = (isDark) => {
   html.id = isDark ? "dark" : "light";
   toggle.checked = !isDark;

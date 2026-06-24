@@ -9,6 +9,10 @@ toggle-btn label {
   width: 56px;
   height: 28px;
   cursor: pointer;
+
+  &:focus-visible {
+    border-radius: 28px;
+  }
 }
 
 toggle-btn label input {

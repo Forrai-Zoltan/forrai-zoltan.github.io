@@ -15,6 +15,7 @@ pspotify-p {
   -moz-user-select: none;
   -ms-user-select: none;
 
+
   &::after {
     content: "";
     position: absolute;
@@ -26,6 +27,11 @@ pspotify-p {
     box-shadow: inset 0px -10px 25px -10px var(--spt-shadow-dark),
       inset 0px 15px 20px -10px var(--spt-shadow-darker);
     z-index: 1;
+  }
+
+  &:focus-within {
+    outline: 2px solid orange;
+
   }
 }
 

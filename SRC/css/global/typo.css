@@ -189,6 +189,7 @@ dev-notice {
 
 dev-notice span {
   background-color: hsla(52, 100%, 40%, 1);
+  user-select: none;
   padding-inline: 2px;
 }
 

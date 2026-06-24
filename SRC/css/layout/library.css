@@ -756,6 +756,8 @@ main a:any-link,
 main span a:any-link,
 a::selection {
   color: var(--c-g-65);
+  border-radius: 2px;
+  outline-offset: 2px;
 
   &:hover,
   &:hover::selection {

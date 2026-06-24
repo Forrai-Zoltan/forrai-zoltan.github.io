@@ -51,8 +51,12 @@ button {
 
 hr {
   border: none;
-  border-top: 1px solid hsla(0, 0%, 100%, 0.6);
+  border-top: 1px solid light-dark(hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 100%, 0.6));
   height: 1px;
+}
+
+*:focus-visible {
+  outline: 2px solid orange !important;
 }
 
 /* BASE STYLES */
@@ -131,6 +135,8 @@ a::selection {
   color: var(--c-text-a);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  border-radius: 5px;
+  outline-offset: 2px;
 
   &:hover,
   &:hover::selection {
