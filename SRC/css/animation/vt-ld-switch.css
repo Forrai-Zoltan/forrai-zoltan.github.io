@@ -23,3 +23,8 @@
     }
   }
 }
+
+/* Not yet supported */
+@view-transition {
+  navigation: auto;
+}

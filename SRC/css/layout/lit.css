@@ -33,7 +33,6 @@
 }
 
 :focus-visible {
-  border-radius: inherit;
   outline: 2px solid orange;
   transition: outline 0.2s ease;
 }
@@ -152,10 +151,10 @@ header ul li mark {
   }
 }
 
-header ul li:not(:has(mark)) a {
+header ul li:not(:has(mark)) a,
+footer a {
   color: var(--c-text-a);
   text-decoration: none;
-  border-radius: 10px;
 
   &::selection {
     color: light-dark(
@@ -273,31 +272,6 @@ footer {
   }
 }
 
-review-reminder {
-  display: block;
-  color: light-dark(
-    oklch(from var(--c-text-d) 45% c h / 1),
-    oklch(from var(--c-text-d) 65% c h / 1)
-  );
-}
-review-reminder a:any-link {
-  color: var(--c-text-a);
-
-  &::selection {
-    color: var(--c-text-a);
-  }
-
-  &:hover,
-  &:hover::selection {
-    color: var(--c-text-a-hov);
-  }
-
-  &:active,
-  &:active::selection {
-    color: var(--c-text-a-act);
-  }
-}
-
 @media (max-width: 500px) {
   article blockquote {
     margin-left: 15px;
@@ -308,4 +282,14 @@ ul {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   padding-left: 20px;
+}
+
+a {
+  border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+  header menu {
+    z-index: 99;
+  }
 }

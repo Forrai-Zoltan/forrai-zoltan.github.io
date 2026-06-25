@@ -103,10 +103,7 @@ form button {
   margin-top: 20px;
 }
 
-button:focus-visible {
-  outline: 3px solid orange;
-  border-radius: 20px;
-}
+
 
 form label {
   font-weight: bold;

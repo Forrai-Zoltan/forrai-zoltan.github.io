@@ -84,7 +84,7 @@ hr {
   );
   color: light-dark(
     hsl(from var(--c-green) h s calc(l - 5)),
-    hsl(from var(--c-green) h s calc(l + 50))
+    hsl(from #02f900 h s calc(l + 0))
   );
 }
 
@@ -130,35 +130,50 @@ p {
 
 p a,
 span a,
-main-box:not(:has(deck-section, thanks-background)) a,
-a::selection {
+main-box:not(:has(deck-section, thanks-background)) a {
   color: var(--c-text-a);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   border-radius: 5px;
   outline-offset: 2px;
 
+  &::selection,
+  *::selection {
+    color: var(--c-text-a);
+  }
+
   &:hover,
-  &:hover::selection {
+  &:hover::selection,
+  &:hover *::selection {
     color: var(--c-text-a-hov);
   }
+
   &:active,
-  &:active::selection {
+  &:active::selection,
+  &:active *::selection {
     color: var(--c-text-a-act);
   }
+
   &:visited,
-  &:visited::selection {
+  &:visited::selection,
+  &:visited *::selection {
     color: var(--c-text-a-v);
   }
+
   &:visited:hover,
-  &:visited:hover::selection {
+  &:visited:hover::selection
+  &:visited:hover *::selection {
     color: var(--c-text-a-v-hov);
   }
+
   &:visited:active,
-  &:visited:active::selection {
+  &:visited:active::selection
+  &:visited:active *::selection {
     color: var(--c-text-a-v-act);
   }
 }
+
+
 
 a:not([href^="/"], deck-section a, [href^="#"], :has(img))::after {
   content: "";

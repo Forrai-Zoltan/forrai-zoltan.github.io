@@ -19,7 +19,6 @@ faq-container {
     hsla(from var(--c-text) h s calc(l - 20))
   );
 
-
   padding: 0 20px;
   width: fit-content;
   margin-inline: auto;
@@ -111,7 +110,15 @@ faq-container {
   padding-top: 0;
 }
 
+faq-container summary {
+  font-family: var(--ff-type);
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
 faq-container details {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
   background-color: light-dark(var(--c-g-40), var(--c-g-15));
   border-radius: 10px;
   border: var(--glass-border);
@@ -138,9 +145,8 @@ faq-container details[open] summary {
 }
 
 details p {
-  padding-left: 20px;
+  padding: 10px 10px 10px 20px;
   line-height: 1.5;
-  padding-top: 10px;
 }
 
 /* inline */

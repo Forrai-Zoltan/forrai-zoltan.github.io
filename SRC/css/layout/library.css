@@ -717,12 +717,6 @@ section:not(#top-section) table td {
   }
 }
 
-.is-read:not(section .is-read) td:nth-child(1),
-.is-read:not(section .is-read) td:nth-child(1) * {
-  color: hsl(120, 100%, 30%) !important;
-  font-weight: bold;
-}
-
 section .is-read td {
   background-color: hsla(120, 100%, 30%, 0.2) !important;
   font-weight: bold;
@@ -755,7 +749,7 @@ section #s-note h2 {
 main a:any-link,
 main span a:any-link,
 a::selection {
-  color: var(--c-g-65);
+  color: var(--c-g-65) !important;
   border-radius: 2px;
   outline-offset: 2px;
 
@@ -763,4 +757,12 @@ a::selection {
   &:hover::selection {
     color: light-dark(black, white);
   }
+}
+
+.is-read:not(section .is-read) td:nth-child(1),
+.is-read:not(section .is-read) td:nth-child(1) *,
+.is-read:not(section .is-read) td:nth-child(1)::selection,
+.is-read:not(section .is-read) td:nth-child(1) *::selection {
+  color: hsl(120, 100%, 30%) !important;
+  font-weight: bold;
 }

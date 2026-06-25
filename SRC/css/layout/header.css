@@ -54,7 +54,7 @@ title-bar a:any-link {
   width: 100%;
   text-decoration: none;
   margin-right: 20px;
-  border-radius: 10px;
+  border-bottom-right-radius: 5px;
   color: hsl(from var(--off-white) h s calc(l + 7.5));
   /* intentionally theme-invariant */
 
@@ -297,8 +297,8 @@ header nav > ul > li[data-icon="personal"] b::before {
 header nav > ul > li[data-icon="literary"] b::before {
   mask-image: url("/SRC/asset/svg/icon-library.svg");
 }
-header nav > ul > li[data-icon="tavern"] b::before {
-  mask-image: url("/SRC/asset/svg/icon-barrel.svg");
+header nav > ul > li[data-icon="interests"] b::before {
+  mask-image: url("/SRC/asset/svg/pencil-sparkles.svg");
 }
 header nav > ul > li[data-icon="beyond"] b::before {
   mask-image: url("/SRC/asset/svg/icon-moon.svg");
@@ -308,11 +308,11 @@ header nav > ul > li[data-icon="beyond"] b::before {
 header nav a[href="/personal/about"]::before {
   mask-image: url("/SRC/asset/svg/icon-fingerprint.svg");
 }
-header nav a[href="/personal/obsessions"]::before {
-  mask-image: url("/SRC/asset/svg/icon-star.svg");
+header nav a[href="/personal/warbler"]::before {
+  mask-image: url("/SRC/asset/svg/icon-bird.svg");
 }
-header nav a[href="/personal/library"]::before {
-  mask-image: url("/SRC/asset/svg/icon-book-open.svg");
+header nav a[href="/personal/faq"]::before {
+  mask-image: url("/SRC/asset/svg/icon-scroll-text.svg");
 }
 
 /* Literary */
@@ -326,26 +326,28 @@ header nav a[href="/literary/games"]::before {
   mask-image: url("/SRC/asset/svg/puzzle.svg");
 }
 
-/* Tavern */
-header nav a[href="/tavern/contact"]::before {
-  mask-image: url("/SRC/asset/svg/icon-send.svg");
+/* Interests */
+header nav a[href="/interests/other"]::before {
+  mask-image: url("/SRC/asset/svg/icon-palette.svg");
 }
-header nav a[href="/tavern/warbler"]::before {
-  mask-image: url("/SRC/asset/svg/icon-bird.svg");
+header nav a[href="/interests/obsessions"]::before {
+  mask-image: url("/SRC/asset/svg/icon-star.svg");
 }
-header nav a[href="/tavern/patronage"]::before {
-  mask-image: url("/SRC/asset/svg/icon-sparkles.svg");
+header nav a[href="/interests/library"]::before {
+  mask-image: url("/SRC/asset/svg/icon-book-open.svg");
 }
 
 /* Beyond */
-header nav a[href="/beyond/other"]::before {
-  mask-image: url("/SRC/asset/svg/icon-palette.svg");
+header nav a[href="/beyond/contact"]::before {
+  mask-image: url("/SRC/asset/svg/icon-send.svg");
 }
+
+header nav a[href="/beyond/patronage"]::before {
+  mask-image: url("/SRC/asset/svg/icon-sparkles.svg");
+}
+
 header nav a[href="/beyond/secret"]::before {
   mask-image: url("/SRC/asset/svg/icon-lock.svg");
-}
-header nav a[href="/beyond/colophon"]::before {
-  mask-image: url("/SRC/asset/svg/icon-scroll-text.svg");
 }
 
 @media (max-width: 660px) {

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fiction・gildrom.com</title>
     <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Blog?・gildrom.com</title>
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
@@ -17,9 +17,9 @@
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/SRC/css/layout/deck.css" />
+    <link rel="stylesheet" href="/SRC/css/layout/essay.css" />
   </head>
-  <body data-page="deck">
+  <body>
     <header>
       <title-bar>
         <a href="/">
@@ -65,48 +65,54 @@
       </nav>
     </header>
     <main>
-      <main-box>
-        <form>
-          <search>
-            <input
-              type="search"
-              name="filter"
-              autocomplete="off"
-              placeholder="FICTION・Filter Cards" />
-            <input
-              type="reset"
-              value="X"
-              title="clear search"
-              aria-label="clear search" />
-          </search>
-        </form>
-        <deck-section>
-          <a
-            id="befitting"
-            href="/literary/fiction/befitting"
-            data-tags="horror dark fantasy dark-fantasy adventure">
-            <title-span>Befitting</title-span>
-          </a>
-          <a
-            id="where_she"
-            href="/literary/fiction/wheres_she"
-            data-tags="ballad fantasy poetry">
-            <title-span>Where&rsquo;s She?</title-span>
-          </a>
-          <a
-            id="reverie_ride"
-            href="/literary/fiction/reverie_ride"
-            data-tags="horror sci-fi science fiction psychological">
-            <title-span>Reverie Ride</title-span>
-          </a>
-          <a
-            id="the_cure"
-            href="/literary/fiction/the_cure"
-            data-tags="horror vampires">
-            <title-span>The Cure</title-span>
-          </a>
-        </deck-section>
-      </main-box>
+      <article>
+        <header>
+          <ul>
+            <li>
+              tags:
+              <mark></mark>
+            </li>
+            <li title="2026 June 25 00:12">
+              date: <span>24/06/26・23:45 (CET)</span>
+            </li>
+          </ul>
+        </header>
+        <h1>Welcome to my weblog</h1>
+        <p></p>
+        <h2>Why do I want to blog?</h2>
+        <p>
+          <b>The best way to learn something is to teach it.</b> Even if none
+          reads these posts I still benefit from them. Why? Because I spent time
+          researching, writing, using logic to make sure my ideas are sound. All
+          the while practicing English and composition.
+        </p>
+        <hr />
+        <h2>Some ideas to write about later</h2>
+        <ul>
+          <li>The trivium. Grammar, Logic, Rhetoric.</li>
+          <li>
+            Readin and notetaking. Zotero, internet archive, standard ebooks,
+            obsidian.
+          </li>
+          <li>Coding. HTML, Javascript, Vim.</li>
+          <li>The indeweb. Making personal websites.</li>
+        </ul>
+        <h2>Some ideas I will never touch</h2>
+        <ul>
+          <li>Money and finance.</li>
+          <li>Anything to do with Ai.</li>
+        </ul>
+      </article>
+      <footer>
+        Find me on
+        <a target="_blank" href="https://gildrom.newgrounds.com/">
+          <img src="/SRC/asset/svg/ng.svg" height="20" />Newgrounds</a
+        >
+        and in my
+        <a target="_blank" href="/rss.xml">
+          <img src="/SRC/asset/svg/rss.svg" height="20" />RSS Feed</a
+        >.
+      </footer>
     </main>
   </body>
 </html>

@@ -54,8 +54,8 @@
             <b>Personal</b>
             <ul>
               <li><a href="/personal/about">Who am I?</a></li>
-              <li><a href="/personal/obsessions">Obsessions</a></li>
-              <li><a href="/personal/library">Library</a></li>
+              <li><a href="/personal/faq">Questions</a></li>
+              <li><a href="/personal/warbler">Warbler</a></li>
             </ul>
           </li>
           <li tabindex="0" data-icon="literary">
@@ -66,20 +66,20 @@
               <li><a href="/literary/games">Games</a></li>
             </ul>
           </li>
-          <li tabindex="0" data-icon="tavern">
-            <b>Tavern</b>
+          <li tabindex="0" data-icon="interests">
+            <b>Interests</b>
             <ul>
-              <li><a href="/tavern/contact">Contact</a></li>
-              <li><a href="/tavern/warbler">Warbler</a></li>
-              <li><a href="/tavern/patronage">Patronage</a></li>
+              <li><a href="/interests/other">Other Works</a></li>
+              <li><a href="/interests/obsessions">Obsessions</a></li>
+              <li><a href="/interests/library">Library</a></li>
             </ul>
           </li>
           <li tabindex="0" data-icon="beyond">
             <b>Beyond</b>
             <ul>
-              <li><a href="/beyond/other">Other Works</a></li>
+              <li><a href="/beyond/patronage">Patronage</a></li>
+              <li><a href="/beyond/contact">Contact</a></li>
               <li><a href="/beyond/secret">Secret</a></li>
-              <li><a href="/beyond/colophon">Colophon</a></li>
             </ul>
           </li>
         </ul>
@@ -117,7 +117,7 @@
         <img src="/SRC/media/photo/head-shot-original.png" alt="Me in 2022." />
         <footer>
           <div>
-            <a href="/tavern/contact">
+            <a href="/beyond/contact">
               <btn-span>Send me a Message!</btn-span>
             </a>
             <status-update data-moji="" title=""></status-update>
@@ -129,10 +129,10 @@
               href="//gildrom.newgrounds.com/">
               <img width="50" src="/SRC/asset/svg/ng_tank.svg" />
             </a>
-            <a title="FAQ" href="/faq">
+            <a title="Links" href="/colophon">
               <img width="40" src="/SRC/asset/svg/finprint.svg" />
             </a>
-            <a title="Warbler" href="/tavern/warbler">
+            <a title="Warbler" href="/personal/warbler">
               <img width="43" src="/SRC/asset/svg/bird.svg" />
             </a>
             <a title="RSS" target="_blank" href="/rss.xml">
@@ -144,7 +144,7 @@
     </main>
     <script>
       (async function () {
-        const res = await fetch("/tavern/warbler.html");
+        const res = await fetch("/personal/warbler.html");
         const html = await res.text();
 
         const doc = new DOMParser().parseFromString(html, "text/html");

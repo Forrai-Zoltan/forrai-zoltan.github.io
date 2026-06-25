@@ -125,6 +125,7 @@ interaction-row input {
 
 interaction-row label {
   scale: 1.1;
+  border-radius: 5px;
 }
 
 interaction-row a,

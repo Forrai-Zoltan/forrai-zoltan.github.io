@@ -153,6 +153,7 @@ title-span {
   max-height: 24%;
   margin-bottom: 10px;
   padding: 10px;
+  user-select: none;
 
   border-radius: 5px;
 

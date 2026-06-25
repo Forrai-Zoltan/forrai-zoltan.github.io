@@ -1,4 +1,3 @@
-
 @import url(/SRC/css/global/fonts.css);
 @import url(/SRC/css/global/variables.css);
 @import url(/SRC/css/element/btn-switch.css);
@@ -14,6 +13,19 @@
   margin: 0;
   overflow-wrap: break-word;
   hyphens: auto;
+}
+*:focus-visible {
+  outline: 2px solid orange !important;
+}
+::selection {
+  background: light-dark(
+    hsl(from var(--c-green) h s calc(l + 50)),
+    hsl(from var(--c-green) h s calc(l - 5))
+  );
+  color: light-dark(
+    hsl(from var(--c-green) h s calc(l - 5)),
+    hsl(from #02f900 h s calc(l + 0))
+  );
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -173,6 +185,7 @@ menu {
 
 menu a {
   text-decoration: none;
+  user-select: none;
   font-size: 1.4rem;
   line-height: 0.5;
   padding-top: 10px;
@@ -258,9 +271,6 @@ details p {
   margin-top: 10px;
 }
 
-/* ============================================================
-      SECTION
-      ============================================================ */
 section {
   display: flow-root;
   margin-block: 10px 50px;
@@ -271,11 +281,9 @@ section img {
   float: left;
   margin-right: 25px;
   border-radius: 8px;
+  user-select: none;
 }
 
-/* ============================================================
-      LISTS
-      ============================================================ */
 ul {
   padding-left: 30px;
   margin-bottom: 10px;
@@ -299,9 +307,6 @@ ul:not(:has(div)) ul {
   margin-left: -14.5px;
 }
 
-/* ============================================================
-      SKILLS SECTION
-      ============================================================ */
 skills-section > ul {
   list-style: none;
   padding: 0;
@@ -342,6 +347,8 @@ ol {
 
 ol li {
   display: flex;
+  user-select: none;
+
   flex: 1;
   min-width: 0;
   width: 100%;
@@ -421,6 +428,7 @@ ul div a {
 ul div a img {
   display: block;
   width: 100%;
+  user-select: none;
   height: 100%;
   object-fit: cover;
 }
@@ -430,6 +438,7 @@ ul div a img {
       ============================================================ */
 :is(#f1, #f2, #f3, #f4, #f5) {
   position: absolute;
+  user-select: none;
   z-index: 1;
   width: 90px;
   height: auto;

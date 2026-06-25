@@ -1,4 +1,44 @@
-body {
-  background-color: black;
-  color: white;
+/* Global */
+@import "/SRC/css/global/fonts.css";
+@import "/SRC/css/global/variables.css";
+
+a {
+  color: var(--c-text-a);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  border-radius: 5px;
+  outline-offset: 2px;
+
+  &::selection,
+  *::selection {
+    color: var(--c-text-a);
+  }
+
+  &:hover,
+  &:hover::selection,
+  &:hover *::selection {
+    color: var(--c-text-a-hov);
+  }
+
+  &:active,
+  &:active::selection,
+  &:active *::selection {
+    color: var(--c-text-a-act);
+  }
+
+  &:visited,
+  &:visited::selection,
+  &:visited *::selection {
+    color: var(--c-text-a-v);
+  }
+
+  &:visited:hover,
+  &:visited:hover::selection &:visited:hover *::selection {
+    color: var(--c-text-a-v-hov);
+  }
+
+  &:visited:active,
+  &:visited:active::selection &:visited:active *::selection {
+    color: var(--c-text-a-v-act);
+  }
 }

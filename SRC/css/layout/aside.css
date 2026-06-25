@@ -126,7 +126,7 @@ body[data-page="home"] {
     }
   }
 
-  svg-links a[href="/tavern/warbler"] img {
+  svg-links a[href="/personal/warbler"] img {
     transform: scaleX(-1);
   }
 
@@ -176,6 +176,6 @@ html#light {
   }
 }
 
-footer:has(status-update:hover) svg-links a[href="/tavern/warbler"] img {
+footer:has(status-update:hover) svg-links a[href="/personal/warbler"] img {
   filter: saturate(1) brightness(var(--svg-link-brightness)) hue-rotate(160deg);
 }
