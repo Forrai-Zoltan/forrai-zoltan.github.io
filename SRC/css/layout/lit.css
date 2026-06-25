@@ -152,7 +152,7 @@ header ul li mark {
 }
 
 header ul li:not(:has(mark)) a,
-footer a {
+review-reminder a {
   color: var(--c-text-a);
   text-decoration: none;
 
@@ -165,6 +165,7 @@ footer a {
 
   &:hover,
   &:hover::selection {
+    text-decoration: underline 1.2px;
     color: var(--c-text-a-hov);
   }
 
@@ -270,6 +271,39 @@ footer {
     background-color: var(--c-text-d);
     color: var(--c-page);
   }
+
+  a:not(review-reminder a) {
+    white-space: nowrap;
+    color: light-dark(orangered, orange);
+    text-decoration: none;
+
+    &::selection {
+      color: light-dark(orange, orangered);
+    }
+
+    &:hover,
+    &:hover::selection {
+      color: light-dark(orange, orangered);
+      text-decoration: underline 1.2px;
+      text-underline-offset: 2px;
+    }
+
+    &:active,
+    &:active::selection {
+      color: light-dark(orange, orangered);
+      text-decoration: underline 1.2px;
+      text-underline-offset: 2px;
+    }
+  }
+}
+
+img[src="/SRC/asset/svg/rss.svg"],
+img[src="/SRC/asset/svg/ng.svg"] {
+  display: inline-block;
+  padding: 1px;
+  padding-right: 5px;
+  user-select: none;
+  transform: translateY(4px);
 }
 
 @media (max-width: 500px) {

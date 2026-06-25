@@ -54,7 +54,6 @@ title-bar a:any-link {
   width: 100%;
   text-decoration: none;
   margin-right: 20px;
-  border-bottom-right-radius: 5px;
   color: hsl(from var(--off-white) h s calc(l + 7.5));
   /* intentionally theme-invariant */
 
@@ -75,7 +74,6 @@ title-bar a:any-link {
     height: 20px;
     z-index: var(--z-raised);
     pointer-events: none;
-    border-top-left-radius: var(--br-s);
     background: var(--grad-titlebar-after);
   }
 }
@@ -367,12 +365,17 @@ header nav a[href="/beyond/secret"]::before {
   title-bar:hover {
     margin: 0;
     background: var(--grad-titlebar-mobile);
+    border-radius: 0;
 
     &::after,
     &:hover::after,
     &:focus-visible::after {
       background: transparent !important;
     }
+  }
+
+  title-bar a::after {
+    display: none;
   }
 
   header a img {

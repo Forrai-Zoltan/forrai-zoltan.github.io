@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Essays・gildrom.com</title>
     <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Best games on Newgrounds</title>
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
@@ -17,9 +17,9 @@
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/SRC/css/layout/deck.css" />
+    <link rel="stylesheet" href="/SRC/css/layout/essay.css" />
   </head>
-  <body data-page="deck">
+  <body>
     <header>
       <title-bar>
         <a href="/">
@@ -65,36 +65,34 @@
       </nav>
     </header>
     <main>
-      <main-box>
-        <form>
-          <search>
-            <input
-              type="search"
-              name="filter"
-              autocomplete="off"
-              placeholder="ESSAYS・Filter Cards" />
-            <input
-              type="reset"
-              value="X"
-              title="clear search"
-              aria-label="clear search" />
-          </search>
-        </form>
-        <deck-section>
-          <a
-            id="ng-games"
-            href="/literary/essays/ng-games"
-            data-tags="games newgrounds best">
-            <title-span>Best Games on Newgrounds</title-span>
-          </a>
-          <a
-            id="webblog"
-            href="/literary/essays/weblog"
-            data-tags="weblog blog">
-            <title-span>Weblog?</title-span>
-          </a>
-        </deck-section>
-      </main-box>
+      <article>
+        <header>
+          <ul>
+            <li title="">date: <span></span></li>
+          </ul>
+        </header>
+        <h1>Best games on Newgrounds</h1>
+        <p>
+          Recently, I developed this itching interest in game development,
+          specifically HTML5 games.
+
+          <br /><br />
+          This a list of my favourite games from
+          <a target="_blank" href="https://www.newgrounds.com/games"
+            >Newgrounds</a
+          >.
+        </p>
+      </article>
+      <footer>
+        Find&nbsp;me&nbsp;on
+        <a target="_blank" href="https://gildrom.newgrounds.com/">
+          <img src="/SRC/asset/svg/ng.svg" height="20" />Newgrounds</a
+        >
+        and&nbsp;in&nbsp;my
+        <a target="_blank" href="/rss.xml">
+          <img src="/SRC/asset/svg/rss.svg" height="20" />RSS&nbsp;Feed</a
+        >.
+      </footer>
     </main>
   </body>
 </html>

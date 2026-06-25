@@ -16,9 +16,17 @@ main {
 
 article {
   font-family: var(--ff-jb-mono);
-  width: 55ch;
+  max-width: 60ch;
+  width: 100%;
+  box-sizing: border-box;
   color: var(--c-text);
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
+  padding: 2rem;
+
+  &, * {
+    overflow-wrap: break-word;
+    word-break: break-word; /* optional */
+  }
 }
 
 article header {
@@ -51,8 +59,8 @@ article header {
   }
 }
 :is(h1, h2, h3, h4, h5, h6) {
-  text-wrap: unset;
   margin-block: 25px;
+  text-wrap: unset;
   &:before {
     color: light-dark(
       hsl(from var(--c-tex-d) h s calc(l + 10)),
@@ -137,13 +145,52 @@ footer {
   font-size: 1rem;
 
   a {
-    color: orange;
+    white-space: nowrap;
+    color: light-dark(orangered, orange);
     text-decoration: none;
 
-    &:hover {
+    &::selection {
+      color: light-dark(orangered, orange);
+    }
+
+    &:hover,
+    &:hover::selection {
+      color: light-dark(orangered, orange);
       text-decoration: underline 1.2px;
       text-underline-offset: 2px;
     }
+
+    &:active,
+    &:active::selection {
+      color: light-dark(orangered, orange);
+      text-decoration: underline 1.2px;
+      text-underline-offset: 2px;
+    }
+  }
+}
+
+article a[target="_blank"] {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline 1.2px solid var(--c-tex-d);
+  }
+
+  &:before {
+    content: "[";
+    text-decoration: none !important;
+    color: var(--c-tex-d);
+  }
+  &:after {
+    content: "](↗)";
+    text-decoration: none !important;
+    color: var(--c-tex-d);
+    mask: none;
+    background-color: transparent;
+    margin: 0;
+    display: inline;
+    font-size: inherit;
+    vertical-align: bottom;
   }
 }
 
@@ -154,4 +201,22 @@ img[src="/SRC/asset/svg/ng.svg"] {
   padding-right: 5px;
   user-select: none;
   transform: translateY(4px);
+}
+
+@media (max-width: 660px) {
+  main {
+    min-height: calc(100vh - var(--body-margin-top-mobile) - 10px) !important;
+    margin: 5px;
+    margin-top: calc(var(--body-margin-top-mobile) + 5px);
+  }
+
+  article {
+    padding: 10px 5px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0.9rem 0;
+  }
 }
