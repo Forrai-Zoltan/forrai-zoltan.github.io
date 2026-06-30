@@ -7,6 +7,10 @@ main {
   border: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
+
+  &::before {
+    display: none !important;
+  }
 }
 
 header {
@@ -66,7 +70,7 @@ input[type="search"] {
   background-position: 12px center;
   background-size: 16px 16px;
 
-  color: light-dark(hsl(120, 81%, 40%), hsla(120, 100%, 50%, 0.6));
+  color: light-dark(SlateBlue, hsla(120, 100%, 50%, 0.6));
   background-color: light-dark(var(--c-g-35), var(--c-g-20));
 
   &::placeholder {
@@ -275,32 +279,6 @@ table:not(#author-section table) thead th:hover {
   color: light-dark(black, white);
 }
 
-input[type="search"]:placeholder-shown ~ [type="reset"] {
-  display: none;
-}
-
-input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
-  display: inline;
-}
-
-[type="reset"] {
-  position: absolute;
-  right: 0.5em;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-size: 1.2em;
-  display: block;
-  padding: 0;
-  color: orangered;
-  font-family: var(--font-mono);
-}
-
-[type="reset"]:hover {
-  color: red;
-}
 
 #author-section table {
   width: 100%;

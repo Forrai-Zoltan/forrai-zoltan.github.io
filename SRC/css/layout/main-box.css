@@ -17,7 +17,7 @@
   background-color: var(--c-page);
 }
 
-html#light :is(main:not(:has(main-box)), main-box) {
+html#light :is(main:not(:has(main-box, deck-section)), main-box) {
   position: relative;
 
   &::before {
