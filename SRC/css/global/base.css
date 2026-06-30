@@ -185,8 +185,10 @@ main:not(:has(deck-section, thanks-background)) a {
 }
 
 a:not(
-    [href^="https://www.gildrom.com/"] [href^="/"],
+    [href^="https://www.gildrom.com/"],
+    [href^="/"],
     [href^="#"],
+    header a,
     [href=""],
     deck-section a,
     :has(img)
