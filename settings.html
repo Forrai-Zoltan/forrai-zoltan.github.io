@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
-    <title>Colophon・gildrom.com</title>
+    <title>Settings & Links・gildrom.com</title>
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -17,9 +17,9 @@
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/SRC/css/layout/col.css" />
+    <link rel="stylesheet" href="/SRC/css/layout/settings.css" />
   </head>
-  <body class="bg rad">
+  <body class="bg">
     <header>
       <title-bar>
         <a href="/">
@@ -75,50 +75,10 @@
           </ul>
         </nav>
         <hr />
-        <h3>Colophon</h3>
-        <magic-spell>
-          <i>And as the chapter closes, the spell shatters...</i>
-        </magic-spell>
-        <br />
-        <br />
-        <section>
-          <p>
-            <span class="highlight">
-              <strong>If you liked my site, would you consider...</strong>
-            </span>
-          </p>
-          <ul>
-            <li>
-              Following me on
-              <a target="_blank" href="https://gildrom.newgrounds.com/">
-                <img src="/SRC/asset/svg/ng.svg" height="20" /><b
-                  >Newgrounds</b
-                ></a
-              >. It&rsquo;s the only
-              <em-oblique>&ldquo;social media</em-oblique>&rdquo; I have.
-            </li>
-            <li>
-              Sharing my site, or linking to me through my button:
-              <img src="/SRC/btn.gif" />
-              <noscript>
-                <code>
-                  &lt;a href="//gildrom.com"&gt;&lt;img
-                  src="//gildrom.com/SRC/btn.gif"/&gt;&lt;/a&gt;
-                </code>
-              </noscript>
-            </li>
-            <li>
-              Following my
-              <a href="/rss.xml">
-                <img src="/SRC/asset/svg/rss.svg" height="20" /><b
-                  >RSS Feed</b
-                ></a
-              >
-              for news and updates.
-            </li>
-          </ul>
+        <section class="settings">
+          <h3>Website Settings</h3>
+          <dev-notice><span>Soon</span></dev-notice>
         </section>
-        <h3>Some sites you might like</h3>
         <buttons-88x31>
           <img src="/SRC/asset/icon/btn/btn-kb.webp" />
           <!-- First -->
@@ -161,7 +121,7 @@
             src="https://youtherthyf-madehouse.neocities.org/NG-widget/webring.js"></script>
         </div>
         <tech-stack-list>
-          <h3>Technologies used</h3>
+          <h3>Colphon, Technologies Used</h3>
           <p>
             The source code for this website is available on
             <a
@@ -399,7 +359,6 @@
         </tech-stack-list>
       </article>
     </main>
-    <script src="/SRC/js/btn-gif.js"></script>
-    <script src="/SRC/js/scroll-mouse.js"></script>
+    
   </body>
 </html>

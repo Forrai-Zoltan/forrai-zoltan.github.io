@@ -180,14 +180,17 @@ main:not(:has(deck-section, thanks-background)) a {
   }
 }
 
+#light :is(p a, span a, main:not(:has(deck-section, thanks-background)) a) {
+  text-decoration-thickness: 1.5px;
+}
+
 a:not(
-  [href^="https://www.gildrom.com/"]
-  [href^="/"],
-  [href^="#"], 
-  [href=""], 
-  deck-section a,
-  :has(img),
-   )::after {
+    [href^="https://www.gildrom.com/"] [href^="/"],
+    [href^="#"],
+    [href=""],
+    deck-section a,
+    :has(img)
+  )::after {
   content: "";
   display: inline-block;
   width: 0.75em;

@@ -17,6 +17,56 @@
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
+    <style>
+      section {
+        margin: 20px 0;
+
+        img[src="/SRC/btn.gif"] {
+          display: inline-block;
+          margin-left: 8px;
+          transform: scale(1.1);
+          transition: transform 0.2s ease;
+          vertical-align: text-bottom;
+          will-change: transform;
+          user-select: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          cursor: pointer;
+        }
+
+        img[src="/SRC/btn.gif"]:hover {
+          transform: scale(1.2);
+        }
+        img[src="/SRC/btn.gif"]:active {
+          transform: scale(1.05);
+        }
+
+        img[src="/SRC/asset/svg/rss.svg"],
+        img[src="/SRC/asset/svg/ng.svg"] {
+          display: inline-block;
+          padding: 1px;
+          padding-right: 5px;
+          user-select: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          transform: translateY(4px);
+        }
+        section:has(ul) ul {
+          margin-block: 10px 0;
+
+          li {
+            margin-top: 10px;
+          }
+        }
+
+        ul li::marker {
+          content: "※ " !important;
+          color: light-dark(default, orange);
+        }
+      }
+    </style>
   </head>
   <body class="bg rad patronage">
     <header>
@@ -116,7 +166,37 @@
             >
           </li>
         </ul>
+        <br>
+        <hr>
+        <section>
+          <p>If you liked my site consider...</p>
+          <ul>
+            <li>
+              Sharing my site, or linking to me through my button:
+              <img src="/SRC/btn.gif" />
+            </li>
+            <li>
+              Following me on
+              <a target="_blank" href="//gildrom.newgrounds.com/">
+                <img src="/SRC/asset/svg/ng.svg" height="20" /><b
+                  >Newgrounds</b
+                ></a
+              >. It&rsquo;s the only platform I&rsquo;m on.
+            </li>
+            <li>
+              Following my
+              <a href="/rss.xml">
+                <img src="/SRC/asset/svg/rss.svg" height="20" /><b
+                  >RSS Feed</b
+                ></a
+              >
+              for news and updates.
+            </li>
+          </ul>
+        </section>
       </article>
     </main>
+    <script src="/SRC/js/btn-gif.js"></script>
+    <script src="/SRC/js/scroll-mouse.js"></script>
   </body>
 </html>

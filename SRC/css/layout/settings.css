@@ -28,6 +28,8 @@ nav:has(a[href="/rss.xml"]) a:hover {
   color: light-dark(black, white);
 }
 
+
+
 buttons-88x31 {
   user-select: none;
   -webkit-user-select: none;
@@ -166,47 +168,21 @@ magic-spell {
   color: light-dark(orangered, slateblue);
   font-weight: bold;
 }
-img[src="/SRC/btn.gif"] {
-  display: inline-block;
-  margin-left: 8px;
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
-  vertical-align: text-bottom;
-  will-change: transform;
+
+.settings {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  cursor: pointer;
-}
+  background-color: light-dark(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+  border: var(--glass-border-b);
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px !important;
+  margin: 20px 0;
+  font-family: var(--ff-jb-mono);
 
-img[src="/SRC/btn.gif"]:hover {
-  transform: scale(1.2);
-}
-img[src="/SRC/btn.gif"]:active {
-  transform: scale(1.05);
-}
-
-img[src="/SRC/asset/svg/rss.svg"],
-img[src="/SRC/asset/svg/ng.svg"] {
-  display: inline-block;
-  padding: 1px;
-  padding-right: 5px;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  transform: translateY(4px);
-}
-section:has(ul) ul {
-  margin-block: 10px 0;
-
-  li {
-    margin-top: 10px;
+  h3 {
+    margin-top: 0;
   }
-}
-
-section ul li::marker {
-  content: "※ ";
-  color: light-dark(default, orange);
 }
