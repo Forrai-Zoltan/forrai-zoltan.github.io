@@ -8,7 +8,7 @@ faq-container {
   display: block;
 }
 
-:is([data-page="home"]) a.status-update {
+footer a.status-update {
   display: block;
   text-decoration: none;
   font-size: var(--f-size-s);
@@ -27,7 +27,7 @@ faq-container {
   color: light-dark(
     hsla(from var(--c-text) h s calc(l + 20)),
     hsla(from var(--c-text) h s calc(l - 20))
-  );
+  ) !important;
   &::before {
     content: "💭 No updates for now.";
   }
@@ -43,7 +43,7 @@ faq-container {
     color: light-dark(
       hsla(from var(--c-text) h s calc(l + 5)),
       hsla(from var(--c-text) h s calc(l - 5))
-    );
+    ) !important;
 
     &::after {
       background-color: light-dark(
