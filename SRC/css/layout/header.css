@@ -75,6 +75,7 @@ title-bar a:any-link {
     z-index: var(--z-raised);
     pointer-events: none;
     background: var(--grad-titlebar-after);
+    border-radius: 10px 0 0 0;
   }
 }
 
