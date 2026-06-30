@@ -467,7 +467,7 @@ header nav a[href="/beyond/secret"]::before {
   header nav > ul li ul li a {
     font-size: calc(var(--f-size-m) -0.2rem);
     line-height: var(--lh-s);
-    padding: 10px 10px 0px 20px;
+    padding: 10px 10px 0px 20px !important;
     margin-bottom: 10px;
     border-radius: var(--br-t);
     background-color: hsla(from var(--c-purple-l) h s 45% / 0.3);

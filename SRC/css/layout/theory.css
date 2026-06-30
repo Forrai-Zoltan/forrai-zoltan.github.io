@@ -16,12 +16,12 @@
   --tag-r-text: light-dark(hsl(0, 35%, 28%), hsl(0, 25%, 78%));
 }
 
-body[data-page="theory"] main-box {
+body[data-page="theory"] main {
   font-family: var(--ff-sans);
   padding: 2rem 1.5rem;
 }
 
-body[data-page="theory"] main-box {
+body[data-page="theory"] main {
   page-wrapper {
     display: block;
     max-width: 75ch;

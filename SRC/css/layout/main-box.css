@@ -1,23 +1,11 @@
 /* bg-grad-oval */
-:is(
-    [data-page="404"],
-    [data-page="home"],
-    [data-page="deck"],
-    [data-page="contact"],
-    [data-page="warbler"],
-    [data-page="patronage"]
-  )
-  main-box {
+:is(body.rad) :is(main:not(:has(main-box)), main-box) {
   background: var(--grad-mb-purple-rad);
   box-shadow: var(--glass-shadow-p);
 }
-/* centered */
-:is([data-page="404"]) {
-  text-align: center;
-}
 
 /* long */
-:is([data-page="faq"], [data-page="about"], [data-page="ep"]) main-box {
+:is(body.long) :is(main:not(:has(main-box)), main-box) {
   background: var(--mb-purple-long);
   box-shadow: var(--glass-shadow-p);
   @media (max-width: 661px) {
@@ -25,22 +13,11 @@
   }
 }
 /* bg-base */
-:is(
-    [data-page="404"],
-    [data-page="faq"],
-    [data-page="home"],
-    [data-page="about"],
-    [data-page="theory"],
-    [data-page="contact"],
-    [data-page="warbler"],
-    [data-page="patronage"],
-    [data-page="ep"]
-  )
-  main-box {
+:is(body.bg) :is(main:not(:has(main-box)), main-box) {
   background-color: var(--c-page);
 }
 
-html#light main-box {
+html#light :is(main:not(:has(main-box)), main-box) {
   position: relative;
 
   &::before {
@@ -61,8 +38,11 @@ html#light main-box {
     z-index: 2;
   }
 
-  &.bg-base:not(.bg-grad-oval, .long) {
-    background-color: var(--c-page);
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  &:has(> dev-notice):before {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0)
+    ) !important;
   }
 }

@@ -18,7 +18,7 @@
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
   </head>
-  <body data-page="faq">
+  <body class="bg long">
     <header>
       <title-bar>
         <a href="/">
@@ -64,38 +64,36 @@
       </nav>
     </header>
     <main>
-      <main-box>
-        <h1>FAQ</h1>
-        <faq-container>
-          <!-- The details' ids are numbered for linking. -->
-          <details id="faq-1">
-            <summary>Where can I ask my questions?</summary>
-            <p>
-              You can use my
-              <a href="/beyond/contact">contact form</a>
-              to send me questions. If it&rsquo;s asked again and again
-              I&rsquo;ll answer it here too.
-            </p>
-          </details>
-          <!-- PREW -->
-          <details id="faq-2">
-            <summary>Why are you spelling AI as Ai?</summary>
-            <p>
-              I don&rsquo;t capitalise the &rsquo;i&rsquo;. It&rsquo;s not
-              intelligent.
-            </p>
-          </details>
-          <!-- PREW -->
+      <h1>FAQ</h1>
+      <faq-container>
+        <!-- The details' ids are numbered for linking. -->
+        <details id="faq-1">
+          <summary>Where can I ask my questions?</summary>
+          <p>
+            You can use my
+            <a href="/beyond/contact">contact form</a>
+            to send me questions. If it&rsquo;s asked again and again I&rsquo;ll
+            answer it here too.
+          </p>
+        </details>
+        <!-- PREW -->
+        <details id="faq-2">
+          <summary>Why are you spelling AI as Ai?</summary>
+          <p>
+            I don&rsquo;t capitalise the &rsquo;i&rsquo;. It&rsquo;s not
+            intelligent.
+          </p>
+        </details>
+        <!-- PREW -->
 
-          <!-- <details id="faq-">
+        <!-- <details id="faq-">
             <summary></summary>
             <p></p>
           </details> -->
-          <!-- PREW -->
+        <!-- PREW -->
 
-          <!-- LAST -->
-        </faq-container>
-      </main-box>
+        <!-- LAST -->
+      </faq-container>
     </main>
     <script>
       let details = document.querySelectorAll("details");

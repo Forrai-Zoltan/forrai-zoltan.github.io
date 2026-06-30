@@ -4,9 +4,9 @@ document.querySelectorAll("mark").forEach((mark) => {
   const link = document.createElement("a");
 
   link.textContent = text;
-  const isPoetryPage = window.location.pathname.includes("/poetry");
-  link.href = isPoetryPage
-    ? `/literary/poetry?q=${encodeURIComponent(text)}`
+  const isEssayPage = window.location.pathname.includes("/essays");
+  link.href = isEssayPage
+    ? `/literary/essays?q=${encodeURIComponent(text)}`
     : `/literary/fiction?q=${encodeURIComponent(text)}`;
 
   mark.textContent = "";

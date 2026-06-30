@@ -1,6 +1,6 @@
 @import "/SRC/css/element/btn.css";
 
-body[data-page="contact"] main-box {
+body:has(form) main {
   padding: 40px 10px 0 10px;
 }
 
@@ -89,7 +89,7 @@ body:has(thanks-section:target) > *:not(thanks-section) {
   pointer-events: none;
 }
 
-body[data-page="contact"] h2 {
+body:has(form) h2 {
   text-align: center;
   margin-block: 0 30px;
 }

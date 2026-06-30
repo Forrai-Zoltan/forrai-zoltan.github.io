@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -18,7 +18,7 @@
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
   </head>
-  <body data-page="patronage">
+  <body class="bg rad patronage">
     <header>
       <title-bar>
         <a href="/">
@@ -64,61 +64,59 @@
       </nav>
     </header>
     <main>
-      <main-box>
-        <article>
-          <h1>I have yet to earn your support!</h1>
-          <p>
-            But they have! Consider supporting some of these wonderful sites and
-            projects:
-          </p>
-          <ul>
-            <li>
-              <span
-                ><a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.newgrounds.com/supporter"
-                  >Newgrounds</a
-                >
-                Everything by Everyone!</span
+      <article>
+        <h1>I have yet to earn your support!</h1>
+        <p>
+          But they have! Consider supporting some of these wonderful sites and
+          projects:
+        </p>
+        <ul>
+          <li>
+            <span
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.newgrounds.com/supporter"
+                >Newgrounds</a
               >
-            </li>
-            <li>
-              <span
-                ><a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://fund.blender.org"
-                  >Blender</a
-                >
-                Cause fuck Ad#be!</span
+              Everything by Everyone!</span
+            >
+          </li>
+          <li>
+            <span
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://fund.blender.org"
+                >Blender</a
               >
-            </li>
-            <li>
-              <span
-                ><a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://archive.org/donate"
-                  >The Internet Archive</a
-                >
-                If you care about saving media!</span
+              Cause fuck Ad#be!</span
+            >
+          </li>
+          <li>
+            <span
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://archive.org/donate"
+                >The Internet Archive</a
               >
-            </li>
-            <li>
-              <span
-                ><a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://standardebooks.org/donate"
-                  >Standard Ebooks</a
-                >
-                Open source ebooks!</span
+              If you care about saving media!</span
+            >
+          </li>
+          <li>
+            <span
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://standardebooks.org/donate"
+                >Standard Ebooks</a
               >
-            </li>
-          </ul>
-        </article>
-      </main-box>
+              Open source ebooks!</span
+            >
+          </li>
+        </ul>
+      </article>
     </main>
   </body>
 </html>

@@ -33,7 +33,7 @@ main > aside > footer {
 }
 
 /* about */
-body[data-page="about"] {
+body:has(pspotify-p) {
   main > aside > footer {
     padding: 15px 0;
     position: relative;
@@ -61,7 +61,7 @@ body[data-page="about"] {
 
   main > aside > footer a {
     text-decoration: underline;
-    color: var(--c-text);
+    color: var(--c-text) !important;
     user-select: none;
 
     &:hover {
@@ -87,7 +87,7 @@ body[data-page="about"] {
 }
 
 /* home */
-body[data-page="home"] {
+body:has(svg-links) {
   main > aside > footer {
     justify-content: space-between;
     background: var(--grad-foot-green-rad);
@@ -176,6 +176,6 @@ html#light {
   }
 }
 
-footer:has(status-update:hover) svg-links a[href="/personal/warbler"] img {
-  filter: saturate(1) brightness(var(--svg-link-brightness)) hue-rotate(160deg);
+footer:has(.status-update:hover) svg-links a[href="/rss.xml"] img {
+  filter: saturate(1) brightness(var(--svg-link-brightness)) hue-rotate(160deg) drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7));
 }

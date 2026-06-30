@@ -27,7 +27,7 @@ if (
 }
 
 // Filter
-if (document.querySelector(".deck")) {
+if (document.querySelector("deck-section")) {
   await import("/SRC/js/filter.js");
 }
 

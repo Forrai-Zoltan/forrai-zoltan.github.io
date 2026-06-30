@@ -8,36 +8,53 @@ faq-container {
   display: block;
 }
 
-:is([data-page="home"]) status-update {
+:is([data-page="home"]) a.status-update {
   display: block;
+  text-decoration: none;
   font-size: var(--f-size-s);
   font-family: var(--ff-jb-mono);
   margin-top: 15px;
   line-height: 1.4;
-  color: light-dark(
-    hsla(from var(--c-text) h s calc(l + 20)),
-    hsla(from var(--c-text) h s calc(l - 20))
-  );
-
+  font-weight: normal !important;
   padding: 0 20px;
   width: fit-content;
   margin-inline: auto;
-
-  cursor: default;
-  text-align: justify;
-
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: hidden;
-
+  color: light-dark(
+    hsla(from var(--c-text) h s calc(l + 20)),
+    hsla(from var(--c-text) h s calc(l - 20))
+  );
   &::before {
-    content: "💭 ";
+    content: "💭 No updates for now.";
+  }
+  &::after {
+    margin-bottom: 4px !important;
+    background-color: light-dark(
+      hsla(from var(--c-text) h s calc(l + 20)),
+      hsla(from var(--c-text) h s calc(l - 20))
+    ) !important;
+  }
+
+  &:hover {
+    color: light-dark(
+      hsla(from var(--c-text) h s calc(l + 5)),
+      hsla(from var(--c-text) h s calc(l - 5))
+    );
+
+    &::after {
+      background-color: light-dark(
+        hsla(from var(--c-text) h s calc(l + 5)),
+        hsla(from var(--c-text) h s calc(l - 5))
+      ) !important;
+    }
   }
 }
 
-:is([data-page="home"]) status-update[data-moji]:not([data-moji=""])::before {
+:is([data-page="home"]) a.status-update[data-moji]:not([data-moji=""])::before {
   content: attr(data-moji) " ";
 }
 
@@ -157,22 +174,23 @@ em {
 
 /* Classes */
 
-body[data-page="home"] h1 {
+body:has(svg-links) h1 {
   color: light-dark(var(--c-purple-d), var(--c-g-65));
   text-align: left;
 }
 
-[data-page="patronage"] h1 {
+body.patronage h1 {
   font-size: clamp(1.9rem, 6vw, 3.5rem);
 }
 
-[data-page="404"] h1 {
+article.not-found h1 {
   color: light-dark(red, orangered);
   font-size: calc(var(--base-fs) - 0.7rem);
   font-family: var(--ff-mono);
 }
 
 /* --------------------------------- */
+
 
 dev-notice {
   display: inline-block;
@@ -191,6 +209,10 @@ dev-notice {
     hsla(52, 100%, 40%, 1) 0 20px,
     hsla(0, 0%, 7%, 1) 20px 40px
   );
+}
+
+main > dev-notice {
+  border-radius: 20px 20px 0 0;
 }
 
 dev-notice span {

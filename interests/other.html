@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/SRC/css/layout/deck.css" />
   </head>
-  <body data-page="deck">
+  <body class="rad">
     <header>
       <title-bar>
         <a href="/">
@@ -65,34 +65,32 @@
       </nav>
     </header>
     <main>
-      <main-box>
-        <form>
-          <search>
-            <input
-              type="search"
-              name="filter"
-              autocomplete="off"
-              placeholder="OTHER WORKS・Filter Cards" />
-            <input
-              type="reset"
-              value="X"
-              title="clear search"
-              aria-label="clear search" />
-          </search>
-        </form>
-        <deck-section>
-          <a
-            class="dark"
-            id="NG"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://gildrom.newgrounds.com/"
-            data-tags="newgrounds art">
-            <title-span>My Newgrounds</title-span>
-            <br />
-          </a>
-        </deck-section>
-      </main-box>
+      <form>
+        <search>
+          <input
+            type="search"
+            name="filter"
+            autocomplete="off"
+            placeholder="OTHER WORKS・Filter Cards" />
+          <input
+            type="reset"
+            value="X"
+            title="clear search"
+            aria-label="clear search" />
+        </search>
+      </form>
+      <deck-section>
+        <a
+          class="dark"
+          id="NG"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://gildrom.newgrounds.com/"
+          data-tags="newgrounds art">
+          <title-span>My Newgrounds</title-span>
+          <br />
+        </a>
+      </deck-section>
     </main>
   </body>
 </html>

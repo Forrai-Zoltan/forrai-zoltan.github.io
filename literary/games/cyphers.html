@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Obsession・gildrom.com</title>
     <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Cypher Solver・gildrom.com</title>
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -17,9 +17,8 @@
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/SRC/css/layout/deck.css" />
   </head>
-  <body class="rad">
+  <body data-page="404">
     <header>
       <title-bar>
         <a href="/">
@@ -65,34 +64,9 @@
       </nav>
     </header>
     <main>
-        <form>
-          <search>
-            <input
-              type="search"
-              name="filter"
-              autocomplete="off"
-              placeholder="OBSESSIONS・Filter Cards" />
-            <input
-              type="reset"
-              value="X"
-              title="clear search"
-              aria-label="clear search" />
-          </search>
-        </form>
-        <deck-section>
-          <a
-            id="lierary-theory-bibliography"
-            href="/interests/obsessions/theory"
-            data-tags="literature literary theory criticism">
-            <title-span>Literary Theory</title-span>
-          </a>
-          <a
-            id="maze"
-            href="/interests/obsessions/Maze"
-            data-tags="maze puzzle christopher manson">
-            <title-span>Maze</title-span>
-          </a>
-        </deck-section>
+      <dev-notice><span>Work in Progress</span></dev-notice>
+      <article>
+      </article>
     </main>
   </body>
 </html>

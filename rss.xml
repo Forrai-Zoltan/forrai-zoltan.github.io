@@ -14,12 +14,14 @@
       <link>https://www.gildrom.com/</link>
     </image> 
 
-    <!-- <item>
+    <!-- <item data-moji="">
       <title></title>
+      <pubDate> ';,-' </pubDate>
       <description></description>
-      <guid isPermaLink="true"></guid>
+      <guid isPermaLink="true">https://www.gildrom.com/</guid>
     </item> -->
 
+    
   
 
   </channel>

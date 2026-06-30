@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,7 +30,7 @@
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/SRC/css/element/btn.css" />
   </head>
-  <body data-page="home">
+  <body class="bg rad">
     <header>
       <title-bar>
         <a href="/">
@@ -120,7 +120,7 @@
             <a href="/beyond/contact">
               <btn-span>Send me a Message!</btn-span>
             </a>
-            <status-update data-moji="" title=""></status-update>
+            <a class="status-update" href="/rss.xml"></a>
           </div>
           <svg-links>
             <a
@@ -144,19 +144,33 @@
     </main>
     <script>
       (async function () {
-        const res = await fetch("/personal/warbler.html");
-        const html = await res.text();
+        const res = await fetch("/rss.xml");
+        const xml = await res.text();
 
-        const doc = new DOMParser().parseFromString(html, "text/html");
+        const doc = new DOMParser().parseFromString(xml, "application/xml");
 
-        const latest = doc.querySelector("status-update");
-        const target = document.querySelector("status-update");
+        const firstItem = doc.querySelector("item");
+        const target = document.querySelector(".status-update");
 
-        if (latest && target) {
-          target.textContent = latest.textContent.trim();
+        if (firstItem && target) {
+          const titleEl = firstItem.querySelector("title");
+          const descEl = firstItem.querySelector("description");
 
-          const moji = latest.getAttribute("data-moji");
-          const datetime = latest.getAttribute("datetime");
+          const text = (
+            titleEl?.textContent ||
+            descEl?.textContent ||
+            ""
+          ).trim();
+
+          target.textContent = text;
+
+          const guidEl = firstItem.querySelector("guid");
+          const href = guidEl?.textContent?.trim();
+
+          if (href) target.href = href;
+
+          const moji = firstItem.getAttribute("data-moji");
+          const datetime = firstItem.querySelector("pubDate")?.textContent;
 
           if (moji) target.setAttribute("data-moji", moji);
           if (datetime) target.setAttribute("title", datetime);

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/SRC/css/layout/deck.css" />
   </head>
-  <body data-page="deck">
+  <body class="rad">
     <header>
       <title-bar>
         <a href="/">
@@ -65,36 +65,31 @@
       </nav>
     </header>
     <main>
-      <main-box>
-        <form>
-          <search>
-            <input
-              type="search"
-              name="filter"
-              autocomplete="off"
-              placeholder="ESSAYS・Filter Cards" />
-            <input
-              type="reset"
-              value="X"
-              title="clear search"
-              aria-label="clear search" />
-          </search>
-        </form>
-        <deck-section>
-          <a
-            id="ng-games"
-            href="/literary/essays/ng-games"
-            data-tags="games newgrounds best">
-            <title-span>Best Games on Newgrounds</title-span>
-          </a>
-          <a
-            id="webblog"
-            href="/literary/essays/weblog"
-            data-tags="weblog blog">
-            <title-span>Weblog?</title-span>
-          </a>
-        </deck-section>
-      </main-box>
+      <form>
+        <search>
+          <input
+            type="search"
+            name="filter"
+            autocomplete="off"
+            placeholder="ESSAYS・Filter Cards" />
+          <input
+            type="reset"
+            value="X"
+            title="clear search"
+            aria-label="clear search" />
+        </search>
+      </form>
+      <deck-section>
+        <a
+          id="ng-games"
+          href="/literary/essays/ng-games"
+          data-tags="game newgrounds best">
+          <title-span>Best Games on Newgrounds</title-span>
+        </a>
+        <a id="webblog" href="/literary/essays/weblog" data-tags="weblog blog">
+          <title-span>Weblog?</title-span>
+        </a>
+      </deck-section>
     </main>
   </body>
 </html>

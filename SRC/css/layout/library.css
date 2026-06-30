@@ -3,6 +3,12 @@ body {
   overscroll-behavior: none;
 }
 
+main {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -148,7 +154,7 @@ table:not(#author-section table) thead {
 
 table:not(#author-section table) tbody {
   display: block;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 176.5px);
   overflow-y: auto;
   overscroll-behavior-y: contain;
 }
@@ -372,10 +378,8 @@ section:not(#top-section) {
   padding: 10px 0 0 5px;
   box-sizing: border-box;
   background-color: light-dark(#dbdce1, #222333);
-  box-shadow: light-dark(
-      0 0 15px rgba(0, 0, 0, 0.25),
-      0 0 15px rgba(0, 0, 0, 0.8)
-    ),
+  box-shadow:
+    light-dark(0 0 15px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 0, 0, 0.8)),
     light-dark(
       inset 0 5px 5px -5px rgba(0, 0, 0, 0.15),
       inset 0 5px 5px -5px rgba(0, 0, 0, 0.8)
@@ -605,7 +609,7 @@ section:not(#top-section) table td {
 
   /* Adjust tbody height for mobile */
   table:not(#author-section table) tbody {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 138px);
     overscroll-behavior-y: contain;
   }
 
@@ -677,14 +681,14 @@ section:not(#top-section) table td {
 }
 
 /* Extra small devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   #top-section {
-    width: calc(100% - 12px);
-    top: 62px;
+    width: calc(100% - 10px);
+    top: 55px;
   }
 
   #library-body {
-    margin-top: 52px;
+    margin-top: 105px !important;
   }
 
   input[type="search"] {
